@@ -7,17 +7,17 @@ Run `npm i && npm run start` to start logging some sample cookie data.
 The information available takes the form:
 ```json
 {
-  site: 'grooveshark.com',
-  ID: '8dc5d7e3-e31f-421a-8bad-6540172d787f',
-  Platform: 'Google',
-  Category: 'Marketing',
-  'Cookie / Data Key name': 'SID',
-  Domain: 'google.com',
-  Description: 'Download certain Google Tools and save certain preferences, for example the number of search results per page or activation of the SafeSearch Filter. Adjusts the ads that appear in Google Search.',
-  'Retention period': '2 years',
-  'Data Controller': 'Google',
-  'User Privacy & GDPR Rights Portals': 'https://privacy.google.com/take-control.html',
-  'Wildcard match': 0
+    "site": "grooveshark.com",
+    "ID": "8dc5d7e3-e31f-421a-8bad-6540172d787f",
+    "Platform": "Google",
+    "Category": "Marketing",
+    "Cookie / Data Key name": "SID",
+    "Domain": "google.com",
+    "Description": "Download certain Google Tools and save certain preferences, for example the number of search results per page or activation of the SafeSearch Filter. Adjusts the ads that appear in Google Search.",
+    "Retention period": "2 years",
+    "Data Controller": "Google",
+    "User Privacy & GDPR Rights Portals": "https://privacy.google.com/take-control.html",
+    "Wildcard match": 0
 }
 ```
 
