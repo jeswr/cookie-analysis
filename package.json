@@ -20,7 +20,8 @@
     "prepare": "tsc",
     "semantic-release": "semantic-release",
     "start": "ts-node lib/index.ts",
-    "dtou": "ts-node lib/dtou.ts"
+    "dtou": "ts-node lib/dtou.ts",
+    "secret:set": "gh secret set -f .env"
   },
   "repository": {
     "type": "git",
