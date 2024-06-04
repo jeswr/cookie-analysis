@@ -39,13 +39,46 @@ async function main() {
   // console.log(await ocd())
   const ocdRecord = await ocd();
 
-  for (let i = 0; i < 50; i += 1) {
+  for (let i = 0; i < 83; i += 1) {
     // eslint-disable-next-line no-await-in-loop
     const cookiePage = parse(await cachedFetch(`https://cookiepedia.co.uk/cookie/${i}`));
     const content = cookiePage.getElementById('content');
     const [cookieName, siteName] = content?.getElementsByTagName('h1')[0].text.split(' on ') ?? [];
+    const tableContent = content?.getElementById('content-right')?.getElementsByTagName('ul')[0];
+    const table = tableContent?.getElementsByTagName('li')?.map((li) => [li.getElementsByTagName('strong')[0].text.replace(/(:|\?)$/, '') ?? 'true', li.innerHTML.split('</strong>')[1]?.trim()]);
+    const tableDict = Object.fromEntries(table ?? []);
+    let about = content?.getElementById('content-left')?.getElementsByTagName('h2')[0];
+
+    let info = '';
+    while (about) {
+      about = about.nextElementSibling ?? undefined;
+      if (about?.tagName === 'P') {
+        if (info !== '') {
+          info += ' ';
+        }
+        info += (about?.textContent ?? '');
+      } else {
+        break;
+      }
+    }
+
+    [tableDict.Website] = (tableDict.Website ?? '').split(' ');
+    if (tableDict.Host?.includes('</a>')) {
+      tableDict.Host = (tableDict.Host ?? '').split('>')[1].replace('</a', '');
+    }
+    tableDict['Life Span (days)'] = parseInt(tableDict['Life Span (days)'] ?? '0', 10);
+    tableDict['Secure cookie'] = tableDict['Secure cookie'] === 'Yes';
+    tableDict['HTTPOnly cookie'] = tableDict['HTTPOnly cookie'] === 'Yes';
+    tableDict['3rd party'] = 'This is a third party persistent cookie' in tableDict || 'This is a first party session cookie' in tableDict;
+    tableDict.persistent = 'This is a third party persistent cookie' in tableDict || 'This is a first party persistent cookie' in tableDict;
+    tableDict.Description = info;
+    delete tableDict['This is a third party persistent cookie'];
+    delete tableDict['This is a first party session cookie'];
+    delete tableDict['This is a third party session cookie'];
+    delete tableDict['This is a first party persistent cookie'];
+
     if (siteName && cookieName) {
-      console.log(cookieName, siteName, ocdRecord[cookieName]);
+      console.log(cookieName, siteName, ocdRecord[cookieName], tableDict);
     }
 
     // console.log(cookiePage)
@@ -59,7 +92,6 @@ async function main() {
   // const root = parse(res);
   // console.log(res);
   // }
-
   // console.log(websites);
 }
 
