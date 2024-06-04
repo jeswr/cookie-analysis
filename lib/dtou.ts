@@ -1,9 +1,8 @@
 import 'dotenv/config';
-import { LocalFileCache } from "langchain/cache/file_system";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { ChatOpenAI } from "@langchain/openai";
+import { LocalFileCache } from 'langchain/cache/file_system';
+import { ChatOpenAI } from '@langchain/openai';
 // import {} from "@langchain/community/vectorstores/"
-import { cachedFetch } from "./fetch";
+// import { cachedFetch } from './fetch';
 
 // https://arxiv.org/pdf/2404.13426
 // Moreover, ML models
@@ -15,13 +14,13 @@ import { cachedFetch } from "./fetch";
 // data [49, 50].
 
 async function run() {
-    const model = new ChatOpenAI({
-        model: "gpt-4o",
-        cache: await LocalFileCache.create('./cache'),
-    });
-    const dtouPaper = await cachedFetch("https://arxiv.org/html/2403.07587v1");
-    const response = await model.invoke("Is there much use in LangSmith for research prototypes?");
-    console.log(response.content);
+  const model = new ChatOpenAI({
+    model: 'gpt-4o',
+    cache: await LocalFileCache.create('./cache'),
+  });
+  //   const dtouPaper = await cachedFetch('https://arxiv.org/html/2403.07587v1');
+  const response = await model.invoke('Is there much use in LangSmith for research prototypes?');
+  console.log(response.content);
 }
 
 run();

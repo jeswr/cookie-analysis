@@ -45,24 +45,24 @@ async function main() {
     const content = cookiePage.getElementById('content');
     const [cookieName, siteName] = content?.getElementsByTagName('h1')[0].text.split(' on ') ?? [];
     const tableContent = content?.getElementById('content-right')?.getElementsByTagName('ul')[0];
-    const table = tableContent?.getElementsByTagName('li')?.map((li) => [li.getElementsByTagName('strong')[0].text.replace(/(\:|\?)$/, '') ?? 'true', li.innerHTML.split('</strong>')[1]?.trim()]);
+    const table = tableContent?.getElementsByTagName('li')?.map((li) => [li.getElementsByTagName('strong')[0].text.replace(/(:|\?)$/, '') ?? 'true', li.innerHTML.split('</strong>')[1]?.trim()]);
     const tableDict = Object.fromEntries(table ?? []);
     let about = content?.getElementById('content-left')?.getElementsByTagName('h2')[0];
 
-    let info = ''
+    let info = '';
     while (about) {
       about = about.nextElementSibling ?? undefined;
       if (about?.tagName === 'P') {
         if (info !== '') {
           info += ' ';
         }
-        info += about?.textContent;
+        info += (about?.textContent ?? '');
       } else {
         break;
       }
     }
 
-    tableDict.Website = (tableDict.Website ?? '').split(' ')[0]
+    [tableDict.Website] = (tableDict.Website ?? '').split(' ');
     if (tableDict.Host?.includes('</a>')) {
       tableDict.Host = (tableDict.Host ?? '').split('>')[1].replace('</a', '');
     }
