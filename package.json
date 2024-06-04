@@ -19,7 +19,8 @@
     "build": "tsc",
     "prepare": "tsc",
     "semantic-release": "semantic-release",
-    "start": "ts-node lib/index.ts"
+    "start": "ts-node lib/index.ts",
+    "dtou": "ts-node lib/dtou.ts"
   },
   "repository": {
     "type": "git",
@@ -87,7 +88,12 @@
     "access": "public"
   },
   "dependencies": {
+    "@langchain/community": "^0.2.5",
+    "@langchain/core": "^0.2.5",
+    "@langchain/openai": "^0.1.1",
+    "dotenv": "^16.4.5",
     "dumb-csv": "^1.1.2",
+    "langchain": "^0.2.4",
     "md5": "^2.3.0",
     "node-html-parser": "^6.1.13"
   }

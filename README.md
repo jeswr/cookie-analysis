@@ -30,6 +30,7 @@ Here is an example App Policy that the website can have, with only the Google in
 	:name <urn:the-website:identifier>;
 	:input_spec :cookie1;
 	:output_spec :cookie1-out.  # Optional. Only if we want to also control/govern the actual cookie stored by the browser. Not used here.
+
 :cookie1 a :InputSpec;
 	:data <urn:cookie-data:number-search-result>, <urn:cookie-data:safesearch-filter-activated>;  # Some location to the exactly cookie. There is not yet a wildcard mechanism to match against "any plausible data", but we may consider it if needed. Another strategy is to assign the same set of over-permissive information to every potential cookie data, as a trick.
 	:port [:name "some-unique-name"];
