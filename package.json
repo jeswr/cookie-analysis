@@ -90,7 +90,7 @@
   },
   "dependencies": {
     "@langchain/community": "^0.2.5",
-    "@langchain/core": "^0.2.5",
+    "@langchain/core": "^0.2.6",
     "@langchain/openai": "^0.1.1",
     "dotenv": "^16.4.5",
     "dumb-csv": "^1.1.2",
