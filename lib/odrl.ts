@@ -1,6 +1,6 @@
-import 'dotenv/config';
-import { LocalFileCache } from 'langchain/cache/file_system';
-import { ChatOpenAI } from '@langchain/openai';
+// import 'dotenv/config';
+// import { LocalFileCache } from 'langchain/cache/file_system';
+// import { ChatOpenAI } from '@langchain/openai';
 // import {} from "@langchain/community/vectorstores/"
 // import { cachedFetch } from './fetch';
 
@@ -19,13 +19,14 @@ import { ChatOpenAI } from '@langchain/openai';
 //     cache: await LocalFileCache.create('./cache'),
 //   });
 //   //   const dtouPaper = await cachedFetch('https://arxiv.org/html/2403.07587v1');
-//   const { content } = await model.invoke('Is there much use in LangSmith for research prototypes?');
+//   const { content } = await model.invoke(
+//     'Is there much use in LangSmith for research prototypes?'
+// );
 //   console.log(content);
 // }
 
 // run();
 
-function createRequest() {
-    
-}
+// function createRequest() {
 
+// }
