@@ -21,7 +21,9 @@
     "semantic-release": "semantic-release",
     "start": "ts-node lib/index.ts",
     "dtou": "ts-node lib/dtou.ts",
-    "secret:set": "gh secret set -f .env"
+    "secret:set": "gh secret set -f .env",
+    "generate:shapes": "ts-node lib/odrlShapeGen.ts",
+    "generate:shex": "shacl2shex shapes/ .shex/"
   },
   "repository": {
     "type": "git",
@@ -35,13 +37,16 @@
   },
   "homepage": "https://github.com/jeswr/cookie-analysis/README.md",
   "devDependencies": {
+    "@jeswr/shacl2shex": "^1.1.0",
     "@types/jest": "^29.5.12",
+    "@types/make-fetch-happen": "^10.0.4",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "jest": "^29.7.0",
+    "make-fetch-happen": "^13.0.1",
     "pre-commit": "^1.2.2",
     "semantic-release": "^24.0.0",
     "ts-jest": "^29.1.4",
@@ -89,6 +94,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@jeswr/utils": "^1.0.0",
     "@langchain/community": "^0.2.5",
     "@langchain/core": "^0.2.5",
     "@langchain/openai": "^0.1.1",
