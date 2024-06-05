@@ -38,6 +38,7 @@
   "homepage": "https://github.com/jeswr/cookie-analysis/README.md",
   "devDependencies": {
     "@jeswr/shacl2shex": "^1.1.0",
+    "@rdfjs/types": "^1.1.0",
     "@types/jest": "^29.5.12",
     "@types/make-fetch-happen": "^10.0.4",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
@@ -94,14 +95,18 @@
     "access": "public"
   },
   "dependencies": {
+    "@jeswr/rdf-serialize-store": "^1.1.0",
     "@jeswr/utils": "^1.0.0",
     "@langchain/community": "^0.2.5",
     "@langchain/core": "^0.2.5",
     "@langchain/openai": "^0.1.1",
     "dotenv": "^16.4.5",
     "dumb-csv": "^1.1.2",
+    "eyereasoner": "^16.11.0",
     "langchain": "^0.2.4",
     "md5": "^2.3.0",
-    "node-html-parser": "^6.1.13"
+    "node-html-parser": "^6.1.13",
+    "rdf-dereference-store": "^1.2.1",
+    "rdf-namespaces": "^1.12.0"
   }
 }
