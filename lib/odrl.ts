@@ -1,6 +1,6 @@
-import 'dotenv/config';
-import { LocalFileCache } from 'langchain/cache/file_system';
-import { ChatOpenAI } from '@langchain/openai';
+// import 'dotenv/config';
+// import { LocalFileCache } from 'langchain/cache/file_system';
+// import { ChatOpenAI } from '@langchain/openai';
 // import {} from "@langchain/community/vectorstores/"
 // import { cachedFetch } from './fetch';
 
@@ -13,14 +13,20 @@ import { ChatOpenAI } from '@langchain/openai';
 // use cases [78, 61], as well as to describe consent records and contracts for sensor
 // data [49, 50].
 
-async function run() {
-  const model = new ChatOpenAI({
-    model: 'gpt-4o',
-    cache: await LocalFileCache.create('./cache'),
-  });
-  //   const dtouPaper = await cachedFetch('https://arxiv.org/html/2403.07587v1');
-  const { content } = await model.invoke('Is there much use in LangSmith for research prototypes?');
-  console.log(content);
-}
+// async function run() {
+//   const model = new ChatOpenAI({
+//     model: 'gpt-4o',
+//     cache: await LocalFileCache.create('./cache'),
+//   });
+//   //   const dtouPaper = await cachedFetch('https://arxiv.org/html/2403.07587v1');
+//   const { content } = await model.invoke(
+//     'Is there much use in LangSmith for research prototypes?'
+// );
+//   console.log(content);
+// }
 
-run();
+// run();
+
+// function createRequest() {
+
+// }

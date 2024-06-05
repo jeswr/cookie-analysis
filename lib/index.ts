@@ -17,7 +17,7 @@ interface OCD {
 
 async function ocd() {
   const openCookieDatabase = 'https://raw.githubusercontent.com/jkwakman/Open-Cookie-Database/master/open-cookie-database.csv';
-  const res = await cachedFetch(openCookieDatabase);
+  const res = await (await cachedFetch(openCookieDatabase)).text();
   const json = dumbcsv.fromCSV({ data: res, separator: ',' }).toJSON() as OCD[];
   const record: Record<string, OCD> = {};
   for (const entry of json) {
@@ -41,7 +41,7 @@ async function main() {
 
   for (let i = 0; i < 83; i += 1) {
     // eslint-disable-next-line no-await-in-loop
-    const cookiePage = parse(await cachedFetch(`https://cookiepedia.co.uk/cookie/${i}`));
+    const cookiePage = parse(await (await cachedFetch(`https://cookiepedia.co.uk/cookie/${i}`)).text());
     const content = cookiePage.getElementById('content');
     const [cookieName, siteName] = content?.getElementsByTagName('h1')[0].text.split(' on ') ?? [];
     const tableContent = content?.getElementById('content-right')?.getElementsByTagName('ul')[0];

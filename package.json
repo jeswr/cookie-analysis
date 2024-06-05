@@ -14,14 +14,18 @@
     "test:coverage": "npm test -- --coverage",
     "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "test": "jest",
-    "lint": "eslint lib/* __tests__/* --ext .ts",
-    "lint:fix": "eslint lib/* __tests__/* --ext .ts --fix",
+    "lint": "eslint lib/*.ts __tests__/* --ext .ts",
+    "lint:fix": "eslint lib/*.ts __tests__/* --ext .ts --fix",
     "build": "tsc",
     "prepare": "tsc",
     "semantic-release": "semantic-release",
     "start": "ts-node lib/index.ts",
     "dtou": "ts-node lib/dtou.ts",
-    "secret:set": "gh secret set -f .env"
+    "secret:set": "gh secret set -f .env",
+    "generate:shapes": "ts-node lib/odrlShapeGen.ts",
+    "generate:shex": "shacl2shex shapes/ .shex/",
+    "generate:ldo": "ldo build -i shapes/ -o lib/ldo/",
+    "generate": "npm run generate:shapes && npm run generate:shex && npm run generate:ldo"
   },
   "repository": {
     "type": "git",
@@ -35,7 +39,9 @@
   },
   "homepage": "https://github.com/jeswr/cookie-analysis/README.md",
   "devDependencies": {
+    "@rdfjs/types": "^1.1.0",
     "@types/jest": "^29.5.12",
+    "@types/make-fetch-happen": "^10.0.4",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "eslint": "^8.57.0",
@@ -89,13 +95,25 @@
     "access": "public"
   },
   "dependencies": {
+    "@jeswr/rdf-serialize-store": "^1.1.0",
+    "@jeswr/shacl2shex": "^1.1.0",
+    "@jeswr/utils": "^1.0.0",
     "@langchain/community": "^0.2.5",
     "@langchain/core": "^0.2.6",
     "@langchain/openai": "^0.1.1",
+    "@ldo/cli": "^0.0.1-alpha.24",
+    "@ldo/ldo": "^0.0.1-alpha.24",
+    "@types/n3": "^1.16.4",
     "dotenv": "^16.4.5",
     "dumb-csv": "^1.1.2",
+    "eyereasoner": "^16.11.0",
+    "langchain": "^0.2.4",
+    "make-fetch-happen": "^13.0.1",
     "langchain": "^0.2.5",
     "md5": "^2.3.0",
-    "node-html-parser": "^6.1.13"
+    "n3": "^1.17.3",
+    "node-html-parser": "^6.1.13",
+    "rdf-dereference-store": "^1.2.1",
+    "rdf-namespaces": "^1.12.0"
   }
 }

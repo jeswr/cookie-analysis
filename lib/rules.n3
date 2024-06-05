@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+
+{
+    ?a rdfs:subClassOf ?b .
+    ?b rdfs:subClassOf ?c .
+} => {
+    ?a rdfs:subClassOf ?c .
+} .
+
+{
+    ?a rdfs:subClassOf ?b .
+    ?property rdfs:domain ?b .
+} => {
+    ?property rdfs:domain ?a .
+} .
+
+{
+    ?a rdfs:subClassOf ?b .
+    ?property rdfs:domain ?b .
+} => {
+    ?property rdfs:domain ?a .
+} .
+
+{
+    ?a rdfs:subClassOf ?b .
+    ?property rdfs:domain ?b .
+} => {
+    ?property rdfs:domain ?a .
+} .
+
+{
+    ?property rdfs:domain [
+        a owl:Class ;
+        owl:unionOf [
+            list:member ?a ;
+        ] ;
+    ] .
+} => {
+    ?property rdfs:domain ?a .
+} .
+
+{
+    ?property rdfs:range [
+        a owl:Class ;
+        owl:unionOf [
+            list:member ?a ;
+        ] ;
+    ] .
+} => {
+    ?property rdfs:range ?a .
+} .
+
+# rdfs:domain [
+# 		a owl:Class ;
+# 		owl:unionOf ( :Asset :Party ) ;
+# 	] ;
