@@ -16,6 +16,10 @@ const { namedNode, quad, blankNode } = DataFactory;
 
 const shapeBase = 'http://www.w3.org/ns/odrl/2/shape/';
 
+// https://raw.githubusercontent.com/sparna-git/owl2shacl/main/owl2sh-open.ttl
+// https://raw.githubusercontent.com/sparna-git/owl2shacl/main/owl2sh-semi-closed.ttl
+// https://raw.githubusercontent.com/sparna-git/owl2shacl/main/owl2sh-closed.ttl
+
 async function run() {
   const shapes = new Store([quad(namedNode(shapeBase), namedNode(rdf.type), namedNode('http://www.w3.org/2002/07/owl#Ontology'))]);
   const { store } = await dereference('https://www.w3.org/ns/odrl/2/ODRL22.ttl');
