@@ -34,6 +34,7 @@ async function run() {
     if (properties.length !== 0) {
       const shape = namedNode(`${shapeBase + subject.value.split('/').slice(-1)[0]}Shape`);
       shapes.add(quad(shape, namedNode(rdf.type), namedNode('http://www.w3.org/ns/shacl#NodeShape')));
+      shapes.add(quad(shape, namedNode('http://www.w3.org/ns/shacl#targetClass'), subject));
 
       for (const prop of domain.getSubjects(namedNode(rdfs.domain), subject as any, null)) {
         const property = blankNode();
@@ -51,6 +52,10 @@ async function run() {
         }
       }
     }
+  }
+
+  for (const { subject, object } of shapes.match(null, namedNode('http://www.w3.org/ns/shacl#class'), null)) {
+    shapes.add(quad(subject, namedNode('http://www.w3.org/ns/shacl#node'), namedNode(`${shapeBase + object.value.split('/').slice(-1)[0]}Shape`)));
   }
 
   fs.writeFileSync(

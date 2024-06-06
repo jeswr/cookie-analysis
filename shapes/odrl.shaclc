@@ -2,227 +2,227 @@ BASE <http://www.w3.org/ns/odrl/2/shape/>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX odrlShape: <http://www.w3.org/ns/odrl/2/shape/>
 
-shape odrlShape:PolicyShape {
+shape odrlShape:PolicyShape -> odrl:Policy {
 	odrl:uid IRI .
 	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
 	odrl:constraint IRI .
 }
-shape odrlShape:RuleShape {
+shape odrlShape:AssetShape -> odrl:Asset {
 	odrl:uid IRI .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:failure odrl:Rule .
-	odrl:target odrl:Asset .
-	odrl:output odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:constraint IRI .
-}
-shape odrlShape:AgreementShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:OfferShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:SetShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:AssertionShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:PrivacyShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:RequestShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:TicketShape {
-	odrl:uid IRI .
-	odrl:profile IRI .
-	odrl:inheritFrom odrl:Policy .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:conflict odrl:ConflictTerm .
-	odrl:target odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:permission odrl:Permission .
-	odrl:prohibition odrl:Prohibition .
-	odrl:obligation odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:AssetShape {
-	odrl:uid IRI .
-	odrl:hasPolicy odrl:Policy .
+	odrl:hasPolicy odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
 }
-shape odrlShape:AssetCollectionShape {
+shape odrlShape:PartyShape -> odrl:Party {
 	odrl:uid IRI .
-	odrl:hasPolicy odrl:Policy .
+	odrl:assigneeOf odrl:Policy @odrlShape:PolicyShape .
+	odrl:assignerOf odrl:Policy @odrlShape:PolicyShape .
+	odrl:partOf IRI .
+}
+shape odrlShape:ActionShape -> odrl:Action {
+	odrl:includedIn odrl:Action @odrlShape:ActionShape .
+	odrl:implies odrl:Action @odrlShape:ActionShape .
+	odrl:refinement IRI .
+}
+shape odrlShape:PermissionShape -> odrl:Permission {
+	odrl:uid IRI .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:failure odrl:Rule @odrlShape:RuleShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:output odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:duty odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:ProhibitionShape -> odrl:Prohibition {
+	odrl:uid IRI .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:failure odrl:Rule @odrlShape:RuleShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:output odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:remedy odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:DutyShape -> odrl:Duty {
+	odrl:uid IRI .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:failure odrl:Rule @odrlShape:RuleShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:output odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:consequence odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:RuleShape -> odrl:Rule {
+	odrl:uid IRI .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:failure odrl:Rule @odrlShape:RuleShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:output odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:AgreementShape -> odrl:Agreement {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:OfferShape -> odrl:Offer {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:SetShape -> odrl:Set {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:AssertionShape -> odrl:Assertion {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:PrivacyShape -> odrl:Privacy {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:RequestShape -> odrl:Request {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:TicketShape -> odrl:Ticket {
+	odrl:uid IRI .
+	odrl:profile IRI .
+	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
+	odrl:relation odrl:Asset @odrlShape:AssetShape .
+	odrl:function odrl:Party @odrlShape:PartyShape .
+	odrl:conflict odrl:ConflictTerm @odrlShape:ConflictTermShape .
+	odrl:target odrl:Asset @odrlShape:AssetShape .
+	odrl:assignee odrl:Party @odrlShape:PartyShape .
+	odrl:assigner odrl:Party @odrlShape:PartyShape .
+	odrl:action odrl:Action @odrlShape:ActionShape .
+	odrl:permission odrl:Permission @odrlShape:PermissionShape .
+	odrl:prohibition odrl:Prohibition @odrlShape:ProhibitionShape .
+	odrl:obligation odrl:Duty @odrlShape:DutyShape .
+	odrl:constraint IRI .
+}
+shape odrlShape:AssetCollectionShape -> odrl:AssetCollection {
+	odrl:uid IRI .
+	odrl:hasPolicy odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
 	odrl:source IRI .
 	odrl:refinement IRI .
 }
-shape odrlShape:PartyShape {
+shape odrlShape:PartyCollectionShape -> odrl:PartyCollection {
 	odrl:uid IRI .
-	odrl:assigneeOf odrl:Policy .
-	odrl:assignerOf odrl:Policy .
-	odrl:partOf IRI .
-}
-shape odrlShape:PartyCollectionShape {
-	odrl:uid IRI .
-	odrl:assigneeOf odrl:Policy .
-	odrl:assignerOf odrl:Policy .
+	odrl:assigneeOf odrl:Policy @odrlShape:PolicyShape .
+	odrl:assignerOf odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
 	odrl:source IRI .
 	odrl:refinement IRI .
 }
-shape odrlShape:ActionShape {
-	odrl:includedIn odrl:Action .
-	odrl:implies odrl:Action .
-	odrl:refinement IRI .
-}
-shape odrlShape:PermissionShape {
+shape odrlShape:ConstraintShape -> odrl:Constraint {
 	odrl:uid IRI .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:failure odrl:Rule .
-	odrl:target odrl:Asset .
-	odrl:output odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:duty odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:ProhibitionShape {
-	odrl:uid IRI .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:failure odrl:Rule .
-	odrl:target odrl:Asset .
-	odrl:output odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:remedy odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:DutyShape {
-	odrl:uid IRI .
-	odrl:relation odrl:Asset .
-	odrl:function odrl:Party .
-	odrl:failure odrl:Rule .
-	odrl:target odrl:Asset .
-	odrl:output odrl:Asset .
-	odrl:assignee odrl:Party .
-	odrl:assigner odrl:Party .
-	odrl:action odrl:Action .
-	odrl:consequence odrl:Duty .
-	odrl:constraint IRI .
-}
-shape odrlShape:ConstraintShape {
-	odrl:uid IRI .
-	odrl:operator odrl:Operator .
+	odrl:operator odrl:Operator @odrlShape:OperatorShape .
 	odrl:rightOperand Literal .
 	odrl:rightOperandReference IRI .
-	odrl:leftOperand odrl:LeftOperand .
+	odrl:leftOperand odrl:LeftOperand @odrlShape:LeftOperandShape .
 	odrl:unit IRI .
-	odrl:dataType rdfs:Datatype .
+	odrl:dataType rdfs:Datatype @<http://www.w3.org/ns/odrl/2/shape/rdf-schema#DatatypeShape> .
 	odrl:status IRI .
 }
-shape odrlShape:LogicalConstraintShape {
+shape odrlShape:LogicalConstraintShape -> odrl:LogicalConstraint {
 	odrl:uid IRI .
 	odrl:operand IRI .
 }
