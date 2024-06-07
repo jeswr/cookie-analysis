@@ -21,8 +21,9 @@
     "semantic-release": "semantic-release",
     "start": "ts-node lib/index.ts",
     "dtou": "ts-node lib/dtou.ts",
+    "odrl": "ts-node lib/odrl.ts",
     "secret:set": "gh secret set -f .env",
-    "generate:shapes": "ts-node lib/odrlShapeGen.ts",
+    "generate:shapes": "ts-node lib/odrlShapeGen2.ts",
     "generate:shex": "shacl2shex shapes/ .shex/",
     "generate:ldo": "ldo build -i shapes/ -o lib/ldo/",
     "generate": "npm run generate:shapes && npm run generate:shex && npm run generate:ldo"

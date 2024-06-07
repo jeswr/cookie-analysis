@@ -3,8 +3,8 @@ PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX odrlShape: <http://www.w3.org/ns/odrl/2/shape/>
 
 shape odrlShape:PolicyShape -> odrl:Policy {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -19,12 +19,12 @@ shape odrlShape:PolicyShape -> odrl:Policy {
 	odrl:constraint IRI .
 }
 shape odrlShape:AssetShape -> odrl:Asset {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:hasPolicy odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
 }
 shape odrlShape:PartyShape -> odrl:Party {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:assigneeOf odrl:Policy @odrlShape:PolicyShape .
 	odrl:assignerOf odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
@@ -35,7 +35,7 @@ shape odrlShape:ActionShape -> odrl:Action {
 	odrl:refinement IRI .
 }
 shape odrlShape:PermissionShape -> odrl:Permission {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
 	odrl:failure odrl:Rule @odrlShape:RuleShape .
@@ -48,7 +48,7 @@ shape odrlShape:PermissionShape -> odrl:Permission {
 	odrl:constraint IRI .
 }
 shape odrlShape:ProhibitionShape -> odrl:Prohibition {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
 	odrl:failure odrl:Rule @odrlShape:RuleShape .
@@ -61,7 +61,7 @@ shape odrlShape:ProhibitionShape -> odrl:Prohibition {
 	odrl:constraint IRI .
 }
 shape odrlShape:DutyShape -> odrl:Duty {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
 	odrl:failure odrl:Rule @odrlShape:RuleShape .
@@ -74,7 +74,7 @@ shape odrlShape:DutyShape -> odrl:Duty {
 	odrl:constraint IRI .
 }
 shape odrlShape:RuleShape -> odrl:Rule {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
 	odrl:failure odrl:Rule @odrlShape:RuleShape .
@@ -86,8 +86,8 @@ shape odrlShape:RuleShape -> odrl:Rule {
 	odrl:constraint IRI .
 }
 shape odrlShape:AgreementShape -> odrl:Agreement {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -102,8 +102,8 @@ shape odrlShape:AgreementShape -> odrl:Agreement {
 	odrl:constraint IRI .
 }
 shape odrlShape:OfferShape -> odrl:Offer {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -118,8 +118,8 @@ shape odrlShape:OfferShape -> odrl:Offer {
 	odrl:constraint IRI .
 }
 shape odrlShape:SetShape -> odrl:Set {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -134,8 +134,8 @@ shape odrlShape:SetShape -> odrl:Set {
 	odrl:constraint IRI .
 }
 shape odrlShape:AssertionShape -> odrl:Assertion {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -150,8 +150,8 @@ shape odrlShape:AssertionShape -> odrl:Assertion {
 	odrl:constraint IRI .
 }
 shape odrlShape:PrivacyShape -> odrl:Privacy {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -166,8 +166,8 @@ shape odrlShape:PrivacyShape -> odrl:Privacy {
 	odrl:constraint IRI .
 }
 shape odrlShape:RequestShape -> odrl:Request {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -182,8 +182,8 @@ shape odrlShape:RequestShape -> odrl:Request {
 	odrl:constraint IRI .
 }
 shape odrlShape:TicketShape -> odrl:Ticket {
-	odrl:uid IRI .
-	odrl:profile IRI .
+	odrl:uid Literal .
+	odrl:profile Literal .
 	odrl:inheritFrom odrl:Policy @odrlShape:PolicyShape .
 	odrl:relation odrl:Asset @odrlShape:AssetShape .
 	odrl:function odrl:Party @odrlShape:PartyShape .
@@ -198,31 +198,31 @@ shape odrlShape:TicketShape -> odrl:Ticket {
 	odrl:constraint IRI .
 }
 shape odrlShape:AssetCollectionShape -> odrl:AssetCollection {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:hasPolicy odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
-	odrl:source IRI .
+	odrl:source Literal .
 	odrl:refinement IRI .
 }
 shape odrlShape:PartyCollectionShape -> odrl:PartyCollection {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:assigneeOf odrl:Policy @odrlShape:PolicyShape .
 	odrl:assignerOf odrl:Policy @odrlShape:PolicyShape .
 	odrl:partOf IRI .
-	odrl:source IRI .
+	odrl:source Literal .
 	odrl:refinement IRI .
 }
 shape odrlShape:ConstraintShape -> odrl:Constraint {
-	odrl:uid IRI .
+	odrl:uid Literal .
 	odrl:operator odrl:Operator @odrlShape:OperatorShape .
 	odrl:rightOperand Literal .
-	odrl:rightOperandReference IRI .
+	odrl:rightOperandReference Literal .
 	odrl:leftOperand odrl:LeftOperand @odrlShape:LeftOperandShape .
-	odrl:unit IRI .
+	odrl:unit Literal .
 	odrl:dataType rdfs:Datatype @<http://www.w3.org/ns/odrl/2/shape/rdf-schema#DatatypeShape> .
-	odrl:status IRI .
+	odrl:status Literal .
 }
 shape odrlShape:LogicalConstraintShape -> odrl:LogicalConstraint {
-	odrl:uid IRI .
-	odrl:operand IRI .
+	odrl:uid Literal .
+	odrl:operand Literal .
 }

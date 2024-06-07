@@ -1,4 +1,7 @@
-// import 'dotenv/config';
+import 'dotenv/config';
+import { datasetFromShape } from '@jeswr/utils';
+import { RequestShapeShapeType } from './ldo/odrl.shapeTypes';
+import { OCD } from './types/OCD';
 // import { LocalFileCache } from 'langchain/cache/file_system';
 // import { ChatOpenAI } from '@langchain/openai';
 // import {} from "@langchain/community/vectorstores/"
@@ -13,7 +16,30 @@
 // use cases [78, 61], as well as to describe consent records and contracts for sensor
 // data [49, 50].
 
-// async function run() {
+async function run(ocd: OCD) {
+  const dataset = datasetFromShape(RequestShapeShapeType, {
+    '@id': `urn:${ocd.ID}`,
+    target: [{
+      '@id': ocd['Cookie / Data Key name'],
+    }],
+    uid: [ocd.ID],
+    // FIXME: See if this should be a URI
+    profile: ['https://w3id.org/oac#'],
+    permission: [{
+      action: ['read'],
+      target: [ocd['Cookie / Data Key name']],
+      constraint: [{
+
+        // "http://www.w3.org/ns/odrl/2/hasPolicy": [{
+        //     "@id": 'urn:' + ocd.ID
+        // }],
+        // ['http://www.w3.org/ns/odrl/2/hasPolicy']: [{}]
+      }],
+    }],
+  });
+
+  console.log(...dataset);
+
 //   const model = new ChatOpenAI({
 //     model: 'gpt-4o',
 //     cache: await LocalFileCache.create('./cache'),
@@ -23,9 +49,21 @@
 //     'Is there much use in LangSmith for research prototypes?'
 // );
 //   console.log(content);
-// }
+}
 
-// run();
+run({
+  // "site": "grooveshark.com",
+  ID: '8dc5d7e3-e31f-421a-8bad-6540172d787f',
+  Platform: 'Google',
+  Category: 'Marketing',
+  'Cookie / Data Key name': 'SID',
+  Domain: 'google.com',
+  Description: 'Download certain Google Tools and save certain preferences, for example the number of search results per page or activation of the SafeSearch Filter. Adjusts the ads that appear in Google Search.',
+  'Retention period': '2 years',
+  'Data Controller': 'Google',
+  'User Privacy & GDPR Rights Portals': 'https://privacy.google.com/take-control.html',
+  'Wildcard match': 0,
+});
 
 // function createRequest() {
 

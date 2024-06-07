@@ -13,9 +13,9 @@ async function main() {
   const { prefixes: odrlPrefixes } = await dereference('https://www.w3.org/ns/odrl/2/ODRL22.ttl');
   const { store, prefixes } = await shapeFromOnotology('https://www.w3.org/ns/odrl/2/ODRL22.ttl');
   fs.writeFileSync(
-    path.join(__dirname, '..', 'shapes', 'sparnaOdrl.ttl'),
+    path.join(__dirname, '..', 'shapes', 'sparnaOdrl.shce'),
     await serialize(store, {
-      contentType: 'text/turtle',
+      contentType: 'text/shaclc-ext',
       prefixes: { ...prefixes, ...odrlPrefixes },
     }),
   );

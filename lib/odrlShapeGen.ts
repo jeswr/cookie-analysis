@@ -23,6 +23,36 @@ const shapeBase = 'http://www.w3.org/ns/odrl/2/shape/';
 async function run() {
   const shapes = new Store([quad(namedNode(shapeBase), namedNode(rdf.type), namedNode('http://www.w3.org/2002/07/owl#Ontology'))]);
   const { store } = await dereference('https://www.w3.org/ns/odrl/2/ODRL22.ttl');
+
+  let added = true;
+  const classes = new Set<string>();
+  console.log(store.size);
+  do {
+    added = false;
+    // eslint-disable-next-line no-await-in-loop
+    await Promise.all(
+      // eslint-disable-next-line no-loop-func
+      store.getObjects(null, namedNode(rdfs.subClassOf), null).map(async (m) => {
+        console.log(m);
+        if (m.termType === 'NamedNode' && !classes.has(m.value)) {
+          added = true;
+          classes.add(m.value);
+          store.addQuads([...(await dereference(m.value)).store]);
+        }
+      }),
+    );
+    console.log(store.size);
+  } while (added);
+
+  // store.getObjects(null, namedNode(rdfs.subClassOf), null).map(async (m) => {});
+
+  // for (const m of store.getObjects(null, namedNode(rdfs.subClassOf), null)) {
+  //   try {
+
+  //   } catc
+  //   shapes.add(quad(m.subject, m.predicate, m.object));
+  // }
+
   const rules = [
     ...store,
     ...(await dereference(path.join(__dirname, 'rules.n3'), { localFiles: true })).store,
@@ -50,9 +80,12 @@ async function run() {
           shapes.add(quad(property, namedNode('http://www.w3.org/ns/shacl#nodeKind'), namedNode('http://www.w3.org/ns/shacl#Literal')));
         } else if (ranges.length === 1) {
           shapes.add(quad(property, namedNode('http://www.w3.org/ns/shacl#class'), ranges[0]));
-        } else {
+        } else if (ranges.length > 0) {
           // Not entirely correct but need to do it this way to work with LDO
           shapes.add(quad(property, namedNode('http://www.w3.org/ns/shacl#nodeKind'), namedNode('http://www.w3.org/ns/shacl#IRI')));
+        } else {
+          // Not entirely correct but need to do it this way to work with LDO
+          shapes.add(quad(property, namedNode('http://www.w3.org/ns/shacl#nodeKind'), namedNode('http://www.w3.org/ns/shacl#Literal')));
         }
       }
     }

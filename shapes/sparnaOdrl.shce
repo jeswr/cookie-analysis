@@ -1,0 +1,225 @@
+BASE <https://shacl-play.sparna.fr/shapes>
+PREFIX : <http://www.w3.org/ns/odrl/2/>
+PREFIX dash: <http://datashapes.org/dash#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX shapes: <https://shacl-play.sparna.fr/shapes/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+shape shapes:PartyScope -> odrl:PartyScope ;
+	rdfs:label "PartyScope"@en {
+	skos:note Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "note"@en
+	% .
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] in=["Individual"@en "Group"@en "All Group Connections"@en "All First-Level Connections"@en "All Second-level Connections"@en "All"@en] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:definition Literal rdf:langString [1..1] in=["Specifies that the scope of the relationship is the single Party individual."@en "Specifies that the scope of the relationship is the defined group with multiple individual members."@en "Specifies that the scope of the relationship is all of the group connections of the Party."@en "Specifies that the scope of the relationship is all of the first-level connections of the Party."@en "Specifies that the scope of the relationship is all of the second-level connections to the Party."@en "Specifies that the scope of the relationship is all of the collective individuals within a context."@en] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	owl:deprecated Literal xsd:boolean [1..1] hasValue=true %
+		sh:name "deprecated"@en
+	% .
+}
+shape shapes:Collection -> skos:Collection ;
+	rdfs:label "Collection"@en {
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+	skos:prefLabel Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "prefLabel"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:member IRI [1..*] skos:Concept|owl:ObjectProperty|rdf:Property|owl:Class|rdfs:Class|owl:DatatypeProperty|owl:TransitiveProperty|odrl:LeftOperand|odrl:Action|odrl:Operator|odrl:RightOperand|odrl:ConflictTerm|odrl:PartyScope|odrl:UndefinedTerm %
+		sh:name "member"@en
+	% .
+}
+shape shapes:RightOperand -> odrl:RightOperand ;
+	rdfs:label "RightOperand"@en {
+	rdfs:label Literal rdf:langString [1..1] languageIn=["en"] hasValue="Policy Rule Usage"@en %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:definition Literal rdf:langString [1..1] languageIn=["en"] hasValue="Indicates the actual datetime the action of the Rule was exercised."@en %
+		sh:name "definition"@en
+	% .
+	skos:scopeNote Literal rdf:langString [1..1] languageIn=["en"] hasValue="Non-Normative"@en %
+		sh:name "scopeNote"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	skos:note Literal rdf:langString [1..1] languageIn=["en"] hasValue="This can be used to express constraints with a LeftOperand relative to the time the rule is exercised. Operators indicate before (lt, lteq), during (eq) or after (gt, gteq) the usage of the rule. <br />Example: <code>event lt policyUsage</code> expresses that the identified event must have happened before the action of the rule is exercised."@en %
+		sh:name "note"@en
+	% .
+}
+shape shapes:LeftOperand -> odrl:LeftOperand ;
+	rdfs:label "LeftOperand"@en {
+	rdfs:label Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+	skos:note Literal [0..1] rdf:langString|xsd:string %
+		sh:name "note"@en
+	% .
+	skos:exactMatch IRI odrl:LeftOperand %
+		sh:name "exactMatch"@en
+	% .
+	skos:definition Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	owl:deprecated Literal xsd:boolean [0..1] %
+		sh:name "deprecated"@en
+	% .
+	skos:broaderTransitive IRI odrl:LeftOperand [0..1] %
+		sh:name "broaderTransitive"@en
+	% .
+}
+shape shapes:Operator -> odrl:Operator ;
+	rdfs:label "Operator"@en {
+	skos:definition Literal rdf:langString [1..1] in=["Indicating that a given value is less than or equal to the right operand of the Constraint."@en "A set-based operator indicating that a given value is all of the right operand of the Constraint."@en "Indicating that a given value is less than the right operand of the Constraint."@en "A set-based operator indicating that a given value is any of the right operand of the Constraint."@en "A set-based operator indicating that a given value is contained by the right operand of the Constraint."@en "A set-based operator indicating that a given value is an instance of the right operand of the Constraint."@en "Indicating that a given value is greater than or equal to the right operand of the Constraint."@en "Indicating that a given value equals the right operand of the Constraint."@en "Indicating that a given value is not equal to the right operand of the Constraint."@en "A set-based operator indicating that a given value is none of the right operand of the Constraint."@en "A set-based operator indicating that a given value contains the right operand of the Constraint."@en "Indicating that a given value is greater than the right operand of the Constraint."@en] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] in=["Less than or equal to"@en "Is all of"@en "Less than"@en "Is any of"@en "Is part of"@en "Is a"@en "Greater than or equal to"@en "Equal to"@en "Not equal to"@en "Is none of"@en "Has part"@en "Greater than"@en] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+}
+shape shapes:Action -> odrl:Action ;
+	rdfs:label "Action"@en {
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+	owl:sameAs IRI odrl:Action [0..1] %
+		sh:name "sameAs"@en
+	% .
+	skos:exactMatch IRI odrl:Action [0..1] %
+		sh:name "exactMatch"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	owl:deprecated Literal xsd:boolean [0..1] %
+		sh:name "deprecated"@en
+	% .
+	skos:note Literal [0..1] rdf:langString|xsd:string %
+		sh:name "note"@en
+	% .
+	odrl:includedIn IRI odrl:Action [0..1] %
+		sh:name "includedIn"@en
+	% .
+	skos:definition Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+}
+shape shapes:Concept -> skos:Concept ;
+	rdfs:label "Concept"@en {
+	rdfs:domain BlankNodeOrIRI [0..1] %
+		sh:name "domain"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	rdfs:range BlankNodeOrIRI [0..1] %
+		sh:name "range"@en
+	% .
+	skos:note Literal [0..1] rdf:langString|xsd:string %
+		sh:name "note"@en
+	% .
+	rdfs:subPropertyOf IRI [0..1] skos:Concept|owl:ObjectProperty|rdf:Property %
+		sh:name "subPropertyOf"@en
+	% .
+	owl:deprecated Literal xsd:boolean [0..1] %
+		sh:name "deprecated"@en
+	% .
+	owl:sameAs IRI odrl:Action [0..1] %
+		sh:name "sameAs"@en
+	% .
+	skos:broaderTransitive IRI odrl:LeftOperand [0..1] %
+		sh:name "broaderTransitive"@en
+	% .
+	owl:disjointWith IRI owl:Class|rdfs:Class|skos:Concept %
+		sh:name "disjointWith"@en
+	% .
+	odrl:includedIn IRI odrl:Action [0..1] %
+		sh:name "includedIn"@en
+	% .
+	skos:exactMatch IRI skos:Concept|odrl:LeftOperand|odrl:Action|owl:ObjectProperty|rdf:Property %
+		sh:name "exactMatch"@en
+	% .
+	skos:definition Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+	rdfs:subClassOf BlankNodeOrIRI [0..1] %
+		sh:name "subClassOf"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+}
+shape shapes:UndefinedTerm -> odrl:UndefinedTerm ;
+	rdfs:label "UndefinedTerm"@en {
+	owl:deprecated Literal xsd:boolean [1..1] hasValue=true %
+		sh:name "deprecated"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] in=["Support Undefined Actions"@en "Ignore Undefined Actions"@en] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:definition Literal rdf:langString [1..1] in=["The Action is to be supported as part of the policy – and the policy remains valid."@en "The Action is to be ignored and is not part of the policy – and the policy remains valid."@en] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	skos:note Literal rdf:langString [1..1] languageIn=["en"] hasValue="Used to support actions not known to the policy system."@en %
+		sh:name "note"@en
+	% .
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+}
+shape shapes:ConflictTerm -> odrl:ConflictTerm ;
+	rdfs:label "ConflictTerm"@en {
+	rdfs:isDefinedBy IRI owl:Ontology [1..1] hasValue=odrl: %
+		sh:name "isDefinedBy"@en
+	% .
+	skos:definition Literal rdf:langString [1..1] in=["The policy is void."@en "Prohibitions take preference over permissions."@en "Permissions take preference over prohibitions."@en] languageIn=["en"] %
+		sh:name "definition"@en
+	% .
+	skos:note Literal rdf:langString [1..1] in=["Used to indicate the policy is void for Conflict Strategy."@en "Used to determine policy conflict outcomes."@en] languageIn=["en"] %
+		sh:name "note"@en
+	% .
+	rdfs:label Literal rdf:langString [1..1] in=["Void Policy"@en "Prefer Prohibitions"@en "Prefer Permissions"@en] languageIn=["en"] %
+		sh:name "label"@en ;
+		dash:propertyRole dash:LabelRole
+	% .
+	skos:scopeNote Literal rdf:langString [0..1] languageIn=["en"] %
+		sh:name "scopeNote"@en
+	% .
+}
+
+<https://shacl-play.sparna.fr/shapes> dct:abstract "Generated by SHACL Play!"@en ;
+	dct:created "2024-06-06T15:21:42.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+

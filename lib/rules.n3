@@ -2,12 +2,26 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix log: <http://www.w3.org/2000/10/swap/log#> .
 @prefix list: <http://www.w3.org/2000/10/swap/list#>.
+@prefix schema: <https://schema.org/> .
 
+# https://schema.org/rangeIncludes
 {
     ?a rdfs:subClassOf ?b .
     ?b rdfs:subClassOf ?c .
 } => {
     ?a rdfs:subClassOf ?c .
+} .
+
+{
+    ?property schema:domainIncludes ?b .
+} => {
+    ?property rdfs:domain ?a .
+} .
+
+{
+    ?property schema:rangeIncludes ?b .
+} => {
+    ?property rdfs:range ?a .
 } .
 
 {
