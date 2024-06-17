@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">    
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>public-grddl-comments@w3.org Mail Archives</title>
+<link rel="help" href="/Help/" />
+<link rel="contents" title="List of public mailing lists" href="../" />
+<link rel="stylesheet" title="Normal view" href="/assets/styles/public.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="feed.atom" />
+<script defer="defer" src="/assets/js/archives.js"></script>
+</head>
+
+<body class="mainindex">
+<header class="head">
+ <nav class="breadcrumb" id="upper">
+ <ul>
+  <li><a href="https://www.w3.org/">W3C home</a></li>
+  <li><a href="/">Mailing lists</a></li>
+  <li><a href="../">Public</a></li>
+  </ul>
+ </nav> 
+
+<h1>public-grddl-comments@w3.org Mail Archives</h1>
+<div class="header">
+This list is for comments from the community on specifications produced by the <a href="http://www.w3.org/2001/sw/grddl-wg/">GRDDL working group</a>.
+
+</div><!--class=header-->
+ <nav id="navbar">
+  <ul class="hmenu_container">
+   <li>About this list:
+    <ul class="hmenu">
+     <li><a href="#latest">indices by date</a></li>
+     <li><a href="latest">latest messages</a></li>
+     <li><a href="mboxes/" class="restricted">messages in mailbox format</a></li>
+     <li><a href="feed.atom">Feed</a></li>
+    </ul>
+   </li>
+
+   <li>Mail actions:
+    <ul class="hmenu">
+     <li><a href="mailto:public-grddl-comments@w3.org">mail a new topic</a></li>
+     <li><a class="sub" href="mailto:public-grddl-comments-request&#64;w3.org?subject=subscribe">subscribe to this list</a></li>
+     <li><a class="unsub" href="mailto:public-grddl-comments-request&#64;w3.org?subject=unsubscribe">unsubscribe from this list</a></li>
+    </ul>
+   </li>
+   <li>Help:
+    <ul class="hmenu">
+	<li><a href="/Help/" rel="help">how to use the archives</a></li>
+	<li><a href="https://www.w3.org/Search/Mail/Public/">search the Public archives</a></li>
+    </ul>
+   </li>
+  </ul>
+ </nav>
+</header>
+<form method="get" action="https://www.w3.org/Search/Mail/Public/search">
+ <div class="search" role="search">
+  <input name="type-index" type="hidden" value="public-grddl-comments" />
+  <input name="index-type" type="hidden" value="t" /> 
+  <label for="keywords">
+    Search this list for <input name="keywords" id="keywords" type="text"
+    size="42" maxlength="100" value="" /></label>
+  <input type="submit" name="search" value="Search" /> 
+ </div>
+</form>
+<main>
+<table>
+ <caption>Access mail archives by date, thread, author and subject</caption>
+ <thead>
+   <tr>
+     <th>period</th>
+      <th colspan="3">re-sorted</th>
+      <th class="cell_period">messages</th>
+   </tr>
+</thead>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a id="latest" href="2017AprJun/">April to June 2017</a></td><td><a href="2017AprJun/thread.html">by thread</a></td><td><a href="2017AprJun/author.html">by author</a></td><td><a href="2017AprJun/subject.html">by subject</a></td><td class="cell_message">2</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2015JanMar/">January to March 2015</a></td><td><a href="2015JanMar/thread.html">by thread</a></td><td><a href="2015JanMar/author.html">by author</a></td><td><a href="2015JanMar/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2013JanMar/">January to March 2013</a></td><td><a href="2013JanMar/thread.html">by thread</a></td><td><a href="2013JanMar/author.html">by author</a></td><td><a href="2013JanMar/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2012AprJun/">April to June 2012</a></td><td><a href="2012AprJun/thread.html">by thread</a></td><td><a href="2012AprJun/author.html">by author</a></td><td><a href="2012AprJun/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+<tr><td class="cell_period"><a href="2012JanMar/">January to March 2012</a></td><td><a href="2012JanMar/thread.html">by thread</a></td><td><a href="2012JanMar/author.html">by author</a></td><td><a href="2012JanMar/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2011AprJun/">April to June 2011</a></td><td><a href="2011AprJun/thread.html">by thread</a></td><td><a href="2011AprJun/author.html">by author</a></td><td><a href="2011AprJun/subject.html">by subject</a></td><td class="cell_message">3</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2010OctDec/">October to December 2010</a></td><td><a href="2010OctDec/thread.html">by thread</a></td><td><a href="2010OctDec/author.html">by author</a></td><td><a href="2010OctDec/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+<tr><td class="cell_period"><a href="2010JanMar/">January to March 2010</a></td><td><a href="2010JanMar/thread.html">by thread</a></td><td><a href="2010JanMar/author.html">by author</a></td><td><a href="2010JanMar/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2009OctDec/">October to December 2009</a></td><td><a href="2009OctDec/thread.html">by thread</a></td><td><a href="2009OctDec/author.html">by author</a></td><td><a href="2009OctDec/subject.html">by subject</a></td><td class="cell_message">2</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2008OctDec/">October to December 2008</a></td><td><a href="2008OctDec/thread.html">by thread</a></td><td><a href="2008OctDec/author.html">by author</a></td><td><a href="2008OctDec/subject.html">by subject</a></td><td class="cell_message">3</td></tr>
+<tr><td class="cell_period"><a href="2008JulSep/">July to September 2008</a></td><td><a href="2008JulSep/thread.html">by thread</a></td><td><a href="2008JulSep/author.html">by author</a></td><td><a href="2008JulSep/subject.html">by subject</a></td><td class="cell_message">55</td></tr>
+<tr><td class="cell_period"><a href="2008AprJun/">April to June 2008</a></td><td><a href="2008AprJun/thread.html">by thread</a></td><td><a href="2008AprJun/author.html">by author</a></td><td><a href="2008AprJun/subject.html">by subject</a></td><td class="cell_message">71</td></tr>
+<tr><td class="cell_period"><a href="2008JanMar/">January to March 2008</a></td><td><a href="2008JanMar/thread.html">by thread</a></td><td><a href="2008JanMar/author.html">by author</a></td><td><a href="2008JanMar/subject.html">by subject</a></td><td class="cell_message">11</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2007OctDec/">October to December 2007</a></td><td><a href="2007OctDec/thread.html">by thread</a></td><td><a href="2007OctDec/author.html">by author</a></td><td><a href="2007OctDec/subject.html">by subject</a></td><td class="cell_message">9</td></tr>
+<tr><td class="cell_period"><a href="2007JulSep/">July to September 2007</a></td><td><a href="2007JulSep/thread.html">by thread</a></td><td><a href="2007JulSep/author.html">by author</a></td><td><a href="2007JulSep/subject.html">by subject</a></td><td class="cell_message">67</td></tr>
+<tr><td class="cell_period"><a href="2007AprJun/">April to June 2007</a></td><td><a href="2007AprJun/thread.html">by thread</a></td><td><a href="2007AprJun/author.html">by author</a></td><td><a href="2007AprJun/subject.html">by subject</a></td><td class="cell_message">124</td></tr>
+<tr><td class="cell_period"><a href="2007JanMar/">January to March 2007</a></td><td><a href="2007JanMar/thread.html">by thread</a></td><td><a href="2007JanMar/author.html">by author</a></td><td><a href="2007JanMar/subject.html">by subject</a></td><td class="cell_message">82</td></tr>
+</tbody>
+<tbody>
+<tr class="first">
+<td class="cell_period"><a href="2006OctDec/">October to December 2006</a></td><td><a href="2006OctDec/thread.html">by thread</a></td><td><a href="2006OctDec/author.html">by author</a></td><td><a href="2006OctDec/subject.html">by subject</a></td><td class="cell_message">47</td></tr>
+<tr><td class="cell_period"><a href="2006JulSep/">July to September 2006</a></td><td><a href="2006JulSep/thread.html">by thread</a></td><td><a href="2006JulSep/author.html">by author</a></td><td><a href="2006JulSep/subject.html">by subject</a></td><td class="cell_message">1</td></tr>
+</tbody>
+</table>
+</main>
+<div class="footer">
+
+</div><!--class=footer-->
+<footer>
+<hr />
+<address>
+<div class="email">
+</div><!--class=email-->
+<ul class="footer_hmenu">
+	<li>Maintained by <a href="https://www.w3.org/email/">W3C Postmaster</a></li>
+	<li class="footer_admin"><a
+	href="https://lists.w3.org/admin/manage?list=public-grddl-comments" class="restricted">Manage this list</a></li>
+    </ul>
+Last update on: Thu Jul 13 18:33:47 2023
+</address>
+</footer>
+</body></html>

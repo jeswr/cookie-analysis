@@ -1,0 +1,2522 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+<script src="/javascripts/highlight.pack.js"></script>
+<script>hljs.configure({classPrefix: ''}); hljs.initHighlightingOnLoad();</script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/alt-favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/alt-favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/alt-favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/alt-favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/alt-favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/alt-favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/alt-favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/alt-favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/alt-favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/alt-favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/alt-favicons/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/alt-favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/alt-favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/alt-favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/alt-favicons/manifest.json">
+<link rel="mask-icon" href="/alt-favicons/safari-pinned-tab.svg" color="#0b4e22">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/alt-favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/alt-favicons/browserconfig.xml">
+<meta name="theme-color" content="#0b4e22">
+
+
+    
+
+    
+    <title>JSON:API &mdash; Latest Specification (v1.1)</title>
+  </head>
+
+  <body class="spec_page">
+  <nav class="site-nav">
+  <div class="nav-inner">
+    <ul>
+      
+      
+        <li ><a href="/" title="JSON API">JSON API</a></li>
+      
+        <li class="active"><a href="/format/" title="Specification">Specification</a></li>
+      
+        <li ><a href="/extensions/" title="Extensions">Extensions</a></li>
+      
+        <li ><a href="/recommendations/" title="Recommendations">Recommendations</a></li>
+      
+        <li ><a href="/examples/" title="Examples">Examples</a></li>
+      
+        <li ><a href="/implementations/" title="Implementations">Implementations</a></li>
+      
+        <li ><a href="/faq/" title="FAQ">FAQ</a></li>
+      
+        <li ><a href="/about/" title="About">About</a></li>
+      
+      <li class="version">
+        <a href="/format/#status" class="pill">v1.1 <span class="stable">Stable</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  
+    <div class="site-wrapper">
+      
+        <div class="sidebar">
+          <nav class="document-outline" id="document-outline">
+            
+            
+              <div id="version-picker-wrapper" class="sidebar-top">
+                <label for="version-picker">Version: </label>
+                <select class="version-picker" id="version-picker">
+                  <option value="/format/"
+                    selected
+                  >
+                    Latest Version (v1.1)
+                  </option>
+                  <option
+                    value="/format/1.2/"
+                    
+                  >
+                    Upcoming Version (v1.2)
+                  </option>
+                  <optgroup label="Old Versions/Permalinks">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                        <option value="/format/1.0"
+                          
+                        >
+                          v1.0
+                        </option>
+                      
+                    
+                      
+                    
+                      
+                        <option value="/format/1.1"
+                          
+                        >
+                          v1.1
+                        </option>
+                      
+                    
+                      
+                    
+                      
+                    
+                  </optgroup>
+                </select>
+              </div>
+            
+          </nav>
+        </div>
+      
+      <main class="content">
+        
+          <h1>
+            
+    
+
+
+
+
+  Latest Specification (v1.1)
+
+
+
+    
+          </h1>
+        
+        <section>
+          
+            
+            <h2 id="auto-id--status"><a href="#status" id="status" class="headerlink"></a> Status</h2>
+
+<p>This page presents the latest published version of JSON:API, which is
+  currently version 1.1. New versions of JSON:API <strong>will
+  always be backwards compatible</strong> using a <em>never remove, only add</em> strategy.
+  Additions can be proposed in our <a href="http://discuss.jsonapi.org/">discussion forum</a>.</p>
+
+<p>If you catch an error in the specification’s text, or if you write an
+  implementation, please let us know by opening an issue or pull request at our
+  <a href="https://github.com/json-api/json-api">GitHub repository</a>.</p>
+
+          
+          
+<h2 id="auto-id--introduction"><a href="#introduction" id="introduction" class="headerlink"></a> Introduction</h2>
+
+<p>JSON:API is a specification for how a client should request that resources be
+fetched or modified, and how a server should respond to those requests. JSON:API
+can be easily extended with <a href="#extensions">extensions</a> and <a href="#profiles">profiles</a>.</p>
+
+<p>JSON:API is designed to minimize both the number of requests and the amount of
+data transmitted between clients and servers. This efficiency is achieved
+without compromising readability, flexibility, or discoverability.</p>
+
+<p>JSON:API requires use of the JSON:API media type
+(<a href="http://www.iana.org/assignments/media-types/application/vnd.api+json"><code class="language-plaintext highlighter-rouge">application/vnd.api+json</code></a>)
+for exchanging data.</p>
+
+<h2 id="auto-id--semantics"><a href="#semantics" id="semantics" class="headerlink"></a> Semantics</h2>
+
+<p>All document members, query parameters, and processing rules defined by
+this specification are collectively called “specification semantics”.</p>
+
+<p>Certain document members, query parameters, and processing rules are reserved
+for implementors to define at their discretion. These are called “implementation
+semantics”.</p>
+
+<p>All other semantics are reserved for potential future use by this specification.</p>
+
+<h2 id="auto-id--conventions"><a href="#conventions" id="conventions" class="headerlink"></a> Conventions</h2>
+
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”,
+“SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this
+document are to be interpreted as described in
+<a href="https://tools.ietf.org/html/bcp14">BCP 14</a>
+[<a href="https://tools.ietf.org/html/rfc2119">RFC2119</a>]
+[<a href="https://tools.ietf.org/html/rfc8174">RFC8174</a>]
+when, and only when, they appear in all capitals, as shown here.</p>
+
+<h2 id="auto-id--the-jsonapi-media-type"><a href="#jsonapi-media-type" id="jsonapi-media-type" class="headerlink"></a> The JSON:API Media Type</h2>
+
+<p>The JSON:API media type is
+<a href="http://www.iana.org/assignments/media-types/application/vnd.api+json"><code class="language-plaintext highlighter-rouge">application/vnd.api+json</code></a>.</p>
+
+<h3 id="auto-id--media-type-parameters"><a href="#media-type-parameters" id="media-type-parameters" class="headerlink"></a> Media Type Parameters</h3>
+
+<p>The JSON:API specification supports two media type parameters: <code class="language-plaintext highlighter-rouge">ext</code> and
+<code class="language-plaintext highlighter-rouge">profile</code>, which are used to specify <a href="#extensions">extensions</a> and <a href="#profiles">profiles</a>, respectively.</p>
+
+<blockquote>
+  <p>Note: A media type parameter is an extra piece of information that can
+accompany a media type. For example, in the header
+<code class="language-plaintext highlighter-rouge">Content-Type: text/html; charset="utf-8"</code>, the media type is <code class="language-plaintext highlighter-rouge">text/html</code> and
+<code class="language-plaintext highlighter-rouge">charset</code> is a parameter.</p>
+</blockquote>
+
+<h3 id="auto-id--extensions"><a href="#extensions" id="extensions" class="headerlink"></a> Extensions</h3>
+
+<p>Extensions provide a means to “extend” the base specification by defining
+additional <a href="#semantics">specification semantics</a>.</p>
+
+<p>Extensions cannot alter or remove specification semantics, nor can they specify
+implementation semantics.</p>
+
+<h3 id="auto-id--profiles"><a href="#profiles" id="profiles" class="headerlink"></a> Profiles</h3>
+
+<p>Profiles provide a means to share a particular usage of the specification among
+implementations.</p>
+
+<p>Profiles can specify <a href="#semantics">implementation semantics</a>, but cannot alter,
+add to, or remove specification semantics.</p>
+
+<h3 id="auto-id--rules-for-media-type-parameters"><a href="#media-type-parameter-rules" id="media-type-parameter-rules" class="headerlink"></a> Rules for Media Type Parameters</h3>
+
+<p>The JSON:API media type <strong>MUST NOT</strong> be specified with any media type parameters
+other than <code class="language-plaintext highlighter-rouge">ext</code> and <code class="language-plaintext highlighter-rouge">profile</code>. The <code class="language-plaintext highlighter-rouge">ext</code> parameter is used to support
+<a href="#extensions">extensions</a> and the <code class="language-plaintext highlighter-rouge">profile</code> parameter is used to support <a href="#profiles">profiles</a>.</p>
+
+<p>Extensions and profiles are each uniquely identified by a
+<a href="https://tools.ietf.org/html/rfc3986">URI</a>. Visiting an extension’s or a
+profile’s URI <strong>SHOULD</strong> return documentation that describes its usage. The
+values of the <code class="language-plaintext highlighter-rouge">ext</code> and <code class="language-plaintext highlighter-rouge">profile</code> parameters <strong>MUST</strong> equal a space-separated
+(U+0020 SPACE, “ “) list of extension or profile URIs, respectively.</p>
+
+<blockquote>
+  <p>Note: When serializing the <code class="language-plaintext highlighter-rouge">ext</code> or <code class="language-plaintext highlighter-rouge">profile</code> media type parameters, the HTTP
+specification requires that parameter values be surrounded by quotation marks
+(U+0022 QUOTATION MARK, “"”).</p>
+</blockquote>
+
+<h4 id="auto-id--rules-for-extensions"><a href="#extension-rules" id="extension-rules" class="headerlink"></a> Rules for Extensions</h4>
+
+<p>An extension <strong>MAY</strong> impose additional processing rules or further restrictions
+and it <strong>MAY</strong> define new object members as described below.</p>
+
+<p>An extension <strong>MUST NOT</strong> lessen or remove any processing rules, restrictions or
+object member requirements defined in this specification or other extensions.</p>
+
+<p>An extension <strong>MAY</strong> define new members within the document structure defined by
+this specification. The rules for extension member names are covered
+<a href="#extension-members">below</a>.</p>
+
+<p>An extension <strong>MAY</strong> define new query parameters. The rules for extension-defined
+query parameters are covered <a href="#extension-query-parameters">below</a>.</p>
+
+<p>When an extension defines new query parameters or document members, the
+extension <strong>MUST</strong> define a namespace to guarantee that extensions will never
+conflict with current or future versions of this specification. A namespace
+<strong>MUST</strong> meet all of the following conditions:</p>
+
+<ul>
+  <li>A namespace <strong>MUST</strong> contain at least one character.</li>
+  <li>A namespace <strong>MUST</strong> contain only these characters:
+    <ul>
+      <li>U+0061 to U+007A, “a-z”</li>
+      <li>U+0041 to U+005A, “A-Z”</li>
+      <li>U+0030 to U+0039, “0-9”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>An extension <strong>MUST NOT</strong> define more than one namespace. The namespace used for
+all query parameters and document members <strong>MUST</strong> be the same for any given
+extension.</p>
+
+<p>In the following example, an extension with the namespace <code class="language-plaintext highlighter-rouge">version</code> has
+specified a resource object member <code class="language-plaintext highlighter-rouge">version:id</code> to support per-resource
+versioning. This member might appear as follows:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span><span class="w">
+</span><span class="err">Content-Type:</span><span class="w"> </span><span class="err">application/vnd.api+json;</span><span class="w"> </span><span class="err">ext=</span><span class="s2">"https://jsonapi.org/ext/version"</span><span class="w">
+
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version:id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"42"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="auto-id--rules-for-profiles"><a href="#profile-rules" id="profile-rules" class="headerlink"></a> Rules for Profiles</h4>
+
+<p>The rules for profile usage are dictated by <a href="https://tools.ietf.org/html/rfc6906">RFC
+6906</a>.</p>
+
+<p>A profile <strong>MAY</strong> define document members and processing rules that are reserved
+for implementors.</p>
+
+<p>A profile <strong>MUST NOT</strong> define any query parameters except <a href="#query-parameters-custom">implementation-specific query parameters</a>.</p>
+
+<p>A profile <strong>MUST NOT</strong> alter or remove processing rules that have been defined
+by this specification or by an <a href="#extensions">extension</a>. However, a profile
+<strong>MAY</strong> define processing rules for query parameters whose processing rules
+have been reserved for implementors to define at their discretion.</p>
+
+<p>For example, a profile could define rules for interpreting <a href="#fetching-filtering">the <code class="language-plaintext highlighter-rouge">filter</code> query
+parameter</a>, but it could not specify that relationship
+names in <a href="#fetching-includes">the <code class="language-plaintext highlighter-rouge">include</code> query parameter</a> are
+space-separated instead of dot-separated.</p>
+
+<p>Unlike extensions, profiles do not need to define a namespace for document
+members because profiles cannot define specification semantics and thus cannot
+conflict with current or future versions of this specification. However, it is
+possible for profiles to conflict with other profiles. Therefore, it is the
+responsibility of implementors to ensure that they do not support conflicting
+profiles.</p>
+
+<p>In the following example, a profile has defined a <code class="language-plaintext highlighter-rouge">timestamps</code>
+<a href="#document-resource-object-attributes">attribute</a>. According to the profile, the attribute must be an
+object containing a <code class="language-plaintext highlighter-rouge">created</code> member and a <code class="language-plaintext highlighter-rouge">modified</code> member and these members’
+values must use the <a href="https://tools.ietf.org/html/rfc3339">RFC 3339</a> format.
+With such a profile applied, a response might appear as follows:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="err">OK</span><span class="w">
+</span><span class="err">Content-Type:</span><span class="w"> </span><span class="err">application/vnd.api+json;</span><span class="w"> </span><span class="err">profile=</span><span class="s2">"https://example.com/resource-timestamps"</span><span class="w">
+
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"timestamps"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-07-21T12:09:00Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"modified"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-07-30T10:19:01Z"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="auto-id--content-negotiation"><a href="#content-negotiation" id="content-negotiation" class="headerlink"></a> Content Negotiation</h2>
+
+<h3 id="auto-id--universal-responsibilities"><a href="#content-negotiation-all" id="content-negotiation-all" class="headerlink"></a> Universal Responsibilities</h3>
+
+<p>Clients and servers <strong>MUST</strong> send all JSON:API payloads using the JSON:API media
+type in the <code class="language-plaintext highlighter-rouge">Content-Type</code> header.</p>
+
+<p>Clients and servers <strong>MUST</strong> specify the <code class="language-plaintext highlighter-rouge">ext</code> media type parameter in the
+<code class="language-plaintext highlighter-rouge">Content-Type</code> header when they have applied one or more extensions to a
+JSON:API document.</p>
+
+<p>Clients and servers <strong>MUST</strong> specify the <code class="language-plaintext highlighter-rouge">profile</code> media type parameters in the
+<code class="language-plaintext highlighter-rouge">Content-Type</code> header when they have applied one or more profiles to a JSON:API
+document.</p>
+
+<h3 id="auto-id--client-responsibilities"><a href="#content-negotiation-clients" id="content-negotiation-clients" class="headerlink"></a> Client Responsibilities</h3>
+
+<p>When processing a JSON:API response document, clients <strong>MUST</strong> ignore any
+parameters other than <code class="language-plaintext highlighter-rouge">ext</code> and <code class="language-plaintext highlighter-rouge">profile</code> parameters in the server’s
+<code class="language-plaintext highlighter-rouge">Content-Type</code> header.</p>
+
+<p>A client <strong>MAY</strong> use the <code class="language-plaintext highlighter-rouge">ext</code> media type parameter in an <code class="language-plaintext highlighter-rouge">Accept</code> header to
+require that a server apply all the specified extensions to the response
+document.</p>
+
+<p>A client <strong>MAY</strong> use the <code class="language-plaintext highlighter-rouge">profile</code> media type parameter in an <code class="language-plaintext highlighter-rouge">Accept</code> header
+to request that the server apply one or more profiles to the response document.</p>
+
+<blockquote>
+  <p>Note: A client is allowed to send more than one acceptable media type in the
+<code class="language-plaintext highlighter-rouge">Accept</code> header, including multiple instances of the JSON:API media type. This
+allows clients to request different combinations of the <code class="language-plaintext highlighter-rouge">ext</code> and <code class="language-plaintext highlighter-rouge">profile</code>
+media type parameters. A client can use <a href="https://tools.ietf.org/html/rfc7231#section-5.3.2">quality values</a>
+to indicate that some combinations are less preferable than others. Media types
+specified without a qvalue are equally preferable to each other, regardless of
+their order, and are always considered more preferable than a media type with a
+qvalue less than 1.</p>
+</blockquote>
+
+<h3 id="auto-id--server-responsibilities"><a href="#content-negotiation-servers" id="content-negotiation-servers" class="headerlink"></a> Server Responsibilities</h3>
+
+<p>If a request specifies the <code class="language-plaintext highlighter-rouge">Content-Type</code> header with the JSON:API media type,
+servers <strong>MUST</strong> respond with a <code class="language-plaintext highlighter-rouge">415 Unsupported Media Type</code> status code if
+that media type contains any media type parameters other than <code class="language-plaintext highlighter-rouge">ext</code> or
+<code class="language-plaintext highlighter-rouge">profile</code>.</p>
+
+<p>If a request specifies the <code class="language-plaintext highlighter-rouge">Content-Type</code> header with an instance of
+the JSON:API media type modified by the <code class="language-plaintext highlighter-rouge">ext</code> media type parameter and that
+parameter contains an unsupported extension URI, the server <strong>MUST</strong> respond
+with a <code class="language-plaintext highlighter-rouge">415 Unsupported Media Type</code> status code.</p>
+
+<blockquote>
+  <p>Note: JSON:API servers that do not support version 1.1 of this specification
+  will respond with a <code class="language-plaintext highlighter-rouge">415 Unsupported Media Type</code> client error if the <code class="language-plaintext highlighter-rouge">ext</code> or
+  <code class="language-plaintext highlighter-rouge">profile</code> media type parameter is present.</p>
+</blockquote>
+
+<p>If a request’s <code class="language-plaintext highlighter-rouge">Accept</code> header contains an instance of the JSON:API media type,
+servers <strong>MUST</strong> ignore instances of that media type which are modified by a
+media type parameter other than <code class="language-plaintext highlighter-rouge">ext</code> or <code class="language-plaintext highlighter-rouge">profile</code>. If all instances of that
+media type are modified with a media type parameter other than <code class="language-plaintext highlighter-rouge">ext</code> or <code class="language-plaintext highlighter-rouge">profile</code>,
+servers <strong>MUST</strong> respond with a <code class="language-plaintext highlighter-rouge">406 Not Acceptable</code> status code. If every
+instance of that media type is modified by the <code class="language-plaintext highlighter-rouge">ext</code> parameter and each contains
+at least one unsupported extension URI, the server <strong>MUST</strong> also respond with a
+<code class="language-plaintext highlighter-rouge">406 Not Acceptable</code>.</p>
+
+<p>If the <code class="language-plaintext highlighter-rouge">profile</code> parameter is received, a server <strong>SHOULD</strong> attempt to apply any
+requested profile(s) to its response. A server <strong>MUST</strong> ignore any profiles
+that it does not recognize.</p>
+
+<blockquote>
+  <p>Note: The above rules guarantee strict agreement on extensions between the
+  client and server, while the application of profiles is left to the discretion
+  of the server.</p>
+</blockquote>
+
+<p>Servers that support the <code class="language-plaintext highlighter-rouge">ext</code> or <code class="language-plaintext highlighter-rouge">profile</code> media type parameters <strong>SHOULD</strong>
+specify the <code class="language-plaintext highlighter-rouge">Vary</code> header with <code class="language-plaintext highlighter-rouge">Accept</code> as one of its values. This applies to
+responses with and without any <a href="#profiles">profiles</a> or <a href="#extensions">extensions</a> applied.</p>
+
+<blockquote>
+  <p>Note: Some HTTP intermediaries (e.g. CDNs) may ignore the <code class="language-plaintext highlighter-rouge">Vary</code> header
+unless specifically configured to respect it.</p>
+</blockquote>
+
+<h2 id="auto-id--document-structure"><a href="#document-structure" id="document-structure" class="headerlink"></a> Document Structure</h2>
+
+<p>This section describes the structure of a JSON:API document, which is identified
+by the <a href="#content-negotiation-all">JSON:API media type</a>. JSON:API documents are
+defined in JavaScript Object Notation (JSON) [<a href="http://tools.ietf.org/html/rfc8259">RFC8259</a>].</p>
+
+<p>Although the same media type is used for both request and response documents,
+certain aspects are only applicable to one or the other. These differences are
+called out below.</p>
+
+<p>Extensions <strong>MAY</strong> define new members within the document structure. These
+members <strong>MUST</strong> comply with the naming requirements specified
+<a href="#extension-members">below</a>.</p>
+
+<p>Unless otherwise noted, objects defined by this specification or any applied
+extensions <strong>MUST NOT</strong> contain any additional members. Client and server
+implementations <strong>MUST</strong> ignore non-compliant members.</p>
+
+<blockquote>
+  <p>Note: These conditions allow this specification to evolve through additive
+changes.</p>
+</blockquote>
+
+<h3 id="auto-id--top-level"><a href="#document-top-level" id="document-top-level" class="headerlink"></a> Top Level</h3>
+
+<p>A JSON object <strong>MUST</strong> be at the root of every JSON:API request and response
+document containing data. This object defines a document’s “top level”.</p>
+
+<p>A document <strong>MUST</strong> contain at least one of the following top-level members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">data</code>: the document’s “primary data”.</li>
+  <li><code class="language-plaintext highlighter-rouge">errors</code>: an array of <a href="#errors">error objects</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code>: a <a href="#document-meta">meta object</a> that contains non-standard
+meta-information.</li>
+  <li>a member defined by an applied <a href="#extensions">extension</a>.</li>
+</ul>
+
+<p>The members <code class="language-plaintext highlighter-rouge">data</code> and <code class="language-plaintext highlighter-rouge">errors</code> <strong>MUST NOT</strong> coexist in the same document.</p>
+
+<p>A document <strong>MAY</strong> contain any of these top-level members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">jsonapi</code>: an object describing the server’s implementation.</li>
+  <li><code class="language-plaintext highlighter-rouge">links</code>: a <a href="#document-links">links object</a> related to the primary data.</li>
+  <li><code class="language-plaintext highlighter-rouge">included</code>: an array of <a href="#document-resource-objects">resource objects</a> that are related to the primary
+data and/or each other (“included resources”).</li>
+</ul>
+
+<p>If a document does not contain a top-level <code class="language-plaintext highlighter-rouge">data</code> key, the <code class="language-plaintext highlighter-rouge">included</code> member
+<strong>MUST NOT</strong> be present either.</p>
+
+<p>The top-level <a href="#document-links">links object</a> <strong>MAY</strong> contain the following members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">self</code>: the <a href="#document-links">link</a> that generated the current response document. If a
+document has extensions or profiles applied to it, this link <strong>SHOULD</strong> be
+represented by a <a href="#document-links-link-object">link object</a> with the <code class="language-plaintext highlighter-rouge">type</code> target attribute specifying the
+JSON:API media type with all applicable parameters.</li>
+  <li><code class="language-plaintext highlighter-rouge">related</code>: a <a href="#document-resource-object-related-resource-links">related resource link</a> when the primary data represents a
+resource relationship.</li>
+  <li><code class="language-plaintext highlighter-rouge">describedby</code>: a <a href="#document-links-link">link</a> to a description document (e.g. OpenAPI or JSON
+Schema) for the current document.</li>
+  <li><a href="#fetching-pagination">pagination</a> links for the primary data.</li>
+</ul>
+
+<blockquote>
+  <p>Note: The <code class="language-plaintext highlighter-rouge">self</code> link in the top-level <code class="language-plaintext highlighter-rouge">links</code> object allows a client to
+refresh the data represented by the current response document. The client
+should be able to use the provided link without applying any additional
+information. Therefore the link must contain the query parameters provided
+by the client to generate the response document. This includes but is not
+limited to query parameters used for [inclusion of related resources][fetching resources],
+[sparse fieldsets][fetching sparse fieldsets], [sorting][fetching sorting],
+[pagination][fetching pagination] and [filtering][fetching filtering].</p>
+</blockquote>
+
+<p>The document’s “primary data” is a representation of the resource or collection
+of resources targeted by a request.</p>
+
+<p>Primary data <strong>MUST</strong> be either:</p>
+
+<ul>
+  <li>a single <a href="#document-resource-objects">resource object</a>, a single <a href="#document-resource-identifier-objects">resource identifier object</a>, or <code class="language-plaintext highlighter-rouge">null</code>,
+for requests that target single resources</li>
+  <li>an array of <a href="#document-resource-objects">resource objects</a>, an array of
+<a href="#document-resource-identifier-objects">resource identifier objects</a>, or
+an empty array (<code class="language-plaintext highlighter-rouge">[]</code>), for requests that target resource collections</li>
+</ul>
+
+<p>For example, the following primary data is a single resource object:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">article's</span><span class="w"> </span><span class="err">attributes</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="err">this</span><span class="w"> </span><span class="err">article's</span><span class="w"> </span><span class="err">relationships</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The following primary data is a single <a href="#document-resource-identifier-objects">resource identifier object</a> that
+references the same resource:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A logical collection of resources <strong>MUST</strong> be represented as an array, even if
+it only contains one item or is empty.</p>
+
+<h3 id="auto-id--resource-objects"><a href="#document-resource-objects" id="document-resource-objects" class="headerlink"></a> Resource Objects</h3>
+
+<p>“Resource objects” appear in a JSON:API document to represent resources.</p>
+
+<p>A resource object <strong>MUST</strong> contain at least the following top-level members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">id</code></li>
+  <li><code class="language-plaintext highlighter-rouge">type</code></li>
+</ul>
+
+<p>Exception: The <code class="language-plaintext highlighter-rouge">id</code> member is not required when the resource object originates
+at the client and represents a new resource to be created on the server. In that
+case, a client <strong>MAY</strong> include a <code class="language-plaintext highlighter-rouge">lid</code> member to uniquely identify the resource
+by <code class="language-plaintext highlighter-rouge">type</code> <em>locally</em> within the document.</p>
+
+<p>In addition, a resource object <strong>MAY</strong> contain any of these top-level members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">attributes</code>: an <a href="#document-resource-object-attributes">attributes object</a> representing some of the resource’s data.</li>
+  <li><code class="language-plaintext highlighter-rouge">relationships</code>: a <a href="#document-resource-object-relationships">relationships object</a> describing relationships between
+ the resource and other JSON:API resources.</li>
+  <li><code class="language-plaintext highlighter-rouge">links</code>: a <a href="#document-links">links object</a> containing links related to the resource.</li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code>: a <a href="#document-meta">meta object</a> containing non-standard meta-information about a
+resource that can not be represented as an attribute or relationship.</li>
+</ul>
+
+<p>Here’s how an article (i.e. a resource of type “articles”) might appear in a document:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/relationships/author"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/author"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="auto-id--identification"><a href="#document-resource-object-identification" id="document-resource-object-identification" class="headerlink"></a> Identification</h4>
+
+<p>As noted above, every <a href="#document-resource-objects">resource object</a> <strong>MUST</strong> contain a
+<code class="language-plaintext highlighter-rouge">type</code> member. Every resource object <strong>MUST</strong> also contain an <code class="language-plaintext highlighter-rouge">id</code> member,
+except when the resource object originates at the client and represents a new
+resource to be created on the server. If <code class="language-plaintext highlighter-rouge">id</code> is omitted due to this exception,
+a <code class="language-plaintext highlighter-rouge">lid</code> member <strong>MAY</strong> be included to uniquely identify the resource by <code class="language-plaintext highlighter-rouge">type</code>
+<em>locally</em> within the document. The value of the <code class="language-plaintext highlighter-rouge">lid</code> member <strong>MUST</strong> be
+identical for every representation of the resource in the document, including
+<a href="#document-resource-identifier-objects">resource identifier objects</a>.</p>
+
+<p>The values of the <code class="language-plaintext highlighter-rouge">id</code>, <code class="language-plaintext highlighter-rouge">type</code>, and <code class="language-plaintext highlighter-rouge">lid</code> members <strong>MUST</strong> be strings.</p>
+
+<p>Within a given API, each resource object’s <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">id</code> pair <strong>MUST</strong>
+identify a single, unique resource. (The set of URIs controlled by a server,
+or multiple servers acting as one, constitute an API.)</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">type</code> member is used to describe <a href="#document-resource-objects">resource objects</a> that share common
+attributes and relationships.</p>
+
+<p>The values of <code class="language-plaintext highlighter-rouge">type</code> members <strong>MUST</strong> adhere to the same constraints as
+<a href="#document-member-names">member names</a>.</p>
+
+<blockquote>
+  <p>Note: This spec is agnostic about inflection rules, so the value of <code class="language-plaintext highlighter-rouge">type</code>
+can be either plural or singular. However, the same value should be used
+consistently throughout an implementation.</p>
+</blockquote>
+
+<h4 id="auto-id--fields"><a href="#document-resource-object-fields" id="document-resource-object-fields" class="headerlink"></a> Fields</h4>
+
+<p>A resource object’s <a href="#document-resource-object-attributes">attributes</a> and its <a href="#document-resource-object-relationships">relationships</a> are collectively called
+its “<a href="#document-resource-object-fields">fields</a>”.</p>
+
+<p>Fields for a <a href="#document-resource-objects">resource object</a> <strong>MUST</strong> share a common namespace with each
+other and with <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">id</code>. In other words, a resource can not have an
+attribute and relationship with the same name, nor can it have an attribute
+or relationship named <code class="language-plaintext highlighter-rouge">type</code> or <code class="language-plaintext highlighter-rouge">id</code>.</p>
+
+<h5 id="auto-id--attributes"><a href="#document-resource-object-attributes" id="document-resource-object-attributes" class="headerlink"></a> Attributes</h5>
+
+<p>The value of the <code class="language-plaintext highlighter-rouge">attributes</code> key <strong>MUST</strong> be an object (an “attributes
+object”). Members of the attributes object (“attributes”) represent information
+about the <a href="#document-resource-objects">resource object</a> in which it’s defined.</p>
+
+<p>Attributes may contain any valid JSON value, including complex data structures
+involving JSON objects and arrays.</p>
+
+<p>Keys that reference related resources (e.g. <code class="language-plaintext highlighter-rouge">author_id</code>) <strong>SHOULD NOT</strong> appear
+as attributes. Instead, <a href="#document-resource-object-relationships">relationships</a> <strong>SHOULD</strong> be used.</p>
+
+<blockquote>
+  <p>Note: See <a href="#document-resource-object-fields">fields</a> and <a href="#document-member-names">member names</a> for more restrictions on this container.</p>
+</blockquote>
+
+<h5 id="auto-id--relationships"><a href="#document-resource-object-relationships" id="document-resource-object-relationships" class="headerlink"></a> Relationships</h5>
+
+<p>The value of the <code class="language-plaintext highlighter-rouge">relationships</code> key <strong>MUST</strong> be an object (a “relationships
+object”). Each member of a relationships object represents
+a “relationship” from the <a href="#document-resource-objects">resource object</a>
+in which it has been defined to other resource objects.</p>
+
+<p>Relationships may be to-one or to-many.</p>
+
+<p>A relationship’s name is given by its key. The value at that key <strong>MUST</strong> be an
+object (“relationship object”).</p>
+
+<p><a id="document-resource-object-relationships-relationship-object"></a>
+A “relationship object” <strong>MUST</strong> contain at least one of the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">links</code>: a <a href="#document-links">links object</a> containing at least one of the following:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">self</code>: a link for the relationship itself (a “relationship link”). This
+link allows the client to directly manipulate the relationship. For example,
+removing an <code class="language-plaintext highlighter-rouge">author</code> through an <code class="language-plaintext highlighter-rouge">article</code>’s relationship URL would disconnect
+the person from the <code class="language-plaintext highlighter-rouge">article</code> without deleting the <code class="language-plaintext highlighter-rouge">people</code> resource itself.
+When fetched successfully, this link returns the <a href="#document-resource-object-linkage">linkage</a>
+for the related resources as its primary data.
+(See <a href="#fetching-relationships">Fetching Relationships</a>.)</li>
+      <li><code class="language-plaintext highlighter-rouge">related</code>: a <a href="#document-resource-object-related-resource-links">related resource link</a></li>
+      <li>a member defined by an applied <a href="#extensions">extension</a>.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">data</code>: <a href="#document-resource-object-linkage">resource linkage</a></li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code>: a <a href="#document-meta">meta object</a> that contains non-standard meta-information about the
+relationship.</li>
+  <li>a member defined by an applied <a href="#extensions">extension</a>.</li>
+</ul>
+
+<p>A relationship object that represents a to-many relationship <strong>MAY</strong> also contain
+<a href="#fetching-pagination">pagination</a> links under the <code class="language-plaintext highlighter-rouge">links</code> member, as described below. Any
+<a href="#fetching-pagination">pagination</a> links in a relationship object <strong>MUST</strong> paginate the relationship
+data, not the related resources.</p>
+
+<blockquote>
+  <p>Note: See <a href="#document-resource-object-fields">fields</a> and <a href="#document-member-names">member names</a> for more restrictions on this container.</p>
+</blockquote>
+
+<h5 id="auto-id--related-resource-links"><a href="#document-resource-object-related-resource-links" id="document-resource-object-related-resource-links" class="headerlink"></a> Related Resource Links</h5>
+
+<p>A “related resource link” provides access to <a href="#document-resource-objects">resource objects</a> <a href="#document-links">linked</a>
+in a <a href="#document-resource-object-relationships">relationship</a>. When fetched, the related resource object(s)
+are returned as the response’s primary data.</p>
+
+<p>For example, an <code class="language-plaintext highlighter-rouge">article</code>’s <code class="language-plaintext highlighter-rouge">comments</code> <a href="#document-resource-object-relationships">relationship</a> could
+specify a <a href="#document-links">link</a> that returns a collection of comment <a href="#document-resource-objects">resource objects</a>
+when retrieved through a <code class="language-plaintext highlighter-rouge">GET</code> request.</p>
+
+<p>If present, a related resource link <strong>MUST</strong> reference a valid URL, even if the
+relationship isn’t currently associated with any target resources. Additionally,
+a related resource link <strong>MUST NOT</strong> change because its relationship’s content
+changes.</p>
+
+<h5 id="auto-id--resource-linkage"><a href="#document-resource-object-linkage" id="document-resource-object-linkage" class="headerlink"></a> Resource Linkage</h5>
+
+<p>Resource linkage in a <a href="#document-compound-documents">compound document</a> allows a client to link together all
+of the included <a href="#document-resource-objects">resource objects</a> without having to <code class="language-plaintext highlighter-rouge">GET</code> any URLs via <a href="#document-links">links</a>.</p>
+
+<p>Resource linkage <strong>MUST</strong> be represented as one of the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">null</code> for empty to-one relationships.</li>
+  <li>an empty array (<code class="language-plaintext highlighter-rouge">[]</code>) for empty to-many relationships.</li>
+  <li>a single <a href="#document-resource-identifier-objects">resource identifier object</a> for non-empty to-one relationships.</li>
+  <li>an array of <a href="#document-resource-identifier-objects">resource identifier objects</a> for non-empty to-many relationships.</li>
+</ul>
+
+<blockquote>
+  <p>Note: The spec does not impart meaning to order of resource identifier
+objects in linkage arrays of to-many relationships, although implementations
+may do that. Arrays of resource identifier objects may represent ordered
+or unordered relationships, and both types can be mixed in one response
+object.</p>
+</blockquote>
+
+<p>For example, the following article is associated with an <code class="language-plaintext highlighter-rouge">author</code>:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/relationships/author"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/author"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">author</code> relationship includes a link for the relationship itself (which
+allows the client to change the related author directly), a related resource
+link to fetch the resource objects, and linkage information.</p>
+
+<h4 id="auto-id--resource-links"><a href="#document-resource-object-links" id="document-resource-object-links" class="headerlink"></a> Resource Links</h4>
+
+<p>The optional <code class="language-plaintext highlighter-rouge">links</code> member within each <a href="#document-resource-objects">resource object</a> contains <a href="#document-links">links</a>
+related to the resource.</p>
+
+<p>If present, this links object <strong>MAY</strong> contain a <code class="language-plaintext highlighter-rouge">self</code> <a href="#document-links">link</a> that
+identifies the resource represented by the resource object.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A server <strong>MUST</strong> respond to a <code class="language-plaintext highlighter-rouge">GET</code> request to the specified URL with a
+response that includes the resource as the primary data.</p>
+
+<h3 id="auto-id--resource-identifier-objects"><a href="#document-resource-identifier-objects" id="document-resource-identifier-objects" class="headerlink"></a> Resource Identifier Objects</h3>
+
+<p>A “resource identifier object” is an object that identifies an individual
+resource.</p>
+
+<p>A “resource identifier object” <strong>MUST</strong> contain a <code class="language-plaintext highlighter-rouge">type</code> member. It <strong>MUST</strong>
+also contain an <code class="language-plaintext highlighter-rouge">id</code> member, except when it represents a new resource to be
+created on the server. In this case, a <code class="language-plaintext highlighter-rouge">lid</code> member <strong>MUST</strong> be included that
+identifies the new resource.</p>
+
+<p>The values of the <code class="language-plaintext highlighter-rouge">id</code>, <code class="language-plaintext highlighter-rouge">type</code>, and <code class="language-plaintext highlighter-rouge">lid</code> members <strong>MUST</strong> be strings.</p>
+
+<p>A “resource identifier object” <strong>MAY</strong> also include a <code class="language-plaintext highlighter-rouge">meta</code> member, whose value is a <a href="#document-meta">meta</a> object that
+contains non-standard meta-information.</p>
+
+<h3 id="auto-id--compound-documents"><a href="#document-compound-documents" id="document-compound-documents" class="headerlink"></a> Compound Documents</h3>
+
+<p>Servers <strong>MAY</strong> allow responses that include related resources along with the
+requested primary resources. Such responses are called “compound documents”.</p>
+
+<p>In a compound document, all included resources <strong>MUST</strong> be represented as an
+array of <a href="#document-resource-objects">resource objects</a> in a top-level <code class="language-plaintext highlighter-rouge">included</code> member.</p>
+
+<p>Every included resource object <strong>MUST</strong> be identified via a chain of
+relationships originating in a document’s primary data. This means that
+compound documents require “full linkage” and that no resource object can be
+included without a direct or indirect relationship to the document’s primary
+data.</p>
+
+<p>The only exception to the full linkage requirement is when relationship fields
+that would otherwise contain linkage data are excluded due to
+<a href="#fetching-sparse-fieldsets">sparse fieldsets</a> requested by the client.</p>
+
+<p>A complete example document with multiple included relationships:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JSON:API paints my bikeshed!"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/relationships/author"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/author"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/relationships/comments"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/comments"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"included"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dan"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gebhardt"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"twitter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dgeb"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/people/9"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"First!"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/comments/5"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I like XML better"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/comments/12"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A <a href="#document-compound-documents">compound document</a> <strong>MUST NOT</strong> include more than one <a href="#document-resource-objects">resource object</a> for
+each <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">id</code> pair.</p>
+
+<blockquote>
+  <p>Note: In a single document, you can think of the <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">id</code> as a
+composite key that uniquely references <a href="#document-resource-objects">resource objects</a> in another part of
+the document.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: For resources that do not contain an <code class="language-plaintext highlighter-rouge">id</code> member but do contain a <code class="language-plaintext highlighter-rouge">lid</code>,
+the <code class="language-plaintext highlighter-rouge">lid</code> is sufficient to establish resource identity and thus linkage between
+resource objects and resource identifier objects throughout the document.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: This approach ensures that a single canonical <a href="#document-resource-objects">resource object</a> is
+returned with each response, even when the same resource is referenced
+multiple times.</p>
+</blockquote>
+
+<h3 id="auto-id--meta-information"><a href="#document-meta" id="document-meta" class="headerlink"></a> Meta Information</h3>
+
+<p>Where specified, a <code class="language-plaintext highlighter-rouge">meta</code> member can be used to include non-standard
+meta-information. The value of each <code class="language-plaintext highlighter-rouge">meta</code> member <strong>MUST</strong> be an object (a
+“meta object”).</p>
+
+<p>Any members <strong>MAY</strong> be specified within <code class="language-plaintext highlighter-rouge">meta</code> objects.</p>
+
+<p>For example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"copyright"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Copyright 2015 Example Corp."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"authors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"Yehuda Katz"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Steve Klabnik"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Dan Gebhardt"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Tyler Kellen"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="auto-id--links"><a href="#document-links" id="document-links" class="headerlink"></a> Links</h3>
+
+<p>Where specified, a <code class="language-plaintext highlighter-rouge">links</code> member can be used to represent links. The value
+of this member <strong>MUST</strong> be an object (a “links object”).</p>
+
+<p><a href="#document-links-link" id="document-links-link"></a>
+Within this object, a link <strong>MUST</strong> be represented as either:</p>
+
+<ul>
+  <li>a string whose value is a URI-reference [<a href="https://tools.ietf.org/html/rfc3986#section-4.1">RFC3986 Section 4.1</a>]
+pointing to the link’s target,</li>
+  <li>a <a href="#document-links-link-object">link object</a> or</li>
+  <li><code class="language-plaintext highlighter-rouge">null</code> if the link does not exist.</li>
+</ul>
+
+<p>A link’s relation type <strong>SHOULD</strong> be inferred from the name of the link unless the
+link is a <a href="#document-links-link-object">link object</a> and the link object has a <code class="language-plaintext highlighter-rouge">rel</code> member.</p>
+
+<p>A link’s context is the <a href="#document-top-level">top-level object</a>, <a href="#document-resource-objects">resource
+object</a>, or <a href="#document-resource-object-relationships">relationship object</a> in which it
+appears.</p>
+
+<p>In the example below, the <code class="language-plaintext highlighter-rouge">self</code> link is a string whereas the <code class="language-plaintext highlighter-rouge">related</code> link is
+a <a href="#document-links-link-object">link object</a>. The <code class="language-plaintext highlighter-rouge">related</code> link object provides additional information
+about the targeted related resource collection as well as a schema that serves
+as a description document for that collection:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/relationships/comments"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/comments"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Comments"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"describedby"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/schemas/article-comments"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="auto-id--link-objects"><a id="document-links-link-object"></a> Link objects</h4>
+
+<p>A “link object” is an object that represents a <a href="https://tools.ietf.org/html/rfc8288">web link</a>.</p>
+
+<p>A link object <strong>MUST</strong> contain the following member:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">href</code>: a string whose value is a URI-reference [<a href="https://tools.ietf.org/html/rfc3986#section-4.1">RFC3986 Section 4.1</a>]
+pointing to the link’s target.</li>
+</ul>
+
+<p>A link object <strong>MAY</strong> also contain any of the following members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rel</code>: a string indicating the link’s relation type. The string <strong>MUST</strong> be a
+<a href="https://tools.ietf.org/html/rfc8288#section-2.1">valid link relation type</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">describedby</code>: a <a href="#document-links-link">link</a> to a description document (e.g. OpenAPI or JSON
+Schema) for the link target.</li>
+  <li><code class="language-plaintext highlighter-rouge">title</code>: a string which serves as a label for the destination of a link
+such that it can be used as a human-readable identifier (e.g., a menu
+entry).</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: a string indicating the media type of the link’s target.</li>
+  <li><code class="language-plaintext highlighter-rouge">hreflang</code>: a string or an array of strings indicating the language(s) of the
+link’s target. An array of strings indicates that the link’s target is
+available in multiple languages. Each string <strong>MUST</strong> be a valid language tag
+[<a href="https://tools.ietf.org/html/rfc5646">RFC5646</a>].</li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code>: a meta object containing non-standard meta-information about the
+link.</li>
+</ul>
+
+<blockquote>
+  <p>Note: the <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">hreflang</code> members are only hints; the target resource
+is not guaranteed to be available in the indicated media type or language
+when the link is actually followed.</p>
+</blockquote>
+
+<h3 id="auto-id--jsonapi-object"><a href="#document-jsonapi-object" id="document-jsonapi-object" class="headerlink"></a> JSON:API Object</h3>
+
+<p>A JSON:API document <strong>MAY</strong> include information about its implementation
+under a top level <code class="language-plaintext highlighter-rouge">jsonapi</code> member. If present, the value of the <code class="language-plaintext highlighter-rouge">jsonapi</code>
+member <strong>MUST</strong> be an object (a “jsonapi object”).</p>
+
+<p>The jsonapi object <strong>MAY</strong> contain any of the following members:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">version</code> - whose value is a string indicating the highest JSON:API version
+supported.</li>
+  <li><code class="language-plaintext highlighter-rouge">ext</code> - an array of URIs for all applied <a href="#extensions">extensions</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">profile</code> - an array of URIs for all applied <a href="#profiles">profiles</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code> - a <a href="#document-meta">meta</a> object that contains non-standard meta-information.</li>
+</ul>
+
+<p>Clients and servers <strong>MUST NOT</strong> use an <code class="language-plaintext highlighter-rouge">ext</code> or <code class="language-plaintext highlighter-rouge">profile</code> member for content
+negotiation. Content negotiation <strong>MUST</strong> only happen based on media type
+parameters in <code class="language-plaintext highlighter-rouge">Content-Type</code> header.</p>
+
+<p>A simple example appears below:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"jsonapi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ext"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://jsonapi.org/ext/atomic"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://example.com/profiles/flexible-pagination"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"http://example.com/profiles/resource-versioning"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the <code class="language-plaintext highlighter-rouge">version</code> member is not present, clients should assume the server
+implements at least version 1.0 of the specification.</p>
+
+<blockquote>
+  <p>Note: Because JSON:API is committed to making additive changes only, the
+version string primarily indicates which new features a server may support.</p>
+</blockquote>
+
+<h3 id="auto-id--member-names"><a href="#document-member-names" id="document-member-names" class="headerlink"></a> Member Names</h3>
+
+<p>Implementation and profile defined member names used in a JSON:API document
+<strong>MUST</strong> be treated as case sensitive by clients and servers, and they <strong>MUST</strong>
+meet all of the following conditions:</p>
+
+<ul>
+  <li>Member names <strong>MUST</strong> contain at least one character.</li>
+  <li>Member names <strong>MUST</strong> contain only the allowed characters listed below.</li>
+  <li>Member names <strong>MUST</strong> start and end with a “globally allowed character”,
+as defined below.</li>
+</ul>
+
+<p>To enable an easy mapping of member names to URLs, it is <strong>RECOMMENDED</strong> that
+member names use only non-reserved, URL safe characters specified in <a href="https://datatracker.ietf.org/doc/html/rfc3986#section-2.3">RFC 3986</a>.</p>
+
+<h4 id="auto-id--allowed-characters"><a href="#document-member-names-allowed-characters" id="document-member-names-allowed-characters" class="headerlink"></a> Allowed Characters</h4>
+
+<p>The following “globally allowed characters” <strong>MAY</strong> be used anywhere in a member name:</p>
+
+<ul>
+  <li>U+0061 to U+007A, “a-z”</li>
+  <li>U+0041 to U+005A, “A-Z”</li>
+  <li>U+0030 to U+0039, “0-9”</li>
+  <li>U+0080 and above (non-ASCII Unicode characters; <em>not recommended, not URL safe</em>)</li>
+</ul>
+
+<p>Additionally, the following characters are allowed in member names, except as the
+first or last character:</p>
+
+<ul>
+  <li>U+002D HYPHEN-MINUS, “-“</li>
+  <li>U+005F LOW LINE, “_”</li>
+  <li>U+0020 SPACE, “ “ <em>(not recommended, not URL safe)</em></li>
+</ul>
+
+<h4 id="auto-id--reserved-characters"><a href="#document-member-names-reserved-characters" id="document-member-names-reserved-characters" class="headerlink"></a> Reserved Characters</h4>
+
+<p>The following characters <strong>MUST NOT</strong> be used in implementation and
+<a href="#profiles">profile</a> defined member names:</p>
+
+<ul>
+  <li>U+002B PLUS SIGN, “+” <em>(has overloaded meaning in URL query strings)</em></li>
+  <li>U+002C COMMA, “,” <em>(used as a separator between relationship paths)</em></li>
+  <li>U+002E PERIOD, “.” <em>(used as a separator within relationship paths)</em></li>
+  <li>U+005B LEFT SQUARE BRACKET, “[” <em>(used in query parameter families)</em></li>
+  <li>U+005D RIGHT SQUARE BRACKET, “]” <em>(used in query parameter families)</em></li>
+  <li>U+0021 EXCLAMATION MARK, “!”</li>
+  <li>U+0022 QUOTATION MARK, ‘”’</li>
+  <li>U+0023 NUMBER SIGN, “#”</li>
+  <li>U+0024 DOLLAR SIGN, “$”</li>
+  <li>U+0025 PERCENT SIGN, “%”</li>
+  <li>U+0026 AMPERSAND, “&amp;”</li>
+  <li>U+0027 APOSTROPHE, “’”</li>
+  <li>U+0028 LEFT PARENTHESIS, “(“</li>
+  <li>U+0029 RIGHT PARENTHESIS, “)”</li>
+  <li>U+002A ASTERISK, “*”</li>
+  <li>U+002F SOLIDUS, “/”</li>
+  <li>U+003A COLON, “:”</li>
+  <li>U+003B SEMICOLON, “;”</li>
+  <li>U+003C LESS-THAN SIGN, “&lt;”</li>
+  <li>U+003D EQUALS SIGN, “=”</li>
+  <li>U+003E GREATER-THAN SIGN, “&gt;”</li>
+  <li>U+003F QUESTION MARK, “?”</li>
+  <li>U+0040 COMMERCIAL AT, “@” (except as first character in <a href="#document-member-names-at-members">@-Members</a>)</li>
+  <li>U+005C REVERSE SOLIDUS, “\”</li>
+  <li>U+005E CIRCUMFLEX ACCENT, “^”</li>
+  <li>U+0060 GRAVE ACCENT, “`”</li>
+  <li>U+007B LEFT CURLY BRACKET, “{“</li>
+  <li>U+007C VERTICAL LINE, “|”</li>
+  <li>U+007D RIGHT CURLY BRACKET, “}”</li>
+  <li>U+007E TILDE, “~”</li>
+  <li>U+007F DELETE</li>
+  <li>U+0000 to U+001F (C0 Controls)</li>
+</ul>
+
+<h4 id="auto-id---members"><a href="#document-member-names-at-members" id="document-member-names-at-members" class="headerlink"></a> @-Members</h4>
+
+<p>Member names <strong>MAY</strong> also begin with an at sign (U+0040 COMMERCIAL AT, “@”).
+Members named this way are called “@-Members”. @-Members <strong>MAY</strong> appear
+anywhere in a document.</p>
+
+<p>This specification provides no guidance on the meaning or usage of @-Members,
+which are considered to be <a href="#semantics">implementation semantics</a>. @-Members
+<strong>MUST</strong> be ignored when interpreting this specification’s definitions and
+processing instructions given outside of this subsection. For example, an
+<a href="#document-resource-object-attributes">attribute</a> is defined above as any member of the attributes object.
+However, because @-Members must be ignored when interpreting that definition, an
+@-Member that occurs in an attributes object is not an attribute.</p>
+
+<blockquote>
+  <p>Note: Among other things, “@” members can be used to add JSON-LD data to a
+JSON:API document. Such documents should be served with <a href="http://www.w3.org/TR/json-ld/#interpreting-json-as-json-ld">an extra header</a>
+to convey to JSON-LD clients that they contain JSON-LD data.</p>
+</blockquote>
+
+<h4 id="auto-id--extension-members"><a href="#extension-members" id="extension-members" class="headerlink"></a> Extension Members</h4>
+
+<p>The name of every new member introduced by an extension <strong>MUST</strong> be prefixed
+with the <a href="#extension-rules">extension’s namespace</a> followed by a colon (<code class="language-plaintext highlighter-rouge">:</code>).
+The remainder of the name <strong>MUST</strong> adhere to the rules for implementation
+defined <a href="#document-member-names">member names</a>.</p>
+
+<h2 id="auto-id--fetching-data"><a href="#fetching" id="fetching" class="headerlink"></a> Fetching Data</h2>
+
+<p>Data, including resources and relationships, can be fetched by sending a
+<code class="language-plaintext highlighter-rouge">GET</code> request to an endpoint.</p>
+
+<p>Responses can be further refined with the optional features described below.</p>
+
+<h3 id="auto-id--fetching-resources"><a href="#fetching-resources" id="fetching-resources" class="headerlink"></a> Fetching Resources</h3>
+
+<p>A server <strong>MUST</strong> support fetching resource data for every URL provided as:</p>
+
+<ul>
+  <li>a <code class="language-plaintext highlighter-rouge">self</code> link as part of the top-level links object</li>
+  <li>a <code class="language-plaintext highlighter-rouge">self</code> link as part of a resource-level links object</li>
+  <li>a <code class="language-plaintext highlighter-rouge">related</code> link as part of a relationship-level links object</li>
+</ul>
+
+<p>For example, the following request fetches a collection of articles:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>The following request fetches an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>And the following request fetches an article’s author:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1/author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<h4 id="auto-id--responses"><a href="#fetching-resources-responses" id="fetching-resources-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--200-ok"><a href="#fetching-resources-responses-200" id="fetching-resources-responses-200" class="headerlink"></a> 200 OK</h5>
+
+<p>A server <strong>MUST</strong> respond to a successful request to fetch an individual
+resource or resource collection with a <code class="language-plaintext highlighter-rouge">200 OK</code> response.</p>
+
+<p>A server <strong>MUST</strong> respond to a successful request to fetch a resource
+collection with an array of <a href="#document-resource-objects">resource objects</a> or an empty array (<code class="language-plaintext highlighter-rouge">[]</code>) as
+the response document’s primary data.</p>
+
+<p>For example, a <code class="language-plaintext highlighter-rouge">GET</code> request to a collection of articles could return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JSON:API paints my bikeshed!"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rails is Omakase"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A similar response representing an empty collection would be:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A server <strong>MUST</strong> respond to a successful request to fetch an individual
+resource with a <a href="#document-resource-objects">resource object</a> or <code class="language-plaintext highlighter-rouge">null</code> provided as
+the response document’s primary data.</p>
+
+<p><code class="language-plaintext highlighter-rouge">null</code> is only an appropriate response when the requested URL is one that
+might correspond to a single resource, but doesn’t currently.</p>
+
+<blockquote>
+  <p>Note: Consider, for example, a request to fetch a to-one related resource link.
+This request would respond with <code class="language-plaintext highlighter-rouge">null</code> when the relationship is empty (such that
+the link is corresponding to no resources) but with the single related resource’s
+<a href="#document-resource-objects">resource object</a> otherwise.</p>
+</blockquote>
+
+<p>For example, a <code class="language-plaintext highlighter-rouge">GET</code> request to an individual article could return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JSON:API paints my bikeshed!"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/author"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the above article’s author is missing, then a <code class="language-plaintext highlighter-rouge">GET</code> request to that related
+resource would return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/articles/1/author"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h5 id="auto-id--404-not-found"><a href="#fetching-resources-responses-404" id="fetching-resources-responses-404" class="headerlink"></a> 404 Not Found</h5>
+
+<p>A server <strong>MUST</strong> respond with <code class="language-plaintext highlighter-rouge">404 Not Found</code> when processing a request to
+fetch a single resource that does not exist, except when the request warrants a
+<code class="language-plaintext highlighter-rouge">200 OK</code> response with <code class="language-plaintext highlighter-rouge">null</code> as the primary data (as described above).</p>
+
+<h5 id="auto-id--other-responses"><a href="#fetching-resources-responses-other" id="fetching-resources-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h3 id="auto-id--fetching-relationships"><a href="#fetching-relationships" id="fetching-relationships" class="headerlink"></a> Fetching Relationships</h3>
+
+<p>A server <strong>MUST</strong> support fetching relationship data for every relationship URL
+provided as a <code class="language-plaintext highlighter-rouge">self</code> link as part of a relationship’s <code class="language-plaintext highlighter-rouge">links</code> object.</p>
+
+<p>For example, the following request fetches data about an article’s comments:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1/relationships/comments</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>And the following request fetches data about an article’s author:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1/relationships/author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<h4 id="auto-id--responses-1"><a href="#fetching-relationships-responses" id="fetching-relationships-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--200-ok-1"><a href="#fetching-relationships-responses-200" id="fetching-relationships-responses-200" class="headerlink"></a> 200 OK</h5>
+
+<p>A server <strong>MUST</strong> respond to a successful request to fetch a relationship
+with a <code class="language-plaintext highlighter-rouge">200 OK</code> response.</p>
+
+<p>The primary data in the response document <strong>MUST</strong> match the appropriate
+value for <a href="#document-resource-object-linkage">resource linkage</a>, as described above for
+<a href="#document-resource-object-relationships">relationship objects</a>.</p>
+
+<p>The top-level <a href="#document-links">links object</a> <strong>MAY</strong> contain <code class="language-plaintext highlighter-rouge">self</code> and <code class="language-plaintext highlighter-rouge">related</code> links,
+as described above for <a href="#document-resource-object-relationships">relationship objects</a>.</p>
+
+<p>For example, a <code class="language-plaintext highlighter-rouge">GET</code> request to a URL from a to-one relationship link could
+return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/relationships/author"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/author"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the above relationship is empty, then a <code class="language-plaintext highlighter-rouge">GET</code> request to the same URL would
+return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/relationships/author"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/author"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A <code class="language-plaintext highlighter-rouge">GET</code> request to a URL from a to-many relationship link could return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/relationships/tags"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/tags"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the above relationship is empty, then a <code class="language-plaintext highlighter-rouge">GET</code> request to the same URL would
+return:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/relationships/tags"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"related"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/articles/1/tags"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h5 id="auto-id--404-not-found-1"><a href="#fetching-relationships-responses-404" id="fetching-relationships-responses-404" class="headerlink"></a> 404 Not Found</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">404 Not Found</code> when processing a request to fetch
+a relationship link URL that does not exist.</p>
+
+<blockquote>
+  <p>Note: This can happen when the parent resource of the relationship
+does not exist. For example, when <code class="language-plaintext highlighter-rouge">/articles/1</code> does not exist, request to
+<code class="language-plaintext highlighter-rouge">/articles/1/relationships/tags</code> returns <code class="language-plaintext highlighter-rouge">404 Not Found</code>.</p>
+</blockquote>
+
+<p>If a relationship link URL exists but the relationship is empty, then
+<code class="language-plaintext highlighter-rouge">200 OK</code> <strong>MUST</strong> be returned, as described above.</p>
+
+<h5 id="auto-id--other-responses-1"><a href="#fetching-relationships-responses-other" id="fetching-relationships-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h3 id="auto-id--inclusion-of-related-resources"><a href="#fetching-includes" id="fetching-includes" class="headerlink"></a> Inclusion of Related Resources</h3>
+
+<p>An endpoint <strong>MAY</strong> return resources related to the primary data by default.</p>
+
+<p>An endpoint <strong>MAY</strong> also support an <code class="language-plaintext highlighter-rouge">include</code> query parameter to allow the
+client to customize which related resources should be returned.</p>
+
+<p>If an endpoint does not support the <code class="language-plaintext highlighter-rouge">include</code> parameter, it <strong>MUST</strong> respond
+with <code class="language-plaintext highlighter-rouge">400 Bad Request</code> to any requests that include it.</p>
+
+<p>If an endpoint supports the <code class="language-plaintext highlighter-rouge">include</code> parameter and a client supplies it:</p>
+
+<ul>
+  <li>The server’s response <strong>MUST</strong> be a <a href="#document-compound-documents">compound document</a> with an <code class="language-plaintext highlighter-rouge">included</code> key — even if that <code class="language-plaintext highlighter-rouge">included</code> key holds an empty array (because the requested relationships are empty).</li>
+  <li>The server <strong>MUST NOT</strong> include unrequested <a href="#document-resource-objects">resource objects</a> in the <code class="language-plaintext highlighter-rouge">included</code>
+section of the <a href="#document-compound-documents">compound document</a>.</li>
+</ul>
+
+<p>The value of the <code class="language-plaintext highlighter-rouge">include</code> parameter <strong>MUST</strong> be a comma-separated (U+002C
+COMMA, “,”) list of relationship paths. A relationship path is a dot-separated
+(U+002E FULL-STOP, “.”) list of <a href="#document-resource-object-relationships">relationship</a> names. An empty
+value indicates that no related resources should be returned.</p>
+
+<p>If a server is unable to identify a relationship path or does not support
+inclusion of resources from a path, it <strong>MUST</strong> respond with 400 Bad Request.</p>
+
+<blockquote>
+  <p>Note: For example, a relationship path could be <code class="language-plaintext highlighter-rouge">comments.author</code>, where
+<code class="language-plaintext highlighter-rouge">comments</code> is a relationship listed under a <code class="language-plaintext highlighter-rouge">articles</code> <a href="#document-resource-objects">resource object</a>, and
+<code class="language-plaintext highlighter-rouge">author</code> is a relationship listed under a <code class="language-plaintext highlighter-rouge">comments</code> <a href="#document-resource-objects">resource object</a>.</p>
+</blockquote>
+
+<p>For instance, comments could be requested with an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1?include=comments</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>In order to request resources related to other resources, a dot-separated path
+for each relationship name can be specified:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1?include=comments.author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note: Because <a href="#document-compound-documents">compound documents</a> require full linkage
+(except when relationship linkage is excluded by sparse fieldsets), intermediate
+resources in a multi-part path must be returned along with the leaf nodes. For
+example, a response to a request for <code class="language-plaintext highlighter-rouge">comments.author</code> should include <code class="language-plaintext highlighter-rouge">comments</code>
+as well as the <code class="language-plaintext highlighter-rouge">author</code> of each of those <code class="language-plaintext highlighter-rouge">comments</code>.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: A server may choose to expose a deeply nested relationship such as
+<code class="language-plaintext highlighter-rouge">comments.author</code> as a direct relationship with an alternative name such as
+<code class="language-plaintext highlighter-rouge">commentAuthors</code>. This would allow a client to request
+<code class="language-plaintext highlighter-rouge">/articles/1?include=commentAuthors</code> instead of
+<code class="language-plaintext highlighter-rouge">/articles/1?include=comments.author</code>. By exposing the nested relationship with
+an alternative name, the server can still provide full linkage in compound
+documents without including potentially unwanted intermediate resources.</p>
+</blockquote>
+
+<p>Multiple related resources can be requested in a comma-separated list:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1?include=comments.author,ratings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>Furthermore, related resources can be requested from a relationship endpoint:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles/1/relationships/comments?include=comments.author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>In this case, the primary data would be a collection of
+<a href="#document-resource-identifier-objects">resource identifier objects</a> that represent linkage to comments for an article,
+while the full comments and comment authors would be returned as included data.</p>
+
+<blockquote>
+  <p>Note: This section applies to any endpoint that responds with primary
+data, regardless of the request type. For instance, a server could support
+the inclusion of related resources along with a <code class="language-plaintext highlighter-rouge">POST</code> request to create a
+resource or relationship.</p>
+</blockquote>
+
+<h3 id="auto-id--sparse-fieldsets"><a href="#fetching-sparse-fieldsets" id="fetching-sparse-fieldsets" class="headerlink"></a> Sparse Fieldsets</h3>
+
+<p>A client <strong>MAY</strong> request that an endpoint return only specific <a href="#document-resource-object-fields">fields</a> in the
+response on a per-type basis by including a <code class="language-plaintext highlighter-rouge">fields[TYPE]</code> query parameter.</p>
+
+<p>The value of any <code class="language-plaintext highlighter-rouge">fields[TYPE]</code> parameter <strong>MUST</strong> be a comma-separated (U+002C
+COMMA, “,”) list that refers to the name(s) of the fields to be returned.
+An empty value indicates that no fields should be returned.</p>
+
+<p>If a client requests a restricted set of <a href="#document-resource-object-fields">fields</a> for a given resource type,
+an endpoint <strong>MUST NOT</strong> include additional <a href="#document-resource-object-fields">fields</a> in resource objects of
+that type in its response.</p>
+
+<p>If a client does not specify the set of <a href="#document-resource-object-fields">fields</a> for a given resource type, the
+server <strong>MAY</strong> send all fields, a subset of fields, or no fields for that
+resource type.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles?include=author&amp;fields[articles]=title,body&amp;fields[people]=name</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note: The above example URI shows unencoded <code class="language-plaintext highlighter-rouge">[</code> and <code class="language-plaintext highlighter-rouge">]</code> characters simply for
+readability. In practice, these characters should be percent-encoded. See
+“<a href="#appendix-query-details-square-brackets">Square Brackets in Parameter Names</a>”.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: This section applies to any endpoint that responds with resources as
+primary or included data, regardless of the request type. For instance, a
+server could support sparse fieldsets along with a <code class="language-plaintext highlighter-rouge">POST</code> request to create
+a resource.</p>
+</blockquote>
+
+<h3 id="auto-id--sorting"><a href="#fetching-sorting" id="fetching-sorting" class="headerlink"></a> Sorting</h3>
+
+<p>A server <strong>MAY</strong> choose to support requests to sort resource collections
+according to one or more criteria (“sort fields”).</p>
+
+<blockquote>
+  <p>Note: Although recommended, sort fields do not necessarily need to
+correspond to resource attribute and relationship names.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: It is recommended that dot-separated (U+002E FULL-STOP, “.”) sort
+fields be used to request sorting based upon relationship attributes. For
+example, a sort field of <code class="language-plaintext highlighter-rouge">author.name</code> could be used to request that the
+primary data be sorted based upon the <code class="language-plaintext highlighter-rouge">name</code> attribute of the <code class="language-plaintext highlighter-rouge">author</code>
+relationship.</p>
+</blockquote>
+
+<p>An endpoint <strong>MAY</strong> support requests to sort the primary data with a <code class="language-plaintext highlighter-rouge">sort</code>
+query parameter. The value for <code class="language-plaintext highlighter-rouge">sort</code> <strong>MUST</strong> represent sort fields.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/people?sort=age</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>An endpoint <strong>MAY</strong> support multiple sort fields by allowing comma-separated
+(U+002C COMMA, “,”) sort fields. Sort fields <strong>SHOULD</strong> be applied in the
+order specified.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/people?sort=age,name</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>The sort order for each sort field <strong>MUST</strong> be ascending unless it is prefixed
+with a minus (U+002D HYPHEN-MINUS, “-“), in which case it <strong>MUST</strong> be descending.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/articles?sort=-created,title</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<p>The above example should return the newest articles first. Any articles
+created on the same date will then be sorted by their title in ascending
+alphabetical order.</p>
+
+<p>If the server does not support sorting as specified in the query parameter
+<code class="language-plaintext highlighter-rouge">sort</code>, it <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">400 Bad Request</code>.</p>
+
+<p>If sorting is supported by the server and requested by the client via query
+parameter <code class="language-plaintext highlighter-rouge">sort</code>, the server <strong>MUST</strong> return elements of the top-level
+<code class="language-plaintext highlighter-rouge">data</code> array of the response ordered according to the criteria specified.
+The server <strong>MAY</strong> apply default sorting rules to top-level <code class="language-plaintext highlighter-rouge">data</code> if
+request parameter <code class="language-plaintext highlighter-rouge">sort</code> is not specified.</p>
+
+<blockquote>
+  <p>Note: This section applies to any endpoint that responds with a resource
+collection as primary data, regardless of the request type.</p>
+</blockquote>
+
+<h3 id="auto-id--pagination"><a href="#fetching-pagination" id="fetching-pagination" class="headerlink"></a> Pagination</h3>
+
+<p>A server <strong>MAY</strong> choose to limit the number of resources returned in a response
+to a subset (“page”) of the whole set available.</p>
+
+<p>A server <strong>MAY</strong> provide links to traverse a paginated data set (“pagination
+links”).</p>
+
+<p>Pagination links <strong>MUST</strong> appear in the links object that corresponds to a
+collection. To paginate the primary data, supply pagination links in the
+top-level <code class="language-plaintext highlighter-rouge">links</code> object. To paginate an included collection returned in
+a <a href="#document-compound-documents">compound document</a>, supply pagination links in the corresponding links
+object.</p>
+
+<p>The following keys <strong>MUST</strong> be used for pagination links:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">first</code>: the first page of data</li>
+  <li><code class="language-plaintext highlighter-rouge">last</code>: the last page of data</li>
+  <li><code class="language-plaintext highlighter-rouge">prev</code>: the previous page of data</li>
+  <li><code class="language-plaintext highlighter-rouge">next</code>: the next page of data</li>
+</ul>
+
+<p>Keys <strong>MUST</strong> either be omitted or have a <code class="language-plaintext highlighter-rouge">null</code> value to indicate that a
+particular link is unavailable.</p>
+
+<p>Concepts of order, as expressed in the naming of pagination links, <strong>MUST</strong>
+remain consistent with JSON:API’s <a href="#fetching-sorting">sorting rules</a>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">page</code> <a href="#query-parameters-families">query parameter family</a> is reserved for pagination. Servers and
+clients <strong>SHOULD</strong> use these parameters for pagination operations.</p>
+
+<blockquote>
+  <p>Note: JSON API is agnostic about the pagination strategy used by a server, but
+the <code class="language-plaintext highlighter-rouge">page</code> query parameter family can be used regardless of the strategy
+employed. For example, a page-based strategy might use query parameters such
+as <code class="language-plaintext highlighter-rouge">page[number]</code> and <code class="language-plaintext highlighter-rouge">page[size]</code>, while a cursor-based strategy might use
+<code class="language-plaintext highlighter-rouge">page[cursor]</code>.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: This section applies to any endpoint that responds with a resource
+collection as primary data, regardless of the request type.</p>
+</blockquote>
+
+<h3 id="auto-id--filtering"><a href="#fetching-filtering" id="fetching-filtering" class="headerlink"></a> Filtering</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">filter</code> <a href="#query-parameters-families">query parameter family</a> is reserved for filtering data. Servers
+and clients <strong>SHOULD</strong> use these parameters for filtering operations.</p>
+
+<blockquote>
+  <p>Note: JSON API is agnostic about the strategies supported by a server.</p>
+</blockquote>
+
+<h2 id="auto-id--creating-updating-and-deleting-resources"><a href="#crud" id="crud" class="headerlink"></a> Creating, Updating and Deleting Resources</h2>
+
+<p>A server <strong>MAY</strong> allow resources of a given type to be created. It <strong>MAY</strong>
+also allow existing resources to be modified or deleted.</p>
+
+<p>A request <strong>MUST</strong> completely succeed or fail (in a single “transaction”). No
+partial updates are allowed.</p>
+
+<blockquote>
+  <p>Note: The <code class="language-plaintext highlighter-rouge">type</code> member is required in every <a href="#document-resource-objects">resource object</a> throughout requests and
+responses in JSON:API. There are some cases, such as when <code class="language-plaintext highlighter-rouge">POST</code>ing to an
+endpoint representing heterogeneous data, when the <code class="language-plaintext highlighter-rouge">type</code> could not be inferred
+from the endpoint. However, picking and choosing when it is required would be
+confusing; it would be hard to remember when it was required and when it was
+not. Therefore, to improve consistency and minimize confusion, <code class="language-plaintext highlighter-rouge">type</code> is
+always required.</p>
+</blockquote>
+
+<h3 id="auto-id--creating-resources"><a href="#crud-creating" id="crud-creating" class="headerlink"></a> Creating Resources</h3>
+
+<p>A resource can be created by sending a <code class="language-plaintext highlighter-rouge">POST</code> request to a URL that represents
+a collection of resources. The request <strong>MUST</strong> include a single <a href="#document-resource-objects">resource object</a>
+as primary data. The <a href="#document-resource-objects">resource object</a> <strong>MUST</strong> contain at least a <code class="language-plaintext highlighter-rouge">type</code> member.</p>
+
+<p>For instance, a new photo might be created with the following request:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">POST</span> <span class="nn">/photos</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"photos"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ember Hamster"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/images/productivity.png"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"photographer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If a relationship is provided in the <code class="language-plaintext highlighter-rouge">relationships</code> member of the
+<a href="#document-resource-objects">resource object</a>, its value <strong>MUST</strong> be a relationship object with a <code class="language-plaintext highlighter-rouge">data</code>
+member. The value of this key represents the <a href="#document-resource-object-linkage">linkage</a> the new resource is to
+have.</p>
+
+<h4 id="auto-id--client-generated-ids"><a href="#crud-creating-client-ids" id="crud-creating-client-ids" class="headerlink"></a> Client-Generated IDs</h4>
+
+<p>A server <strong>MAY</strong> accept a client-generated ID along with a request to create
+a resource. An ID <strong>MUST</strong> be specified with an <code class="language-plaintext highlighter-rouge">id</code> key, the value of
+which <strong>MUST</strong> be a universally unique identifier. The client <strong>SHOULD</strong> use
+a properly generated and formatted <em>UUID</em> as described in RFC 4122
+[<a href="http://tools.ietf.org/html/rfc4122.html">RFC4122</a>].</p>
+
+<blockquote>
+  <p>NOTE: In some use-cases, such as importing data from another source, it
+may be possible to use something other than a UUID that is still guaranteed
+to be globally unique. Do not use anything other than a UUID unless you are
+100% confident that the strategy you are using indeed generates globally
+unique identifiers.</p>
+</blockquote>
+
+<p>For example:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">POST</span> <span class="nn">/photos</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"photos"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"550e8400-e29b-41d4-a716-446655440000"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ember Hamster"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/images/productivity.png"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">403 Forbidden</code> in response to an unsupported request
+to create a resource with a client-generated ID.</p>
+
+<h4 id="auto-id--responses-2"><a href="#crud-creating-responses" id="crud-creating-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--201-created"><a href="#crud-creating-responses-201" id="crud-creating-responses-201" class="headerlink"></a> 201 Created</h5>
+
+<p>If the requested resource has been created successfully and the server changes
+the resource in any way (for example, by assigning an <code class="language-plaintext highlighter-rouge">id</code>), the server <strong>MUST</strong>
+return a <code class="language-plaintext highlighter-rouge">201 Created</code> response and a document that contains the resource as
+primary data.</p>
+
+<p>The response <strong>SHOULD</strong> include a <code class="language-plaintext highlighter-rouge">Location</code> header identifying the location
+of the newly created resource, in order to comply with <a href="http://tools.ietf.org/html/rfc7231#section-6.3.2">RFC
+7231</a>.</p>
+
+<p>If the <a href="#document-resource-objects">resource object</a> returned by the response contains a <code class="language-plaintext highlighter-rouge">self</code> key in its
+<code class="language-plaintext highlighter-rouge">links</code> member and a <code class="language-plaintext highlighter-rouge">Location</code> header is provided, the value of the <code class="language-plaintext highlighter-rouge">self</code>
+member <strong>MUST</strong> match the value of the <code class="language-plaintext highlighter-rouge">Location</code> header.</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">201</span> <span class="ne">Created</span>
+<span class="na">Location</span><span class="p">:</span> <span class="s">http://example.com/photos/550e8400-e29b-41d4-a716-446655440000</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"photos"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"550e8400-e29b-41d4-a716-446655440000"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ember Hamster"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/images/productivity.png"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com/photos/550e8400-e29b-41d4-a716-446655440000"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A server <strong>MAY</strong> return a <code class="language-plaintext highlighter-rouge">201 Created</code> response with a document that contains
+no primary data if the requested resource has been created successfully and the
+server does not change the resource in any way (for example, by assigning an
+<code class="language-plaintext highlighter-rouge">id</code> or <code class="language-plaintext highlighter-rouge">createdAt</code> attribute). Other top-level members, such as <a href="#document-meta">meta</a>, could
+be included in the response document.</p>
+
+<blockquote>
+  <p>Note: Only servers that accept <a href="#crud-creating-client-ids">Client-Generated
+IDs</a> can avoid assigning an <code class="language-plaintext highlighter-rouge">id</code> to a new resource.</p>
+</blockquote>
+
+<h5 id="auto-id--202-accepted"><a href="#crud-creating-responses-202" id="crud-creating-responses-202" class="headerlink"></a> 202 Accepted</h5>
+
+<p>If a request to create a resource has been accepted for processing, but the
+processing has not been completed by the time the server responds, the
+server <strong>MUST</strong> return a <code class="language-plaintext highlighter-rouge">202 Accepted</code> status code.</p>
+
+<h5 id="auto-id--204-no-content"><a href="#crud-creating-responses-204" id="crud-creating-responses-204" class="headerlink"></a> 204 No Content</h5>
+
+<p>If the requested resource has been created successfully and the server does not
+change the resource in any way (for example, by assigning an <code class="language-plaintext highlighter-rouge">id</code> or <code class="language-plaintext highlighter-rouge">createdAt</code>
+attribute), the server <strong>MUST</strong> return either a <code class="language-plaintext highlighter-rouge">201 Created</code> status code and
+response document (as described above) or a <code class="language-plaintext highlighter-rouge">204 No Content</code> status code with no
+response document.</p>
+
+<h5 id="auto-id--403-forbidden"><a href="#crud-creating-responses-403" id="crud-creating-responses-403" class="headerlink"></a> 403 Forbidden</h5>
+
+<p>A server <strong>MAY</strong> return <code class="language-plaintext highlighter-rouge">403 Forbidden</code> in response to an unsupported request
+to create a resource.</p>
+
+<h5 id="auto-id--404-not-found-2"><a href="#crud-creating-responses-404" id="crud-creating-responses-404" class="headerlink"></a> 404 Not Found</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">404 Not Found</code> when processing a request that
+references a related resource that does not exist.</p>
+
+<h5 id="auto-id--409-conflict"><a href="#crud-creating-responses-409" id="crud-creating-responses-409" class="headerlink"></a> 409 Conflict</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">409 Conflict</code> when processing a <code class="language-plaintext highlighter-rouge">POST</code> request to
+create a resource with a client-generated ID that already exists.</p>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">409 Conflict</code> when processing a <code class="language-plaintext highlighter-rouge">POST</code> request in
+which the <a href="#document-resource-objects">resource object</a>’s <code class="language-plaintext highlighter-rouge">type</code> is not among the type(s) that constitute the
+collection represented by the endpoint.</p>
+
+<p>A server <strong>SHOULD</strong> include error details and provide enough information to
+recognize the source of the conflict.</p>
+
+<h5 id="auto-id--other-responses-2"><a href="#crud-creating-responses-other" id="crud-creating-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h3 id="auto-id--updating-resources"><a href="#crud-updating" id="crud-updating" class="headerlink"></a> Updating Resources</h3>
+
+<p>A resource can be updated by sending a <code class="language-plaintext highlighter-rouge">PATCH</code> request to the URL that
+represents the resource.</p>
+
+<p>The URL for a resource can be obtained in the <code class="language-plaintext highlighter-rouge">self</code> link of the resource
+object. Alternatively, when a <code class="language-plaintext highlighter-rouge">GET</code> request returns a single <a href="#document-resource-objects">resource object</a> as
+primary data, the same request URL can be used for updates.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">PATCH</code> request <strong>MUST</strong> include a single <a href="#document-resource-objects">resource object</a> as primary data.
+The <a href="#document-resource-objects">resource object</a> <strong>MUST</strong> contain <code class="language-plaintext highlighter-rouge">type</code> and <code class="language-plaintext highlighter-rouge">id</code> members.</p>
+
+<p>For example:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"To TDD or Not"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="auto-id--updating-a-resources-attributes"><a href="#crud-updating-resource-attributes" id="crud-updating-resource-attributes" class="headerlink"></a> Updating a Resource’s Attributes</h4>
+
+<p>Any or all of a resource’s <a href="#document-resource-object-attributes">attributes</a> <strong>MAY</strong> be included in the resource
+object included in a <code class="language-plaintext highlighter-rouge">PATCH</code> request.</p>
+
+<p>If a request does not include all of the <a href="#document-resource-object-attributes">attributes</a> for a resource, the server
+<strong>MUST</strong> interpret the missing <a href="#document-resource-object-attributes">attributes</a> as if they were included with their
+current values. The server <strong>MUST NOT</strong> interpret missing attributes as <code class="language-plaintext highlighter-rouge">null</code>
+values.</p>
+
+<p>For example, the following <code class="language-plaintext highlighter-rouge">PATCH</code> request is interpreted as a request to
+update only the <code class="language-plaintext highlighter-rouge">title</code> and <code class="language-plaintext highlighter-rouge">text</code> attributes of an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"To TDD or Not"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TLDR; It's complicated... but check your test coverage regardless."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="auto-id--updating-a-resources-relationships"><a href="#crud-updating-resource-relationships" id="crud-updating-resource-relationships" class="headerlink"></a> Updating a Resource’s Relationships</h4>
+
+<p>Any or all of a resource’s <a href="#document-resource-object-relationships">relationships</a> <strong>MAY</strong> be included in the resource
+object included in a <code class="language-plaintext highlighter-rouge">PATCH</code> request.</p>
+
+<p>If a request does not include all of the <a href="#document-resource-object-relationships">relationships</a> for a resource, the server
+<strong>MUST</strong> interpret the missing <a href="#document-resource-object-relationships">relationships</a> as if they were included with their
+current values. It <strong>MUST NOT</strong> interpret them as <code class="language-plaintext highlighter-rouge">null</code> or empty values.</p>
+
+<p>If a relationship is provided in the <code class="language-plaintext highlighter-rouge">relationships</code> member of a resource
+object in a <code class="language-plaintext highlighter-rouge">PATCH</code> request, its value <strong>MUST</strong> be a relationship object
+with a <code class="language-plaintext highlighter-rouge">data</code> member. The relationship’s value will be replaced with the
+value specified in this member.</p>
+
+<p>For instance, the following <code class="language-plaintext highlighter-rouge">PATCH</code> request will update the <code class="language-plaintext highlighter-rouge">author</code> relationship of an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Likewise, the following <code class="language-plaintext highlighter-rouge">PATCH</code> request performs a complete replacement of
+the <code class="language-plaintext highlighter-rouge">tags</code> for an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"articles"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A server <strong>MAY</strong> reject an attempt to do a full replacement of a to-many
+relationship. In such a case, the server <strong>MUST</strong> reject the entire update,
+and return a <code class="language-plaintext highlighter-rouge">403 Forbidden</code> response.</p>
+
+<blockquote>
+  <p>Note: Since full replacement may be a very dangerous operation, a server
+may choose to disallow it. For example, a server may reject full replacement if
+it has not provided the client with the full list of associated objects, and
+does not want to allow deletion of records the client has not seen.</p>
+</blockquote>
+
+<h4 id="auto-id--responses-3"><a href="#crud-updating-responses" id="crud-updating-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--200-ok-2"><a href="#crud-updating-responses-200" id="crud-updating-responses-200" class="headerlink"></a> 200 OK</h5>
+
+<p>If a server accepts an update but also changes the targeted resource in ways
+other than those specified by the request (for example, updating the
+<code class="language-plaintext highlighter-rouge">updatedAt</code> attribute or a computed <code class="language-plaintext highlighter-rouge">sha</code>), it <strong>MUST</strong> return a <code class="language-plaintext highlighter-rouge">200 OK</code>
+response and a document that contains the updated resource as primary data.</p>
+
+<p>A server <strong>MAY</strong> return a <code class="language-plaintext highlighter-rouge">200 OK</code> response with a document that contains no
+primary data if an update is successful and the server does not change the
+targeted resource in ways other than those specified by the request. Other
+top-level members, such as <a href="#document-meta">meta</a>, could be included in the response document.</p>
+
+<h5 id="auto-id--202-accepted-1"><a href="#crud-updating-responses-202" id="crud-updating-responses-202" class="headerlink"></a> 202 Accepted</h5>
+
+<p>If an update request has been accepted for processing, but the processing
+has not been completed by the time the server responds, the server <strong>MUST</strong>
+return a <code class="language-plaintext highlighter-rouge">202 Accepted</code> status code.</p>
+
+<h5 id="auto-id--204-no-content-1"><a href="#crud-updating-responses-204" id="crud-updating-responses-204" class="headerlink"></a> 204 No Content</h5>
+
+<p>If an update is successful and the server doesn’t change the targeted
+resource in ways other than those specified by the request, the server
+<strong>MUST</strong> return either a <code class="language-plaintext highlighter-rouge">200 OK</code> status code and response document (as
+described above) or a <code class="language-plaintext highlighter-rouge">204 No Content</code> status code with no response document.</p>
+
+<h5 id="auto-id--403-forbidden-1"><a href="#crud-updating-relationship-responses-403" id="crud-updating-relationship-responses-403" class="headerlink"></a> 403 Forbidden</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">403 Forbidden</code> in response to an unsupported request
+to update a resource or relationship.</p>
+
+<h5 id="auto-id--404-not-found-3"><a href="#crud-updating-responses-404" id="crud-updating-responses-404" class="headerlink"></a> 404 Not Found</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">404 Not Found</code> when processing a request to modify
+a resource that does not exist.</p>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">404 Not Found</code> when processing a request that
+references a related resource that does not exist.</p>
+
+<h5 id="auto-id--409-conflict-1"><a href="#crud-updating-responses-409" id="crud-updating-responses-409" class="headerlink"></a> 409 Conflict</h5>
+
+<p>A server <strong>MAY</strong> return <code class="language-plaintext highlighter-rouge">409 Conflict</code> when processing a <code class="language-plaintext highlighter-rouge">PATCH</code> request to
+update a resource if that update would violate other server-enforced
+constraints (such as a uniqueness constraint on a property other than <code class="language-plaintext highlighter-rouge">id</code>).</p>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">409 Conflict</code> when processing a <code class="language-plaintext highlighter-rouge">PATCH</code> request in
+which the resource object’s <code class="language-plaintext highlighter-rouge">type</code> or <code class="language-plaintext highlighter-rouge">id</code> do not match the server’s endpoint.</p>
+
+<p>A server <strong>SHOULD</strong> include error details and provide enough information to
+recognize the source of the conflict.</p>
+
+<h5 id="auto-id--other-responses-3"><a href="#crud-updating-responses-other" id="crud-updating-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h3 id="auto-id--updating-relationships"><a href="#crud-updating-relationships" id="crud-updating-relationships" class="headerlink"></a> Updating Relationships</h3>
+
+<p>Although relationships can be modified along with resources (as described
+above), JSON:API also supports updating of relationships independently at
+URLs from <a href="#document-resource-object-relationships">relationship links</a>.</p>
+
+<blockquote>
+  <p>Note: Relationships are updated without exposing the underlying server
+semantics, such as foreign keys. Furthermore, relationships can be updated
+without necessarily affecting the related resources. For example, if an article
+has many authors, it is possible to remove one of the authors from the article
+without deleting the person itself. Similarly, if an article has many tags, it
+is possible to add or remove tags. Under the hood on the server, the first
+of these examples might be implemented with a foreign key, while the second
+could be implemented with a join table, but the JSON:API protocol would be
+the same in both cases.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note: A server may choose to delete the underlying resource if a
+relationship is deleted (as a garbage collection measure).</p>
+</blockquote>
+
+<h4 id="auto-id--updating-to-one-relationships"><a href="#crud-updating-to-one-relationships" id="crud-updating-to-one-relationships" class="headerlink"></a> Updating To-One Relationships</h4>
+
+<p>A to-one relationship can be updated by sending a <code class="language-plaintext highlighter-rouge">PATCH</code> request to a URL
+from a to-one <a href="#document-resource-object-relationships">relationship link</a>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">PATCH</code> request <strong>MUST</strong> include a top-level member named <code class="language-plaintext highlighter-rouge">data</code> containing
+one of:</p>
+
+<ul>
+  <li>a <a href="#document-resource-identifier-objects">resource identifier object</a> corresponding to the new related resource.</li>
+  <li><code class="language-plaintext highlighter-rouge">null</code>, to remove the relationship.</li>
+</ul>
+
+<p>For example, the following request updates the author of an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1/relationships/author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"people"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>And the following request clears the author of the same article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1/relationships/author</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the relationship is updated successfully then the server <strong>MUST</strong> return
+a successful response.</p>
+
+<h4 id="auto-id--updating-to-many-relationships"><a href="#crud-updating-to-many-relationships" id="crud-updating-to-many-relationships" class="headerlink"></a> Updating To-Many Relationships</h4>
+
+<p>A to-many relationship can be updated by sending a <code class="language-plaintext highlighter-rouge">PATCH</code>, <code class="language-plaintext highlighter-rouge">POST</code>, or
+<code class="language-plaintext highlighter-rouge">DELETE</code> request to a URL from a to-many <a href="#document-resource-object-relationships">relationship link</a>.</p>
+
+<p>For all request types, the body <strong>MUST</strong> contain a <code class="language-plaintext highlighter-rouge">data</code> member whose value
+is an empty array or an array of <a href="#document-resource-identifier-objects">resource identifier objects</a>.</p>
+
+<p>If a client makes a <code class="language-plaintext highlighter-rouge">PATCH</code> request to a URL from a to-many
+<a href="#document-resource-object-relationships">relationship link</a>, the server <strong>MUST</strong> either completely
+replace every member of the relationship, return an appropriate error response
+if some resources cannot be found or accessed, or return a <code class="language-plaintext highlighter-rouge">403 Forbidden</code>
+response if complete replacement is not allowed by the server.</p>
+
+<p>For example, the following request replaces every tag for an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1/relationships/tags</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tags"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>And the following request clears every tag for an article:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">PATCH</span> <span class="nn">/articles/1/relationships/tags</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If a client makes a <code class="language-plaintext highlighter-rouge">POST</code> request to a URL from a
+<a href="#document-resource-object-relationships">relationship link</a>, the server <strong>MUST</strong> add the specified
+members to the relationship unless they are already present. If a given <code class="language-plaintext highlighter-rouge">type</code>
+and <code class="language-plaintext highlighter-rouge">id</code> is already in the relationship, the server <strong>MUST NOT</strong> add it again.</p>
+
+<blockquote>
+  <p>Note: This matches the semantics of databases that use foreign keys for
+has-many relationships. Document-based storage should check the has-many
+relationship before appending to avoid duplicates.</p>
+</blockquote>
+
+<p>If all of the specified resources can be added to, or are already present
+in, the relationship then the server <strong>MUST</strong> return a successful response.</p>
+
+<blockquote>
+  <p>Note: This approach ensures that a request is successful if the server’s
+state matches the requested state, and helps avoid pointless race conditions
+caused by multiple clients making the same changes to a relationship.</p>
+</blockquote>
+
+<p>In the following example, the comment with ID <code class="language-plaintext highlighter-rouge">123</code> is added to the list of
+comments for the article with ID <code class="language-plaintext highlighter-rouge">1</code>:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">POST</span> <span class="nn">/articles/1/relationships/comments</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If the client makes a <code class="language-plaintext highlighter-rouge">DELETE</code> request to a URL from a
+<a href="#document-resource-object-relationships">relationship link</a> the server <strong>MUST</strong> delete the specified
+members from the relationship or return a <code class="language-plaintext highlighter-rouge">403 Forbidden</code> response. If all of
+the specified resources are able to be removed from, or are already missing
+from, the relationship then the server <strong>MUST</strong> return a successful response.</p>
+
+<blockquote>
+  <p>Note: As described above for <code class="language-plaintext highlighter-rouge">POST</code> requests, this approach helps avoid
+pointless race conditions between multiple clients making the same changes.</p>
+</blockquote>
+
+<p>Relationship members are specified in the same way as in the <code class="language-plaintext highlighter-rouge">POST</code> request.</p>
+
+<p>In the following example, comments with IDs of <code class="language-plaintext highlighter-rouge">12</code> and <code class="language-plaintext highlighter-rouge">13</code> are removed
+from the list of comments for the article with ID <code class="language-plaintext highlighter-rouge">1</code>:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">DELETE</span> <span class="nn">/articles/1/relationships/comments</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+
+<span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"> </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"13"</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>Note: RFC 7231 specifies that a DELETE request may include a body, but
+that a server may reject the request. This spec defines the semantics of a
+server, and we are defining its semantics for JSON:API.</p>
+</blockquote>
+
+<h4 id="auto-id--responses-4"><a href="#crud-updating-relationship-responses" id="crud-updating-relationship-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--200-ok-3"><a href="#crud-updating-relationship-responses-200" id="crud-updating-relationship-responses-200" class="headerlink"></a> 200 OK</h5>
+
+<p>If a server accepts an update but also changes the targeted relationship in
+other ways than those specified by the request, it <strong>MUST</strong> return a <code class="language-plaintext highlighter-rouge">200 OK</code>
+response and a document that includes the updated relationship data as its
+primary data.</p>
+
+<p>A server <strong>MAY</strong> return a <code class="language-plaintext highlighter-rouge">200 OK</code> response with a document that contains no
+primary data if an update is successful and the server does not change the
+targeted relationship in ways other than those specified by the request. Other
+top-level members, such as <a href="#document-meta">meta</a>, could be included in the response document.</p>
+
+<h5 id="auto-id--202-accepted-2"><a href="#crud-updating-relationship-responses-202" id="crud-updating-relationship-responses-202" class="headerlink"></a> 202 Accepted</h5>
+
+<p>If a relationship update request has been accepted for processing, but the
+processing has not been completed by the time the server responds, the
+server <strong>MUST</strong> return a <code class="language-plaintext highlighter-rouge">202 Accepted</code> status code.</p>
+
+<h5 id="auto-id--204-no-content-2"><a href="#crud-updating-relationship-responses-204" id="crud-updating-relationship-responses-204" class="headerlink"></a> 204 No Content</h5>
+
+<p>If an update is successful and the server doesn’t change the targeted
+relationship in ways other than those specified by the request, the server
+<strong>MUST</strong> return either a <code class="language-plaintext highlighter-rouge">200 OK</code> status code and response document (as
+described above) or a <code class="language-plaintext highlighter-rouge">204 No Content</code> status code with no response document.</p>
+
+<blockquote>
+  <p>Note: This is the appropriate response to a <code class="language-plaintext highlighter-rouge">POST</code> request sent to a URL
+from a to-many <a href="#document-resource-object-relationships">relationship link</a> when that relationship already
+exists. It is also the appropriate response to a <code class="language-plaintext highlighter-rouge">DELETE</code> request sent to a URL
+from a to-many <a href="#document-resource-object-relationships">relationship link</a> when that relationship does
+not exist.</p>
+</blockquote>
+
+<h5 id="auto-id--403-forbidden-2"><a href="#crud-updating-relationship-responses-403" id="crud-updating-relationship-responses-403" class="headerlink"></a> 403 Forbidden</h5>
+
+<p>A server <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">403 Forbidden</code> in response to an unsupported request
+to update a relationship.</p>
+
+<h5 id="auto-id--other-responses-4"><a href="#crud-updating-relationship-responses-other" id="crud-updating-relationship-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h3 id="auto-id--deleting-resources"><a href="#crud-deleting" id="crud-deleting" class="headerlink"></a> Deleting Resources</h3>
+
+<p>A resource can be deleted by sending a <code class="language-plaintext highlighter-rouge">DELETE</code> request to the URL
+that represents the resource:</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">DELETE</span> <span class="nn">/photos/1</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/vnd.api+json</span>
+</code></pre></div></div>
+
+<h4 id="auto-id--responses-5"><a href="#crud-deleting-responses" id="crud-deleting-responses" class="headerlink"></a> Responses</h4>
+
+<h5 id="auto-id--200-ok-4"><a href="#crud-deleting-responses-200" id="crud-deleting-responses-200" class="headerlink"></a> 200 OK</h5>
+
+<p>A server <strong>MAY</strong> return a <code class="language-plaintext highlighter-rouge">200 OK</code> response with a document that contains no
+primary data if a deletion request is successful. Other top-level members, such
+as <a href="#document-meta">meta</a>, could be included in the response document.</p>
+
+<h5 id="auto-id--202-accepted-3"><a href="#crud-deleting-responses-202" id="crud-deleting-responses-202" class="headerlink"></a> 202 Accepted</h5>
+
+<p>If a deletion request has been accepted for processing, but the processing has
+not been completed by the time the server responds, the server <strong>MUST</strong>
+return a <code class="language-plaintext highlighter-rouge">202 Accepted</code> status code.</p>
+
+<h5 id="auto-id--204-no-content-3"><a href="#crud-deleting-responses-204" id="crud-deleting-responses-204" class="headerlink"></a> 204 No Content</h5>
+
+<p>If a deletion request is successful, the server <strong>MUST</strong> return either a <code class="language-plaintext highlighter-rouge">200
+OK</code> status code and response document (as described above) or a <code class="language-plaintext highlighter-rouge">204 No Content</code>
+status code with no response document.</p>
+
+<h5 id="auto-id--404-not-found-4"><a href="#crud-deleting-responses-404" id="crud-deleting-responses-404" class="headerlink"></a> 404 NOT FOUND</h5>
+
+<p>A server <strong>SHOULD</strong> return a <code class="language-plaintext highlighter-rouge">404 Not Found</code> status code if a deletion request fails
+due to the resource not existing.</p>
+
+<h5 id="auto-id--other-responses-5"><a href="#crud-deleting-responses-other" id="crud-deleting-responses-other" class="headerlink"></a> Other Responses</h5>
+
+<p>A server <strong>MAY</strong> respond with other HTTP status codes.</p>
+
+<p>A server <strong>MAY</strong> include <a href="#errors">error details</a> with error responses.</p>
+
+<p>A server <strong>MUST</strong> prepare responses, and a client <strong>MUST</strong> interpret
+responses, in accordance with
+<a href="http://tools.ietf.org/html/rfc7231"><code class="language-plaintext highlighter-rouge">HTTP semantics</code></a>.</p>
+
+<h2 id="auto-id--query-parameters"><a href="#query-parameters" id="query-parameters" class="headerlink"></a> Query Parameters</h2>
+
+<h3 id="auto-id--query-parameter-families"><a href="#query-parameters-families" id="query-parameters-families" class="headerlink"></a> Query Parameter Families</h3>
+
+<p>Although “query parameter” is a common term in everyday web development, it is
+not a well-standardized concept. Therefore, JSON:API provides its own
+<a href="#appendix-query-details">definition of a query parameter</a>.</p>
+
+<p>For the most part, JSON:API’s definition coincides with colloquial usage, and its
+details can be safely ignored. However, one important consequence of this
+definition is that a URL like the following is considered to have two distinct
+query parameters:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/?page[offset]=0&amp;page[limit]=10
+</code></pre></div></div>
+
+<p>The two parameters are named <code class="language-plaintext highlighter-rouge">page[offset]</code> and <code class="language-plaintext highlighter-rouge">page[limit]</code>; there is no
+single <code class="language-plaintext highlighter-rouge">page</code> parameter.</p>
+
+<p>In practice, however, parameters like <code class="language-plaintext highlighter-rouge">page[offset]</code> and <code class="language-plaintext highlighter-rouge">page[limit]</code> are
+usually defined and processed together, and it’s convenient to refer to them
+collectively. Therefore, JSON:API introduces the concept of a query parameter
+family.</p>
+
+<p>A “query parameter family” is the set of all query parameters whose name starts
+with a “base name”, followed by zero or more instances of empty square brackets
+(i.e. <code class="language-plaintext highlighter-rouge">[]</code>), square-bracketed legal <a href="#document-member-names">member names</a>, or square-bracketed
+dot-separated lists of legal member names. The family is referred to
+by its base name.</p>
+
+<p>For example, the <code class="language-plaintext highlighter-rouge">filter</code> query parameter family includes parameters named:
+<code class="language-plaintext highlighter-rouge">filter</code>, <code class="language-plaintext highlighter-rouge">filter[x]</code>, <code class="language-plaintext highlighter-rouge">filter[]</code>, <code class="language-plaintext highlighter-rouge">filter[x][]</code>, <code class="language-plaintext highlighter-rouge">filter[][]</code>, <code class="language-plaintext highlighter-rouge">filter[x][y]</code>,
+<code class="language-plaintext highlighter-rouge">filter[x.y]</code>, etc. However, <code class="language-plaintext highlighter-rouge">filter[_]</code> is not a valid parameter name in the
+family, because <code class="language-plaintext highlighter-rouge">_</code> is not a valid <a href="#document-member-names">member name</a>.</p>
+
+<blockquote>
+  <p>Note: Dot separated lists of legal member names are intended to be used for
+relationship paths. For example, this allows filtering strategies using
+relationship paths as defined for [sorting][fetching sorting] in query parameters
+such as <code class="language-plaintext highlighter-rouge">GET /posts?sort=author.name&amp;filter[author.status]=active</code>.</p>
+</blockquote>
+
+<h3 id="auto-id--extension-specific-query-parameters"><a href="#extension-query-parameters" id="extension-query-parameters" class="headerlink"></a> Extension-Specific Query Parameters</h3>
+
+<p>The base name of every query parameter introduced by an extension <strong>MUST</strong> be
+prefixed with the extension’s namespace followed by a colon (<code class="language-plaintext highlighter-rouge">:</code>). The
+remainder of the base name <strong>MUST</strong> contain only the characters [a-z] (U+0061
+to U+007A, “a-z”).</p>
+
+<h3 id="auto-id--implementation-specific-query-parameters"><a href="#query-parameters-custom" id="query-parameters-custom" class="headerlink"></a> Implementation-Specific Query Parameters</h3>
+
+<p>Implementations <strong>MAY</strong> support custom query parameters. However, the names of
+these query parameters <strong>MUST</strong> come from a <a href="#query-parameters-families">family</a>
+whose base name is a legal <a href="#document-member-names">member name</a> and also contains at least
+one non a-z character (i.e., outside U+0061 to U+007A).</p>
+
+<p>It is <strong>RECOMMENDED</strong> that a capital letter (e.g. camelCasing) be used to
+satisfy the above requirement.</p>
+
+<p>If a server encounters a query parameter that does not follow the naming
+conventions above, or the server does not know how to process it as a query
+parameter from this specification, it <strong>MUST</strong> return <code class="language-plaintext highlighter-rouge">400 Bad Request</code>.</p>
+
+<blockquote>
+  <p>Note: By forbidding the use of query parameters that contain only the characters
+[a-z], JSON:API is reserving the ability to standardize additional query
+parameters later without conflicting with existing implementations.</p>
+</blockquote>
+
+<h2 id="auto-id--errors"><a href="#errors" id="errors" class="headerlink"></a> Errors</h2>
+
+<h3 id="auto-id--processing-errors"><a href="#errors-processing" id="errors-processing" class="headerlink"></a> Processing Errors</h3>
+
+<p>A server <strong>MAY</strong> choose to stop processing as soon as a problem is encountered,
+or it <strong>MAY</strong> continue processing and encounter multiple problems. For instance,
+a server might process multiple attributes and then return multiple validation
+problems in a single response.</p>
+
+<p>When a server encounters multiple problems for a single request, the most
+generally applicable HTTP error code <strong>SHOULD</strong> be used in the response. For
+instance, <code class="language-plaintext highlighter-rouge">400 Bad Request</code> might be appropriate for multiple 4xx errors
+or <code class="language-plaintext highlighter-rouge">500 Internal Server Error</code> might be appropriate for multiple 5xx errors.</p>
+
+<h3 id="auto-id--error-objects"><a href="#error-objects" id="error-objects" class="headerlink"></a> Error Objects</h3>
+
+<p>Error objects provide additional information about problems encountered while
+performing an operation. Error objects <strong>MUST</strong> be returned as an array
+keyed by <code class="language-plaintext highlighter-rouge">errors</code> in the top level of a JSON:API document.</p>
+
+<p>An error object <strong>MAY</strong> have the following members, and <strong>MUST</strong> contain at
+least one of:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">id</code>: a unique identifier for this particular occurrence of the problem.</li>
+  <li><code class="language-plaintext highlighter-rouge">links</code>: a <a href="#document-links">links object</a> that <strong>MAY</strong> contain the following members:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">about</code>: a <a href="#document-links-link">link</a> that leads to further details about this
+particular occurrence of the problem. When derefenced, this URI <strong>SHOULD</strong>
+return a human-readable description of the error.</li>
+      <li><code class="language-plaintext highlighter-rouge">type</code>: a <a href="#document-links-link">link</a> that identifies the type of error that this
+particular error is an instance of. This URI <strong>SHOULD</strong> be dereferencable to
+a human-readable explanation of the general error.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">status</code>: the HTTP status code applicable to this problem, expressed as a
+string value.  This <strong>SHOULD</strong> be provided.</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code>: an application-specific error code, expressed as a string value.</li>
+  <li><code class="language-plaintext highlighter-rouge">title</code>: a short, human-readable summary of the problem that <strong>SHOULD NOT</strong>
+change from occurrence to occurrence of the problem, except for purposes of
+localization.</li>
+  <li><code class="language-plaintext highlighter-rouge">detail</code>: a human-readable explanation specific to this occurrence of the
+problem. Like <code class="language-plaintext highlighter-rouge">title</code>, this field’s value can be localized.</li>
+  <li><code class="language-plaintext highlighter-rouge">source</code>: an object containing references to the primary source of the error.
+It <strong>SHOULD</strong> include one of the following members or be omitted:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">pointer</code>: a JSON Pointer [<a href="https://tools.ietf.org/html/rfc6901">RFC6901</a>]
+to the value in the request document that caused the error [e.g. <code class="language-plaintext highlighter-rouge">"/data"</code>
+for a primary data object, or <code class="language-plaintext highlighter-rouge">"/data/attributes/title"</code> for a specific
+attribute]. This <strong>MUST</strong> point to a value in the request document that
+exists; if it doesn’t, the client <strong>SHOULD</strong> simply ignore the pointer.</li>
+      <li><code class="language-plaintext highlighter-rouge">parameter</code>: a string indicating which URI query parameter caused
+the error.</li>
+      <li><code class="language-plaintext highlighter-rouge">header</code>: a string indicating the name of a single request header which
+caused the error.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">meta</code>: a <a href="#document-meta">meta object</a> containing non-standard meta-information about the
+error.</li>
+</ul>
+
+<h2 id="auto-id--appendix"><a href="#appendix" id="appendix" class="headerlink"></a> Appendix</h2>
+<h3 id="auto-id--query-parameters-details"><a href="#appendix-query-details" id="appendix-query-details" class="headerlink"></a> Query Parameters Details</h3>
+<h4 id="auto-id--parsingserialization"><a href="#appendix-query-details-parsing" id="appendix-query-details-parsing" class="headerlink"></a> Parsing/Serialization</h4>
+<p>A query parameter is a name–value pair extracted from, or serialized into, a
+URI’s query string.</p>
+
+<p>To extract the query parameters from a URI, an implementation <strong>MUST</strong> run the
+URI’s query string, excluding the leading question mark, through the
+<a href="https://url.spec.whatwg.org/#urlencoded-parsing"><code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code> parsing algorithm</a>,
+with one exception: JSON:API allows the specification that defines a query
+parameter’s usage to provide its own rules for parsing the parameter’s value
+from the <code class="language-plaintext highlighter-rouge">value</code> bytes identified in steps 3.2 and and 3.3 of the <code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code>
+parsing algorithm. The resulting value might not be a string.</p>
+
+<blockquote>
+  <p>Note: In general, the query string parsing built in to servers and browsers
+will match the process specified above, so most implementations do not need
+to worry about this.</p>
+
+  <p>The <code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code> format is referenced because it is
+the basis for the <code class="language-plaintext highlighter-rouge">a=b&amp;c=d</code> style that almost all query strings use today.</p>
+
+  <p>However, <code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code> parsing contains the bizarre
+historical artifact that <code class="language-plaintext highlighter-rouge">+</code> characters must be treated as spaces, and it
+requires that all values be percent-decoded during parsing, which makes it
+impossible to use <a href="https://tools.ietf.org/html/rfc3986#section-2.2">RFC 3986 delimiter characters</a>
+as delimiters. These issues motivate the exception that JSON:API defines above.</p>
+</blockquote>
+
+<p>Similarly, to serialize a query parameter into a URI, an implementation <strong>MUST</strong>
+use the <a href="https://url.spec.whatwg.org/#concept-urlencoded-serializer">the <code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code> serializer</a>,
+with the corresponding exception that a parameter’s value — but not its name —
+may be serialized differently than that algorithm requires, provided the
+serialization does not interfere with the ability to parse back the resulting URI.</p>
+
+<h4 id="auto-id--square-brackets-in-parameter-names"><a href="#appendix-query-details-square-brackets" id="appendix-query-details-square-brackets" class="headerlink"></a> Square Brackets in Parameter Names</h4>
+<p>With <a href="#query-parameters-families">query parameter families</a>, JSON:API allows for
+query parameters whose names contain square brackets (i.e., U+005B “[” and
+U+005D “]”).</p>
+
+<p>According to the query parameter serialization rules above, a compliant
+implementation will percent-encode these square brackets. However, some URI
+producers — namely browsers — do not always encode them. Servers <strong>SHOULD</strong>
+accept requests in which these square brackets are left unencoded in a query
+parameter’s name. If a server does accept these requests, it <strong>MUST</strong> treat the
+request as equivalent to one in which the square brackets were percent-encoded.</p>
+
+
+        </section>
+      </main>
+    </div>
+    <footer>
+  <div class="site-wrapper">
+    <span>Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="http://softwaremaniacs.org/soft/highlight/en/">Highlight.js</a></span>
+    <span class="license">
+      <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border- style: none;" alt="CC0" /></a>
+    </span>
+    <span class="social-links">
+      <a class="twitter" href="https://twitter.com/jsonapi"><i class="icon-twitter"></i><span>Twitter</span></a>
+      <a class="github" href="https://github.com/json-api"><i class="icon-github"></i><span>GitHub</span></a>
+      <a class="forum" href="https://discuss.jsonapi.org"><i class="icon-forum"></i><span>Discussion Forum</span></a>
+    </span>
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40609539-1', 'jsonapi.org');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

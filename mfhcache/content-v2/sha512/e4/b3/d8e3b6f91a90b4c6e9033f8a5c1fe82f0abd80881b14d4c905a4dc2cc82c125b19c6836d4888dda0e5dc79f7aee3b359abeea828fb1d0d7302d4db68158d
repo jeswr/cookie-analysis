@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 13), see www.w3.org" />
+    <title>
+      Paper Trail: Web architecture ideas
+    </title>
+    <link href="di.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body bgcolor="#DDFFDD" text="#000000" xml:lang="en" lang="en">
+    <address>
+      Tim Berners-Lee
+      <p>
+        Date: February 1999. Last modified: $Date: 2004/04/20
+        19:21:17 $
+      </p>
+      <p>
+        Status:
+      </p>
+    </address>
+    <address>
+      <p>
+        An example of how a social machine can be made without a
+        center. Editing status: Draft. Comments welcome
+      </p>
+    </address>
+    <p>
+      <a href="Overview.html">Up to Design Issues</a>
+    </p>
+    <h3>
+      Ideas about future Web architecture
+    </h3>
+    <hr />
+    <h1>
+      Paper Trail
+    </h1>
+    <p>
+      Here we look at the relationship between documents (living or
+      dead but basically bits of state) and messages (events with
+      associated data, including typically but not essentially
+      sender and recipient).
+    </p>
+    <p>
+      Here is a proposal for a project: "Paper trail" state machine
+      for workflow. The concept here is that the state of any
+      transaction is in the real world (and in this formalization
+      in the Web) just a function all the messages which form part
+      of a protocol.
+    </p>
+    <blockquote>
+      <h3>
+        Epilogue (2001/05)
+      </h3>
+      <p>
+        The <a href="/2001/01/WSWS">Web Services workshop</a>, in
+        discussing transactios over the Net, surfaced the need for
+        process flow descriptions
+      </p>
+      <h3>
+        Update (2004/03)
+      </h3>
+      <p>
+        The <a href="/2000/10/swap/">Semantic Web Application
+        Platform (SWAP)</a> now has enough functionality to
+        implement these ideas. see <a href=
+        "/2000/10/swap/ppt-bank/">ppt-bank</a>, especially <a href=
+        "/2000/10/swap/ppt-bank/checking.n3">checking.n3</a>
+      </p>
+    </blockquote>
+    <h2>
+      Introduction
+    </h2>
+    <p>
+      Social processes look like state machines. However, they
+      don't exist as a state variable stored in one place, but as a
+      trail of documents. You know the true state of the machine
+      only if you have access to the latest documents. (This is not
+      the problem addressed here, this is real life being
+      modelled.) <em>Paper-trail</em> is a system which allows one
+      to follow a strict process by creating new documents in a
+      constrained fashion. Every paper-trail document has a pointer
+      to a "paper-trail schema" which defines its document type (eg
+      "constitutional amendment") a pointer to its justification
+      documents (maybe) a notarization of when it was checked
+      against the schema by the paper-trail program. The schema
+      defines:
+    </p>
+    <ul>
+      <li>Prerequisites for a document being valid, in terms of
+      other documents
+      </li>
+      <li>Hints to other document types you can make from this one
+      (state transitions)
+      </li>
+    </ul>
+    <h3>
+      Example
+    </h3>
+    <blockquote>
+      <p>
+        To make a new W3C working draft, the schema requires
+        pointers to old working draft new document, and editor's
+        authorization. The editor must be defined as editor on home
+        page of working group where working group page is pointed
+        to be by old draft. If all those exist, then the new
+        document is created from all that and notarized (time
+        stamped) by the software. The human readable part of the
+        document is created as a (simple macro) function of the
+        input documents. A document also has a buttons to take you
+        to a form to turn it into another type of document
+        according to hints in the schema.
+      </p>
+    </blockquote>
+    <h3>
+      Example
+    </h3>
+    <blockquote>
+      <p>
+        A button on a Working Draft takes you to a form for
+        promoting it to a "proposed recommendation". This requires
+        different things (all the above plus endorsement of new
+        draft by director or any two members of the management
+        group.)
+      </p>
+    </blockquote>
+    <h2>
+      Technology
+    </h2>
+    <p>
+      If you are considering this as a student project, consider
+      these directions:
+    </p>
+    <ul>
+      <li>Use RDF within the document to express its state.
+      </li>
+      <li>Develop declarative language for defining the
+      prerequisites - ideally in RDF too.
+      </li>
+      <li>Develop GUI for creating a new document by supplying the
+      prerequisites
+      </li>
+      <li>Allow hooks for digital signature but don't have to
+      implement it
+      </li>
+    </ul>
+    <h2 id="Generalizi">
+      Generalizing for formal protocols
+    </h2>
+    <p>
+      The concept of a paper trail is common in conventional
+      administration, but the model can also be applied to
+      well-defined computer protocols.
+    </p>
+    <h2 id="Model">
+      Model
+    </h2>
+    <p>
+      The model is that a protocol P defines a status s<sub>n</sub>
+      as a function of a message m and a previous state
+      s<sub>n-1</sub>, and the time t.
+    </p>
+    <p>
+      s<sub>n</sub>= P(m<sub>n</sub>, s<sub>n-1</sub>, t)
+    </p>
+    <p>
+      or for that matter as a function of all the messages to date
+    </p>
+    <p>
+      s<sub>n</sub>= P'({m<sub>i</sub>}<sub>i=1..n</sub>)
+    </p>
+    <p>
+      The state could be a logical formula, an RDF graph, or an XML
+      document, or just a number, in decreasing order of interest.
+      The system can be a any one of a number of types of machine,
+      including the well-known finite state machine and push-down
+      automata.
+    </p>
+    <p>
+      In an XML world, think of the state and the messages all
+      being expressed in XML, and the protocol maybe being an XSLT
+      script.
+    </p>
+    <p>
+      The state must record everything necessary for calculating
+      future states for any new message. It could also record the
+      results of the protocol. For example, the state of TCP (where
+      IP packets are the {m} ) must hold the state of the packets
+      unacknowledged in the sliding window, but when the connection
+      has been successfully closed it could hold either just
+      "terminal state", or also the ordered set of bytes
+      transferred in the connection.
+    </p>
+    <p>
+      The protocol function can be seen as an information
+      destroying function. By specifying what needs to be
+      remembered, it defines what can be thrown away. This is of
+      course very important. Of course, one might in some cases
+      still want to spool the messages for security, but the actual
+      information needed to describe the state of affairs is
+      limited..
+    </p>
+    <p>
+      Typically, to be valid, messages will link back to previous
+      messages either directly or though common threading
+      identifiers of some sort. A message without such a reference
+      will in most cases not have any effect on the state.
+    </p>
+    <p>
+      There will in general be error states, which the protocol
+      does not allow, which any message which is invalid in some
+      way will lead to. Functionally there need only be one error
+      state but in practice one might want t preserve the state
+      before the error and details of the error. Some protocols
+      model most errors themselves by sending.
+    </p>
+    <p>
+      There must obviously be a set M<sub>0</sub> of valid ways to
+      start a protocol in the first case from the generic initial
+      state s<sub>0</sub>. For example, in TCP one sends a SYN
+      message; on the telephone one picks up the receiver. For any
+      m in M<sub>0</sub>, P(m, s<sub>0</sub>) will be a valid
+      (non-error) state.
+    </p>
+    <p>
+      There will in some systems be a set of F final states, in
+      which no further messages can have any effect on the state.
+      For any s in F, P(m,s) = s for all m.
+    </p>
+    <p>
+      For example, in the US, when 7 years have passed since a
+      transaction occurred, then all records may be discarded as no
+      one even the tax man has the right to query them. The state
+      is reduced to a minimum. Most systems can be modelled in a
+      simple of complex way, the simple way ignoring a lot of the
+      auditing processes for example. A simple model of a loan
+      between two people has a state which is the balance amount
+      and one final state when that is zero. Other systems are
+      designed to remain in non-final state: a lifetime warranty is
+      a protocol which remains in non-final state (until you die!),
+      waiting for any message that you are dissatisfied with the
+      product.
+    </p>
+    <p>
+      Real system are part of bigger systems, and so the real
+      protocol will function as part of a larger protocol. For
+      example, a working group at W3C goes though many internal
+      state changes, and (on a simple model) the last is when their
+      work is accepted by the Consortium as a whole as a
+      Recommendation. This is a message leaving the system, which
+      forms part of the larger protocol. Modeling this is clearly
+      interesting. (To demonstrate this nesting by an example of it
+      breaking, think of the case of a working group not arriving
+      at consensus and passing on not only a final document but
+      also a minority report, basically a peek into the internal
+      workings of the group which did not in fact arrive in its
+      final state. ) This would include modelling tasks which can
+      split, and be recursively delegated, and so on.
+    </p>
+    <h2>
+      Cool things
+    </h2>
+    <p>
+      This system can allow well-defined social processes to work
+      eg on a net newsgroup, or by email. ie, it works in a
+      write-only medium.
+    </p>
+    <p>
+      It models real life in commerce well, where the state really
+      is an abstract thing and one's perception of it depends on
+      the set of messages one has had access to.
+    </p>
+    <p>
+      Hopefully we can use this model to define systems which are
+      even more powerfully distributed than any we use at the
+      moment.
+    </p>
+    <h2 id="Linking">
+      Linking Remote operations and Data Formats
+    </h2>
+    <p>
+      I must have discussed the relationships between remote
+      operations and data formats before. Maybe I have made a table
+      with schema languages compared against interface definition
+      languages, and so on.
+    </p>
+    <p>
+      Now we have a clear way of expressing the relationship
+      between the two. A Protocol definition document defines a
+      document as a function of messages, which can be represented
+      as documents - so we can look at remote operations in terms
+      of documents. Typically RPC messages are very constrained:
+      this model allows much more complicated multi-party protocols
+      to be defined.
+    </p>
+    <h2>
+      Challenges if you finish early
+    </h2>
+    <p>
+      If making a paper trail machine was fun, here are some more
+      ideas.
+    </p>
+    <ul>
+      <li>Add time-aware social processes such as promises and
+      timeouts.
+      </li>
+      <li>Do you need to be able to prove non-existence of
+      documents?
+      </li>
+      <li>Locally to an author or globally?
+      </li>
+      <li>States can split. (draft can go to W3C or IETF process or
+      both).
+      </li>
+      <li>How can you limit this, when socially undesirable?)
+      </li>
+      <li>Develop proofs that processes will achieve given ends.
+      </li>
+      <li>Model processes near you:
+        <ul>
+          <li>auction
+          </li>
+          <li>peer review journal
+          </li>
+          <li>presidential impeachment ;-)
+          </li>
+          <li>internet newsgroup creation
+          </li>
+          <li>formation of a company
+          </li>
+          <li>MIT purchasing (possible PhD thesis ;-)
+          </li>
+        </ul>
+      </li>
+      <li>Develop theories in which players are
+        <ul>
+          <li>collaborative
+          </li>
+          <li>competitive
+          </li>
+          <li>allowed to create new schemas to achieve their ends
+          </li>
+        </ul>
+      </li>
+      <li>Model existing systems near you:
+        <ul>
+          <li>TCP
+          </li>
+          <li>HTTP...
+          </li>
+        </ul>
+      </li>
+      <li>Develop a protocol machine, which, acting on behalf of
+      one agent, will determine when that agent has a possible move
+      to make, and when in fact the protocol is acting for that
+      agent. Develop a GUI which helps a human user chose from the
+      set of possible options at that state of the protocol.
+      </li>
+    </ul>
+    <h2 id="Products">
+      Products
+    </h2>
+    <p>
+      The thing which would come out of this idea would I imagine
+      be a standard language for writing protocols. Of course, it
+      would mainly be something else, such as an rdf-logic
+      language, or prolog or whatever, but there would have to be
+      hooks to define it to be a definition of a protocol.
+    </p>
+    <p>
+      This takes the self-describing web concept into a new area:
+      that messages are self-describing in that they contain a
+      pointer to the language in which they are written, and that
+      includes (or points to) the protocol to which they claim to
+      adhere.
+    </p>
+    <p>
+      @@ Add pointers to work done with Notation3
+    </p>
+    <hr />
+    <p>
+      <a href="Overview.html">Up to Design Issues</a>;
+    </p>
+    <p>
+      Thanks for some fun discussions with Dan Connolly about these
+      ideas.
+    </p>
+  </body>
+</html>

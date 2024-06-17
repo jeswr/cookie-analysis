@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+    <title>Resource Description Framework (RDF): Concepts and Abstract Syntax</title>
+    <meta http-equiv="Content-Type" content=
+    "text/html; charset=iso-8859-1" />
+    <meta name="rcsid" content=
+    "$Id: Overview.html,v 1.13 2023/12/01 11:55:08 denis Exp $" />
+<style type="text/css">
+/*<![CDATA[*/
+
+.figure {
+         font-weight: bold;
+         text-align: center; }
+.added {
+    BACKGROUND: white; COLOR: green; TEXT-DECORATION: underline
+}
+.removed {
+    BACKGROUND: white; COLOR: red; TEXT-DECORATION: line-through
+}
+DIV.block {
+    MARGIN-LEFT: 2em
+}
+.note {
+    MARGIN-LEFT: 2em
+}
+A.termref:visited {
+    COLOR: black; FONT-FAMILY: sans-serif; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A.termref:link {
+    COLOR: black; FONT-FAMILY: sans-serif; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+.figure {
+    FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+.todo { color: red; font-style: italic }
+.code { font-family: monospace, Courier, "Courier New" }
+.xeditors { color: purple; font-style: italic }
+.expression { font-style: italic; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+dfn { color: navy; font-style: italic; font-weight: bold }
+cite { color: navy }
+/*]]>*/
+</style>
+
+
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/W3C-REC" />
+  </head>
+
+  <body>
+    <div class="head">
+      <a href="https://www.w3.org/"><img height="48" width="72" alt=
+      "W3C" src="https://www.w3.org/Icons/w3c_home" /></a> 
+
+      <h1 id="title">Resource Description Framework (RDF):<br />
+       Concepts and Abstract Syntax</h1>
+
+      <h2 id="doctype">W3C Recommendation 10 February 2004</h2>
+<div id="rdf_1_1_notice" style="border: solid black 1px; padding: 0.5em; background: #FFB;">
+  <p style="margin-top: 0; font-weight: bold;">New Version
+        Available: "RDF 1.1 Concepts and Abstract Syntax"<span style="padding-left: 2em;"></span>
+        (Document Status Update, 25 February 2014)</p>
+
+  <p style="margin-bottom: 0;">The RDF Working Group has produced
+  a W3C Recommendation for a new version of RDF which adds
+  features to this 2004 version, while remaining compatible.
+  Please see <a href="https://www.w3.org/TR/rdf11-concepts">"RDF 1.1
+  Concepts and Abstract Syntax"</a> for a new version of this document, and the
+  <a href="https://www.w3.org/TR/rdf11-new">"What's New in RDF 1.1"</a> document for the differences between this 
+  version of RDF and RDF 1.1.</p>
+
+  <p style="font-weight: bold;">
+        Document Status Update, 1 December 2023</p>
+
+  <p style="margin-bottom: 0;">The <i>Latest version</i> link was fixed: it is intended to point to the latest version of the document for <em>this version of RDF</em> (i.e. RDF 1.0).</p>
+      </div>
+
+
+
+      <dl>
+        <dt>This version:</dt>
+
+        <dd><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">
+http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a></dd>
+
+        <dt>Latest version:</dt>
+
+        <dd><a href="https://www.w3.org/TR/rdf10-concepts/">http://www.w3.org/TR/rdf10-concepts/</a></dd>
+
+        <dt>Previous version:</dt>
+
+       <dd><a href="https://www.w3.org/TR/2003/PR-rdf-concepts-20031215/">http://www.w3.org/TR/2003/PR-rdf-concepts-20031215/</a></dd>
+
+        <dt>Editors:</dt>
+
+        <dd><a href="http://www.ninebynine.org/">Graham Klyne</a> (Nine
+        by Nine), &lt;<a href=
+        "mailto:GK@NineByNine.org">gk@ninebynine.org</a>&gt;</dd>
+
+        <dd><a href="http://www-uk.hpl.hp.com/people/jjc/">Jeremy J.
+        Carroll</a> (Hewlett Packard Labs), &lt;<a href=
+        "mailto:jjc@hpl.hp.com">jjc@hpl.hp.com</a>&gt;</dd>
+
+        <dt>Series editor:</dt>
+
+        <dd><a href="http://www-uk.hpl.hp.com/people/bwm/">Brian
+        McBride</a> (Hewlett Packard Labs) &lt;<a href=
+        "mailto:bwm@hplb.hpl.hp.com">bwm@hplb.hpl.hp.com</a>&gt;</dd>
+      </dl>
+
+
+
+
+
+
+
+
+<p>Please refer to the <a href="https://www.w3.org/2001/sw/RDFCore/errata#rdf-concepts"><strong>errata</strong></a>
+for this document, which may include some normative corrections.</p>
+
+<p>See also <a href="https://www.w3.org/2001/sw/RDFCore/translation/rdf-concepts">translations</a>.</p>
+
+<p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">  Copyright</a> &#xa9; 2004 <a href="https://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&#xae;</sup>  (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply.</p>
+
+      <hr title="Separator for header" />
+    </div>
+
+    <h2 class="nonum"><a id="abstract" name=
+    "abstract">Abstract</a></h2>
+
+    <p>The Resource Description Framework (RDF) is a framework for
+    representing information in the Web.</p>
+    <p>RDF Concepts and Abstract Syntax defines an abstract syntax
+    on which RDF is based, and which serves to link its concrete
+    syntax to its formal semantics. It also includes discussion of
+    design goals, key concepts, datatyping, character normalization
+    and handling of URI references.</p>
+
+<div class="status">
+
+<h2 class="nonum">
+<a id="status" name="status">Status of this Document</a>
+</h2>
+<!-- Start Status-Of-This-Document Text -->
+
+<p>This document has been reviewed by W3C Members and other interested
+parties, and it has been endorsed by the Director as a <a href="https://www.w3.org/2003/06/Process-20030618/tr.html#RecsW3C">W3C
+Recommendation</a>.  W3C's role in making the Recommendation is to
+draw attention to the specification and to promote its widespread
+deployment. This enhances the functionality and interoperability of
+the Web.</p>
+
+<p>This is one document in a <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-Introduction">set
+of six</a> (<a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">Primer</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">Concepts</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">Syntax</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">Semantics</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">Vocabulary</a>,
+and <a href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/">Test
+Cases</a>) intended to jointly replace the original Resource
+Description Framework specifications, <a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">RDF Model and Syntax (1999
+Recommendation)</a> and <a href="https://www.w3.org/TR/2000/CR-rdf-schema-20000327/">RDF Schema
+(2000 Candidate Recommendation)</a>.  It has been developed by the <a href="https://www.w3.org/2001/sw/RDFCore/">RDF Core Working Group</a>
+as part of the <a href="https://www.w3.org/2001/sw/">W3C Semantic Web
+Activity</a> (<a href="https://www.w3.org/2001/sw/Activity">Activity
+Statement</a>, <a href="https://www.w3.org/2002/11/swv2/charters/RDFCoreWGCharter">Group
+Charter</a>) for publication on 10 February 2004.
+</p>
+
+<p>Changes to this document since the <a href="https://www.w3.org/TR/2003/PR-rdf-concepts-20031215/" shape="rect">Proposed Recommendation Working Draft</a> are detailed in
+the <a href="#changes" shape="rect">change log</a>.  </p>
+
+<p> The public is invited to send comments to <a
+href="mailto:www-rdf-comments@w3.org">www-rdf-comments@w3.org</a> (<a
+href="http://lists.w3.org/Archives/Public/www-rdf-comments/">archive</a>)
+and to participate in general discussion of related technology on <a
+href="mailto:www-rdf-interest@w3.org"
+shape="rect">www-rdf-interest@w3.org</a> (<a
+href="http://lists.w3.org/Archives/Public/www-rdf-interest/"
+shape="rect">archive</a>).  </p>
+
+<p>A list of <a href="https://www.w3.org/2001/sw/RDFCore/impls">
+implementations</a> is available.</p>
+
+<p>The W3C maintains a list of <a href="https://www.w3.org/2001/sw/RDFCore/ipr-statements" rel="disclosure">any patent disclosures related to this work</a>.</p>
+
+<p><em>This section describes the status of this document at the time of its 
+publication. Other documents may supersede this document. A list of current W3C 
+publications and the latest revision of this technical report can be found in 
+the <a href="https://www.w3.org/TR/">W3C technical reports index</a> at 
+http://www.w3.org/TR/.</em></p> 
+
+<!-- End Status-Of-This-Document Text -->
+
+</div>
+
+
+    <div class="toc">
+      <h2 class="nonum"><a id="contents" name="contents">Table of
+      Contents</a></h2>
+
+      <ul class="toc">
+        <li class="tocline">
+          <a href="#section-Introduction"><strong>1.
+          Introduction</strong></a> 
+
+          <ul class="toc">
+            <li class="tocline"><a href="#section-Structure">1.1
+            Structure of this Document</a></li>
+
+          </ul>
+        </li>
+
+        <li class="tocline">
+          <a href="#section-Overview"><strong>2. Motivations and Goals</strong></a> 
+
+          <ul class="toc">
+            <li class="tocline"><a href="#section-motivation">2.1
+            Motivation</a></li>
+
+            <li class="tocline">
+              <a href="#section-design-goals">2.2 Design Goals</a> 
+
+              <ul class="toc">
+                <li class="tocline"><a href="#section-simple-data-model">2.2.1 A
+                Simple Data Model</a></li>
+
+                <li class="tocline"><a href="#section-formal-semantics">2.2.2 Formal
+                Semantics and Inference</a></li>
+
+                <li class="tocline"><a href="#section-extensible-vocab">2.2.3
+                Extensible URI-based Vocabulary</a></li>
+
+                <li class="tocline"><a href="#section-xml-serialization">2.2.4
+                XML-based Syntax</a></li>
+
+                <li class="tocline"><a href="#section-use-xsd">2.2.5 Use
+                XML Schema Datatypes</a></li>
+
+                <li class="tocline"><a href="#section-anyone">2.2.6 Anyone
+                Can Make Statments About Any Resource</a></li>
+
+              </ul>
+            </li>
+</ul>
+</li>
+
+            <li class="tocline">
+              <a href="#section-Concepts"><strong>3. RDF Concepts</strong></a> 
+
+              <ul class="toc">
+                <li class="tocline"><a href="#section-data-model">3.1 Graph
+                Data Model</a></li>
+
+                <li class="tocline"><a href=
+                "#section-URI-Vocabulary">3.2 URI-based Vocabulary
+                and Node Identification</a></li>
+
+                <li class="tocline"><a href="#section-Datatypes-intro">3.3
+                Datatypes</a></li>
+
+                <li class="tocline"><a href="#section-Literals">3.4
+                Literals</a></li>
+
+
+                <li class="tocline"><a href=
+                "#section-SimpleFacts">3.5 RDF Expression of Simple
+                Facts</a></li>
+
+                <li class="tocline"><a href="#section-Entailment">3.6
+                Entailment</a></li>
+              </ul>
+            </li>
+            <li class="tocline"><a href="#section-URIspaces"><strong>4. RDF
+    Vocabulary URI and Namespace (Normative)</strong></a></li>
+        <li class="tocline">
+          <a href="#section-Datatypes"><strong>5. Datatypes (Normative)</strong></a> 
+
+          <ul class="toc">
+        <li class="tocline"><a href="#section-XMLLiteral">5.1
+        XML Content within an RDF Graph</a></li>
+          </ul>
+       </li>
+
+        <li class="tocline">
+          <a href="#section-Graph-syntax"><strong>6. Abstract
+          Syntax (Normative)</strong></a> 
+
+          <ul class="toc">
+            <li class="tocline"><a href="#section-triples">6.1 RDF
+            Triples</a></li>
+
+            <li class="tocline"><a href="#section-rdf-graph">6.2 RDF
+            Graph</a></li>
+
+            <li class="tocline"><a href="#section-graph-equality">6.3 Graph
+            Equivalence</a></li>
+
+            <li class="tocline"><a href="#section-Graph-URIref">6.4 RDF
+            URI References</a></li>
+
+            <li class="tocline">
+              <a href="#section-Graph-Literal">6.5 RDF Literals</a> 
+
+              <ul class="toc">
+                <li class="tocline"><a href=
+                "#section-Literal-Equality">6.5.1 Literal
+                Equality</a></li>
+
+                <li class="tocline"><a href=
+                "#section-Literal-Value">6.5.2 The Value Corresponding
+                to a Typed Literal</a></li>
+              </ul>
+            </li>
+            
+            <li class="tocline"><a href="#section-blank-nodes">6.6 Blank Nodes</a></li>
+          </ul>
+        </li>
+
+        <li class="tocline">
+          <a href="#section-fragID"><strong>7. Fragment Identifiers
+</strong></a> 
+        </li>
+
+        <li class="tocline"><a href=
+        "#section-Acknowledgments"><strong>8.
+        Acknowledgments</strong></a></li>
+
+        <li class="tocline">
+          <a href="#section-References"><strong>9.
+          References</strong></a> 
+
+          <ul class="toc">
+            <li class="tocline"><a href=
+            "#section-Normative-References">9.1 Normative
+            References</a></li>
+
+            <li class="tocline"><a href=
+            "#section-Informative-References">9.2 Informational
+            References</a></li>
+          </ul>
+        </li>
+
+ <li class="tocline">
+          <a href="#section-Revisions"><strong>A: Revisions Since Last Call Working Draft of 10 October 2003</strong></a> 
+
+        </li>
+      </ul>
+
+    </div>
+    <hr />
+
+    <h2><a id="section-Introduction" name="section-Introduction">1.
+    Introduction</a></h2>
+
+    <p>The Resource Description Framework (RDF) is a framework for
+    representing information in the Web.</p>
+
+    <p>This document defines an abstract syntax on which RDF is based,
+    and which serves to link its concrete syntax to its formal
+    semantics. 
+This abstract syntax is quite distinct from XML's tree-based infoset [<a
+    href="#ref-xml-infoset">XML-INFOSET</a>]. It also includes discussion of design goals, 
+    key concepts, datatyping, character normalization
+    and handling of URI references.</p>
+
+    <p>Normative documentation of RDF falls into the following
+    areas:</p>
+
+    <ul>
+      <li>XML serialization syntax [<a href=
+      "#ref-rdf-syntax">RDF-SYNTAX</a>],</li>
+
+      <li>formal semantics [<a href=
+      "#ref-rdf-semantics">RDF-SEMANTICS</a>], and</li>
+
+      <li>this document, (sections 4, 5 and 6).</li>
+    </ul>
+
+    <p>Within this document, normative sections are explicitly labelled as such. 
+Explicit notes are informative.</p>
+
+    <p>The framework is designed so that vocabularies can be layered.  
+The RDF and RDF vocabulary definition (RDF schema) 
+languages 
+    [<a href="#ref-rdf-vocabulary">RDF-VOCABULARY</a>] are the first
+    such vocabularies.
+ 
+    Others (cf. OWL [<a href="#ref-owl">OWL</a>] and
+    the applications mentioned in the primer 
+    [<a href=
+    "#ref-rdf-primer">RDF-PRIMER</a>]) are in development.</p>
+
+    <h3><a id="section-Structure" name="section-Structure">1.1
+    Structure of this Document</a></h3>
+
+    <p>In <a href="#section-Overview">section 2</a>, 
+the background rationale and design goals 
+are introduced.
+Key concepts follow in <a href="#section-Concepts">section 3</a>.
+<a href="#section-URIspaces">Section 4</a> discusses URI references
+reserved for use by RDF.
+</p>
+ 
+
+    <p><a href="#section-Datatypes">Section 5</a> discusses datatypes.
+XML content of
+    literals is described in <a href="#section-XMLLiteral">section
+    5.1</a>, and the abstract syntax is defined in <a href=
+    "#section-Graph-syntax">section 6</a> of this document.</p>
+
+    <p><a href="#section-fragID">Section 7</a> discusses the role of fragment 
+    identifiers in URI references used with RDF.</p>
+
+    <h2><a id="section-Overview" name="section-Overview">2. Motivations and Goals</a></h2>
+
+    <p>RDF has an abstract syntax that reflects a simple graph-based
+    data model, and formal semantics with a rigorously defined notion
+    of entailment providing a basis for well founded deductions in RDF
+    data.</p>
+
+    <h3><a id="section-motivation" name="section-motivation">2.1 Motivation</a></h3>
+
+    <p>The development of RDF has been motivated by the following uses,
+    among others:</p>
+
+    <ul>
+      <li>Web metadata: providing information about Web resources and
+      the systems that use them (e.g. content rating, capability
+      descriptions, privacy preferences, etc.)</li>
+
+      <li>Applications that require open rather than constrained
+      information models (e.g. scheduling activities, describing
+      organizational processes, annotation of Web resources, etc.)</li>
+
+      <li>To do for machine processable information (application data)
+      what the World Wide Web has done for hypertext: to allow data to
+      be processed outside the particular environment in which it was
+      created, in a fashion that can work at Internet scale.</li>
+
+      <li>Interworking among applications: combining data from several
+      applications to arrive at new information.</li>
+
+      <li>Automated processing of Web information by software agents:
+      the Web is moving from having just human-readable information to
+      being a world-wide network of cooperating processes. RDF provides
+      a world-wide lingua franca for these processes.</li>
+    </ul>
+
+    <p>RDF is designed to represent information in a minimally
+    constraining, flexible way. It can be used in isolated
+    applications, where individually designed formats 
+    might be more direct and easily understood,  but RDF's generality offers greater value from
+    sharing. The value of information thus increases as it becomes
+    accessible to more applications across the entire Internet.</p>
+
+    <h3><a id="section-design-goals" name="section-design-goals">2.2 Design Goals</a></h3>
+
+    <p>The design of RDF is intended to meet the following goals:</p>
+
+    <ul>
+      <li>having a simple data model</li>
+      <li>having formal semantics and provable inference</li>
+      <li>using an extensible URI-based vocabulary</li>
+      <li>using an XML-based syntax</li>
+      <li>supporting use of XML schema datatypes</li>
+      <li>allowing anyone to make statements about any
+      resource</li>
+   </ul>
+
+    <h4><a id="section-simple-data-model" name="section-simple-data-model">2.2.1 A Simple Data
+    Model</a></h4>
+
+    <p>RDF has a simple data model that is easy for applications to
+    process and manipulate. The data model is independent of any
+    specific serialization syntax.</p>
+
+      <p class="note"><strong>Note:</strong> the term "model" used here in "data model" has a
+      completely different sense to its use in the term "model theory".
+      See  [<a href=
+      "#ref-rdf-semantics">RDF-SEMANTICS</a>] 
+      for more information about "model
+      theory" as used in the literature of mathematics and logic.</p>
+
+    <h4><a id="section-formal-semantics" name="section-formal-semantics">2.2.2 Formal Semantics
+    and Inference</a></h4>
+
+    <p>RDF has a formal semantics which provides a dependable basis for
+    reasoning about the meaning of an RDF expression. In particular, it
+    supports rigorously defined notions of entailment which provide a
+    basis for defining reliable rules of inference in RDF data.</p>
+
+    <h4><a id="section-extensible-vocab" name="section-extensible-vocab">2.2.3 Extensible
+    URI-based Vocabulary</a></h4>
+
+    <p>The vocabulary is fully extensible, being based on URIs with
+    optional fragment identifiers (<cite>URI references</cite>, or
+    <cite>URIrefs</cite>). URI references are used for naming all kinds
+    of things in RDF.</p>
+
+    <p>The other kind of value that appears in RDF data is a
+    literal.</p>
+
+    <h4><a id="section-xml-serialization" name="section-xml-serialization">2.2.4 XML-based
+    Syntax</a></h4>
+
+    <p>RDF has a recommended XML serialization form [<a href=
+    "#ref-rdf-syntax">RDF-SYNTAX</a>], which can be used to encode the
+    data model for exchange of information among applications.</p>
+
+    <h4><a id="section-use-xsd" name="section-use-xsd">2.2.5 Use XML Schema
+    Datatypes</a></h4>
+
+    <p>RDF can use values represented according to XML schema datatypes
+    [<a href="#ref-xml-schema2">XML-SCHEMA2</a>], thus assisting the
+    exchange of information between RDF and other XML applications.</p>
+
+    <h4><a id="section-anyone" name="section-anyone">2.2.6 Anyone Can Make
+    Statements About Any Resource</a></h4>
+
+    <p>To facilitate operation at Internet scale, RDF is an
+    open-world framework that allows anyone to make statements
+    about any resource.</p>
+    <p>In general, it is not assumed that complete information
+    about any resource is available. RDF does not prevent anyone
+    from making assertions that are nonsensical or inconsistent
+    with other statements, or the world as people see it. Designers
+    of applications that use RDF should be aware of this and may
+    design their applications to tolerate incomplete or
+    inconsistent sources of information.</p>
+
+<!-- here --> 
+    <h2><a id="section-Concepts" name="section-Concepts">3. RDF
+    Concepts</a></h2>
+
+    <p>RDF uses the following key concepts:</p>
+
+    <ul>
+      <li>Graph data model</li>
+
+      <li>URI-based vocabulary</li>
+
+      <li>Datatypes</li>
+
+      <li>Literals</li>
+
+      <li>XML serialization syntax</li>
+
+      <li>Expression of simple facts</li>
+
+      <li>Entailment</li>
+    </ul>
+
+    <h3><a id="section-data-model" name="section-data-model">3.1 Graph Data
+    Model</a></h3>
+
+    <p>The underlying structure of any expression in RDF is a
+    collection of triples, each consisting of a subject, a
+    predicate and an object. A set of such triples is called an RDF
+    graph (defined more formally in 
+<a href="#section-Graph-syntax">section 6</a>). This can be
+    illustrated by a node and directed-arc diagram, in which each
+    triple is represented as a node-arc-node link (hence the term
+    "graph").</p>
+    <div class="block">
+      <p><img src="Graph-ex.gif"
+      alt="image of the RDF triple comprising (subject, predicate, object)"
+       height="72" width="361" /></p>
+    </div>
+    <p>Each triple represents a statement of a relationship between
+    the things denoted by the nodes that it links. Each triple has
+    three parts:</p>
+    <ol>
+      <li>a <a href="#dfn-subject">subject</a>,</li>
+      <li>an <a href="#dfn-object">object</a>, and</li>
+      <li>a <a href="#dfn-predicate">predicate</a> (also called a
+      <a href="#dfn-property">property</a>) that denotes a
+      relationship.</li>
+    </ol>
+    <p>The direction of the arc is significant: it always points
+    toward the object.</p>
+    <p>The <a href="#section-Graph-Node">nodes</a> of an RDF graph
+    are its subjects and objects.</p>
+    <p>The assertion of an RDF triple says that some relationship,
+    indicated by the predicate, holds between the things denoted by
+    subject and object of the triple. The assertion of an RDF graph
+    amounts to asserting all the triples in it, so the meaning of
+    an RDF graph is the conjunction (logical AND) of the statements
+    corresponding to all the triples it contains. A formal account
+    of the meaning of RDF graphs is given in [<a
+    href="#ref-rdf-semantics">RDF-SEMANTICS</a>].</p>
+
+
+    <h3><a id="section-URI-Vocabulary" name=
+    "section-URI-Vocabulary">3.2 URI-based Vocabulary and Node
+    Identification</a></h3>
+
+
+    <p>A node may be a URI with optional fragment identifier (<a
+    href="#dfn-URI-reference">URI reference</a>, or <dfn><a
+    id="dfn-URIref" name="dfn-URIref">URIref</a></dfn>), a literal,
+    or blank (having no separate form of identification).
+    Properties are <cite>URI references</cite>. (See [<a
+    href="#ref-uris">URI</a>], section 4, for a description of URI
+    reference forms, noting that relative URIs are not used in an
+    RDF graph. See also <a href="#section-Graph-URIref">section
+    6.4</a>.)</p>
+    <p>A URI reference or literal used as a node identifies what
+    that node represents. A URI reference used as a predicate
+    identifies a relationship between the things represented by the nodes it connects. A
+    predicate URI reference may also be a node in the graph.</p>
+    <p>A <a href="#dfn-blank-node">blank node</a> is a node that is
+    not a URI reference or a literal. In the RDF abstract syntax, a
+    blank node is just a unique node that can be used in one or
+    more RDF statements, but has no intrinsic name.</p>
+    <p>A convention used by some linear representations of an RDF
+    graph to allow several statements to reference the same
+    unidentified resource is to use a <dfn><a
+    id="dfn-blank-node-id" name="dfn-blank-node-id">blank node
+    identifier</a></dfn>, which is a local identifier that can be
+    distinguished from all URIs and literals. When graphs are
+    merged, their blank nodes must be kept distinct if meaning is
+    to be preserved; this may call for re-allocation of blank node
+    identifiers. Note that such blank node identifiers are not part
+    of the RDF abstract syntax, and the representation of triples
+    containing blank nodes is entirely dependent on the particular
+    concrete syntax used.</p>
+
+
+    <h3><a name="section-Datatypes-intro" id="section-Datatypes-intro">3.3
+    Datatypes</a></h3>
+
+    <p>Datatypes are used by RDF in the representation of values such
+    as integers, floating point numbers and dates.</p>
+
+ <p>
+A datatype consists of a lexical space, a value space and a lexical-to-value 
+mapping, see <a href="#section-Datatypes">section 5</a>.
+</p>
+
+    <p>For example, the lexical-to-value mapping for the XML Schema datatype
+    <var>xsd:boolean</var>, where each member of the value space
+    (represented here as 'T' and 'F') has two lexical representations,
+    is as follows:</p>
+
+    <table border="1" cellpadding="5" summary=
+    "A table detailing the xsd:boolean datatype.">
+      <tr>
+        <th align="left">Value Space</th>
+
+        <td>{T, F}</td>
+      </tr>
+
+      <tr>
+        <th align="left">Lexical Space</th>
+
+        <td>{"0", "1", "true", "false"}</td>
+      </tr>
+
+      <tr>
+        <th align="left">Lexical-to-Value Mapping</th>
+
+        <td>{&lt;"true", T&gt;, &lt;"1", T&gt;, &lt;"0", F&gt;,
+        &lt;"false", F&gt;}</td>
+      </tr>
+    </table>
+
+    <p>RDF predefines just one datatype <a href=
+    "#dfn-rdf-XMLLiteral" class="code">rdf:XMLLiteral</a>, used for
+    embedding XML in RDF (see <a href="#section-XMLLiteral">section
+    5.1</a>).</p>
+
+    <p>There is no built-in concept of numbers or dates or other common
+    values. Rather, RDF defers to datatypes that are defined
+    separately, and identified with URI references.
+    The predefined XML Schema
+    datatypes [<a href="#ref-xml-schema2">XML-SCHEMA2</a>] are expected
+    to be widely used for this purpose.</p>
+
+
+    <p>RDF provides no mechanism for defining new datatypes. XML Schema
+    Datatypes [<a href="#ref-xml-schema2">XML-SCHEMA2</a>] provides an
+    extensibility framework suitable for defining new datatypes for use
+    in RDF.</p>
+
+    <h3><a name="section-Literals" id="section-Literals">3.4
+    Literals</a></h3>
+
+    <p>Literals are used to identify values such as numbers and dates
+    by means of a lexical representation. Anything represented by a
+    literal could also be represented by a URI, but it is often more
+    convenient or intuitive to use literals.</p>
+
+    <p>A literal may be the object of an RDF statement, but not the
+    subject or the predicate.</p>
+
+    <p>Literals may be <cite>plain</cite> or <cite>typed</cite> :</p>
+
+    <ul>
+      <li>A <a href="#dfn-plain-literal" >plain literal</a> is a string combined
+      with an optional language tag. This may be used for
+      plain text in a natural language. As recommended in the RDF
+      formal semantics [<a href=
+      "#ref-rdf-semantics">RDF-SEMANTICS</a>], these plain literals are
+      self-denoting.</li>
+
+
+
+      <li>A <a href="#dfn-typed-literal" >typed literal</a> is a string combined with a
+      datatype URI. It denotes the
+      member of the identified datatype's value space obtained by
+      applying the lexical-to-value mapping to the literal string.</li>
+    </ul>
+
+    <p>Continuing the example from <a href="#section-Datatypes-intro">section
+    3.3</a>, the typed literals that can be defined using the XML
+    Schema datatype <var>xsd:boolean</var> are:</p>
+
+    <table border="1" cellpadding="5" summary=
+    "This table lists the literals of type xsd:boolean.">
+      <tr>
+        <th>Typed Literal</th>
+
+        <th>Lexical-to-Value Mapping</th>
+
+        <th>Value</th>
+      </tr>
+
+      <tr>
+        <td align="center">&lt;xsd:boolean, "true"&gt;</td>
+
+        <td align="center">&lt;"true", T&gt;</td>
+
+        <td align="center">T</td>
+      </tr>
+
+      <tr>
+        <td align="center">&lt;xsd:boolean, "1"&gt;</td>
+
+        <td align="center">&lt;"1", T&gt;</td>
+
+        <td align="center">T</td>
+      </tr>
+
+      <tr>
+        <td align="center">&lt;xsd:boolean, "false"&gt;</td>
+
+        <td align="center">&lt;"false", F&gt;</td>
+
+        <td align="center">F</td>
+      </tr>
+
+      <tr>
+        <td align="center">&lt;xsd:boolean, "0"&gt;</td>
+
+        <td align="center">&lt;"0", F&gt;</td>
+
+        <td align="center">F</td>
+      </tr>
+    </table>
+
+    <p>For text that may contain 
+    markup, use typed literals
+with type <a href="#section-XMLLiteral">rdf:XMLLiteral</a>.
+If language annotation is required, 
+it    must be explicitly included as markup, usually by means of an 
+<code>xml:lang</code> attribute. 
+<a href="#ref-xhtml">[XHTML]</a> may be included within RDF
+in this way. Sometimes, in this latter case, 
+ an additional <code>span</code> or <code>div</code> 
+    element is needed to carry an
+<code>xml:lang</code> or <code>lang</code> attribute. 
+    </p>
+
+<p>
+The string in both plain and typed literals is recommended to
+be in Unicode Normal Form C <a href="#ref-nfc">[NFC]</a>. This is motivated
+by <a href="#ref-charmod">[CHARMOD]</a> particularly 
+<a href="https://www.w3.org/TR/2003/WD-charmod-20030822/#sec-Normalization">section 4 
+Early Uniform Normalization</a>.
+</p>
+
+    <h3><a id="section-SimpleFacts" name="section-SimpleFacts">3.5
+    RDF Expression of Simple Facts</a></h3>
+
+
+    <p>Some simple facts indicate a relationship between
+       two things. 
+Such a fact may be represented as an RDF triple in which the predicate 
+names the relationship, and the subject and object denote the two things.
+
+
+     A familiar representation of such a fact might be
+    as a row in a table in a relational database. The table has
+    two columns, corresponding to the subject and the object of the 
+    RDF triple. 
+    The name of the table corresponds to the predicate
+    of the RDF triple. A further familiar representation may be as a 
+    two place predicate
+    in first order logic.</p>
+    
+    <p>
+Relational databases permit a table to have an arbitrary number of columns, 
+a row of which expresses information corresponding to a predicate in first 
+order logic with an arbitrary number of places.  Such a row, or predicate, 
+has to be decomposed for representation as RDF triples.  A simple form of 
+decomposition introduces a new blank node, corresponding to the row, and a 
+new triple is introduced for each cell in the row.  The subject of each 
+triple is the new blank node, the predicate corresponds to the column name, 
+and object corresponds to the value in the cell.  The new blank node may 
+also have an <span class="code">rdf:type</span> property whose value corresponds 
+to the table name.
+</p>
+    
+   <p>As an example, consider Figure 6 from the 
+    [<a href=
+    "#ref-rdf-primer">RDF-PRIMER</a>]:
+
+</p>
+
+            <div class="figure">
+              <img src="fig6may19" alt=
+              "Using a Blank Node" width="100%" /><br />
+               RDF Primer Figure 6: Using a Blank Node
+            </div>
+
+
+ <p>
+This information might correspond to a row in a table <span class="code">"STAFFADDRESSES"</span>,
+ with a primary key 
+<span class="code">STAFFID</span>,
+ and additional columns 
+<span class="code">STREET</span>,
+<span class="code">STATE</span>,
+<span class="code">CITY</span> and
+<span class="code">POSTALCODE</span>.
+  </p>
+
+    <p>
+Thus, a more complex fact is expressed in RDF using a 
+conjunction (logical-AND) of simple binary relationships.  RDF does not 
+provide means to express negation (NOT) or disjunction (OR).  </p>
+
+    <p>Through its use of extensible URI-based vocabularies, RDF
+    provides for expression of facts about arbitrary subjects; i.e.
+    assertions of named properties about specific named things. A URI
+    can be constructed for any thing that can be named, so RDF facts
+    can be about any such things. <!--
+            And, as noted above, RDF also
+            provides for expression of assertions about unnamed things, which
+            may be fully identifiable in terms of such assertions [<a
+            href="#ref-tap-rbd">TAP-RBD</a>].
+            -->
+    </p>
+
+
+    <h3><a id="section-Entailment" name="section-Entailment">3.6
+    Entailment</a></h3>
+
+    <p>The ideas on meaning and inference in RDF are underpinned by the
+    formal concept of <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#entail">
+<cite>entailment</cite></a>, as 
+      discussed in the RDF
+    semantics document [<a href=
+    "#ref-rdf-semantics">RDF-SEMANTICS</a>].
+In brief,  an RDF expression A is said to
+<dfn>entail</dfn> another RDF&nbsp;expression B if every possible
+arrangement of things in the world that makes A true also makes B
+true. On this basis, if the truth of A is presumed or demonstrated
+then the truth of B can be inferred . 
+</p>
+
+
+    <h2><a id="section-URIspaces" name="section-URIspaces">4. RDF
+    Vocabulary URI and Namespace (Normative)</a></h2>
+
+    <p>
+
+RDF uses URI references to identify resources and properties.  Certain
+URI references are given specific meaning by RDF.  Specifically, URI
+references with the following leading substring are defined by the RDF
+specifications:
+
+</p>
+    <ul>
+      <li><span
+      class="code">http://www.w3.org/1999/02/22-rdf-syntax-ns#</span>
+      (conventionally associated with namespace prefix <span
+      class="code">rdf:</span>)</li>
+<!--
+      <li><span
+      class="code">http://www.w3.org/2000/01/rdf-schema#</span>
+      (conventionally associated with namespace prefix <span
+      class="code">rdfs:</span>)</li>
+-->
+    </ul>
+    <p>Used with the RDF/XML serialization, this URI prefix
+    string corresponds to XML namespace names [<a
+    href="#ref-namespaces">XML-NS</a>] associated with the RDF
+    vocabulary terms.</p>
+    <div class="note">
+      <p><strong>Note:</strong> this namespace name is the same
+      as that used in the earlier RDF recommendation [<a
+      href="#ref-rdf-ms">RDF-MS</a>].</p>
+    </div>
+    <p>Vocabulary terms in the <span class="code">rdf:</span>
+    namespace are listed in <a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/#section-Namespace">
+    section 5.1</a> of the RDF syntax specification [<a
+    href="#ref-rdf-syntax">RDF-SYNTAX</a>]. Some of these terms are
+    defined by the RDF specifications to denote specific concepts.
+    Others have syntactic purpose (e.g. rdf:ID is part of
+    the RDF/XML syntax).</p>
+<!--
+    <p>Vocabulary terms defined in the <span
+    class="code">rdfs:</span> namespace are defined in the RDF
+    schema vocabulary specification [<a
+    href="#ref-rdf-vocabulary">RDF-VOCABULARY</a>].</p>
+-->
+
+   <h2><a name="section-Datatypes" id="section-Datatypes">5. 
+    Datatypes (Normative)</a></h2>
+
+<p>
+The datatype abstraction used in RDF is compatible with 
+the abstraction used in
+XML Schema Part 2:
+    Datatypes [<a href="#ref-xml-schema2">XML-SCHEMA2</a>].</p>
+<p>
+A datatype consists of a lexical space, a value space and a lexical-to-value 
+mapping.
+</p>
+<p>The <dfn><a id="dfn-lexical-space"
+    name="dfn-lexical-space">lexical space</a></dfn> of a datatype is a set of Unicode [<a
+      href="#ref-unicode">UNICODE</a>] strings.</p>
+<p>
+The <dfn><a id="dfn-lexical-to-value-mapping" name=
+    "dfn-lexical-to-value-mapping">lexical-to-value mapping</a></dfn> of a datatype is a set of pairs whose 
+first element belongs to 
+the <dfn><a href="#dfn-lexical-space">lexical space</a></dfn> of the datatype, 
+and the second element belongs to the 
+ <dfn><a id="dfn-value-space"
+    name="dfn-value-space">value space</a></dfn> of the datatype:
+</p>
+<ul>
+<li>
+Each member of the lexical space is paired with (maps to) exactly one member 
+of the value space.
+</li>
+<li>
+Each member of the value space may be paired with any number (including 
+zero) of members of the lexical space (lexical representations for that 
+value).
+</li>
+</ul>
+<p>
+A datatype is identified by one or more URI references.
+</p>
+<p>
+RDF may be used with any datatype definition that conforms to this
+abstraction, even if not defined in terms of XML Schema.
+</p>
+   <p>Certain XML Schema built-in datatypes are not suitable for use 
+    within RDF. For example, the 
+<a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#QName">QName</a> 
+datatype  requires a namespace declaration to be in scope during
+    the mapping, and is not recommended for use in RDF.
+[<a href=
+      "#ref-rdf-semantics">RDF-SEMANTICS</a>] contains
+a 
+<a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#dtype_interp">more detailed discussion</a>
+ of specific XML Schema built-in datatypes. </p>
+
+<div class="note">
+<p><strong>Note:</strong> When the datatype is defined using XML Schema:
+</p>
+<ul>
+<li>
+All values correspond to some lexical form, either using
+the lexical-to-value mapping of the datatype or if it is a union
+datatype with a lexical mapping associated with one of the member
+datatypes.
+</li>
+<li>
+XML Schema facets remain part of the datatype and are used by the XML 
+Schema mechanisms that control the lexical space and the value space; 
+however, RDF does not define a standard mechanism to access these facets.</li>
+
+<li>In [<a href="#ref-xml-schema1">XML-SCHEMA1</a>],
+<a href="https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#section-White-Space-Normalization-during-Validation">
+white space normalization</a> occurs
+during 
+<a href="https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#key-vn">validation</a> 
+according to the value of the 
+<a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#rf-whiteSpace">whiteSpace
+facet</a>. The lexical-to-value mapping used in RDF datatyping
+occurs after this, so that the whiteSpace facet has no
+effect in RDF datatyping.
+</li>
+</ul>
+
+
+</div>
+
+    <h3><a id="section-XMLLiteral" name="section-XMLLiteral">5.1 XML
+    Content within an RDF Graph</a></h3>
+
+    <p>RDF provides for XML content as a possible literal value. This
+    typically originates from the use of
+    <span class="code">rdf:parseType="Literal"</span> in the RDF/XML Syntax [<a
+    href="#ref-rdf-syntax">RDF-SYNTAX</a>].</p>
+
+    <p>Such content is indicated in an RDF graph using a typed literal
+    whose datatype is a special built-in datatype
+    <dfn><a id="dfn-rdf-XMLLiteral" name= "dfn-rdf-XMLLiteral" class="code">rdf:XMLLiteral</a></dfn>,
+    defined as follows.</p>
+
+   
+    <dl>
+      <dt><a name="XMLLiteral-uri" id="XMLLiteral-uri">A URI reference for
+identifying this datatype</a></dt>
+
+      <dd>is
+      <span class="code">http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</span>.</dd>
+
+      
+ 
+
+      <dt><a name="XMLLiteral-lexical-space" id="XMLLiteral-lexical-space">The lexical space</a></dt>
+
+<dd>is the set of all
+strings:
+<ul>
+<li>which are well-balanced, self-contained 
+<a href="https://www.w3.org/TR/2000/REC-xml-20001006#NT-content">
+XML content</a> 
+[<a href="#ref-xml">XML</a>];
+</li>
+<li>for which encoding as UTF-8 
+[<a href="#ref-rfc-2279">RFC 2279</a>] yields 
+<a href="https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#def-exclusive-canonical-XML">
+exclusive
+Canonical XML </a> (with comments, with empty  
+<a href="https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#def-InclusiveNamespaces-PrefixList">
+InclusiveNamespaces PrefixList
+</a>) <a href="#ref-xml-xc14n">[XML-XC14N]</a>;
+</li>
+<li>for which embedding between an arbitrary XML start tag and an end tag
+yields a document conforming to <a href="https://www.w3.org/TR/1999/REC-xml-names-19990114/">XML
+      Namespaces</a> <a href="#ref-namespaces">[XML-NS]</a></li>
+</ul>
+</dd>
+
+
+   <dt><a name="XMLLiteral-value-space" id="XMLLiteral-value-space">The value space</a></dt>
+
+      <dd>is a set of entities, called XML values, which is:
+<ul>
+<li>disjoint from the lexical space;</li>
+<li>disjoint from the value space of any XML schema datatype 
+[<a href="#ref-xml-schema2">XML-SCHEMA2</a>];</li>
+
+<li>disjoint from the set of Unicode character strings [<a
+      href="#ref-unicode">UNICODE</a>] strings;</li>
+<li>and in 1:1 correspondence with the lexical space.</li>
+</ul>
+</dd>
+
+      <dt><a name="XMLLiteral-mapping" id="XMLLiteral-mapping">The lexical-to-value mapping</a></dt>
+
+      <dd>
+is a one-one mapping from the lexical space onto the value space,
+    i.e. it is both injective and surjective.
+</dd> 
+
+
+
+    </dl>
+
+
+      <p class="note"><strong>Note:</strong> Not all values of this datatype are compliant
+      with XML 1.1 [<a href="#ref-xml-1-1">XML 1.1</a>]. If compliance
+      with XML 1.1 is desired, then only those values that are
+<a href="https://www.w3.org/TR/2002/CR-xml11-20021015/#sec2.13">fully
+      normalized</a> according to XML 1.1 should be used.</p>
+
+      <p class="note"><strong>Note:</strong> XML values can be thought of as the 
+[<a href="#ref-xml-infoset">XML-INFOSET</a>] or the 
+[<a href="#ref-xpath">XPATH</a>]
+nodeset corresponding to the lexical form, with an appropriate equality
+function.</p>
+
+      <p class="note"><strong>Note:</strong> RDF applications may use additional equivalence relations, such as
+that which relates an 
+<a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#string"><code>xsd:string</code></a>
+ 
+with an <code>rdf:XMLLiteral</code> corresponding to
+a single text node of the same string.</p>
+
+
+
+    <h2><a id="section-Graph-syntax" name="section-Graph-syntax">6.
+    Abstract Syntax (Normative)</a></h2>
+
+
+    <p>This section defines the RDF abstract syntax. The RDF abstract
+    syntax is a set of triples, called the RDF graph.</p>
+
+    <p>This section also defines equivalence between RDF graphs. A
+    definition of equivalence is needed to support the RDF Test Cases [<a
+    href="#ref-rdf-tests">RDF-TESTS</a>] specification.</p>
+
+<div class="note">
+<p><a name="implementation-note" id="implementation-note"><strong>Implementation Note:</strong></a>
+This <em>abstract</em> syntax is the
+syntax over which the formal semantics are defined.
+Implementations are free to represent RDF graphs in
+any other equivalent form.  As an example:
+in an RDF graph,
+literals with datatype <tt>rdf:XMLLiteral</tt> can be represented
+in a non-canonical
+format, and canonicalization performed during the comparison between two
+such literals. In this example the comparisons may be
+being performed either between syntactic structures or
+between their denotations in the domain of discourse.
+Implementations that do not require any such comparisons can
+hence be optimized.
+</p>
+</div>
+
+    <h3><a id="section-triples" name="section-triples">6.1 RDF
+    Triples</a><a id="xtocid103646" name="xtocid103646"> </a></h3>
+
+    <p>An <dfn><a id="dfn-rdf-triple" name="dfn-rdf-triple">RDF
+    triple</a></dfn> contains three components:</p>
+
+    <ul>
+      <li>the <dfn><a id="dfn-subject" name="dfn-subject">subject</a></dfn>,
+which is an <a href="#dfn-URI-reference">RDF URI reference</a> 
+or a <a href="#dfn-blank-node">blank node</a>
+</li>
+
+      <li>the <dfn><a id="dfn-predicate" name="dfn-predicate">predicate</a></dfn>, which is an <a href=
+      "#dfn-URI-reference">RDF URI reference</a></li>
+
+      <li>the <dfn><a id="dfn-object" name="dfn-object">object</a></dfn>,
+which is an <a href="#dfn-URI-reference">RDF URI reference</a>,
+a <a href="#dfn-literal">literal</a>
+or a <a href="#dfn-blank-node">blank node</a>
+</li>
+    
+    </ul>
+    <p>An RDF triple is conventionally written in the order subject,
+    predicate, object.</p>
+    
+    <p>The predicate is also known as the <dfn><a name="dfn-property" 
+     id="dfn-property">property</a></dfn> of the triple.</p>
+
+    <h3><a id="section-rdf-graph" name="section-rdf-graph">6.2 RDF Graph</a><a id="xtocid103647" name="xtocid103647"> </a></h3>
+
+    <p>An <dfn><a id="dfn-rdf-graph" name="dfn-rdf-graph">RDF
+    graph</a></dfn> is a set of RDF triples.</p>
+
+    <p>The set of <dfn><a name="dfn-node" id="dfn-node">nodes</a><a name="section-Graph-Node" id="section-Graph-Node"> </a></dfn> of an RDF graph is the set of subjects and objects of
+    triples in the graph.</p>
+
+    
+    <h3><a id="section-graph-equality" name="section-graph-equality">6.3 Graph
+    Equivalence</a></h3>
+
+    <p>Two RDF graphs <var>G</var> and <var>G'</var> are equivalent if there
+    is a bijection <var>M</var> between the sets of nodes of the two graphs,
+    such that:</p>
+
+    <ol>
+      <li><var>M</var> maps blank nodes to blank nodes.</li>
+      <li><var>M(lit)=lit</var> for all <a href=
+      "#dfn-literal">RDF literals</a> <var>lit</var> which
+      are nodes of <var>G</var>.</li>
+
+      <li><var>M(uri)=uri</var> for all <a href=
+      "#dfn-URI-reference">RDF URI references</a> <var>uri</var>
+      which are nodes of <var>G</var>.</li>
+
+      <li>The triple <var>( s, p, o )</var> is in <var>G</var> if and
+      only if the triple <var>( M(s), p, M(o) )</var> is in
+      <var>G'</var></li>
+    </ol>
+    <p>With this definition, <var>M</var> shows how each blank node 
+   in <var>G</var> can be replaced with
+   a new blank node to give  <var>G'</var>.</p>
+   
+    
+
+    <h3><a id="section-Graph-URIref" name="section-Graph-URIref">6.4
+    RDF URI References</a></h3>
+
+
+
+    <p>A <dfn><a id="dfn-URI-reference" name="dfn-URI-reference">URI reference</a></dfn> within an RDF graph (an RDF URI reference) is a
+    Unicode string [<a href="#ref-unicode">UNICODE</a>] that:
+</p>
+<ul>
+<li>does not contain any control characters ( #x00 - #x1F, #x7F-#x9F)
+</li>
+<li>and
+        would produce a 
+valid URI character sequence (per RFC2396 [<a href=
+        "#ref-uris">URI</a>], sections 2.1)
+representing an absolute URI with optional 
+fragment identifier
+ when subjected to the encoding described below. 
+</li>
+</ul>
+<p>
+The encoding consists of:
+</p>
+<ol>
+<li>encoding the Unicode string as UTF-8
+[<a href=
+      "#ref-rfc-2279">RFC-2279</a>], giving a sequence of octet values.
+</li>
+<li>
+%-escaping octets that do not correspond to permitted US-ASCII characters.
+</li>
+</ol>
+<p>
+The disallowed octets that must be %-escaped include all those that do not 
+correspond to US-ASCII characters, and the excluded characters listed in 
+Section 2.4 of [<a href=
+        "#ref-uris">URI</a>], except for the number sign (#), percent sign (%), 
+and the square bracket characters re-allowed in [<a href=
+        "#ref-rfc-2732">RFC-2732</a>].
+</p>
+<p>
+Disallowed octets must be escaped with the URI escaping mechanism (that is, converted to %HH, 
+where HH is the 2-digit hexadecimal numeral corresponding to the octet value).
+</p>
+
+
+    <p>Two RDF URI references are equal if and only if they compare as
+    equal, character by character, as Unicode strings.</p>
+
+    <div class="note">
+
+      <p><strong>Note:</strong> RDF URI references are compatible with the <a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#anyURI"><cite>
+      anyURI</cite></a> datatype as defined by XML schema datatypes [<a
+      href="#ref-xml-schema2">XML-SCHEMA2</a>], constrained to be an
+      absolute rather than a relative URI reference.</p>
+
+      <p><strong>Note:</strong> RDF URI references are compatible with <a href="https://www.w3.org/TR/2003/PR-xml-names11-20031105/#IRIs">International Resource
+      Identifiers</a> as defined by [<a href="#ref-xml-names11">XML
+      Namespaces 1.1</a>].</p>
+
+
+
+      <p><strong>Note:</strong> this section anticipates an RFC on Internationalized Resource 
+Identifiers. Implementations may issue warnings concerning the use
+of RDF URI References that do not conform with [<a href="#ref-iri">IRI draft</a>] or its 
+successors.</p>
+
+      <p><strong>Note:</strong> The restriction to absolute URI references is
+      found in this abstract syntax. When there is a well-defined base
+      URI, concrete syntaxes, such as RDF/XML, may permit relative URIs
+      as a shorthand for such absolute URI references.</p>
+
+
+      <p><strong>Note:</strong> Because of the risk of confusion between 
+RDF URI references that would 
+be equivalent if derefenced, the use of %-escaped characters in RDF URI 
+references is strongly discouraged. See also the
+<a href="https://www.w3.org/2001/tag/issues.html#URIEquivalence-15">
+URI equivalence issue</a> of
+the Technical Architecture Group [<a href="#ref-TAG">TAG</a>].</p>
+    </div>
+
+    <h3><a id="section-Graph-Literal" name="section-Graph-Literal">6.5
+    RDF Literals</a></h3>
+
+
+<p>A <dfn><a id="dfn-literal" name="dfn-literal">literal</a></dfn> in an RDF graph 
+contains one or two named components.</p>
+<p>All literals have a <dfn><a id="dfn-lexical-form" name=
+      "dfn-lexical-form">lexical form</a></dfn> being a Unicode [<a
+      href="#ref-unicode">UNICODE</a>] string, which SHOULD be in Normal Form C [<a
+      href="#ref-nfc">NFC</a>].</p>
+
+
+<p><dfn><a id="dfn-plain-literal" name="dfn-plain-literal">Plain literals</a></dfn> have 
+ a <a href="#dfn-lexical-form">lexical form</a> and optionally a 
+<dfn><a id="dfn-language-identifier" name=
+      "dfn-language-identifier">language tag</a></dfn> as
+defined by [<a href="#ref-rfc-3066">RFC-3066</a>], normalized to lowercase.</p>
+
+<p><dfn><a id="dfn-typed-literal" name="dfn-typed-literal">Typed literals</a></dfn> have a <a href="#dfn-lexical-form">lexical form</a> and a <dfn><a id="dfn-datatype-URI" name=
+      "dfn-datatype-URI">datatype URI</a></dfn> being an <a href=
+      "#dfn-URI-reference">RDF URI reference</a>.</p>
+ 
+
+
+    <div class="note">
+      <p><strong>Note:</strong> Literals in which the lexical form begins with a
+      composing character (as defined by [<a href=
+      "#ref-charmod">CHARMOD</a>]) are allowed however they may cause
+      interoperability problems, particularly with XML version 1.1 [<a
+      href="#ref-xml-1-1">XML 1.1</a>].</p>
+
+      <p><strong>Note:</strong> When using the language tag, care must be
+      taken not to confuse language with locale. The language
+      tag relates only to human language text. Presentational
+      issues should
+      be addressed in end-user applications.</p>
+
+      <p><strong>Note:</strong> The case normalization of 
+language tags is part of
+ the description of the abstract syntax, and consequently the abstract
+ behaviour of RDF applications. It does not constrain an
+ RDF implementation to actually normalize the case. Crucially, the result
+ of comparing two language tags should not be sensitive to the case of
+ the original input.</p>
+
+    </div>
+
+    <h4><a id="section-Literal-Equality" name=
+    "section-Literal-Equality">6.5.1 Literal Equality</a></h4>
+
+    <p>Two literals are equal if and only if all of the following
+    hold:</p>
+
+    <ul>
+      <li>The strings of the two lexical forms compare equal, character
+      by character.</li>
+
+      <li>Either both or neither have language tags.</li>
+
+      <li>The language tags, if any, compare
+      equal.</li>
+
+      <li>Either both or neither have datatype URIs.</li>
+
+      <li>The two datatype URIs, if any, compare equal, character by
+      character.</li>
+    </ul>
+
+      <p class="note"><strong>Note:</strong> RDF Literals are distinct and distinguishable
+      from RDF URI references; e.g. http://example.org as an RDF
+      Literal (untyped, without a language tag) is not equal to
+      http://example.org as an RDF URI reference.</p>
+
+    <h4><a id="section-Literal-Value" name=
+    "section-Literal-Value">6.5.2 The Value Corresponding to a Typed
+    Literal</a></h4>
+
+    <p>The datatype URI refers to a <a href=
+    "#section-Datatypes">datatype</a>. For XML Schema <a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#built-in-datatypes">
+    built-in</a> datatypes, URIs such as
+    <span class="code">http://www.w3.org/2001/XMLSchema#int</span> are used. The URI
+    of the datatype <a href=
+    "#section-XMLLiteral" class="code">rdf:XMLLiteral</a> may be used.
+    There may be other, implementation dependent, mechanisms by which
+    URIs refer to datatypes.</p>
+
+    <p>The <em>value</em> associated with a typed literal is found by
+    applying the lexical-to-value mapping associated with the datatype URI to
+    the lexical form.
+    </p>
+
+    <p>
+ If the lexical form is not in
+    the lexical space of the datatype associated with the datatype URI,
+then no literal value can be associated with the typed literal.
+Such a case, while in error, is not  <em>syntactically</em> ill-formed.</p>
+<!--
+    <p>A typed literal for which the datatype does not map the lexical
+    form to a value is not syntactically ill-formed.</p>
+-->
+    
+
+      <p class="note"><strong>Note:</strong> 
+In application contexts, comparing the values of typed literals (see 
+<a href="#section-Literal-Value">
+section
+6.5.2</a>)
+is usually more helpful than comparing their syntactic forms (see 
+<a href="#section-Literal-Equality">
+section
+6.5.1</a>).
+Similarly, for comparing RDF Graphs,
+semantic notions of entailment (see 
+[<a href=
+    "#ref-rdf-semantics">RDF-SEMANTICS</a>]) are usually
+more helpful than syntactic equality (see 
+<a href="#section-graph-equality">
+section
+6.3</a>).</p>
+<h3><a id="section-blank-nodes" name="section-blank-nodes">6.6 Blank Nodes</a></h3>
+<p>
+The <dfn><a id="dfn-blank-node" name="dfn-blank-node">blank nodes</a></dfn> in an RDF graph 
+are drawn from an infinite set.
+This set of blank nodes, the set of all <a href="#dfn-URI-reference">RDF URI references</a>
+and the set of all <a href="#dfn-literal">literals</a> are pairwise disjoint.
+</p>
+<p>
+Otherwise, this set of blank nodes is arbitrary.
+</p>
+<p>RDF makes no reference to any internal structure of blank nodes.
+Given two blank nodes, it is 
+possible to determine whether or not they are the same.</p>
+
+
+    <h2><a id="section-fragID" name="section-fragID">7. Fragment
+    Identifiers</a></h2>
+
+    <p>RDF uses an <a href="#dfn-URI-reference">RDF URI
+    Reference</a>, which may include a fragment identifier, as a
+    context free identifier for a resource. RFC 2396 [<a
+    href="#ref-uris">URI</a>] states that the meaning of a fragment
+    identifier depends on the MIME content-type of a document, i.e.
+    is context dependent.</p>
+    <p>These apparently conflicting views are reconciled by
+    considering that a URI reference in an RDF graph is treated
+    with respect to the MIME type <span
+    class="code">application/rdf+xml</span> [<a
+    href="#ref-rdf-mime-type">RDF-MIME-TYPE</a>]. Given an RDF URI
+    reference consisting of an absolute URI and a fragment
+    identifier, the fragment identifer identifies the same thing
+    that it does in an <span
+    class="code">application/rdf+xml</span> representation of the
+    resource identified by the absolute URI component. Thus:</p>
+    <ul>
+      <li>we assume that the URI part (i.e. excluding fragment
+      identifier) identifies a resource, which is presumed to have
+      an RDF representation. So when <span
+      class="code">eg:someurl#frag</span> is used in an RDF
+      document, <span class="code">eg:someurl</span> is taken to
+      designate some RDF document (even when no such document can
+      be retrieved).</li>
+      <li><span class="code">eg:someurl#frag</span> means the thing
+      that is indicated, according to the rules of the <span
+      class="code">application/rdf+xml</span> MIME content-type as
+      a "fragment" or "view" of the RDF document at <span
+      class="code">eg:someurl</span>. If the document does not
+      exist, or cannot be retrieved, or is available only in
+      formats other than <span
+      class="code">application/rdf+xml</span>, then exactly what
+      that view may be is somewhat undetermined, but that does not
+      prevent use of RDF to say things about it.</li>
+      <li>the RDF treatment of a fragment identifier allows it to
+      indicate a thing that is entirely external to the document,
+      or even to the "shared information space" known as the Web.
+      That is, it can be a more general idea, like some particular
+      car or a mythical Unicorn.</li>
+      <li>in this way, an <span
+      class="code">application/rdf+xml</span> document acts as an
+      intermediary between some Web retrievable documents (itself,
+      at least, also any other Web retrievable URIs that it may
+      use, possibly including schema URIs and references to other
+      RDF documents), and some set of possibly abstract or non-Web
+      entities that the RDF may describe.</li>
+    </ul>
+    <p>This provides a handling of URI references and their
+    denotation that is consistent with the RDF model theory and
+    usage, and also with conventional Web behavior. Note that
+    nothing here requires that an RDF application be able to
+    retrieve any representation of resources identified by the URIs
+    in an RDF graph.</p>
+
+
+
+    <h2 class="nonum"><a id="section-Acknowledgments" name=
+    "section-Acknowledgments">8. Acknowledgments</a></h2>
+
+    <p>This document contains a significant contribution from Pat
+    Hayes, Sergey Melnik and Patrick Stickler, under whose leadership
+    was developed the framework described in the RDF family of
+    specifications for representing datatyped values, such as integers
+    and dates.</p>
+
+    <p>The editors acknowledge valuable contributions from the
+    following: <!--</p>
+
+    <ul>-->
+      <!--<li>-->Frank Manola, <!--</li>-->
+
+      <!--<li>-->Pat Hayes, <!--</li>-->
+
+      <!--<li>-->Dan Brickley, <!--</li>-->
+
+      <!--<li>-->Jos de Roo, <!--</li>-->
+
+      <!--<li>-->Dave Beckett, <!--</li>-->
+
+      <!--<li>-->Patrick Stickler, <!--</li>-->
+
+      <!--<li>-->Peter F. Patel-Schneider, <!--</li>-->
+
+      <!--<li>-->Jerome Euzenat, <!--</li>-->
+
+      <!--<li>-->Massimo Marchiori, <!--</li>-->
+
+      <!--<li>-->Tim Berners-Lee, <!--</li>-->
+
+      <!--<li>-->Dave Reynolds <!--</li>-->
+
+      <!--<li>-->and Dan Connolly. <!--</li>-->
+<!--
+      <li class="todo">[[[Other contributors]]]</li>
+    </ul>
+-->
+</p>
+    <p>Jeremy Carroll thanks <a href="mailto:oreste@w3.org">Oreste
+    Signore</a>, his host at the <a href="http://www.w3c.it/">W3C
+    Office in Italy</a> and <a href="http://www.isti.cnr.it" lang="it"
+    xml:lang="it">Istituto di Scienza e Tecnologie dell'Informazione
+    "Alessandro Faedo"</a>, part of the <a href="http://www.cnr.it"
+    lang="it" xml:lang="it">Consiglio Nazionale delle Ricerche</a>,
+    where Jeremy is a visiting researcher.</p>
+
+    <p>This document is a product of extended deliberations by the
+    RDFcore Working Group, whose members have included:
+
+<!--</p><ul>-->
+      <!--<li>-->Art Barstow (W3C), <!--</li>-->
+
+      <!--<li>-->Dave Beckett (ILRT), <!--</li>-->
+
+      <!--<li>-->Dan Brickley (ILRT), <!--</li>-->
+
+      <!--<li>-->Dan Connolly (W3C), <!--</li>-->
+
+      <!--<li>-->Jeremy Carroll (Hewlett Packard), <!--</li>-->
+
+      <!--<li>-->Ron Daniel (Interwoven Inc), <!--</li>-->
+
+      <!--<li>-->Bill dehOra (InterX), <!--</li>-->
+
+      <!--<li>-->Jos De Roo (AGFA), <!--</li>-->
+
+      <!--<li>-->Jan Grant (ILRT), <!--</li>-->
+
+      <!--<li>-->Graham Klyne (Nine by Nine), <!--</li>-->
+
+      <!--<li>-->Frank Manola (MITRE Corporation), <!--</li>-->
+
+      <!--<li>-->Brian McBride (Hewlett Packard), <!--</li>-->
+
+      <!--<li>-->Eric Miller (W3C), <!--</li>-->
+
+      <!--<li>-->Stephen Petschulat (IBM), <!--</li>-->
+
+      <!--<li>-->Patrick Stickler (Nokia), <!--</li>-->
+
+      <!--<li>-->Aaron Swartz (HWG), <!--</li>-->
+
+      <!--<li>-->Mike Dean (BBN Technologies / Verizon), <!--</li>-->
+
+      <!--<li>-->R. V. Guha (Alpiri Inc), <!--</li>-->
+
+      <!--<li>-->Pat Hayes (IHMC), <!--</li>-->
+
+      <!--<li>-->Sergey Melnik (Stanford University) and <!--</li>-->
+
+      <!--<li>-->Martyn Horner (Profium Ltd). <!--</li>-->
+    </p> <!--</ul>-->
+    <p>This specification also draws upon an earlier RDF Model and
+    Syntax document edited by Ora Lassilla and Ralph Swick, and RDF
+    Schema edited by Dan Brickley and R. V. Guha. RDF and RDF Schema
+    Working Group members who contributed to this earlier work are:
+
+     <!--</p><ul>-->
+      <!--<li>-->Nick Arnett (Verity), <!--</li>-->
+
+      <!--<li>-->Tim Berners-Lee (W3C), <!--</li>-->
+
+      <!--<li>-->Tim Bray (Textuality), <!--</li>-->
+
+      <!--<li>-->Dan Brickley (ILRT / University of Bristol), <!--</li>-->
+
+      <!--<li>-->Walter Chang (Adobe), <!--</li>-->
+
+      <!--<li>-->Sailesh Chutani (Oracle), <!--</li>-->
+
+      <!--<li>-->Dan Connolly (W3C), <!--</li>-->
+
+      <!--<li>-->Ron Daniel (DATAFUSION), <!--</li>-->
+
+      <!--<li>-->Charles Frankston (Microsoft), <!--</li>-->
+
+      <!--<li>-->Patrick Gannon (CommerceNet), <!--</li>-->
+
+      <!--<li>-->R. V. Guha (Epinions, previously of Netscape
+      Communications), <!--</li>-->
+
+      <!--<li>-->Tom Hill (Apple Computer), <!--</li>-->
+
+      <!--<li>-->Arthur van Hoff (Marimba), <!--</li>-->
+
+      <!--<li>-->Renato Iannella (DSTC), <!--</li>-->
+
+      <!--<li>-->Sandeep Jain (Oracle), <!--</li>-->
+
+      <!--<li>-->Kevin Jones, (InterMind), <!--</li>-->
+
+      <!--<li>-->Emiko Kezuka (Digital Vision Laboratories), <!--</li>-->
+
+      <!--<li>-->Joe Lapp (webMethods Inc.), <!--</li>-->
+
+      <!--<li>-->Ora Lassila (Nokia Research Center), <!--</li>-->
+
+      <!--<li>-->Andrew Layman (Microsoft), <!--</li>-->
+
+      <!--<li>-->Ralph LeVan (OCLC), <!--</li>-->
+
+      <!--<li>-->John McCarthy (Lawrence Berkeley National Laboratory), <!--</li>-->
+
+      <!--<li>-->Chris McConnell (Microsoft), <!--</li>-->
+
+      <!--<li>-->Murray Maloney (Grif), <!--</li>-->
+
+      <!--<li>-->Michael Mealling (Network Solutions), <!--</li>-->
+
+      <!--<li>-->Norbert Mikula (DataChannel), <!--</li>-->
+
+      <!--<li>-->Eric Miller (OCLC), <!--</li>-->
+
+      <!--<li>-->Jim Miller (W3C, emeritus), <!--</li>-->
+
+      <!--<li>-->Frank Olken (Lawrence Berkeley National Laboratory), <!--</li>-->
+
+      <!--<li>-->Jean Paoli (Microsoft), <!--</li>-->
+
+      <!--<li>-->Sri Raghavan (Digital/Compaq), <!--</li>-->
+
+      <!--<li>-->Lisa Rein (webMethods Inc.), <!--</li>-->
+
+      <!--<li>-->Paul Resnick (University of Michigan), <!--</li>-->
+
+      <!--<li>-->Bill Roberts (KnowledgeCite), <!--</li>-->
+i
+      <!--<li>-->Tsuyoshi Sakata (Digital Vision Laboratories), <!--</li>-->
+
+      <!--<li>-->Bob Schloss (IBM), <!--</li>-->
+
+      <!--<li>-->Leon Shklar (Pencom Web Works), <!--</li>-->
+
+      <!--<li>-->David Singer (IBM), <!--</li>-->
+
+      <!--<li>-->Wei (William) Song (SISU), <!--</li>-->
+
+      <!--<li>-->Neel Sundaresan (IBM), <!--</li>-->
+
+      <!--<li>-->Ralph Swick (W3C), <!--</li>-->
+
+      <!--<li>-->Naohiko Uramoto (IBM), <!--</li>-->
+
+      <!--<li>-->Charles Wicksteed (Reuters Ltd.), <!--</li>-->
+
+      <!--<li>-->Misha Wolf (Reuters Ltd.) and <!--</li>-->
+
+      <!--<li>-->Lauren Wood (SoftQuad). <!--</li>-->
+    <!--</ul>--></p>
+
+    <h2 class="nonum"><a id="section-References" name=
+    "section-References">9. References</a></h2>
+
+    <h3><a id="section-Normative-References" name=
+    "section-Normative-References"></a>9.1 Normative References</h3>
+
+    <dl>
+
+
+          <dt><a id="ref-rdf-semantics"
+          name="ref-rdf-semantics"></a>[RDF-SEMANTICS]</dt>
+	  <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">RDF Semantics</a></cite>, Patrick Hayes, Editor, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-rdf-mt-20040210/ . <a href="https://www.w3.org/TR/rdf-mt/">Latest version</a> available at http://www.w3.org/TR/rdf-mt/ .</dd>
+
+
+          <dt><a id="ref-rdf-syntax"
+          name="ref-rdf-syntax"></a>[RDF-SYNTAX]</dt>
+
+	  <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">RDF/XML Syntax Specification (Revised)</a></cite>, Dave Beckett, Editor, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/ . <a href="https://www.w3.org/TR/rdf-syntax-grammar/">Latest version</a> available at http://www.w3.org/TR/rdf-syntax-grammar/ .</dd>
+
+      
+      <dt><a id="ref-rdf-mime-type" name=
+      "ref-rdf-mime-type"></a>[RDF-MIME-TYPE]</dt>
+ <dd>
+    <cite><a href="http://www.iana.org/assignments/media-types/">MIME Media Types</a></cite>, The Internet Assigned Numbers Authority (IANA).  This document is http://www.iana.org/assignments/media-types/ .  The <a href="https://www.w3.org/2001/sw/RDFCore/mediatype-registration">registration for <code>application/rdf+xml</code></a> is archived at http://www.w3.org/2001/sw/RDFCore/mediatype-registration .
+  </dd>
+
+
+      <dt><a id="ref-xml" name="ref-xml"></a>[XML]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2000/REC-xml-20001006">Extensible Markup
+      Language (XML) 1.0, Second Edition</a></cite>, T. Bray, J. Paoli,
+      C.M. Sperberg-McQueen and E. Maler, Editors. World Wide Web
+      Consortium. 6 October 2000. This version is
+      <span>http://www.w3.org/TR/2000/REC-xml-20001006</span>. The
+      latest version of XML is available at <a href="https://www.w3.org/TR/REC-xml">http://www.w3.org/TR/REC-xml</a>.</dd>
+
+      <dt><a id="ref-namespaces" name=
+      "ref-namespaces"></a>[XML-NS]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/1999/REC-xml-names-19990114/">Namespaces in
+      XML</a></cite>, T. Bray, D. Hollander and A. Layman, Editors.
+      World Wide Web Consortium. 14 January 1999. This version is
+      <span>http://www.w3.org/TR/1999/REC-xml-names-19990114/</span>.
+      The <a href="https://www.w3.org/TR/REC-xml-names/">latest version
+      of Namespaces in XML</a> is available at
+      http://www.w3.org/TR/REC-xml-names/.</dd>
+
+      <dt><a id="ref-rfc-2279" name="ref-rfc-2279"></a>[RFC-2279]</dt>
+
+      <dd><i><a href="http://www.isi.edu/in-notes/rfc2279.txt">RFC 2279
+      - UTF-8, a transformation format of ISO 10646</a></i>, F.
+      Yergeau, IETF, January 1998. This document is
+      http://www.isi.edu/in-notes/rfc2279.txt.</dd>
+
+
+      <dt><a id="ref-uris" name="ref-uris"></a>[URI]</dt>
+
+      <dd><cite><a href="http://www.isi.edu/in-notes/rfc2396.txt">RFC
+      2396 - Uniform Resource Identifiers (URI): Generic
+      Syntax</a></cite>, T. Berners-Lee, R. Fielding and L. Masinter,
+      IETF, August 1998. This document is
+      http://www.isi.edu/in-notes/rfc2396.txt.</dd>
+
+      <dt><a id="ref-rfc-2732" name="ref-rfc-2732"></a>[RFC-2732]</dt>
+
+      <dd><i><a href="http://www.isi.edu/in-notes/rfc2732.txt">RFC 2732
+      - Format for Literal IPv6 Addresses in URL's</a></i>, R. Hinden,
+      B. Carpenter and L. Masinter, IETF, December 1999. This document
+      is http://www.isi.edu/in-notes/rfc2732.txt.</dd>
+
+
+      <dt><a id="ref-unicode" name="ref-unicode"></a>[UNICODE]</dt>
+
+      <dd><cite>The Unicode Standard, Version 3</cite>, The Unicode
+      Consortium, Addison-Wesley, 2000. ISBN 0-201-61633-5, as updated
+      from time to time by the publication of new versions. (See <a
+      href=
+      "http://www.unicode.org/unicode/standard/versions/">http://www.unicode.org/unicode/standard/versions/</a>
+      for the latest version and additional information on versions of
+      the standard and of the Unicode Character Database).</dd>
+
+      <dt><a id="ref-nfc" name="ref-nfc"></a>[NFC]</dt>
+
+      <dd><a href=
+      "http://www.unicode.org/unicode/reports/tr15/"><cite>Unicode
+      Normalization Forms,</cite></a> Unicode Standard Annex #15, Mark
+      Davis, Martin D&uuml;rst. (See <a href=
+      "http://www.unicode.org/unicode/reports/tr15/">http://www.unicode.org/unicode/reports/tr15/</a>
+      for the latest version).</dd>
+
+
+      <dt><a id="ref-rfc-3066" name="ref-rfc-3066"></a>[RFC-3066]</dt>
+
+      <dd><i><a href="http://www.isi.edu/in-notes/rfc3066.txt">RFC 3066
+      - Tags for the Identification of Languages</a></i>, H.
+      Alvestrand, IETF, January 2001. This document is
+      http://www.isi.edu/in-notes/rfc3066.txt.</dd>
+
+<dt>
+    <a id="ref-xml-xc14n" name="ref-xml-xc14n">[XML-XC14N]</a>
+  </dt>
+  <dd><cite><a href="https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/">Exclusive XML Canonicalization Version 1.0</a></cite>, J. Boyer, D.E. Eastlake 3rd, J. Reagle, Authors/Editors. W3C Recommendation.  World Wide Web Consortium, 18 July 2002.  This version of Exclusive XML 
+Canonicalization is <span>http://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/</span>.  
+The <a href="https://www.w3.org/TR/xml-exc-c14n/">latest version of Canonical XML</a> is at http://www.w3.org/TR/xml-exc-c14n.
+  </dd>
+
+      <dt><a id="ref-xml-schema2" name=
+      "ref-xml-schema2"></a>[XML-SCHEMA2]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/">XML Schema
+      Part 2: Datatypes</a></cite>, W3C Recommendation, World Wide Web
+      Consortium, 2 May 2001.This version is
+      http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/. The <a href="https://www.w3.org/TR/xmlschema-2/">latest version</a> is available at
+      http://www.w3.org/TR/xmlschema-2/.</dd>
+  
+
+    </dl>
+
+    <h3><a id="section-Informative-References" name=
+    "section-Informative-References"></a>9.2 Informational
+    References</h3>
+		<dl>
+
+          <dt><a id="ref-rdf-tests"
+          name="ref-rdf-tests"></a>[RDF-TESTS]</dt>
+<dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/">RDF Test Cases</a></cite>, Jan Grant and Dave Beckett, Editors, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-rdf-testcases-20040210/ . <a href="https://www.w3.org/TR/rdf-testcases/">Latest version</a> available at http://www.w3.org/TR/rdf-testcases/ .</dd>
+
+
+          <dt><a id="ref-rdf-vocabulary"
+          name="ref-rdf-vocabulary"></a>[RDF-VOCABULARY]</dt>
+<dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">RDF Vocabulary Description Language 1.0: RDF Schema</a></cite>, Dan Brickley and R. V. Guha, Editors, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-rdf-schema-20040210/ . <a href="https://www.w3.org/TR/rdf-schema/">Latest version</a> available at http://www.w3.org/TR/rdf-schema/ .</dd>
+
+
+  <dt><a id="ref-rdf-primer" name="ref-rdf-primer">[RDF-PRIMER]</a>
+  </dt>
+
+<dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF Primer</a></cite>, Frank Manola and Eric Miller, Editors, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-rdf-primer-20040210/ . <a href="https://www.w3.org/TR/rdf-primer/">Latest version</a> available at http://www.w3.org/TR/rdf-primer/ .</dd>
+
+
+      <dt><a id="ref-charmod" name="ref-charmod"></a>[CHARMOD]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2003/WD-charmod-20030822/">Character Model
+      for the World Wide Web 1.0</a></cite>, M. D&uuml;rst, F. Yergeau,
+      R. Ishida, M. Wolf, T. Texin, Editors, World Wide Web
+      Consortium Working Draft, work in progress, 22 August 2003.
+      This version of the Character Model is
+      http://www.w3.org/TR/2003/WD-charmod-20030822/. The <a href="https://www.w3.org/TR/charmod/">latest version of the Character
+      Model</a> is at http://www.w3.org/TR/charmod/.</dd>
+
+      <dt><a id="ref-xml-1-1" name="ref-xml-1-1"></a>[XML-1.1]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2002/CR-xml11-20021015/">Extensible Markup
+      Language (XML) 1.1</a></cite>, John Cowan, Editor. 
+W3C Candidate Recommendation 15 October 2002.
+This version is
+      http://www.w3.org/TR/2002/CR-xml11-20021015/. The <a href="https://www.w3.org/TR/xml11/">latest version</a> is available at
+      http://www.w3.org/TR/xml11/.</dd>
+
+
+
+      <dt><a id="ref-xml-schema1" name=
+      "ref-xml-schema1"></a>[XML-SCHEMA1]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/">XML Schema Part 1: Structures</a></cite> 
+     W3C Recommendation, World Wide Web
+      Consortium, 2 May 2001.
+This version is
+      http://www.w3.org/TR/2001/REC-xmlschema-1-20010502/. The <a href="https://www.w3.org/TR/xmlschema-1/">latest version</a> is available at
+      http://www.w3.org/TR/xmlschema-1/.</dd>
+
+      <dt><a id="ref-xml-names11" name=
+      "ref-xml-names11"></a>[XML-NAMESPACES-1.1]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2003/PR-xml-names11-20031105/">Namespaces
+      in XML 1.1</a></cite>, Tim Bray, Dave Hollander, Andrew Layman,
+      Richard Tobin, Editors. W3C Proposed Recommendation 05 November 2003.
+This version is
+      http://www.w3.org/TR/2003/PR-xml-names11-20031105/. The <a href="https://www.w3.org/TR/xml-names11/">latest version</a> is available at
+      http://www.w3.org/TR/xml-names11/.</dd>
+
+      <dt><a id="ref-xml-infoset" name=
+      "ref-xml-infoset"></a>[XML-INFOSET]</dt>
+
+      <dd><i><a href="https://www.w3.org/TR/2001/REC-xml-infoset-20011024/">XML
+      Information Set</a></i>, John Cowan and Richard Tobin, W3C
+      Recommendation, 24 October 2001. This document is
+http://www.w3.org/TR/2001/REC-xml-infoset-20011024/.
+The <a href="https://www.w3.org/TR/xml-infoset/">latest version</a> is available at
+      http://www.w3.org/TR/xml-infoset/.</dd>
+
+  <dt>
+    <a id="ref-xpath" name="ref-xpath">[XPATH]</a>
+  </dt>
+  <dd><cite><a href="https://www.w3.org/TR/1999/REC-xpath-19991116">XML Path Language (XPath) Version 1.0</a></cite>, J. Clark and S. DeRose, Editors.   World Wide Web Consortium, 16 November 1999.  This version of XPath is <span>http://www.w3.org/TR/1999/REC-xpath-19991116</span>.  The <a href="https://www.w3.org/TR/xpath">latest version of XPath</a> is at <span>http://www.w3.org/TR/xpath</span>.
+</dd>
+
+      <dt><a id="ref-owl" name="ref-owl"></a>[OWL]</dt>
+<dd><cite><a href="https://www.w3.org/TR/2004/REC-owl-ref-20040210/">OWL Web Ontology Language Reference</a></cite>, Mike Dean and Guus Schreiber, Editors, W3C Recommendation, 10 February 2004, http://www.w3.org/TR/2004/REC-owl-ref-20040210/ . <a href="https://www.w3.org/TR/owl-ref/">Latest version</a> available at http://www.w3.org/TR/owl-ref/ .</dd>
+
+      <dt><a id="ref-rdf-ms" name="ref-rdf-ms"></a>[RDF-MS]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">Resource
+      Description Framework (RDF) Model and Syntax
+      Specification</a></cite>, O. Lassila and R. Swick, Editors. World
+      Wide Web Consortium. 22 February 1999. This version is
+      http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/. The <a href="https://www.w3.org/TR/REC-rdf-syntax/">latest version of RDF
+      M&amp;S</a> is available at
+      http://www.w3.org/TR/REC-rdf-syntax/.</dd>
+      <dt><a id="ref-xhtml" name="ref-xhtml"></a>[XHTML]</dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2002/REC-xhtml1-20020801/">XHTML 
+1.0 The Extensible HyperText Markup Language (Second Edition)</a></cite>, 
+
+ World
+      Wide Web Consortium. 26 January 2000, revised 1 August 2002. This version is
+      http://www.w3.org/TR/2002/REC-xhtml1-20020801/. The <a href="https://www.w3.org/TR/xhtml1/">latest version of XHTML 1</a> is available at
+      http://www.w3.org/TR/xhtml1/.</dd>
+
+    
+      <dt><a id="ref-iri" name="ref-iri"></a>[IRI draft]</dt>
+
+      <dd><i><a href="https://www.w3.org/International/iri-edit/draft-duerst-iri-04">Internationalized Resource Identifiers (IRIs)</a></i>,  M. D&uuml;rst
+      and M. Suignard, Internet-Draft, June 2003, expires December 2003. This document
+      is <span>http://www.w3.org/International/iri-edit/draft-duerst-iri-04</span>.</dd>
+      <dt><a id="ref-TAG" name="ref-TAG"></a>[TAG]</dt>
+
+      <dd><i><a href="https://www.w3.org/2001/tag/issues">TAG Issues List</a></i>,  W3C Technical Architecture Group. 
+  This document
+      is <span>http://www.w3.org/2001/tag/issues</span>.</dd>
+</dl>
+    <h1><a id="changes" name="changes"></a>
+<a id="section-Revisions" name="section-Revisions">Appendix
+    A:</a> Revisions Since Last Call Working Draft of 
+<a href="https://www.w3.org/TR/2003/WD-rdf-concepts-20031010/">10 October 2003</a> </h1>
+<p>
+There were no substantive changes.
+</p>
+<p>
+The following editorial changes have been made:
+</p>
+<dl>
+<dt>Wording of Graph Equivalence</dt>
+<dd>Following a
+<a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003OctDec/0118">suggestion</a> from 
+ter Horst,
+the wording of 
+<a href="#section-graph-equality">Section 6.3</a> has been improved.
+</dd>
+<dt>Avoid 'globally'</dt>
+<dd>In response to a
+<a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003OctDec/0118">comment</a> from 
+ter Horst,
+the wording of 
+<a href="#section-URI-Vocabulary">Section 3.2</a> has been changed,
+replacing a single phrase to avoid the word 'globally',
+which was undefined and unclear.
+</dd>
+<dt>%s in RDF URI References</dt>
+<dd>
+Following a 
+<a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003OctDec/0123">comment</a> from 
+Patel-Schneider, an additional
+note has been added, concerning %-escapes in 
+<a href="#section-Graph-URIref">section 6.4 RDF URI References</a>.
+A new informative reference to the 
+<a href="#ref-TAG">[TAG]</a> issue list has been added.
+</dd>
+<dt>References</dt>
+<dd>Dated references RDF and OWL documents have been updated.</dd>
+</dl>
+
+		<hr />
+		<div class="metadata">
+      <p><a href="metadata.rdf"><img
+      src="rdf_meta.gif" alt="RDF/XML Metadata" /></a></p>
+      
+</div>
+  <script type="application/javascript" src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+</html>
+

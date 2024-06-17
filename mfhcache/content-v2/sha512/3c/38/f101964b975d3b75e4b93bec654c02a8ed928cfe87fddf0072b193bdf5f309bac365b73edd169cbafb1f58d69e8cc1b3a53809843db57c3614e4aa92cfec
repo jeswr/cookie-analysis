@@ -1,0 +1,2825 @@
+
+<!DOCTYPE html>
+
+
+
+
+
+<html data-bs-theme="auto" lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            
+                RFC 7946 - The GeoJSON Format
+            
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://static.ietf.org/fonts/inter/import.css" rel="stylesheet">
+        <link href="https://static.ietf.org/fonts/noto-sans-mono/import.css" rel="stylesheet">
+        
+            <link rel="stylesheet" href="https://static.ietf.org/dt/12.15.0/ietf/css/document_html_referenced.css">
+            
+            <script src="https://static.ietf.org/dt/12.15.0/ietf/js/document_html.js"></script>
+            <script src="https://static.ietf.org/dt/12.15.0/ietf/js/theme.js"></script>
+        
+        <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc7946/">
+        <meta name="description"
+            
+                content="The GeoJSON Format (RFC 7946, )"
+            >
+        
+
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-180.png">
+<link rel="icon"
+      sizes="32x32"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-32.png">
+<link rel="icon"
+      sizes="16x16"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-mask.svg"
+      color="#ffffff">
+<meta name="msapplication-TileColor"
+      content="#ffffff">
+<meta name="theme-color"
+      content="#ffffff">
+        
+
+
+
+
+<meta property="og:title" content="RFC 7946: The GeoJSON Format">
+<meta property="og:url" content="https://datatracker.ietf.org/doc/html/rfc7946">
+<link rel="canonical" href="https://datatracker.ietf.org/doc/html/rfc7946">
+<meta property="og:site_name" content="IETF Datatracker">
+<meta property="og:description" content="GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.">
+<meta property="og:type" content="article">
+
+<meta property="og:image" content="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-card.png">
+<meta property="og:image:alt" content="Logo of the IETF">
+<meta property="article:section" content="IETF - Internet Engineering Task Force">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="article:author" content="H. Butler">
+<meta property="article:author" content="M. Daly">
+<meta property="article:author" content="A. Doyle">
+<meta property="article:author" content="Sean Gillies">
+<meta property="article:author" content="T. Schaub">
+<meta property="article:author" content="Stefan Hagen">
+
+
+
+        
+        <style>
+            
+            .diff-form .select2-selection__rendered {
+                direction: rtl;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="btn-toolbar sidebar-toolbar position-fixed top-0 end-0 m-2 m-lg-3 d-print-none">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary btn-sm me-1 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    aria-label="Toggle theme">
+                        <i class="theme-icon-active bi bi-circle-half"></i>
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="bd-theme">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light" aria-pressed="false">
+                            <i class="me-2 opacity-50 theme-icon bi bi-sun-fill"></i>
+                            Light<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark" aria-pressed="false">
+                            <i class="me-2 opacity-50 theme-icon bi bi-moon-stars-fill"></i>
+                            Dark<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto" aria-pressed="true">
+                            <i class="me-2 opacity-50 theme-icon bi bi-circle-half"></i>
+                            Auto<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-secondary btn-sm sidebar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sidebar"
+                    aria-expanded="true"
+                    aria-controls="sidebar"
+                    aria-label="Toggle metadata sidebar"
+                    title="Toggle metadata sidebar">
+            <i class="bi bi-arrow-bar-left sidebar-shown"></i>
+            <i class="bi bi-arrow-bar-right sidebar-collapsed"></i>
+            </button>
+        </div>
+        <nav class="navbar bg-light-subtle px-1 fixed-top d-print-none d-md-none">
+            <a class="nav-link ps-1"
+               href="/doc/rfc7946/">
+                
+                    RFC 7946
+                
+                <br class="d-sm-none">
+                <span class="ms-sm-3 badge rounded-pill badge-ps">
+                    
+                        Proposed Standard
+                    
+                </span>
+            </a>
+            <button class="navbar-toggler p-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#docinfo-collapse"
+                    aria-controls="docinfo-collapse"
+                    aria-expanded="false"
+                    aria-label="Show document information">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+            <div class="navbar-nav navbar-nav-scroll overscroll-none collapse pt-1" id="docinfo-collapse">
+                <div class="bg-light-subtle p-0">
+                    <table class="table table-sm table-borderless small">
+                        <tbody class="meta align-top">
+                            <tr>
+                                <th scope="row"></th>
+                                <th scope="row">Title</th>
+                                <td class="edit"></td>
+                                <td>The GeoJSON Format</td>
+                            </tr>
+                        </tbody>
+                        
+
+
+
+
+
+
+<tbody class="meta align-top ">
+    <tr>
+        <th scope="row">Document</th>
+        <th scope="row">Document type</th>
+        <td class="edit"></td>
+        <td>
+            
+                <span class="text-success">RFC
+                    
+                        <span class="badge rounded-pill badge-ps">Proposed Standard</span>
+                    
+                </span>
+                
+                    <br>August 2016
+                
+                <br>
+                
+                    <a class="btn btn-primary btn-sm my-1"
+                       href="https://www.rfc-editor.org/errata_search.php?rfc=7946" title="Click to view errata." rel="nofollow">
+                        View errata
+                    </a>
+                
+                
+                    <a class="btn btn-sm btn-warning"
+                       title="Click to report an error in the document."
+                       href="https://www.rfc-editor.org/errata.php#reportnew"
+                       target="_blank">
+                        Report errata
+                    </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <div>
+                        Was
+                        <a href="/doc/draft-ietf-geojson/04/">draft-ietf-geojson</a>
+                        (<a href="/wg/geojson/about/">geojson WG</a>)
+                    </div>
+                
+            
+            
+            
+                
+
+
+
+
+    
+
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td></td>
+            <th scope="row">Select version</th>
+            <td class="edit"></td>
+            <td>
+                
+
+
+
+    <ul class="revision-list pagination pagination-sm text-center flex-wrap my-0">
+        
+            
+            
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-00"
+                        rel="nofollow">
+                            00
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-01"
+                        rel="nofollow">
+                            01
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-02"
+                        rel="nofollow">
+                            02
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-03"
+                        rel="nofollow">
+                            03
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-04"
+                        rel="nofollow">
+                            04
+                        </a>
+                    </li>
+                
+            
+            
+            <li class="page-item rfc active">
+                <a class="page-link"
+                href="/doc/html/rfc7946">
+                    RFC 7946
+                </a>
+            </li>
+        
+    </ul>
+
+            </td>
+        </tr>
+        
+            <tr>
+                <td></td>
+                <th scope="row">Compare versions</th>
+                <td class="edit"></td>
+                <td>
+                    
+
+
+
+<form class="form-horizontal diff-form"
+      action="https://author-tools.ietf.org/iddiff"
+      method="get"
+      target="_blank">
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="From revision"
+                    name="url1">
+                
+                    <option value="rfc7946">
+                        RFC 7946
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-04" selected>
+                        draft-ietf-geojson-04
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-03">
+                        draft-ietf-geojson-03
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-02">
+                        draft-ietf-geojson-02
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-01">
+                        draft-ietf-geojson-01
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-00">
+                        draft-ietf-geojson-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="To revision"
+                    name="url2">
+                
+                    <option value="rfc7946" selected>
+                        RFC 7946
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-04">
+                        draft-ietf-geojson-04
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-03">
+                        draft-ietf-geojson-03
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-02">
+                        draft-ietf-geojson-02
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-01">
+                        draft-ietf-geojson-01
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-00">
+                        draft-ietf-geojson-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--html"
+                    name="difftype">
+                Side-by-side
+            </button>
+            
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--hwdiff"
+                    name="difftype">
+                Inline
+            </button>
+
+</form>
+                </td>
+            </tr>
+        
+    
+    <tr>
+        <td></td>
+        <th scope="row">Authors</th>
+        <td class="edit">
+            
+        </td>
+        <td>
+            
+            
+                <span ><a 
+           title="Datatracker profile of H. Butler"
+            href="/person/howard@hobu.co" >H. Butler</a> <a 
+               href="mailto:howard%40hobu.co"
+               aria-label="Compose email to howard@hobu.co"
+               title="Compose email to howard@hobu.co">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of M. Daly"
+            href="/person/martin.daly@cadcorp.com" >M. Daly</a> <a 
+               href="mailto:martin.daly%40cadcorp.com"
+               aria-label="Compose email to martin.daly@cadcorp.com"
+               title="Compose email to martin.daly@cadcorp.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of A. Doyle"
+            href="/person/adoyle@intl-interfaces.com" >A. Doyle</a> <a 
+               href="mailto:adoyle%40intl-interfaces.com"
+               aria-label="Compose email to adoyle@intl-interfaces.com"
+               title="Compose email to adoyle@intl-interfaces.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Sean Gillies"
+            href="/person/sean.gillies@gmail.com" >Sean Gillies</a> <a 
+               href="mailto:sean.gillies%40gmail.com"
+               aria-label="Compose email to sean.gillies@gmail.com"
+               title="Compose email to sean.gillies@gmail.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of T. Schaub"
+            href="/person/tim.schaub@gmail.com" >T. Schaub</a> <a 
+               href="mailto:tim.schaub%40gmail.com"
+               aria-label="Compose email to tim.schaub@gmail.com"
+               title="Compose email to tim.schaub@gmail.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Stefan Hagen"
+            href="/person/stefan@hagen.link" >Stefan Hagen</a> <a 
+               href="mailto:stefan%40hagen.link"
+               aria-label="Compose email to stefan@hagen.link"
+               title="Compose email to stefan@hagen.link">
+                <i class="bi bi-envelope"></i></a></span>
+            
+            
+                <br>
+                <a class="btn btn-primary btn-sm mt-1" href="mailto:rfc7946@ietf.org?subject=rfc7946" title="Send email to the document authors">Email authors</a>
+            
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            RFC stream
+        </th>
+        <td class="edit">
+            
+        </td>
+        <td >
+            
+                
+                
+                    
+                        
+
+
+
+<img alt="IETF Logo"
+     class="d-lm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-white.svg"
+        
+     
+     >
+
+<img alt="IETF Logo"
+     class="d-dm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor.svg"
+        
+     
+     >
+                    
+                
+                
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            Other formats
+        </th>
+        <td class="edit">
+        </td>
+        <td>
+            
+                
+    <div class="buttonlist">
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc7946.txt">
+            
+                <i class="bi bi-file-text"></i> txt
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc7946.html">
+            
+                <i class="bi bi-file-code"></i> html
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+            download="rfc7946.pdf"
+          
+         
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/pdfrfc/rfc7946.txt.pdf">
+            
+                <i class="bi bi-file-pdf"></i> pdf
+            
+        </a>
+        
+    
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="/doc/rfc7946/bibtex/">
+            
+                <i class="bi bi-file-ruled"></i> bibtex
+            
+        </a>
+        
+    
+</div>
+
+            
+        </td>
+    </tr>
+    
+    
+        
+            <tr>
+                <td>
+                </td>
+                <th scope="row">
+                    Additional resources
+                </th>
+                <td class="edit">
+                    
+                </td>
+                <td>
+                    
+                        
+                        
+                            
+                                <a href="https://mailarchive.ietf.org/arch/browse/geojson?q=rfc7946 OR %22draft-ietf-geojson%22">
+                                    Mailing list discussion
+                                </a>
+                            
+                        
+                    
+                </td>
+            </tr>
+        
+    
+</tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <td class="edit"></td>
+                            <td>
+                                <a class="btn btn-sm btn-warning mb-3"
+                                target="_blank"
+                                href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                                    Report a bug
+                                    <i class="bi bi-bug"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+        <div class="row g-0">
+            <div class="col-md-9 d-flex justify-content-center lh-sm"
+                 data-bs-spy="scroll"
+                 data-bs-target="#toc-nav"
+                 data-bs-smooth-scroll="true"
+                 tabindex="0"
+                 id="content">
+                
+                    <div class="rfcmarkup">
+                        <br class="noprint">
+                        <!-- [html-validate-disable-block attr-quotes, void-style, element-permitted-content, heading-level -- FIXME: rfcmarkup/rfc2html generates HTML with issues] -->
+                        <div class="rfcmarkup"><pre>Internet Engineering Task Force (IETF)                         H. Butler
+Request for Comments: 7946                                     Hobu Inc.
+Category: Standards Track                                        M. Daly
+ISSN: 2070-1721                                                  Cadcorp
+                                                                A. Doyle
+
+                                                              S. Gillies
+                                                                  Mapbox
+                                                                S. Hagen
+
+                                                               T. Schaub
+                                                             Planet Labs
+                                                             August 2016
+
+
+                           <span class="h1">The GeoJSON Format</span>
+
+Abstract
+
+   GeoJSON is a geospatial data interchange format based on JavaScript
+   Object Notation (JSON).  It defines several types of JSON objects and
+   the manner in which they are combined to represent data about
+   geographic features, their properties, and their spatial extents.
+   GeoJSON uses a geographic coordinate reference system, World Geodetic
+   System 1984, and units of decimal degrees.
+
+Status of This Memo
+
+   This is an Internet Standards Track document.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Further information on
+   Internet Standards is available in <a href="/doc/html/rfc7841#section-2">Section&nbsp;2 of RFC 7841</a>.
+
+   Information about the current status of this document, any errata,
+   and how to provide feedback on it may be obtained at
+   <a href="http://www.rfc-editor.org/info/rfc7946">http://www.rfc-editor.org/info/rfc7946</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+Copyright Notice
+
+   Copyright (c) 2016 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to <a href="/doc/html/bcp78">BCP 78</a> and the IETF Trust&#x27;s Legal
+   Provisions Relating to IETF Documents
+   (<a href="http://trustee.ietf.org/license-info">http://trustee.ietf.org/license-info</a>) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-3">3</a>
+     <a href="#section-1.1">1.1</a>.  Requirements Language . . . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-1.2">1.2</a>.  Conventions Used in This Document . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-1.3">1.3</a>.  Specification of GeoJSON  . . . . . . . . . . . . . . . .   <a href="#page-4">4</a>
+     <a href="#section-1.4">1.4</a>.  Definitions . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+     <a href="#section-1.5">1.5</a>.  Example . . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-5">5</a>
+   <a href="#section-2">2</a>.  GeoJSON Text  . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+   <a href="#section-3">3</a>.  GeoJSON Object  . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-6">6</a>
+     <a href="#section-3.1">3.1</a>.  Geometry Object . . . . . . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+       <a href="#section-3.1.1">3.1.1</a>.  Position  . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-7">7</a>
+       <a href="#section-3.1.2">3.1.2</a>.  Point . . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+       <a href="#section-3.1.3">3.1.3</a>.  MultiPoint  . . . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+       <a href="#section-3.1.4">3.1.4</a>.  LineString  . . . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+       <a href="#section-3.1.5">3.1.5</a>.  MultiLineString . . . . . . . . . . . . . . . . . . .   <a href="#page-8">8</a>
+       <a href="#section-3.1.6">3.1.6</a>.  Polygon . . . . . . . . . . . . . . . . . . . . . . .   <a href="#page-9">9</a>
+       <a href="#section-3.1.7">3.1.7</a>.  MultiPolygon  . . . . . . . . . . . . . . . . . . . .   <a href="#page-9">9</a>
+       <a href="#section-3.1.8">3.1.8</a>.  GeometryCollection  . . . . . . . . . . . . . . . . .   <a href="#page-9">9</a>
+       <a href="#section-3.1.9">3.1.9</a>.  Antimeridian Cutting  . . . . . . . . . . . . . . . .  <a href="#page-10">10</a>
+       <a href="#section-3.1.10">3.1.10</a>. Uncertainty and Precision . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+     <a href="#section-3.2">3.2</a>.  Feature Object  . . . . . . . . . . . . . . . . . . . . .  <a href="#page-11">11</a>
+     <a href="#section-3.3">3.3</a>.  FeatureCollection Object  . . . . . . . . . . . . . . . .  <a href="#page-12">12</a>
+   <a href="#section-4">4</a>.  Coordinate Reference System . . . . . . . . . . . . . . . . .  <a href="#page-12">12</a>
+   <a href="#section-5">5</a>.  Bounding Box  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-12">12</a>
+     <a href="#section-5.1">5.1</a>.  The Connecting Lines  . . . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+     <a href="#section-5.2">5.2</a>.  The Antimeridian  . . . . . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+     <a href="#section-5.3">5.3</a>.  The Poles . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-14">14</a>
+   <a href="#section-6">6</a>.  Extending GeoJSON . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+     <a href="#section-6.1">6.1</a>.  Foreign Members . . . . . . . . . . . . . . . . . . . . .  <a href="#page-15">15</a>
+   <a href="#section-7">7</a>.  GeoJSON Types Are Not Extensible  . . . . . . . . . . . . . .  <a href="#page-16">16</a>
+     7.1.  Semantics of GeoJSON Members and Types Are Not Changeable  16
+   <a href="#section-8">8</a>.  Versioning  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-17">17</a>
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   <a href="#section-9">9</a>.  Mapping &#x27;geo&#x27; URIs  . . . . . . . . . . . . . . . . . . . . .  <a href="#page-17">17</a>
+   <a href="#section-10">10</a>. Security Considerations . . . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+   <a href="#section-11">11</a>. Interoperability Considerations . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+     <a href="#section-11.1">11.1</a>.  I-JSON . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+     <a href="#section-11.2">11.2</a>.  Coordinate Precision . . . . . . . . . . . . . . . . . .  <a href="#page-18">18</a>
+   <a href="#section-12">12</a>. IANA Considerations . . . . . . . . . . . . . . . . . . . . .  <a href="#page-19">19</a>
+   <a href="#section-13">13</a>. References  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-20">20</a>
+     <a href="#section-13.1">13.1</a>.  Normative References . . . . . . . . . . . . . . . . . .  <a href="#page-20">20</a>
+     <a href="#section-13.2">13.2</a>.  Informative References . . . . . . . . . . . . . . . . .  <a href="#page-21">21</a>
+   <a href="#appendix-A">Appendix A</a>.  Geometry Examples  . . . . . . . . . . . . . . . . .  <a href="#page-22">22</a>
+     <a href="#appendix-A.1">A.1</a>.  Points  . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-22">22</a>
+     <a href="#appendix-A.2">A.2</a>.  LineStrings . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-22">22</a>
+     <a href="#appendix-A.3">A.3</a>.  Polygons  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-23">23</a>
+     <a href="#appendix-A.4">A.4</a>.  MultiPoints . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-24">24</a>
+     <a href="#appendix-A.5">A.5</a>.  MultiLineStrings  . . . . . . . . . . . . . . . . . . . .  <a href="#page-24">24</a>
+     <a href="#appendix-A.6">A.6</a>.  MultiPolygons . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-25">25</a>
+     <a href="#appendix-A.7">A.7</a>.  GeometryCollections . . . . . . . . . . . . . . . . . . .  <a href="#page-26">26</a>
+   <a href="#appendix-B">Appendix B</a>.  Changes from the Pre-IETF GeoJSON Format
+                Specification  . . . . . . . . . . . . . . . . . . .  <a href="#page-26">26</a>
+     <a href="#appendix-B.1">B.1</a>.  Normative Changes . . . . . . . . . . . . . . . . . . . .  <a href="#page-26">26</a>
+     <a href="#appendix-B.2">B.2</a>.  Informative Changes . . . . . . . . . . . . . . . . . . .  <a href="#page-27">27</a>
+   <a href="#appendix-C">Appendix C</a>.  GeoJSON Text Sequences . . . . . . . . . . . . . . .  <a href="#page-27">27</a>
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-27">27</a>
+   Authors&#x27; Addresses  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-28">28</a>
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   GeoJSON is a format for encoding a variety of geographic data
+   structures using JavaScript Object Notation (JSON) [<a href="/doc/html/rfc7159" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC7159</a>].  A
+   GeoJSON object may represent a region of space (a Geometry), a
+   spatially bounded entity (a Feature), or a list of Features (a
+   FeatureCollection).  GeoJSON supports the following geometry types:
+   Point, LineString, Polygon, MultiPoint, MultiLineString,
+   MultiPolygon, and GeometryCollection.  Features in GeoJSON contain a
+   Geometry object and additional properties, and a FeatureCollection
+   contains a list of Features.
+
+   The format is concerned with geographic data in the broadest sense;
+   anything with qualities that are bounded in geographical space might
+   be a Feature whether or not it is a physical structure.  The concepts
+   in GeoJSON are not new; they are derived from preexisting open
+   geographic information system standards and have been streamlined to
+   better suit web application development using JSON.
+
+   GeoJSON comprises the seven concrete geometry types defined in the
+   OpenGIS Simple Features Implementation Specification for SQL [<a href="#ref-SFSQL" title="&quot;OpenGIS Simple Features Specification For SQL Revision 1.1&quot;">SFSQL</a>]:
+   0-dimensional Point and MultiPoint; 1-dimensional curve LineString
+   and MultiLineString; 2-dimensional surface Polygon and MultiPolygon;
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   and the heterogeneous GeometryCollection.  GeoJSON representations of
+   instances of these geometry types are analogous to the well-known
+   binary (WKB) and well-known text (WKT) representations described in
+   that same specification.
+
+   GeoJSON also comprises the types Feature and FeatureCollection.
+   Feature objects in GeoJSON contain a Geometry object with one of the
+   above geometry types and additional members.  A FeatureCollection
+   object contains an array of Feature objects.  This structure is
+   analogous to that of the Web Feature Service (WFS) response to
+   GetFeatures requests specified in [<a href="#ref-WFSv1" title="&quot;Web Feature Service Implementation Specification&quot;">WFSv1</a>] or to a Keyhole Markup
+   Language (KML) Folder of Placemarks [<a href="#ref-KMLv2.2" title="&quot;OGC KML&quot;">KMLv2.2</a>].  Some implementations
+   of the WFS specification also provide GeoJSON-formatted responses to
+   GetFeature requests, but there is no particular service model or
+   Feature type ontology implied in the GeoJSON format specification.
+
+   Since its initial publication in 2008 [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>], the GeoJSON format
+   specification has steadily grown in popularity.  It is widely used in
+   JavaScript web-mapping libraries, JSON-based document databases, and
+   web APIs.
+
+<span class="h3"><a class="selflink" id="section-1.1" href="#section-1.1">1.1</a>.  Requirements Language</span>
+
+   The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+   &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;NOT RECOMMENDED&quot;, &quot;MAY&quot;, and
+   &quot;OPTIONAL&quot; in this document are to be interpreted as described in
+   [<a href="/doc/html/rfc2119" title="&quot;Key words for use in RFCs to Indicate Requirement Levels&quot;">RFC2119</a>].
+
+<span class="h3"><a class="selflink" id="section-1.2" href="#section-1.2">1.2</a>.  Conventions Used in This Document</span>
+
+   The ordering of the members of any JSON object defined in this
+   document MUST be considered irrelevant, as specified by [<a href="/doc/html/rfc7159" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC7159</a>].
+
+   Some examples use the combination of a JavaScript single-line comment
+   (//) followed by an ellipsis (...) as placeholder notation for
+   content deemed irrelevant by the authors.  These placeholders must of
+   course be deleted or otherwise replaced, before attempting to
+   validate the corresponding JSON code example.
+
+   Whitespace is used in the examples inside this document to help
+   illustrate the data structures, but it is not required.  Unquoted
+   whitespace is not significant in JSON.
+
+<span class="h3"><a class="selflink" id="section-1.3" href="#section-1.3">1.3</a>.  Specification of GeoJSON</span>
+
+   This document supersedes the original GeoJSON format specification
+   [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>].
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="section-1.4" href="#section-1.4">1.4</a>.  Definitions</span>
+
+   o  JavaScript Object Notation (JSON), and the terms object, member,
+      name, value, array, number, true, false, and null, are to be
+      interpreted as defined in [<a href="/doc/html/rfc7159" title="&quot;The JavaScript Object Notation (JSON) Data Interchange Format&quot;">RFC7159</a>].
+
+   o  Inside this document, the term &quot;geometry type&quot; refers to seven
+      case-sensitive strings: &quot;Point&quot;, &quot;MultiPoint&quot;, &quot;LineString&quot;,
+      &quot;MultiLineString&quot;, &quot;Polygon&quot;, &quot;MultiPolygon&quot;, and
+      &quot;GeometryCollection&quot;.
+
+   o  As another shorthand notation, the term &quot;GeoJSON types&quot; refers to
+      nine case-sensitive strings: &quot;Feature&quot;, &quot;FeatureCollection&quot;, and
+      the geometry types listed above.
+
+   o  The word &quot;Collection&quot; in &quot;FeatureCollection&quot; and
+      &quot;GeometryCollection&quot; does not have any significance for the
+      semantics of array members.  The &quot;features&quot; and &quot;geometries&quot;
+      members, respectively, of these objects are standard ordered JSON
+      arrays, not unordered sets.
+
+<span class="h3"><a class="selflink" id="section-1.5" href="#section-1.5">1.5</a>.  Example</span>
+
+   A GeoJSON FeatureCollection:
+
+   {
+       &quot;type&quot;: &quot;FeatureCollection&quot;,
+       &quot;features&quot;: [{
+           &quot;type&quot;: &quot;Feature&quot;,
+           &quot;geometry&quot;: {
+               &quot;type&quot;: &quot;Point&quot;,
+               &quot;coordinates&quot;: [102.0, 0.5]
+           },
+           &quot;properties&quot;: {
+               &quot;prop0&quot;: &quot;value0&quot;
+           }
+       }, {
+           &quot;type&quot;: &quot;Feature&quot;,
+           &quot;geometry&quot;: {
+               &quot;type&quot;: &quot;LineString&quot;,
+               &quot;coordinates&quot;: [
+                   [102.0, 0.0],
+                   [103.0, 1.0],
+                   [104.0, 0.0],
+                   [105.0, 1.0]
+               ]
+           },
+           &quot;properties&quot;: {
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+               &quot;prop0&quot;: &quot;value0&quot;,
+               &quot;prop1&quot;: 0.0
+           }
+       }, {
+           &quot;type&quot;: &quot;Feature&quot;,
+           &quot;geometry&quot;: {
+               &quot;type&quot;: &quot;Polygon&quot;,
+               &quot;coordinates&quot;: [
+                   [
+                       [100.0, 0.0],
+                       [101.0, 0.0],
+                       [101.0, 1.0],
+                       [100.0, 1.0],
+                       [100.0, 0.0]
+                   ]
+               ]
+           },
+           &quot;properties&quot;: {
+               &quot;prop0&quot;: &quot;value0&quot;,
+               &quot;prop1&quot;: {
+                   &quot;this&quot;: &quot;that&quot;
+               }
+           }
+       }]
+   }
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  GeoJSON Text</span>
+
+   A GeoJSON text is a JSON text and consists of a single GeoJSON
+   object.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  GeoJSON Object</span>
+
+   A GeoJSON object represents a Geometry, Feature, or collection of
+   Features.
+
+   o  A GeoJSON object is a JSON object.
+
+   o  A GeoJSON object has a member with the name &quot;type&quot;.  The value of
+      the member MUST be one of the GeoJSON types.
+
+   o  A GeoJSON object MAY have a &quot;bbox&quot; member, the value of which MUST
+      be a bounding box array (see <a href="#section-5">Section 5</a>).
+
+   o  A GeoJSON object MAY have other members (see <a href="#section-6">Section 6</a>).
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Geometry Object</span>
+
+   A Geometry object represents points, curves, and surfaces in
+   coordinate space.  Every Geometry object is a GeoJSON object no
+   matter where it occurs in a GeoJSON text.
+
+   o  The value of a Geometry object&#x27;s &quot;type&quot; member MUST be one of the
+      seven geometry types (see <a href="#section-1.4">Section 1.4</a>).
+
+   o  A GeoJSON Geometry object of any type other than
+      &quot;GeometryCollection&quot; has a member with the name &quot;coordinates&quot;.
+      The value of the &quot;coordinates&quot; member is an array.  The structure
+      of the elements in this array is determined by the type of
+      geometry.  GeoJSON processors MAY interpret Geometry objects with
+      empty &quot;coordinates&quot; arrays as null objects.
+
+<span class="h4"><a class="selflink" id="section-3.1.1" href="#section-3.1.1">3.1.1</a>.  Position</span>
+
+   A position is the fundamental geometry construct.  The &quot;coordinates&quot;
+   member of a Geometry object is composed of either:
+
+   o  one position in the case of a Point geometry,
+
+   o  an array of positions in the case of a LineString or MultiPoint
+      geometry,
+
+   o  an array of LineString or linear ring (see <a href="#section-3.1.6">Section 3.1.6</a>)
+      coordinates in the case of a Polygon or MultiLineString geometry,
+      or
+
+   o  an array of Polygon coordinates in the case of a MultiPolygon
+      geometry.
+
+   A position is an array of numbers.  There MUST be two or more
+   elements.  The first two elements are longitude and latitude, or
+   easting and northing, precisely in that order and using decimal
+   numbers.  Altitude or elevation MAY be included as an optional third
+   element.
+
+   Implementations SHOULD NOT extend positions beyond three elements
+   because the semantics of extra elements are unspecified and
+   ambiguous.  Historically, some implementations have used a fourth
+   element to carry a linear referencing measure (sometimes denoted as
+   &quot;M&quot;) or a numerical timestamp, but in most situations a parser will
+   not be able to properly interpret these values.  The interpretation
+   and meaning of additional elements is beyond the scope of this
+   specification, and additional elements MAY be ignored by parsers.
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   A line between two positions is a straight Cartesian line, the
+   shortest line between those two points in the coordinate reference
+   system (see <a href="#section-4">Section 4</a>).
+
+   In other words, every point on a line that does not cross the
+   antimeridian between a point (lon0, lat0) and (lon1, lat1) can be
+   calculated as
+
+   F(lon, lat) = (lon0 + (lon1 - lon0) * t, lat0 + (lat1 - lat0) * t)
+
+   with t being a real number greater than or equal to 0 and smaller
+   than or equal to 1.  Note that this line may markedly differ from the
+   geodesic path along the curved surface of the reference ellipsoid.
+
+   The same applies to the optional height element with the proviso that
+   the direction of the height is as specified in the coordinate
+   reference system.
+
+   Note that, again, this does not mean that a surface with equal height
+   follows, for example, the curvature of a body of water.  Nor is a
+   surface of equal height perpendicular to a plumb line.
+
+   Examples of positions and geometries are provided in <a href="#appendix-A">Appendix A</a>,
+   &quot;Geometry Examples&quot;.
+
+<span class="h4"><a class="selflink" id="section-3.1.2" href="#section-3.1.2">3.1.2</a>.  Point</span>
+
+   For type &quot;Point&quot;, the &quot;coordinates&quot; member is a single position.
+
+<span class="h4"><a class="selflink" id="section-3.1.3" href="#section-3.1.3">3.1.3</a>.  MultiPoint</span>
+
+   For type &quot;MultiPoint&quot;, the &quot;coordinates&quot; member is an array of
+   positions.
+
+<span class="h4"><a class="selflink" id="section-3.1.4" href="#section-3.1.4">3.1.4</a>.  LineString</span>
+
+   For type &quot;LineString&quot;, the &quot;coordinates&quot; member is an array of two or
+   more positions.
+
+<span class="h4"><a class="selflink" id="section-3.1.5" href="#section-3.1.5">3.1.5</a>.  MultiLineString</span>
+
+   For type &quot;MultiLineString&quot;, the &quot;coordinates&quot; member is an array of
+   LineString coordinate arrays.
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h4"><a class="selflink" id="section-3.1.6" href="#section-3.1.6">3.1.6</a>.  Polygon</span>
+
+   To specify a constraint specific to Polygons, it is useful to
+   introduce the concept of a linear ring:
+
+   o  A linear ring is a closed LineString with four or more positions.
+
+   o  The first and last positions are equivalent, and they MUST contain
+      identical values; their representation SHOULD also be identical.
+
+   o  A linear ring is the boundary of a surface or the boundary of a
+      hole in a surface.
+
+   o  A linear ring MUST follow the right-hand rule with respect to the
+      area it bounds, i.e., exterior rings are counterclockwise, and
+      holes are clockwise.
+
+   Note: the [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>] specification did not discuss linear ring winding
+   order.  For backwards compatibility, parsers SHOULD NOT reject
+   Polygons that do not follow the right-hand rule.
+
+   Though a linear ring is not explicitly represented as a GeoJSON
+   geometry type, it leads to a canonical formulation of the Polygon
+   geometry type definition as follows:
+
+   o  For type &quot;Polygon&quot;, the &quot;coordinates&quot; member MUST be an array of
+      linear ring coordinate arrays.
+
+   o  For Polygons with more than one of these rings, the first MUST be
+      the exterior ring, and any others MUST be interior rings.  The
+      exterior ring bounds the surface, and the interior rings (if
+      present) bound holes within the surface.
+
+<span class="h4"><a class="selflink" id="section-3.1.7" href="#section-3.1.7">3.1.7</a>.  MultiPolygon</span>
+
+   For type &quot;MultiPolygon&quot;, the &quot;coordinates&quot; member is an array of
+   Polygon coordinate arrays.
+
+<span class="h4"><a class="selflink" id="section-3.1.8" href="#section-3.1.8">3.1.8</a>.  GeometryCollection</span>
+
+   A GeoJSON object with type &quot;GeometryCollection&quot; is a Geometry object.
+   A GeometryCollection has a member with the name &quot;geometries&quot;.  The
+   value of &quot;geometries&quot; is an array.  Each element of this array is a
+   GeoJSON Geometry object.  It is possible for this array to be empty.
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                    [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   Unlike the other geometry types described above, a GeometryCollection
+   can be a heterogeneous composition of smaller Geometry objects.  For
+   example, a Geometry object in the shape of a lowercase roman &quot;i&quot; can
+   be composed of one point and one LineString.
+
+   GeometryCollections have a different syntax from single type Geometry
+   objects (Point, LineString, and Polygon) and homogeneously typed
+   multipart Geometry objects (MultiPoint, MultiLineString, and
+   MultiPolygon) but have no different semantics.  Although a
+   GeometryCollection object has no &quot;coordinates&quot; member, it does have
+   coordinates: the coordinates of all its parts belong to the
+   collection.  The &quot;geometries&quot; member of a GeometryCollection
+   describes the parts of this composition.  Implementations SHOULD NOT
+   apply any additional semantics to the &quot;geometries&quot; array.
+
+   To maximize interoperability, implementations SHOULD avoid nested
+   GeometryCollections.  Furthermore, GeometryCollections composed of a
+   single part or a number of parts of a single type SHOULD be avoided
+   when that single part or a single object of multipart type
+   (MultiPoint, MultiLineString, or MultiPolygon) could be used instead.
+
+<span class="h4"><a class="selflink" id="section-3.1.9" href="#section-3.1.9">3.1.9</a>.  Antimeridian Cutting</span>
+
+   In representing Features that cross the antimeridian,
+   interoperability is improved by modifying their geometry.  Any
+   geometry that crosses the antimeridian SHOULD be represented by
+   cutting it in two such that neither part&#x27;s representation crosses the
+   antimeridian.
+
+   For example, a line extending from 45 degrees N, 170 degrees E across
+   the antimeridian to 45 degrees N, 170 degrees W should be cut in two
+   and represented as a MultiLineString.
+
+   {
+       &quot;type&quot;: &quot;MultiLineString&quot;,
+       &quot;coordinates&quot;: [
+           [
+               [170.0, 45.0], [180.0, 45.0]
+           ], [
+               [-180.0, 45.0], [-170.0, 45.0]
+           ]
+       ]
+   }
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   A rectangle extending from 40 degrees N, 170 degrees E across the
+   antimeridian to 50 degrees N, 170 degrees W should be cut in two and
+   represented as a MultiPolygon.
+
+   {
+       &quot;type&quot;: &quot;MultiPolygon&quot;,
+       &quot;coordinates&quot;: [
+           [
+               [
+                   [180.0, 40.0], [180.0, 50.0], [170.0, 50.0],
+                   [170.0, 40.0], [180.0, 40.0]
+               ]
+           ],
+           [
+               [
+                   [-170.0, 40.0], [-170.0, 50.0], [-180.0, 50.0],
+                   [-180.0, 40.0], [-170.0, 40.0]
+               ]
+           ]
+       ]
+   }
+
+<span class="h4"><a class="selflink" id="section-3.1.10" href="#section-3.1.10">3.1.10</a>.  Uncertainty and Precision</span>
+
+   As in [<a href="/doc/html/rfc5870" title="&quot;A Uniform Resource Identifier for Geographic Locations (&#x27;geo&#x27; URI)&quot;">RFC5870</a>], the number of digits of the values in coordinate
+   positions MUST NOT be interpreted as an indication to the level of
+   uncertainty.
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Feature Object</span>
+
+   A Feature object represents a spatially bounded thing.  Every Feature
+   object is a GeoJSON object no matter where it occurs in a GeoJSON
+   text.
+
+   o  A Feature object has a &quot;type&quot; member with the value &quot;Feature&quot;.
+
+   o  A Feature object has a member with the name &quot;geometry&quot;.  The value
+      of the geometry member SHALL be either a Geometry object as
+      defined above or, in the case that the Feature is unlocated, a
+      JSON null value.
+
+   o  A Feature object has a member with the name &quot;properties&quot;.  The
+      value of the properties member is an object (any JSON object or a
+      JSON null value).
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   o  If a Feature has a commonly used identifier, that identifier
+      SHOULD be included as a member of the Feature object with the name
+      &quot;id&quot;, and the value of this member is either a JSON string or
+      number.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  FeatureCollection Object</span>
+
+   A GeoJSON object with the type &quot;FeatureCollection&quot; is a
+   FeatureCollection object.  A FeatureCollection object has a member
+   with the name &quot;features&quot;.  The value of &quot;features&quot; is a JSON array.
+   Each element of the array is a Feature object as defined above.  It
+   is possible for this array to be empty.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  Coordinate Reference System</span>
+
+   The coordinate reference system for all GeoJSON coordinates is a
+   geographic coordinate reference system, using the World Geodetic
+   System 1984 (WGS 84) [<a href="#ref-WGS84" title="&quot;Department of Defense World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems&quot;">WGS84</a>] datum, with longitude and latitude units
+   of decimal degrees.  This is equivalent to the coordinate reference
+   system identified by the Open Geospatial Consortium (OGC) URN
+   urn:ogc:def:crs:OGC::CRS84.  An OPTIONAL third-position element SHALL
+   be the height in meters above or below the WGS 84 reference
+   ellipsoid.  In the absence of elevation values, applications
+   sensitive to height or depth SHOULD interpret positions as being at
+   local ground or sea level.
+
+   Note: the use of alternative coordinate reference systems was
+   specified in [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>], but it has been removed from this version of
+   the specification because the use of different coordinate reference
+   systems -- especially in the manner specified in [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>] -- has
+   proven to have interoperability issues.  In general, GeoJSON
+   processing software is not expected to have access to coordinate
+   reference system databases or to have network access to coordinate
+   reference system transformation parameters.  However, where all
+   involved parties have a prior arrangement, alternative coordinate
+   reference systems can be used without risk of data being
+   misinterpreted.
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Bounding Box</span>
+
+   A GeoJSON object MAY have a member named &quot;bbox&quot; to include
+   information on the coordinate range for its Geometries, Features, or
+   FeatureCollections.  The value of the bbox member MUST be an array of
+   length 2*n where n is the number of dimensions represented in the
+   contained geometries, with all axes of the most southwesterly point
+   followed by all axes of the more northeasterly point.  The axes order
+   of a bbox follows the axes order of geometries.
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   The &quot;bbox&quot; values define shapes with edges that follow lines of
+   constant longitude, latitude, and elevation.
+
+   Example of a 2D bbox member on a Feature:
+
+   {
+       &quot;type&quot;: &quot;Feature&quot;,
+       &quot;bbox&quot;: [-10.0, -10.0, 10.0, 10.0],
+       &quot;geometry&quot;: {
+           &quot;type&quot;: &quot;Polygon&quot;,
+           &quot;coordinates&quot;: [
+               [
+                   [-10.0, -10.0],
+                   [10.0, -10.0],
+                   [10.0, 10.0],
+                   [-10.0, -10.0]
+               ]
+           ]
+       }
+       //...
+   }
+
+   Example of a 2D bbox member on a FeatureCollection:
+
+   {
+       &quot;type&quot;: &quot;FeatureCollection&quot;,
+       &quot;bbox&quot;: [100.0, 0.0, 105.0, 1.0],
+       &quot;features&quot;: [
+       //...
+       ]
+   }
+
+   Example of a 3D bbox member with a depth of 100 meters:
+
+   {
+       &quot;type&quot;: &quot;FeatureCollection&quot;,
+       &quot;bbox&quot;: [100.0, 0.0, -100.0, 105.0, 1.0, 0.0],
+       &quot;features&quot;: [
+       //...
+       ]
+   }
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="section-5.1" href="#section-5.1">5.1</a>.  The Connecting Lines</span>
+
+   The four lines of the bounding box are defined fully within the
+   coordinate reference system; that is, for a box bounded by the values
+   &quot;west&quot;, &quot;south&quot;, &quot;east&quot;, and &quot;north&quot;, every point on the northernmost
+   line can be expressed as
+
+   (lon, lat) = (west + (east - west) * t, north)
+
+   with 0 &lt;= t &lt;= 1.
+
+<span class="h3"><a class="selflink" id="section-5.2" href="#section-5.2">5.2</a>.  The Antimeridian</span>
+
+   Consider a set of point Features within the Fiji archipelago,
+   straddling the antimeridian between 16 degrees S and 20 degrees S.
+   The southwest corner of the box containing these Features is at 20
+   degrees S and 177 degrees E, and the northwest corner is at 16
+   degrees S and 178 degrees W.  The antimeridian-spanning GeoJSON
+   bounding box for this FeatureCollection is
+
+   &quot;bbox&quot;: [177.0, -20.0, -178.0, -16.0]
+
+   and covers 5 degrees of longitude.
+
+   The complementary bounding box for the same latitude band, not
+   crossing the antimeridian, is
+
+   &quot;bbox&quot;: [-178.0, -20.0, 177.0, -16.0]
+
+   and covers 355 degrees of longitude.
+
+   The latitude of the northeast corner is always greater than the
+   latitude of the southwest corner, but bounding boxes that cross the
+   antimeridian have a northeast corner longitude that is less than the
+   longitude of the southwest corner.
+
+<span class="h3"><a class="selflink" id="section-5.3" href="#section-5.3">5.3</a>.  The Poles</span>
+
+   A bounding box that contains the North Pole extends from a southwest
+   corner of &quot;minlat&quot; degrees N, 180 degrees W to a northeast corner of
+   90 degrees N, 180 degrees E.  Viewed on a globe, this bounding box
+   approximates a spherical cap bounded by the &quot;minlat&quot; circle of
+   latitude.
+
+   &quot;bbox&quot;: [-180.0, minlat, 180.0, 90.0]
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   A bounding box that contains the South Pole extends from a southwest
+   corner of 90 degrees S, 180 degrees W to a northeast corner of
+   &quot;maxlat&quot; degrees S, 180 degrees E.
+
+   &quot;bbox&quot;: [-180.0, -90.0, 180.0, maxlat]
+
+   A bounding box that just touches the North Pole and forms a slice of
+   an approximate spherical cap when viewed on a globe extends from a
+   southwest corner of &quot;minlat&quot; degrees N and &quot;westlon&quot; degrees E to a
+   northeast corner of 90 degrees N and &quot;eastlon&quot; degrees E.
+
+   &quot;bbox&quot;: [westlon, minlat, eastlon, 90.0]
+
+   Similarly, a bounding box that just touches the South Pole and forms
+   a slice of an approximate spherical cap when viewed on a globe has
+   the following representation in GeoJSON.
+
+   &quot;bbox&quot;: [westlon, -90.0, eastlon, maxlat]
+
+   Implementers MUST NOT use latitude values greater than 90 or less
+   than -90 to imply an extent that is not a spherical cap.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  Extending GeoJSON</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Foreign Members</span>
+
+   Members not described in this specification (&quot;foreign members&quot;) MAY
+   be used in a GeoJSON document.  Note that support for foreign members
+   can vary across implementations, and no normative processing model
+   for foreign members is defined.  Accordingly, implementations that
+   rely too heavily on the use of foreign members might experience
+   reduced interoperability with other implementations.
+
+   For example, in the (abridged) Feature object shown below
+
+   {
+       &quot;type&quot;: &quot;Feature&quot;,
+       &quot;id&quot;: &quot;f1&quot;,
+       &quot;geometry&quot;: {...},
+       &quot;properties&quot;: {...},
+       &quot;title&quot;: &quot;Example Feature&quot;
+   }
+
+   the name/value pair of &quot;title&quot;: &quot;Example Feature&quot; is a foreign
+   member.  When the value of a foreign member is an object, all the
+   descendant members of that object are themselves foreign members.
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 15]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-16" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   GeoJSON semantics do not apply to foreign members and their
+   descendants, regardless of their names and values.  For example, in
+   the (abridged) Feature object below
+
+   {
+       &quot;type&quot;: &quot;Feature&quot;,
+       &quot;id&quot;: &quot;f2&quot;,
+       &quot;geometry&quot;: {...},
+       &quot;properties&quot;: {...},
+       &quot;centerline&quot;: {
+           &quot;type&quot;: &quot;LineString&quot;,
+           &quot;coordinates&quot;: [
+               [-170, 10],
+               [170, 11]
+           ]
+       }
+   }
+
+   the &quot;centerline&quot; member is not a GeoJSON Geometry object.
+
+<span class="h2"><a class="selflink" id="section-7" href="#section-7">7</a>.  GeoJSON Types Are Not Extensible</span>
+
+   Implementations MUST NOT extend the fixed set of GeoJSON types:
+   FeatureCollection, Feature, Point, LineString, MultiPoint, Polygon,
+   MultiLineString, MultiPolygon, and GeometryCollection.
+
+<span class="h3"><a class="selflink" id="section-7.1" href="#section-7.1">7.1</a>.  Semantics of GeoJSON Members and Types Are Not Changeable</span>
+
+   Implementations MUST NOT change the semantics of GeoJSON members and
+   types.
+
+   The GeoJSON &quot;coordinates&quot; and &quot;geometries&quot; members define Geometry
+   objects.  FeatureCollection and Feature objects, respectively, MUST
+   NOT contain a &quot;coordinates&quot; or &quot;geometries&quot; member.
+
+   The GeoJSON &quot;geometry&quot; and &quot;properties&quot; members define a Feature
+   object.  FeatureCollection and Geometry objects, respectively, MUST
+   NOT contain a &quot;geometry&quot; or &quot;properties&quot; member.
+
+   The GeoJSON &quot;features&quot; member defines a FeatureCollection object.
+   Feature and Geometry objects, respectively, MUST NOT contain a
+   &quot;features&quot; member.
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 16]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-17" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h2"><a class="selflink" id="section-8" href="#section-8">8</a>.  Versioning</span>
+
+   The GeoJSON format can be extended as defined here, but no explicit
+   versioning scheme is defined.  A specification that alters the
+   semantics of GeoJSON members or otherwise modifies the format does
+   not create a new version of this format; instead, it defines an
+   entirely new format that MUST NOT be identified as GeoJSON.
+
+<span class="h2"><a class="selflink" id="section-9" href="#section-9">9</a>.  Mapping &#x27;geo&#x27; URIs</span>
+
+   &#x27;geo&#x27; URIs [<a href="/doc/html/rfc5870" title="&quot;A Uniform Resource Identifier for Geographic Locations (&#x27;geo&#x27; URI)&quot;">RFC5870</a>] identify geographic locations and precise (not
+   uncertain) locations can be mapped to GeoJSON Geometry objects.
+
+   For this section, as in [<a href="/doc/html/rfc5870" title="&quot;A Uniform Resource Identifier for Geographic Locations (&#x27;geo&#x27; URI)&quot;">RFC5870</a>], &quot;lat&quot;, &quot;lon&quot;, &quot;alt&quot;, and &quot;unc&quot; are
+   placeholders for &#x27;geo&#x27; URI latitude, longitude, altitude, and
+   uncertainty values, respectively.
+
+   A &#x27;geo&#x27; URI with two coordinates and an uncertainty (&#x27;u&#x27;) parameter
+   that is absent or zero, and a GeoJSON Point geometry may be mapped to
+   each other.  A GeoJSON Point is always converted to a &#x27;geo&#x27; URI that
+   has no uncertainty parameter.
+
+   &#x27;geo&#x27; URI:
+
+   geo:lat,lon
+
+   GeoJSON:
+
+   {&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [lon, lat]}
+
+   The mapping between &#x27;geo&#x27; URIs and GeoJSON Points that specify
+   elevation is shown below.
+
+   &#x27;geo&#x27; URI:
+
+   geo:lat,lon,alt
+
+   GeoJSON:
+
+   {&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [lon, lat, alt]}
+
+   GeoJSON has no concept of uncertainty; imprecise or uncertain &#x27;geo&#x27;
+   URIs thus cannot be mapped to GeoJSON geometries.
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 17]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-18" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h2"><a class="selflink" id="section-10" href="#section-10">10</a>.  Security Considerations</span>
+
+   GeoJSON shares security issues common to all JSON content types.  See
+   <a href="/doc/html/rfc7159#section-12">[RFC7159], Section&nbsp;12</a> for additional information.  GeoJSON does not
+   provide executable content.
+
+   GeoJSON does not provide privacy or integrity services.  If sensitive
+   data requires privacy or integrity protection, those must be provided
+   by the transport -- for example, Transport Layer Security (TLS) or
+   HTTPS.  There will be cases in which stored data need protection,
+   which is out of scope for this document.
+
+   As with other geographic data formats, e.g., [<a href="#ref-KMLv2.2" title="&quot;OGC KML&quot;">KMLv2.2</a>], providing
+   details about the locations of sensitive persons, animals, habitats,
+   and facilities can expose them to unauthorized tracking or injury.
+   Data providers should recognize the risk of inadvertently identifying
+   individuals if locations in anonymized datasets are not adequately
+   skewed or not sufficiently fuzzed [<a href="#ref-Sweeney" title="&quot;k-anonymity: a model for protecting privacy&quot;">Sweeney</a>] and recognize that the
+   effectiveness of location obscuration is limited by a number of
+   factors and is unlikely to be an effective defense against a
+   determined attack [<a href="/doc/html/rfc6772" title="&quot;Geolocation Policy: A Document Format for Expressing Privacy Preferences for Location Information&quot;">RFC6772</a>].
+
+<span class="h2"><a class="selflink" id="section-11" href="#section-11">11</a>.  Interoperability Considerations</span>
+
+<span class="h3"><a class="selflink" id="section-11.1" href="#section-11.1">11.1</a>.  I-JSON</span>
+
+   GeoJSON texts should follow the constraints of Internet JSON (I-JSON)
+   [<a href="/doc/html/rfc7493" title="&quot;The I-JSON Message Format&quot;">RFC7493</a>] for maximum interoperability.
+
+<span class="h3"><a class="selflink" id="section-11.2" href="#section-11.2">11.2</a>.  Coordinate Precision</span>
+
+   The size of a GeoJSON text in bytes is a major interoperability
+   consideration, and precision of coordinate values has a large impact
+   on the size of texts.  A GeoJSON text containing many detailed
+   Polygons can be inflated almost by a factor of two by increasing
+   coordinate precision from 6 to 15 decimal places.  For geographic
+   coordinates with units of degrees, 6 decimal places (a default common
+   in, e.g., sprintf) amounts to about 10 centimeters, a precision well
+   within that of current GPS systems.  Implementations should consider
+   the cost of using a greater precision than necessary.
+
+   Furthermore, the WGS 84 [<a href="#ref-WGS84" title="&quot;Department of Defense World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems&quot;">WGS84</a>] datum is a relatively coarse
+   approximation of the geoid, with the height varying by up to 5 m (but
+   generally between 2 and 3 meters) higher or lower relative to a
+   surface parallel to Earth&#x27;s mean sea level.
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 18]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-19" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h2"><a class="selflink" id="section-12" href="#section-12">12</a>.  IANA Considerations</span>
+
+   The media type for GeoJSON text is &quot;application/geo+json&quot; and is
+   registered in the &quot;Media Types&quot; registry described in [<a href="/doc/html/rfc6838" title="&quot;Media Type Specifications and Registration Procedures&quot;">RFC6838</a>].  The
+   entry for &quot;application/vnd.geo+json&quot; in the same registry should have
+   its status changed to be &quot;OBSOLETED&quot; with a pointer to the media type
+   &quot;application/geo+json&quot; and a reference added to this RFC.
+
+   Type name:  application
+
+   Subtype name:  geo+json
+
+   Required parameters:  n/a
+
+   Optional parameters:  n/a
+
+   Encoding considerations:  binary
+
+   Security considerations:  See <a href="#section-10">Section 10</a> above
+
+   Interoperability considerations:  See <a href="#section-11">Section 11</a> above
+
+   Published specification:  [[<a href="/doc/html/rfc7946">RFC7946</a>]]
+
+   Applications that use this media type:  No known applications
+      currently use this media type.  This media type is intended for
+      GeoJSON applications currently using the &quot;application/
+      vnd.geo+json&quot; or &quot;application/json&quot; media types, of which there
+      are several categories: web mapping, geospatial databases,
+      geographic data processing APIs, data analysis and storage
+      services, and data dissemination.
+
+   Additional information:
+
+      Magic number(s):  n/a
+
+      File extension(s):  .json, .geojson
+
+      Macintosh file type code:  n/a
+
+      Object Identifiers:  n/a
+
+      Windows clipboard name:  GeoJSON
+
+      Macintosh uniform type identifier:  public.geojson conforms to
+         public.json
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 19]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-20" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   Person to contact for further information:  Sean Gillies
+      (sean.gillies@gmail.com)
+
+   Intended usage:  COMMON
+
+   Restrictions on usage:  none
+
+   Restrictions on usage:  none
+
+   Author:  see &quot;Authors&#x27; Addresses&quot; section of [[<a href="/doc/html/rfc7946">RFC7946</a>]].
+
+   Change controller:  Internet Engineering Task Force
+
+<span class="h2"><a class="selflink" id="section-13" href="#section-13">13</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-13.1" href="#section-13.1">13.1</a>.  Normative References</span>
+
+   [<a id="ref-RFC2119">RFC2119</a>]  Bradner, S., &quot;Key words for use in RFCs to Indicate
+              Requirement Levels&quot;, <a href="/doc/html/bcp14">BCP 14</a>, <a href="/doc/html/rfc2119">RFC 2119</a>,
+              DOI 10.17487/RFC2119, March 1997,
+              &lt;<a href="http://www.rfc-editor.org/info/rfc2119">http://www.rfc-editor.org/info/rfc2119</a>&gt;.
+
+   [<a id="ref-RFC6838">RFC6838</a>]  Freed, N., Klensin, J., and T. Hansen, &quot;Media Type
+              Specifications and Registration Procedures&quot;, <a href="/doc/html/bcp13">BCP 13</a>,
+              <a href="/doc/html/rfc6838">RFC 6838</a>, DOI 10.17487/RFC6838, January 2013,
+              &lt;<a href="http://www.rfc-editor.org/info/rfc6838">http://www.rfc-editor.org/info/rfc6838</a>&gt;.
+
+   [<a id="ref-RFC7159">RFC7159</a>]  Bray, T., Ed., &quot;The JavaScript Object Notation (JSON) Data
+              Interchange Format&quot;, <a href="/doc/html/rfc7159">RFC 7159</a>, DOI 10.17487/RFC7159, March
+              2014, &lt;<a href="http://www.rfc-editor.org/info/rfc7159">http://www.rfc-editor.org/info/rfc7159</a>&gt;.
+
+   [<a id="ref-RFC7493">RFC7493</a>]  Bray, T., Ed., &quot;The I-JSON Message Format&quot;, <a href="/doc/html/rfc7493">RFC 7493</a>,
+              DOI 10.17487/RFC7493, March 2015,
+              &lt;<a href="http://www.rfc-editor.org/info/rfc7493">http://www.rfc-editor.org/info/rfc7493</a>&gt;.
+
+   [<a id="ref-WGS84">WGS84</a>]    National Imagery and Mapping Agency, &quot;Department of
+              Defense World Geodetic System 1984: Its Definition and
+              Relationships with Local Geodetic Systems&quot;, Third Edition,
+              1984.
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 20]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-21" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="section-13.2" href="#section-13.2">13.2</a>.  Informative References</span>
+
+   [<a id="ref-GJ2008">GJ2008</a>]   Butler, H., Daly, M., Doyle, A., Gillies, S., Schaub, T.,
+              and C. Schmidt, &quot;The GeoJSON Format Specification&quot;, June
+              2008.
+
+   [<a id="ref-KMLv2.2">KMLv2.2</a>]  Wilson, T., &quot;OGC KML&quot;, OGC 07-147r2, Version 2.2.0, April
+              2008.
+
+   [<a id="ref-RFC5870">RFC5870</a>]  Mayrhofer, A. and C. Spanring, &quot;A Uniform Resource
+              Identifier for Geographic Locations (&#x27;geo&#x27; URI)&quot;,
+              <a href="/doc/html/rfc5870">RFC 5870</a>, DOI 10.17487/RFC5870, June 2010,
+              &lt;<a href="http://www.rfc-editor.org/info/rfc5870">http://www.rfc-editor.org/info/rfc5870</a>&gt;.
+
+   [<a id="ref-RFC6772">RFC6772</a>]  Schulzrinne, H., Ed., Tschofenig, H., Ed., Cuellar, J.,
+              Polk, J., Morris, J., and M. Thomson, &quot;Geolocation Policy:
+              A Document Format for Expressing Privacy Preferences for
+              Location Information&quot;, <a href="/doc/html/rfc6772">RFC 6772</a>, DOI 10.17487/RFC6772,
+              January 2013, &lt;<a href="http://www.rfc-editor.org/info/rfc6772">http://www.rfc-editor.org/info/rfc6772</a>&gt;.
+
+   [<a id="ref-RFC7464">RFC7464</a>]  Williams, N., &quot;JavaScript Object Notation (JSON) Text
+              Sequences&quot;, <a href="/doc/html/rfc7464">RFC 7464</a>, DOI 10.17487/RFC7464, February 2015,
+              &lt;<a href="http://www.rfc-editor.org/info/rfc7464">http://www.rfc-editor.org/info/rfc7464</a>&gt;.
+
+   [<a id="ref-SFSQL">SFSQL</a>]    OpenGIS Consortium, Inc., &quot;OpenGIS Simple Features
+              Specification For SQL Revision 1.1&quot;, OGC 99-049, May 1999.
+
+   [<a id="ref-Sweeney">Sweeney</a>]  Sweeney, L., &quot;k-anonymity: a model for protecting
+              privacy&quot;, International Journal on Uncertainty, Fuzziness
+              and Knowledge-based Systems 10 (5), 2002; 557-570,
+              DOI 10.1142/S0218488502001648, 2002.
+
+   [<a id="ref-WFSv1">WFSv1</a>]    Vretanos, P., &quot;Web Feature Service Implementation
+              Specification&quot;, OGC 04-094, Version 1.1.0, May 2005.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 21]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-22" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Geometry Examples</span>
+
+   Each of the examples below represents a valid and complete GeoJSON
+   object.
+
+<span class="h3"><a class="selflink" id="appendix-A.1" href="#appendix-A.1">A.1</a>.  Points</span>
+
+   Point coordinates are in x, y order (easting, northing for projected
+   coordinates, longitude, and latitude for geographic coordinates):
+
+     {
+         &quot;type&quot;: &quot;Point&quot;,
+         &quot;coordinates&quot;: [100.0, 0.0]
+     }
+
+<span class="h3"><a class="selflink" id="appendix-A.2" href="#appendix-A.2">A.2</a>.  LineStrings</span>
+
+   Coordinates of LineString are an array of positions (see
+   <a href="#section-3.1.1">Section 3.1.1</a>):
+
+     {
+         &quot;type&quot;: &quot;LineString&quot;,
+         &quot;coordinates&quot;: [
+             [100.0, 0.0],
+             [101.0, 1.0]
+         ]
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 22]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-23" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.3" href="#appendix-A.3">A.3</a>.  Polygons</span>
+
+   Coordinates of a Polygon are an array of linear ring (see
+   <a href="#section-3.1.6">Section 3.1.6</a>) coordinate arrays.  The first element in the array
+   represents the exterior ring.  Any subsequent elements represent
+   interior rings (or holes).
+
+   No holes:
+
+     {
+         &quot;type&quot;: &quot;Polygon&quot;,
+         &quot;coordinates&quot;: [
+             [
+                 [100.0, 0.0],
+                 [101.0, 0.0],
+                 [101.0, 1.0],
+                 [100.0, 1.0],
+                 [100.0, 0.0]
+             ]
+         ]
+     }
+
+   With holes:
+
+     {
+         &quot;type&quot;: &quot;Polygon&quot;,
+         &quot;coordinates&quot;: [
+             [
+                 [100.0, 0.0],
+                 [101.0, 0.0],
+                 [101.0, 1.0],
+                 [100.0, 1.0],
+                 [100.0, 0.0]
+             ],
+             [
+                 [100.8, 0.8],
+                 [100.8, 0.2],
+                 [100.2, 0.2],
+                 [100.2, 0.8],
+                 [100.8, 0.8]
+             ]
+         ]
+     }
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 23]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-24" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.4" href="#appendix-A.4">A.4</a>.  MultiPoints</span>
+
+   Coordinates of a MultiPoint are an array of positions:
+
+     {
+         &quot;type&quot;: &quot;MultiPoint&quot;,
+         &quot;coordinates&quot;: [
+             [100.0, 0.0],
+             [101.0, 1.0]
+         ]
+     }
+
+<span class="h3"><a class="selflink" id="appendix-A.5" href="#appendix-A.5">A.5</a>.  MultiLineStrings</span>
+
+   Coordinates of a MultiLineString are an array of LineString
+   coordinate arrays:
+
+     {
+         &quot;type&quot;: &quot;MultiLineString&quot;,
+         &quot;coordinates&quot;: [
+             [
+                 [100.0, 0.0],
+                 [101.0, 1.0]
+             ],
+             [
+                 [102.0, 2.0],
+                 [103.0, 3.0]
+             ]
+         ]
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 24]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-25" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.6" href="#appendix-A.6">A.6</a>.  MultiPolygons</span>
+
+   Coordinates of a MultiPolygon are an array of Polygon coordinate
+   arrays:
+
+     {
+         &quot;type&quot;: &quot;MultiPolygon&quot;,
+         &quot;coordinates&quot;: [
+             [
+                 [
+                     [102.0, 2.0],
+                     [103.0, 2.0],
+                     [103.0, 3.0],
+                     [102.0, 3.0],
+                     [102.0, 2.0]
+                 ]
+             ],
+             [
+                 [
+                     [100.0, 0.0],
+                     [101.0, 0.0],
+                     [101.0, 1.0],
+                     [100.0, 1.0],
+                     [100.0, 0.0]
+                 ],
+                 [
+                     [100.2, 0.2],
+                     [100.2, 0.8],
+                     [100.8, 0.8],
+                     [100.8, 0.2],
+                     [100.2, 0.2]
+                 ]
+             ]
+         ]
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 25]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-26" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-A.7" href="#appendix-A.7">A.7</a>.  GeometryCollections</span>
+
+   Each element in the &quot;geometries&quot; array of a GeometryCollection is one
+   of the Geometry objects described above:
+
+     {
+         &quot;type&quot;: &quot;GeometryCollection&quot;,
+         &quot;geometries&quot;: [{
+             &quot;type&quot;: &quot;Point&quot;,
+             &quot;coordinates&quot;: [100.0, 0.0]
+         }, {
+             &quot;type&quot;: &quot;LineString&quot;,
+             &quot;coordinates&quot;: [
+                 [101.0, 0.0],
+                 [102.0, 1.0]
+             ]
+         }]
+     }
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Changes from the Pre-IETF GeoJSON Format Specification</span>
+
+   This appendix briefly summarizes non-editorial changes from the 2008
+   specification [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>].
+
+<span class="h3"><a class="selflink" id="appendix-B.1" href="#appendix-B.1">B.1</a>.  Normative Changes</span>
+
+   o  Specification of coordinate reference systems has been removed,
+      i.e., the &quot;crs&quot; member of [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>] is no longer used.
+
+   o  In the absence of elevation values, applications sensitive to
+      height or depth SHOULD interpret positions as being at local
+      ground or sea level (see <a href="#section-4">Section 4</a>).
+
+   o  Implementations SHOULD NOT extend position arrays beyond 3
+      elements (see <a href="#section-3.1.1">Section 3.1.1</a>).
+
+   o  A line between two positions is a straight Cartesian line (see
+      <a href="#section-3.1.1">Section 3.1.1</a>).
+
+   o  Polygon rings MUST follow the right-hand rule for orientation
+      (counterclockwise external rings, clockwise internal rings).
+
+   o  The values of a &quot;bbox&quot; array are &quot;[west, south, east, north]&quot;, not
+      &quot;[minx, miny, maxx, maxy]&quot; (see <a href="#section-5">Section 5</a>).
+
+   o  A Feature object&#x27;s &quot;id&quot; member is a string or number (see
+      <a href="#section-3.2">Section 3.2</a>).
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 26]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-27" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   o  Extensions MAY be used, but MUST NOT change the semantics of
+      GeoJSON members and types (see <a href="#section-6">Section 6</a>).
+
+   o  GeoJSON objects MUST NOT contain the defining members of other
+      types (see <a href="#section-7.1">Section 7.1</a>).
+
+   o  The media type for GeoJSON is &quot;application/geo+json&quot;.
+
+<span class="h3"><a class="selflink" id="appendix-B.2" href="#appendix-B.2">B.2</a>.  Informative Changes</span>
+
+   o  The definition of a GeoJSON text has been added.
+
+   o  Rules for mapping &#x27;geo&#x27; URIs have been added.
+
+   o  A recommendation of the I-JSON [<a href="/doc/html/rfc7493" title="&quot;The I-JSON Message Format&quot;">RFC7493</a>] constraints has been
+      added.
+
+   o  Implementers are cautioned about the effect of excessive
+      coordinate precision on interoperability.
+
+   o  Interoperability concerns of GeometryCollections are noted.  These
+      objects should be used sparingly (see <a href="#section-3.1.8">Section 3.1.8</a>).
+
+<span class="h2"><a class="selflink" id="appendix-C" href="#appendix-C">Appendix C</a>.  GeoJSON Text Sequences</span>
+
+   All GeoJSON objects defined in this specification --
+   FeatureCollection, Feature, and Geometry -- consist of exactly one
+   JSON object.  However, there may be circumstances in which
+   applications need to represent sets or sequences of these objects
+   (over and above the grouping of Feature objects in a
+   FeatureCollection), e.g., in order to efficiently &quot;stream&quot; large
+   numbers of Feature objects.  The definition of such sets or sequences
+   is outside the scope of this specification.
+
+   If such a representation is needed, a new media type is required that
+   has the ability to represent these sets or sequences.  When defining
+   such a media type, it may be useful to base it on &quot;JavaScript Object
+   Notation (JSON) Text Sequences&quot; [<a href="/doc/html/rfc7464" title="&quot;JavaScript Object Notation (JSON) Text Sequences&quot;">RFC7464</a>], leaving the foundations of
+   how to represent multiple JSON objects to that specification, and
+   only defining how it applies to GeoJSON objects.
+
+Acknowledgements
+
+   The GeoJSON format is the product of discussion on the GeoJSON
+   mailing list, &lt;<a href="http://lists.geojson.org/listinfo.cgi/geojson-geojson.org">http://lists.geojson.org/listinfo.cgi/</a>
+   <a href="http://lists.geojson.org/listinfo.cgi/geojson-geojson.org">geojson-geojson.org</a>&gt;, before October 2015 and in the IETF&#x27;s GeoJSON
+   WG after October 2015.
+
+
+
+
+<span class="grey">Butler, et al.               Standards Track                   [Page 27]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-28" ></span>
+<span class="grey"><a href="/doc/html/rfc7946">RFC 7946</a>                         GeoJSON                     August 2016</span>
+
+
+   Material in this document was adapted with changes from
+   &lt;<a href="http://geojson.org/geojson-spec.html">http://geojson.org/geojson-spec.html</a>&gt; [<a href="#ref-GJ2008" title="&quot;The GeoJSON Format Specification&quot;">GJ2008</a>], which is licensed
+   under &lt;<a href="http://creativecommons.org/licenses/by/3.0/us/">http://creativecommons.org/licenses/by/3.0/us/</a>&gt;.
+
+Authors&#x27; Addresses
+
+   Howard Butler
+   Hobu Inc.
+
+   Email: howard@hobu.co
+
+
+   Martin Daly
+   Cadcorp
+
+   Email: martin.daly@cadcorp.com
+
+
+   Allan Doyle
+
+   Email: adoyle@intl-interfaces.com
+
+
+   Sean Gillies
+   Mapbox
+
+   Email: sean.gillies@gmail.com
+   URI:   <a href="http://sgillies.net">http://sgillies.net</a>
+
+
+   Stefan Hagen
+   Rheinaustr. 62
+   Bonn  53225
+   Germany
+
+   Email: stefan@hagen.link
+   URI:   <a href="http://stefan-hagen.website/">http://stefan-hagen.website/</a>
+
+
+   Tim Schaub
+   Planet Labs
+
+   Email: tim.schaub@gmail.com
+
+
+
+
+
+
+
+
+Butler, et al.               Standards Track                   [Page 28]
+</pre></div>
+                    </div>
+                
+            </div>
+            <div class="d-print-none col-md-3 bg-light-subtle collapse show" id="sidebar">
+                <div class="position-fixed border-start sidebar overflow-scroll overscroll-none no-scrollbar">
+                    <div class="d-flex flex-column vh-100 pt-2 pt-lg-3 ps-3 pl-md-2 pl-lg-3">
+                        <div>
+                            <a class="btn btn-primary btn-sm" href="/doc/rfc7946/">Datatracker</a>
+                            <p class="fw-bold pt-2">
+                                
+                                    RFC 7946
+                                
+                                <br>
+                                <span class="badge rounded-pill badge-ps">
+                                    
+                                        Proposed Standard
+                                    
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <ul class="nav nav-tabs nav-fill small me-2" role="tablist">
+                            <li class="nav-item" role="presentation" title="Document information">
+                                <button class="nav-link px-2"
+                                        id="docinfo-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#docinfo-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="docinfo-tab-pane"
+                                        aria-selected="true">
+                                    <i class="bi bi-info-circle"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Info</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" title="Table of contents">
+                                <button class="nav-link px-2"
+                                        id="toc-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#toc-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="toc-tab-pane"
+                                        aria-selected="false">
+                                    <i class="bi bi-list-ol"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Contents</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" title="Preferences">
+                                <button class="nav-link px-2"
+                                        id="pref-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#pref-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pref-tab-pane"
+                                        aria-selected="false">
+                                    <i class="bi bi-gear"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Prefs</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="overflow-auto tab-content pt-2 me-2">
+                            <div class="tab-pane"
+                                 id="docinfo-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="docinfo-tab"
+                                 tabindex="0">
+                                <table class="table table-sm table-borderless">
+                                    
+
+
+
+
+
+
+<tbody class="meta align-top ">
+    <tr>
+        <th scope="row">Document</th>
+        <th scope="row">Document type</th>
+        <td class="edit"></td>
+        <td>
+            
+                <span class="text-success">RFC
+                    
+                        <span class="badge rounded-pill badge-ps">Proposed Standard</span>
+                    
+                </span>
+                
+                    <br>August 2016
+                
+                <br>
+                
+                    <a class="btn btn-primary btn-sm my-1"
+                       href="https://www.rfc-editor.org/errata_search.php?rfc=7946" title="Click to view errata." rel="nofollow">
+                        View errata
+                    </a>
+                
+                
+                    <a class="btn btn-sm btn-warning"
+                       title="Click to report an error in the document."
+                       href="https://www.rfc-editor.org/errata.php#reportnew"
+                       target="_blank">
+                        Report errata
+                    </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <div>
+                        Was
+                        <a href="/doc/draft-ietf-geojson/04/">draft-ietf-geojson</a>
+                        (<a href="/wg/geojson/about/">geojson WG</a>)
+                    </div>
+                
+            
+            
+            
+                
+
+
+
+
+    
+
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td></td>
+            <th scope="row">Select version</th>
+            <td class="edit"></td>
+            <td>
+                
+
+
+
+    <ul class="revision-list pagination pagination-sm text-center flex-wrap my-0">
+        
+            
+            
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-00"
+                        rel="nofollow">
+                            00
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-01"
+                        rel="nofollow">
+                            01
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-02"
+                        rel="nofollow">
+                            02
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-03"
+                        rel="nofollow">
+                            03
+                        </a>
+                    </li>
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-ietf-geojson-04"
+                        rel="nofollow">
+                            04
+                        </a>
+                    </li>
+                
+            
+            
+            <li class="page-item rfc active">
+                <a class="page-link"
+                href="/doc/html/rfc7946">
+                    RFC 7946
+                </a>
+            </li>
+        
+    </ul>
+
+            </td>
+        </tr>
+        
+            <tr>
+                <td></td>
+                <th scope="row">Compare versions</th>
+                <td class="edit"></td>
+                <td>
+                    
+
+
+
+<form class="form-horizontal diff-form"
+      action="https://author-tools.ietf.org/iddiff"
+      method="get"
+      target="_blank">
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="From revision"
+                    name="url1">
+                
+                    <option value="rfc7946">
+                        RFC 7946
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-04" selected>
+                        draft-ietf-geojson-04
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-03">
+                        draft-ietf-geojson-03
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-02">
+                        draft-ietf-geojson-02
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-01">
+                        draft-ietf-geojson-01
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-00">
+                        draft-ietf-geojson-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="To revision"
+                    name="url2">
+                
+                    <option value="rfc7946" selected>
+                        RFC 7946
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-04">
+                        draft-ietf-geojson-04
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-03">
+                        draft-ietf-geojson-03
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-02">
+                        draft-ietf-geojson-02
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-01">
+                        draft-ietf-geojson-01
+                        
+                    </option>
+                
+                    <option value="draft-ietf-geojson-00">
+                        draft-ietf-geojson-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--html"
+                    name="difftype">
+                Side-by-side
+            </button>
+            
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--hwdiff"
+                    name="difftype">
+                Inline
+            </button>
+
+</form>
+                </td>
+            </tr>
+        
+    
+    <tr>
+        <td></td>
+        <th scope="row">Authors</th>
+        <td class="edit">
+            
+        </td>
+        <td>
+            
+            
+                <span ><a 
+           title="Datatracker profile of H. Butler"
+            href="/person/howard@hobu.co" >H. Butler</a> <a 
+               href="mailto:howard%40hobu.co"
+               aria-label="Compose email to howard@hobu.co"
+               title="Compose email to howard@hobu.co">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of M. Daly"
+            href="/person/martin.daly@cadcorp.com" >M. Daly</a> <a 
+               href="mailto:martin.daly%40cadcorp.com"
+               aria-label="Compose email to martin.daly@cadcorp.com"
+               title="Compose email to martin.daly@cadcorp.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of A. Doyle"
+            href="/person/adoyle@intl-interfaces.com" >A. Doyle</a> <a 
+               href="mailto:adoyle%40intl-interfaces.com"
+               aria-label="Compose email to adoyle@intl-interfaces.com"
+               title="Compose email to adoyle@intl-interfaces.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Sean Gillies"
+            href="/person/sean.gillies@gmail.com" >Sean Gillies</a> <a 
+               href="mailto:sean.gillies%40gmail.com"
+               aria-label="Compose email to sean.gillies@gmail.com"
+               title="Compose email to sean.gillies@gmail.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of T. Schaub"
+            href="/person/tim.schaub@gmail.com" >T. Schaub</a> <a 
+               href="mailto:tim.schaub%40gmail.com"
+               aria-label="Compose email to tim.schaub@gmail.com"
+               title="Compose email to tim.schaub@gmail.com">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Stefan Hagen"
+            href="/person/stefan@hagen.link" >Stefan Hagen</a> <a 
+               href="mailto:stefan%40hagen.link"
+               aria-label="Compose email to stefan@hagen.link"
+               title="Compose email to stefan@hagen.link">
+                <i class="bi bi-envelope"></i></a></span>
+            
+            
+                <br>
+                <a class="btn btn-primary btn-sm mt-1" href="mailto:rfc7946@ietf.org?subject=rfc7946" title="Send email to the document authors">Email authors</a>
+            
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            RFC stream
+        </th>
+        <td class="edit">
+            
+        </td>
+        <td >
+            
+                
+                
+                    
+                        
+
+
+
+<img alt="IETF Logo"
+     class="d-lm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-white.svg"
+        
+     
+     >
+
+<img alt="IETF Logo"
+     class="d-dm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor.svg"
+        
+     
+     >
+                    
+                
+                
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            Other formats
+        </th>
+        <td class="edit">
+        </td>
+        <td>
+            
+                
+    <div class="buttonlist">
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc7946.txt">
+            
+                <i class="bi bi-file-text"></i> txt
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc7946.html">
+            
+                <i class="bi bi-file-code"></i> html
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+            download="rfc7946.pdf"
+          
+         
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/pdfrfc/rfc7946.txt.pdf">
+            
+                <i class="bi bi-file-pdf"></i> pdf
+            
+        </a>
+        
+    
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="/doc/rfc7946/bibtex/">
+            
+                <i class="bi bi-file-ruled"></i> bibtex
+            
+        </a>
+        
+    
+</div>
+
+            
+        </td>
+    </tr>
+    
+    
+        
+            <tr>
+                <td>
+                </td>
+                <th scope="row">
+                    Additional resources
+                </th>
+                <td class="edit">
+                    
+                </td>
+                <td>
+                    
+                        
+                        
+                            
+                                <a href="https://mailarchive.ietf.org/arch/browse/geojson?q=rfc7946 OR %22draft-ietf-geojson%22">
+                                    Mailing list discussion
+                                </a>
+                            
+                        
+                    
+                </td>
+            </tr>
+        
+    
+</tbody>
+                                </table>
+                                <a class="btn btn-sm btn-warning mb-3"
+                                target="_blank"
+                                href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                                    Report a datatracker bug
+                                    <i class="bi bi-bug"></i>
+                                </a>
+                            </div>
+                            <div class="tab-pane mb-5"
+                                 id="toc-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="toc-tab"
+                                 tabindex="0">
+                                <nav class="nav nav-pills flex-column small" id="toc-nav">
+                                </nav>
+                            </div>
+                            <div class="tab-pane mb-5 small"
+                                 id="pref-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="pref-tab"
+                                 tabindex="0">
+                                <label class="form-label fw-bold mb-2">Show sidebar by default</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="sidebar" id="on-radio">
+                                    <label class="btn btn-outline-primary" for="on-radio">Yes</label>
+                                    <input type="radio" class="btn-check" name="sidebar" id="off-radio">
+                                    <label class="btn btn-outline-primary" for="off-radio">No</label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">Tab to show by default</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="deftab" id="docinfo-radio">
+                                    <label class="btn btn-outline-primary" for="docinfo-radio">
+                                        <i class="bi bi-info-circle me-1"></i>Info
+                                    </label>
+                                    <input type="radio" class="btn-check" name="deftab" id="toc-radio">
+                                    <label class="btn btn-outline-primary" for="toc-radio">
+                                        <i class="bi bi-list-ol me-1"></i>Contents
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">HTMLization configuration</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="htmlconf" id="txt-radio">
+                                    <label class="btn btn-outline-primary" for="txt-radio" title="This is the traditional HTMLization method.">
+                                        <i class="bi bi-badge-sd me-1"></i>HTMLize the plaintext
+                                    </label>
+                                    <input type="radio" class="btn-check" name="htmlconf" id="html-radio">
+                                    <label class="btn btn-outline-primary" for="html-radio" title="This is the modern HTMLization method.">
+                                        <i class="bi bi-badge-hd me-1"></i>Plaintextify the HTML
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2" for="ptsize">Maximum font size</label>
+                                <input type="range" class="form-range" min="7" max="16" id="ptsize" oninput="ptdemo.value = ptsize.value">
+                                <label class="form-label fw-bold mt-4 mb-2">Page dependencies</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="pagedeps" id="inline-radio">
+                                    <label class="btn btn-outline-primary" for="inline-radio" title="Generate larger, standalone web pages that do not require network access to render.">
+                                        <i class="bi bi-box me-1"></i>Inline
+                                    </label>
+                                    <input type="radio" class="btn-check" name="pagedeps" id="reference-radio">
+                                    <label class="btn btn-outline-primary" for="reference-radio" title="Generate regular web pages that require network access to render.">
+                                        <i class="bi bi-link-45deg me-1"></i>Reference
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">Citation links</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="reflinks" id="refsection-radio">
+                                    <label class="btn btn-outline-primary" for="refsection-radio" title="Citation links go to the reference section.">
+                                        <i class="bi bi-arrow-clockwise"></i> Go to reference section
+                                    </label>
+                                    <input type="radio" class="btn-check" name="reflinks" id="citation-radio">
+                                    <label class="btn btn-outline-primary" for="citation-radio" title="Citation links go directly to the cited document.">
+                                        <i class="bi bi-link-45deg me-1"></i>Go to linked document
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.ietf.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 7]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.ietf.org/piwik.php?idsite=7" style="border:0;" alt="" /></p></noscript>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8954934e691c35cb',t:'MTcxODY0MzQxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

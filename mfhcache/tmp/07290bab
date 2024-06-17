@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr"
+	  class='com_content view-article itemid-222 j39 mm-hover '>
+<head>
+ 	<base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Scalable Policy-awarE linked data arChitecture for prIvacy, trAnsparency and compLiance" />
+	<meta name="author" content="Bert Bos" />
+	<meta name="description" content="Scalable Policy-awarE linked data arChitecture for prIvacy, trAnsparency and compLiance" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Vocabulary …/vocabs/processing# - SPECIAL</title>
+	<link href="/templates/purity_iii/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/templates/purity_iii/local/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/purity_iii/local/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/purity_iii/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/purity_iii/local/css/layouts/special.css" rel="stylesheet" type="text/css" />
+	<link href="/media/widgetkit/wk-styles-1c77de50.css" rel="stylesheet" type="text/css" id="wk-styles-css" />
+	<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/jquery.tap.min.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/script.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/menu.js" type="text/javascript"></script>
+	<script src="/templates/purity_iii/js/script.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/nav-collapse.js" type="text/javascript"></script>
+	<script src="/media/widgetkit/uikit2-f2a751d9.js" type="text/javascript"></script>
+	<script src="/media/widgetkit/wk-scripts-0559d948.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+	</script>
+
+	
+<!-- META FOR IOS & HANDHELD -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style type="text/stylesheet">
+		@-webkit-viewport   { width: device-width; }
+		@-moz-viewport      { width: device-width; }
+		@-ms-viewport       { width: device-width; }
+		@-o-viewport        { width: device-width; }
+		@viewport           { width: device-width; }
+	</style>
+	<script type="text/javascript">
+		//<![CDATA[
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode("@-ms-viewport{width:auto!important}")
+			);
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+		//]]>
+	</script>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="YES"/>
+<!-- //META FOR IOS & HANDHELD -->
+
+
+
+
+<!-- Le HTML5 shim and media query for IE8 support -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="/plugins/system/t3/base-bs3/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- You can add Google Analytics here or use T3 Injection feature -->
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/templates/purity_iii/css/ie8.css" type="text/css" />
+<![endif]-->
+<style type="text/css" media="all and (max-height: 58em)">
+/* Don't fix the menu on the screen if the screen is small */
+.navbar-fixed-top, .navbar-fixed-bottom {position: absolute}
+</style>
+
+<style type="text/css">
+/* Add FontAwesome everywhere */
+body {font-family: FontAwesome, Helvetica Neue, Helvetica, Arial, sans-serif}
+
+/* Smaller H3 and H4 */
+h3 {font-size: 100%; font-weight: bold}
+h4 {font-size: 100%; font-weight: normal; font-style: italic}
+
+/* Less indent for bulleted lists */
+ul {padding-left: 2em}
+
+.uk-article-meta {font-size: smaller; font-style: italic; margin-bottom: 0.6em}
+.uk-margin {margin-top: 0}
+cite::before {content: "‘"}
+cite::after {content: "’"}
+
+/* Generic tables in template.css have a border above the TD. Make it
+a border above TR instead, except at the top of the table: */
+td, tr td {border-top: none}
+tr {border-top: 1px solid #ddd}
+table {border-top: hidden}
+
+/* Some padding for cells in the "table-bordered" class (from bootstrap.css) */
+.table-bordered td, .table-bordered th {padding: 0.3em}
+
+/* Remove the 'display: block' from bootstrap.css */
+input.inputbox {display: inline}
+
+/* Remove the '100% !important' template.css. There is a 'max-width' already */
+@media screen and (max-width: 992px) {
+  article img:not([style*="width"]) {width: auto !important}
+}
+
+/* Some space below floating images of class "pull-left" */
+.pull-left {margin-bottom: 1.2em}
+
+/* Don't let template.css remove the side margins of images on narrow screens.
+   Also leave room for text on the side */
+.article-intro .pull-left.item-image {margin-right: 20px; width: 35%}
+@media screen and (max-width: 23em) {
+  .pull-left {float: none !important}
+  .article-intro .pull-left.item-image {width: auto; max-width: 100%}
+}
+
+/* The title of an aggregated news item is in bold */
+.srfrRow > a {font-weight: bold}
+
+/* The .icon-chevron-right/left classes are used but seem not defined */
+.icon-chevron-right::before {font-family: FontAwesome; content: "\f054"}
+.icon-chevron-left::before {font-family: FontAwesome; content: "\f053"}
+
+/* News feed aggregator in narrow columns: */
+.srfrContainer.feed-reader {columns: 15em}
+/* Reverse the colors of the pop-up, replace the border by a shadow: */
+div.srfrContainer ul.srfrList li a:hover span {border: none; box-shadow: 0 1px 3px #000;
+  background: #00466e; color: #fff; font-weight: normal}
+/* Do not repeat the title in the pop-up: */
+div.srfrContainer ul.srfrList li a:hover span b.srfrTitle {display: none} 
+/* Columns are less disturbed if pop-up sticks out the top than out the bottom: */
+div.srfrContainer ul.srfrList li a:hover span {top: auto; bottom: 4px}
+
+/* Give cells in table.mytable (from special.css) some horizontal
+space, but a bit less vertical space (0.3em instead of 8px). (The
+rules in special.css have !important :-( ) */
+.mytable td, .mytable th {padding: 0.3em 0.5em !important}
+
+/* Background for the news boxes on the home page */
+/* .uk-panel-box {background: linear-gradient(hsl(294,60%,93%), hsl(199,75%,93%))}
+.other-news .uk-panel-box {background: none} */
+
+/* Border between news boxes (in Widgetkit style "blank")
+.uk-active + .uk-active .uk-panel {border-left: thin solid #e5e5e5; padding-left: 1em} */
+
+/* In Widgetkit style "box", bring the top illustration closer to top border */
+.uk-panel-box > .uk-panel-teaser {margin: -10px -10px 20px -10px}
+
+/* Border around the top image in the Widgetkit display, minimum height */
+.uk-panel-teaser {display: flex; min-height: 7.7em; padding: 0.3em 0.6em;
+  border: thin solid}
+.uk-border-circle {margin: auto; max-height: 7em}
+.uk-panel-teaser, .uk-panel-title {margin-bottom: 0.8em}
+
+/* .t3-wrapper {background: linear-gradient(#999,#fff 67%,#fff)} */
+.t3-mainbody {background: #fff, padding-top: 0}
+.breadcrumb {padding: 0}
+
+/* In a Widgetkit slider, don't hide the main text */
+.uk-overlay-panel {color: inherit}
+
+/* Smaller font and a border for the slideshow on the home page. */
+.small-slides {font-size: 70%; border: thin solid #50ace4; padding: 0 2.8em; text-align: left;
+  background: linear-gradient(#f6f6f6,#fff)}
+.small-slides img {max-height: 25em}
+
+h2 {/*font-size: x-large;*/ font-size: 150%; margin-top: 1.2em; margin-bottom: 0.6em}
+.article-title, .article-header h1 {border-bottom: none}
+
+/* Add a big curly brace on the right of article summaries in blog layout */
+.blog article {padding-right: 33px;
+  background:
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAANCAYAAABCZ/VdAAAAuklEQVQ4y2N4/+33fxCef+bp/4bdd/+ff/rpP7UAAzIHZLB8++H/Ch2H/6+/8oq6hoMAyBf6E47/Zyjf/d9h5pn/9999p57hMB/w1+8HWyAApMkNKgZcEqA4ABkOw+RYwIBPEhT+MMNBPiA1iPAa3n/4IYrrQXFANcNBkYtsOAiTkooYCCmwn3EaxXBQMqWa4fW77mK4ntjIJWg4KBjQDQdZSBXD9999h2E4KKioYjhYEZrhBsAcTAwAABWuTs9omgsmAAAAAElFTkSuQmCC) 100% 0% no-repeat,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAANCAYAAABCZ/VdAAAAqUlEQVQ4y2P4TwC8//b7P0P5bhSsP+H4f2IAAyEF++++wzDcfsZp6hi+/sorDMPrd92ljuEgg9ANP//0E3UMBwUBssHy7Yf/EwvwGn7/3XcMV4OCiSqG9x9+SFZEEmU4KAhgBvPX7wf7hCqGo7ua2EgkaDjIIAGgS2EuJsdgrIaDcqQBMAfCwpjUoMBpOMiFCh2HwWFNSqrAaTjIpSA8/8xTcIYhNwiwAQAONE5uoMATQAAAAABJRU5ErkJggg==) 100% 100% no-repeat,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAAzUlEQVRIx2P4TwQwmHD8P0P5bhRMDGAgRpH9jNMYhu+/+446htfvuoth+Porr6hj+PmnnzAMB1lIFcNBQKHjMIrhoKCimuGgYEB3/ftvv6ljOAg4zDyDYnj/4YfUM/z+u+//Ber3ww2Xbz9MPcOxRe78M0+pZzjMApgP+IE0iE81w2FBBIsDfWAOxha5ZBuOnIpAyRQU/ug+oNhw5KBq2H0XHAcgX4Dw4HQ5zcKcZqmFZumcpjmUZmULTUtFmpXnNK2JaFqH0rT2J7fdAgDie0QcNytX/QAAAABJRU5ErkJggg==) 100% 50% no-repeat,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAFOCAYAAABt3IYrAAAAjElEQVR42u3MoREAAAgDMbZmOIYDhcIwQP6usol+FFlnrx8cDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcPg2Ivzj/OFklasAAAAASUVORK5CYII=) 100% 0% / 23px 100% no-repeat,
+    white
+}
+
+/* Smaller text. Maximum width for articles, but not for overview pages and not for pages marked class=wide */
+html, body, .logo-text, .dropdown-menu {font-size: 100%}
+.container {width: auto}
+.article-content, .article-header h1, .pagenav, .article-aside, .pull-none {max-width: 40em; max-width: 40rem;
+  margin-left: auto; margin-right: auto}
+.home .article-content, .wide .article-content, .wide h1, .wide .pagenav {max-width: none}
+h1 {/*font-size: xx-large;*/ font-size: 200%}
+.logo a {background: none}
+
+/* Make the top menu 1.8em tall instead of 55px */
+.navbar-collapse > .nav > li > .separator {border-top: none}
+.navbar-default .navbar-nav > li > a, .navbar-nav > li > span.separator,
+.logo-text a, .navbar-toggle, .head-search .form-control, .navbar-header {line-height: 1.2}
+.head-search, .navbar-toggle {height: auto; padding-top: 0.2em}
+.head-search .form-control {height: 1.2em; padding: 0 1em; font-size: 100%; background: #0067a2}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.dropdown-menu > li > a,
+.logo,
+.navbar-nav > li > span.separator {padding-top: 0.2em; padding-bottom: 0.2em}
+.navbar {min-height: 1.8em}
+.t3-mainnav .t3-navbar-collapse .navbar-nav > li > * {border-top: 1px solid #0067a2}
+.head-search .search .fa-search {top: 1px; left: 0}
+
+body {padding-top: 1.8em} /* Because the top menu is now only 1.8em tall */
+
+/* Less vertical space between the panels */
+.t3-mainbody, .t3-content, .item-page {padding-bottom: 0; margin-bottom: 2em}
+.t3-sl {padding-top: 0; margin-top: 2em}
+
+/* No gray background for breadcrumbs */
+.t3-navhelper, .breadcrumb {background: none}
+
+/* Logos of allied projects */
+.other-project-logo {float: right; clear: right; width: 30%; margin: 0 0 1ex 1em; padding: 1em;
+  border: thin solid}
+
+@media (min-width: 992px) {
+  .other-project-logo {float: left; clear: left; width: 22%; margin: 0 0 1ex -25%; padding: 0;
+    border: none}
+}
+
+/* Make the dropdown menus work without JavaScript. (Doesn't work?) */
+x .dropdown-toggle:hover + .dropdown-menu,
+x .dropdown-toggle:focus + .dropdown-menu,
+x .dropdown-menu:focus,
+x .dropdown-menu:hover {display: block}
+
+/* When a submenu is used as a module inside a page, it will be inside
+   a .moduletable and should look like a normal bullet list. */
+.moduletable ul {border: none; padding-left: 2em}
+.moduletable li {display: list-item; list-style: disc}
+.moduletable li a {padding: 0}
+
+@media (min-width: 768px) {
+  /* Trick to make the center graphic on the home page intrude into both the
+     left and the right column. Make an empty float at the top right of the first
+     column and another at the top left of the third column, and make the
+     middle column wider. We assume that either the middle column is less
+     then 26em high or the left and right columns are. */
+  #home1::before, #home3::before {content: " "; width: 25%; height: 26em}
+  #home1::before {float: right}
+  #home3::before {float: left}
+  #home2 {width: 36%; margin: 0 -10%}
+}
+
+/* Black/blue badge for DOI numbers */
+.doi b {background: black; color: white; padding: 0.2em; font-weight: normal; font-style: normal; border-radius: 0.2em 0 0 0.2em}
+.doi i {background: #0077bb; color: white; padding: 0.2em; font-weight: normal; font-style: normal; border-radius: 0 0.2em 0.2em 0}
+
+/* Box with extra links on the flowchart slides */
+.links {border: thin solid #ea098d; padding: 1em; /*columns: 20em;*/ margin: 1em 0;
+  background: hsla(325,93%,98%,0.5)}
+/* .home .links p {float: right; margin: 0 0 1em 1em} */
+
+/* Some colors for the table of scientific publications */
+tbody.vocabularies > tr > :first-child {background: #f7a52c}
+tbody.papers > tr > :first-child {background: #39a99a; color: white}
+tbody.talks > tr > :first-child {background: #50ace4; color: white}
+tbody.videos > tr > :first-child {background: #e8048a; color: white}
+</style>
+
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1000, user-scalable=yes" name="viewport" />
+
+</head>
+
+<body>
+
+<div class="t3-wrapper"> <!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
+
+  
+<!-- MAIN NAVIGATION -->
+<header id="t3-mainnav" class="wrap navbar navbar-default navbar-fixed-top t3-mainnav">
+<div style="width: 100%; background-color: white">
+	</div>
+	<!-- OFF-CANVAS -->
+		<!-- //OFF-CANVAS -->
+	<div class="container">
+		<!-- NAVBAR HEADER -->
+		<div class="navbar-header">
+
+			<!-- LOGO -->
+			<div class="logo logo-text">
+				<div class="logo-text">
+					<a href="/" title="SPECIAL">
+						
+												
+						<span>SPECIAL</span>
+					</a>
+				</div>
+			</div>
+			<!-- //LOGO -->
+
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".t3-navbar-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+			
+	    
+		</div>
+		<!-- //NAVBAR HEADER -->
+
+		<!-- NAVBAR MAIN -->
+				<nav class="t3-navbar-collapse navbar-collapse collapse"></nav>
+		<!--
+		<a href="https://www.linkedin.com/groups/81390" title="ERCIM LinkedIn" target="_blank" style="color: white"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;
+<a href="https://twitter.com/ercim_news" title="ERCIM LinkedIn" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;
+<a href="https://www.facebook.com/ercimnews" title="ERCIM LinkedIn" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+
+		
+		<nav class="t3-navbar navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+			<li class="item-101">				<a href="/" >Home</a>
+				</li><li class="item-103 deeper dropdown parent">				<a class="dropdown-toggle" href="/about"  data-toggle="dropdown">About<em class="caret"></em></a>
+				<ul class="dropdown-menu" role="menu"><li class="item-128">				<a href="/about/project-overview" >Project Overview</a>
+				</li><li class="item-104">				<a href="/about/fact-sheet" >Fact Sheet </a>
+				</li><li class="item-105">				<a href="/about/project-partners" >Project Partners</a>
+				</li><li class="item-106">				<a href="/about/project-plan" >Project Plan</a>
+				</li></ul></li><li class="item-184 deeper dropdown parent">				<a class="dropdown-toggle" href="/publications"  data-toggle="dropdown">Publications<em class="caret"></em></a>
+				<ul class="dropdown-menu" role="menu"><li class="item-127">				<a href="/publications/public-deliverables" >Project deliverables</a>
+				</li><li class="item-172">				<a href="/publications/scientific-publications" >Papers, presentations, videos</a>
+				</li><li class="item-173">				<a href="/publications/studies-essays" >Studies &amp; essays</a>
+				</li><li class="item-115">				<a href="/publications/dissemination-material" >Dissemination material</a>
+				</li><li class="item-295">				<a href="/publications/technical-reports" >Technical Reports</a>
+				</li></ul></li><li class="item-108 deeper dropdown parent">				<a class="dropdown-toggle" href="/related-projects"  data-toggle="dropdown">Alliances<em class="caret"></em></a>
+				<ul class="dropdown-menu" role="menu"><li class="item-109">				<a href="/related-projects/partner-projects" >Current alliances</a>
+				</li><li class="item-195">				<a href="/related-projects/past-projects-and-related-research" >Past projects and related research</a>
+				</li><li class="item-110">				<a href="/related-projects/technology-related-projects" >Overview of ICT-14 and ICT-18 projects</a>
+				</li><li class="item-289">				<a href="/related-projects/dpvcg-w3c" >DPVCG (W3C)</a>
+				</li></ul></li><li class="item-247 deeper dropdown parent">				<a class="dropdown-toggle" href="/platform"  data-toggle="dropdown">Resources<em class="caret"></em></a>
+				<ul class="dropdown-menu" role="menu"><li class="item-252">				<a href="/platform/public-challenge" >Public challenge</a>
+				</li><li class="item-250">				<a href="/platform/ontologies-and-vocabularies" >Ontologies and vocabularies</a>
+				</li><li class="item-249">				<a href="https://github.com/specialprivacy" >Code Repository</a>
+				</li><li class="item-251">				<a href="/platform/benchmark" >Benchmark</a>
+				</li><li class="item-248">				<a href="/platform/link-to-the-latest-release" >Platform demonstrator</a>
+				</li><li class="item-261">				<a href="http://dashboard.specialprivacy.eu/" >SPECIAL privacy dashboard (demo)</a>
+				</li><li class="item-262">				<a href="https://specialprivacy.github.io/D4.1-Privacy-Dashboard-DEMO/" >SPECIAL privacy dashboard V1</a>
+				</li><li class="item-292">				<a href="https://specialprivacy.github.io/D4.2-Privacy-Dashboard-DEMO/" >SPECIAL Privacy Dashboard V1.1</a>
+				</li><li class="item-268">				<a href="https://specialprivacy.github.io/D4.3-Privacy-Dashboard-DEMO/" >SPECIAL privacy dashboard V2</a>
+				</li><li class="item-293">				<a href="https://specialprivacy.github.io/D4.5-Privacy-Dashboard-DEMO/" >SPECIAL Privacy Dashboard V3</a>
+				</li><li class="item-290">				<a href="/platform/special-explanation-demo" >SPECIAL Explanation Demo</a>
+				</li><li class="item-266">				<a href="https://cr-wizard-en.firebaseapp.com/wizard" >Consent and control UI prototype 1</a>
+				</li><li class="item-265">				<a href="https://concent-request.firebaseapp.com/builder" >Consent and control UI prototype 2 (English)</a>
+				</li><li class="item-270">				<a href="https://consent-request-de.firebaseapp.com/builder" >Consent and control UI prototype 2 (German)</a>
+				</li><li class="item-284">				<a href="http://cr-slider.soft.cafe/en/" >Consent and control UI prototype 3 (English)</a>
+				</li><li class="item-285">				<a href="http://cr-slider.soft.cafe/de/" >Consent and control UI prototype 3 (German)</a>
+				</li><li class="item-280">				<a href="/platform/special-k-reference-architecture" >SPECIAL-K Reference Architecture</a>
+				</li><li class="item-291">				<a href="/platform/pilots-policies-and-the-formalization-of-the-gdpr" >Pilots' policies and the formalization of the GDPR</a>
+				</li><li class="item-294">				<a href="https://www.big-data-value.eu/resources/webinar/" >SPECIAL webinar</a>
+				</li><li class="item-296">				<a href="/platform/dynamic-consent-demonstrator" >Dynamic consent demonstrator</a>
+				</li></ul></li>		</ul>
+	
+		</nav>
+    <!-- //NAVBAR MAIN -->
+	</div>
+</header>
+<!-- //MAIN NAVIGATION -->
+
+
+
+
+
+  
+<!-- NAV HELPER -->
+<nav class="wrap t3-navhelper ">
+	<div class="container">
+		
+<ol class="breadcrumb ">
+	<li class="active"><span class="hasTooltip"><i class="fa fa-map-marker" data-toggle="tooltip" title="You are here: "></i></span></li><li><a href="/" class="pathway">Home</a><span class="divider">→</span></li><li><a href="/vocabs" class="pathway">Vocabularies starting with /vocabs/</a><span class="divider">→</span></li><li><span>Vocabulary …/vocabs/processing#</span></li></ol>
+
+	</div>
+</nav>
+<!-- //NAV HELPER -->
+  
+
+  
+
+<div id="t3-mainbody" class="container t3-mainbody">
+	<div class="row">
+
+		<!-- MAIN CONTENT -->
+		<div id="t3-content" class="t3-content col-xs-12">
+						<div id="system-message-container">
+	</div>
+
+						
+
+<div class="item-page clearfix">
+
+
+<!-- Article -->
+<article>
+	<meta itemprop="inLanguage" content="en-GB" />
+	<meta itemprop="url" content="/vocabs/processing" />
+
+      
+<header class="article-header clearfix">
+	<h1 class="article-title" itemprop="headline">
+					<a href="/vocabs/processing" itemprop="url" title="Vocabulary …/vocabs/processing#">
+				Vocabulary …/vocabs/processing#</a>
+			</h1>
+
+			</header>
+    
+    
+  <!-- Aside -->
+    <aside class="article-aside clearfix">
+          	<dl class="article-info  muted">
+
+		
+			<dt class="article-info-term">
+													Details							</dt>
+
+							
+<dd class="createdby hasTooltip" itemprop="author" itemscope itemtype="http://schema.org/Person" title="Written by ">
+	<i class="fa fa-user"></i>
+			<span itemprop="name">Bert Bos</span>	</dd>
+			
+			
+			
+					
+					
+										<dd class="modified">
+				<i class="fa fa-clock-o"></i>
+				<time datetime="2019-10-29T22:19:15+00:00" itemprop="dateModified">
+					Last Updated: 29 October 2019				</time>
+			</dd>			
+						</dl>
+        
+      </aside>  
+    <!-- //Aside -->
+
+  
+  
+  
+	
+  
+	
+	<section class="article-content clearfix">
+		<p>(You can <a href="/images/documents/func_processing.owl">download this ontology as an OWL file</a>.)</p>
+<p>This is the formulation in functional syntax of SPECIAL’s Recipients Ontology V1, with identifier</p>
+<blockquote>
+<p><a href="/vocabs/processing">/vocabs/processing#</a></p>
+</blockquote>
+<p>The documentation can be found in <a href="/images/documents/SPECIAL_D21_M12_V10.pdf">Policy Language V1 (deliverable D2.1).</a></p>
+<pre>Prefix(:=&lt;/vocabs/processing#&gt;)<br />Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)<br />Prefix(rdf:=&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;)<br />Prefix(spl:=&lt;/langs/usage-policy#&gt;)<br />Prefix(xml:=&lt;http://www.w3.org/XML/1998/namespace&gt;)<br />Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)<br />Prefix(rdfs:=&lt;http://www.w3.org/2000/01/rdf-schema#&gt;)<br />Prefix(svpr:=&lt;/vocabs/processing#&gt;)<br /><br /><br />Ontology(&lt;/vocabs/processing&gt;<br />Import(&lt;/langs/usage-policy/1.0&gt;)<br /><br />Declaration(Class(svpr:Aggregate))<br />Declaration(Class(svpr:Analyse))<br />Declaration(Class(svpr:Anonymize))<br />Declaration(Class(svpr:Collect))<br />Declaration(Class(svpr:Copy))<br />Declaration(Class(svpr:Derive))<br />Declaration(Class(svpr:Move))<br />Declaration(Class(svpr:Query))<br />Declaration(Class(svpr:Transfer))<br />############################<br />#   Classes<br />############################<br /><br /># Class: svpr:Aggregate (svpr:Aggregate)<br /><br />SubClass

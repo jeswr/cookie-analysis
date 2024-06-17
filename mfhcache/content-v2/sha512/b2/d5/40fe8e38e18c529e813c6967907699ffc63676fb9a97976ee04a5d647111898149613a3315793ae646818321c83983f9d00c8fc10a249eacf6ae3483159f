@@ -1,0 +1,1937 @@
+
+<!DOCTYPE html>
+
+
+
+
+
+<html data-bs-theme="auto" lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            
+                RFC 5234 - Augmented BNF for Syntax Specifications: ABNF
+            
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://static.ietf.org/fonts/inter/import.css" rel="stylesheet">
+        <link href="https://static.ietf.org/fonts/noto-sans-mono/import.css" rel="stylesheet">
+        
+            <link rel="stylesheet" href="https://static.ietf.org/dt/12.15.0/ietf/css/document_html_referenced.css">
+            
+            <script src="https://static.ietf.org/dt/12.15.0/ietf/js/document_html.js"></script>
+            <script src="https://static.ietf.org/dt/12.15.0/ietf/js/theme.js"></script>
+        
+        <link rel="alternate" type="application/atom+xml" title="Document changes" href="/feed/document-changes/rfc5234/">
+        <meta name="description"
+            
+                content="Augmented BNF for Syntax Specifications: ABNF (RFC 5234, )"
+            >
+        
+
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-180.png">
+<link rel="icon"
+      sizes="32x32"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-32.png">
+<link rel="icon"
+      sizes="16x16"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon"
+      href="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-mask.svg"
+      color="#ffffff">
+<meta name="msapplication-TileColor"
+      content="#ffffff">
+<meta name="theme-color"
+      content="#ffffff">
+        
+
+
+
+
+<meta property="og:title" content="RFC 5234: Augmented BNF for Syntax Specifications: ABNF">
+<meta property="og:url" content="https://datatracker.ietf.org/doc/html/rfc5234">
+<link rel="canonical" href="https://datatracker.ietf.org/doc/html/rfc5234">
+<meta property="og:site_name" content="IETF Datatracker">
+<meta property="og:description" content="Internet technical specifications often need to define a formal syntax. Over the years, a modified version of Backus-Naur Form (BNF), called Augmented BNF (ABNF), has been popular among many Internet specifications. The current specification documents ABNF. It balances compactness and simplicity with reasonable representational power. The differences between standard BNF and ABNF involve naming rules, repetition, alternatives, order-independence, and value ranges. This specification also supplies additional rule definitions and encoding for a core lexical analyzer of the type common to several Internet specifications. [STANDARDS-TRACK]">
+<meta property="og:type" content="article">
+
+<meta property="og:image" content="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-card.png">
+<meta property="og:image:alt" content="Logo of the IETF">
+<meta property="article:section" content="IETF - Internet Engineering Task Force">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="article:author" content="Dave Crocker">
+<meta property="article:author" content="Paul Overell">
+
+
+
+        
+        <style>
+            
+            .diff-form .select2-selection__rendered {
+                direction: rtl;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="btn-toolbar sidebar-toolbar position-fixed top-0 end-0 m-2 m-lg-3 d-print-none">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary btn-sm me-1 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    aria-label="Toggle theme">
+                        <i class="theme-icon-active bi bi-circle-half"></i>
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="bd-theme">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light" aria-pressed="false">
+                            <i class="me-2 opacity-50 theme-icon bi bi-sun-fill"></i>
+                            Light<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark" aria-pressed="false">
+                            <i class="me-2 opacity-50 theme-icon bi bi-moon-stars-fill"></i>
+                            Dark<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto" aria-pressed="true">
+                            <i class="me-2 opacity-50 theme-icon bi bi-circle-half"></i>
+                            Auto<i class="bi bi-check2 ms-auto d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-secondary btn-sm sidebar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sidebar"
+                    aria-expanded="true"
+                    aria-controls="sidebar"
+                    aria-label="Toggle metadata sidebar"
+                    title="Toggle metadata sidebar">
+            <i class="bi bi-arrow-bar-left sidebar-shown"></i>
+            <i class="bi bi-arrow-bar-right sidebar-collapsed"></i>
+            </button>
+        </div>
+        <nav class="navbar bg-light-subtle px-1 fixed-top d-print-none d-md-none">
+            <a class="nav-link ps-1"
+               href="/doc/rfc5234/">
+                
+                    RFC 5234
+                
+                <br class="d-sm-none">
+                <span class="ms-sm-3 badge rounded-pill badge-std">
+                    
+                        Internet Standard
+                    
+                </span>
+            </a>
+            <button class="navbar-toggler p-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#docinfo-collapse"
+                    aria-controls="docinfo-collapse"
+                    aria-expanded="false"
+                    aria-label="Show document information">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+            <div class="navbar-nav navbar-nav-scroll overscroll-none collapse pt-1" id="docinfo-collapse">
+                <div class="bg-light-subtle p-0">
+                    <table class="table table-sm table-borderless small">
+                        <tbody class="meta align-top">
+                            <tr>
+                                <th scope="row"></th>
+                                <th scope="row">Title</th>
+                                <td class="edit"></td>
+                                <td>Augmented BNF for Syntax Specifications: ABNF</td>
+                            </tr>
+                        </tbody>
+                        
+
+
+
+
+
+
+<tbody class="meta align-top ">
+    <tr>
+        <th scope="row">Document</th>
+        <th scope="row">Document type</th>
+        <td class="edit"></td>
+        <td>
+            
+                <span class="text-success">RFC
+                    
+                        <span class="badge rounded-pill badge-std">Internet Standard</span>
+                    
+                </span>
+                
+                    <br>January 2008
+                
+                <br>
+                
+                    <a class="btn btn-primary btn-sm my-1"
+                       href="https://www.rfc-editor.org/errata_search.php?rfc=5234" title="Click to view errata." rel="nofollow">
+                        View errata
+                    </a>
+                
+                
+                    <a class="btn btn-sm btn-warning"
+                       title="Click to report an error in the document."
+                       href="https://www.rfc-editor.org/errata.php#reportnew"
+                       target="_blank">
+                        Report errata
+                    </a>
+                
+                
+                
+                <div>Updated by <a href="/doc/html/rfc7405" title="Case-Sensitive String Support in ABNF">RFC 7405</a></div>
+                <div>Obsoletes <a href="/doc/html/rfc4234" title="Augmented BNF for Syntax Specifications: ABNF">RFC 4234</a></div>
+                
+                
+                
+                
+                    <div>
+                        Was
+                        <a href="/doc/draft-crocker-rfc4234bis/01/">draft-crocker-rfc4234bis</a>
+                        (individual in app area)
+                    </div>
+                
+            
+            
+            
+                
+
+
+
+
+    
+
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td></td>
+            <th scope="row">Select version</th>
+            <td class="edit"></td>
+            <td>
+                
+
+
+
+    <ul class="revision-list pagination pagination-sm text-center flex-wrap my-0">
+        
+            
+            
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-crocker-rfc4234bis-01"
+                        rel="nofollow">
+                            01
+                        </a>
+                    </li>
+                
+            
+            
+            <li class="page-item rfc active">
+                <a class="page-link"
+                href="/doc/html/rfc5234">
+                    RFC 5234
+                </a>
+            </li>
+        
+    </ul>
+
+            </td>
+        </tr>
+        
+            <tr>
+                <td></td>
+                <th scope="row">Compare versions</th>
+                <td class="edit"></td>
+                <td>
+                    
+
+
+
+<form class="form-horizontal diff-form"
+      action="https://author-tools.ietf.org/iddiff"
+      method="get"
+      target="_blank">
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="From revision"
+                    name="url1">
+                
+                    <option value="rfc5234">
+                        RFC 5234
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-01" selected>
+                        draft-crocker-rfc4234bis-01
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-00">
+                        draft-crocker-rfc4234bis-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="To revision"
+                    name="url2">
+                
+                    <option value="rfc5234" selected>
+                        RFC 5234
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-01">
+                        draft-crocker-rfc4234bis-01
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-00">
+                        draft-crocker-rfc4234bis-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--html"
+                    name="difftype">
+                Side-by-side
+            </button>
+            
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--hwdiff"
+                    name="difftype">
+                Inline
+            </button>
+
+</form>
+                </td>
+            </tr>
+        
+    
+    <tr>
+        <td></td>
+        <th scope="row">Authors</th>
+        <td class="edit">
+            
+        </td>
+        <td>
+            
+            
+                <span ><a 
+           title="Datatracker profile of Dave Crocker"
+            href="/person/dhc@dcrocker.net" >Dave Crocker</a> <a 
+               href="mailto:dhc%40dcrocker.net"
+               aria-label="Compose email to dhc@dcrocker.net"
+               title="Compose email to dhc@dcrocker.net">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Paul Overell"
+            href="/person/paulo@turnpike.com" >Paul Overell</a> <a 
+               href="mailto:paulo%40turnpike.com"
+               aria-label="Compose email to paulo@turnpike.com"
+               title="Compose email to paulo@turnpike.com">
+                <i class="bi bi-envelope"></i></a></span>
+            
+            
+                <br>
+                <a class="btn btn-primary btn-sm mt-1" href="mailto:rfc5234@ietf.org?subject=rfc5234" title="Send email to the document authors">Email authors</a>
+            
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            RFC stream
+        </th>
+        <td class="edit">
+            
+        </td>
+        <td >
+            
+                
+                
+                    
+                        
+
+
+
+<img alt="IETF Logo"
+     class="d-lm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-white.svg"
+        
+     
+     >
+
+<img alt="IETF Logo"
+     class="d-dm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor.svg"
+        
+     
+     >
+                    
+                
+                
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            Other formats
+        </th>
+        <td class="edit">
+        </td>
+        <td>
+            
+                
+    <div class="buttonlist">
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc5234.txt">
+            
+                <i class="bi bi-file-text"></i> txt
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc5234.html">
+            
+                <i class="bi bi-file-code"></i> html
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+            download="rfc5234.pdf"
+          
+         
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/pdfrfc/rfc5234.txt.pdf">
+            
+                <i class="bi bi-file-pdf"></i> pdf
+            
+        </a>
+        
+    
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/inline-errata/rfc5234.html">
+            
+                <i class="bi bi-file-diff"></i> w/errata
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="/doc/rfc5234/bibtex/">
+            
+                <i class="bi bi-file-ruled"></i> bibtex
+            
+        </a>
+        
+    
+</div>
+
+            
+        </td>
+    </tr>
+    
+    
+        
+    
+</tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <td class="edit"></td>
+                            <td>
+                                <a class="btn btn-sm btn-warning mb-3"
+                                target="_blank"
+                                href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                                    Report a bug
+                                    <i class="bi bi-bug"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+        <div class="row g-0">
+            <div class="col-md-9 d-flex justify-content-center lh-sm"
+                 data-bs-spy="scroll"
+                 data-bs-target="#toc-nav"
+                 data-bs-smooth-scroll="true"
+                 tabindex="0"
+                 id="content">
+                
+                    <div class="rfcmarkup">
+                        <br class="noprint">
+                        <!-- [html-validate-disable-block attr-quotes, void-style, element-permitted-content, heading-level -- FIXME: rfcmarkup/rfc2html generates HTML with issues] -->
+                        <div class="rfcmarkup"><pre>Network Working Group                                    D. Crocker, Ed.
+Request for Comments: 5234                   Brandenburg InternetWorking
+STD: 68                                                       P. Overell
+Obsoletes: <a href="/doc/html/rfc4234">4234</a>                                                THUS plc.
+Category: Standards Track                                   January 2008
+
+
+             <span class="h1">Augmented BNF for Syntax Specifications: ABNF</span>
+
+Status of This Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the &quot;Internet
+   Official Protocol Standards&quot; (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Abstract
+
+   Internet technical specifications often need to define a formal
+   syntax.  Over the years, a modified version of Backus-Naur Form
+   (BNF), called Augmented BNF (ABNF), has been popular among many
+   Internet specifications.  The current specification documents ABNF.
+   It balances compactness and simplicity with reasonable
+   representational power.  The differences between standard BNF and
+   ABNF involve naming rules, repetition, alternatives, order-
+   independence, and value ranges.  This specification also supplies
+   additional rule definitions and encoding for a core lexical analyzer
+   of the type common to several Internet specifications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 1]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-2" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+Table of Contents
+
+   <a href="#section-1">1</a>.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+   <a href="#section-2">2</a>.  Rule Definition  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+     <a href="#section-2.1">2.1</a>.  Rule Naming  . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-3">3</a>
+     <a href="#section-2.2">2.2</a>.  Rule Form  . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+     <a href="#section-2.3">2.3</a>.  Terminal Values  . . . . . . . . . . . . . . . . . . . . .  <a href="#page-4">4</a>
+     <a href="#section-2.4">2.4</a>.  External Encodings . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+   <a href="#section-3">3</a>.  Operators  . . . . . . . . . . . . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+     <a href="#section-3.1">3.1</a>.  Concatenation:  Rule1 Rule2  . . . . . . . . . . . . . . .  <a href="#page-6">6</a>
+     <a href="#section-3.2">3.2</a>.  Alternatives:  Rule1 / Rule2 . . . . . . . . . . . . . . .  <a href="#page-7">7</a>
+     <a href="#section-3.3">3.3</a>.  Incremental Alternatives: Rule1 =/ Rule2 . . . . . . . . .  <a href="#page-7">7</a>
+     <a href="#section-3.4">3.4</a>.  Value Range Alternatives:  %c##-## . . . . . . . . . . . .  <a href="#page-8">8</a>
+     <a href="#section-3.5">3.5</a>.  Sequence Group:  (Rule1 Rule2) . . . . . . . . . . . . . .  <a href="#page-8">8</a>
+     <a href="#section-3.6">3.6</a>.  Variable Repetition:  *Rule  . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+     <a href="#section-3.7">3.7</a>.  Specific Repetition:  nRule  . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+     <a href="#section-3.8">3.8</a>.  Optional Sequence:  [RULE] . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+     <a href="#section-3.9">3.9</a>.  Comment:  ; Comment  . . . . . . . . . . . . . . . . . . .  <a href="#page-9">9</a>
+     <a href="#section-3.10">3.10</a>. Operator Precedence  . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#section-4">4</a>.  ABNF Definition of ABNF  . . . . . . . . . . . . . . . . . . . <a href="#page-10">10</a>
+   <a href="#section-5">5</a>.  Security Considerations  . . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+   <a href="#section-6">6</a>.  References . . . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#section-6.1">6.1</a>.  Normative References . . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+     <a href="#section-6.2">6.2</a>.  Informative References . . . . . . . . . . . . . . . . . . <a href="#page-12">12</a>
+   <a href="#appendix-A">Appendix A</a>.  Acknowledgements  . . . . . . . . . . . . . . . . . . <a href="#page-13">13</a>
+   <a href="#appendix-B">Appendix B</a>.  Core ABNF of ABNF . . . . . . . . . . . . . . . . . . <a href="#page-13">13</a>
+     <a href="#appendix-B.1">B.1</a>.  Core Rules . . . . . . . . . . . . . . . . . . . . . . . . <a href="#page-13">13</a>
+     <a href="#appendix-B.2">B.2</a>.  Common Encoding  . . . . . . . . . . . . . . . . . . . . . <a href="#page-15">15</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 2]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-3" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h2"><a class="selflink" id="section-1" href="#section-1">1</a>.  Introduction</span>
+
+   Internet technical specifications often need to define a formal
+   syntax and are free to employ whatever notation their authors deem
+   useful.  Over the years, a modified version of Backus-Naur Form
+   (BNF), called Augmented BNF (ABNF), has been popular among many
+   Internet specifications.  It balances compactness and simplicity with
+   reasonable representational power.  In the early days of the Arpanet,
+   each specification contained its own definition of ABNF.  This
+   included the email specifications, [<a href="/doc/html/rfc733" title="&quot;Standard for the format of ARPA network text messages&quot;">RFC733</a>] and then [<a href="/doc/html/rfc822" title="&quot;Standard for the format of ARPA Internet text messages&quot;">RFC822</a>], which
+   came to be the common citations for defining ABNF.  The current
+   document separates those definitions to permit selective reference.
+   Predictably, it also provides some modifications and enhancements.
+
+   The differences between standard BNF and ABNF involve naming rules,
+   repetition, alternatives, order-independence, and value ranges.
+   <a href="#appendix-B">Appendix B</a> supplies rule definitions and encoding for a core lexical
+   analyzer of the type common to several Internet specifications.  It
+   is provided as a convenience and is otherwise separate from the meta
+   language defined in the body of this document, and separate from its
+   formal status.
+
+<span class="h2"><a class="selflink" id="section-2" href="#section-2">2</a>.  Rule Definition</span>
+
+<span class="h3"><a class="selflink" id="section-2.1" href="#section-2.1">2.1</a>.  Rule Naming</span>
+
+   The name of a rule is simply the name itself, that is, a sequence of
+   characters, beginning with an alphabetic character, and followed by a
+   combination of alphabetics, digits, and hyphens (dashes).
+
+   NOTE:
+
+      Rule names are case insensitive.
+
+   The names &lt;rulename&gt;, &lt;Rulename&gt;, &lt;RULENAME&gt;, and &lt;rUlENamE&gt; all
+   refer to the same rule.
+
+   Unlike original BNF, angle brackets (&quot;&lt;&quot;, &quot;&gt;&quot;) are not required.
+   However, angle brackets may be used around a rule name whenever their
+   presence facilitates in discerning the use of a rule name.  This is
+   typically restricted to rule name references in free-form prose, or
+   to distinguish partial rules that combine into a string not separated
+   by white space, such as shown in the discussion about repetition,
+   below.
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 3]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-4" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.2" href="#section-2.2">2.2</a>.  Rule Form</span>
+
+   A rule is defined by the following sequence:
+
+         name =  elements crlf
+
+   where &lt;name&gt; is the name of the rule, &lt;elements&gt; is one or more rule
+   names or terminal specifications, and &lt;crlf&gt; is the end-of-line
+   indicator (carriage return followed by line feed).  The equal sign
+   separates the name from the definition of the rule.  The elements
+   form a sequence of one or more rule names and/or value definitions,
+   combined according to the various operators defined in this document,
+   such as alternative and repetition.
+
+   For visual ease, rule definitions are left aligned.  When a rule
+   requires multiple lines, the continuation lines are indented.  The
+   left alignment and indentation are relative to the first lines of the
+   ABNF rules and need not match the left margin of the document.
+
+<span class="h3"><a class="selflink" id="section-2.3" href="#section-2.3">2.3</a>.  Terminal Values</span>
+
+   Rules resolve into a string of terminal values, sometimes called
+   characters.  In ABNF, a character is merely a non-negative integer.
+   In certain contexts, a specific mapping (encoding) of values into a
+   character set (such as ASCII) will be specified.
+
+   Terminals are specified by one or more numeric characters, with the
+   base interpretation of those characters indicated explicitly.  The
+   following bases are currently defined:
+
+         b           =  binary
+
+         d           =  decimal
+
+         x           =  hexadecimal
+
+   Hence:
+
+         CR          =  %d13
+
+         CR          =  %x0D
+
+   respectively specify the decimal and hexadecimal representation of
+   [<a href="#ref-US-ASCII" title="&quot;Coded Character Set -- 7-bit American Standard Code for Information Interchange&quot;">US-ASCII</a>] for carriage return.
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 4]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-5" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+   A concatenated string of such values is specified compactly, using a
+   period (&quot;.&quot;) to indicate a separation of characters within that
+   value.  Hence:
+
+         CRLF        =  %d13.10
+
+   ABNF permits the specification of literal text strings directly,
+   enclosed in quotation marks.  Hence:
+
+         command     =  &quot;command string&quot;
+
+   Literal text strings are interpreted as a concatenated set of
+   printable characters.
+
+   NOTE:
+
+      ABNF strings are case insensitive and the character set for these
+      strings is US-ASCII.
+
+   Hence:
+
+         rulename = &quot;abc&quot;
+
+   and:
+
+         rulename = &quot;aBc&quot;
+
+   will match &quot;abc&quot;, &quot;Abc&quot;, &quot;aBc&quot;, &quot;abC&quot;, &quot;ABc&quot;, &quot;aBC&quot;, &quot;AbC&quot;, and
+   &quot;ABC&quot;.
+
+      To specify a rule that is case sensitive, specify the characters
+      individually.
+
+   For example:
+
+         rulename    =  %d97 %d98 %d99
+
+   or
+
+         rulename    =  %d97.98.99
+
+   will match only the string that comprises only the lowercase
+   characters, abc.
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 5]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-6" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="section-2.4" href="#section-2.4">2.4</a>.  External Encodings</span>
+
+   External representations of terminal value characters will vary
+   according to constraints in the storage or transmission environment.
+   Hence, the same ABNF-based grammar may have multiple external
+   encodings, such as one for a 7-bit US-ASCII environment, another for
+   a binary octet environment, and still a different one when 16-bit
+   Unicode is used.  Encoding details are beyond the scope of ABNF,
+   although <a href="#appendix-B">Appendix B</a> provides definitions for a 7-bit US-ASCII
+   environment as has been common to much of the Internet.
+
+   By separating external encoding from the syntax, it is intended that
+   alternate encoding environments can be used for the same syntax.
+
+<span class="h2"><a class="selflink" id="section-3" href="#section-3">3</a>.  Operators</span>
+
+<span class="h3"><a class="selflink" id="section-3.1" href="#section-3.1">3.1</a>.  Concatenation:  </span>Rule1 Rule2
+
+   A rule can define a simple, ordered string of values (i.e., a
+   concatenation of contiguous characters) by listing a sequence of rule
+   names.  For example:
+
+         foo         =  %x61           ; a
+
+         bar         =  %x62           ; b
+
+         mumble      =  foo bar foo
+
+   So that the rule &lt;mumble&gt; matches the lowercase string &quot;aba&quot;.
+
+   Linear white space: Concatenation is at the core of the ABNF parsing
+   model.  A string of contiguous characters (values) is parsed
+   according to the rules defined in ABNF.  For Internet specifications,
+   there is some history of permitting linear white space (space and
+   horizontal tab) to be freely and implicitly interspersed around major
+   constructs, such as delimiting special characters or atomic strings.
+
+   NOTE:
+
+      This specification for ABNF does not provide for implicit
+      specification of linear white space.
+
+   Any grammar that wishes to permit linear white space around
+   delimiters or string segments must specify it explicitly.  It is
+   often useful to provide for such white space in &quot;core&quot; rules that are
+   then used variously among higher-level rules.  The &quot;core&quot; rules might
+   be formed into a lexical analyzer or simply be part of the main
+   ruleset.
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 6]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-7" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.2" href="#section-3.2">3.2</a>.  Alternatives:  </span>Rule1 / Rule2
+
+   Elements separated by a forward slash (&quot;/&quot;) are alternatives.
+   Therefore,
+
+         foo / bar
+
+   will accept &lt;foo&gt; or &lt;bar&gt;.
+
+   NOTE:
+
+      A quoted string containing alphabetic characters is a special form
+      for specifying alternative characters and is interpreted as a non-
+      terminal representing the set of combinatorial strings with the
+      contained characters, in the specified order but with any mixture
+      of upper- and lowercase.
+
+<span class="h3"><a class="selflink" id="section-3.3" href="#section-3.3">3.3</a>.  Incremental Alternatives: Rule1 =/ Rule2</span>
+
+   It is sometimes convenient to specify a list of alternatives in
+   fragments.  That is, an initial rule may match one or more
+   alternatives, with later rule definitions adding to the set of
+   alternatives.  This is particularly useful for otherwise independent
+   specifications that derive from the same parent ruleset, such as
+   often occurs with parameter lists.  ABNF permits this incremental
+   definition through the construct:
+
+         oldrule     =/ additional-alternatives
+
+   So that the ruleset
+
+         ruleset     =  alt1 / alt2
+
+         ruleset     =/ alt3
+
+         ruleset     =/ alt4 / alt5
+
+   is the same as specifying
+
+         ruleset     =  alt1 / alt2 / alt3 / alt4 / alt5
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 7]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-8" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.4" href="#section-3.4">3.4</a>.  Value Range Alternatives:  </span>%c##-##
+
+   A range of alternative numeric values can be specified compactly,
+   using a dash (&quot;-&quot;) to indicate the range of alternative values.
+   Hence:
+
+         DIGIT       =  %x30-39
+
+   is equivalent to:
+
+         DIGIT       =  &quot;0&quot; / &quot;1&quot; / &quot;2&quot; / &quot;3&quot; / &quot;4&quot; / &quot;5&quot; / &quot;6&quot; /
+
+                        &quot;7&quot; / &quot;8&quot; / &quot;9&quot;
+
+   Concatenated numeric values and numeric value ranges cannot be
+   specified in the same string.  A numeric value may use the dotted
+   notation for concatenation or it may use the dash notation to specify
+   one value range.  Hence, to specify one printable character between
+   end-of-line sequences, the specification could be:
+
+         char-line = %x0D.0A %x20-7E %x0D.0A
+
+<span class="h3"><a class="selflink" id="section-3.5" href="#section-3.5">3.5</a>.  Sequence Group:  </span>(Rule1 Rule2)
+
+   Elements enclosed in parentheses are treated as a single element,
+   whose contents are strictly ordered.  Thus,
+
+         elem (foo / bar) blat
+
+   matches (elem foo blat) or (elem bar blat), and
+
+         elem foo / bar blat
+
+   matches (elem foo) or (bar blat).
+
+   NOTE:
+
+      It is strongly advised that grouping notation be used, rather than
+      relying on the proper reading of &quot;bare&quot; alternations, when
+      alternatives consist of multiple rule names or literals.
+
+   Hence, it is recommended that the following form be used:
+
+        (elem foo) / (bar blat)
+
+   It will avoid misinterpretation by casual readers.
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 8]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-9" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+   The sequence group notation is also used within free text to set off
+   an element sequence from the prose.
+
+<span class="h3"><a class="selflink" id="section-3.6" href="#section-3.6">3.6</a>.  Variable Repetition:  </span>*Rule
+
+   The operator &quot;*&quot; preceding an element indicates repetition.  The full
+   form is:
+
+         &lt;a&gt;*&lt;b&gt;element
+
+   where &lt;a&gt; and &lt;b&gt; are optional decimal values, indicating at least
+   &lt;a&gt; and at most &lt;b&gt; occurrences of the element.
+
+   Default values are 0 and infinity so that *&lt;element&gt; allows any
+   number, including zero; 1*&lt;element&gt; requires at least one;
+   3*3&lt;element&gt; allows exactly 3; and 1*2&lt;element&gt; allows one or two.
+
+<span class="h3"><a class="selflink" id="section-3.7" href="#section-3.7">3.7</a>.  Specific Repetition:  </span>nRule
+
+   A rule of the form:
+
+         &lt;n&gt;element
+
+   is equivalent to
+
+         &lt;n&gt;*&lt;n&gt;element
+
+   That is, exactly &lt;n&gt; occurrences of &lt;element&gt;.  Thus, 2DIGIT is a
+   2-digit number, and 3ALPHA is a string of three alphabetic
+   characters.
+
+<span class="h3"><a class="selflink" id="section-3.8" href="#section-3.8">3.8</a>.  Optional Sequence:  </span>[RULE]
+
+   Square brackets enclose an optional element sequence:
+
+         [foo bar]
+
+   is equivalent to
+
+         *1(foo bar).
+
+<span class="h3"><a class="selflink" id="section-3.9" href="#section-3.9">3.9</a>.  Comment:  </span>; Comment
+
+   A semicolon starts a comment that continues to the end of line.  This
+   is a simple way of including useful notes in parallel with the
+   specifications.
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                     [Page 9]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-10" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="section-3.10" href="#section-3.10">3.10</a>.  Operator Precedence</span>
+
+   The various mechanisms described above have the following precedence,
+   from highest (binding tightest) at the top, to lowest (loosest) at
+   the bottom:
+
+      Rule name, prose-val, Terminal value
+
+      Comment
+
+      Value range
+
+      Repetition
+
+      Grouping, Optional
+
+      Concatenation
+
+      Alternative
+
+   Use of the alternative operator, freely mixed with concatenations,
+   can be confusing.
+
+      Again, it is recommended that the grouping operator be used to
+      make explicit concatenation groups.
+
+<span class="h2"><a class="selflink" id="section-4" href="#section-4">4</a>.  ABNF Definition of ABNF</span>
+
+   NOTES:
+
+      1.  This syntax requires a formatting of rules that is relatively
+          strict.  Hence, the version of a ruleset included in a
+          specification might need preprocessing to ensure that it can
+          be interpreted by an ABNF parser.
+
+      2.  This syntax uses the rules provided in <a href="#appendix-B">Appendix B</a>.
+
+
+         rulelist       =  1*( rule / (*c-wsp c-nl) )
+
+         rule           =  rulename defined-as elements c-nl
+                                ; continues if next line starts
+                                ;  with white space
+
+         rulename       =  ALPHA *(ALPHA / DIGIT / &quot;-&quot;)
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 10]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-11" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+         defined-as     =  *c-wsp (&quot;=&quot; / &quot;=/&quot;) *c-wsp
+                                ; basic rules definition and
+                                ;  incremental alternatives
+
+         elements       =  alternation *c-wsp
+
+         c-wsp          =  WSP / (c-nl WSP)
+
+         c-nl           =  comment / CRLF
+                                ; comment or newline
+
+         comment        =  &quot;;&quot; *(WSP / VCHAR) CRLF
+
+         alternation    =  concatenation
+                           *(*c-wsp &quot;/&quot; *c-wsp concatenation)
+
+         concatenation  =  repetition *(1*c-wsp repetition)
+
+         repetition     =  [repeat] element
+
+         repeat         =  1*DIGIT / (*DIGIT &quot;*&quot; *DIGIT)
+
+         element        =  rulename / group / option /
+                           char-val / num-val / prose-val
+
+         group          =  &quot;(&quot; *c-wsp alternation *c-wsp &quot;)&quot;
+
+         option         =  &quot;[&quot; *c-wsp alternation *c-wsp &quot;]&quot;
+
+         char-val       =  DQUOTE *(%x20-21 / %x23-7E) DQUOTE
+                                ; quoted string of SP and VCHAR
+                                ;  without DQUOTE
+
+         num-val        =  &quot;%&quot; (bin-val / dec-val / hex-val)
+
+         bin-val        =  &quot;b&quot; 1*BIT
+                           [ 1*(&quot;.&quot; 1*BIT) / (&quot;-&quot; 1*BIT) ]
+                                ; series of concatenated bit values
+                                ;  or single ONEOF range
+
+         dec-val        =  &quot;d&quot; 1*DIGIT
+                           [ 1*(&quot;.&quot; 1*DIGIT) / (&quot;-&quot; 1*DIGIT) ]
+
+         hex-val        =  &quot;x&quot; 1*HEXDIG
+                           [ 1*(&quot;.&quot; 1*HEXDIG) / (&quot;-&quot; 1*HEXDIG) ]
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 11]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-12" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+         prose-val      =  &quot;&lt;&quot; *(%x20-3D / %x3F-7E) &quot;&gt;&quot;
+                                ; bracketed string of SP and VCHAR
+                                ;  without angles
+                                ; prose description, to be used as
+                                ;  last resort
+
+<span class="h2"><a class="selflink" id="section-5" href="#section-5">5</a>.  Security Considerations</span>
+
+   Security is truly believed to be irrelevant to this document.
+
+<span class="h2"><a class="selflink" id="section-6" href="#section-6">6</a>.  References</span>
+
+<span class="h3"><a class="selflink" id="section-6.1" href="#section-6.1">6.1</a>.  Normative References</span>
+
+   [<a id="ref-US-ASCII">US-ASCII</a>]  American National Standards Institute, &quot;Coded Character
+               Set -- 7-bit American Standard Code for Information
+               Interchange&quot;, ANSI X3.4, 1986.
+
+<span class="h3"><a class="selflink" id="section-6.2" href="#section-6.2">6.2</a>.  Informative References</span>
+
+   [<a id="ref-RFC733">RFC733</a>]    Crocker, D., Vittal, J., Pogran, K., and D. Henderson,
+               &quot;Standard for the format of ARPA network text messages&quot;,
+               <a href="/doc/html/rfc733">RFC 733</a>, November 1977.
+
+   [<a id="ref-RFC822">RFC822</a>]    Crocker, D., &quot;Standard for the format of ARPA Internet
+               text messages&quot;, STD 11, <a href="/doc/html/rfc822">RFC 822</a>, August 1982.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 12]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-13" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h2"><a class="selflink" id="appendix-A" href="#appendix-A">Appendix A</a>.  Acknowledgements</span>
+
+   The syntax for ABNF was originally specified in <a href="/doc/html/rfc733">RFC 733</a>.  Ken L.
+   Harrenstien, of SRI International, was responsible for re-coding the
+   BNF into an Augmented BNF that makes the representation smaller and
+   easier to understand.
+
+   This recent project began as a simple effort to cull out the portion
+   of <a href="/doc/html/rfc822">RFC 822</a> that has been repeatedly cited by non-email specification
+   writers, namely the description of Augmented BNF.  Rather than simply
+   and blindly converting the existing text into a separate document,
+   the working group chose to give careful consideration to the
+   deficiencies, as well as benefits, of the existing specification and
+   related specifications made available over the last 15 years, and
+   therefore to pursue enhancement.  This turned the project into
+   something rather more ambitious than was first intended.
+   Interestingly, the result is not massively different from that
+   original, although decisions, such as removing the list notation,
+   came as a surprise.
+
+   This &quot;separated&quot; version of the specification was part of the DRUMS
+   working group, with significant contributions from Jerome Abela,
+   Harald Alvestrand, Robert Elz, Roger Fajman, Aviva Garrett, Tom
+   Harsch, Dan Kohn, Bill McQuillan, Keith Moore, Chris Newman, Pete
+   Resnick, and Henning Schulzrinne.
+
+   Julian Reschke warrants a special thanks for converting the Draft
+   Standard version to XML source form.
+
+<span class="h2"><a class="selflink" id="appendix-B" href="#appendix-B">Appendix B</a>.  Core ABNF of ABNF</span>
+
+   This appendix contains some basic rules that are in common use.
+   Basic rules are in uppercase.  Note that these rules are only valid
+   for ABNF encoded in 7-bit ASCII or in characters sets that are a
+   superset of 7-bit ASCII.
+
+<span class="h3"><a class="selflink" id="appendix-B.1" href="#appendix-B.1">B.1</a>.  Core Rules</span>
+
+   Certain basic rules are in uppercase, such as SP, HTAB, CRLF, DIGIT,
+   ALPHA, etc.
+
+         ALPHA          =  %x41-5A / %x61-7A   ; A-Z / a-z
+
+         BIT            =  &quot;0&quot; / &quot;1&quot;
+
+         CHAR           =  %x01-7F
+                                ; any 7-bit US-ASCII character,
+                                ;  excluding NUL
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 13]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-14" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+         CR             =  %x0D
+                                ; carriage return
+
+         CRLF           =  CR LF
+                                ; Internet standard newline
+
+         CTL            =  %x00-1F / %x7F
+                                ; controls
+
+         DIGIT          =  %x30-39
+                                ; 0-9
+
+         DQUOTE         =  %x22
+                                ; &quot; (Double Quote)
+
+         HEXDIG         =  DIGIT / &quot;A&quot; / &quot;B&quot; / &quot;C&quot; / &quot;D&quot; / &quot;E&quot; / &quot;F&quot;
+
+         HTAB           =  %x09
+                                ; horizontal tab
+
+         LF             =  %x0A
+                                ; linefeed
+
+         LWSP           =  *(WSP / CRLF WSP)
+                                ; Use of this linear-white-space rule
+                                ;  permits lines containing only white
+                                ;  space that are no longer legal in
+                                ;  mail headers and have caused
+                                ;  interoperability problems in other
+                                ;  contexts.
+                                ; Do not use when defining mail
+                                ;  headers and use with caution in
+                                ;  other contexts.
+
+         OCTET          =  %x00-FF
+                                ; 8 bits of data
+
+         SP             =  %x20
+
+         VCHAR          =  %x21-7E
+                                ; visible (printing) characters
+
+         WSP            =  SP / HTAB
+                                ; white space
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 14]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-15" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+<span class="h3"><a class="selflink" id="appendix-B.2" href="#appendix-B.2">B.2</a>.  Common Encoding</span>
+
+   Externally, data are represented as &quot;network virtual ASCII&quot; (namely,
+   7-bit US-ASCII in an 8-bit field), with the high (8th) bit set to
+   zero.  A string of values is in &quot;network byte order&quot;, in which the
+   higher-valued bytes are represented on the left-hand side and are
+   sent over the network first.
+
+Authors&#x27; Addresses
+
+   Dave Crocker (editor)
+   Brandenburg InternetWorking
+   675 Spruce Dr.
+   Sunnyvale, CA  94086
+   US
+
+   Phone: +1.408.246.8253
+   EMail: dcrocker@bbiw.net
+
+
+   Paul Overell
+   THUS plc.
+   1/2 Berkeley Square,
+   99 Berkeley Street
+   Glasgow  G3 7HR
+   UK
+
+   EMail: paul.overell@thus.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="grey">Crocker &amp; Overell           Standards Track                    [Page 15]</span></pre>
+<hr class='noprint'/><!--NewPage--><pre class='newpage'><span id="page-16" ></span>
+<span class="grey"><a href="/doc/html/rfc5234">RFC 5234</a>                          ABNF                      January 2008</span>
+
+
+Full Copyright Statement
+
+   Copyright (C) The IETF Trust (2008).
+
+   This document is subject to the rights, licenses and restrictions
+   contained in <a href="/doc/html/bcp78">BCP 78</a>, and except as set forth therein, the authors
+   retain all their rights.
+
+   This document and the information contained herein are provided on an
+   &quot;AS IS&quot; basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS
+   OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY, THE IETF TRUST AND
+   THE INTERNET ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
+   THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   Intellectual Property Rights or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; nor does it represent that it has
+   made any independent effort to identify any such rights.  Information
+   on the procedures with respect to rights in RFC documents can be
+   found in <a href="/doc/html/bcp78">BCP 78</a> and <a href="/doc/html/bcp79">BCP 79</a>.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use of
+   such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository at
+   <a href="http://www.ietf.org/ipr">http://www.ietf.org/ipr</a>.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights that may cover technology that may be required to implement
+   this standard.  Please address the information to the IETF at
+   ietf-ipr@ietf.org.
+
+
+
+
+
+
+
+
+
+
+
+
+Crocker &amp; Overell           Standards Track                    [Page 16]
+</pre></div>
+                    </div>
+                
+            </div>
+            <div class="d-print-none col-md-3 bg-light-subtle collapse show" id="sidebar">
+                <div class="position-fixed border-start sidebar overflow-scroll overscroll-none no-scrollbar">
+                    <div class="d-flex flex-column vh-100 pt-2 pt-lg-3 ps-3 pl-md-2 pl-lg-3">
+                        <div>
+                            <a class="btn btn-primary btn-sm" href="/doc/rfc5234/">Datatracker</a>
+                            <p class="fw-bold pt-2">
+                                
+                                    RFC 5234
+                                
+                                <br>
+                                <span class="badge rounded-pill badge-std">
+                                    
+                                        Internet Standard
+                                    
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <ul class="nav nav-tabs nav-fill small me-2" role="tablist">
+                            <li class="nav-item" role="presentation" title="Document information">
+                                <button class="nav-link px-2"
+                                        id="docinfo-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#docinfo-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="docinfo-tab-pane"
+                                        aria-selected="true">
+                                    <i class="bi bi-info-circle"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Info</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" title="Table of contents">
+                                <button class="nav-link px-2"
+                                        id="toc-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#toc-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="toc-tab-pane"
+                                        aria-selected="false">
+                                    <i class="bi bi-list-ol"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Contents</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation" title="Preferences">
+                                <button class="nav-link px-2"
+                                        id="pref-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#pref-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pref-tab-pane"
+                                        aria-selected="false">
+                                    <i class="bi bi-gear"></i><span class="d-none d-md-block d-xl-inline ms-xl-1">Prefs</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="overflow-auto tab-content pt-2 me-2">
+                            <div class="tab-pane"
+                                 id="docinfo-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="docinfo-tab"
+                                 tabindex="0">
+                                <table class="table table-sm table-borderless">
+                                    
+
+
+
+
+
+
+<tbody class="meta align-top ">
+    <tr>
+        <th scope="row">Document</th>
+        <th scope="row">Document type</th>
+        <td class="edit"></td>
+        <td>
+            
+                <span class="text-success">RFC
+                    
+                        <span class="badge rounded-pill badge-std">Internet Standard</span>
+                    
+                </span>
+                
+                    <br>January 2008
+                
+                <br>
+                
+                    <a class="btn btn-primary btn-sm my-1"
+                       href="https://www.rfc-editor.org/errata_search.php?rfc=5234" title="Click to view errata." rel="nofollow">
+                        View errata
+                    </a>
+                
+                
+                    <a class="btn btn-sm btn-warning"
+                       title="Click to report an error in the document."
+                       href="https://www.rfc-editor.org/errata.php#reportnew"
+                       target="_blank">
+                        Report errata
+                    </a>
+                
+                
+                
+                <div>Updated by <a href="/doc/html/rfc7405" title="Case-Sensitive String Support in ABNF">RFC 7405</a></div>
+                <div>Obsoletes <a href="/doc/html/rfc4234" title="Augmented BNF for Syntax Specifications: ABNF">RFC 4234</a></div>
+                
+                
+                
+                
+                    <div>
+                        Was
+                        <a href="/doc/draft-crocker-rfc4234bis/01/">draft-crocker-rfc4234bis</a>
+                        (individual in app area)
+                    </div>
+                
+            
+            
+            
+                
+
+
+
+
+    
+
+            
+        </td>
+    </tr>
+    
+        <tr>
+            <td></td>
+            <th scope="row">Select version</th>
+            <td class="edit"></td>
+            <td>
+                
+
+
+
+    <ul class="revision-list pagination pagination-sm text-center flex-wrap my-0">
+        
+            
+            
+                
+                    <li class="page-item">
+                        <a class="page-link"
+                        href="/doc/html/draft-crocker-rfc4234bis-01"
+                        rel="nofollow">
+                            01
+                        </a>
+                    </li>
+                
+            
+            
+            <li class="page-item rfc active">
+                <a class="page-link"
+                href="/doc/html/rfc5234">
+                    RFC 5234
+                </a>
+            </li>
+        
+    </ul>
+
+            </td>
+        </tr>
+        
+            <tr>
+                <td></td>
+                <th scope="row">Compare versions</th>
+                <td class="edit"></td>
+                <td>
+                    
+
+
+
+<form class="form-horizontal diff-form"
+      action="https://author-tools.ietf.org/iddiff"
+      method="get"
+      target="_blank">
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="From revision"
+                    name="url1">
+                
+                    <option value="rfc5234">
+                        RFC 5234
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-01" selected>
+                        draft-crocker-rfc4234bis-01
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-00">
+                        draft-crocker-rfc4234bis-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <select class="form-select form-select-sm mb-1 select2-field"
+                    data-max-entries="1"
+                    data-width="resolve"
+                    data-allow-clear="false"
+                    data-minimum-input-length="0"
+                    aria-label="To revision"
+                    name="url2">
+                
+                    <option value="rfc5234" selected>
+                        RFC 5234
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-01">
+                        draft-crocker-rfc4234bis-01
+                        
+                    </option>
+                
+                    <option value="draft-crocker-rfc4234bis-00">
+                        draft-crocker-rfc4234bis-00
+                        
+                    </option>
+                
+                
+            </select>
+
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--html"
+                    name="difftype">
+                Side-by-side
+            </button>
+            
+            <button type="submit"
+                    class="btn btn-primary btn-sm"
+                    value="--hwdiff"
+                    name="difftype">
+                Inline
+            </button>
+
+</form>
+                </td>
+            </tr>
+        
+    
+    <tr>
+        <td></td>
+        <th scope="row">Authors</th>
+        <td class="edit">
+            
+        </td>
+        <td>
+            
+            
+                <span ><a 
+           title="Datatracker profile of Dave Crocker"
+            href="/person/dhc@dcrocker.net" >Dave Crocker</a> <a 
+               href="mailto:dhc%40dcrocker.net"
+               aria-label="Compose email to dhc@dcrocker.net"
+               title="Compose email to dhc@dcrocker.net">
+                <i class="bi bi-envelope"></i></a></span>,
+            
+                <span ><a 
+           title="Datatracker profile of Paul Overell"
+            href="/person/paulo@turnpike.com" >Paul Overell</a> <a 
+               href="mailto:paulo%40turnpike.com"
+               aria-label="Compose email to paulo@turnpike.com"
+               title="Compose email to paulo@turnpike.com">
+                <i class="bi bi-envelope"></i></a></span>
+            
+            
+                <br>
+                <a class="btn btn-primary btn-sm mt-1" href="mailto:rfc5234@ietf.org?subject=rfc5234" title="Send email to the document authors">Email authors</a>
+            
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            RFC stream
+        </th>
+        <td class="edit">
+            
+        </td>
+        <td >
+            
+                
+                
+                    
+                        
+
+
+
+<img alt="IETF Logo"
+     class="d-lm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor-white.svg"
+        
+     
+     >
+
+<img alt="IETF Logo"
+     class="d-dm-none w-25 mt-1"
+     
+     
+        
+             src="https://static.ietf.org/dt/12.15.0/ietf/images/ietf-logo-nor.svg"
+        
+     
+     >
+                    
+                
+                
+            
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <th scope="row">
+            Other formats
+        </th>
+        <td class="edit">
+        </td>
+        <td>
+            
+                
+    <div class="buttonlist">
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc5234.txt">
+            
+                <i class="bi bi-file-text"></i> txt
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/rfc5234.html">
+            
+                <i class="bi bi-file-code"></i> html
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+            download="rfc5234.pdf"
+          
+         
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/pdfrfc/rfc5234.txt.pdf">
+            
+                <i class="bi bi-file-pdf"></i> pdf
+            
+        </a>
+        
+    
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="https://www.rfc-editor.org/rfc/inline-errata/rfc5234.html">
+            
+                <i class="bi bi-file-diff"></i> w/errata
+            
+        </a>
+        
+    
+        
+        <a class="btn btn-primary btn-sm"
+          
+          target="_blank"
+          href="/doc/rfc5234/bibtex/">
+            
+                <i class="bi bi-file-ruled"></i> bibtex
+            
+        </a>
+        
+    
+</div>
+
+            
+        </td>
+    </tr>
+    
+    
+        
+    
+</tbody>
+                                </table>
+                                <a class="btn btn-sm btn-warning mb-3"
+                                target="_blank"
+                                href="https://github.com/ietf-tools/datatracker/issues/new/choose">
+                                    Report a datatracker bug
+                                    <i class="bi bi-bug"></i>
+                                </a>
+                            </div>
+                            <div class="tab-pane mb-5"
+                                 id="toc-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="toc-tab"
+                                 tabindex="0">
+                                <nav class="nav nav-pills flex-column small" id="toc-nav">
+                                </nav>
+                            </div>
+                            <div class="tab-pane mb-5 small"
+                                 id="pref-tab-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="pref-tab"
+                                 tabindex="0">
+                                <label class="form-label fw-bold mb-2">Show sidebar by default</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="sidebar" id="on-radio">
+                                    <label class="btn btn-outline-primary" for="on-radio">Yes</label>
+                                    <input type="radio" class="btn-check" name="sidebar" id="off-radio">
+                                    <label class="btn btn-outline-primary" for="off-radio">No</label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">Tab to show by default</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="deftab" id="docinfo-radio">
+                                    <label class="btn btn-outline-primary" for="docinfo-radio">
+                                        <i class="bi bi-info-circle me-1"></i>Info
+                                    </label>
+                                    <input type="radio" class="btn-check" name="deftab" id="toc-radio">
+                                    <label class="btn btn-outline-primary" for="toc-radio">
+                                        <i class="bi bi-list-ol me-1"></i>Contents
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">HTMLization configuration</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="htmlconf" id="txt-radio">
+                                    <label class="btn btn-outline-primary" for="txt-radio" title="This is the traditional HTMLization method.">
+                                        <i class="bi bi-badge-sd me-1"></i>HTMLize the plaintext
+                                    </label>
+                                    <input type="radio" class="btn-check" name="htmlconf" id="html-radio">
+                                    <label class="btn btn-outline-primary" for="html-radio" title="This is the modern HTMLization method.">
+                                        <i class="bi bi-badge-hd me-1"></i>Plaintextify the HTML
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2" for="ptsize">Maximum font size</label>
+                                <input type="range" class="form-range" min="7" max="16" id="ptsize" oninput="ptdemo.value = ptsize.value">
+                                <label class="form-label fw-bold mt-4 mb-2">Page dependencies</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="pagedeps" id="inline-radio">
+                                    <label class="btn btn-outline-primary" for="inline-radio" title="Generate larger, standalone web pages that do not require network access to render.">
+                                        <i class="bi bi-box me-1"></i>Inline
+                                    </label>
+                                    <input type="radio" class="btn-check" name="pagedeps" id="reference-radio">
+                                    <label class="btn btn-outline-primary" for="reference-radio" title="Generate regular web pages that require network access to render.">
+                                        <i class="bi bi-link-45deg me-1"></i>Reference
+                                    </label>
+                                </div>
+                                <label class="form-label fw-bold mt-4 mb-2">Citation links</label>
+                                <div class="btn-group-vertical btn-group-sm d-flex" role="group">
+                                    <input type="radio" class="btn-check" name="reflinks" id="refsection-radio">
+                                    <label class="btn btn-outline-primary" for="refsection-radio" title="Citation links go to the reference section.">
+                                        <i class="bi bi-arrow-clockwise"></i> Go to reference section
+                                    </label>
+                                    <input type="radio" class="btn-check" name="reflinks" id="citation-radio">
+                                    <label class="btn btn-outline-primary" for="citation-radio" title="Citation links go directly to the cited document.">
+                                        <i class="bi bi-link-45deg me-1"></i>Go to linked document
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.ietf.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 7]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.ietf.org/piwik.php?idsite=7" style="border:0;" alt="" /></p></noscript>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8954933c0e4d6a38',t:'MTcxODY0MzQwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

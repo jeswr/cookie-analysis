@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head resource="/" typeof="Website">
+    <title property="title" lang="en">Neverspace.net</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="/js/main.js"></script>
+  </head>
+  <body vocab="http://neverspace.net/vocab/">
+    <div id="wrapper">
+      <header>
+        <h1 property="name" datatype><a href="/">Neverspace.net</a></h1>
+      </header>
+      <div>
+        <main typeof="Website" resource="/">
+  <article>
+    <div property="description">
+        <p>
+            This is the personal space of <a href="/id#self">Niklas Lindstr&#xF6;m</a>,
+            mainly an exhibit of some of my endeavours.
+        </p>
+        </div>
+  </article>
+
+  <section rel="hasPart" typeof="Collection" resource="#galleries">
+    <h3 property="title" lang="en">Galleries</h3>
+    <ul>
+      <li property="member" inlist typeof="ImageGallery" resource="/gallery/">
+        <a href="/gallery/">
+          <span property="title" lang="en">Art Gallery</span>
+        </a>
+      </li>
+    </ul>
+  </section><section rel="hasPart" typeof="Collection" resource="#comics">
+    <h3 property="title" lang="en">Comics</h3>
+    <ul>
+      <li property="member" inlist typeof="ComicStory" resource="/comic/2013/wormdream/">
+        <a href="/comic/2013/wormdream/">
+          <span property="title" lang="en">Worm Dream</span>
+        </a>
+      </li>
+    </ul>
+  </section><section rel="hasPart" typeof="Collection" resource="#games">
+    <h3 property="title" lang="en">Arcade</h3>
+    <ul>
+      <li property="member" inlist typeof="PointAndClickAdventure" resource="https://play.neverspace.net/riftengine/">
+        <a href="https://play.neverspace.net/riftengine/">
+          <span property="title" lang="en">Random Cartridge and The Rift Engine [DEMO]</span>
+        </a>
+      </li><li property="member" inlist typeof="PlatformAdventure" resource="https://play.neverspace.net/remanence/">
+        <a href="https://play.neverspace.net/remanence/">
+          <span property="title" lang="en">Remanence</span>
+        </a>
+      </li>
+    </ul>
+  </section><section rel="hasPart" typeof="Collections" resource="#vansinchronicles">
+    <h3 property="title" lang="en">Chronicles of Vansin</h3>
+    <ul>
+      <li property="member" inlist typeof="TextAdventure" resource="/game/2013/blight">
+        <a href="/game/2013/blight">
+          <span property="name">Blight</span>
+        </a>
+      </li><li property="member" inlist typeof="TextAdventure" resource="/game/2014/attic">
+        <a href="/game/2014/attic">
+          <span property="name">Attic</span>
+        </a>
+      </li><li property="member" inlist typeof="TextAdventure" resource="/game/2014/basement">
+        <a href="/game/2014/basement">
+          <span property="name">Basement</span>
+        </a>
+      </li><li property="member" inlist typeof="TextAdventure" resource="/game/2015/meadow">
+        <a href="/game/2015/meadow">
+          <span property="name">Meadow</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+      </div>
+        <footer vocab>
+          <p>
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/" resource="https://creativecommons.org/licenses/by-nc/3.0/">Copyright &#xA9; 2008-2021 </a>
+          </p>
+        </footer>
+    </div>
+  
+
+</body></html>

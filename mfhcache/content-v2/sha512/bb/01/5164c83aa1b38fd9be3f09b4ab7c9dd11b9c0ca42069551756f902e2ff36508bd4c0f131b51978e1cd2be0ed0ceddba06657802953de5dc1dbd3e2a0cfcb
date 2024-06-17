@@ -1,0 +1,2510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      
+      
+      <title>XML Schema Datatypes in RDF and OWL</title>
+      
+      <style type="text/css" xml:space="preserve">
+ 
+*.xpath {
+    background-color: #e8b8b8;
+}
+*.derive {
+    background-color: #b8b8e8;
+}
+
+*.todo {
+  color: red;
+  font-style: italic; 
+}
+
+*.change {
+  color: #229922;
+} 
+*.delete {
+  color: #882200;
+  text-decoration: line-through;
+}
+  </style>
+      
+      <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css" />
+
+      </head>
+   
+   <body>
+      
+      <div class="head"><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72" /></a>
+         
+         <h1 id="title">XML Schema Datatypes in RDF and OWL</h1>
+         
+         <h2 class="notoc">W3C Working Group Note 14 March 2006</h2>
+         
+         <dl>
+            
+            <dt>This version:</dt>
+            
+            <dd><a href="https://www.w3.org/TR/2006/NOTE-swbp-xsch-datatypes-20060314/">http://www.w3.org/TR/2006/NOTE-swbp-xsch-datatypes-20060314/</a></dd>
+            
+            <dt>Latest version:</dt>
+            
+            <dd><a href="https://www.w3.org/TR/swbp-xsch-datatypes/">http://www.w3.org/TR/swbp-xsch-datatypes/</a></dd>
+            
+            <dt>Previous version:</dt>
+            
+            <dd><a href="https://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/">http://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/</a></dd>
+
+            <dt>Editors:</dt>
+            
+            <dd><a href="http://www.hpl.hp.com/personal/jjc/">Jeremy J. Carroll</a>, HP Lab
+            </dd>
+            
+            <dd><a href="http://www.csd.abdn.ac.uk/~jpan/">Jeff Z. Pan</a>, University of Aberdeen
+            </dd>
+            
+         </dl>
+         
+         
+         <p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+            ©2006 <a href="https://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+            <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved.
+            W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+            <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
+            and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document
+               use</a> rules apply.
+         </p>
+         
+         <hr />
+      </div>
+      
+      <!-- end of head -->
+      
+      <h2 class="notoc"><a id="abstract" name="abstract">Abstract</a></h2>
+      
+      <p>The RDF and OWL Recommendations use the simple types from XML
+         Schema. This document addresses 
+         three questions left unanswered by
+         these Recommendations: Which URIref should be used to refer to a
+         user defined datatype? Which values of which XML Schema simple
+         types are the same? How to use the problematic
+         <code>xsd:duration</code> in RDF and OWL?
+         In addition, we further describe how to 
+         integrate OWL DL with user defined datatypes (in <a href="#sec-dl-dt"> appendix B</a>).
+         
+      </p>
+      
+      <h2 class="notoc" id="Status">Status of this Document</h2>
+      
+      <p><em>This section describes the status of this document at the
+            time of its publication. Other documents may supersede this
+            document. A list of current W3C publications and the latest
+            revision of this technical report can be found in the <a href="https://www.w3.org/TR/">W3C technical reports index</a> at
+            http://www.w3.org/TR/.</em>
+      </p>
+      
+      <p>This document is a <a href="https://www.w3.org/2004/02/Process-20040205/tr.html#WGNote">Working 
+            Group Note</a>, produced by the  <a href="https://www.w3.org/2001/sw/BestPractices/">Semantic 
+            Web Best Practices and Deployment Working Group</a>, part of the
+         <a href="https://www.w3.org/2001/sw/">W3C Semantic Web Activity</a>.
+      </p>
+
+      <p>
+	 As of the publication of this Working Group Note the SWBPD
+	 Working Group has completed work on this document.  Changes
+	 from the previous Working Draft are summarized in
+	 <a href="#sec-changes">Appendix C</a>.
+         Comments on this document may be sent to
+         <a href="mailto:public-swbp-wg@w3.org">public-swbp-wg@w3.org</a>,
+         a mailing list with a 
+         <a href="http://lists.w3.org/Archives/Public/public-swbp-wg/"
+	  >public archive</a>.  Further discussion on this material
+	 may be sent to the <a href="https://www.w3.org/2001/sw/interest/">Semantic Web Interest Group</a> mailing list,
+	 <a href="mailto:semantic-web@w3.org">semantic-web@w3.org</a>,
+	 also with a <a href="http://lists.w3.org/Archives/Public/semantic-web/"
+	  >public archive</a>.
+      </p>
+      
+<p> This document was produced by a group operating under the <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</a>. This document is informative only. W3C has a <a href="https://www.w3.org/2004/01/pp-impl/35495/status">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent.</p>
+
+      <p>Publication as a Working Group Note does not imply endorsement by the
+         W3C Membership. This is a draft document and may be updated,
+         replaced or obsoleted by other documents at any time. It is
+         inappropriate to cite this document as other than work in
+         progress.
+      </p>
+      
+      
+      <hr />
+      
+      
+      <div class="toc">
+         
+         <h2 class="notoc"><a id="contents" name="contents" shape="rect">Table of
+               Contents</a></h2>
+         
+         <ul class="toc">
+            
+            <li class="tocline"><a href="#sec-overview" shape="rect">1.
+                     Introduction</a>
+               
+               <ul class="toc">
+                  
+                  <li class="tocline"><a href="#sec-structure" shape="rect">1.1 
+                        Reading this Document
+                        </a></li>
+                  
+                  <li class="tocline"><a href="#sec-structure" shape="rect">1.2
+                        Namespaces 
+                        Used in this Document
+                        </a></li>
+                  
+                  <li class="tocline"><a href="#sec-xmls-dt" shape="rect">1.3 XML Schema Simple
+                        Types</a></li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li class="tocline"><a href="#sec-userDefined" shape="rect">2. User
+                     Defined Datatypes</a>
+               
+               <ul class="toc">
+                  
+                  <li class="tocline"><a href="#sec-user-defined-problem" shape="rect">2.1 Problem
+                        Statement</a></li>
+                  
+                  
+                  <li class="tocline"><a href="#sec-xscd" shape="rect">2.2 Component Designators
+                        Solution</a></li>
+                  
+                  <li class="tocline"><a href="#sec-id-attr" shape="rect">2.3 Using the
+                        <code>id</code> Attribute</a></li>
+                  
+                  <li class="tocline"><a href="#sec-user-uri-discussion" shape="rect">2.4
+                        Suggested Practice</a></li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li class="tocline"><a href="#sec-values" shape="rect">3. Comparison of
+                     Values</a>
+               
+               <ul class="toc">
+                  
+                  <li class="tocline"><a href="#sec-values-problem" shape="rect">3.1 Problem
+                        Statement</a></li>
+                  
+                  <li><a href="#sec-values-differ" shape="rect">3.2  All Primitive
+                        Types Differ</a></li>
+                  
+                  
+                  
+                  <li class="tocline"><a href="#sec-values-formal" shape="rect">3.3 Formal
+                        Analysis</a></li>
+                  
+                  <li class="tocline"><a href="#sec-values-examples" shape="rect">3.4 Examples</a></li>
+                  
+                  
+                  <li><a href="#sec-use-sparql" shape="rect">3.5 Using SPARQL for Equality</a></li>
+                  
+                  
+                   <li><a href="#sec-use-amapping" shape="rect">3.6 Value Approximate Mapping</a></li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li class="tocline"><a href="#section-duration" shape="rect">4.
+                     Duration</a></li>
+            
+            <li class="tocline"><a href="#sec-numerics" shape="rect">5.
+                     The Use of Numeric Types</a></li>
+            
+            <li class="tocline"><a href="#section-acknowledgements" shape="rect">6.
+                     Acknowledgements</a></li>
+            
+            <li class="tocline"><a href="#section-references" shape="rect">7.
+                     References</a></li>
+            
+         </ul>
+         <br />
+         
+         <ul class="toc">
+            
+            
+            <li class="tocline"><a href="#sec-recs-dt" shape="rect">Appendix A:
+                     The Semantics of 
+                     Datatyping in the Semantic Web Recommendations</a>
+               
+               <ul class="toc">
+                  
+                  
+                  <li class="tocline"><a href="#sec-rdf-dt" shape="rect">A.1 Datatypes in
+                        RDF</a></li>
+                  
+                  <li class="tocline"><a href="#sec-owl-dt" shape="rect">A.2 Datatypes in
+                        OWL DL</a></li>
+                  
+               </ul>
+               
+            </li>
+            
+            <li class="tocline"><a href="#sec-dl-dt" shape="rect">
+                  Appendix B: Integrating Description Logics with User-Defined Datatypes</a></li>
+            
+            <li class="tocline"><a href="#sec-changes" shape="rect">
+                  Appendix C: Changes since 
+                     Working Draft of 27 April 2005</a></li>
+            
+            
+         </ul>
+         
+      </div>
+      
+      <hr />
+      
+      <h2><a id="sec-overview" name="sec-overview" shape="rect">1.
+            Introduction</a></h2>
+      
+      <p>An overview of the <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-Datatypes" shape="rect">datatype abstraction</a>
+         used by RDF is found in the <a href="#ref-rdf-concepts" shape="rect">[RDF
+            Concepts and Abstract Syntax]</a>; this is <a href="https://www.w3.org/TR/2004/REC-owl-semantics-20040210/direct.html#datatype" shape="rect">
+            shared</a> by the <a href="#ref-owl-semantics" shape="rect">[OWL Abstract
+            Syntax]</a>. 
+         The semantics of RDF datatyping and OWL datatyping are
+         summarized in <a href="#sec-recs-dt" shape="rect">appendix A.</a></p>
+      
+      <p>RDF and OWL allow the use of typed literal values in the
+         description of resources and ontologies. See the <a href="#ref-rdf-primer" shape="rect">[RDF Primer]</a>, and the <a href="#ref-owl-guide" shape="rect">[OWL Guide]</a> for a more introductory treatments
+         for <a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/#typedliterals" shape="rect">RDF</a>
+         and <a href="https://www.w3.org/TR/2004/REC-owl-guide-20040210/#Datatypes1" shape="rect">OWL</a>.
+         Both the <a href="#ref-rdf-semantics" shape="rect">[RDF Semantics]</a> and the
+         <a href="#ref-owl-semantics" shape="rect">[OWL Semantics]</a> use the
+         lexical-to-value mapping of the datatype to give the interpretation
+         (the value) of a typed literal, thus the semantics of typed
+         literals is given by the type system. The type systems are defined
+         externally to RDF and OWL, most notably by <a href="#ref-xml-schema2" shape="rect">[XML Schema2]</a>.
+      </p>
+      
+      <p>Concrete syntaxes for typed literals are found in <a href="#ref-rdf-syntax" shape="rect">[RDF Syntax]</a>, <a href="#ref-rdf-tests" shape="rect">[N-triples]</a>, and <a href="#ref-n3" shape="rect">[N3]</a>.
+         
+      </p>
+      
+      
+      <p>Some questions about XML Schema datatypes in the Semantic Web
+         are not directly answered by the published W3C Recommendations.
+         This document considers four of them:
+      </p>
+      
+      <ul>
+         
+         <li>Within RDF and OWL, how to refer to an XML Schema user defined
+            simple type with a URI.
+         </li>
+         
+         <li>Details of the denotational semantics of the values of the
+            primitive XML Schema simple types. XML Schema principally gives an
+            operational semantics. RDF and OWL applications need a denotational
+            semantics for interoperable behaviour.
+         </li>
+         
+         <li>A possible solution to the problems concerning
+            <code>xsd:duration</code>, which are <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#dtype_interp" shape="rect">reported</a>
+            in <a href="#ref-rdf-semantics" shape="rect">[RDF Semantics]</a>.
+         </li>
+         
+         <li> Appropriate use of numeric types for engineering applications.</li>
+         
+      </ul>
+      
+      
+      <h3><a id="sec-structure" name="sec-structure" shape="rect">1.1 Reading this Document</a></h3>
+      
+      <p>
+         While this document can be read from start to finish, many readers
+         will benefit from skipping sections.
+      </p>
+      
+      <p>The intended reader is informed about RDF and/or OWL,
+         and may be a creator or
+         user of metadata or ontologies, or may be an implementor
+         of systems that implement the RDF or OWL Recommendations, or
+         may be the author or editor of related specifications.
+         
+      </p>
+      
+      <p>
+         The reader who is interested in defining their own datatypes
+         should read <a href="#sec-userDefined" shape="rect">section 2</a>
+         and  maybe
+         <a href="#sec-dl-dt" shape="rect"> appendix B</a>, which gives 
+         a formal treatment, 
+         in terms of OWL DL and user defined datatypes, that has not been covered by the <a href="#ref-owl-semantics" shape="rect">[OWL Semantics]</a>.
+         
+      </p>
+      
+      <p>
+         The reader who is interested in the correct use of datatypes 
+         should read <a href="#sec-values" shape="rect">section 3</a>, concerning
+         which values are the same, and 
+         <a href="#sec-numerics" shape="rect">section 5</a> concerning numerics, particularly,
+         but not exclusively,
+         for engineering 
+         applications.
+         
+      </p>
+      
+      <p>
+         Implementors probably should read most of the document:
+         <a href="#sec-recs-dt" shape="rect">appendix A</a> summarizes
+         the formal treatment of datatyping from the recommendations;
+         <a href="#sec-values" shape="rect">section 3</a> gives an extended discussion
+         about equality; <a href="#sec-userDefined" shape="rect">section 2</a>
+         discusses the mapping from URIs to user defined types.
+         
+      </p>
+      
+      <p>
+         Readers most interested in formal semantics
+         will find most value in 
+         <a href="#sec-dl-dt" shape="rect"> appendix B</a>,
+         concerning user defined datatypes,
+         and
+         <a href="#sec-values" shape="rect">section 3</a>
+         concerning equality. Such readers should start by 
+         reviewing 
+         <a href="#sec-recs-dt" shape="rect">appendix A</a>, which should be
+         familiar.
+         
+      </p>
+      
+      <p>
+         <a href="#section-duration" shape="rect">Section 4</a>
+         on durations, is of more limited interest, but is significant
+         to any reader who wishes to use, implement
+         or build on top of
+         duration datatypes.
+         
+      </p>
+      
+      
+      
+      
+      
+      <h3><a id="sec-namespaces" name="sec-namespaces" shape="rect">1.2 Namespaces 
+            Used in this Document</a></h3>
+      
+      
+      <p>
+         In this document we use N3 such as <code>"10"^^xsd:int</code>
+         following the subset used by the <a href="#ref-owl-test" shape="rect">[OWL Test
+            Cases]</a>, with the following namespace prefixes:
+      </p>
+      <pre xml:space="preserve">@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix eg: &lt;http://www.example.org/&gt; .
+@prefix egdt: &lt;http://example.org/simpleTypes#&gt; .
+@prefix xsd: &lt;http://www.example.org/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+</pre>
+      
+      
+      <h3><a id="sec-xmls-dt" name="sec-xmls-dt" shape="rect">1.3 XML Schema Simple
+            Types</a></h3>
+      
+      <p><a href="#ref-xml-schema2" shape="rect">
+            [XML SCHEMA2]</a> defines facilities for defining simple types to
+         be used in XML Schema as well as other XML specifications.
+         It is influenced by earlier work on datatypes such as
+         <a href="#ref-ISO11404" shape="rect">[ISO 11404]</a>.
+         
+      </p>
+      
+      <p><a id="xmls-dt-simple-type" name="xmls-dt-simple-type" shape="rect"><b>[Definition:]</b></a> An XML Schema
+         <b>simple type</b> d is characterised by a value space, V(d), which
+         is a non-empty set, a lexical space, L(d), which is a non-empty set
+         of Unicode strings, and a set of facets, F(d), each of which
+         characterizes a value space along independent axes or
+         dimensions.
+      </p>
+      
+      <p>XML Schema simple types are divided into disjoint built-in
+         simple types and derived simple types. Derived datatypes can be
+         defined  
+         from primitive or existing derived datatypes
+         by the following three means:
+      </p>
+      
+      <ul>
+         
+         <li> By 
+            <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#restriction" shape="rect">restriction</a>, i.e., by using facets on an
+            existing type, so as to limit the number of possible values of the
+            derived type.
+         </li>
+         
+         <li> By 
+            <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#union" shape="rect">union</a>, i.e., to allow values from a list
+            of simple types.
+         </li>
+         
+         <li> By  
+            <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#list" shape="rect">list</a>, i.e., to define the list type of
+            an existing simple type.
+         </li>
+         
+      </ul>
+      
+      <h6><a id="example_1A" name="example_1A" shape="rect">Example 1A</a></h6>
+      
+      <p>The following is the definition of a derived simple type (of the
+         base datatype xsd:integer) which restricts values to integers
+         greater than or equal to 0 and less than 150, using the facets
+         minInclusive and maxExclusive.
+      </p>
+      <pre xml:space="preserve">
+   &lt;xsd:schema ...&gt;
+     &lt;xsd:simpleType name="humanAge"&gt;
+       &lt;xsd:restriction base="integer"&gt;
+        &lt;xsd:minInclusive value="0"&gt;
+        &lt;xsd:maxExclusive value="150"&gt;
+       &lt;/xsd:restriction&gt;
+     &lt;/xsd:simpleType&gt;
+     ...
+   &lt;/xsd:schema&gt;
+   
+</pre>
+      <h2><a id="sec-userDefined" name="sec-userDefined" shape="rect">2. User Defined
+            Datatypes</a></h2>
+      
+      <p><a href="#ref-xml-schema2" shape="rect">[XML Schema2]</a> predefines about
+         forty simple types, the ones suitable for RDF and OWL are listed in
+         <a href="#ref-rdf-semantics" shape="rect">[RDF Semantics]</a>.
+      </p>
+      
+      <p>In addition, XML Schema permits users to refine these builtin
+         types by taking a restriction including only some of the values or
+         some of the lexical forms.
+         
+      </p>
+      
+      <h6><a id="example_2A" name="example_2A" shape="rect">Example 2A</a></h6>
+      
+      
+      <p>
+         As a further example, we may wish to talk about
+         ages of adults in years, where an adult is over 18. This can be
+         described as a restriction on the <code>xsd:integer</code>
+         datatype.
+      </p>
+      <pre xml:space="preserve">
+   &lt;xsd:schema ...&gt;
+     &lt;xsd:simpleType name="adultAge"&gt;
+       &lt;xsd:restriction base="integer"&gt;
+        &lt;xsd:minInclusive value="18"&gt;
+       &lt;/xsd:restriction&gt;
+     &lt;/xsd:simpleType&gt;
+     ...
+   &lt;/xsd:schema&gt;
+   
+</pre>
+      <p>In a Semantic Web context this may be used with the objects of
+         triples of an <code>eg:age</code> property, used, for instance,
+         when describing some members of a club which is restricted to
+         adults, e.g. a nightclub or a political party.
+      </p>
+      
+      <p>We will use this example throughout this section, and assume it
+         can be retrieved from
+         <code>http://example.org/simpleTypes</code>.
+         
+      </p>
+      
+      <p>Within RDF, and RDF reasoning, this additional restriction may
+         be enough to catch some typos or data entry errors (e.g. putting an
+         inappropriate value of <code>0</code> for the <code>eg:age</code>
+         property). Within OWL, and OWL reasoning, this may interact with
+         axioms in the ontology to significantly restrict the possible
+         interpretations, adding to the modelling power of the language.
+      </p>
+      
+      <p>
+         This section only deals with the problem of how to refer to such
+         datatypes.
+         Their semantics is treated in the appendices. 
+         <a href="#sec-recs-dt" shape="rect">Appendix A</a>
+         reviews the semantics of datatypes from the RDF and OWL
+         recommendations.
+         <a href="#sec-dl-dt" shape="rect">Appendix B</a>
+         describes how to integrate Description Logics (such as the 
+         SHOIN DL, which is the underpinning of OWL DL) with user 
+         defined datatypes.
+         
+      </p>
+      
+      
+      <p>
+         We will also consider the topic of
+         the <a href="https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#key-targetNS" shape="rect">
+            target namespace</a>
+         from <a href="#ref-xml-schema1" shape="rect">[XML SCHEMA1]</a>.
+         For clarity, we will consider 
+         two variants on this example. The first has no target namespace,
+         the second defines one.
+         
+      </p>
+      
+      <h6><a id="example_2B" name="example_2B" shape="rect">Example 2B</a></h6>
+      
+      <pre xml:space="preserve">
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:simpleType name="adultAge"&gt;
+    &lt;xs:restriction base="integer"&gt;
+     &lt;xs:minInclusive value="18"&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+     ...
+&lt;/xs:schema&gt; 
+</pre>
+      <h6><a id="example_2C" name="example_2C" shape="rect">Example 2C</a></h6>
+      
+      <pre xml:space="preserve">
+&lt;xs:schema 
+  targetNamespace="http://example.org/ns"
+  elementFormDefault="qualified"
+  xmlns:egn="http://example.org/ns"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:simpleType name="adultAge"&gt;
+    &lt;xs:restriction base="integer"&gt;
+     &lt;xs:minInclusive value="18"&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+     ...
+&lt;/xs:schema&gt; 
+</pre>
+      <p>
+         The case where the XML Schema has been assembed from multiple schema
+         documents lies outside the scope of this document.
+         This case is 
+         <a href="https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#composition" shape="rect">discussed</a> in 
+         <a href="#ref-xml-schema1" shape="rect">[XML SCHEMA1]</a>
+         and explicitly 
+         <a href="https://www.w3.org/TR/2005/WD-xmlschema-ref-20050329/#section-scds" shape="rect">
+            not discussed</a> in
+         <a href="#ref-xscd" shape="rect">[XSCD]</a>.
+         
+      </p>
+      
+      
+      <h3><a id="sec-user-defined-problem" name="sec-user-defined-problem" shape="rect">2.1 Problem Statement:</a></h3>
+      
+      <p>When describing a resource with RDF or building an ontology with
+         OWL, in which a user defined simple XML Schema datatype, such as
+         <code>adultAge</code> above, what URI should be used to identify
+         this datatype?
+      </p>
+      
+      
+      
+      
+      <h3><a name="sec-xscd" id="sec-xscd" shape="rect">2.2 Component Designators
+            Solution</a></h3>
+      
+      
+      <p>Following XML Schema Component Designators <a href="#ref-xscd" shape="rect">[XSCD]</a> 
+         <a href="#example_2B" shape="rect">Example 2B</a>
+         
+         has URI reference
+         <code>http://example.org/simpleTypes#xscd(/type::adultAge)</code>.
+         
+      </p>
+      
+      <p>
+         A URI reference for
+         <a href="#example_2C" shape="rect">Example 2C</a>
+         requires a choice of prefix for the namespace
+         <code>http://example.org/ns</code>.
+         A good choice is to use the prefix
+         used by the schema itself, i.e. <code>egn</code>.
+         The resulting URI reference for the datatype 
+         is then
+         <code>http://example.org/simpleTypes#xmlns(egn=http://example.org/ns)xscd(/type::egn:adultAge)</code>
+         
+      </p>
+      
+      <p>
+         When the schema does not define a prefix for the
+         target namespace, perhaps by using the default namespace,
+         then an arbitrary prefix needs to be chosen.
+         As always with namespace prefixes, it is permitted
+         to use any prefix of your choice, even when a conventional
+         prefix is used in the schema document.
+         
+      </p>
+      
+      <p>
+         
+         
+         XML Schema Component Designators <a href="#ref-xscd" shape="rect">[XSCD]</a>
+          defines an XPointer scheme that navigates the XML
+         Schema document to identify any of the schema components using a
+         fragment. This is very general: fragments are defined that identify
+         many different aspects of the document, including unnamed simple
+         types within complex schema.
+      </p>
+      
+      
+      
+      
+      <p>Our  
+         <a href="#example_2B" shape="rect">example 2B</a> becomes:
+      </p>
+      <pre xml:space="preserve">eg:membersAge rdfs:range &lt;http://example.org/simpleTypes#xscd(/type::adultAge)&gt; .
+_:aMember eg:name "Jane Doe" .
+_:aMember eg:membersAge "24"^^&lt;http://example.org/simpleTypes#xscd(/type::adultAge)&gt; .
+</pre>
+      <p>
+         One way of reading the fragment is that it provides full 
+         semantic clarity about what is being identified: the <code>xscd(.)</code>
+         shows that an XML Schema component is being identified; the <code>/type</code>
+         indicates that a type is being identified; the <code>::adultAge</code> shows which   
+         type is being identified.
+         
+      </p>
+      
+      <p>
+         The above URIrefs cannot be abbreviated as:
+         
+      </p>
+      <pre xml:space="preserve">eg:membersAge rdfs:range egdt:xscd(/type::adultAge) .
+_:aMember eg:name "Jane Doe" .
+_:aMember eg:membersAge "24"^^egdt:xscd(/type::adultAge) .
+</pre>
+      <p>because <code>xscd(/type::adultAge)</code> does not match
+         the NCName production.
+      </p>
+      
+      <p>Overall, referring to XML Schema Datatypes
+         in the manner proposed by the XML Schema Working Group is
+         a good practice, and will be moreso, when 
+         <a href="#ref-xscd" shape="rect">[XSCD]</a> 
+         reaches Recommendation status.
+         
+      </p>
+      
+      <h3><a name="sec-id-attr" id="sec-id-attr" shape="rect">2.3 Using the
+            <code>id</code> Attribute</a></h3>
+      
+      
+      
+      <p>
+         In cases where the XML Schema is under the control
+         of a Semantic Web author, the full generality of
+         <a href="#ref-xscd" shape="rect">[XSCD]</a> 
+         is not needed. This section shows how when defining
+         your own datatype, derived from an XML Schema type,
+         it is possible to use a simpler method, by slightly
+          modifying the schema defining the datatype. 
+         <a href="#example_2A" shape="rect">Example 2A</a> becomes:
+      </p>
+      <pre xml:space="preserve">
+   &lt;xsd:schema ...&gt;
+     &lt;xsd:simpleType id="adultAge" name="adultAge"&gt;
+       &lt;xsd:restriction base="integer"&gt;
+        &lt;xsd:minInclusive value="18"&gt;
+       &lt;/xsd:restriction&gt;
+     &lt;/xsd:simpleType&gt;
+     ...
+   &lt;/xsd:schema&gt;
+</pre>
+      <p>The difference is that the datatype we wish to use
+         is not only identified by the <code>@name</code>
+         attribute, but also by an <code>@id</code> attribute.
+         While it is technically possibly to use different values
+         for these two attributes, it would be confusing.
+      </p>
+      
+      <p>The URI reference
+         <code>http://example.org/simpleTypes#adultAge</code> can then be used to refer
+         to the datatype.
+      </p>
+      
+      <p>
+         
+         In the terminology of <a href="#ref-rfc3986" shape="rect">[RFC 3986]</a>,
+         the URI <code>http://example.org/simpleTypes#adultAge</code>
+         identifies a secondary resource. When
+         <code>http://example.org/simpleTypes</code> is retrieved
+         as an XML Schema document, with mimetype <code>application/xml</code>,
+         this may be taken as
+         a
+         
+          <a href="https://www.w3.org/TR/xptr-framework/#shorthand" shape="rect">shorthand
+            pointer</a>  
+         from the <a href="#ref-xptr" shape="rect">[XPointer
+            Framework]</a>.
+         This identifies a view on the XML representation of the primary resource
+         being the XML element with the matching <code>@id</code> attribute.
+         
+      </p>
+      
+      <p>When used in RDF (see
+         <a href="#ref-rdf-concepts" shape="rect">[RDF Concepts]</a>, this URI reference
+         <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-fragID" shape="rect"> 
+            may be understood</a> with the URI
+         <code>http://example.org/simpleTypes</code>
+         as identifying the schema, and the URI
+         <code>http://example.org/simpleTypes#adultAge</code>
+         as identifying the datatype itself, a resource defined
+         or described by the representation identified 
+         by the <code>application/xml</code> retrieval.
+         It is preferred that no <code>targetNamespace</code>
+         is given in the schema for this usage.
+         
+      </p>
+      
+      <p>
+          
+         If there is no <code>@id</code> attribute 
+         with the given name,
+         the
+         <a href="#ref-xptr" shape="rect">[XPointer
+            Framework]</a>
+         is clear that this is an error:
+         
+      </p>
+      
+      <blockquote>
+         
+         <p>If no element information item is identified by a shorthand pointer's 
+            NCName, the pointer is in error.
+            
+         </p>
+         
+      </blockquote>
+      
+      
+      
+      <p>Our example RDF is:</p>
+      <pre xml:space="preserve">eg:membersAge rdfs:range &lt;http://example.org/simpleTypes#adultAge&gt; .
+_:aMember eg:name "Jane Doe" .
+_:aMember eg:membersAge "24"^^&lt;http://example.org/simpleTypes#adultAge&gt; .
+</pre>
+      <p>Or:</p>
+      <pre xml:space="preserve">eg:membersAge rdfs:range egdt:adultAge .
+_:aMember eg:name "Jane Doe" .
+_:aMember eg:membersAge "24"^^egdt:adultAge .
+</pre>
+      
+      <p>
+         As a further example, a club which has members of all ages,
+         but wishes to have a class of its adult members, could use an OWL expression
+         like the following (in the 
+         <a href="#ref-owl-syntax" shape="rect">[OWL Abstract Syntax]</a>:
+         
+      </p>
+      <pre xml:space="preserve">
+Class(AdultMembers
+   insersectionOf(
+     Members
+     Restriction(eg:membersAge, allValuesFrom(egdt:adultAge)) ) )
+</pre>
+      
+      <h3><a name="sec-user-uri-discussion" id="sec-user-uri-discussion" shape="rect">2.4 Suggested Practice</a></h3>
+      
+      <p>
+         When referring to arbitrary user defined datatypes
+         in arbitrary XML Schema, the 
+         <a href="#ref-xscd" shape="rect">[XSCD]</a> solution is appropriate.
+         When an
+         RDF or OWL author or tool
+         is writing an XML Schema for use with an RDF/XML document,
+         the <code>@id</code> solution may be preferred.
+         
+      </p>
+      
+      
+      
+      
+      <h2><a id="sec-values" name="sec-values" shape="rect">3. Comparison of
+            Values</a></h2>
+      
+      <p>Two different authors publishing the same information on the
+         Semantic Web may make different syntactic choices. They then say
+         the same thing in different ways. This is seen most clearly when
+         the two documents entail one another as determined by the <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a> or <a href="#ref-owl-semantics" shape="rect">
+            [OWL Semantics]</a>.
+      </p>
+      
+      <p>One aspect of the syntactic choices facing an author is which
+         datatypes to use. Even if they use only the built in <a href="#ref-xml-schema2" shape="rect">
+            [XML SCHEMA2]</a> simple types, there are non-trivial choices, and
+         different authors may legitimately choose different datatypes. This
+         section addresses the issue of how implementations of <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a> and <a href="#ref-owl-semantics" shape="rect">
+            [OWL Semantics]</a> should allow for the different choices of
+         datatype made by different authors.
+      </p>
+      
+      <h3><a id="sec-values-problem" name="sec-values-problem" shape="rect">3.1
+            Problem Statement</a></h3>
+      
+      <p>What is the relationship between the value spaces of the various
+         XML Schema built-in simple types when used within RDF and OWL?
+      </p>
+      
+      <p>Or in other words, when  do two literals, which are written down
+         differently, refer to the same value. For example,
+         <code>"10"^^xsd:integer</code> and <code>"010"^^xsd:integer</code>
+         both denote the integer ten.
+      </p>
+      
+      
+      <h3><a id="sec-values-differ" name="sec-values-differ" shape="rect">3.2 
+            All Primitive Types Differ</a></h3>
+      
+      <p>
+         The most appropriate solution is 
+          that all
+         primitive XML Schema Datatypes 
+         are treated as having disjoint value spaces.
+         
+         This
+         approach is both easy to understand,
+         and easy to implement.
+         
+      </p>
+      
+      
+      <p>Formally, in a <a href="#datatype-group" shape="rect">unary datatype group</a>, value spaces of primitive base
+         datatypes are required to be defined as <a href="#pbd-disjoint" shape="rect">disjoint with
+            each other</a>. For instance, if the value space datatype D<sub>1</sub> is a subset of that of the 
+         datatype D<sub>2</sub>, then D<sub>1</sub> and D<sub>2</sub> can not be both primitive base datatypes 
+         in a unary datatype group.
+      </p>
+      
+      
+      
+      
+      
+      <h3><a id="sec-values-formal" name="sec-values-formal" shape="rect">3.3 Formal
+            Analysis</a></h3>
+      
+      <p>In discussing the examples, we presented pairs of literals which
+         denoted the same value. This relationship of denoting the same
+         value forms an equivalence relation, which we will write as
+         <code>~</code>; it is conventionally written as '=' 
+         and called equality. It is reflexive, symmetric and transitive.
+      </p>
+      
+      <p>In terms of the <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a> 
+         (see <a href="#sec-rdf-dt" shape="rect">appendix A.1</a>)
+         the equivalence  relation <code>~</code> can
+         be constructed from the interpretation function IL, in the
+         following way:
+      </p>
+      
+      <p>
+         <code>~</code>   = { &lt;x,y&gt; : IL(x)=IL(y), for any x, y  ∈ LV }
+         
+      </p>
+      
+      <p>In terms of 
+         <!-- <a href="http://www.w3.org/TR/2004/REC-owl-semantics-20040210/direct.html">OWL
+DL Semantics</a> --> <a href="#ref-owl-semantics" shape="rect">
+            [OWL Semantics]</a> (see <a href="#sec-owl-dt" shape="rect">appendix A.2</a>), this can be constructed in terms of the
+         interpretation function ED as:
+      </p>
+      
+      <p>
+         <code>~</code>   = { &lt;x,y&gt; : ED(x)=ED(y), for any x, y  ∈ LV }
+         
+      </p>
+      
+      
+      <p>A key term we will use in the following examples, is <a id="def-primitive-base-type" name="def-primitive-base-type" shape="rect"><em>primitive base datatype</em></a> in a
+         type system. A recursive definition is:
+      </p>
+      
+      <ul>
+         
+         <li>Each <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#built-in-primitive-datatypes" shape="rect">
+               built in primitive datatype</a> is its own primitive base
+            datatype.
+         </li>
+         
+         <li>The primitive base datatype of a <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#dt-derived" shape="rect">derived</a>
+            simple type is the primitive base datatype of its base
+            datatype.
+         </li>
+         
+      </ul>
+      
+      <p>In other words, the primitive base datatype of a type system is
+         found by walking up the 
+         restriction tree until reaching a primitive
+         type. Note that the concept of primitive base datatypes in a type
+         system is slightly different from the concept of primitive base
+         datatypes in a <a href="#datatype-group" shape="rect">unary datatype group</a>.
+         This is because it is possible that a primitive base datatype of a
+         type system is not in a datatype map, but its derived datatypes
+         are. For instance, in <a href="#example_B" shape="rect">Example_B</a>,
+         xsd:integer is a primitive base datatype in the unary datatype
+         group G<sub>1</sub>.
+      </p>
+      
+      
+      <h3><a id="sec-values-examples" name="sec-values-examples" shape="rect">3.4
+            Examples</a></h3>
+      
+      
+      <p>
+         We give two sets of examples.
+         The first set of examples, depend on comparisons where
+         the <a href="#def-primitive-base-type" shape="rect">primitive base datatype</a>
+         is the same. The second set
+         where the primitive base datatype is not. However,
+         the second set are intended to be slightly counter-intuitive,
+         and to illustrate limitations in this approach to comparing
+         typed literals.
+      </p>
+      
+      
+      <p>Each example is presented in two ways:</p>
+      
+      <ul>
+         
+         <li>As a pair of literals which may, or may not, denote the same
+            value.
+         </li>
+         
+         <li>As a possible entailment. Technically the intended entailment
+            is a <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#D_entailment" shape="rect">D-entailment</a>,
+            in terms of <a href="#ref-rdf-semantics" shape="rect">
+               [RDF Semantics]</a>, or an OWL Full entailment in terms of the
+            <a href="#ref-owl-semantics" shape="rect">
+               [OWL Semantics]</a>. Similar,  slightly longer, OWL DL entailments could be
+            constructed, illustrating the same issues.
+         </li>
+         
+      </ul>
+      
+      <h4><a id="sec-values-easy-examples" name="sec-values-easy-examples" shape="rect">3.4.1 Easy Examples</a></h4>
+      
+      <p>It is uncontested that in <a href="#ref-xml-schema2" shape="rect">
+            [XML SCHEMA2]</a> a datatype <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#dt-derived" shape="rect">derived</a>
+         by <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#dt-restriction" shape="rect">
+            restriction</a> refers to a subset of the values of its <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#dt-basetype" shape="rect">base
+            datatype</a>, and not to different values (see <a href="#ref-xml-schema2" shape="rect">
+            [XML SCHEMA2]</a>).
+      </p>
+      
+      <p>Hence, two typed literals whose type have the same primitive
+         base datatype, and whose lexical forms are equivalent, are
+         equal.
+      </p>
+      
+      <p>In addition, <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a> explicitly sanctions identification of RDF
+         plain literals without language tags with corresponding typed
+         literals with datatype <code>xsd:string</code>.
+      </p>
+      
+      <h5><a id="sec-values-derived-numerics" name="sec-values-derived-numerics" shape="rect">Derived Numerics</a></h5>
+      
+      <p>As a first example <code>"15"^^xsd:byte</code> and
+         <code>"15.0"^^xsd:decimal</code> both denote the same value,
+         fifteen. This follows because <code>xsd:byte</code> has primitive
+         base datatype <code>xsd:decimal</code>.
+      </p>
+      
+      <p>This licenses the following entailment:</p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3A" name="example_3A" shape="rect">Example 3A</a></h6>
+         <pre xml:space="preserve">
+eg:Jane eg:age "15"^^xsd:byte .
+</pre>
+         <p>entails</p>
+         <pre xml:space="preserve">
+eg:Jane eg:age "15.0"^^xsd:decimal .
+</pre></div>
+      
+      <p>The same result holds for two types both of which have primitive
+         base datatype decimal. For example <code>"15"^^xsd:byte</code> and
+         <code>"15"^^xsd:nonNegativeInteger</code> both denote fifteen, and
+         the entailment:
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3B" name="example_3B" shape="rect">Example 3B</a></h6>
+         <pre xml:space="preserve">
+eg:Jane eg:age "15"^^xsd:nonNegativeInteger .
+</pre>
+         <p>entails</p>
+         <pre xml:space="preserve">
+eg:Jane eg:age "15"^^xsd:byte .
+</pre></div>
+      
+      <p>Note that <code>xsd:byte</code> is not derived from
+         <code>xsd:nonNegativeInteger</code>, or vice versa, even with
+         intermediate steps.
+      </p>
+      
+      <h5><a id="sec-values-derived-strings" name="sec-values-derived-strings" shape="rect">Derived Strings</a></h5>
+      
+      <p><code>xsd:language</code> has primitive base datatype
+         <code>xsd:string</code>. Thus <code>"en-US"^^xsd:language</code>
+         and <code>"en-US"^^xsd:string</code> denote the same value, and the
+         following entailment holds:
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3C" name="example_3C" shape="rect">Example 3C</a></h6>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US"^^xsd:language .
+</pre>
+         <p>entails</p>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US"^^xsd:string .
+</pre></div>
+      
+      <p>However, despite the language identifier being case insensitive
+         according to <a href="#ref-rfc3066" shape="rect">
+            [RFC 3066]</a>, this case insensitivity is not represented in the
+         datatype, so that <code>"en-US"^^xsd:language</code> and
+         <code>"en-us"^^xsd:language</code> denote different values and we
+         have the following non-entailment:
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3D" name="example_3D" shape="rect">Example 3D</a></h6>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US"^^xsd:language .
+</pre>
+         <p>does not entail</p>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-us"^^xsd:language .
+</pre></div>
+      
+      <h5><a id="sec-values-plain-strings" name="sec-values-plain-strings" shape="rect">Plain Strings</a></h5>
+      
+      <p>The <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a> <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#DtypeRules" shape="rect">says</a>
+         (in an informative section):
+      </p>
+      
+      <blockquote>
+         
+         <p>
+            <!--StartFragment --><span>the value space and lexical-to-value
+               mapping of the XSD datatype <a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#string" shape="rect"><code>xsd:string</code></a>
+               sanctions the identification of typed literals with plain literals
+               without language tags for all character strings which are in the
+               lexical space of the datatype, since both of them denote the
+               Unicode character string which is displayed in the literal;</span> 
+            
+            <!--EndFragment-->
+         </p>
+         
+      </blockquote>
+      
+      <p>Thus <code>"en-US"^^xsd:string</code> denotes the same as the
+         plain literal <code>"en-US"</code>, and the following two
+         entailments hold:
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3E" name="example_3E" shape="rect">Example 3E</a></h6>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US"^^xsd:string .
+</pre>
+         <p>entails</p>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US" .
+</pre></div>
+      
+      <div class="example">
+         
+         <h6><a id="example_3F" name="example_3F" shape="rect">Example 3F</a></h6>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US"^^xsd:language .
+</pre>
+         <p>entails</p>
+         <pre xml:space="preserve">
+eg:doc dc:language "en-US" .
+</pre></div>
+      
+      <h4><a id="sec-values-hard-examples" name="sec-values-hard-examples" shape="rect">3.4.2 Hard Examples</a></h4>
+      
+      <p>When the two typed literals being compared have different
+         primitive base datatypes, 
+         all the values are assumed
+         to be different, and entailments do not follow, even
+         when this is counterintuitive. The
+         number one for instance can be a float, a double, or a decimal.
+         
+         
+         Since they all have different primitive base datatypes,
+         these are all different.
+         
+         
+      </p>
+      
+      <h5><a id="sec-values-float-decimal" name="sec-values-float-decimal" shape="rect">Float and Decimal</a></h5>
+      
+      <p>A human age is conventionally given as an integer (number of
+         years, except for babies). but a float is a plausible alternative
+         representation. On April 7th 2004, 
+         Jeremy was forty, 
+          
+         
+         <code>"40"^^xsd:integer</code> has a different primitive
+         basetype to
+         <code>"40"^^xsd:float</code>, so that, they are not equal
+         and:
+          
+         
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3G" name="example_3G" shape="rect">Example 3G</a></h6>
+         <pre xml:space="preserve">
+eg:JeremyCarroll eg:ageInYears "40"^^xsd:integer .
+</pre>
+         <p>does not
+            entail
+         </p>
+         <pre xml:space="preserve">
+eg:JeremyCarroll eg:ageInYears "40"^^xsd:float .
+</pre></div>
+      
+      
+      <p>Similarly, <code>float</code> and <code>double</code>
+         are different primitive base datatypes, and so
+         superficially similar values,
+         such as
+         <code>"1.3"^^xsd:float</code>
+         and
+         <code>"1.3"^^xsd:decimal</code>
+         are different, and:
+         
+      </p>
+      
+      
+      
+      <div class="example">
+         
+         <h6><a id="example_3H" name="example_3H" shape="rect">Example 3H</a></h6>
+         <pre xml:space="preserve">
+eg:car eg:engineSizeInLitres "1.3"^^xsd:decimal .
+</pre>
+         <p>does not
+            entail
+         </p>
+         <pre xml:space="preserve">
+eg:car eg:engineSizeInLitres "1.3"^^xsd:float .
+</pre></div>
+      
+      <h5><a id="sec-values-float-double" name="sec-values-float-double" shape="rect">Float and Double</a></h5>
+      
+      
+      <p>
+         As with float and decimal, 
+         neither float or double is derived from the other.
+         Thus,
+         <code>"40"^^xsd:double</code> and <code>"40"^^xsd:float</code> 
+         are treated as not equal, and:
+         
+      </p>
+      
+      <div class="example">
+         
+         <h6><a id="example_3J" name="example_3J" shape="rect">Example 3J</a></h6>
+         <pre xml:space="preserve">
+eg:JeremyCarroll eg:ageInYears "40"^^xsd:double .
+</pre>
+         <p>does not
+            entail
+         </p>
+         <pre xml:space="preserve">
+eg:JeremyCarroll eg:ageInYears "40"^^xsd:float .
+</pre></div>
+      
+      <p>
+         Similarly:
+         
+      </p>
+      
+      
+      
+      <div class="example">
+         
+         <h6><a id="example_3K" name="example_3K" shape="rect">Example 3K</a></h6>
+         <pre xml:space="preserve">
+eg:car eg:engineSizeInLitres "1.3"^^xsd:double .
+</pre>
+         <p>does not
+            entail
+         </p>
+         <pre xml:space="preserve">
+eg:car eg:engineSizeInLitres "1.3"^^xsd:float .
+</pre></div>
+      
+      <h5><a id="sec-values-string-anyURI" name="sec-values-string-anyURI" shape="rect">String and anyURI</a></h5>
+      
+      <p>
+         Similarly, the two types <code>string</code>
+         and <code>anyURI</code>, are distinct
+         primitive base datatypes. So that,
+         despite superficial similarities,
+         <code>"http://www.example.org/doc"^^xsd:string</code>
+         is different from
+         <code>"http://www.example.org/doc"^^xsd:anyURI</code>, and:
+      </p>
+      
+      
+      
+      
+      <div class="example">
+         
+         <h6><a id="example_3L" name="example_3L" shape="rect">Example 3L</a></h6>
+         <pre xml:space="preserve">
+eg:doc dc:identifier "http://www.example.org/doc"^^xsd:anyURI .
+</pre>
+         <p>does not entail</p>
+         <pre xml:space="preserve">
+eg:doc dc:identifier "http://www.example.org/doc"^^xsd:string .
+</pre></div>
+      
+      <h5><a id="sec-values-binary" name="sec-values-binary" shape="rect">hexBinary
+            and base64Binary</a></h5>
+      
+      <p>The final case where the value spaces of two XML Schema simple
+         types appear to the same is for <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#hexBinary" shape="rect"><code>
+               xsd:hexBinary</code></a> and <a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#hexBinary" shape="rect"><code>
+               xsd:base64Binary</code></a>. For both the value space is described
+         as: <q>the set of finite-length sequences of binary octets</q>. For
+         instance the binary sequence of two octets (00001111 10110111)
+         (i.e. the 16-bit integer 4023) can be written in hexadecmial as
+         0FB7. In base64 encoding <a href="#ref-rfc2045" shape="rect">
+            [RFC 2045]</a> this same sequence of two octets is represented as
+         D7c=. 
+         <!--
+00001111 10110111 00000000
+000011 111011 011100 000000
+3      59     28     pad
+D      7      c      =
+-->
+      </p>
+      
+      <p>
+         Despite this, the two types <code>hexBinary</code>
+         and <code>base64Binary</code>, are distinct
+         primitive base datatypes. So that,
+         <code>"0FB7"^^xsd:hexBinary</code>
+         is different from
+         <code>"D7c="^^xsd:base64Binary</code>, and:
+      </p>
+      
+      
+      
+      <div class="example">
+         
+         <h6><a id="example_3M" name="example_3M" shape="rect">Example 3M</a></h6>
+         <pre xml:space="preserve">
+eg:doc eg:checkSum "0FB7"^^xsd:hexBinary .
+</pre>
+         <p>does not entail</p>
+         <pre xml:space="preserve">
+eg:doc eg:checkSum "D7c="^^xsd:base64Binary .
+</pre></div>
+      
+      
+      
+      <h3><a id="sec-use-sparql" name="sec-use-sparql" shape="rect">3.5 Using SPARQL for Equality</a></h3>
+      
+      <p>
+         While some of the non-entailments shown may be counterintuitive,
+         it is possible to use SPARQL to
+         query a graph and retrieve literal values that
+         are similar even if not derived from the same primitive base
+         type.
+         
+      </p>
+      
+      <p>
+         For example, related to examples <a href="#example_3H" shape="rect">3H</a> and 
+         <a href="#example_3K" shape="rect">3K</a>. Given a graph including the 
+         following three triples:
+         
+      </p>
+      <pre xml:space="preserve">
+eg:car eg:engineSizeInLitres "1.3"^^xsd:double .
+eg:car eg:engineSizeInLitres "1.3"^^xsd:decimal .
+eg:car eg:engineSizeInLitres "1.3"^^xsd:float .
+</pre>
+      <p>The following 
+         <a href="#ref-sparql" shape="rect">
+            [SPARQL]</a> query will match all three.
+      </p>
+      <pre xml:space="preserve">
+SELECT  ?size
+WHERE   { eg:car eg:engineSizeInLitres ?size .
+          FILTER (?size = 1.3) . }
+</pre>
+      
+       <p>
+       In the current <a href="#ref-sparql" shape="rect">
+             [SPARQL]</a> working draft, the mapping from the typed
+literal, as a syntactic object, to its corresponding value, is done as
+part of the operation of the <code>=</code> operator in the above query, rather
+than
+as part of say a D-interpretation from <a href="#ref-rdf-semantics" 
+shape="rect">[RDF Semantics]</a>.
+This mapping is specified in 
+<a href="#ref-xpath-func">[Functions &amp; Operators]</a>, and, being strongly 
+typed, is not identical with that specified in <a href="#ref-rdf-semantics" 
+shape="rect">[RDF Semantics]</a>
+
+
+
+       </p>
+
+      
+  
+       <h3><a id="sec-use-amapping" name="sec-use-amapping" shape="rect">3.6 Value Approximate Mapping</a></h3>
+      
+      <p>
+      
+A different approach, better embedded in <a href="#ref-rdf-semantics" 
+shape="rect">[RDF Semantics]</a>, could enable
+meaningful mappings among values from different datatypes.
+This could give better foundations for operations such as the type
+promotion of the XML Path Language 2.0 <a href="#ref-xpath20" 
+shape="rect">[XPath 2.0]</a> and the = operator in
+SPARQL mentioned in <a href="#sec-use-sparql" 
+shape="rect">Section 3.5</a>. A quick sketch is that we extend the
+RDF <a href="#rdf-dt-interpretation" 
+shape="rect">D-interpretation</a> to support value approximate maps, as follows: 
+</p>
+
+    
+<p><a id="defn-mapsto" name=
+"defn-mapsto"><b>[Definition:]</b></a> A <b>value approximate map</b> mapsTo
+is a partial mapping from typed literals to typed literals.</p>
+<h6><a id="example_3N" name="example_3N">Example 3N</a></h6>
+<p>An example value approximate mapping is <br/>
+	  </p>
+<pre>"1.3"^^xsd:decimal owlx:mapsTo "1.3"^^xsd:float .</pre>
+<p><a id="rdf-value-map-int" name=
+"rdf-value-map-int"><b>[Definition:]</b></a> Given a datatype map D and a value approximate map mapsTo, the <b>approximate equality</b> aeq is defined as follows: </p>	       
+      <ul>
+         
+         <li>aeq(<code>"s<sub>1</sub>"^^u<sub>1</sub>,
+            "s<sub>2</sub>"^^u<sub>2</sub></code>)=true if
+            L2S(D(<code>u<sub>1</sub></code>))(<code>s<sub>1</sub></code>) =
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>) or if mapsTo(<code>"s<sub>1</sub>"^^u<sub>1</sub></code>)=<code>"s<sub>3</sub>"^^u<sub>2</sub></code> and L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>3</sub></code>) =
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>),
+         </li>
+         
+         <li>aeq(<code>"s<sub>1</sub>"^^u<sub>1</sub>,
+            "s<sub>2</sub>"^^u<sub>2</sub></code>)=false  otherwise.<!-- if
+            L2S(D(<code>u<sub>1</sub></code>))(<code>s<sub>1</sub></code>) ≠
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>) and mapsTo(<code>"s<sub>1</sub>"^^u<sub>1</sub></code>) is undefined, or if L2S(D(<code>u<sub>1</sub></code>))(<code>s<sub>1</sub></code>) ≠
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>),          mapsTo(<code>"s<sub>1</sub>"^^u<sub>1</sub></code>)=<code>"s<sub>3</sub>"^^u<sub>2</sub></code> and L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>3</sub></code>) ≠
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>). -->
+         </li>
+         
+        <!--  <li>aeq(<code>"s<sub>1</sub>"^^u<sub>1</sub>,
+            "s<sub>2</sub>"^^u<sub>2</sub></code>) is incomparable if
+            mapsTo(D(<code>u<sub>1</sub></code>),D(<code>u<sub>2</sub></code>))
+            is undefined.
+         </li> -->
+         
+      </ul>
+      <p>Note that, according to the above definition, aeq(<code>"s<sub>1</sub>"^^u<sub>1</sub>,
+            "s<sub>2</sub>"^^u<sub>2</sub></code>)=true does not imply that <code>"s<sub>1</sub>"^^u<sub>1</sub> and
+            "s<sub>2</sub>"^^u<sub>2</sub></code> are interpreted as the same value (L2S(D(<code>u<sub>1</sub></code>))(<code>s<sub>1</sub></code>) =
+            L2S(D(<code>u<sub>2</sub></code>))(<code>s<sub>2</sub></code>)). The approximate equality is different from equality and is not necessarily symmetric, depending on the corresponding value approxiate map. The unsymmetry is needed to support e.g. type promotions in the XML Path Language 2.0 <a href="#ref-xpath20" 
+shape="rect">[XPath 2.0]</a>. Note that notion of value approxiate mappings is very general - it does not disallow  having symmetric mappings between two typed literals. In Example 3N, one can also specify a value approximate mapping from <code>"1.3"^^xsd:float</code> to  <code>"1.3"^^xsd:decimal</code> to make the mappings between the two typed literals  symmetric.
+	  </p>
+      <p>To sum up, applications can specify a value approximate map mapsTo and make use of the approximate equality aeq for their purposes. 
+	  </p>
+      
+      <h2><a name="section-duration" id="section-duration" shape="rect">4.
+            Duration</a></h2>
+      
+      <p>The <a href="#ref-rdf-semantics" shape="rect">[RDF Semantics]</a>
+         Recommendation discourages the use of the <a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#duration" shape="rect"><code>
+               xsd:duration</code></a> datatype (see <a href="#ref-xml-schema2" shape="rect">[XML SCHEMA2]</a>). It <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#dtype_interp" shape="rect">says</a>:
+      </p>
+      
+      <blockquote>
+         <!--StartFragment -->
+         
+         <p>[Some] built-in XML Schema datatypes are unsuitable for various
+            reasons, and <strong title="SHOULD NOT in RFC 2119 context" class="RFC2119">SHOULD NOT</strong> be used: <a href="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#duration" shape="rect"><code>
+                  xsd:duration</code></a> does not have a well-defined value space
+            (this may be corrected in later revisions of XML Schema datatypes,
+            in which case the revised datatype would be suitable for use in RDF
+            datatyping);
+         </p>
+         
+         <!--EndFragment-->
+      </blockquote>
+      
+      <p>The underlying difficulty is the impossibility of an unequivocal
+         answer to the question "How many days in a month?" This has proved
+         problematic in other applications of XML Schema datatypes. The
+         XQuery and XSLT Working Groups have a proposed solution. They
+         derive two new datatypes, <a href="https://www.w3.org/TR/2004/WD-xpath-functions-20041029/#dt-yearMonthDuration" shape="rect">
+            <code>xdt:yearMonthDuration</code></a> and <a href="https://www.w3.org/TR/2004/WD-xpath-functions-20041029/#dt-dayTimeDuration" shape="rect">
+            <code>xdt:dayTimeDuration</code></a> from
+         <code>xsd:duration</code>, sidestepping the unanswerable question.
+         In <a href="https://www.w3.org/TR/2004/WD-xpath-functions-20041029/#duration-subtypes" shape="rect">
+            section 10.2</a> of <a href="#ref-xpath-func" shape="rect">[Functions &amp; Operators]</a> we
+         read:
+      </p>
+      
+      <blockquote>
+         <!--StartFragment -->
+         
+         <p><b>[Definition:]</b> <code>xdt:yearMonthDuration</code> is derived from
+            <code>xs:duration</code> by restricting its lexical representation
+            to contain only the year and month components. The value space of
+            <code>xdt:yearMonthDuration</code> is the set of
+            <code>xs:integer</code> month values. The year and month components
+            of <code>xdt:yearMonthDuration</code> correspond to the Gregorian
+            year and month components defined in section 5.5.3.2 of <a href="#ref-ISO8601" shape="rect">[ISO 8601]</a>, respectively.
+         </p>
+         
+         <!--EndFragment-->
+      </blockquote>
+      
+      <p>and</p>
+      
+      <blockquote>
+         <!--StartFragment -->
+         
+         <p><b>[Definition:]</b> <code>xdt:dayTimeDuration</code> is derived from
+            <code>xs:duration</code> by restricting its lexical representation
+            to contain only the days, hours, minutes and seconds components.
+            The value space of <code>xdt:dayTimeDuration</code> is the set of
+            fractional second values. The components of
+            <code>xdt:dayTimeDuration</code> correspond to the day, hour,
+            minute and second components defined in Section 5.5.3.2 of <a href="#ref-ISO8601" shape="rect">[ISO 8601]</a>, respectively.
+         </p>
+         
+         <!--EndFragment-->
+      </blockquote>
+      
+      <p>These two new datatypes are suitable for use with RDF and OWL.
+         (Note that they are not yet recommended, since F&amp;O is still in
+         Working Draft).
+      </p>
+      
+      <h2><a name="sec-numerics" id="sec-numerics" shape="rect">5.
+            The Use of Numeric Types</a></h2>
+      
+      <p>
+         For much data on the Semantic Web
+         a motivation for providing type information
+         is to permit the use of the data
+         by engineering applications, and interoperation
+         between engineering applications.
+         Most such data will be marked up using the numeric types
+         from XML Schema.
+         
+      </p>
+      
+      <p>
+         Loss in 
+         precision or unexpected changes in values due to automatic type
+         conversion could be problematic in an engineering environment.
+         
+      </p>
+      
+      <p>
+         In the engineering domain there are 
+         three important 
+         types of usage for numerics: count, measurement,
+         and constant.
+      </p>
+      
+      <dl>
+         
+         <dt>count</dt>
+         
+         <dd>
+            
+            A count is an integer representing essentially the
+            cardinal number for a set of things classified by some set of tests.
+            An example would be the count of packages of candy available for
+            shipment.  A count is an exact number.  Tests may include
+            measurements, but a count is not an approximation of a sum of 
+            these measurements nor is it a sum of the approximation of these 
+            measurements. A type such as <code>xsd:integer</code>
+            or a type derived from <code>xsd:integer</code> is appropriate for
+            counts.
+            
+         </dd>
+         
+         <dt>measurement</dt>
+         
+         <dd>
+            A measurement is an inexact numeric value (usually represented as a
+            real) produced by some measurement method.  This value indicates a
+            value range which includes the actual value.  The actual value is
+            unknowable, but more precise measurement methods can reduce the
+            range of uncertainty. The precision or uncertainty is
+            usually included with the measurement value.  Either implicitly
+            using significant figures or explicitly using a  separate property
+            value such as error range.
+            Either the <code>xsd:float</code> or <code>xsd:double</code>
+            datatypes are appropriate for measurement, but it should be noted
+            that these do not include a precision or uncertainity, which should
+            be included as the value of a separate property.
+            <a href="#ref-xml-schema2" shape="rect">[XML SCHEMA2]</a>
+            explicitly states for  <code>xsd:decimal</code>
+            that, "Precision is not
+            reflected in this value space, the number 2.0 is not distinct from
+            the number 2.00."
+            
+         </dd>
+         
+         <dt>constant</dt>
+         
+         <dd>
+            A constant is an exact value used in computation.  It may or may not
+            be possible to express exactly as a numeric.  A millimeter is exactly
+            0.001 meters, but Pi is not 3.14159.
+            Often an <code>xsd:decimal</code> will be more appropriate than
+            an <code>xsd:float</code> or <code>xsd:double</code> for expressing
+            a constant.
+            
+         </dd>
+         
+      </dl>
+      
+      
+      <h6><a id="example_5A" name="example_5A" shape="rect">Example 5A</a></h6>
+      
+      <p>
+         As an example of a measurement with an error range
+         to indicate a weight in the interval (73.0Kg, 73.2Kg).
+         
+      </p>
+      <pre xml:space="preserve">
+eg:JeremyCarroll eg:weight _:w .
+_:w eg:units "kilogram" .
+_:w eg:value "73.1"^^xsd:float .
+_:w eg:errorRange "0.1"^^xsd:float .
+
+</pre>
+      
+      
+      <p>
+         These different usages suggest 
+         some potential needs and concerns for a type system
+         underlying this.
+         
+      </p>
+      
+      <ul>
+         
+         <li>
+            Because the value spaces for these types
+            are different, measurements are disjoint from counts and constants.
+            
+         </li>
+         
+         <li>
+            Some means of capturing precision or error/uncertainty is needed
+            for measurement values. 
+            
+         </li>
+         
+         <li>Some means is desirable for writing down
+            constants that cannot be expressed precisely in numeric form.
+            
+         </li>
+         
+      </ul>
+      
+      <p>The first of these issues will generally be reflected
+         in the use of <code>xsd:integer</code> for counts,
+         <code>xsd:float</code> and <code>xsd:double</code> for
+         measurements, and <code>xsd:decimal</code> for constants.
+         
+      </p>
+      
+      <p>The second issue concerning precision of measurements,
+         must be addressed at the modelling level by
+         using objects  to state precision or error
+         properties for measurements. This is not a bad approach,
+         in any case, since
+         there are often other properties or metadata associated with a
+         measurement.  
+         
+      </p>
+      
+      <p>
+         For the third issue, concerning some constants, no
+         solution is offered.
+         
+      </p>
+      
+      
+      
+      <h2><a name="section-acknowledgements" id="section-acknowledgements" shape="rect">6.
+            Acknowledgements</a></h2>
+      
+      <p>
+         Evan Wallace is the author of Section 5.
+         
+      </p>
+      
+      <p>
+         Evan Wallace, 
+         Ashok Malhotra, 
+         Pat Hayes,
+         Dave Peterson,
+         Dave Reynolds,
+         Michael Sperberg-McQueen and Ralph Swick
+         contributed useful reviews.
+         
+      </p>
+      
+      
+      <h2><a name="section-references" id="section-references" shape="rect">7.
+            References</a></h2>
+      
+      <dl>
+         
+         <dt><a id="ref-rdf-semantics" name="ref-rdf-semantics" shape="rect"></a>[RDF-SEMANTICS]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/" shape="rect">RDF
+                  Semantics</a></cite>, Patrick Hayes, Editor, W3C Recommendation, 10
+            February 2004, http://www.w3.org/TR/2004/REC-rdf-mt-20040210/ .
+            <a href="https://www.w3.org/TR/rdf-mt/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/rdf-mt/ .
+         </dd>
+         
+         <dt><a id="ref-rdf-primer" name="ref-rdf-primer" shape="rect">[RDF
+               Primer]</a></dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/" shape="rect">RDF
+                  Primer</a></cite>, Frank Manola and Eric Miller, Editors, W3C
+            Recommendation, 10 February 2004,
+            http://www.w3.org/TR/2004/REC-rdf-primer-20040210/ . <a href="https://www.w3.org/TR/rdf-primer/" shape="rect">Latest version</a> available at
+            http://www.w3.org/TR/rdf-primer/ .
+         </dd>
+         
+         <dt><a id="ref-rdf-concepts" name="ref-rdf-concepts" shape="rect"></a>[RDF
+            Concepts]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/" shape="rect">Resource
+                  Description Framework (RDF): Concepts and Abstract
+                  Syntax</a></cite>, Graham Klyne and Jeremy J. Carroll, Editors, W3C
+            Recommendation, 10 February 2004,
+            http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/ . <a href="https://www.w3.org/TR/rdf-concepts/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/rdf-concepts/ .
+         </dd>
+         
+         <dt><a id="ref-rdf-syntax" name="ref-rdf-syntax" shape="rect"></a>[RDF
+            Syntax]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/" shape="rect">RDF/XML
+                  Syntax Specification (Revised)</a></cite>, Dave Beckett, Editor,
+            W3C Recommendation, 10 February 2004,
+            http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/ .
+            <a href="https://www.w3.org/TR/rdf-syntax-grammar/" shape="rect">Latest
+               version</a> available at http://www.w3.org/TR/rdf-syntax-grammar/
+            .
+         </dd>
+         
+         
+         <dt><a id="ref-rdf-tests" name="ref-rdf-tests" shape="rect"></a>[N-triples]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/" shape="rect">RDF Test
+                  Cases</a></cite>, Jan Grant and Dave Beckett, Editors, W3C
+            Recommendation, 10 February 2004,
+            http://www.w3.org/TR/2004/REC-rdf-testcases-20040210/ . <a href="https://www.w3.org/TR/rdf-testcases/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/rdf-testcases/ .
+         </dd>
+         
+         
+         <dt><a name="ref-owl-syntax" id="ref-owl-syntax" shape="rect">[OWL Abstract Syntax]</a></dt>
+         
+         <dt><a name="ref-owl-semantics" id="ref-owl-semantics" shape="rect">[OWL
+               Semantics]</a></dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-owl-semantics-20040210/" shape="rect">OWL Web
+                  Ontology Language Semantics and Abstract Syntax</a></cite>, Peter
+            F. Patel-Schneider, Patrick Hayes, and Ian Horrocks, Editors, W3C
+            Recommendation 10 February 2004,
+            http://www.w3.org/TR/2004/REC-owl-semantics-20040210/ . <a href="https://www.w3.org/TR/owl-semantics/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/owl-semantics/ .
+         </dd>
+         
+         <dt><a name="ref-owl-guide" id="ref-owl-guide" shape="rect">[OWL Guide]</a></dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-owl-guide-20040210/" shape="rect">OWL Web
+                  Ontology Language Guide</a></cite>, Michael K. Smith, Chris Welty,
+            and Deborah L. McGuinness, Editors, W3C Recommendation, 10 February
+            2004, http://www.w3.org/TR/2004/REC-owl-guide-20040210/ . <a href="https://www.w3.org/TR/owl-guide/" shape="rect">Latest version</a> available at
+            http://www.w3.org/TR/owl-guide/ .
+         </dd>
+         
+         <dt><a id="ref-owl-test" name="ref-owl-test" shape="rect">[OWL Test Cases]</a></dt>
+         
+         <dd>
+            <a href="https://www.w3.org/TR/2004/REC-owl-test-20040210/" shape="rect">
+               <cite>OWL Web Ontology Language Test Cases</cite>
+               </a>, 
+            Jeremy J. Carroll and Jos De Roo, Editors.
+            W3C Recommendation, 10 February 2004,<br />
+            
+            http://www.w3.org/TR/2004/REC-owl-test-20040210/.<br />
+            <a href="https://www.w3.org/TR/owl-test/" shape="rect">Latest version</a>
+            available at http://www.w3.org/TR/owl-test/.
+            
+         </dd>
+         
+         
+         
+         <dt><a id="ref-xptr" name="ref-xptr" shape="rect"></a>[XPointer Framework]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2003/REC-xptr-framework-20030325/" shape="rect">XPointer Framework
+                  </a></cite>, Paul Grosso, Eve Maler, Jonathan Marsh and Norman
+            Walsh, Editors, W3C Recommendation, 25 March 2003,
+            http://www.w3.org/TR/2003/REC-xptr-framework-20030325/ . <a href="https://www.w3.org/TR/xptr-framework/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/xptr-framework/ .
+         </dd>
+         
+         
+         
+         <dt><a id="ref-xml-schema1" name="ref-xml-schema1" shape="rect"></a>[XML-SCHEMA1]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/" shape="rect">XML Schema
+                  Part 1: Structures</a></cite>, Second Edition, W3C Recommendation,
+            World Wide Web Consortium, Henry S. Thompson,
+            David Beech,
+            Murray Maloney
+            and Noah Mendelsohn
+            (editors), 28 October 2004. This version is
+            http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/. The <a href="https://www.w3.org/TR/xmlschema-1/" shape="rect">latest version</a> is
+            available at http://www.w3.org/TR/xmlschema-1/.
+         </dd>
+         
+         
+         
+         <dt><a id="ref-xml-schema2" name="ref-xml-schema2" shape="rect"></a>[XML-SCHEMA2]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/" shape="rect">XML Schema
+                  Part 2: Datatypes</a></cite>, Second Edition, W3C Recommendation,
+            World Wide Web Consortium, Paul V. Biron and Ashok Malhotra
+            (editors), 28 October 2004. This version is
+            http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/. The <a href="https://www.w3.org/TR/xmlschema-2/" shape="rect">latest version</a> is
+            available at http://www.w3.org/TR/xmlschema-2/.
+         </dd>
+         
+         
+         
+         <dt><a name="ref-rfc2045" id="ref-rfc2045" shape="rect">[RFC 2045]</a></dt>
+         
+         <dd>N. Freed and N. Borenstein. <i>RFC 2045: Multipurpose Internet
+               Mail Extensions (MIME) Part One: Format of Internet Message
+               Bodies</i>. 1996. Available at: <a href="http://www.ietf.org/rfc/rfc2045.txt" shape="rect">http://www.ietf.org/rfc/rfc2045.txt</a></dd>
+         
+         
+         
+         
+         
+         
+         <dt><a name="ref-rfc3986" id="ref-rfc3986" shape="rect"></a>[RFC
+            3986]
+         </dt>
+         
+         <dd>T. Berners-Lee, R. Fielding, and L. Masinter. <em>Uniform
+               Resource Identifiers (URI): Generic Syntax</em>. IETF RFC 3986. See
+            <a href="http://www.ietf.org/rfc/rfc3986.txt" shape="rect">http://www.ietf.org/rfc/rfc3986.txt</a>.
+         </dd>
+         
+         
+         
+         
+         
+         <dt><a name="ref-rfc3066" id="ref-rfc3066" shape="rect">[RFC 3066]</a></dt>
+         
+         <dd>H. Alvestrand, ed. <i>RFC 3066: Tags for the Identification of
+               Languages</i> 2001. Available at: <a href="http://www.ietf.org/rfc/rfc3066.txt" shape="rect">http://www.ietf.org/rfc/rfc3066.txt</a></dd>
+         
+         
+         <dt><a name="ref-ISO8601" id="ref-ISO8601" shape="rect"></a>[ISO 8601]
+         </dt>
+         
+         <dd>ISO (International Organization for Standardization).
+            <em>Representations of dates and times, 2000-08-03.</em> Available
+            from: <a href="http://www.iso.ch/" shape="rect">http://www.iso.ch/</a></dd>
+         
+         <dt><a id="ref-ISO11404" name="ref-ISO11404" shape="rect"></a>[ISO 11404]
+         </dt>
+         <dd>
+            ISO (International Organization for Standardization).
+            <em>Language-independent Datatypes.</em>  Available
+            from: <a href="http://www.iso.ch/" shape="rect">http://www.iso.ch/</a>
+            
+            
+         </dd>
+         
+         <dt><a id="ref-unicode" name="ref-unicode" shape="rect"></a>[UNICODE]
+         </dt>
+         
+         <dd><cite>The Unicode Standard, Version 3</cite>, The Unicode
+            Consortium, Addison-Wesley, 2000. ISBN 0-201-61633-5, as updated
+            from time to time by the publication of new versions. (See <a href="http://www.unicode.org/unicode/standard/versions/" shape="rect">http://www.unicode.org/unicode/standard/versions/</a>
+            for the latest version and additional information on versions of
+            the standard and of the Unicode Character Database).
+         </dd>
+         
+         
+         
+         
+         <dt><a id="ref-xpath-func" name="ref-xpath-func" shape="rect"></a>[Functions &amp; Operators]
+         </dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2005/WD-xpath-functions-20050915/" shape="rect">XQuery
+                  1.0 and XPath 2.0 Functions and Operators</a></cite>, Ashok
+            Malhotra, Jim Melton and Norman Walsh (editors), World Wide Web
+            Consortium Working Draft, work in progress, 15 September 2005. This
+            version of Functions and Operators is
+            http://www.w3.org/TR/2005/WD-xpath-functions-20050915/. The
+            <a href="https://www.w3.org/TR/xpath-functions/" shape="rect">latest version
+               of Functions and Operators</a> is at
+            http://www.w3.org/TR/xpath-functions/.
+         </dd>
+         
+          <dt><a name="ref-xpath20" id="ref-xpath20" shape="rect">[XPath 2.0]</a></dt>
+         
+          <dd><cite><a href="https://www.w3.org/TR/xpath20/" shape="rect">XML Path Language (XPath) 2.0</a></cite>, Anders Berglund, Scott Boag, Don Chamberlin, Mary F. Fern&aacute;ndez, Michael Kay, Jonathan Robie and J&eacute;r&ocirc;me Sim&eacute;on (editors), W3C Candidate Recommendation 3 November 2005. This
+            version of XML Path Language (XPath) is 
+            http://www.w3.org/TR/2005/CR-xpath20-20051103/. The
+            <a href="https://www.w3.org/TR/xpath20/" shape="rect">latest version
+               of XML Path Language (XPath)</a> is at
+            http://www.w3.org/TR/xpath20/.
+         </dd>
+         
+         
+         
+         
+         <dt><a name="ref-sparql" id="ref-sparql" shape="rect">[SPARQL]</a></dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2005/WD-rdf-sparql-query-20050721/" shape="rect">SPARQL
+                  Query Language for RDF</a></cite>, Eric Prud'hommeaux and Andy
+            Seaborne, Editors, W3C Working Draft 21 July 2005,
+            http://www.w3.org/TR/2005/WD-rdf-sparql-query-20050721/ . <a href="https://www.w3.org/TR/rdf-sparql-query/" shape="rect">Latest version</a>
+            available at http://www.w3.org/TR/rdf-sparql-query/ .
+         </dd>
+         
+         
+         <dt><a id="ref-xscd" name="ref-xscd" shape="rect">[XSCD]</a></dt>
+         
+         <dd><cite><a href="https://www.w3.org/TR/2005/WD-xmlschema-ref-20050329/" shape="rect">XML Schema
+                  Component Designators</a></cite>, Mary Holstege and Asir S.
+            Vedamuthu, Editors, W3C Working Draft, 29 March 2005,
+            http://www.w3.org/TR/2005/WD-xmlschema-ref-20050329/. <a href="https://www.w3.org/TR/xmlschema-ref/" shape="rect">Latest version</a> available
+            at http://www.w3.org/TR/xmlschema-ref/ .
+         </dd>
+         
+         
+         
+         
+         
+         
+         <dt><a id="ref-pan-2004" name="ref-pan-2004" shape="rect">[Pan 2004]</a></dt>
+         
+         <dd><cite><a href="http://DL-Web.man.ac.uk/thesis.shtml" shape="rect">Description Logics:
+                  Reasoning Support for the Semantic Web</a></cite>, Jeff Z.Pan, PhD
+            Thesis, School of Computer Science, The University of Manchester,
+            2004.
+         </dd>
+         
+         
+         <dt><a id="ref-ph-2005" name="ref-ph-2005">[PH 2005]</a></dt>
+<dd><cite><a href=
+"http://dl-web.man.ac.uk/~panz/Zhilin/pubc.php?type=epapers&amp;id=LNCS-PaHo05">OWL-Eu: Adding Customised Datatypes into OWL</a></cite>, Jeff Z.Pan and Ian Horrocks.  In Proc. of the Second European Semantic Web Conference (ESWC 2005), pages 153-166, 2005. An extended version appears in the Journal of Web Semantic, 4(1). An <a href="http://www.websemanticsjournal.org/ps/pub/2005-24">online version</a> is available at http://www.websemanticsjournal.org/ps/pub/2005-24.</dd>
+         
+         
+         
+         
+         <dt><a name="ref-n3" id="ref-n3" shape="rect">[N3]</a></dt>
+         <dd>
+            <cite><a href="https://www.w3.org/2000/10/swap/Primer.html" shape="rect">Primer: Getting into RDF &amp; Semantic Web using N3</a></cite>
+            
+            Tim Berners-Lee, Dan Connolly
+            
+         </dd>
+         
+      </dl>
+      
+      <h2><a id="sec-recs-dt" name="sec-recs-dt" shape="rect">
+            Appendix A: The Semantics of 
+            Datatyping in the Semantic Web Recommendations</a></h2>
+      
+      
+      <h3><a id="sec-rdf-dt" name="sec-rdf-dt" shape="rect">A.1 Datatypes in
+            RDF</a></h3>
+      
+      <p>According to <a href="#ref-rdf-semantics" shape="rect">
+            [RDF Semantics]</a>, 
+         (see <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#DTYPEINTERP" shape="rect">section 5.1</a>),
+         RDF allows the use of datatypes defined by any
+         external type systems, e.g., the XML Schema type system, which
+         conform to the following specification.
+      </p>
+      
+      <p><a id="rdf-datatype" name="rdf-datatype" shape="rect"><b>[Definition:]</b></a> In RDF, a <b>datatype</b> d
+         is characterised by a value space, V(d), which is a non-empty set,
+         a lexical space, L(d), which is a non-empty set of Unicode
+         strings, and a total mapping L2V(d) from the lexical space to the
+         value space.
+      </p>
+      
+      <p>This specification allows the use of non-list XML Schema simple
+         types as datatypes in RDF.
+      </p>
+      
+      <p><a id="rdf-literal" name="rdf-literal" shape="rect"><b>[Definition:]</b></a>
+         All <b>literals</b> have a lexical form being a Unicode [<a href="#ref-unicode" shape="rect">UNICODE</a>] string. <b>Typed literals</b> are of
+         the form <code>"v"^^u</code>, where <code>"v"</code> is a Unicode
+         string, called the <em>lexical form</em> of the typed literal, and
+         u is a URI reference of a datatype. <b>Plain literals</b> have a
+         lexical form and optionally a <em>language tag</em> as defined by
+         [<a href="#ref-rfc3066" shape="rect">RFC-3066</a>], normalized to
+         lowercase.
+      </p>
+      
+      <h6><a id="example_A" name="example_A" shape="rect">Example A</a></h6>
+      
+      <p><em>Boolean</em> is a datatype with value space
+         <code>{true,false}</code>, lexical space <code>{"true",
+            "false","1","0"}</code> and lexical-to-value mapping
+         <code>{"true"→true, "false"→false, "1"→true, "0"→false}</code>.
+         <code>"true"^^xsd:boolean</code> is a typed literal, while
+         <code>"true"</code> is a plain literal.
+      </p>
+      
+      <p>The associations between datatype URI references (e.g.,
+         xsd:boolean) and datatypes (e.g., boolean) can be provided by
+         datatype maps defined as follows.
+      </p>
+      
+      <p><a id="rdf-datatype-map" name="rdf-datatype-map" shape="rect"><b>[Definition:]</b></a> A <b>datatype map</b> D
+         is a partial mapping from datatype URI references to datatypes.
+      </p>
+      
+      <p>An RDFS-interpretation w.r.t. a datatype map D can be defined as
+         follows.
+      </p>
+      
+      <p><a id="rdf-dt-interpretation" name="rdf-dt-interpretation" shape="rect"><b>[Definition:]</b></a> Given a datatype
+         map D, an <b>RDFS D-interpretation</b> I of a vocabulary V is any
+         RDFS-interpretation of V∪{u |∃d.D(u)=d} which introduces (i) a
+         distinguished subset LV of IR, called the <em>set of literal
+            values</em>, which contains all the plain literals in V, and (ii) a
+         mapping IL from literals in V into IR, and satisfies the following
+         extra conditions:
+      </p>
+      
+      <ol>
+         
+         <li>LV = ICEXT(rdfs:Literal).</li>
+         
+         <li>For any plain literal pl∈V, IL(pl) = pl.</li>
+         
+         <li>For each pair &lt;u,d&gt; where d = D(u),
+            
+            <ul>
+               
+               <li>I(u) ∈ ICEXT(rdfs:Datatype),</li>
+               
+               <li>there exists d∈IR s.t. I(u) = d,</li>
+               
+               <li>ICEXT(d) = V(d) ⊆ LV,</li>
+               
+               <li>for <code>"s"^^u'</code>∈V, I(u') = d, if s∈L(d), then
+                  IL(<code>"s"^^u'</code>) = L2S(d)(s); otherwise,
+                  IL(<code>"s"^^u'</code>) ∈ IR \ LV.
+               </li>
+               
+            </ul>
+            
+         </li>
+         
+         <li>If d ∈ ICEXT(rdfs:Datatype), then &lt;d, I(rdfs:Literal)&gt; ∈
+            IEXT(rdfs:subClassOf).
+         </li>
+         
+      </ol>
+      
+      <h3><a id="sec-owl-dt" name="sec-owl-dt" shape="rect">A.2 Datatypes in
+            OWL DL </a></h3>
+      
+      <p> OWL Full datatyping follows the RDF Semantics as above;
+         OWL DL datatyping is specified 
+         in
+         <a href="https://www.w3.org/TR/2004/REC-owl-semantics-20040210/direct.html#3.1" shape="rect">
+            section 3.1</a> of the 
+         <a href="#ref-owl-semantics" shape="rect">
+            [OWL Semantics]</a>, as follows.
+         
+      </p>
+      
+      <p>The fundamental difference between RDF datatyping and OWL DL
+         datatyping is the relationship between datatypes and classes. In
+         OWL DL, datatypes are <em>not</em> classes, and object and datatype
+         domains are <em>disjoint</em> with each other. 
+         
+         <!--Accordingly, the set of datatype properties is disjoint with the set of object properties.
+-->
+      </p>
+      
+      <p>OWL allows different OWL reasoners to provide different
+         supported datatypes.
+      </p>
+      
+      <p><a id="owl-dt-support" name="owl-dt-support" shape="rect"><b>[Definition:]</b></a> Given a datatype map D, a
+         datatype URI reference u is called a <b>supported datatype URI
+            reference</b> w.r.t. D if there exists a datatype d such that
+         &lt;u,d&gt;∈D (in this case, d is called a <b>supported
+            datatype</b> w.r.t. D); otherwise, u is called an <b>unsupported
+            datatype URI reference</b> w.r.t. D.
+      </p>
+      
+      <p>OWL provides the use of so called enumerated datatypes, which
+         are built using literals.
+      </p>
+      
+      <p><a id="owl-enumerated" name="owl-enumerated" shape="rect"><b>[Definition:]</b></a> Let y<sub>1</sub>, ...,
+         y<sub>n</sub> be literals. An <b>enumerated datatype</b> is of the
+         form oneOf(y<sub>1</sub>, ..., y<sub>n</sub>).
+      </p>
+      
+      <p>An OWL DL D-interpretation w.r.t. a datatype map D can be
+         defined as follows.
+      </p>
+      
+      <p><a id="owl-dl-dt-interpretation" name="owl-dl-dt-interpretation" shape="rect"><b>[Definition:]</b></a> An <b>OWL DL datatype
+            interpretation</b> w.r.t. to a datatype map D is a pair (LV,ED),
+         where the datatype domain LV 
+         (only) contains the value spaces for each datatype in D
+         and PL
+         (the value
+         space for plain literals, i.e., the union of the set of Unicode
+         strings and the set of pairs of Unicode strings and language tags)
+         
+         <!--
+= PL<code>∪</code>∪<sub>for each
+supported datatype URIref u w.r.t. D</sub>D(u) (PL is 
+-->
+and ED is a datatype interpretation function, which has to satisfy
+the following conditions:</p>
+<ol>
+<li>LV = ED(rdfs:Literal).</li>
+<li>For any plain literal pl, ED(pl) = pl ∈ PL.</li>
+<li>For each supported datatype URIref u (let d = D(u)):
+<ul>
+<li>ED(u) = V(d) ⊆ LV,</li>
+<li>if s ∈ L(d), then ED(<code>"s"^^u</code>) = L2V(d)(s);
+otherwise, ED(<code>"s"^^u</code>) is not defined.</li>
+</ul>
+</li>
+<li>For each unsupported datatype URIref u, ED(u) ⊆ LV and
+ED(<code>"s"^^u</code>) ∈ ED(u).</li>
+<li>Each enumerated datatype oneOf(y<sub>1</sub>, ...,
+y<sub>n</sub>) is interpreted as {ED(y<sub>1</sub>)}<code>∪ ...
+∪</code> {ED(y<sub>n</sub>)}.</li>
+</ol>
+<p>Note that here we simplify the presentation by using ED as the
+interpretation function for both datatype URI references and
+literals, while [<a href="#ref-owl-semantics">OWL Semantics</a>]
+uses EC for datatypes URI references and L for literals.</p>
+<p>
+ In OWL Full, the disjointness restriction between 
+object and datatype domains is not required.</p>
+
+<h2><a id="sec-dl-dt" name="sec-dl-dt">Appendix B: Integrating Description Logics with User-Defined Datatypes</a></h2>
+<p>[<a href="#ref-pan-2004">Pan 2004</a>] and [<a href="#ref-ph-2005">PH 2005</a>] present a scheme of
+integrating a large family of decidable Description Logics
+(including <em>SHOIN</em>, the underpinning of OWL DL) with unary
+datatype groups, so as to support user defined datatypes. A
+combined DL is decidable if the unary datatype group is conforming.
+A conforming unary datatype group is equipped with a decision
+procedure for the satisfiability problem of finite conjunctions
+over supported datatypes.</p>
+<p><a id="datatype-group" name=
+"datatype-group"><b>[Definition:]</b></a> A <b>unary datatype
+group</b> G is a triple &lt;D,B,dom&gt;, where D is a datatype map,
+B is the set of primitive base datatype URI references in G and dom
+is the declared domain function. We call S the set of supported
+datatype URI references, i.e., for each u∈S, D(u) is defined; we
+require B ⊆ S. The declared domain function dom has the following
+properties: for each u ∈ S, if u ∈ B, dom(u) = u; otherwise, dom(u)
+= v, where v ∈ B. We assume that there exists a datatype URI
+reference rdfsx:DatatypeBottom such that D(rdfsx:DatatypeBottom) is
+undefined.</p>
+<p>Note that in [<a href="#ref-pan-2004">Pan 2004</a>] datatype
+groups allow arbitrary datatype predicates, while here we consider
+only datatypes, which can be regarded as <em>unary</em> datatype
+predicates.</p>
+<h6><a id="example_B" name="example_B">Example B</a></h6>
+<p>G<sub>1</sub>=(D<sub>1</sub>,B<sub>1</sub>,dom<sub>1</sub>) is a
+unary datatype group, where</p>
+<ul>
+<li>D<sub>1</sub> = {xsd:integer <code>→</code> integer, xsd:string
+<code>→</code> string, xsd:nonNegativeInteger <code>→
+≥<sub>0</sub></code>, xsdx:integerLessThanN <code>→
+&lt;<sub>N</sub></code>},</li>
+<li>B<sub>1</sub> = {xsd:integer, xsd:string},</li>
+<li>dom<sub>1</sub> = {xsd:integer <code>→</code> xsd:integer,
+xsd:string <code>→</code> xsd:string, xsd:nonNegativeInteger
+<code>→</code> xsd:integer, xsdx:integerLessThanN <code>→</code>
+xsd:integer}.</li>
+</ul>
+<p>
+According to D<sub>1</sub>, we have S<sub>1</sub> = {xsd:integer,
+xsd:string, xsd:nonNegativeInteger, xsdx:integerGreaterThanN},
+hence we have B<sub>1</sub> ⊆ S<sub>1</sub>. Note that the value
+space of <code>&lt;<sub>N</sub></code> is
+V(<code>&lt;<sub>N</sub></code>) = {i ∈ V(integer) | i
+<code>&lt;</code> L2S(integer)(N)} and by
+<code>&lt;<sub>N</sub></code> we mean there exists a built-in
+datatype <code>&lt;<sub>N</sub></code> for each integer
+L2S(integer)(N).
+</p>
+<p>In a unary datatype group, datatype expressions can be used to
+represent user defined datatypes.</p>
+<p><a id="datatype-expression" name=
+"datatype-expression"><b>[Definition:]</b></a> Let G be a unary
+datatype group, the set  <b>unary datatype expressions</b> for G,
+abbreviated Dexp(G), is inductively defined as follows:</p>
+<ul>
+<li>let u be a datatype URI reference, u ∈ DPexp(G);</li>
+<li>let u be a datatype URI reference, its (relativised) negation
+not(u) ∈ DPexp(G);</li>
+<li>let y<sub>1</sub>, ..., y<sub>n</sub> be literals, the
+enumerated datatype oneOf(y<sub>1</sub>, ..., y<sub>n</sub>) ∈
+DPexp(G);</li>
+<li>for any p,q ∈ DPexp(G), their conjunction and(p,q) ∈
+DPexp(G);</li>
+<li>for any p,q ∈ DPexp(G), their disjunction or(p,q) ∈
+DPexp(G).</li>
+</ul>
+<h6><a id="example_C" name="example_C">Example C</a></h6>
+<p>The XML Schema user defined datatype humanAge defined in
+[<a href="#example_1A">Example 1A</a>] can be represented by the
+following unary datatype expression:</p>
+<p style="text-align: center">and(xsd:nonNegativeInteger,
+xsdx:integerLessThan150).</p>
+<p><a id="dt-interpretation-datatype-group" name=
+"dt-interpretation-datatype-group"><b>[Definition:]</b></a> A <b>datatype
+interpretation of a unary datatype group</b> G = (D,B,dom) is a
+pair (LV,ED), where the datatype domain LV is a non-empty set and
+ED is a datatype interpretation function that has to satisfies the
+following conditions:</p>
+<ol>
+<li>ED(rdfs:Literal)=LV and ED(rdfsx:DatatypeBottom)} = ∅.</li>
+<li>For each plain literal pl, ED(pl) = pl ∈ PL and PL ⊆ LV.</li>
+<li>For any <a id="pbd-disjoint" name="pbd-disjoint">two primitive
+base datatype URI references u</a><sub>1</sub> and u<sub>2</sub>,
+ED(u<sub>1</sub>) ∩ ED(u<sub>2</sub>) = ∅.</li>
+<li>For each supported datatype URI reference u ∈ S (let d = D(u)):
+<ul>
+<li>ED(u) = V(d) ⊆ V(D(dom(u))) ⊆ LV, L(D(u)) ⊆ L(D(dom(u)) and
+L2S(D(u)) ⊆ L2S(D(dom(u)),</li>
+<li>if s ∈ L(d), then ED(<code>"s"^^u</code>) = L2V(d)(s);
+otherwise, ED(<code>"s"^^u</code>) is not defined.</li>
+</ul>
+</li>
+<li>For each unsupported datatype URI reference u ∉ S, ED(u) ⊆ LV
+and <code>"s"^^u</code> ∈ ED(u).</li>
+</ol>
+<p>
+The datatype interpretation function ED can be extended to provide
+semantics to unary datatype expressions as follows:
+</p>
+<ul>
+<li>Relativised negations: if u ∈ S \ D, ED(not(u)) = ED(dom(U)) \
+ED(u); otherwise, ED(not(u)) = LV \ ED(u).</li>
+<li>Enumerated datatypes: ED(oneOf(y<sub>1</sub>, ...,
+y<sub>n</sub>)) = {ED(y<sub>1</sub>)}<code>∪ ... ∪</code>
+{ED(y<sub>n</sub>)}.</li>
+<li>Conjunctions: ED(and(p,q)) = ED(p) ∩ ED(q).</li>
+<li>Disjunctions: ED(or(p,q)) = ED(p) ∪ ED(q).</li>
+</ul>
+<p>
+ <span class="change">[<a href="#ref-ph-2005">PH 2005</a>]</span> shows that we can combine 
+any decidable DL (including SHOIN, the underpinning of OWL DL) 
+that provides the conjunction and bottom constructors with a 
+conforming unary datatype group and the combined DL is still 
+decidable. 
+</p>
+
+
+
+<h2><a id="sec-changes" name="sec-changes" shape="rect"></a>Appendix C: Changes since 
+         
+         <a href="https://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/" shape="rect">
+            Working Draft of 27 April 2005</a></h2>
+
+      
+      
+      <h3 id="sec-changes-typos">C.1 Typos etc.</h3>
+      
+      <p>'Semanitcs' in <a href="#sec-overview" shape="rect">introduction</a>.
+      </p>
+      
+      <p>Updated syntax for <a href="#sec-xscd" shape="rect">XML Schema Component Designators</a>.
+      </p>
+      
+      
+      <p>Deleted broken link from description of
+         <a href="#ref-ISO11404" shape="rect">[ISO 11404]</a>. Added reference to ISO homepage instead.
+      </p>
+
+      
+      
+      <h3 id="sec-changes-discussion">C.2 Discussion removal</h3>
+      
+      <p>The earlier draft was a discussion document.
+         This note is not intended as such, so some issues,
+         particularly to do with the interactions between various
+         standards, recommendations, RFCs etc. has been removed.
+         
+      </p>
+      
+      <p>Removed 
+         <a href="https://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/#sec-daml-soln" shape="rect">
+            DAML+OIL solution</a>.
+      </p>
+      
+      <p>Removed
+         <a href="https://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/#sec-values-true" shape="rect"> 
+            true values solution</a>.
+      </p>
+
+      
+      <p>Removed 
+         <a href="https://www.w3.org/TR/2005/WD-swbp-xsch-datatypes-20050427/#sec-values-eq" shape="rect">
+            XPath eq solution</a>.
+      </p>
+      
+      
+      <p>Moved OWL syntax example from DAML+OIL section to the end of
+         <a href="#sec-id-attr" shape="rect">
+            id section</a>.
+      </p>
+      
+      <p>In the 
+         <a href="#sec-xscd" shape="rect">
+
+            XML Schema Component Designator section</a>:
+      </p>
+      
+      <ul>
+         
+         <li>Discussion of relationship between XSCD, XPointer
+            and RFC 3023 has been removed.
+         </li>
+         
+         <li>Discussion about the exact semantics of an
+            XSCD fragment has been removed.
+         </li>
+         
+      </ul>
+      
+      <p>Deleted words "(less contentious)" and "Moreover, "
+         from <a href="#sec-id-attr" shape="rect">id solution</a>.
+      </p>
+
+      
+      <p>Changed <a href="#sec-xscd" shape="rect">
+            XML Schema Component Designator section</a>, to indicate that 
+         XSCD is a good practice. In particular, see last paragraph.
+      </p>
+      
+      <p>Changed 
+         <a href="#sec-user-uri-discussion" shape="rect">
+            discussion subsection</a> on user defined datatypes
+         to suggest that both the (remaining) solutions are appropriate,
+         and have no discussion. Changed title to Suggested Practice.
+         
+      </p>
+      
+      <p>
+
+         Discussion of 
+         <a href="#sec-values-hard-examples" shape="rect">
+            harder examples</a> cut down
+         substantially, since these are all trivially
+         non-entailments with the agreed semantics.
+         
+      </p>
+      
+      
+      
+      <p>Removed EDITORS' OPINION notes.</p>
+      
+      
+      
+      
+      <h3 id="sec-changes-ashok"><a name="ashok" id="ashok" shape="rect">C.3 Changes in response to comment from Ashok Malhotra</a></h3>
+      
+      
+      <p>Deleted all uses of the word "derivation" in <a href="#sec-xmls-dt" shape="rect">section 1.3</a> since it has
+         caused confusion. Added links to the XML Schema document for union, list and restriction,
+         to make it clear that the intended concept is "derivation"
+         as defined by that document.
+      </p>
+
+      
+      
+      <p>Added brief discussion 
+         of target namespace after <a href="#example_2A" shape="rect">example 2A</a>
+         providing further examples <a href="#example_2B" shape="rect">example 2B</a> and
+         <a href="#example_2C" shape="rect">example 2C</a>.
+         Scoped this document to not 
+         address "XML Schema [...] assembled from multiple schema
+         documents".
+         Added reference <a href="#ref-xml-schema1" shape="rect">[XML SCHEMA1]</a>.
+         
+      </p>
+      
+      
+      <p>In the <a href="#sec-xscd" shape="rect">
+
+            XML Schema Component Designator section</a>: added more extended discussion of target namespace issue;
+         and
+         added example XSCD for schema with target namespace.
+      </p>
+      
+      <p>Added text showing how the 
+         <a href="#sec-id-attr" shape="rect">@id solution</a> does
+         comply with the secondary resource concept from RFC 3986,
+         when read in conjunction with RDF Concepts, XPointer and XML Schema.
+         
+      </p>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <h3 id="sec-changes-restructuring"> C.4 Restructuring of section 3</h3>
+      
+      
+      <p>Reordered subsections in section 3,
+         deleting 
+         old 
+         3.5,
+         3.6 and 3.7, and ordering the
+         remaining subsections as follows:
+         3.1, 
+         3.4,
+         3.2, 3.3. Followed by renumbering.
+      </p>
+
+      
+      <p>Text discussing examples has changed, and the change tracking
+         is not detailed.
+      </p>
+      
+      <p>Moved definition of
+         <a href="#def-primitive-base-type" shape="rect">primitive base datatype</a> 
+         from the examples
+         subsection to the 
+         <a href="#sec-values-formal" shape="rect">formal analysis</a> subsection.
+      </p>
+      
+      <p>Deleted references to the examples
+         from the new section 3.2 (was
+         
+         3.4)
+         
+      </p>
+      
+      
+      <p>Added example 
+         <a href="#sec-use-sparql" shape="rect">
+
+            SPARQL query</a>, to show how
+         to use = in SPARQL to compare across the type hierarchy.
+      </p>
+      
+      <p>Added an updated discussion of mapsTo.</p>
+      
+      <h3 id="sec-changes-other">C.5 Other changes</h3>
+      
+      <p>Added 
+         <a href="#section-acknowledgements" shape="rect">
+            further acknowledgements</a>.
+      </p>
+      
+      <p>Updated reference to RFC 2396 to be to <a href="#ref-rfc3986" shape="rect">RFC 3986</a></p>
+
+      
+      
+      <p>Updated 
+         <a href="#contents" shape="rect">
+            Table of Contents</a></p>
+      
+      
+      
+      <p>Removed unused
+         <a href="#section-references" shape="rect"> 
+            references</a>.
+      </p>
+      
+      <p>Updated versions of 
+         <a href="#ref-xpath-func" shape="rect">
+            W3C WD's</a> in references.
+      </p>
+
+      
+      
+      <hr />
+      
+      <p><a href="http://validator.w3.org/check?uri=referer" shape="rect"><img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
+      
+      
+   <script type="application/javascript" src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+   
+</html>

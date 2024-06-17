@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2024 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+
+
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="description" content="Denken in neuen Dimensionen. Studieren mit Zukunft. Gemeinsam mehr erreichen, mit Wissen, Technik und Leidenschaft - das ist die TU Graz. " />
+<meta name="twitter:card" content="summary" />
+
+
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/news/Resources/Public/Css/news-basic.css?1650992832" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Css/cookie_consent.css?1693213460" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/External/news.css?1693845417" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/int.css?1718024249" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/media.css?1697705208" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/print.css?1693213434" media="print">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/Font/ssp-light.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/Font/ssp-semibold.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/form.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/lang.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Css/darksiteOverlay.css?1693213460" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Css/baguetteBox.css?1693213460" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/qmenu.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/qmenu-media.css?1693213434" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.tugraz.at/typo3conf/ext/tu_event/Resources/Public/Css/CalLegacy.css?1713433509" media="all">
+<link href="/typo3conf/ext/tugraztemplateinternal/Resources/Public/Css/startVideo.css?1718199834" rel="stylesheet" type="text/css" >
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="alternate" type="application/rss+xml" href="http://rss.tugraz.at/news.xml" title="TU Graz News"><title>Home - TU Graz</title><meta id="viewport" name=viewport content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" id="int-all-footer-stylesheet" href="" media="all"><meta property="og:image" content="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Img/OpenGraph/tu_graz_start.jpg"><meta property="og:title" content="TU Graz"><meta property="og:url" content="https://www.tugraz.at"><meta property="og:description" content="Wir sind eine leistungsorientierte Gemeinschaft und arbeiten in einer offenen und innovationsorientierten Atmosphäre der intellektuellen Freiheit und Verantwortung.">
+<link rel="canonical" href="https://www.tugraz.at/home"/>
+
+<link rel="alternate" hreflang="de" href="https://www.tugraz.at/home"/>
+<link rel="alternate" hreflang="en" href="https://www.tugraz.at/en/home"/>
+<link rel="alternate" hreflang="x-default" href="https://www.tugraz.at/home"/>
+<!-- This site is optimized with the Yoast SEO for TYPO3 plugin - https://yoast.com/typo3-extensions-seo/ -->
+<script type="application/ld+json">[{"@context":"https:\/\/www.schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.tugraz.at\/","name":"TU Graz"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.tugraz.at\/home","name":"Home"}}]}]</script>
+</head>
+<body>
+
+
+
+
+
+<div id="all-menu-top"><a href="#int-all" class="skip-navigation" >Zum Hauptinhalt springen</a><div id="int-menu-q"><div class="int-menu-q-l1"><div class="int-menu-q-l1-item"><a href="/home" title="TU Graz Home"><svg shape-rendering="geometricPrecision" id="int-menu-q-home-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xml:space="preserve" height="36.997" width="35.969" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 35.969 36.997451"><polyline style="stroke:#000;stroke-linecap:square;stroke-width:4;fill:none" points="282.72 437.28 282.72 414.77 297.71 406.69 312.69 414.77 312.69 437.28" transform="translate(-279.72 -403.28)"/></svg></a></div><span class='int-menu-q-l1-after'></span><div class="int-menu-q-l1-item"><a href="/tu-graz/fokus-tu-graz">TU Graz<svg shape-rendering="optimizeQuality" class="int-menu-q-open-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="5.2753mm" width="8.7548mm" version="1.1" viewBox="0 0 31.02118 18.692033">
+<g style="stroke-width:2.25" transform="translate(-164.49 -416.85)">
+<path style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:2.5;fill:none" d="m165.63 417.99 14.375 16.43 14.375-16.43"/>
+</g>
+</svg></a><div class="int-menu-q-l2"><div class="int-menu-l2-fw"><div class="int-menu-q-l2-item"><a href="/tu-graz/fokus-tu-graz">Fokus TU Graz</a></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/tu-graz/universitaet/ueberblick-universitaet">Universität</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/ueberblick-universitaet"><span>Überblick Universität</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/tu-graz-kompakt/tu-graz-kompakt"><span>TU Graz kompakt</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/organisationsgrundlagen"><span>Organisationsgrundlagen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/leitbild"><span>Leitbild</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/leitziele-und-schwerpunkte/leitziele-und-schwerpunkte"><span>Leitziele und Schwerpunkte</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/leitziele-und-schwerpunkte/kooperationen/kooperationen-in-forschung-und-lehre"><span>Kooperationen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/klimaneutrale-tu-graz/klimaneutrale-tu-graz"><span>Klimaneutrale TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/serviceeinrichtungen-und-stabseinheiten/beteiligungs-und-risikomanagement/beteiligungsmanagement/ueberblick-beteiligungsmanagement"><span>Unternehmensbeteiligungen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/serviceeinrichtungen-und-stabseinheiten/qualitaetsmanagement-evaluation-berichtswesen/datenschutz-an-der-tu-graz"><span>Datenschutz an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/geschichte"><span>Geschichte</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/gebaeude-der-tu-graz"><span>Gebäude der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="http://mibla.tugraz.at"><span>Mitteilungsblatt</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/infoportal-sexuelle-belaestigung-und-sexualisierte-gewalt"><span>Infoportal: Sexuelle Belästigung und sexualisierte Gewalt</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/tu-graz/karriere/ueberblick-karriere">Karriere</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/ueberblick-karriere"><span>Überblick Karriere</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/ausgeschriebene-jobs/ueberblick-ausgeschriebene-jobs"><span>Ausgeschriebene Jobs</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/berufsfelder/ueberblick-berufsfelder"><span>Berufsfelder</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/professuren"><span>Professuren</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/lehrlingsausbildung"><span>Lehrlingsausbildung</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/tu-graz-als-arbeitgeberin/ueberblick-tu-graz-als-arbeitgeberin"><span>TU Graz als Arbeitgeberin</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/leben-in-graz/ueberblick-leben-in-graz-fuer-mitarbeitende"><span>Leben in Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/neuaufnahme-arbeitsstart/dokumente-fuer-die-neuaufnahme"><span>Neuaufnahme – Arbeitsstart</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/barrierefrei-arbeiten"><span>Barrierefrei Arbeiten</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/tu-graz/services/ueberblick-services">Services</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/ueberblick-services"><span>Überblick Services</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/news-stories/news-stories-uebersicht"><span>News+Stories</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/news-stories/follow-tu-graz"><span>Follow TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/news-stories/tu-graz-events/aktuelle-veranstaltungen"><span>TU Graz events</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/news-stories/medienservice/aktuelle-meldungen-und-services"><span>Medienservice</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/projekte-mit-unternehmen"><span>Projekte mit Unternehmen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/partnerunternehmen-werden"><span>Partnerunternehmen werden</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/gruenden-an-der-tu-graz"><span>Gründen an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/stellenangebote-veroeffentlichen"><span>Stellenangebote veröffentlichen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/angebote-fuer-kinder-und-jugendliche/ueberblick-angebote-fuer-kinder-und-jugendliche"><span>Angebote für Kinder und Jugendliche</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/angebote-fuer-schulen/ueberblick-angebote-fuer-schulen"><span>Angebote für Schulen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/bibliothek-der-tu-graz/bibliothek-der-tu-graz"><span>Bibliothek der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/recherchieren-im-archiv"><span>Recherchieren im Archiv</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/services-fuer-absolventinnen-und-absolventen"><span>Services für Absolventinnen und Absolventen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/kinderbetreuung"><span>Kinderbetreuung</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/nostrifizierungen"><span>Nostrifizierungen</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/tu-graz/organisationsstruktur/ueberblick-organisationsstruktur">Organisationsstruktur</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/ueberblick-organisationsstruktur"><span>Überblick Organisationsstruktur</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/organigramm"><span>Organigramm</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/rektorat-der-tu-graz"><span>Rektorat der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/senat-der-tu-graz"><span>Senat der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/universitaetsrat-der-tu-graz"><span>Universitätsrat der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/dekaninnen-und-dekane"><span>Dekaninnen und Dekane</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/serviceeinrichtungen-und-stabseinheiten/ueberblick-serviceeinrichtungen-und-stabseinheiten"><span>Serviceeinrichtungen und Stabseinheiten</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/vertretungen-der-tu-graz-angehoerigen/ueberblick-vertretungen-der-tu-graz-angehoerigen"><span>Vertretungen der TU Graz-Angehörigen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/organisationsstruktur/beiraete/ueberblick-beiraete"><span>Beiräte</span></a></div></div></div></div><a href="#null"><svg class="int-menu-q-close-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" role="icon" aria-label="Close Menu" version="1.1" xml:space="preserve" height="31.129" width="31.129" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 31.128759 31.12876"><g style="stroke:#000" transform="translate(-282.68 -406.18)"><title>Close Menu</title><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="283.73" y1="436.27" x2="312.77" y2="407.22"/><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="312.77" y1="436.27" x2="283.72" y2="407.23"/></g></svg></a></div></div></div><span class='int-menu-q-l1-after'></span><div class="int-menu-q-l1-item"><a href="/studium/fokus-studium">Studium<svg shape-rendering="optimizeQuality" class="int-menu-q-open-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="5.2753mm" width="8.7548mm" version="1.1" viewBox="0 0 31.02118 18.692033">
+<g style="stroke-width:2.25" transform="translate(-164.49 -416.85)">
+<path style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:2.5;fill:none" d="m165.63 417.99 14.375 16.43 14.375-16.43"/>
+</g>
+</svg></a><div class="int-menu-q-l2"><div class="int-menu-l2-fw"><div class="int-menu-q-l2-item"><a href="/studium/fokus-studium">Fokus Studium</a></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/studium/studienangebot/ueberblick-studienangebot">Studienangebot</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/ueberblick-studienangebot"><span>Überblick Studienangebot</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/bachelorstudien/ueberblick-bachelorstudien"><span>Bachelorstudien</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/masterstudien/ueberblick-masterstudien"><span>Masterstudien</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/lehramtsstudium/ueberblick-lehramtsstudium"><span>Lehramtsstudium</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/doktoratsstudien/ueberblick-doktoratsstudien"><span>Doktoratsstudien</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/universitaere-weiterbildung/life-long-learning-lll"><span>Universitäre Weiterbildung</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/studium/studieren-an-der-tu-graz/ueberblick-studieren-an-der-tu-graz">Studieren an der TU Graz</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/ueberblick-studieren-an-der-tu-graz"><span>Überblick Studieren an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/studieninteressierte/mein-studium-an-der-tu-graz-starten"><span>Studieninteressierte</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/studienanfaengerinnen-und-studienanfaenger/ueberblick-studienanfaengerinnen-und-studienanfaenger"><span>Studienanfängerinnen und Studienanfänger</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/studierende/ueberblick-studierende"><span>Studierende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/absolventinnen-und-absolventen/ueberblick-absolventinnen-und-absolventen"><span>Absolventinnen und Absolventen</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/studium/international-studieren/ueberblick-international-studieren">International studieren</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/ueberblick-international-studieren"><span>Überblick International studieren</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/incoming-studierende-austausch-an-der-tu-graz/ueberblick-austausch-an-der-tu-graz"><span>Incoming Studierende – Austausch an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/outgoing-studierende-studieren-im-ausland"><span>Outgoing Studierende – Studieren im Ausland</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/internationale-studierende/internationale-studierende-an-der-tu-graz"><span>Internationale Studierende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/international-house"><span>International House</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/sommer-und-winterprogramme"><span>Sommer- und Winterprogramme</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/international-studieren/blog/tu-graz-international-blog"><span>Blog</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/studium/lehre-an-der-tu-graz/ueberblick-lehre-an-der-tu-graz">Lehre an der TU Graz</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/ueberblick-lehre-an-der-tu-graz"><span>Überblick Lehre an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/strategie-lehre-und-lernen/strategie"><span>Strategie Lehre und Lernen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/services-fuer-lehrende/services-fuer-lehrende"><span>Services und Förderungen für Lehrende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/lehre-im-dialog"><span>Lehre im Dialog</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/lehre-blog/tu-graz-lehre-blog"><span>Lehre Blog</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/internationale-lehre"><span>Internationale Lehre</span></a></div></div></div></div><a href="#null"><svg class="int-menu-q-close-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" role="icon" aria-label="Close Menu" version="1.1" xml:space="preserve" height="31.129" width="31.129" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 31.128759 31.12876"><g style="stroke:#000" transform="translate(-282.68 -406.18)"><title>Close Menu</title><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="283.73" y1="436.27" x2="312.77" y2="407.22"/><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="312.77" y1="436.27" x2="283.72" y2="407.23"/></g></svg></a></div></div></div><span class='int-menu-q-l1-after'></span><div class="int-menu-q-l1-item"><a href="/forschung/fokus-forschung">Forschung<svg shape-rendering="optimizeQuality" class="int-menu-q-open-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="5.2753mm" width="8.7548mm" version="1.1" viewBox="0 0 31.02118 18.692033">
+<g style="stroke-width:2.25" transform="translate(-164.49 -416.85)">
+<path style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:2.5;fill:none" d="m165.63 417.99 14.375 16.43 14.375-16.43"/>
+</g>
+</svg></a><div class="int-menu-q-l2"><div class="int-menu-l2-fw"><div class="int-menu-q-l2-item"><a href="/forschung/fokus-forschung">Fokus Forschung</a></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/forschung/fields-of-expertise/ueberblick-fields-of-expertise">Fields of Expertise</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fields-of-expertise/ueberblick-fields-of-expertise"><span>Überblick: Fields of Expertise</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fields-of-expertise/advanced-materials-science/ueberblick-advanced-materials-science"><span>Advanced Materials Science</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschungsschwerpunkte-5-fields-of-expertise/human-biotechnology/ueberblick-human-biotechnology"><span>Human & Biotechnology</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fields-of-expertise/information-communication-computing/ueberblick-information-communication-computing"><span>Information, Communication & Computing</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fields-of-expertise/mobility-production/ueberblick-mobility-production"><span>Mobility & Production</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschungsschwerpunkte-5-fields-of-expertise/sustainable-systems/ueberblick-sustainable-systems"><span>Sustainable Systems</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fields-of-expertise/wissenschaftstag-tu-graz-science-for-future/2023-neue-welten-in-der-produktion/rueckblick"><span>Wissenschaftstag TU Graz – Science for Future</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/forschung/forschung-an-der-tu-graz/ueberblick-forschung-an-der-tu-graz">Forschung an der TU Graz</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/ueberblick-forschung-an-der-tu-graz"><span>Überblick Forschung an der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/services-fuer-forschende/ueberblick-services-fuer-forschende"><span>Services für Forschende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/research-centers/research-centers-ueberblick"><span>Research Centers</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/christian-doppler-cd-labors"><span>Christian Doppler (CD) Labors</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/leadprojekte-der-tu-graz"><span>Leadprojekte der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/erc-grants"><span>ERC Grants</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/forschungskooperationen"><span>Forschungskooperationen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/unternehmensgruendungen-start-ups-und-spin-offs"><span>Unternehmensgründungen – Start-ups und Spin-offs</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/responsible-science"><span>Responsible Science</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/doctoral-schools"><span>Doctoral Schools</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://graz.pure.elsevier.com/de/"><span>TU Graz Forschungsportal</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/forschung-an-der-tu-graz/tu-graz-scipix"><span>TU Graz SciPix</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/forschung/kooperieren-mit-der-tu-graz/ueberblick-kooperieren-mit-der-tu-graz">Kooperieren mit der TU Graz</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/kooperieren-mit-der-tu-graz/ueberblick-kooperieren-mit-der-tu-graz"><span>Überblick Kooperieren mit der TU Graz</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/kooperieren-mit-der-tu-graz/gemeinsam-forschen"><span>Gemeinsam forschen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/kooperieren-mit-der-tu-graz/studierende-foerdern-und-nachwuchskraefte-gewinnen"><span>Studierende fördern und Nachwuchskräfte gewinnen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/kooperieren-mit-der-tu-graz/partnerunternehmen-der-tu-graz-werden"><span>Partnerunternehmen der TU Graz werden</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/universitaet/leitziele-und-schwerpunkte/kooperationen/kooperationen-mit-wirtschaft-und-industrie"><span>Kooperationspartner*innen aus Wirtschaft und Industrie</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/forschung/international-forschen/ueberblick-international-forschen">International forschen</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/international-forschen/ueberblick-international-forschen"><span>Überblick International forschen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/international-forschen/forschungsaufenthalte-im-ausland"><span>Forschungsaufenthalte im Ausland</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/international-forschen/forschungsaufenthalte-an-der-tu-graz"><span>Forschungsaufenthalte an der TU Graz</span></a></div></div></div></div><span class='int-menu-q-l2-after'></span><div class="int-menu-q-l2-item"><a href="/forschung/forschungs-technologie-beirat">Forschungs- & Technologie-Beirat</a></div><a href="#null"><svg class="int-menu-q-close-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" role="icon" aria-label="Close Menu" version="1.1" xml:space="preserve" height="31.129" width="31.129" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 31.128759 31.12876"><g style="stroke:#000" transform="translate(-282.68 -406.18)"><title>Close Menu</title><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="283.73" y1="436.27" x2="312.77" y2="407.22"/><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="312.77" y1="436.27" x2="283.72" y2="407.23"/></g></svg></a></div></div></div><span class='int-menu-q-l1-after'></span><div class="int-menu-q-l1-item"><a href="/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute">Fakultäten und Institute<svg shape-rendering="optimizeQuality" class="int-menu-q-open-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="5.2753mm" width="8.7548mm" version="1.1" viewBox="0 0 31.02118 18.692033">
+<g style="stroke-width:2.25" transform="translate(-164.49 -416.85)">
+<path style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:2.5;fill:none" d="m165.63 417.99 14.375 16.43 14.375-16.43"/>
+</g>
+</svg></a><div class="int-menu-q-l2"><div class="int-menu-l2-fw"><div class="int-menu-q-l2-item"><a href="/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute">Überblick Fakultäten und Institute</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45722"><span>Fakultät für Architektur</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45747"><span>Fakultät für Bauingenieurwissenschaften</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45750"><span>Fakultät für Elektrotechnik und Informationstechnik</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45757"><span>Fakultät für Informatik und Biomedizinische Technik</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45763"><span>Fakultät für Maschinenbau und Wirtschaftswissenschaften</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45767"><span>Fakultät für Mathematik, Physik und Geodäsie</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="https://www.tugraz.at/fakultaeten-und-institute/ueberblick-fakultaeten-und-institute/#c45778"><span>Fakultät für Technische Chemie, Verfahrenstechnik und Biotechnologie</span></a></div></div></div></div><a href="#null"><svg class="int-menu-q-close-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" role="icon" aria-label="Close Menu" version="1.1" xml:space="preserve" height="31.129" width="31.129" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 31.128759 31.12876"><g style="stroke:#000" transform="translate(-282.68 -406.18)"><title>Close Menu</title><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="283.73" y1="436.27" x2="312.77" y2="407.22"/><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="312.77" y1="436.27" x2="283.72" y2="407.23"/></g></svg></a></div></div></div><span class='int-menu-q-l1-after'></span><div class="int-menu-q-l1-item"><a href="/informationen-fuer/zielgruppenportale">Informationen für...<svg shape-rendering="optimizeQuality" class="int-menu-q-open-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="5.2753mm" width="8.7548mm" version="1.1" viewBox="0 0 31.02118 18.692033">
+<g style="stroke-width:2.25" transform="translate(-164.49 -416.85)">
+<path style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-width:2.5;fill:none" d="m165.63 417.99 14.375 16.43 14.375-16.43"/>
+</g>
+</svg></a><div class="int-menu-q-l2"><div class="int-menu-l2-fw"><div class="int-menu-q-l2-item"><a href="/informationen-fuer/zielgruppenportale">Zielgruppenportale</a><div class="int-menu-q-l3"><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/fokus-studium"><span>Studieninteressierte</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/fokus-forschung"><span>Forschende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/lehre-an-der-tu-graz/ueberblick-lehre-an-der-tu-graz"><span>Lehrende</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/informationen-fuer/zielgruppenportale/schuelerinnen-und-schueler"><span>Schülerinnen und Schüler</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/informationen-fuer/zielgruppenportale/internationale"><span>Internationale</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/forschung/kooperieren-mit-der-tu-graz/ueberblick-kooperieren-mit-der-tu-graz"><span>Unternehmen</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studieren-an-der-tu-graz/studienanfaengerinnen-und-studienanfaenger/informationen-zum-studienstart"><span>Studienanfängerinnen und -anfänger</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/studium/studienangebot/universitaere-weiterbildung/life-long-learning-lll"><span>Weiterbildungsinteressierte</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/news-stories/medienservice/aktuelle-meldungen-und-services"><span>Medienvertreterinnen und -vertreter</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/services/services-fuer-absolventinnen-und-absolventen"><span>Alumni</span></a></div></div><span class='int-menu-q-l3-after'></span><div class="int-menu-q-l3-item"><div class="int-menu-q-l3-item-bbox"><a href="/tu-graz/karriere/ueberblick-karriere"><span>Jobinteressierte</span></a></div></div></div></div><a href="#null"><svg class="int-menu-q-close-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" role="icon" aria-label="Close Menu" version="1.1" xml:space="preserve" height="31.129" width="31.129" enable-background="new 0 0 595.28 841.89" y="0px" x="0px" viewBox="0 0 31.128759 31.12876"><g style="stroke:#000" transform="translate(-282.68 -406.18)"><title>Close Menu</title><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="283.73" y1="436.27" x2="312.77" y2="407.22"/><line style="stroke:#000;stroke-linecap:round;stroke-width:2.054;fill:none" x1="312.77" y1="436.27" x2="283.72" y2="407.23"/></g></svg></a></div></div></div></div></div><div id="all-menu-top-table"><div id="all-menu-top-left"><div class="all-menu-top-left-item"><div class="all-menu-top-lang-act"><a href="/home">Home</a></div><div class="all-menu-top-lang-no"><a href="/en/home" title="Switch to English">EN</a></div></div><a href="#0" title="Desktopansicht" alt="Desktopansicht" id="all-menu-top-icon-desktop-link"><svg class="all-menu-top-icon" id="all-menu-top-icon-desktop-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="26.566" width="26.647" version="1.1" viewBox="0 0 26.646891 26.56603">
+<g style="stroke-linejoin:round;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.9;fill:none" stroke-miterlimit="10" transform="translate(.60870 .61372)">
+<path style="stroke-width:1.9;stroke-miterlimit:10" d="m21.5 22.5h1v-1m-12.434 1h-0.566m-2.4887 0h-0.5113m6.5656 0h-0.56561m3.5656 0h-0.56561m3.5113 0h-0.51131m4-6.457v0.45701m0-3.5113v0.51131m0-3.5656v0.56561m0-4v0.61991m0 11.923v0.45701m-18 3v-18h18m-5-4 5 4-5 4m-17 9 4 5 4-5"/>
+</g>
+<g transform="translate(.099767 .10479)">
+<rect id="all-menu-top-icon-desktop-icon-strikethrough" style="stroke-linejoin:round;stroke:#e4154b;stroke-linecap:round;stroke-width:2.515;fill:#e4154b" transform="matrix(.70870 .70551 -.70288 .71131 0 0)" height="1.577" width="32.494" y="-.77860" x="2.4221"/>
+</g>
+</svg></a><div class="all-menu-top-left-item"><a href="http://www.tugraz.at/suche" title="Suche" target="_self"><svg class="all-menu-top-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="26.015" width="26.015" version="1.1" viewBox="0 0 26.01515 26.01515">
+<g style="stroke-linejoin:round;stroke:#000;stroke-miterlimit:10;stroke-width:2;fill:none" stroke-miterlimit="10" transform="translate(1,1)">
+<circle cy="8.5" cx="8.5" r="8" style="stroke-miterlimit:10;stroke-width:2"/>
+<path style="stroke-width:2;stroke-miterlimit:10;stroke-linecap:round" d="m14.156 14.156 9.344 9.344"/>
+</g>
+</svg></a></div></div><div id="all-menu-top-right"><div class="all-menu-top-right-item"><a href="#null" id="int-menu-q-drawer-oc"><svg shape-rendering="optimizeQuality" id="int-menu-q-drawer-icon" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="20" shape-rendering="crispEdges" width="24.103" version="1.1" viewBox="0 0 24.103479 20">
+<g transform="translate(0 -1032.4)">
+<path style="stroke:#000;stroke-linecap:round;stroke-width:2;fill:none" d="m2.0142 1034.4h20.972"/>
+<path style="stroke:#000;stroke-linecap:round;stroke-width:2;fill:none" d="m2.0142 1042.4h20.972"/>
+<path style="stroke:#000;stroke-linecap:round;stroke-width:2;fill:none" d="m2.0142 1050.4h20.972"/>
+</g>
+</svg> Hauptmenü </a></div></div></div></div>
+
+<div id="int-all">
+	<div id="int-header"><div id="int-header-text"><a href="https://www.tugraz.at" title="TU Graz Home" target="_self">TU Graz<br>Graz University of Technology</a></div><div id="int-header-spacer"></div><div id="int-header-logo"><a href="https://www.tugraz.at" title="TU Graz Home" target="_self"><div id="int-header-logo-claim"><div class="int-header-logo-claim-single">WISSEN</div><div class="int-header-logo-claim-single">TECHNIK</div><div class="int-header-logo-claim-single">LEIDENSCHAFT</div></div><svg id="int-header-logo-img" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:space="preserve" height="51.862" width="141.1" version="1.1" viewBox="0 0 141.10001 51.862499"><g transform="matrix(1.25 0 0 -1.25 0 51.862)"><g transform="scale(.1)"><path style="fill:#e4154b" d="m0 103.73h207.45v207.46l-207.45 0.01v-207.47z"/><path style="fill:#e4154b" d="m228.19 103.73h207.46v207.46h-207.46v-207.46z"/><path style="fill:#e4154b" d="m456.41 103.73h207.44v207.46h-207.44v-207.46z"/><path style="fill:#e4154b" d="m103.72 0h207.47v207.46h-207.47v-207.46z"/><path style="fill:#e4154b" d="m352.68 207.46h207.44v207.46h-207.44v-207.46z"/><path style="fill:#231f20" d="m751.04 277.91h-66.426v33.195h171.19v-33.195h-66.407v-173.73h-38.359v173.73"/><path style="fill:#231f20" d="m1048.3 180.22c0-12.461-2.25-23.711-6.72-33.75-4.5-10.039-10.61-18.555-18.36-25.567-7.76-7.031-16.9-12.421-27.503-16.21-10.605-3.809-22.109-5.7036-34.551-5.7036-12.422 0-23.945 1.8946-34.551 5.7036-10.605 3.789-19.824 9.179-27.656 16.21-7.851 7.012-13.984 15.528-18.34 25.567-4.394 10.039-6.582 21.289-6.582 33.75v130.89h38.379v-129.59c0-5.039 0.801-10.351 2.442-15.898 1.64-5.547 4.336-10.664 8.125-15.332s8.789-8.516 15.039-11.523c6.211-3.008 13.926-4.512 23.144-4.512 9.199 0 16.914 1.504 23.145 4.512 6.23 3.007 11.25 6.855 15.039 11.523 3.77 4.668 6.48 9.785 8.12 15.332 1.63 5.547 2.45 10.859 2.45 15.898v129.59h38.38v-130.89"/><path style="fill:#231f20" d="m832.56 75.664c-7.597 3.2812-17.46 4.8632-25.332 4.8632-22.929 0-35.605-14.434-35.605-33.184 0-18.613 12.383-32.637 33.34-32.637 5.351 0 9.59 0.5274 12.969 1.3086v23.867h-20.84v14.414h39.687v-49.297c-10.41-2.6172-21.25-4.707-31.816-4.707-31.797 0-53.906 14.805-53.906 45.742 0 31.348 20.566 48.906 53.906 48.906 11.406 0 20.41-1.4453 28.867-3.8086l-1.27-15.469"/><path style="fill:#231f20" d="m856.2 69.375h16.758v-15.332h0.293c0.84 6.289 8.574 16.914 19.824 16.914 1.836 0 3.828 0 5.782-0.5273v-17.715c-1.68 0.918-5.059 1.4454-8.457 1.4454-15.333 0-15.333-17.832-15.333-27.52v-24.785h-18.867v67.52"/><path style="fill:#231f20" d="m913.75 65.84c7.324 3.1446 17.187 5.1172 25.215 5.1172 22.09 0 31.23-8.5351 31.23-28.457v-8.6523c0-6.8165 0.156-11.934 0.293-16.914 0.137-5.1172 0.41-9.8242 0.84-15.078h-16.602c-0.703 3.5352-0.703 8.0078-0.839 10.098h-0.293c-4.36-7.4618-13.81-11.661-22.38-11.661-12.793 0-25.332 7.207-25.332 20.059 0 10.078 5.195 15.976 12.383 19.258 7.187 3.2812 16.464 3.9453 24.355 3.9453h10.41c0 10.879-5.195 14.551-16.328 14.551-8.008 0-16.035-2.8907-22.363-7.3438l-0.586 15.078zm22.11-52.715c5.782 0 10.274 2.3633 13.223 6.0352 3.105 3.8086 3.945 8.6523 3.945 13.906h-8.164c-8.437 0-20.957-1.3086-20.957-11.68 0-5.7617 5.195-8.2617 11.953-8.2617"/><path style="fill:#231f20" d="m985.69 69.375h57.422v-14.414l-36.04-39.473h37.31v-13.633h-60.235v14.297l36.715 39.59h-35.172v13.633"/><path style="fill:#e4154b" d="m1059.6 0h69.102v69.121h-69.102v-69.121z"/></g></g></svg></a></div></div>
+	<div id="int-start">
+		
+
+<div id="start-container">
+	<div id="start-video-container">
+		<h1 id="start-title-accessibility">TUGraz</h1>
+		<span class="video-wrap">
+			<video disablePictureInPicture playsinline autoplay muted loop id="start-video" poster="https://www.tugraz.at/fileadmin/user_upload/tugrazInternal/Home/Video-Platzhalter-1-by-montenero.jpg">
+				<source src="/fileadmin/user_upload/tugrazInternal/Home/TU_Graz_Headervideo_01.mp4" type="video/mp4">
+			</video>
+			<div id="start-video-pause">
+			</div>
+		</span>
+	</div>
+	<div id="start-link-container" >
+		<a href="/studium/studieren-an-der-tu-graz/studieninteressierte/mein-studium-an-der-tu-graz-starten" class="int-link-internal" target="">
+			<span>Studieren</span>
+		</a>
+		<a href="/studium/international-studieren/internationale-studierende/internationale-studierende-an-der-tu-graz" class="int-link-internal" target="">
+			<span>International Students</span>
+		</a>
+		<a href="/forschung/forschung-an-der-tu-graz/ueberblick-forschung-an-der-tu-graz" class="int-link-internal" target="">
+			<span>Forschung</span>
+		</a>
+		<div class="flex-break"></div>
+		<a href="/forschung/kooperieren-mit-der-tu-graz/ueberblick-kooperieren-mit-der-tu-graz" class="int-link-internal" target="">
+			<span>Kooperieren</span>
+		</a>
+		<a href="/tu-graz/karriere/ueberblick-karriere" class="int-link-internal" target="">
+			<span>Karriere</span>
+		</a>
+	</div>
+</div>
+		<div class="int-start-news">
+			<div id="int-start-news-teaser-container">
+				<a id="int-start-news-teaser" href="#int-start-news-top">NEWS</a>
+				AUS DER TU GRAZ
+			</div>
+
+			
+
+			<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  				<defs>	
+					<filter id="round">
+					  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+					  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo" />
+					  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+					</filter>
+				</defs>
+			</svg>
+
+			<div class="int-start-news-container" >
+				<span class="start-anchor" id="int-start-news-top"></span>
+				
+    
+		    
+
+		            <span id="c617767"></span>
+		            
+		            
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+    
+        
+
+
+    
+
+
+
+    <!--TYPO3SEARCH_end-->
+    
+            
+    
+        
+
+<div class="frontapge_news_big">
+	<div class="frontpage_news_image">
+        <a title="Neues Masterstudium „Data Science“ an TU Graz und Uni Graz" href="/tu-graz/services/news-stories/tu-graz-news/einzelansicht/article/neues-gemeinsames-masterstudium-data-science-an-tu-graz-und-uni-graz">
+		  <img src="https://www.tugraz.at/fileadmin/_processed_/5/a/csm_Banner_F-LU-21-BTF-Inff-Lunghammer-tugraz-043_4f30e18ac6.jpg" width="960" height="480" alt="Vier Menschen stehen in einem Hörsaal vor einer Tafel, auf der mathematische Formeln angeschrieben stehen." title="Masterstudium Data Science" />
+        </a>
+    </div>
+    <h3>
+        <a class="int-link-internal" title="Neues Masterstudium „Data Science“ an TU Graz und Uni Graz" href="/tu-graz/services/news-stories/tu-graz-news/einzelansicht/article/neues-gemeinsames-masterstudium-data-science-an-tu-graz-und-uni-graz"><span>Neues Masterstudium „Data Science“ an TU Graz und Uni Graz</span></a>
+    </h3>
+</div>
+
+    
+
+        
+    <!--TYPO3SEARCH_begin-->
+
+
+    
+
+
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+		        
+		
+
+
+    
+		    
+
+		            <span id="c546052"></span>
+		            
+		            
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+    
+        
+
+
+    
+
+
+
+    <!--TYPO3SEARCH_end-->
+    
+            
+    
+        
+
+<div class="frontapge_news_small">
+	<div class="frontpage_news_image">
+        <a title="Das Spiel mit Materialeigenschaften" href="/tu-graz/services/news-stories/planet-research/einzelansicht/article/das-spiel-mit-materialeigenschaften">
+		  <img src="https://www.tugraz.at/fileadmin/_processed_/c/d/csm_anna-galler-by-lunghammer-tugraz_2fa8773f3b.jpg" width="470" height="225" alt="Bildquelle: Lunghammer - TU Graz" title="Anna Galler steht am Whiteboard und schreibt. " />
+        </a>
+    </div>
+    <h3>
+        <a class="int-link-internal" title="Das Spiel mit Materialeigenschaften
+" href="/tu-graz/services/news-stories/planet-research/einzelansicht/article/das-spiel-mit-materialeigenschaften"><span>Das Spiel mit Materialeigenschaften</span></a>
+    </h3>
+</div>
+
+    
+
+        
+    <!--TYPO3SEARCH_begin-->
+
+
+    
+
+
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+		        
+		
+
+
+    
+		    
+
+		            <span id="c617911"></span>
+		            
+		            
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+    
+        
+
+
+    
+
+
+
+    <!--TYPO3SEARCH_end-->
+    
+            
+    
+        
+
+<div class="frontapge_news_small">
+	<div class="frontpage_news_image">
+        <a title="BME-Talk #1: Assistenztechnologien bei Lähmungen" target="_blank" href="https://www.tugraz.at/tu-graz/services/news-stories/tu-graz-events/eventdetails/article/bme-talk-1">
+		  <img src="https://www.tugraz.at/fileadmin/_processed_/e/5/csm_csm_bme-talk-1_quer_387476d370_6380646a43.jpg" width="470" height="225" alt="" title="Assistenztechnologien bei Lähmungen. Bildquelle: CSBME - TU Graz" />
+        </a>
+    </div>
+    <h3>
+        <a class="int-link-external" title="BME-Talk #1: Assistenztechnologien bei Lähmungen
+" target="_blank" href="https://www.tugraz.at/tu-graz/services/news-stories/tu-graz-events/eventdetails/article/bme-talk-1"><span>BME-Talk #1: Assistenztechnologien bei Lähmungen</span></a>
+    </h3>
+</div>
+
+    
+
+        
+    <!--TYPO3SEARCH_begin-->
+
+
+    
+
+
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+		        
+		
+
+
+    
+		    
+
+		            <span id="c617179"></span>
+		            
+		            
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+    
+        
+
+
+    
+
+
+
+    <!--TYPO3SEARCH_end-->
+    
+            
+    
+        
+
+<div class="frontapge_news_big">
+	<div class="frontpage_news_image">
+        <a title="Dossier: Wie Robotik-Forschung unseren Alltag verändert" href="/tu-graz/services/news-stories/tu-graz-dossiers/robotik">
+		  <img src="https://www.tugraz.at/fileadmin/_processed_/0/8/csm_Robotik-by-lunghammer-tugraz_0711ee123b.jpg" width="960" height="480" alt="Ein kleiner Roboter am Boden" title="Robotik. Bildquelle: Lunghammer - TU Graz" />
+        </a>
+    </div>
+    <h3>
+        <a class="int-link-internal" title="Dossier: Wie Robotik-Forschung unseren Alltag verändert" href="/tu-graz/services/news-stories/tu-graz-dossiers/robotik"><span>Dossier: Wie Robotik-Forschung unseren Alltag verändert</span></a>
+    </h3>
+</div>
+
+    
+
+        
+    <!--TYPO3SEARCH_begin-->
+
+
+    
+
+
+		            
+		                
+
+
+
+		            
+		            
+		                
+
+
+
+		            
+		            
+
+		        
+		
+
+
+			</div>
+		</div>
+		<div style="clear: both"></div>
+		<div class="int-start-morenews-container">
+			<a class="int-start-allnews-link int-link-internal" href="/tu-graz/services/news-stories/news-stories-uebersicht">Alle News der TU Graz</a>
+		</div>
+	</div>
+	<div style="clear: both"></div>
+</div>
+
+
+<div id="all-footer"><div id="all-footer-height"><div id="all-footer-content"><div id="all-footer-content-bbox">
+    
+		    
+		        	
+		        	
+				            <div id="c34020" class="csc-default frame frame-default frame-type-text frame-layout-0">
+				                
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+    
+        <header>
+            
+
+    
+            
+                
+
+    
+            <h2 class="">
+                Die TU Graz
+            </h2>
+        
+
+
+
+            
+        
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+				                
+				                
+
+    <p>Technische Universität Graz<br> Rechbauerstraße 12<br> 8010 Graz<br> Tel.: +43 316 873 0<br> Fax: +43 316 873 6009<br> E-Mail: <a href="javascript:linkTo_UnCryptMailto(%27ocknvq%2CkphqBvwitcb0cv%27);" class="int-link-mail">info<span style="display: none;">noSpam</span>@tugraz.at</a><br> <a href="/home" class="int-link-internal">www.tugraz.at</a><br> <a href="https://tu4u.tugraz.at/campusplan/" target="_blank" class="int-link-external">Campusplan</a><br> Öffnungszeiten: 6 bis 20 Uhr</p>
+<p><a href="https://www.tuaustria.ac.at/" target="_blank" rel="noreferrer"><img alt="TU Austria Logo" height="30" src="https://www.tugraz.at/fileadmin/_migrated/RTE/RTEmagicC_TU_Austria_Logo.png.png" width="167"></a></p>
+<p><a href="https://www.unite-university.eu/" target="_blank" rel="noreferrer"><img alt="unite-university Logo" height="50" src="https://www.tugraz.at/fileadmin/_processed_/6/9/csm_unite_logo_6e4c149fb9.png" width="166" loading="lazy"></a></p>
+
+
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+
+
+				                
+				            </div>
+		        		
+		        
+		
+
+<span></span>
+    
+		    
+		        	
+		        	
+				            <div id="c34018" class="csc-default frame frame-default frame-type-text frame-layout-0">
+				                
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+    
+        <header>
+            
+
+    
+            
+                
+
+    
+            <h2 class="">
+                Informations- und Servicestellen
+            </h2>
+        
+
+
+
+            
+        
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+				                
+				                
+
+    <p>Campus Alte Technik<br> Rechbauerstraße 12<br> Tel.: +43 316 873 6560<br> <a href="javascript:linkTo_UnCryptMailto(%27ocknvq%2Crqtvkgt0cnvg%5C%2FvgejpkmBvwitcb0cv%27);" class="int-link-mail">portier.alte-technik<span style="display: none;">noSpam</span>@tugraz.at</a></p>
+<p>Campus Neue Technik<br> Stremayrgasse 16<br> Tel.: +43 316 873 6570<br> <a href="javascript:linkTo_UnCryptMailto(%27ocknvq%2Crqtvkgt0pgwg%5C%2FvgejpkmBvwitcb0cv%27);" class="int-link-mail">portier.neue-technik<span style="display: none;">noSpam</span>@tugraz.at</a></p>
+<p>Campus Inffeldgasse<br> Inffeldgasse 25D<br> Tel.: +43 316 873 6580<br> <a href="javascript:linkTo_UnCryptMailto(%27ocknvq%2Crqtvkgt0kphhgnfBvwitcb0cv%27);" class="int-link-mail">portier.inffeld<span style="display: none;">noSpam</span>@tugraz.at</a></p>
+
+
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+
+
+				                
+				            </div>
+		        		
+		        
+		
+
+<span></span>
+    
+		    
+		        	
+		        	
+				            <div id="c34016" class="csc-default frame frame-default frame-type-text frame-layout-0">
+				                
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+    
+        <header>
+            
+
+    
+            
+                
+
+    
+            <h2 class="">
+                TU Graz-Tools
+            </h2>
+        
+
+
+
+            
+        
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+				                
+				                
+
+    <p><a href="https://online.tugraz.at/" target="_blank" class="int-link-external" rel="noreferrer">Campus-Management-System<br> TUGRAZonline</a><br> <a href="https://tu4u.tugraz.at/" target="_blank" class="int-link-external">Intranet TU4U</a><br> <a href="https://tc.tugraz.at/" target="_blank" class="int-link-external" rel="noreferrer">E-Learning-Plattform<br> TeachCenter</a></p>
+<h2>Services</h2>
+<p><a href="/tu-graz/services/news-stories/news-stories-uebersicht" target="_self" class="int-link-internal">News+Stories</a><br> <a href="https://ub.tugraz.at/" target="_blank" class="int-link-internal" rel="noreferrer">Bibliothek</a><br> <a href="https://www.tugraz.at/go/jobs" target="_self" class="int-link-internal">Offene Stellen</a><br> <a href="/tu-graz/services/news-stories/medienservice/aktuelle-meldungen-und-services" target="_self" class="int-link-internal">Medienservice</a><br> <a href="/tu-graz/services/news-stories/tu-graz-events" target="_self" class="int-link-internal">Events</a></p>
+<h2>Follow TU Graz</h2>
+<p><a href="https://www.tugraz.at/go/follow" target="_blank" class="int-link-internal">www.tugraz.at/go/follow</a></p>
+<p><a href="https://www.instagram.com/tugraz_official/" target="_blank" class="all-footer-content-social-link" rel="noreferrer"><img alt="Die TU Graz auf Instagram" src="https://www.tugraz.at/fileadmin/_processed_/d/5/csm_Instagram-Icon_34f477f020.png" width="30" height="30" loading="lazy"></a><a href="https://twitter.com/tugraz" target="_blank" class="all-footer-content-social-link footer-social-padding" rel="noreferrer"><img alt="Die TU Graz auf Twitter" src="https://www.tugraz.at/fileadmin/_processed_/e/9/csm_Twitter-Icon_7c4bfdf920.png" width="30" height="30" loading="lazy"></a><a href="https://www.facebook.com/tugraz/" target="_blank" class="all-footer-content-social-link" rel="noreferrer"><img alt="Die TU Graz auf Facebook" src="https://www.tugraz.at/fileadmin/_processed_/e/5/csm_Facebook-Icon_3d865f0c2f.png" width="30" height="30" loading="lazy"></a> <a href="https://www.tiktok.com/@tugraz_official" target="_blank" class="all-footer-content-social-link" rel="noreferrer"><img alt="Die TU Graz auf TikTok" src="https://www.tugraz.at/fileadmin/_processed_/c/2/csm_TikTok-Icon_26bc31cea0.png" width="30" height="30" loading="lazy"></a></p>
+<p><a href="http://linkedin.com/company/tugraz1811" target="_blank" class="all-footer-content-social-link" rel="noreferrer"><img alt="Die TU Graz auf LinkedIn" src="https://www.tugraz.at/fileadmin/_processed_/d/9/csm_LinkedIn-Icon_cc566e1dec.png" width="30" height="30" loading="lazy"></a><a href="https://www.youtube.com/tugraz" target="_blank" class="all-footer-content-social-link" rel="noreferrer"><img alt="Die TU Graz auf Youtube" src="https://www.tugraz.at/fileadmin/_processed_/0/1/csm_YouTube-Icon_b4c6e98ef5.png" width="30" height="30" loading="lazy"></a> <a href="https://www.tugraz.at/go/telegram" target="_blank" class="all-footer-content-social-link"> <img alt="Die TU Graz auf Telegram" src="https://www.tugraz.at/fileadmin/_processed_/6/5/csm_Telegram-Icon_2a350d456c.png" width="30" height="30" loading="lazy"></a> <a href="https://rss.tugraz.at/news.xml" target="_blank" class="all-footer-content-social-link" rel="noreferrer"> <img alt="TU Graz RSS" src="https://www.tugraz.at/fileadmin/templates/default/images/icons/RSS-Icon.png" width="30" height="30" loading="lazy"></a></p>
+
+
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+
+
+				                
+				            </div>
+		        		
+		        
+		
+
+<span></span>
+    
+		    
+		        	
+		        	
+				            <div id="c34014" class="csc-default frame frame-default frame-type-text frame-layout-0">
+				                
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+    
+        <header>
+            
+
+    
+            
+                
+
+    
+            <h2 class="">
+                www.tugraz.at
+            </h2>
+        
+
+
+
+            
+        
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+				                
+				                
+
+    <p><a href="https://www.tugraz.at/impressum" target="_blank" class="int-link-internal">Impressum</a><br> <a href="https://www.tugraz.at/datenschutzerklaerung" target="_blank" class="int-link-internal">Datenschutzerklärung</a><br> <a href="/ueber-diese-seite/barrierefreiheitserklaerung" class="int-link-internal">Barrierefreiheitserklärung</a><br> <a href="https://www.tugraz.at/go/whistleblowing" target="_blank" class="int-link-internal">Briefkasten für anonyme Hinweise</a></p>
+<h2>Barrierefreiheit</h2>
+<p>Tipp:<br> Schrift größer / kleiner mit den<br> Tasten Strg + und Strg -</p>
+
+
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+
+
+				                
+				            </div>
+		        		
+		        
+		
+
+<span></span>
+    
+		    
+		        	
+		        	
+				            <div id="c440223" class="csc-default frame frame-default frame-type-html frame-layout-0">
+				                
+				                
+				                    
+
+
+
+				                
+				                
+				                
+
+    <style>
+#c34020 a {
+    border-bottom: 0;
+}
+#c34020 a:hover, #c34020 a:focus {
+    background-color: inherit;
+}
+</style>
+
+
+				                
+				                    
+
+
+
+				                
+				                
+				                    
+
+
+
+				                
+				            </div>
+		        		
+		        
+		
+
+<span></span></div></div><div id="all-footer-back"></div></div></div>
+
+<div id="cookie-consent-popup">
+  <a id="cookie-consent-accept-all" href="#">Alle Cookies akzeptieren</a>
+  <a id="cookie-consent-accept" href="#">Präferenzen speichern</a>
+  <div id="cookie-consent-options">
+  Cookie-Kategorien:
+    <label for="cookie-consent-essential"><input type="checkbox" id="cookie-consent-essential" checked="checked" disabled="true" />Funktionale</label>
+    <label for="cookie-consent-tracking"><input type="checkbox" id="cookie-consent-tracking" />Analyse</label>
+    <label for="cookie-consent-marketing"><input type="checkbox" id="cookie-consent-marketing" />Werbe</label>
+    </div>
+    Wir verwenden Cookies, um Ihnen in Zukunft weiterhin das bestmögliche Service zur Verfügung stellen zu können. Nähere Informationen sowie Widerrufsmöglichkeiten finden Sie in der <a href="https://www.tugraz.at/datenschutzerklaerung"  target="_blank" >Datenschutzerklärung</a>.</div>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Js/baguetteBox.js?1693213460"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Js/darksiteChecker.js?1693213460"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraz/Resources/Public/Js/cookie_consent.js?1693213460"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/External/news.js?1693213434"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateexternal/Resources/Public/Js/External/email.js?1693213432"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/menu.js?1701869490"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/helper.js?1701869490"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/External/piwik.js?1693213434"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/External/facebook.js?1693213434"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/External/googleAnalytics.js?1693213434"></script>
+<script src="https://www.tugraz.at/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/qmenu.js?1693213434"></script>
+<script src="/typo3conf/ext/tugraztemplateinternal/Resources/Public/Js/startVideo.js?1709808581"></script>
+
+
+</body>
+</html>

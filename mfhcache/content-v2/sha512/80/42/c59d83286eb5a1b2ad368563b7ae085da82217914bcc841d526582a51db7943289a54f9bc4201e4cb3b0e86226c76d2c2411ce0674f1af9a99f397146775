@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><!--*- nxml -*-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://www.w3.org/2002/12/cal/cardcaletc
+		 http://purl.org/NET/erdf/profile">
+  <title>Dan Connolly, W3C</title>
+  <link rel="schema.owl" href="https://www.w3.org/2002/07/owl#" />
+  <link rel="schema.dc" href="https://purl.org/dc/elements/1.1/" />
+  <link rel="schema.dcq" href="https://purl.org/dc/terms/" />
+  <link rel="schema.foaf" href="https://xmlns.com/foaf/0.1/" />
+  <link rel="schema.rdfs" href="https://www.w3.org/2000/01/rdf-schema#" />
+  <link rel="schema.geo" href="https://www.w3.org/2003/01/geo/wgs84_pos#" />
+  <link rel="transformation" href="https://www.w3.org/2002/12/cal/glean-hcal.xsl" />
+  <link rel="base" href="https://www.w3.org/People/Connolly/" /> <!-- hmm... how to get base URI to GRDDL txforms? -->
+
+<!-- @@
+  <link rel="stylesheet" href="http://www.w3.org/StyleSheets/base" />
+-->
+
+  <link rel="openid.server" href="https://pip.verisignlabs.com/server" />
+  <link rel="openid.delegate" href="https://connolly.pip.verisignlabs.com/" />
+
+  <style type="text/css">
+/* some stuff cribbed from http://www.w3.org/Guide/guide2006.css */
+
+a:link img, a:visited img {
+   border-style: none
+}
+a { text-decoration: none }
+
+p { text-indent : 1em }
+.misc { font-size: smaller }
+.notabene { font-size: smaller }
+
+.logo { float: left; margin-right: 1em  }
+.nav { text-align: right; font-size: smaller; margin-top: 1em }
+
+img.photo {
+ float: right;
+ margin: 0.6em
+ }
+
+
+.sidebar {
+ float: right;
+ width: 35%;
+ margin: auto 1em auto auto;
+ font-size: smaller;
+ border: 1px dotted;
+ padding: 3px
+ }
+.sidebar h2 { font-size: smaller }
+
+/* hanging indent */
+.sched { list-style: none }
+.sched li { margin-left: 2em; text-indent: -2em; }
+.sched li { margin-top: .5ex }
+.sched li * { margin-left: 0; text-indent: 0; }
+
+#contact { clear: both }
+.bio { clear: left }
+
+
+  </style>
+</head>
+
+<body>
+
+
+<div class="aboutme organizer" id="me">
+<div class="vcard">
+  <img alt="Dan in 1997" class="photo foaf-img"
+      src="9704/dan_c_thumb.jpg"
+      />
+  <h1 class="fn foaf-name">Dan Connolly</h1>
+
+  <a class="url" rel="foaf-homepage" href="https://www.w3.org/People/Connolly/"><!-- kludge --></a>
+
+  </div>
+ </div>
+
+<p>June 2010: <cite><a href="../../QA/2010/06/thanks_for_a_great_15_years_at.html">Thanks for a great 15 years at W3C</a></cite>.</p>
+
+<p>I expect to continue to visit <a href="https://www.w3.org/2001/sw/interest/#swig_chan">#swig</a> and the
+<a href="http://freenode.net/">FreeNode</a> developer community as <a
+href="irc://irc.freenode.net/DanC,isnick" rel="foaf-nick">DanC</a>, and I
+hope to surface in <cite><a href="http://www.madmode.com/">Mad
+Mode</a></cite> from time to time (for example: <cite><a
+href="http://www.madmode.com/2010/06/new-firehose-to-drink-from.html">A
+new firehose to drink from: bioinformatics</a></cite>).
+</p>
+
+<p>My <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy">pgp</a> key is <a
+href="http://pgp.mit.edu:11371/pks/lookup?op=get&amp;search=0x6E52C29E"
+>6E52C29E</a>.  I <a
+href="http://www.gnupg.org/gph/en/manual.html#AEN329" >renew</a> it
+from time to time.
+<small><a href="https://www.w3.org/Search/Mail/Public/advanced_search?keywords=D3C2+887B+0F92+6005&amp;hdr-1-name=subject&amp;hdr-1-query=&amp;hdr-2-name=from&amp;hdr-2-query=connolly%40w3.org&amp;hdr-3-name=message-id&amp;hdr-3-query=&amp;period_month=&amp;period_year=&amp;index-type=g&amp;index-grp=Public__FULL&amp;type-index=&amp;resultsperpage=50&amp;sortby=date-asc">Over 2500 messages</a> to public W3C mailing lists going back to
+October 2004 bear the fingerprint, <code>D3C2 887B 0F92 6005 C541 0875
+0F91 96DE 6E52 C29E</code>, establishing a preponderance of evidence (as
+discussed in <a href="https://www.w3.org/2002/03/key-free-trust.html">Reagle's 2002 article</a>).</small></p>
+
+<div id="contact">
+<h3>Other W3C Team Members to Contact</h3>
+
+<p>As of June 2010, these are some other team members responsible
+for things I used to work on:</p>
+
+<dl>
+<dt>HTML Standards (tags and attributes)</dt>
+<dd>In the <a href="../../html/wg/">HTML Working Group</a>, the W3C team
+contact is <a href="../all#mike">Mike Smith</a> (who works near
+Tokyo), and the Domain Lead (manager) is <a href="../all#plh">Philippe
+Le Hégaret</a> (near Boston).
+</dd>
+
+<dt>HTML Validation Service</dt>
+
+<dd>Ted Guild (Boston) and various other members of the W3C systems team
+run the validation services. See the <a
+href="http://lists.w3.org/Archives/Public/www-validator/">www-validator</a>
+mailing list for discussion and support and <a
+href="http://lists.w3.org/Archives/Public/public-qa-dev/">public-qa-dev</a>
+for development.</dd>
+
+<dt>Technical Architecture of the Web</dt>
+<dd>In the W3C Technical Architecture Group (<a
+href="/2001/tag/">TAG</a>), which includes work related to URIs/URLs
+and HTTP, the team contact is <a href="../all#ylafon">Yves Lafon</a> (Nice),
+and the chair is <a href="../all#timbl">Tim Berners-Lee</a> (Boston).
+</dd>
+
+<dt>Semantic Web Standards: RDF, OWL, SPARQL, GRDDL</dt>
+
+<dd>The leader of the <a href="../../2001/sw/#activity">W3C Semantic
+Web Activity</a> is <a href="../all#ivan" >Ivan Herman</a>
+(Amsterdam).  Contact <a href="../all#sandro">Sandro Hawke</a>
+(Boston) or follow <a
+href="http://lists.w3.org/Archives/Public/public-owl-dev/"
+>public-owl-dev</a> for OWL work.  For SPARQL work, contact <a
+href="../all#sandro" >Eric Prud'hommeaux</a> (Boston) or follow <a
+href="http://lists.w3.org/Archives/Public/public-sparql-dev/"
+>public-sparql-dev</a>. For GRDDL work, contact <a
+href="../all#hhalpin">Harry Halpin</a> (Edinburgh), and for all of the
+above, plus microformats, linked data, and related topics, follow <a
+href="http://lists.w3.org/Archives/Public/semantic-web/"
+>semantic-web@w3.org</a>.
+</dd>
+
+<dt>XML</dt>
+<dd>In W3C's <a href="https://www.w3.org/XML/">XML Working Groups</a>,
+the team contacts are <a href="../all#cmsmcq">Michael Sperberg-McQueen</a> (Santa Fe)
+and <a href="../all#liam">Liam Quin</a> (Toronto).
+</dd>
+</dl>
+
+<p>For interview requests, membership questions, etc.,
+see <a href="../../Consortium/contact">About W3C: Contact</a>.</p>
+</div>
+<hr />
+
+<div id="bio"><h2>Bio, with a Note on Collaboration</h2>
+
+<p>My work on HTML started a couple years after graduating from
+U.T. Austin, with messages such as <cite><a
+href="http://ksi.cpsc.ucalgary.ca/archives/WWW-TALK/www-talk-1992.messages/144.html"
+>rethinking the HTML DTD</a></cite> to www-talk in July 1992:</p>
+
+<blockquote>
+<p>I have been troubled by the fact that HTML documents look like SGML documents,
+but technically, they are not. So I have tried to come up with a DTD that
+captures the features of HTML.</p>
+
+<p>I have come to the conclusion that HTML has very little structure, and that this
+is by design.</p>
+
+<p>I am beginning to wonder how much the needs of WWW have in common with the
+features of SGML.</p>
+</blockquote>
+
+<p>In 2006, I was invited back to U.T. Austin by the President of
+the university, and the person who introduced me to the <a
+href="http://www.lib.utexas.edu/symposium/">symposium</a> had this to say:</p>
+
+<blockquote>
+<p>Dan Connolly is a
+ research scientist at MIT Computer Science and AI Lab –
+ CSAIL – and a member of the technical staff of the
+ Worldwide Web Consortium, also known as W3C, which
+ develops interoperable technologies, specifications,
+ guidelines, software, et cetera, to lead the web, as it
+ says, to its full potential.
+</p><p>
+            In particular, he's a member of the Semantic
+ Web Coordination Group established to serve a leadership
+ role in both the design of enabling specifications and
+ technologies that support the automation, integration and
+ reuse of data.
+</p><p>
+            He is, I'm glad to say, a UT graduate from the
+ CS department.  He's authored several important papers and
+ worked closely with Tim Berners-Lee on semantic web
+ technologies and policy issues.
+</p><p>
+            From '95 to '97, and this is definitely worth
+ noting, during the <a href="https://en.wikipedia.org/wiki/History_of_the_web_browser#Late_1990s:_Microsoft_vs_Netscape">struggle between Microsoft's Internet
+ Explorer and Netscape Navigator</a>, Dan chaired the working
+ group which ensured that HTML remained an open standard,
+ and for that, he was named by Interactive Magazine in '97
+ as one of the 25 unsung heroes of the web.
+</p>
+</blockquote>
+
+<h3>Details</h3>
+
+<ul>
+<li><a href="misc/vita">resume/vita</a>:  
+Computer Science degree from the <a
+href="http://www.utexas.edu/">University of Texas at Austin</a>,
+Software Engineer at a supercomputer company (Convex) and a start-up (Dazel),
+then W3C work on HTML, XML,
+<a href="http://www.linkedin.com/in/connollydan">etc.</a>
+Meanwhile, some MIT research
+(research
+interest: investigating the value of formal descriptions of complex
+systems like the Web, especially in the consensus-building
+process).
+</li>
+
+<li><a rel="foaf-publications"
+ href="pubs">publications/writings</a>: a few academic
+publications, plus misc articles on
+programming, early design of the web, collaboration,
+and standards
+</li>
+
+<li><a id="travl" href="events/">presentations, appearances, and
+events</a> on HTML, XML, microformats, security, formal systems,
+Internet protocols (IETF), python programming, etc. (with some
+photos).</li>
+
+</ul>
+</div>
+
+
+
+<hr />
+<address>
+  <a rel="foaf-primaryTopic" href="#me">Dan Connolly</a><br />
+  created <span class="dcq-created" title="1994-02">Feb 1994</span><br />
+  Copyright 1994-2010 W3C. <a rel="license dcq-license" href="https://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231">some rights reserved</a>.<br />
+  <small class="owl-versionInfo">$Revision: 1.563 $ of <span class="dcq-modified">$Date: 2011/08/20 22:57:17 $</span></small><br />
+</address>
+
+
+</body>
+</html>

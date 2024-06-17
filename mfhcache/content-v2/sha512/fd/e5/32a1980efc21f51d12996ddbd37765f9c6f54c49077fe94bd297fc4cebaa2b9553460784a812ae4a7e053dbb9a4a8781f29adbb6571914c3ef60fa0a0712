@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #9a4aff} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<link rel="stylesheet" href="https://surroundaustralia.com/sites/default/files/fontyourface/local_fonts/spartan_mb_regular/font.css" media="all" />
+<link rel="icon" href="/sites/default/files/surround-aus-favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://surroundaustralia.com/carbon-data-difference" />
+<link rel="shortlink" href="https://surroundaustralia.com/node/103" />
+
+    <title>Carbon Data is the Difference | Surround</title>
+    <link rel="stylesheet" media="all" href="/libraries/superfish/css/superfish.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/webform/css/webform.element.flexbox.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/ajax-progress.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/autocomplete-loading.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tabledrag.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/webform/css/webform.form.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/webform/css/webform.element.details.toggle.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/webform/css/webform.element.message.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/eu_cookie_compliance/css/eu_cookie_compliance.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/themes/contrib/radix/assets/css/radix.style.css?s4rq0o" />
+<link rel="stylesheet" media="all" href="/themes/custom/surround_australia/assets/css/surround_australia.style.css?s4rq0o" />
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJS6QM9QH5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EJS6QM9QH5');
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZJT6ZW');</script>
+<!-- End Google Tag Manager -->
+
+  </head>
+  <body class="fontyourface">
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZJT6ZW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    	<div class="page campaign-page page-color--white">
+	
+
+
+<nav class="navbar navbar-expand-lg justify-content-between navbar-dark  bg-dark main-navbar">
+      <div class="container">
+  
+  							  
+  <div class="block block--surround-australia-branding">
+
+  
+    
+
+    
+  <a href="/" class="navbar-brand d-flex align-items-center " aria-label="">
+            <img src="/themes/custom/surround_australia/logo.svg" width="auto" height="84" alt="Surround logo" class="mr-2" />
+
+        
+  </a>
+
+
+  </div>
+
+
+					
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse">
+    							<div class="mr-auto">
+					
+				</div>
+					
+    							  
+  <div class="block block--mainnavigation">
+
+  
+    
+
+      
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none nav navbar-nav">
+  
+<li id="main-standardfront-page" class="active-trail sf-depth-1 nav-item sf-no-children"><a href="/" class="is-active sf-depth-1 nav-link">Home</a></li><li id="main-menu-link-content26ed766d-31ef-44b0-973c-e16bf2e80602" class="sf-depth-1 nav-item sf-no-children"><a href="/about-us-0" class="sf-depth-1 nav-link">About Us</a></li><li id="main-menu-link-contente29b12b6-3e23-440a-a3db-80c6aaa5459a" class="sf-depth-1 nav-item sf-no-children"><a href="/case-studies" class="sf-depth-1 nav-link">Case Studies</a></li><li id="main-menu-link-content9689bbf3-6f1a-4a18-90a1-918f52b886f4" class="sf-depth-1 nav-item menuparent"><a href="https://surroundaustralia.com/product-strategy-introduction" class="sf-depth-1 nav-link sf-external menuparent">Products</a><ul><li id="main-menu-link-content919f178a-ca29-4ea1-8ebd-a97e33d68b0a" class="sf-depth-2 nav-item sf-no-children"><a href="/product-strategy-introduction" class="sf-depth-2 nav-link">Product Strategy Introduction</a></li><li id="main-menu-link-content087acc32-2f6d-4a84-9f75-adea0b67ad13" class="sf-depth-2 nav-item menuparent"><a href="/offerings" class="sf-depth-2 nav-link menuparent">Offerings</a><ul><li id="main-menu-link-content09e462fe-2236-49d3-aef5-5a41c41e4524" class="sf-depth-3 nav-item sf-no-children"><a href="/SURROUND-Ontology-Platform" class="sf-depth-3 nav-link">SURROUND Ontology Platform (SOP)</a></li><li id="main-menu-link-contenta597c15d-0caf-4a63-bf7f-b4b72ec02e20" class="sf-depth-3 nav-item sf-no-children"><a href="/sort-robot" class="sf-depth-3 nav-link">SORT Robot</a></li><li id="main-menu-link-content2e0799b8-49fb-4d4c-9452-3408499c7a4c" class="sf-depth-3 nav-item sf-no-children"><a href="/explorobot" class="sf-depth-3 nav-link">ExploRobot</a></li><li id="main-menu-link-contentc2567228-7a2d-418e-8009-b4ab9d2d2747" class="sf-depth-3 nav-item sf-no-children"><a href="/enquirobot" class="sf-depth-3 nav-link">EnquiRobot</a></li><li id="main-menu-link-content2b03a9e3-ad92-44eb-a898-61138f55601e" class="sf-depth-3 nav-item sf-no-children"><a href="/knowledge-curation-kc" class="sf-depth-3 nav-link">Knowledge Curation (KC)</a></li><li id="main-menu-link-contentc3d3b806-5e9f-4523-addc-3bba2f4edecd" class="sf-depth-3 nav-item sf-no-children"><a href="/vocabulary-curation-vc" class="sf-depth-3 nav-link">Vocabulary Curation (VC)</a></li></ul></li></ul></li><li id="main-menu-link-content11bcb6e1-2c5f-44db-bbb7-f39f735a703f" class="sf-depth-1 nav-item sf-no-children"><a href="/contact-us" class="sf-depth-1 nav-link">Contact</a></li>
+</ul>
+
+  
+  </div>
+<div class="search-box">
+    <div class="search-box-link">
+        <span class="inactive"><img alt="Search" src="/themes/custom/surround_australia/img/magnify.svg"></span>
+        <span class="active"><img alt="Close search" src="/themes/custom/surround_australia/img/x-lg.svg"></span>
+    </div>
+    <div class="search-box-form">
+        <form action="/search/node">
+            <input type="text" name="keys" placeholder="Search...">
+            <button type="submit"><img alt="Search" src="/themes/custom/surround_australia/img/magnify-dark.svg"></button>
+        </form>
+    </div>
+</div>
+
+					  </div>
+
+      </div>
+  </nav>
+  
+	<main class="pt-5 pb-5">
+		
+					<div class="page__content">
+				  <div data-drupal-messages-fallback class="hidden"></div>
+
+  <div class="block block--surround-australia-content">
+
+  
+    
+
+      <article data-history-node-id="103" role="article" about="/carbon-data-difference" class="node node--promoted campaign campaign--full">
+  
+  
+
+      
+      <div class="campaign__field-paragraphs">
+              <div class="field__item">  <div class="paragraph paragraph--type--single-column paragraph--list--style--dots paragraph--view-mode--default light-theme">
+    <div class="column-container">
+              
+            <div class="single-column__field-paragraph-body"><img alt="Section 1" data-entity-type="file" data-entity-uuid="374b2175-fc29-4215-8ed8-a18d2815da53" src="/sites/default/files/inline-images/SA%202023%20WEBSITE%20-%203A%20-%20Home%20page%20-%20Section%201.jpg" style="max-width:inherit;width:100%;" class="align-center" width="3944" height="1788" loading="lazy" /><p> </p>
+</div>
+      
+          </div>
+  </div>
+</div>
+              <div class="field__item">	<div class="paragraph paragraph--type--new-2-column paragraph--view-mode--default light-theme top-right image-p-left">
+		<div class="column-container">
+			<div class="column-left">
+				<div class="column-content">
+											
+            <div class="new-2-column__field-paragraph-body"><h1>CARBON MANAGEMENT</h1>
+
+<h2>SURROUND’s mission is to<br />
+harness carbon data insights</h2>
+
+<p>Limiting global warming to less than 2ºC will require the world to remove 0.96 billion tonnes of carbon dioxide each year. The Australian Government has recently passed the Safeguard Legislation to reduce carbon emissions; and according to the Government will be ‘on track to achieving net zero emissions by 2050’. SURROUND data insights, transform decision making.</p>
+</div>
+      
+									</div>
+									<div class="callout_link">
+						<a href="" target="_self">Find out more</a>
+					</div>
+							</div>
+			<div class="column-right">
+				<div class="column-content">
+																										
+      <div class="new-2-column__field-media">
+              <div class="field__item"><div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20Carbon%20Section%20Image%201a_0.jpg?itok=uwahO5BL" width="1375" height="785" alt="Carbon section" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+</div>
+          </div>
+  
+																						</div>
+							</div>
+		</div>
+			</div>
+</div>
+              <div class="field__item">	<div class="paragraph paragraph--type--featured-content-tile paragraph--view-mode--default light-theme top-centre image-p-">
+		<div class="column-container">
+			
+		</div>
+	</div>
+</div>
+              <div class="field__item"><h1>Products</h1></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--two-columns-with-image paragraph--view-mode--default light-theme top-centre image-p-left">
+    <div class="column-container">
+      <div class="column-left">
+                
+            <div class="two-columns-with-image__field-2col-image">  
+<img loading="lazy" src="/sites/default/files/2023-11/products.png" width="690" height="702" alt="Products" typeof="foaf:Image" class="img-fluid" />
+
+</div>
+      
+              </div>
+      <div class="column-right">
+                
+            <div class="two-columns-with-image__field-paragraph-body"><h3>01/ Site Attractiveness Index</h3>
+<p>&gt; Global ranking of high-quality, proven natural capital carbon sequestration sites</p>
+
+<h3>02/ Geospatial Field Analysis</h3>
+<p>&gt; Capturing, harmonising and analysing geospatial data, models and standards</p>
+
+<h3>03/ Site Comparison</h3>
+<p>&gt; Run cross comparisons, and analyse / rank two or more potential sites.</p>
+
+<h3>04/ Biomass Index</h3>
+<p>&gt; Scientific assessment of the amount of carbon sequestration by a particular biomass</p>
+
+<h3>05/ Carbon Submitter</h3>
+<p>&gt; Derive a valid carbon submitter dataset for carbon credit verification agencies</p>
+
+<h3>06/ Carbon Credit Preservation</h3>
+<p>&gt; Manage compliance with the conditions attached to the carbon credit purchased</p></div>
+      
+        
+              </div>
+    </div>
+  </div>
+</div>
+              <div class="field__item"><h1>Technology</h1></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--two-columns-with-image paragraph--view-mode--default light-theme top-centre image-p-right">
+    <div class="column-container">
+      <div class="column-left">
+                
+            <div class="two-columns-with-image__field-paragraph-body"><p>SURROUND takes data and information and transforms it into knowledge and insight. This helps decision makers to make informed choices that are low risk, traceable, and evidence based. When something as profoundly important as the future of our planet is at stake, better data makes the difference.</p>
+
+<h3>Semantic platform</h3>
+
+<ul><li>Consultancy: Understanding the challenge</li>
+	<li>Discovery: Link structured and unstructured data</li>
+	<li>Connect: Make informed decisions</li>
+	<li>Harmonise: Eliminate gaps and unify the data</li>
+	<li>Optimise: Observe, recognise and enable data</li>
+	<li>Derisk: Holistic view to eliminate subjectivity</li>
+</ul></div>
+      
+        
+              </div>
+      <div class="column-right">
+                
+            <div class="two-columns-with-image__field-2col-image">  
+<img loading="lazy" src="/sites/default/files/2023-11/SA%202023%20WEBSITE%20-%204A%20-%20Technology%20Image%202a_0.png" width="690" height="504" alt="Technology" typeof="foaf:Image" class="img-fluid" />
+
+</div>
+      
+              </div>
+    </div>
+  </div>
+</div>
+              <div class="field__item"><h1>SURROUND Australia</h1></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--two-columns-with-image paragraph--view-mode--default light-theme top-centre image-p-right">
+    <div class="column-container">
+      <div class="column-left">
+                
+            <div class="two-columns-with-image__field-paragraph-body"><p>SURROUND is an Australian technology company that develops advanced software systems and supplies consulting services.</p>
+
+<p>Our forté is in working with complex, multi-dimensional data. Collectively we have over a century of software and data architecture, design and operations experience. Our staff include seasoned veterans of Australian government IT and international technology giants as well as internationally-renowned Semantic Web, spatial data and machine reasoning and conceptual modelling experts.</p>
+
+<h3>We solve complex problems</h3>
+
+<p><img alt="Icons" data-entity-type="file" data-entity-uuid="9eb50012-4afa-4118-a52b-7d0f40de6fee" src="/sites/default/files/inline-images/icon-sheet.jpg" class="align-left" width="1200" height="424" loading="lazy" /></p></div>
+      
+        
+              </div>
+      <div class="column-right">
+                
+            <div class="two-columns-with-image__field-2col-image">  
+<img loading="lazy" src="/sites/default/files/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20About%20Us%201a_0.png" width="690" height="458" alt="Data graphic" typeof="foaf:Image" class="img-fluid" />
+
+</div>
+      
+              </div>
+    </div>
+  </div>
+</div>
+              <div class="field__item"><h1>Case Study</h1></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--two-columns-with-image paragraph--view-mode--default light-theme top-centre image-p-left">
+    <div class="column-container">
+      <div class="column-left">
+                
+            <div class="two-columns-with-image__field-2col-image">  
+<img loading="lazy" src="/sites/default/files/2023-11/case-study.png" width="690" height="565" alt="Case study" typeof="foaf:Image" class="img-fluid" />
+
+</div>
+      
+              </div>
+      <div class="column-right">
+                
+            <div class="two-columns-with-image__field-paragraph-body"><h3>Cadastral Standard</h3>
+
+<p>The Intergovernmental Committee on Surveying and Mapping (ICSM) and Land Information New Zealand (LINZ) recently selected SURROUND NZ to lead the next phase of development of an Australian/New Zealand 3D Cadastral Survey<br />
+Data Model and Exchange (3D CSDM) programme.</p>
+
+<p>The 3D CSDM work programme is creating a standard for adoption across Australia and New Zealand for exchanging digital cadastral survey data between the survey industry and government land administration agencies, aiming to achieve consistency in exchanging digital cadastral survey information between the survey industry and land administration agencies.</p></div>
+      
+        
+              </div>
+    </div>
+  </div>
+</div>
+              <div class="field__item"><h1>Clients</h1></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text-with-image-group paragraph--list--style-- paragraph--view-mode--default light-theme">
+    <div class="column-container">
+      <div class="column-left">
+                  
+              </div>
+      <div class="column-right images-cols-3">
+        <div class="text-with-image-group__field-media">
+												<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20DAWE%20Logo.png?itok=_yrYI5Me" width="367" height="109" alt="Department of agriculture, water and environment" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20LINZ.png?itok=Z2ibZ0WF" width="353" height="99" alt="Land information NZ" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20NAA%20Logo.png?itok=TZh2n08i" width="151" height="71" alt="National Archives Australia" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20OGC%20Logo.png?itok=GXzhx83A" width="233" height="117" alt="Open Geospatial Consortium, Inc." typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20QLD%20-%20Dept%20of%20Nat%20Resources%20Logo.png?itok=qdB_wjuO" width="389" height="101" alt="Queensland Government Department of Natural Resources" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20TERN%20Logo.png?itok=gY1CpV7q" width="368" height="94" alt="tern" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+														<div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-10/SA%202023%20WEBSITE%20-%203A%20-%20Treasury%20Logo.png?itok=oZDYTMlW" width="206" height="141" alt="Australian Government The Treasury" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+  
+  </article>
+
+  
+  </div>
+<div class="two-column-enquiry-form">
+	<div class="container">
+		<div class="column-left">
+            <div class="_-column-enquiry-block__field-media-image"><div class="media media--type-image media--view-mode-default">
+  
+      
+            <div class="image__field-media-image">  
+<img loading="lazy" src="/sites/default/files/styles/100_/public/2023-11/SA%202023%20WEBSITE%20-%203A%20-%20Demo%20Section%20Master%20Visual%201a.png?itok=HL1fgvuq" width="1390" height="1385" alt="Demo" typeof="foaf:Image" class="img-fluid" />
+
+
+</div>
+      
+  </div>
+</div>
+      </div>
+		<div class="column-right">
+			<div class="content"></div>
+			<div class="form">
+            <div class="_-column-enquiry-block__field-enquiry-form"><form class="webform-submission-form webform-submission-add-form webform-submission-contact-form webform-submission-contact-add-form webform-submission-contact-block_content-34-form webform-submission-contact-block_content-34-add-form webform-submission-contact-block-content-34-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-contact-block-content-34-add-form" action="/" method="post" id="webform-submission-contact-block-content-34-add-form" accept-charset="UTF-8">
+  
+  <div id="edit-markup" class="js-form-item form-item js-form-type-webform-markup form-item-markup js-form-item-markup form-no-label form-group">
+        <h4>Enquiry form</h4>
+        </div>
+<div data-drupal-selector="edit-flexbox" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-flexbox"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name form-no-label form-group">
+      <label for="edit-name" class="visually-hidden js-form-required form-required">Your Name</label>
+          
+<input data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="255" placeholder="Your Name" class="required form-control" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label form-group">
+      <label for="edit-email" class="visually-hidden js-form-required form-required">Your Email</label>
+          
+<input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" placeholder="Your Email" class="form-email required form-control" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-your-company js-form-item-your-company form-no-label form-group">
+      <label for="edit-your-company" class="visually-hidden js-form-required form-required">Your company</label>
+          
+<input autocomplete="off" data-drupal-selector="edit-your-company" type="text" id="edit-your-company" name="your_company" value="" size="60" maxlength="255" placeholder="Your company" class="required form-control" required="required" aria-required="true" />
+
+        </div>
+</div></div></div>
+<div data-drupal-selector="edit-flexbox-01" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-flexbox-01"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-subject js-form-item-subject form-no-label form-group">
+      <label for="edit-subject" class="visually-hidden js-form-required form-required">Subject</label>
+          
+<input data-drupal-selector="edit-subject" type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" placeholder="Subject" class="required form-control" required="required" aria-required="true" />
+
+        </div>
+</div></div></div>
+<div data-drupal-selector="edit-flexbox-02" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-flexbox-02"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textarea form-item-message js-form-item-message form-no-label form-group">
+      <label for="edit-message" class="visually-hidden js-form-required form-required">Message</label>
+        <textarea data-drupal-selector="edit-message" id="edit-message" name="message" rows="5" cols="60" placeholder="Message" class="form-textarea required form-control" required="required" aria-required="true"></textarea>
+
+        </div>
+</div></div></div>
+<div data-drupal-selector="edit-flexbox-03" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-flexbox-03"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions">  <input class="webform-button--submit button button--primary js-form-submit form-submit btn btn-primary" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Send message" />
+
+
+
+</div>
+</div></div></div>
+  
+<input autocomplete="off" data-drupal-selector="form-if9rdjvvjtjnhy3ck8jbavq-tkcvoagpwrqgggw5idu" type="hidden" name="form_build_id" value="form-iF9RdJvVjtJNhy3ck8JBAVQ_TKcvOagPWrQGgGW5idU" class="form-control" />
+  
+<input data-drupal-selector="edit-webform-submission-contact-block-content-34-add-form" type="hidden" name="form_id" value="webform_submission_contact_block_content_34_add_form" class="form-control" />
+    <div  data-drupal-selector="edit-captcha" class="captcha">  
+<input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="410" class="form-control" />
+  
+<input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="RgcZWv4LDv5UDOX0JUwXLsBdR5iGvKo0hHeJidkRy1I" class="form-control" />
+  
+<input id="recaptcha-v3-token" class="recaptcha-v3-token form-control" data-recaptcha-v3-action="contact_form" data-recaptcha-v3-site-key="6LfLUgsbAAAAAMsY5aD5FRKI4Pq73jhVqI0380eo" data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="" />
+  
+<input data-drupal-selector="edit-is-recaptcha-v3" type="hidden" name="is_recaptcha_v3" value="1" class="form-control" />
+</div>
+
+
+  
+</form>
+</div>
+      </div>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			</main>
+	
+
+	<footer class="page__footer">
+
+		<div id="footer-main">
+			<div class="container">
+				<div class="d-flex justify-content-md-between align-items-md-start">
+					<div class="footerbranding d-flex flex-column justify-content-md-between">
+						<img class="footerbranding-logo" src="/themes/custom/surround_australia/surround-logo-dark.svg" alt="SURROUND Australia logo"/>
+													
+											</div>
+					<div class="footertext">
+													  
+  <div class="block block--paragraphs block--footeraddresses">
+
+  
+    
+
+      
+      <div class="paragraphs__field-paragraph">
+              <div class="field__item">  <div class="paragraph paragraph--type--two-column paragraph--view-mode--default light-theme">
+    <div class="column-container">
+      <div class="column-left">
+        
+            <div class="two-column__field-paragraph-body"><h4><strong>Please Contact: </strong></h4>
+
+<p>Pankhuri Sinha<br />
+Semantic Web Developer<br />
+SURROUND Australia Pty Ltd<br /><span><span><span><span><em><span>(02) 6243 4828</span></em></span></span></span></span></p>
+
+<p><a href="mailto:andrew.salmon@surroundaustralia.com">pankhuri.sinha@surroundaustralia.com</a></p>
+
+<p> </p>
+
+<p><a href="/privacy-policy">Privacy Policy</a></p>
+
+<p>© SURROUND Australia Pty Ltd. 2021</p></div>
+      
+      </div>
+      <div class="column-right">
+        
+            <div class="two-column__field-paragraph-body-2"><!--<p>Regional Office</p>
+
+<p>Level 9, Nishi Building<br />
+2 Phillip Law Street, New Acton<br />
+Canberra 2601<br />
+Australia</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://www.linkedin.com/company/surround-australia-pty-ltd"><img alt="LinkedIn" data-entity-type="file" data-entity-uuid="5d8f4b66-091f-4e62-a151-2f3c450ef0e7" height="26" src="/sites/default/files/inline-images/linked-in-logo.png" width="25" /></a></p>--></div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+  
+  
+  </div>
+
+
+																	</div>
+				</div>
+			</div>
+		</div>
+					<div id="footer-lower" class="bg-black text-white">
+				  
+  <div class="block block--reusable-block block--acknowledgementofcountry">
+
+  
+    
+
+      
+            <div class="reusable-block__body"><h6>Acknowledgement of Country</h6>
+
+<p>SURROUND Australia Pty Ltd acknowledges the traditional owners and custodians of Country throughout Australia, and acknowledges their continuing connection to land, sea, and community. We pay our respects to the people, their cultures, and their Elders past, present, and emerging.</p></div>
+      
+  
+  </div>
+
+
+			</div>
+			</footer>
+
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/103","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"captcha\/base,core\/drupal.ajax,core\/internal.jquery.form,eu_cookie_compliance\/eu_cookie_compliance_default,paragraphs\/drupal.paragraphs.unpublished,radix\/bootstrap,radix\/navbar,radix\/style,recaptcha_v3\/recaptcha_v3,superfish\/superfish,superfish\/superfish_supersubs,superfish\/superfish_touchscreen,surround_australia\/style,system\/base,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.flexbox,webform\/webform.element.message,webform\/webform.form","theme":"surround_australia","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/carbon-data-difference?ajax_form=1":true},"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EBy clicking the Accept button, you agree to us doing so.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccept\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENo, thanks\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n        \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EAccept\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022\u003ENo, thanks\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"https:\/\/surroundaustralia.com\/privacy-policy","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":true,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"opt_in","automatic_cookies_removal":true,"allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button \u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":true,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"olivero_primary_button_classes":"","olivero_secondary_button_classes":"","close_button_action":"close_banner","open_by_default":true,"modules_allow_popup":true,"hide_the_banner":false,"geoip_match":true},"ajax":{"edit-captcha-response":{"callback":"recaptcha_v3_ajax_callback","event":"change","url":"\/carbon-data-difference?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"captcha_response"}}},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false,"dropShadows":false,"disableHI":true},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpoint":991},"supersubs":true}}},"user":{"uid":0,"permissionsHash":"8b97e877efd2834ba777943e612b2f5e78d34b4323693af0e6bc85dc604dd273"}}</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfLUgsbAAAAAMsY5aD5FRKI4Pq73jhVqI0380eo" defer async></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.6.0"></script>
+<script src="/core/misc/polyfills/element.matches.js?v=9.4.8"></script>
+<script src="/core/misc/polyfills/object.assign.js?v=9.4.8"></script>
+<script src="/core/misc/polyfills/nodelist.foreach.js?v=9.4.8"></script>
+<script src="/core/assets/vendor/css-escape/css.escape.js?v=1.5.1"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=9.4.8"></script>
+<script src="/core/misc/drupal.js?v=9.4.8"></script>
+<script src="/core/misc/drupal.init.js?v=9.4.8"></script>
+<script src="/core/misc/debounce.js?v=9.4.8"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=5.3.2"></script>
+<script src="/themes/custom/surround_australia/assets/js/surround_australia.script.js?v=9.4.8"></script>
+<script src="/core/assets/vendor/js-cookie/js.cookie.min.js?v=3.0.1"></script>
+<script src="/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.min.js?v=9.4.8" defer></script>
+<script src="/core/misc/jquery.once.bc.js?v=9.4.8"></script>
+<script src="/core/misc/form.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.behaviors.js?v=9.4.8"></script>
+<script src="/core/misc/states.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.states.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.form.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.element.details.save.js?v=9.4.8"></script>
+<script src="/core/misc/announce.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.element.details.toggle.js?v=9.4.8"></script>
+<script src="/modules/contrib/webform/js/webform.element.message.js?v=9.4.8"></script>
+<script src="/modules/contrib/recaptcha_v3/js/recaptcha_v3.js?v=9.4.8"></script>
+<script src="/core/assets/vendor/jquery-form/jquery.form.min.js?v=4.3.0"></script>
+<script src="/core/misc/progress.js?v=9.4.8"></script>
+<script src="/core/modules/responsive_image/js/responsive_image.ajax.js?v=9.4.8"></script>
+<script src="/core/misc/ajax.js?v=9.4.8"></script>
+<script src="/libraries/superfish/superfish.js?s4rq0o"></script>
+<script src="/libraries/superfish/sftouchscreen.js?s4rq0o"></script>
+<script src="/libraries/superfish/supersubs.js?s4rq0o"></script>
+<script src="/modules/contrib/superfish/js/superfish.js?v=2.0"></script>
+
+  </body>
+</html>

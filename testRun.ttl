@@ -1,0 +1,1492 @@
+
+> @jeswr/cookie-analysis@0.0.0-development action
+> ts-node lib/action.ts
+
+starting
+reasoning: 24.607s
+190645
+<https://w3id.org/dpv#AcademicResearch> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#AcademicResearch> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#AcademicResearch> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#AcademicResearch> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AcademicResearch> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2004/02/skos/core#prefLabel> "Academic Research"@en.
+<https://w3id.org/dpv#AcademicResearch> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting or assisting with research conducted in an academic context e.g. within universities"@en.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#AcademicResearch>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Education>.
+<https://w3id.org/dpv#AcademicResearch> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#AcademicResearch>.
+<https://w3id.org/dpv#ResearchAndDevelopment> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ResearchAndDevelopment> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ResearchAndDevelopment> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ResearchAndDevelopment> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research and Development"@en.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting research and development for new methods, products, or services"@en.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#ResearchAndDevelopment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#AccountManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#AccountManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#AccountManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#AccountManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AccountManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Account Management"@en.
+<https://w3id.org/dpv#AccountManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2004/02/skos/core#definition> "Account Management refers to purposes associated with account management, such as to create, provide, maintain, and manage accounts"@en.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#AccountManagement>.
+<https://w3id.org/dpv#AccountManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#AccountManagement>.
+<https://w3id.org/dpv#Advertising> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#Advertising> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#Advertising> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Advertising> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Advertising> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2004/02/skos/core#prefLabel> "Advertising"@en.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2004/02/skos/core#scopeNote> "Advertising is a subset of Marketing. Advertising by itself does not indicate 'personalisation' i.e. personalised ads."@en.
+<https://w3id.org/dpv#Advertising> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting advertising i.e. process or artefact used to call attention to a product, service, etc. through announcements, notices, or other forms of communication"@en.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Advertising>.
+<https://w3id.org/dpv#Advertising> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#Advertising>.
+<https://w3id.org/dpv#Marketing> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#Marketing> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#Marketing> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Marketing> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Marketing> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Marketing"@en.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2004/02/skos/core#scopeNote> "Was commercial interest, changed to consider Marketing a separate Purpose category by itself"@en.
+<https://w3id.org/dpv#Marketing> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting marketing in relation to organisation or products or services e.g. promoting, selling, and distributing"@en.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#Marketing> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#AgeVerification> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#AgeVerification> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#AgeVerification> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#AgeVerification> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AgeVerification> <http://purl.org/dc/terms/created> "2024-02-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Age Verification"@en.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2004/02/skos/core#scopeNote> "Age Verification can include verification of the exact age, e.g. being 21 years old, a date, e.g. birth date is 01 January 1969, or a condition, e.g. age is over 21 years and the person is an adult. Specific dedicated resources should be used to further express information and processes associated with Age Verification, for example the Age Verification Vocabulary https://w3id.org/age/"@en.
+<https://w3id.org/dpv#AgeVerification> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Arthit Suriyawongkul, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Verification>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with verifying or authenticating age or age related information as a form of security"@en.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#AgeVerification>.
+<https://w3id.org/dpv#AgeVerification> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#AgeVerification>.
+<https://w3id.org/dpv#Verification> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#Verification> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#Verification> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Verification> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Verification> <http://purl.org/dc/terms/created> "2024-02-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Verification"@en.
+<https://w3id.org/dpv#Verification> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2004/02/skos/core#definition> "Purposes association with verification e.g. information, identity, integrity"@en.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Verification>.
+<https://w3id.org/dpv#Verification> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#Verification>.
+<https://w3id.org/dpv#EnforceSecurity> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#EnforceSecurity> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#EnforceSecurity> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#EnforceSecurity> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EnforceSecurity> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Enforce Security"@en.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2004/02/skos/core#scopeNote> "Was previous \"Security\". Prefixed to distinguish from TechOrg measures."@en.
+<https://w3id.org/dpv#EnforceSecurity> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with ensuring and enforcing security for data, personnel, or other related matters"@en.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#EnforceSecurity> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#CombatClimateChange> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CombatClimateChange> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CombatClimateChange> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CombatClimateChange> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2004/02/skos/core#prefLabel> "Combat Climate Change"@en.
+<https://w3id.org/dpv#CombatClimateChange> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with combating the causes and consequences of climate change, including reducing gas emissions and fighting emergencies such as floods or wildfires"@en.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CombatClimateChange>.
+<https://w3id.org/dpv#CombatClimateChange> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#CombatClimateChange> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CombatClimateChange>.
+<https://w3id.org/dpv#PublicBenefit> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PublicBenefit> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PublicBenefit> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PublicBenefit> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Benefit"@en.
+<https://w3id.org/dpv#PublicBenefit> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2004/02/skos/core#definition> "Purposes undertaken and intended to provide benefit to public or society"@en.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#PublicBenefit> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#CommercialPurpose> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CommercialPurpose> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CommercialPurpose> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommercialPurpose> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commercial Purpose"@en.
+<https://w3id.org/dpv#CommercialPurpose> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with processing activities performed in a commercial setting or with intention to commercialise"@en.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CommercialPurpose>.
+<https://w3id.org/dpv#CommercialPurpose> <http://purl.org/dc/terms/source> "DGA 4.4"@en.
+<https://w3id.org/dpv#CommercialPurpose> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CommercialPurpose>.
+<https://w3id.org/dpv#CommercialResearch> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CommercialResearch> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CommercialResearch> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommercialResearch> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommercialResearch> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commercial Research"@en.
+<https://w3id.org/dpv#CommercialResearch> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CommercialPurpose>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting research in a commercial setting or with intention to commercialise e.g. in a company or sponsored by a company"@en.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CommercialResearch>.
+<https://w3id.org/dpv#CommercialResearch> <http://purl.org/dc/terms/modified> "2024-04-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Develop>.
+<https://w3id.org/dpv#CommercialResearch> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CommercialResearch>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2004/02/skos/core#prefLabel> "Communication for Customer Care"@en.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CommunicationManagement>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerCare>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2004/02/skos/core#definition> "Customer Care Communication refers to purposes associated with communicating with customers for assisting them, resolving issues, ensuring satisfaction, etc. in relation to services provided"@en.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CommunicationForCustomerCare>.
+<https://w3id.org/dpv#CommunicationForCustomerCare> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CommunicationForCustomerCare>.
+<https://w3id.org/dpv#CommunicationManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CommunicationManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CommunicationManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommunicationManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommunicationManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Communication Management"@en.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2004/02/skos/core#scopeNote> "This purpose by itself does not sufficiently and clearly indicate what the communication is about. As such, it is recommended to combine it with another purpose to indicate the application. For example, Communication of Payment."@en.
+<https://w3id.org/dpv#CommunicationManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Paul Ryan, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2004/02/skos/core#definition> "Communication Management refers to purposes associated with providing or managing communication activities e.g. to send an email for notifying some information"@en.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CommunicationManagement>.
+<https://w3id.org/dpv#CommunicationManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CommunicationManagement>.
+<https://w3id.org/dpv#CustomerCare> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerCare> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerCare> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerCare> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerCare> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Care"@en.
+<https://w3id.org/dpv#CustomerCare> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2004/02/skos/core#definition> "Customer Care refers to purposes associated with purposes for providing assistance, resolving issues, ensuring satisfaction, etc. in relation to services provided"@en.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerCare>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Feedback>.
+<https://w3id.org/dpv#CustomerCare> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerCare>.
+<https://w3id.org/dpv#CustomerManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Management"@en.
+<https://w3id.org/dpv#CustomerManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2004/02/skos/core#definition> "Customer Management refers to purposes associated with managing activities related with past, current, and future customers"@en.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CounterMoneyLaundering> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CounterMoneyLaundering> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CounterMoneyLaundering> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CounterMoneyLaundering> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://purl.org/dc/terms/created> "2022-04-20"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2004/02/skos/core#prefLabel> "Counter Money Laundering"@en.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#FraudPreventionAndDetection>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with detection, prevention, and mitigation of mitigate money laundering"@en.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CounterMoneyLaundering>.
+<https://w3id.org/dpv#CounterMoneyLaundering> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CounterMoneyLaundering>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fraud Prevention and Detection"@en.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#MisusePreventionAndDetection>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with fraud detection, prevention, and mitigation"@en.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#FraudPreventionAndDetection>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Government>.
+<https://w3id.org/dpv#FraudPreventionAndDetection> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#FraudPreventionAndDetection>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Misuse, Prevention and Detection"@en.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2004/02/skos/core#definition> "Prevention and Detection of Misuse or Abuse of services"@en.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#MisusePreventionAndDetection>.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://purl.org/dc/terms/source> "DGA 22.1(a)"@en.
+<https://w3id.org/dpv#MisusePreventionAndDetection> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#MisusePreventionAndDetection>.
+<https://w3id.org/dpv#Counterterrorism> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#Counterterrorism> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#Counterterrorism> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Counterterrorism> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Counterterrorism> <http://purl.org/dc/terms/created> "2022-04-20"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2004/02/skos/core#prefLabel> "Counterterrorism"@en.
+<https://w3id.org/dpv#Counterterrorism> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with activities that detect, prevent, mitigate, or otherwise perform activities to combat or eliminate terrorism (also referred to as anti-terrorism)"@en.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Counterterrorism>.
+<https://w3id.org/dpv#Counterterrorism> <http://purl.org/dc/terms/modified> "2024-04-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Counterterrorism> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#Counterterrorism>.
+<https://w3id.org/dpv#CreditChecking> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CreditChecking> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CreditChecking> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CreditChecking> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CreditChecking> <http://purl.org/dc/terms/created> "2022-04-20"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2004/02/skos/core#prefLabel> "Credit Checking"@en.
+<https://w3id.org/dpv#CreditChecking> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerSolvencyMonitoring>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with monitoring, performing, or assessing credit worthiness or solvency"@en.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CreditChecking>.
+<https://w3id.org/dpv#CreditChecking> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CreditChecking>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Solvency Monitoring"@en.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2004/02/skos/core#definition> "Customer Solvency Monitoring refers to purposes associated with monitor solvency of customers for financial diligence"@en.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerSolvencyMonitoring>.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://purl.org/dc/terms/source> _:e_n3_MINUS_169_1.
+<https://w3id.org/dpv#CustomerSolvencyMonitoring> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerSolvencyMonitoring>.
+<https://w3id.org/dpv#CustomerClaimsManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerClaimsManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerClaimsManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerClaimsManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Claims Management"@en.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2004/02/skos/core#definition> "Customer Claims Management refers to purposes associated with managing claims, including repayment of monies owed"@en.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerClaimsManagement>.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_167_1.
+<https://w3id.org/dpv#CustomerClaimsManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerClaimsManagement>.
+<https://w3id.org/dpv#CustomerOrderManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerOrderManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerOrderManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerOrderManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Order Management"@en.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2004/02/skos/core#definition> "Customer Order Management refers to purposes associated with managing customer orders i.e. processing of an order related to customer's purchase of good or services"@en.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerOrderManagement>.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_168_1.
+<https://w3id.org/dpv#CustomerOrderManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerOrderManagement>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer Relationship Management"@en.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerManagement>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2004/02/skos/core#definition> "Customer Relationship Management refers to purposes associated with managing and analysing interactions with past, current, and potential customers"@en.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#CustomerRelationshipManagement>.
+<https://w3id.org/dpv#CustomerRelationshipManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#CustomerRelationshipManagement>.
+<https://w3id.org/dpv#DataAltruism> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#DataAltruism> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#DataAltruism> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#DataAltruism> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Altruism"@en.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2004/02/skos/core#scopeNote> "Data Altruism as a purpose should be combined with other purposes to indicate their altruistic interpretation or application. E.g. improving healthcare and data altruism in combination."@en.
+<https://w3id.org/dpv#DataAltruism> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with the voluntary sharing of data for the general interest of the public, such as healthcare or combating climate change"@en.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#DataAltruism>.
+<https://w3id.org/dpv#DataAltruism> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#DataAltruism> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#DataAltruism>.
+<https://w3id.org/dpv#OrganisationGovernance> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OrganisationGovernance> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OrganisationGovernance> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OrganisationGovernance> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation Governance"@en.
+<https://w3id.org/dpv#OrganisationGovernance> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting activities and functions for governance of an organisation"@en.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#OrganisationGovernance> <http://purl.org/dc/terms/source> _:e_n3_MINUS_240_1.
+<https://w3id.org/dpv#OrganisationGovernance> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#DeliveryOfGoods> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#DeliveryOfGoods> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#DeliveryOfGoods> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#DeliveryOfGoods> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delivery of Goods"@en.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#RequestedServiceProvision>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with delivering goods and services requested or asked by consumer"@en.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#DeliveryOfGoods>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Delivery>.
+<https://w3id.org/dpv#DeliveryOfGoods> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#DeliveryOfGoods>.
+<https://w3id.org/dpv#RequestedServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#RequestedServiceProvision> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#RequestedServiceProvision> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#RequestedServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Requested Service Provision"@en.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2004/02/skos/core#scopeNote> "The use of 'request' here includes where an user explicitly asks for the service and also when an established contract requires the provision of the service"@en.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with delivering services as requested by user or consumer"@en.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#RequestedServiceProvision>.
+<https://w3id.org/dpv#RequestedServiceProvision> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#RequestedServiceProvision>.
+<https://w3id.org/dpv#ServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ServiceProvision> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ServiceProvision> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceProvision> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Provision"@en.
+<https://w3id.org/dpv#ServiceProvision> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with providing service or product or activities"@en.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#ServiceProvision> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#DirectMarketing> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#DirectMarketing> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#DirectMarketing> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#DirectMarketing> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DirectMarketing> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Direct Marketing"@en.
+<https://w3id.org/dpv#DirectMarketing> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting direct marketing i.e. marketing communicated directly to the individual"@en.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#DirectMarketing>.
+<https://w3id.org/dpv#DirectMarketing> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#DirectMarketing>.
+<https://w3id.org/dpv#DisputeManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#DisputeManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#DisputeManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#DisputeManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DisputeManagement> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dispute Management"@en.
+<https://w3id.org/dpv#DisputeManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with activities that manage disputes by natural persons, private bodies, or public authorities relevant to organisation"@en.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#DisputeManagement>.
+<https://w3id.org/dpv#DisputeManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_191_1.
+<https://w3id.org/dpv#DisputeManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#DisputeManagement>.
+<https://w3id.org/dpv#EnforceAccessControl> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#EnforceAccessControl> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#EnforceAccessControl> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#EnforceAccessControl> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#prefLabel> "Enforce Access Control"@en.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#scopeNote> "Was previously \"Access Control\". Prefixed to distinguish from Technical Measure."@en.
+<https://w3id.org/dpv#EnforceAccessControl> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting or enforcing access control as a form of security"@en.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#EnforceAccessControl>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Login>.
+<https://w3id.org/dpv#EnforceAccessControl> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#EnforceAccessControl>.
+<https://w3id.org/dpv#EstablishContractualAgreement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#EstablishContractualAgreement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#EstablishContractualAgreement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#EstablishContractualAgreement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://purl.org/dc/terms/created> "2022-11-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Establish Contractual Agreement"@en.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with carrying out data processing to establish an agreement, such as for entering into a contract"@en.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#EstablishContractualAgreement>.
+<https://w3id.org/dpv#EstablishContractualAgreement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#EstablishContractualAgreement>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://purl.org/dc/terms/created> "2022-11-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fulfilment of Contractual Obligation"@en.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#FulfilmentOfObligation>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with carrying out data processing to fulfill a contractual obligation"@en.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#FulfilmentOfContractualObligation>.
+<https://w3id.org/dpv#FulfilmentOfContractualObligation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#FulfilmentOfContractualObligation>.
+<https://w3id.org/dpv#FulfilmentOfObligation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#FulfilmentOfObligation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#FulfilmentOfObligation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#FulfilmentOfObligation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://purl.org/dc/terms/created> "2022-11-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fulfilment of Obligation"@en.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with carrying out data processing to fulfill an obligation"@en.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#FulfilmentOfObligation>.
+<https://w3id.org/dpv#FulfilmentOfObligation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#FulfilmentOfObligation>.
+<https://w3id.org/dpv#HumanResourceManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#HumanResourceManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#HumanResourceManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#HumanResourceManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Human Resource Management"@en.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2004/02/skos/core#scopeNote> "HR is a broad concept. Its management includes, amongst others - recruiting employees and intermediaries e.g. brokers, independent representatives; payroll administration, remunerations, commissions, and wages; and application of social legislation."@en.
+<https://w3id.org/dpv#HumanResourceManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, David Hickey, Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing humans and 'human resources' within the organisation for effective and efficient operations."@en.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#HumanResourceManagement>.
+<https://w3id.org/dpv#HumanResourceManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_211_1.
+<https://w3id.org/dpv#HumanResourceManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#HumanResourceManagement>.
+<https://w3id.org/dpv#IdentityAuthentication> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#IdentityAuthentication> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#IdentityAuthentication> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#IdentityAuthentication> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://purl.org/dc/terms/created> "2024-04-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Identity Authentication"@en.
+<https://w3id.org/dpv#IdentityAuthentication> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#EnforceSecurity>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with performing authentication based on identity as a form of security"@en.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#IdentityAuthentication>.
+<https://w3id.org/dpv#IdentityAuthentication> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#IdentityAuthentication>.
+<https://w3id.org/dpv#IdentityVerification> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#IdentityVerification> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#IdentityVerification> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#IdentityVerification> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IdentityVerification> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Identity Verification"@en.
+<https://w3id.org/dpv#IdentityVerification> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Verification>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with verifying or authenticating identity as a form of security"@en.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#IdentityVerification>.
+<https://w3id.org/dpv#IdentityVerification> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#IdentityVerification>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improve Existing Products and Services"@en.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving existing products and services"@en.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ImproveExistingProductsAndServices>.
+<https://w3id.org/dpv#ImproveExistingProductsAndServices> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ImproveExistingProductsAndServices>.
+<https://w3id.org/dpv#OptimisationForController> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OptimisationForController> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OptimisationForController> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OptimisationForController> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimisationForController> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2004/02/skos/core#prefLabel> "Optimisation for Controller"@en.
+<https://w3id.org/dpv#OptimisationForController> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceOptimisation>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with optimisation of activities and services for provider or controller"@en.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#OptimisationForController> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#ServiceOptimisation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ServiceOptimisation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ServiceOptimisation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServiceOptimisation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Optimisation"@en.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Subclass of ServiceProvision since optimisation is usually considered part of providing services"@en.
+<https://w3id.org/dpv#ServiceOptimisation> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with optimisation of services or activities"@en.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ServiceOptimisation>.
+<https://w3id.org/dpv#ServiceOptimisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ServiceOptimisation>.
+<https://w3id.org/dpv#ImproveHealthcare> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ImproveHealthcare> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ImproveHealthcare> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ImproveHealthcare> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improve Healthcare"@en.
+<https://w3id.org/dpv#ImproveHealthcare> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving healthcare systems such as for personalised treatments and curing chronic diseases"@en.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ImproveHealthcare>.
+<https://w3id.org/dpv#ImproveHealthcare> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#ImproveHealthcare> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ImproveHealthcare>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improve Internal CRM Processes"@en.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CustomerRelationshipManagement>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving customer-relationship management (CRM) processes"@en.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ImproveInternalCRMProcesses>.
+<https://w3id.org/dpv#ImproveInternalCRMProcesses> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ImproveInternalCRMProcesses>.
+<https://w3id.org/dpv#ImprovePublicServices> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ImprovePublicServices> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ImprovePublicServices> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ImprovePublicServices> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improve Public Services"@en.
+<https://w3id.org/dpv#ImprovePublicServices> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving the provision of public services, such as public safety, education or law enforcement"@en.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ImprovePublicServices>.
+<https://w3id.org/dpv#ImprovePublicServices> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#ImprovePublicServices> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ImprovePublicServices>.
+<https://w3id.org/dpv#ImproveTransportMobility> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ImproveTransportMobility> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ImproveTransportMobility> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ImproveTransportMobility> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Improve Transport and Mobility"@en.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving traffic, public transport systems or costs for drivers"@en.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ImproveTransportMobility>.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#ImproveTransportMobility> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ImproveTransportMobility>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2004/02/skos/core#prefLabel> "Increase Service Robustness"@en.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with improving robustness and resilience of services"@en.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#IncreaseServiceRobustness>.
+<https://w3id.org/dpv#IncreaseServiceRobustness> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#IncreaseServiceRobustness>.
+<https://w3id.org/dpv#InternalResourceOptimisation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#InternalResourceOptimisation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#InternalResourceOptimisation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#InternalResourceOptimisation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Internal Resource Optimisation"@en.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OptimisationForController>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with optimisation of internal resource availability and usage for organisation"@en.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#InternalResourceOptimisation>.
+<https://w3id.org/dpv#InternalResourceOptimisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#InternalResourceOptimisation>.
+<https://w3id.org/dpv#LegalCompliance> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#LegalCompliance> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#LegalCompliance> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#LegalCompliance> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#LegalCompliance> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Compliance"@en.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2004/02/skos/core#scopeNote> "This purpose only refers to processing that is additionally required in order to fulfill the obligations and requirements associated with a law. For example, the use of consent would have its own separate purposes, with this purpose addressing a legal requirement for maintaining consent record (along with RecordManagement). This purpose will typically be used with Legal Obligation as the legal basis."@en.
+<https://w3id.org/dpv#LegalCompliance> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#FulfilmentOfObligation>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with carrying out data processing to fulfill a legal or statutory obligation"@en.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#LegalCompliance>.
+<https://w3id.org/dpv#LegalCompliance> <http://purl.org/dc/terms/modified> "2022-11-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#LegalCompliance> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#LegalCompliance>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maintain Credit Checking Database"@en.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Georg P. Krog".
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CreditChecking>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with maintaining a Credit Checking Database"@en.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#MaintainCreditCheckingDatabase>.
+<https://w3id.org/dpv#MaintainCreditCheckingDatabase> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#MaintainCreditCheckingDatabase>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maintain Credit Rating Database"@en.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Georg P. Krog".
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#CreditChecking>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with maintaining a Credit Rating Database"@en.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#MaintainCreditRatingDatabase>.
+<https://w3id.org/dpv#MaintainCreditRatingDatabase> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#MaintainCreditRatingDatabase>.
+<https://w3id.org/dpv#MaintainFraudDatabase> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#MaintainFraudDatabase> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#MaintainFraudDatabase> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#MaintainFraudDatabase> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://purl.org/dc/terms/created> "2022-06-15"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maintain Fraud Database"@en.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Georg P. Krog".
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#FraudPreventionAndDetection>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with maintaining a database related to identifying and identified fraud risks and fraud incidents"@en.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#MaintainFraudDatabase>.
+<https://w3id.org/dpv#MaintainFraudDatabase> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#MaintainFraudDatabase>.
+<https://w3id.org/dpv#MemberPartnerManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#MemberPartnerManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#MemberPartnerManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#MemberPartnerManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Members and Partners Management"@en.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with maintaining a registry of shareholders, members, or partners for governance, administration, and management functions"@en.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#MemberPartnerManagement>.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_225_1.
+<https://w3id.org/dpv#MemberPartnerManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#MemberPartnerManagement>.
+<https://w3id.org/dpv#NonCommercialPurpose> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#NonCommercialPurpose> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#NonCommercialPurpose> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#NonCommercialPurpose> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-commercial Purpose"@en.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with processing activities performed in a non-commercial setting or without intention to commercialise"@en.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#NonCommercialPurpose>.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://purl.org/dc/terms/source> "DGA 4.4"@en.
+<https://w3id.org/dpv#NonCommercialPurpose> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#NonCommercialPurpose>.
+<https://w3id.org/dpv#NonCommercialResearch> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#NonCommercialResearch> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#NonCommercialResearch> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#NonCommercialResearch> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non-Commercial Research"@en.
+<https://w3id.org/dpv#NonCommercialResearch> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#NonCommercialPurpose>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting research in a non-commercial setting e.g. for a non-profit-organisation (NGO)"@en.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#NonCommercialResearch>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://purl.org/dc/terms/modified> "2024-04-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#NonCommercialResearch> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#NonCommercialResearch>.
+<https://w3id.org/dpv#OptimisationForConsumer> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OptimisationForConsumer> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OptimisationForConsumer> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OptimisationForConsumer> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Optimisation for Consumer"@en.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#scopeNote> "The term optimisation here refers to the efficiency of the service in terms of technical provision (or similar means) with benefits for everybody. Personalisation implies making changes that benefit the current user or persona."@en.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceOptimisation>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with optimisation of activities and services for consumer or user"@en.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OptimisationForConsumer>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Custom>.
+<https://w3id.org/dpv#OptimisationForConsumer> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OptimisationForConsumer>.
+<https://w3id.org/dpv#OptimiseUserInterface> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OptimiseUserInterface> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OptimiseUserInterface> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OptimiseUserInterface> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2004/02/skos/core#prefLabel> "Optimise User Interface"@en.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OptimisationForConsumer>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with optimisation of interfaces presented to the user"@en.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OptimiseUserInterface>.
+<https://w3id.org/dpv#OptimiseUserInterface> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OptimiseUserInterface>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation Compliance Management"@en.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2004/02/skos/core#scopeNote> "Note that this concept relates to internal organisational compliance. The concept LegalCompliance should be used for external legal or regulatory compliance."@en.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing compliance for organisation in relation to internal policies"@en.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OrganisationComplianceManagement>.
+<https://w3id.org/dpv#OrganisationComplianceManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OrganisationComplianceManagement>.
+<https://w3id.org/dpv#OrganisationRiskManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#OrganisationRiskManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#OrganisationRiskManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#OrganisationRiskManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation Risk Management"@en.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#OrganisationGovernance>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing risk for organisation's activities"@en.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#OrganisationRiskManagement>.
+<https://w3id.org/dpv#OrganisationRiskManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#OrganisationRiskManagement>.
+<https://w3id.org/dpv#PaymentManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PaymentManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PaymentManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PaymentManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PaymentManagement> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Payment Management"@en.
+<https://w3id.org/dpv#PaymentManagement> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with processing and managing payment in relation to service, including invoicing and records"@en.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PaymentManagement>.
+<https://w3id.org/dpv#PaymentManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PaymentManagement>.
+<https://w3id.org/dpv#Personalisation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#Personalisation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#Personalisation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Personalisation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Personalisation> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personalisation"@en.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2004/02/skos/core#scopeNote> "This term is a blanket purpose category for indicating personalisation of some other purpose, e.g. by creating a subclass of the other concept and Personalisation"@en.
+<https://w3id.org/dpv#Personalisation> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing customisation based on attributes and/or needs of person(s) or context(s)."@en.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Personalisation>.
+<https://w3id.org/dpv#Personalisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#Personalisation>.
+<https://w3id.org/dpv#PersonalisedAdvertising> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PersonalisedAdvertising> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PersonalisedAdvertising> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PersonalisedAdvertising> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personalised Advertising"@en.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Advertising>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Personalisation>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing personalised advertising"@en.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PersonalisedAdvertising>.
+<https://w3id.org/dpv#PersonalisedAdvertising> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PersonalisedAdvertising>.
+<https://w3id.org/dpv#PersonalisedBenefits> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PersonalisedBenefits> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PersonalisedBenefits> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PersonalisedBenefits> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personalised Benefits"@en.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServicePersonalisation>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing personalised benefits for a service"@en.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PersonalisedBenefits>.
+<https://w3id.org/dpv#PersonalisedBenefits> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PersonalisedBenefits>.
+<https://w3id.org/dpv#ServicePersonalisation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ServicePersonalisation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ServicePersonalisation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServicePersonalisation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Personalisation"@en.
+<https://w3id.org/dpv#ServicePersonalisation> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Personalisation>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with providing personalisation within services or product or activities"@en.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ServicePersonalisation>.
+<https://w3id.org/dpv#ServicePersonalisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ServicePersonalisation>.
+<https://w3id.org/dpv#PersonnelHiring> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PersonnelHiring> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PersonnelHiring> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PersonnelHiring> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelHiring> <http://purl.org/dc/terms/created> "2022-04-20"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personnel Hiring"@en.
+<https://w3id.org/dpv#PersonnelHiring> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PersonnelManagement>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with management and execution of hiring processes of personnel"@en.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PersonnelHiring>.
+<https://w3id.org/dpv#PersonnelHiring> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PersonnelHiring>.
+<https://w3id.org/dpv#PersonnelManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PersonnelManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PersonnelManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PersonnelManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelManagement> <http://purl.org/dc/terms/created> "2022-03-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personnel Management"@en.
+<https://w3id.org/dpv#PersonnelManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#HumanResourceManagement>.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with management of personnel associated with the organisation e.g. evaluation and management of employees and intermediaries"@en.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PersonnelManagement>.
+<https://w3id.org/dpv#PersonnelManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_246_1.
+<https://w3id.org/dpv#PersonnelManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PersonnelManagement>.
+<https://w3id.org/dpv#PersonnelPayment> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PersonnelPayment> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PersonnelPayment> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PersonnelPayment> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelPayment> <http://purl.org/dc/terms/created> "2022-04-20"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personnel Payment"@en.
+<https://w3id.org/dpv#PersonnelPayment> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PersonnelManagement>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with management and execution of payment of personnel"@en.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PersonnelPayment>.
+<https://w3id.org/dpv#PersonnelPayment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PersonnelPayment>.
+<https://w3id.org/dpv#ProtectionOfIPR> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProtectionOfIPR> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProtectionOfIPR> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProtectionOfIPR> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Protection of Intellectual Property Rights"@en.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#FulfilmentOfObligation>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with the protection of intellectual property rights"@en.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProtectionOfIPR>.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://purl.org/dc/terms/source> "DGA 3.1(c)"@en.
+<https://w3id.org/dpv#ProtectionOfIPR> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProtectionOfIPR>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Protection of National Security"@en.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with the protection of national security"@en.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProtectionOfNationalSecurity>.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://purl.org/dc/terms/source> "DGA 1.5"@en.
+<https://w3id.org/dpv#ProtectionOfNationalSecurity> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProtectionOfNationalSecurity>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Protection of Public Security"@en.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with the protection of public security"@en.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProtectionOfPublicSecurity>.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://purl.org/dc/terms/source> "DGA 3.2(d)"@en.
+<https://w3id.org/dpv#ProtectionOfPublicSecurity> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProtectionOfPublicSecurity>.
+<https://w3id.org/dpv#ProvideEventRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProvideEventRecommendations> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProvideEventRecommendations> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProvideEventRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://purl.org/dc/terms/created> "2019-11-26"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provide Event Recommendations"@en.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Rudy Jacob".
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ProvidePersonalisedRecommendations>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing personalised recommendations for events"@en.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProvideEventRecommendations>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://purl.org/dc/terms/modified> "2022-10-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://purl.org/dc/terms/source> _:e_n3_MINUS_253_1.
+<https://w3id.org/dpv#ProvideEventRecommendations> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProvideEventRecommendations>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://purl.org/dc/terms/created> "2019-11-26"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provide Personalised Recommendations"@en.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Rudy Jacob".
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServicePersonalisation>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing personalised recommendations"@en.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProvidePersonalisedRecommendations>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://purl.org/dc/terms/modified> "2022-10-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://purl.org/dc/terms/source> _:e_n3_MINUS_254_1.
+<https://w3id.org/dpv#ProvidePersonalisedRecommendations> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProvidePersonalisedRecommendations>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provide Official Statistics"@en.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with facilitating the development, production and dissemination of reliable official statistics"@en.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProvideOfficialStatistics>.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#ProvideOfficialStatistics> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProvideOfficialStatistics>.
+<https://w3id.org/dpv#ProvideProductRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ProvideProductRecommendations> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ProvideProductRecommendations> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ProvideProductRecommendations> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provide Product Recommendations"@en.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ProvidePersonalisedRecommendations>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing product recommendations e.g. suggest similar products"@en.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ProvideProductRecommendations>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://purl.org/dc/terms/modified> "2022-10-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2004/02/skos/core#related> <https://specialprivacy.ercim.eu/vocabs/purposes#Marketing>.
+<https://w3id.org/dpv#ProvideProductRecommendations> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ProvideProductRecommendations>.
+<https://w3id.org/dpv#PublicPolicyMaking> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PublicPolicyMaking> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PublicPolicyMaking> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PublicPolicyMaking> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Policy Making"@en.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PublicBenefit>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with public policy making, such as the development of new laws"@en.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PublicPolicyMaking>.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#PublicPolicyMaking> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PublicPolicyMaking>.
+<https://w3id.org/dpv#PublicRelations> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#PublicRelations> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#PublicRelations> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#PublicRelations> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicRelations> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Relations"@en.
+<https://w3id.org/dpv#PublicRelations> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing and conducting public relations processes, including creating goodwill for the organisation"@en.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#PublicRelations>.
+<https://w3id.org/dpv#PublicRelations> <http://purl.org/dc/terms/source> _:e_n3_MINUS_257_1.
+<https://w3id.org/dpv#PublicRelations> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#PublicRelations>.
+<https://w3id.org/dpv#RecordManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#RecordManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#RecordManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#RecordManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RecordManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Record Management"@en.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2004/02/skos/core#scopeNote> "This purpose relates specifically for record creation and management. This can be combined or used along with other purposes to express intentions such as records for legal compliance or vendor payments."@en.
+<https://w3id.org/dpv#RecordManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with manage creation, storage, and use of records relevant to operations, events, and processes e.g. to store logs or access requests"@en.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#RecordManagement>.
+<https://w3id.org/dpv#RecordManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#RecordManagement>.
+<https://w3id.org/dpv#RepairImpairments> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#RepairImpairments> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#RepairImpairments> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#RepairImpairments> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RepairImpairments> <http://purl.org/dc/terms/created> "2022-08-24"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2004/02/skos/core#prefLabel> "Repair Impairments"@en.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2004/02/skos/core#scopeNote> "An example of identifying and rectifying impairments is the process of finding and fixing errors in products, commonly referred to as debugging"@en.
+<https://w3id.org/dpv#RepairImpairments> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with identifying, rectifying, or otherwise undertaking activities intended to fix or repair impairments to existing functionalities"@en.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#RepairImpairments>.
+<https://w3id.org/dpv#RepairImpairments> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#RepairImpairments>.
+<https://w3id.org/dpv#RightsFulfillment> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#RightsFulfillment> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#RightsFulfillment> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#RightsFulfillment> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RightsFulfillment> <http://purl.org/dc/terms/created> "2024-02-14"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rights Fulfillment"@en.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2004/02/skos/core#scopeNote> "Where Rights Fulfillment includes activities that are not legal obligations, for example conducting Identity Verification, the documentation should indicate this by expressing them as separate purposes within the same activity"@en.
+<https://w3id.org/dpv#RightsFulfillment> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Georg P. Krog, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#LegalObligation>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with the fulfillment of rights specified in law"@en.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#RightsFulfillment>.
+<https://w3id.org/dpv#RightsFulfillment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#RightsFulfillment>.
+<https://w3id.org/dpv#ScientificResearch> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ScientificResearch> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ScientificResearch> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ScientificResearch> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific Research"@en.
+<https://w3id.org/dpv#ScientificResearch> <http://purl.org/dc/terms/contributor> "Beatriz Esteves, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ResearchAndDevelopment>.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with scientific research"@en.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ScientificResearch>.
+<https://w3id.org/dpv#ScientificResearch> <http://purl.org/dc/terms/source> "DGA 2.16"@en.
+<https://w3id.org/dpv#ScientificResearch> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ScientificResearch>.
+<https://w3id.org/dpv#SearchFunctionalities> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SearchFunctionalities> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SearchFunctionalities> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SearchFunctionalities> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://purl.org/dc/terms/created> "2022-11-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2004/02/skos/core#prefLabel> "Search Functionalities"@en.
+<https://w3id.org/dpv#SearchFunctionalities> <http://purl.org/dc/terms/contributor> "Georg P. Krog".
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with providing searching, querying, or other forms of information retrieval related functionalities"@en.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SearchFunctionalities>.
+<https://w3id.org/dpv#SearchFunctionalities> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SearchFunctionalities>.
+<https://w3id.org/dpv#SellDataToThirdParties> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SellDataToThirdParties> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SellDataToThirdParties> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SellDataToThirdParties> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sell Data to Third Parties"@en.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sell here means exchange, submit, or provide in return for direct or indirect compensation. Was subclass of commercial interest, changed to reflect selling something"@en.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#SellProducts>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with selling or sharing data or information to third parties"@en.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SellDataToThirdParties>.
+<https://w3id.org/dpv#SellDataToThirdParties> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SellDataToThirdParties>.
+<https://w3id.org/dpv#SellProducts> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SellProducts> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SellProducts> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SellProducts> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellProducts> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sell Products"@en.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sell here means exchange, submit, or provide in return for direct or indirect compensation."@en.
+<https://w3id.org/dpv#SellProducts> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with selling products or services"@en.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SellProducts>.
+<https://w3id.org/dpv#SellProducts> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SellProducts>.
+<https://w3id.org/dpv#SellInsightsFromData> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SellInsightsFromData> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SellInsightsFromData> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SellInsightsFromData> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sell Insights from Data"@en.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sell here means exchange, submit, or provide in return for direct or indirect compensation. Was subclass of commercial interest, changed to reflect selling something"@en.
+<https://w3id.org/dpv#SellInsightsFromData> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#SellProducts>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with selling or sharing insights obtained from analysis of data"@en.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SellInsightsFromData>.
+<https://w3id.org/dpv#SellInsightsFromData> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SellInsightsFromData>.
+<https://w3id.org/dpv#SellProductsToDataSubject> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SellProductsToDataSubject> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SellProductsToDataSubject> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SellProductsToDataSubject> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sell Products to Data Subject"@en.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sell Products here refers to processing necessary to provide and complete a sale to customers. It should not be confused with providing services with a cost based on an established agreement."@en.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#SellProducts>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with selling products or services to the user, consumer, or data subjects"@en.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SellProductsToDataSubject>.
+<https://w3id.org/dpv#SellProductsToDataSubject> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SellProductsToDataSubject>.
+<https://w3id.org/dpv#ServiceRegistration> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ServiceRegistration> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ServiceRegistration> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServiceRegistration> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceRegistration> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Registration"@en.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2004/02/skos/core#scopeNote> "An example of service registration is to provide a form that collects information such as preferred language or media format for downloading a movie"@en.
+<https://w3id.org/dpv#ServiceRegistration> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with registering users and collecting information required for providing a service"@en.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ServiceRegistration>.
+<https://w3id.org/dpv#ServiceRegistration> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ServiceRegistration>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Usage Analytics"@en.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2004/02/skos/core#scopeNote> "Was \"UsageAnalytics\", prefixed with Service to better reflect scope"@en.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting analysis and reporting related to usage of services or products"@en.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#ServiceUsageAnalytics>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://purl.org/dc/terms/modified> "2022-10-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#ServiceUsageAnalytics> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#ServiceUsageAnalytics>.
+<https://w3id.org/dpv#SocialMediaMarketing> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#SocialMediaMarketing> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#SocialMediaMarketing> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#SocialMediaMarketing> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Media Marketing"@en.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://purl.org/dc/terms/contributor> "Georg P. Krog, Harshvardhan J. Pandit, Beatriz Esteves".
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Marketing>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with conducting marketing through social media"@en.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#SocialMediaMarketing>.
+<https://w3id.org/dpv#SocialMediaMarketing> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#SocialMediaMarketing>.
+<https://w3id.org/dpv#TargetedAdvertising> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#TargetedAdvertising> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#TargetedAdvertising> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#TargetedAdvertising> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://purl.org/dc/terms/created> "2022-03-30"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2004/02/skos/core#prefLabel> "Targeted Advertising"@en.
+<https://w3id.org/dpv#TargetedAdvertising> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#PersonalisedAdvertising>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with creating and providing personalised advertisement where the personalisation is targeted to a specific individual or group of individuals"@en.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#TargetedAdvertising>.
+<https://w3id.org/dpv#TargetedAdvertising> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#TargetedAdvertising>.
+<https://w3id.org/dpv#TechnicalServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#TechnicalServiceProvision> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#TechnicalServiceProvision> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#TechnicalServiceProvision> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://purl.org/dc/terms/created> "2021-09-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Technical Service Provision"@en.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit".
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServiceProvision>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing and providing technical processes and functions necessary for delivering services"@en.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#TechnicalServiceProvision>.
+<https://w3id.org/dpv#TechnicalServiceProvision> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#TechnicalServiceProvision>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://purl.org/dc/terms/created> "2019-04-05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "User Interface Personalisation"@en.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Examples of user-interface personalisation include changing the language to match the locale"@en.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://purl.org/dc/terms/contributor> "Harshvardhan J. Pandit, Javier Fernández, Axel Polleres, Elmar Kiesling, Fajar Ekaputra, Simon Steyskal".
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#ServicePersonalisation>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with personalisation of interfaces presented to the user"@en.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#UserInterfacePersonalisation>.
+<https://w3id.org/dpv#UserInterfacePersonalisation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#UserInterfacePersonalisation>.
+<https://w3id.org/dpv#VendorManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#VendorManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#VendorManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#VendorManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vendor Management"@en.
+<https://w3id.org/dpv#VendorManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with manage orders, payment, evaluation, and prospecting related to vendors"@en.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#VendorManagement>.
+<https://w3id.org/dpv#VendorManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_296_1.
+<https://w3id.org/dpv#VendorManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#VendorManagement>.
+<https://w3id.org/dpv#VendorPayment> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#VendorPayment> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#VendorPayment> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#VendorPayment> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorPayment> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vendor Payment"@en.
+<https://w3id.org/dpv#VendorPayment> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#VendorManagement>.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing payment of vendors"@en.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#VendorPayment>.
+<https://w3id.org/dpv#VendorPayment> <http://purl.org/dc/terms/source> _:e_n3_MINUS_297_1.
+<https://w3id.org/dpv#VendorPayment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#VendorPayment>.
+<https://w3id.org/dpv#VendorRecordsManagement> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#VendorRecordsManagement> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#VendorRecordsManagement> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#VendorRecordsManagement> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vendor Records Management"@en.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#VendorManagement>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing records and orders related to vendors"@en.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#VendorRecordsManagement>.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://purl.org/dc/terms/source> _:e_n3_MINUS_298_1.
+<https://w3id.org/dpv#VendorRecordsManagement> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#VendorRecordsManagement>.
+<https://w3id.org/dpv#VendorSelectionAssessment> a <http://www.w3.org/2000/01/rdf-schema#Class>.
+<https://w3id.org/dpv#VendorSelectionAssessment> a <http://www.w3.org/2004/02/skos/core#Concept>.
+<https://w3id.org/dpv#VendorSelectionAssessment> a <https://w3id.org/dpv#Purpose>.
+<https://w3id.org/dpv#VendorSelectionAssessment> a <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://purl.org/dc/terms/created> "2021-09-01"^^<http://www.w3.org/2001/XMLSchema#date>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dpv#>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/dpv#purposes-classes>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vendor Selection Assessment"@en.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://purl.org/dc/terms/contributor> "Paul Ryan, Georg P. Krog, David Hickey, Harshvardhan J. Pandit".
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "accepted"@en.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/dpv#VendorManagement>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2004/02/skos/core#definition> "Purposes associated with managing selection, assessment, and evaluation related to vendors"@en.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#VendorSelectionAssessment>.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://purl.org/dc/terms/source> _:e_n3_MINUS_299_1.
+<https://w3id.org/dpv#VendorSelectionAssessment> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dpv#VendorSelectionAssessment>.
+

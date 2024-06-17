@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/shiori.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://greggkellogg.net/">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Home | Gregg Kellogg</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Additions to <head> tags go here. -->
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = "https://greggkellogg.net";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "greggkellogg-1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://greggkellogg-1.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-default navbar-static-top">
+  
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-toggle-wrapper visible-xs">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <a href="/" class="navbar-brand">Gregg Kellogg</a>
+        </div>
+        <div class="collapse navbar-collapse js-navbar-collapse">
+          <ul class="navbar-nav nav" data-purplecoat="shiori" data-purplecoat-label="nav.html">
+            <li><a href="/archive">Archive</a></li>
+<li class="dropdown">
+  <a href="/foaf" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="/cv">Gregg's CV</a></li>
+    <li><a href="/contact-information">Contact Information</a></li>
+  </ul>
+ </li>
+<li><a href="/services">Services</a></li>
+<li><a href="/photography">Gregg's Photography</a></li>
+<li><a href="http://rdf.greggkellogg.net">RDF Distiller</a></li>
+
+          </ul>
+          <ul class="navbar-nav nav navbar-right" data-purplecoat="shiori" data-purplecoat-label="nav-right.html">
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-sm-8">
+            <div class="post-header">
+  <h1 class="post-title-main">Home</h1>
+</div>
+<div class="post-content">
+  <div about="https://greggkellogg.net/foaf#me" typeof="foaf:Person">
+  <link href="https://greggkellogg.net/" rel="foaf:homepage" />
+  
+  <p>
+    I work on Semantic Web Standards and create [Open Source][1] projects. More FOAF information is available at <a href="https://greggkellogg.net/foaf">https://greggkellogg.net/foaf</a>.
+  </p>
+  
+  <p>
+    My Personal Blog containing both technical and personal information is <a href="/blog/" rel="foaf:weblog">here</a>
+  </p>
+  
+  <p>
+    These are some of the projects I maintain:
+  </p>
+  
+  <ul>
+    <li>
+      <a href="http://rdf.greggkellogg.net/">Ruby RDF/SPARQL distiller</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/json-ld" title="RubyGems">JSON::LD Gem</a> <a href="http://github.com/ruby-rdf/json-ld" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-rdfa" title="RubyGems">RDF::RDFa Gem</a> <a href="http://github.com/ruby-rdf/rdf-rdfa" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-microdata" title="RubyGems">RDF::Microdata Gem</a> <a href="http://github.com/ruby-rdf/rdf-microdata" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-n3" title="RubyGems">RDF::N3 Gem</a> <a href="http://github.com/ruby-rdf/rdf-n3" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-rdfxml" title="RubyGems">RDF::RDFXML Gem</a> <a href="http://github.com/ruby-rdf/rdf-rdfxml" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-tabular" title="RubyGems">RDF::Tabular Gem</a> <a href="http://github.com/ruby-rdf/rdf-tabular" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-turtle" title="RubyGems">RDF::Turtle Gem</a> <a href="http://github.com/ruby-rdf/rdf-turtle" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/rdf-trig" title="RubyGems">RDF::TriG Gem</a> <a href="http://github.com/ruby-rdf/rdf-trig" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/sparql" title="RubyGems">SPARQL Gem</a> <a href="http://github.com/ruby-rdf/sparql" title="GitHub">(GitHub)</a>
+    </li>
+    <li>
+      <a href="http://rubygems.org/gems/ebnf" title="RubyGems">EBNF Parser and Parser Generator Gem</a> <a href="http://github.com/gkellogg/ebnf" title="GitHub">(GitHub)</a>
+    </li>
+  </ul>
+
+  Presentations:
+
+  <ul>
+    <li><a href="presentations/JSON-LD-Update-DC-2017/index.html">JSON-LD Update</a> DC 2017, October 2017, Washington DC.</li>
+  </ul>
+</div>
+
+</div>
+
+          </div>
+          <div class="col-sm-4">
+            <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="sidebar.html">
+  <h3 class="section-header">
+    Recent Posts
+  </h3>
+  <ul>
+  
+    <li class="post-title-reference">
+      <a href="/2022/06/Roatan/" class="post-title-archive">Roatan June 2022</a>
+    </li>
+  
+    <li class="post-title-reference">
+      <a href="/2021/06/Roatan/" class="post-title-archive">Roatan June 2021</a>
+    </li>
+  
+    <li class="post-title-reference">
+      <a href="/2019/08/channel-islands-august-2019/" class="post-title-archive">Channel Islands August 2019</a>
+    </li>
+  
+    <li class="post-title-reference">
+      <a href="/2019/06/saint-lucia-june-2019/" class="post-title-archive">Saint Lucia June 2019</a>
+    </li>
+  
+    <li class="post-title-reference">
+      <a href="/2015/08/csv-on-the-web-presentation/" class="post-title-archive">CSV on the Web presentation</a>
+    </li>
+  
+  </ul>
+</div>
+
+<div data-purplecoat="shiori" data-purplecoat-label="sidebar.html">
+  <h3 class="section-header">
+    Categories
+  </h3>
+  <ul>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/design" class="post-title-archive">Design</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/diving" class="post-title-archive">Diving</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/photography" class="post-title-archive">Photography</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/ruby" class="post-title-archive">Ruby</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/semantic-web" class="post-title-archive">Semantic Web</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/media" class="post-title-archive">Media</a>
+    </li>
+  
+    
+    <li class="post-title-reference">
+      <a href="/categories/javascript" class="post-title-archive">JavaScript</a>
+    </li>
+  
+  </ul>
+</div>
+
+<div data-purplecoat="shiori" data-purplecoat-label="sidebar.html">
+  <h3 class="section-header">
+    Archives
+  </h3>
+  
+  <ul>
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2022/06" class="post-title-archive">June 2022</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2021/06" class="post-title-archive">June 2021</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2019/06" class="post-title-archive">June 2019</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2015/08" class="post-title-archive">August 2015</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2015/04" class="post-title-archive">April 2015</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2013/12" class="post-title-archive">December 2013</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2013/09" class="post-title-archive">September 2013</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2013/05" class="post-title-archive">May 2013</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2013/01" class="post-title-archive">January 2013</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2012/08" class="post-title-archive">August 2012</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2012/06" class="post-title-archive">June 2012</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2012/03" class="post-title-archive">March 2012</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2012/02" class="post-title-archive">February 2012</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2012/01" class="post-title-archive">January 2012</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/12" class="post-title-archive">December 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/10" class="post-title-archive">October 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/09" class="post-title-archive">September 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/08" class="post-title-archive">August 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/06" class="post-title-archive">June 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/05" class="post-title-archive">May 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2011/03" class="post-title-archive">March 2011</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/12" class="post-title-archive">December 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/09" class="post-title-archive">September 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/07" class="post-title-archive">July 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/05" class="post-title-archive">May 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/04" class="post-title-archive">April 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/02" class="post-title-archive">February 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2010/01" class="post-title-archive">January 2010</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2009/10" class="post-title-archive">October 2009</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2009/09" class="post-title-archive">September 2009</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2009/08" class="post-title-archive">August 2009</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2009/01" class="post-title-archive">January 2009</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2008/10" class="post-title-archive">October 2008</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2008/09" class="post-title-archive">September 2008</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2008/07" class="post-title-archive">July 2008</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2008/05" class="post-title-archive">May 2008</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2007/10" class="post-title-archive">October 2007</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2007/07" class="post-title-archive">July 2007</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2007/06" class="post-title-archive">June 2007</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2007/05" class="post-title-archive">May 2007</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2007/01" class="post-title-archive">January 2007</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2006/11" class="post-title-archive">November 2006</a>
+      </li>
+    
+  
+    
+      
+      <li class="post-title-reference">
+        <a href="/2006/10" class="post-title-archive">October 2006</a>
+      </li>
+    
+  
+  </ul>
+</div>
+
+          </div>
+        
+      </div>
+      <div class="row footer">
+        <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<footer class="site-footer" data-purplecoat="shiori" data-purplecoat-label="footer.html">
+  <div class="footer-col-wrapper">
+    <div class="footer-col footer-col-1">
+      <ul class="contact-list">
+        <li>
+          
+            Gregg Kellogg
+          
+          </li>
+          
+          <li><a href="mailto:gregg@greggkellogg.net">gregg@greggkellogg.net</a></li>
+          
+      </ul>
+    </div>
+
+    <div class="footer-col footer-col-2">
+      
+      <ul id="social-media" class="social-media-list">
+        
+        
+          
+          
+            <li><a rel="me" href="https://www.twitter.com/gkellogg" title="Twitter">
+              
+                <i class="fa fa-twitter-square"></i>
+              
+              gkellogg
+            </a></li>
+          
+        
+          
+          
+            <li><a rel="me" href="https://github.com/gkellogg" title="GitHub">
+              
+                <i class="fa fa-github-square"></i>
+              
+              gkellogg
+            </a></li>
+          
+        
+          
+          
+            <li><a rel="me" href="https://mastodon.social/@gkellogg" title="Mastodon">
+              
+              <!-- Needs newer version of fontawesome -->
+                M
+              
+              gkellogg
+            </a></li>
+          
+        
+      </ul>
+      
+    </div>
+
+    <div class="footer-col footer-col-3">
+      <ul class="contact-list">
+        <li>Gregg&#39;s Personal Blog</li>
+        <li>
+          &copy;2022.
+          Built with <a href="http://jekyllrb.com/">Jekyll</a> and
+          <a href="https://github.com/ellekasai/shiori">Shiori Theme</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/purplecoat-min.js"></script>
+    <!-- Place your <script> tags here. -->
+
+<!-- Example: Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  </body>
+</html>

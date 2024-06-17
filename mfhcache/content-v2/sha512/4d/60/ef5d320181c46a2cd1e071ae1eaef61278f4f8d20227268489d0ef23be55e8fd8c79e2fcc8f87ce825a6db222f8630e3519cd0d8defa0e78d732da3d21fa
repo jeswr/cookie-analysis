@@ -1,0 +1,31 @@
+
+
+
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <rdf:Description rdf:about="2000/04/mem-news/public-groups.rdf">
+        <dc:title>W3C Groups and Organizational Structure</dc:title>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="2002/01/tr-automation/tr.rdf">
+        <dc:title>W3C Standards and Technical Reports</dc:title>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/08/w3c-synd/home.rss">
+        <dc:title>World Wide Web Consortium Newsfeed</dc:title>
+        <primaryTopic rdf:resource="http://www.w3.org/data#W3C"/>
+    </rdf:Description>
+
+    <Organization rdf:about="http://www.w3.org/data#W3C">
+        <rdfs:label>W3C</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2000/04/mem-news/public-groups.rdf"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2002/01/tr-automation/tr.rdf"/>
+        <homepage rdf:resource="http://www.w3.org"/>
+        <logo rdf:resource="http://www.w3.org/Icons/w3c_home"/>
+        <name>World Wide Web Consortium</name>
+    </Organization>
+</rdf:RDF>

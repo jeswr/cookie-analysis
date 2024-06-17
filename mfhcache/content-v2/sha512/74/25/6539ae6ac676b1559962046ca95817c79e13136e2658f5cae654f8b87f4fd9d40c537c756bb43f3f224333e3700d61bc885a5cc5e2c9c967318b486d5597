@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"
+      prefix="foaf: http://xmlns.com/foaf/0.1/
+              contact: http://www.w3.org/2000/10/swap/pim/contact#
+              v: http://rdf.data-vocabulary.org/#
+              dcterms: http://purl.org/dc/terms/ 
+              cert: http://www.w3.org/ns/auth/cert#
+              rsa: http://www.w3.org/ns/auth/rsa#
+              xsd: http://www.w3.org/2001/XMLSchema#
+              owl: http://www.w3.org/2002/07/owl#
+              org: http://www.w3.org/ns/org#
+              schema: http://schema.org/"
+      about="" typeof="foaf:Document foaf:PersonalProfileDocument">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Homepage of Jakub Klímek">
+    <meta name="author" content="Jakub Klímek">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <script src="assets/toggler.js"></script>
+    <meta name="msapplication-TileColor" content="#333">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#333">
+
+    <title>Jakub Klímek</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  </head>
+
+  <body>
+    <div rel="foaf:primaryTopic">
+      <div about="https://jakub.klímek.com/#me" typeof="foaf:Person v:Person schema:Person">
+        <span rel="owl:sameAs" resource="https://jakubklimek.com/#me"></span>
+        <span rel="owl:sameAs" resource="http://dblp.l3s.de/d2r/resource/authors/Jakub_Klímek"></span>
+        <span rel="owl:sameAs" resource="https://purl.org/klimek#me"></span>
+        <span rel="owl:sameAs" resource="http://purl.org/klimek#me"></span>
+        <span rel="owl:sameAs" resource="http://www.ksi.mff.cuni.cz/~klimek/me/#me"></span>
+        <div rel="cert:key">
+          <div typeof="cert:RSAPublicKey">
+              <span property="cert:modulus" datatype="xsd:hexBinary" content="A2370721393CCE71047D6717360173E1F1925A4CEC67566135ECFDC8D904F1F4AA9F6ED28D72BDCB8CDCFDE33F1B50FCED73E31DFBCB05A0AE566640A623FB4FC73B217786BD622E341F699C47AEDAE850C5BED0D05D848FC5AB5410C5F5412CD7854D56BF3E77DF8839544EA265B5FFEBA246D987131CB59A17CB54269304C89CD9B2CA4319BF7B6055DFB386AED974859FF7312BF9E1E9AF9B641DADEE13114D3A50F6F22ADACAB069DD3876CA7909CA118B14F882E692AFAEACAA4E803502E64C8F951BBE8F13EB2C20EC9FBE46B110B86F502D5C17A56BCC93146AE8158D123AD443D67A20A0240D3DA242A627E4C70E772D01353B10A25EEF5944EA111D"></span>
+              <span property="cert:exponent" datatype="xsd:integer" content="65537"></span>
+          </div>
+        </div>
+        
+        <div class="container">
+
+          <div about="https://jakub.klímek.com/#me">
+            <h1><span property="foaf:name v:name" lang="cs"><span property="foaf:givenName">Jakub</span>&nbsp;<span property="foaf:familyName">Klímek</span></span></h1>
+            <p>Linked and Open Data researcher and practitioner</p>
+            <p>List of profiles:</p>
+            <ul>
+              <li><a rel="foaf:workHomepage" href="https://www.mff.cuni.cz/en/faculty/organizational-structure/people?hdl=4117">Charles University</a></li>
+              <li><a rel="foaf:workHomepage" href="https://fit.cvut.cz/cs/fakulta/lide/5173-jakub-klimek">Czech Technical University</a></li>
+              <li><a rel="foaf:account" href="https://www.linkedin.com/in/jakubklimek/">LinkedIn</a></li>
+              <li><a rel="foaf:account" href="https://github.com/jakubklimek">GitHub</a></li>
+              <li><a rel="foaf:account" href="https://twitter.com/jakub_klimek">Twitter</a></li>
+              <li><a rel="foaf:account" href="https://facebook.com/klimek.jakub">Facebook</a></li>
+              <li><a rel="foaf:account" href="https://www.instagram.com/jakubklimek">Instagram</a></li>
+              <li><a href="publications">Publications</a></li>
+            </ul>
+            <p>Courses at Charles University</p>
+            <ul>
+              <li><a href="nprg036">Data formats</a></li>
+              <li><a href="nswi144">Data on the Web</a></li>
+              <li><a href="nswi145">Web Services</a></li>
+            </ul>
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </body>
+</html>

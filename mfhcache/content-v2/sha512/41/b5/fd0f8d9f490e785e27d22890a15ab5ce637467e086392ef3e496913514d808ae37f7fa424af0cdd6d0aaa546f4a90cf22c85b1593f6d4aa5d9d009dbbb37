@@ -1,0 +1,3528 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+    <head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="nuance corporate communications"/>
+<meta name="description" content="Our innovations in voice, natural language understanding, reasoning and systems integration come together to create more human technology. Learn more. "/>
+<meta name="n.division" content="corporate"/>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/asset/internal/images/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/asset/internal/images/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/asset/internal/images/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/asset/internal/images/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/asset/internal/images/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/asset/internal/images/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/asset/internal/images/apple-touch-icon-76x76.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/asset/internal/images/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/asset/internal/images/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/asset/internal/images/favicon-32x32.png"/>
+
+<!--/* all nuance controlled global JS variables */ --> 
+<script>
+
+ var nuance_lang = "en-US";
+
+ var nuance_gaTrackingID = "UA-73311272-1";
+ var nuance_optimizeContainerID = "GTM-53578VH";
+
+ /* aem component used global variables     */ 
+ var ng_wcmmodeDisabled = true;
+ var ng_selForPosAuthorAdj = "";
+</script>
+
+
+<title>Nuance - Conversational AI for Healthcare and Customer Engagement | Nuance</title>
+
+<link rel="canonical" href="https://www.nuance.com/index.html"/>
+
+
+
+<link rel="alternate" href="https://www.nuance.com/fi-fi/index.html" hreflang="fi-FI"/>
+
+<link rel="alternate" href="https://www.nuance.com/en-ie/index.html" hreflang="en-IE"/>
+
+<link rel="alternate" href="https://www.nuance.com/nb-no/index.html" hreflang="nb-NO"/>
+
+<link rel="alternate" href="https://www.nuance.com/de-de/index.html" hreflang="de-DE"/>
+
+<link rel="alternate" href="https://www.nuance.com/index.html" hreflang="en-US"/>
+
+<link rel="alternate" href="https://www.nuance.com/pt-br/index.html" hreflang="pt-BR"/>
+
+<link rel="alternate" href="https://www.nuance.com/es-es/index.html" hreflang="es-ES"/>
+
+<link rel="alternate" href="https://www.nuance.com/nl-be/index.html" hreflang="nl-BE"/>
+
+<link rel="alternate" href="https://www.nuance.com/fr-fr/index.html" hreflang="fr-CA"/>
+
+<link rel="alternate" href="https://www.nuance.com/es-mx/index.html" hreflang="es-MX"/>
+
+<link rel="alternate" href="https://www.nuance.com/index.html" hreflang="x-default"/>
+
+<link rel="alternate" href="https://www.nuance.com/it-it/index.html" hreflang="it-IT"/>
+
+<link rel="alternate" href="https://www.nuance.com/en-nz/index.html" hreflang="en-NZ"/>
+
+<link rel="alternate" href="https://www.nuance.com/nl-nl/index.html" hreflang="nl-NL"/>
+
+<link rel="alternate" href="https://www.nuance.com/fr-be/index.html" hreflang="fr-BE"/>
+
+<link rel="alternate" href="https://www.nuance.com/sv-se/index.html" hreflang="sv-SE"/>
+
+<link rel="alternate" href="https://www.nuance.com/fr-ch/index.html" hreflang="fr-CH"/>
+
+<link rel="alternate" href="https://www.nuance.com/en-au/index.html" hreflang="en-AU"/>
+
+<link rel="alternate" href="https://www.nuance.com/da-dk/index.html" hreflang="da-DK"/>
+
+<link rel="alternate" href="https://www.nuance.com/it-ch/index.html" hreflang="it-CH"/>
+
+<link rel="alternate" href="https://www.nuance.com/fr-fr/index.html" hreflang="fr-FR"/>
+
+<link rel="alternate" href="https://www.nuance.com/ja-jp/index.html" hreflang="ja-JP"/>
+
+<link rel="alternate" href="https://www.nuance.com/en-gb/index.html" hreflang="en-GB"/>
+
+<link rel="alternate" href="https://www.nuance.com/de-ch/index.html" hreflang="de-CH"/>
+
+
+
+
+
+<!-- Open Graph data -->
+<meta property="og:site_name" content="Nuance Communications"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.nuance.com/index.html"/>
+<meta property="og:title" content="Nuance - Conversational AI for Healthcare and Customer Engagement | Nuance"/>
+<meta property="og:description" content="Our innovations in voice, natural language understanding, reasoning and systems integration come together to create more human technology. Learn more."/> 
+
+
+<meta property="og:image" content="https://www.nuance.com/asset/internal/images/favicon-social.png"/>
+<meta property="og:image:secure_url" content="https://www.nuance.com/asset/internal/images/favicon-social.png"/>
+ 
+<meta property="og:image:width" content="600"/>
+<meta property="og:image:height" content="315"/>
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@NuanceInc"/>
+<meta name="twitter:title" content="Nuance - Conversational AI for Healthcare and Customer Engagement | Nuance"/>
+<meta name="twitter:description" content="Our innovations in voice, natural language understanding, reasoning and systems integration come together to create more human technology. Learn more."/>
+<meta name="twitter:image" content="https://www.nuance.com/asset/internal/images/favicon-social.png"/>
+
+<!-- DNS Prefetch/preconnect -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="preload" as="style"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" media="print" onload="this.media='all'"/>
+
+
+
+<script>
+ var dataLayer = [{
+	"pageURL": "www.nuance.com/index.html",
+	"locale": "en_US",
+	"division": "Corporate",
+    "pageTitle": "Home",
+    "pageCategory": "homepage",
+    "pageTemplate": "homepage",
+    "product": []
+  }];
+</script>
+<!-- Google Anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+
+<script>
+	function executeGoogleScripts() {
+		(function(){if(nuance_optimizeContainerID){var google_optimizeFlags={};google_optimizeFlags[nuance_optimizeContainerID] = true;
+		(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',4000,google_optimizeFlags);}})();
+		
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', nuance_gaTrackingID, 'auto');
+		ga('require', nuance_optimizeContainerID);
+	}
+	
+	if(document.cookie.indexOf("%2CC0002%3A1%2C") > -1){
+		executeGoogleScripts();
+	} else {
+		document.addEventListener('click', function (event) {
+			if (event.target.matches('#onetrust-accept-btn-handler')) {
+				executeGoogleScripts();
+			}
+		});
+	}
+</script>
+
+<!-- Adobe Target anti-flicker code -->
+<script>  
+
+    ;(function(win, doc, style, timeout) {
+    
+      var STYLE_ID = 'at-body-style';
+    
+      function getParent() {
+        return doc.getElementsByTagName('head')[0];
+      }
+    
+      function addStyle(parent, id, def) {
+        if (!parent) { return; }
+    
+        var style = doc.createElement('style');
+        style.id = id;
+        style.innerHTML = def;
+        parent.appendChild(style);
+      }
+    
+      function removeStyle(parent, id) {
+        if (!parent) { return; }
+    
+        var style = doc.getElementById(id);
+    
+        if (!style) { return;}
+    
+        parent.removeChild(style);
+      }
+    
+      addStyle(getParent(), STYLE_ID, style);
+      setTimeout(function() {
+        removeStyle(getParent(), STYLE_ID);
+      }, timeout);
+    
+    }(window, document, "body {opacity: 0 !important}", 3000));
+    
+</script>
+
+<script src="https://assets.adobedtm.com/5ef092d1efb5/a7d1b86d4aa0/launch-d3cf06d5bc7b.min.js" async></script>
+
+
+<!-- Adobe 1DS scripts-->
+  <script> var adobe1DSEnvironment = 'PROD';  </script> 
+
+
+  <script type="text/javascript" src="https://js.monitor.azure.com/scripts/c/ms.analytics-web-3.min.js"></script>
+  <script>
+    const analytics = new oneDS.ApplicationInsights();
+    var config = {
+      instrumentationKey: "2a9bd9a749a24e4db591ae7d59825c0a-587d601d-8176-44b0-85f0-afc5b5424423-7210",
+      channelConfiguration:{ // Post channel configuration
+          eventsLimitInMem: 50
+      },
+      propertyConfiguration: { // Properties Plugin configuration 
+        env: adobe1DSEnvironment 
+      },
+      webAnalyticsConfiguration:{ // Web Analytics Plugin configuration
+        //urlCollectQuery:true, 
+          autoCapture: {
+            scroll: true,
+            pageView: true,
+            onLoad: true,
+            onUnload: true,
+            click: true,
+            resize: true,
+            jsError: true
+          }
+      }
+    }; 
+    //Initialize SDK
+    analytics.initialize(config, []);
+  </script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T57BQQ');</script>
+
+
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+
+
+ 
+
+    
+<script src="/etc.clientlibs/nuance/clientlibs/third-party/jquery.min.js"></script>
+<script src="/etc.clientlibs/nuance/clientlibs/clientlib-util.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="msapplication-TileColor" content="#da532c"/>
+<meta name="msapplication-config" content="/content/dam/nuance/internal/images/browserconfig.xml"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+ <link rel="stylesheet" href="/etc.clientlibs/nuance/clientlibs/third-party.min.5416dc6bd0d6cdb75df0a67b138f69fe.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/nuance/clientlibs/clientlib-common.min.61c5929c9ad8272eb04ba16d3d83144a.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/nuance/clientlibs/clientlib-components.min.7515fd7860c71d8d710540f94990f26a.css" type="text/css">
+<script defer src="/etc.clientlibs/nuance/clientlibs/third-party.min.js"></script>
+<script defer src="/etc.clientlibs/nuance/clientlibs/clientlib-common.min.js"></script>
+<script defer src="/etc.clientlibs/nuance/clientlibs/clientlib-components.min.js"></script>
+
+
+
+
+
+
+
+ <link rel="stylesheet" href="/etc.clientlibs/nuance/clientlibs/homepage.min.be4c6db4dce5cd3307e95f9e78aef33f.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/nuance/clientlibs/third-party/wowanimation.min.cb67371414710491ee3730390d1efb33.css" type="text/css">
+<script defer src="/etc.clientlibs/nuance/clientlibs/homepage.min.js"></script>
+<script defer src="/etc.clientlibs/nuance/clientlibs/third-party/wowanimation.min.js"></script>
+
+
+
+
+
+
+
+<!--For  Google GSC -->
+<meta name="google-site-verification" content="4SOzxPJTQafnmNThNbsuAz1zZghZRQ6u2ufuNcznogA" />
+
+<meta name="google-site-verification" content="WCCghqU9MrmpHhtGt1GIsNG48ohvSeNPilXucOFoTxw" />
+
+<!-- For Google Merchant Center -->
+<meta name="google-site-verification" content="pcCJ2r2egNhU2E1XRRhuhox8vPAdT669eMcfDt2_i7I" />
+
+<!-- For Bing -->
+<meta name="msvalidate.01" content="C45DB2B5C50376F48EEBD8534DE92620" />
+
+<!-- For Meta  -->
+<meta name="facebook-domain-verification" content="g2vmr749uhnr9te6rs4wpfbefdu74c" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Nuance Communications",
+  "url": "https://www.nuance.com/index.html",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.nuance.com/search.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style type="text/css">
+h1, h2, h3, h4 { word-break:initial; }
+.wow { visibility: hidden; }
+/*for IE 10 and 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .wow { visibility: visible; }
+}
+/* for IE9 only*/
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) { 
+  .wow { visibility: visible; }
+}
+/* for IE8 and below */
+@media \0screen\,screen\9 {
+  .wow { visibility: visible; }
+}
+.new-home .leadbig2 { font-size: 40px; }
+
+.pad5 { padding-top:5px; }
+.pad5bottom { padding-bottom:5px; }
+.pad90bottom { padding-bottom:90px; }
+
+.statsinfo { font-size: 22px; }
+
+.jumbotron .nuanceFlexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.jumbotron .nuanceFlexbox>div {
+  max-width: 156px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.multitiles .col-md-3 .tile-content, .multitiles .col-md-4 .tile-content, .multitilesgutter .col-md-3 .tile-content, .multitilesgutter .col-md-4 .tile-content {
+    padding: 50px 40px 70px 40px;
+    width: 100%;
+}
+
+#hp-hero-brick { 
+   background-image: url(/content/dam/nuance/shared-images/homepage/masthead/hp-mast-corp-frames-2b.jpg); 
+   background-position: top center !important;
+  }
+
+#hp-offering-brick h6 { font-size: 17px; }
+#hp-stat-brick {
+    background-image: url(/content/dam/nuance/shared-images/full-width-images/mast/corporate/background/bg-corp-finserv-stats.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: 0 !important;
+}
+
+#hp-stat-brick .stat-for-smallview { display: none; }
+
+#hp-home-aboutus {
+    background-image: url(/content/dam/nuance/shared-images/full-width-images/background/corporate/bg-corp-homepage-dna.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#hp-home-aboutus a.cta:focus { 
+    background-color: white;
+    color: #000 !important;
+}
+
+#hp-career-brick-tile1 { background: url('/content/dam/nuance/shared-images/homepage/img-spot-home-contact-767x512.jpg'); background-size: cover; background-position: 50% 50%;height:100%; }
+#hp-career-brick-tile2 { background: url('/content/dam/nuance/shared-images/homepage/img-spot-home-careers-767x512.jpg'); background-size: cover; background-position: 50% 50%;height:100%; }
+#hp-career-brick-tile3 { background: url('/content/dam/nuance/shared-images/homepage/img-spot-home-blog-767x512.jpg'); background-size: cover; background-position: 50% 50%;height:100%; }
+
+#hp-career-brick .little-magic {
+  background-color: rgba(20, 19, 128, 1);
+}
+#hp-career-brick .little-magic:hover {
+  background-color: rgba(20, 19, 128, 0.8);
+}
+
+#hp-career-brick .calling-visionary {
+  background-color: rgba(0, 115, 234, 1);
+}
+#hp-career-brick .calling-visionary:hover {
+  background-color: rgba(0, 115, 234, .93);
+}
+
+#hp-career-brick .whats-next {
+  background-color: rgba(68, 68, 68, 1);
+}
+
+#hp-career-brick .whats-next:hover {
+  background-color: rgba(68, 68, 68, .93);
+}
+
+#hp-division-icons { padding: 60px 0; }
+
+#brick-customer-logos {padding-top: 30px; padding-bottom: 10px;}
+
+.announcement {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.5px;
+}
+
+#hp-offering-brick .h6.alt {
+    font-size: 17px;
+}
+
+@media (min-width: 1450px) {
+  #hp-career-brick .tile-content { height: 275px !important; }
+}
+
+@media (max-width: 1023px) {
+   #hp-offering-brick .row .col-md-3 { width: 48.5%; max-width: 50%; flex: 0 0 50%; }
+   #hp-offering-brick .row [class*="col-md-"]:nth-child(2n+1){ margin-left:0;}
+   #hp-offering-brick .row [class*="col-md-"]:nth-child(3){ margin-top:40px;}
+   #hp-offering-brick .row [class*="col-md-"]:nth-child(4){ margin-top:40px;}
+   #hp-customer-logos { display:none; }
+}
+
+@media (max-device-width:767px), screen and (max-width:979px) {
+  #hp-stat-brick .bigfont140 { font-size: 80px; line-height: 110%;}
+  #hp-stat-brick .statsinfo { font-size:16px; line-height: 120%; }
+}
+
+@media (max-width: 767px) {
+  .new-home .leadbig2 { font-size: 24px; }
+
+  #hp-hero-brick { 
+    padding:130px 0 60px 0 !important; background-image: url(/content/dam/nuance/shared-images/homepage/masthead/hp-mast-corp-frames-mobile-2b.jpg);
+  }
+  #hp-offering-brick .row .col-md-3 { width: 100%; max-width: 100%; flex: 0 0 100%; margin-left:0; margin-top:0;}
+  #hp-offering-brick .multicolumn-image { max-width: 75%; margin:0 auto;}
+  #hp-offering-brick .responsive { margin-top: 50px !important;  }
+  #hp-stat-brick .circle-image, #circle-image-div { display: none; }
+  #hp-stat-brick .stat-for-smallview { display: block; width: 100%; }
+  #hp-stat-brick .offset-1 { margin-left:0 !important; }
+
+  .row [class*="offset"]:first-child { margin-left: 0; }
+}
+
+@media (max-width: 375px) {
+  #hp-offering-brick .multicolumn-image { max-width: 100%; }
+}
+
+
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 675px;
+  }
+}
+/* popup style ends */
+
+@media all and (min-width: 768px) {
+   .ie9 .row {
+      overflow: hidden;
+   }
+   .ie9 .platforms-list-item {
+      float: left;
+   }
+   .ie9 #circle-image-div.row {  width: 100%; }
+}
+</style>
+
+
+
+
+<style type="text/css"> 
+	.jumbotron, #primaryNav { max-width: none; }
+</style>
+<style type="text/css"> 
+	.home #homeLogo {display: none;}
+</style>
+
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+<script>
+<!--/* create a vidyard callback list to store multiple vidyard */-->
+window.vidyardCallbacks = [];
+window.onVidyardAPI =  function(vidyardEmbed) {
+    for ( var i = 0; i< window.vidyardCallbacks.length; ++i) {
+        window.vidyardCallbacks[i](vidyardEmbed);
+    }
+};
+
+window.vidyardCallbacks.push( function(vidyardEmbed) {
+    if (document.cookie.indexOf("%2CC0002%3A1%2C") > -1) {
+        setTimeout(VidyardV4.api.GDPR.consent(true),0);
+    } else {
+        document.addEventListener('click', function (event) {
+          if (event.target.matches('#onetrust-accept-btn-handler')) {
+            VidyardV4.api.GDPR.consent(true);
+          }
+        });
+    }
+});
+
+$(window).on("load", function() {
+    if (document.cookie.indexOf("%2CC0002%3A1%2C") > -1) {
+        setTimeout(VidyardV4.api.GDPR.consent(true),1000);
+    }
+});
+</script>
+</head>
+    <body class="home"><svg version="1.1" id="color-gradient-defs" width="1" height="0" aria-hidden="true"> 
+ <desc></desc> 
+ <title>svg gradient</title> 
+ <defs> 
+  <linearGradient id="light-blue-green-h" x1="0%" y1="0%" x2="100%" y2="0%"> 
+   <stop offset="0%" style="stop-color:#2dc6d6;stop-opacity:1"></stop> 
+   <stop offset="100%" style="stop-color:#8fce00;stop-opacity:1"></stop> 
+  </linearGradient> 
+
+  <linearGradient id="light-blue-purple-h" x1="0%" y1="0%" x2="100%" y2="0%"> 
+   <stop offset="0%" style="stop-color:#0073EA;stop-opacity:1"></stop> 
+   <stop offset="100%" style="stop-color:#75178c;stop-opacity:1"></stop> 
+  </linearGradient>
+
+  <linearGradient id="light-blue-dark-blue-h" x1="0%" y1="0%" x2="100%" y2="0%"> 
+   <stop offset="0%" style="stop-color:#0073EA;stop-opacity:1"></stop> 
+   <stop offset="100%" style="stop-color:#141380;stop-opacity:1"></stop> 
+  </linearGradient>
+ </defs> 
+</svg>
+<a href="#main-content" class="sr-only sr-only-focusable" style="position: absolute;z-index:1000;font:large bold;margin:3px;background-color: white;">Skip to main content</a>
+<header role="banner">
+  <div class="navigation-wrapper">
+  
+<div><div class="topMenuMargin"></div>
+<!-- ### New Primary Nav Starts ### -->
+ 
+
+<div id="newPrimaryNavWrapper" class="newPrimaryNavWrapper">
+	
+	<div class="jumbotron" id="newPrimaryNav">
+		<div class="wrapper d-flex justify-content-between">
+			<nav class="navbar navbar-expand-md d-none d-md-block d-lg-flex d-md-flex" id="primary-navbar" aria-label="Primary Navigation">
+				<div id="desktopLogo" class="d-flex align-items-center">
+				  <a class="navbar-brand m-0 p-0" href="//www.nuance.com/index.html" aria-label="Nuance.com">
+				    <span data-src="/content/dam/nuance/shared-images/logos/nuance/logo-nuance-black-horizontal-small.png" id="priNavLogo"></span>
+				  </a>
+			  	</div>
+			  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNavDropdown" data-tracking-event-category="Primary Navigation">
+			    	<ul class="navbar-nav m-auto primary-flex-container" id="desktopNavLinks">
+				      	<li id="levelOneNavItem1" class="hasSubnav nav-item dropdown flexli">
+				      		
+				        	<span class="arrowdown" aria-hidden="true" tabindex="-1"></span>
+							<a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="levelOneNavItem1Link" data-tracking-event-label="Solutions" data-bi-id="primary-navigation" data-bi-name="Solutions" data-bi-area="header" data-bi-compnm="Primary Navigation" data-bi-mto aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" role="button">
+			          		Solutions
+				        	</a>
+							
+								<div class="dropdown-menu secondLevel levelOneNavItem1 dropdown-menu-center" data-tracking-label-prefix="Solutions" aria-labelledby="levelOneNavItem1" data-tracking-event-category="Primary Dropdown Navigation" data-bs-popper="static">
+									<div class="inner">
+										<div aria-expanded="false">
+							               	
+
+
+
+
+    
+    
+    <div class="customlayout">
+
+
+<a name="primary-dropdown-par_customlayout_2134283" class="stickyNav-anchor" aria-hidden="true"></a>
+
+<div id="primary-dropdown-par_customlayout_2134283" class="multitiles jumbotron text-center" style="width:384px;" tabindex="-1"> 
+	
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-4 " style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/healthcare.html" class="tileLink " data-tracking-event-label="Healthcare AI<br />solutions &amp;<br />services<br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Healthcare AI<br />solutions &amp;<br />services<br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-healthcare.png" aria-hidden="true" alt=""/>
+	<label>
+		Healthcare AI<br>solutions &<br>services<br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/omni-channel-customer-engagement.html" class="tileLink " data-tracking-event-label="Omnichannel<br />customer<br />engagement<br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Omnichannel<br />customer<br />engagement<br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-omnichannel.png" aria-hidden="true" alt=""/>
+	<label>
+		Omnichannel<br>customer<br>engagement<br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/dragon.html" class="tileLink " data-tracking-event-label="Dragon<br />consumer &amp;<br />enterprise<br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Dragon<br />consumer &amp;<br />enterprise<br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-dragon.png" aria-hidden="true" alt=""/>
+	<label>
+		Dragon<br>consumer &<br>enterprise<br>
+	</label>
+</a></div>
+
+
+</div>
+    	</div>
+	
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+								        </div>
+									</div>	
+								</div>
+							
+				      	</li>
+			    	
+				      	<li id="levelOneNavItem2" class="hasSubnav nav-item dropdown flexli">
+				      		
+				        	<span class="arrowdown" aria-hidden="true" tabindex="-1"></span>
+							<a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="levelOneNavItem2Link" data-tracking-event-label="Industries" data-bi-id="primary-navigation" data-bi-name="Industries" data-bi-area="header" data-bi-compnm="Primary Navigation" data-bi-mto aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" role="button">
+			          		Industries
+				        	</a>
+							
+								<div class="dropdown-menu secondLevel levelOneNavItem2 dropdown-menu-center" data-tracking-label-prefix="Industries" aria-labelledby="levelOneNavItem2" data-tracking-event-category="Primary Dropdown Navigation" data-bs-popper="static">
+									<div class="inner">
+										<div aria-expanded="false">
+							               	
+
+
+
+
+    
+    
+    <div class="customlayout">
+
+
+<a name="primary-dropdown-par_customlayout_copy_co" class="stickyNav-anchor" aria-hidden="true"></a>
+
+<div id="primary-dropdown-par_customlayout_copy_co" class="multitiles jumbotron " style="width:386px;" tabindex="-1"> 
+	
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-4 " style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/healthcare.html" class="tileLink " data-tracking-event-label="Healthcare<br /><br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Healthcare<br /><br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-healthcare.png" aria-hidden="true" alt=""/>
+	<label>
+		Healthcare<br><br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/industries/financial-services.html" class="tileLink " data-tracking-event-label="Financial<br />Services<br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Financial<br />Services<br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-financial.png" aria-hidden="true" alt=""/>
+	<label>
+		Financial<br>Services<br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/omni-channel-customer-engagement/industry/telecommunications.html" class="tileLink " data-tracking-event-label="Telecom<br /><br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Telecom<br /><br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-telecommunications.png" aria-hidden="true" alt=""/>
+	<label>
+		Telecom<br><br>
+	</label>
+</a></div>
+
+
+</div>
+    	</div>
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-4 " style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/omni-channel-customer-engagement/industry/retail.html" class="tileLink " data-tracking-event-label="Retail<br /><br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Retail<br /><br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-retail.png" aria-hidden="true" alt=""/>
+	<label>
+		Retail<br><br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/industries/government.html" class="tileLink " data-tracking-event-label="Government<br /><br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Government<br /><br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-government.png" aria-hidden="true" alt=""/>
+	<label>
+		Government<br><br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-4 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/industries.html" class="tileLink onlylabel" data-tracking-event-label="View all <br />industries &gt;<br />" data-bi-id="primary-dropdown-navigation" data-bi-name="View all <br />industries &gt;<br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	
+	<label>
+		View all <br>industries ><br>
+	</label>
+</a></div>
+
+
+</div>
+    	</div>
+	
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+								        </div>
+									</div>	
+								</div>
+							
+				      	</li>
+			    	
+				      	<li id="levelOneNavItem3" class="hasSubnav nav-item dropdown flexli">
+				      		
+				        	<span class="arrowdown" aria-hidden="true" tabindex="-1"></span>
+							<a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="levelOneNavItem3Link" data-tracking-event-label="Support" data-bi-id="primary-navigation" data-bi-name="Support" data-bi-area="header" data-bi-compnm="Primary Navigation" data-bi-mto aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" role="button">
+			          		Support
+				        	</a>
+							
+								<div class="dropdown-menu secondLevel levelOneNavItem3 dropdown-menu-center" data-tracking-label-prefix="Support" aria-labelledby="levelOneNavItem3" data-tracking-event-category="Primary Dropdown Navigation" data-bs-popper="static">
+									<div class="inner">
+										<div aria-expanded="false">
+							               	
+
+
+
+
+    
+    
+    <div class="customlayout">
+
+
+<a name="primary-dropdown-par_customlayout_copy" class="stickyNav-anchor" aria-hidden="true"></a>
+
+<div id="primary-dropdown-par_customlayout_copy" class="multitiles jumbotron text-center" style="width:518px;" tabindex="-1"> 
+	
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-3 " style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/healthcare/support.html" class="tileLink " data-tracking-event-label="Healthcare AI<br /><br /><br />" data-bi-id="primary-dropdown-navigation" data-bi-name="Healthcare AI<br /><br /><br />" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-healthcare.png" aria-hidden="true" alt=""/>
+	<label>
+		Healthcare AI<br><br><br>
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-3 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/omni-channel-customer-engagement/support/enterprise-speech-solutions.html" class="tileLink " data-tracking-event-label="Omni-channel<br />customer engagement" data-bi-id="primary-dropdown-navigation" data-bi-name="Omni-channel<br />customer engagement" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-omnichannel.png" aria-hidden="true" alt=""/>
+	<label>
+		Omni-channel<br>customer engagement
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-3 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/dragon/support/dragon-naturallyspeaking.html" class="tileLink " data-tracking-event-label="Dragon<br />consumer<br />&amp; enterprise" data-bi-id="primary-dropdown-navigation" data-bi-name="Dragon<br />consumer<br />&amp; enterprise" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	<img src="/asset/shared-images/ui/navigation/primary-navigation/single-row-icons/icon-nav-primary-dragon.png" aria-hidden="true" alt=""/>
+	<label>
+		Dragon<br>consumer<br>& enterprise
+	</label>
+</a></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-3 mt-30 mt-sm-30 mt-md-0" style="height:145px;">
+
+
+
+
+    
+    
+    <div class="primarytile">
+
+<a href="/support.html" class="tileLink onlylabel" data-tracking-event-label="View all<br />support &gt;" data-bi-id="primary-dropdown-navigation" data-bi-name="View all<br />support &gt;" data-bi-area="header" data-bi-compnm="Primary Dropdown Navigation" data-bi-mto>
+	
+	<label>
+		View all<br>support >
+	</label>
+</a></div>
+
+
+</div>
+    	</div>
+	
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+								        </div>
+									</div>	
+								</div>
+							
+				      	</li>
+			    	</ul>
+			    	<ul id="fullSearchbar" class="m-auto">
+	                    <form action="/search.html" method="get" data-forcampaign='false' id="primarynav-searchform" class="search-form">
+	                    	<label for="searchfield" class="sr-only">Search</label>
+	                        <input name="q" id="searchfield" class="placeholder opacity-100 search-field" type="text" placeholder="SEARCH NUANCE.COM"/>
+	                        <input type="hidden" name="_charset_" value="utf-8"/>
+	                        <div class="utilityicon enterKeyHandlerForClick search-button" onclick="$('#primarynav-searchform').submit();" aria-label="Submit" role="button" tabindex="0" title="Submit" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bi-name="Search" data-bi-id="search" data-bi-mto></div>
+	                    </form>
+	                </ul>
+				    <div class="navbar-text">
+				      <ul id="desktopUtilityLinks" class="d-flex align-items-center text-end" data-tracking-event-category="Utility Navigation">
+			          	<!--desktop view -->
+
+
+
+    
+    
+         <li class="other"><a href="https://shop.nuance.com/store/nuanceus/en_US/Content/pbPage.home-gateway?pgmid=4990661900" data-tracking-event-label="Store" target="_blank">Store<span class='sr-only'>(Open a new window)</span></a> </li>
+    
+         <li class="other"><a href="https://whatsnext.nuance.com" data-tracking-event-label="Blog" target="_blank">Blog<span class='sr-only'>(Open a new window)</span></a> </li>
+    
+
+
+
+
+<li id="menuItemSearchIcon" class="othericons">
+    <span data-tracking-event-label="Search">
+       
+          <div id="searchOpenIcon" aria-label="Open Search" role="button" tabindex="0" class="enterKeyHandlerForClick" title="Open Search" data-bs-toggle="tooltip" data-placement="bottom"></div>
+          <div id="searchCloseIcon" aria-label="Close Search" role="button" tabindex="0" class="enterKeyHandlerForClick" title="Close Search" data-bs-toggle="tooltip" data-placement="bottom"></div>
+       
+        
+    </span>
+</li>
+
+ 
+			          </ul>
+				    </div>
+			  	</div>
+			</nav>
+			<div id="hamburger" class="d-md-none">
+	        	<button type="button" id="hamburgerIcon" data-bs-toggle="modal" data-bs-target="#toolsNavMobileView" aria-label="Click to open primary menu" aria-expanded="false">
+	                <span class="fas fa-bars fa-lg" aria-hidden="true"></span>
+	            </button>
+	        </div>
+	        <div id="navLogoSmall" class="d-md-none">
+	        	<a href="//www.nuance.com/index.html">
+	        		<img src="/asset/shared-images/logos/nuance/logo-nuance-129x26-small.png" id="priNavLogoMobile" alt="Nuance.com"/>
+	        	</a>
+	        </div>
+	        <div id="mobileSupportMenu" data-tracking-event-category="Support Navigation - Mobile" class="d-md-none">
+				<button id="toolsNav_Tools_Mobile_SupportLink" data-bs-toggle="modal" type="button" data-bs-target="#toolsNavSupportMobileView" aria-label="Click to open support menu" aria-expanded="false" data-tracking-event-label="Support" data-bi-id="primary-navigation-mobile" data-bi-name="Support" data-bi-area="header" data-bi-compnm="Primary Navigation Mobile" data-bi-mto>Support</button>
+	        </div>
+		</div>
+	</div>
+
+    <!-- Mobile Menu Start; ONLY visible in smaller viewports-->
+    <div id="toolsNavMobileView" data-tracking-event-category="Primary Navigation - Mobile" class="d-md-none modal fade modal-left modal-full mobileMenuModal p-0" tabindex="-1" role="dialog" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog m-0" role="document">
+	        <div class="modal-content border-0">
+		        <div class="modal-header border-0 p-0">
+			        <button type="button" class="clearfix closeMenu" id="hamburgerCloseIcon" data-bs-dismiss="modal" aria-label="Close menu">
+			            <img src="/asset/internal/images/assets/ic-close-reverse.png" alt="Close"/>
+			        </button>
+			    </div>
+			    <div class="modal-body p-0">
+			        <ul id="toolsNav_cclinks_mobile">
+			            
+			                
+			                    <li class="non-search">
+			                    
+									<a role="button" data-bs-toggle="collapse" aria-expanded="false" aria-haspopup="listbox" class="accordion-toggler " data-tracking-event-label="Solutions" data-bi-id="primary-navigation-mobile" data-bi-name="Solutions" data-bi-area="header" data-bi-compnm="Primary Navigation Mobile" data-bi-mto href="#collapse1">Solutions</a>
+			              			<div id="collapse1" class="collapse accordion-body" data-tracking-event-category="Primary Dropdown Navigation - Mobile" data-tracking-label-prefix="Solutions" data-bs-parent="#toolsNav_cclinks_mobile">
+			              				<div class="accordion-inner">
+			              					<ul data-links="levelOneNavItem1">
+			              					</ul>
+			              				</div>
+			              			</div>
+			                    </li>
+			                
+			                
+			            
+			                
+			                    <li class="non-search">
+			                    
+									<a role="button" data-bs-toggle="collapse" aria-expanded="false" aria-haspopup="listbox" class="accordion-toggler " data-tracking-event-label="Industries" data-bi-id="primary-navigation-mobile" data-bi-name="Industries" data-bi-area="header" data-bi-compnm="Primary Navigation Mobile" data-bi-mto href="#collapse2">Industries</a>
+			              			<div id="collapse2" class="collapse accordion-body" data-tracking-event-category="Primary Dropdown Navigation - Mobile" data-tracking-label-prefix="Industries" data-bs-parent="#toolsNav_cclinks_mobile">
+			              				<div class="accordion-inner">
+			              					<ul data-links="levelOneNavItem2">
+			              					</ul>
+			              				</div>
+			              			</div>
+			                    </li>
+			                
+			                
+			            
+			                
+			                    <li class="non-search">
+			                    
+									<a role="button" data-bs-toggle="collapse" aria-expanded="false" aria-haspopup="listbox" class="accordion-toggler " data-tracking-event-label="Support" data-bi-id="primary-navigation-mobile" data-bi-name="Support" data-bi-area="header" data-bi-compnm="Primary Navigation Mobile" data-bi-mto href="#collapse3">Support</a>
+			              			<div id="collapse3" class="collapse accordion-body" data-tracking-event-category="Primary Dropdown Navigation - Mobile" data-tracking-label-prefix="Support" data-bs-parent="#toolsNav_cclinks_mobile">
+			              				<div class="accordion-inner">
+			              					<ul data-links="levelOneNavItem3">
+			              					</ul>
+			              				</div>
+			              			</div>
+			                    </li>
+			                
+			                
+			            
+			            
+	<li class="other non-search"><a href="https://shop.nuance.com/store/nuanceus/en_US/Content/pbPage.home-gateway?pgmid=4990661900" data-tracking-event-category="Utility Navigation - Mobile" data-tracking-event-label="Store" target="_blank">Store<span class='sr-only'>(Open a new window)</span></a></li>
+
+	<li class="other non-search"><a href="https://whatsnext.nuance.com" data-tracking-event-category="Utility Navigation - Mobile" data-tracking-event-label="Blog" target="_blank">Blog<span class='sr-only'>(Open a new window)</span></a></li>
+
+
+<li class="other" data-tracking-event-category="Utility Navigation - Mobile" data-tracking-event-label="Search">
+    <form action="/search.html" method="get" data-forcampaign='false' id="primarynav-m2searchform" class="search-form">
+    	<label for="mobile-searchfield" class="sr-only">Search</label>
+        <input name="q" id="mobile-searchfield" class="col-md-2 placeholder search-field" type="text" placeholder="Search nuance.com"/>
+        <input type="hidden" name="_charset_" value="utf-8"/>
+        <img src="/asset/internal/images/assets/ic-search.png" class="utilityicon search-button" role="button" onclick="$('#primarynav-m2searchform').submit();" alt="Search button" data-bi-name="Search" data-bi-id="search" data-bi-mto/>
+        <span class="fas fa-times-circle enterKeyHandlerForClick" tabindex="0" role="button" aria-label="Clear search results"></span>
+    </form>
+</li>
+			        </ul>
+			     </div>
+	        </div>
+        </div>
+    </div>
+    
+    <!-- Start of Mobile Support Menu -->
+    <div id="toolsNavSupportMobileView" data-tracking-event-category="Support Dropdown Navigation - Mobile" class="d-md-none modal fade modal-right modal-full mobileMenuModal p-0" tabindex="-1" role="dialog" aria-hidden="true" data-bs-backdrop="false">
+    	<div class="modal-dialog m-0" role="document">
+	        <div class="modal-content border-0">
+	        	<div class="modal-header border-0 p-0">
+			    	<button type="button" class="clearfix closeMenu" id="supportCloseIcon" aria-label="Close support menu" data-bs-dismiss="modal">
+			            <img src="/asset/internal/images/assets/ic-close-reverse.png" alt="Close"/>
+			        </button>
+			    </div>
+		        <div class="supportContents modal-body p-0">
+		        	<h2 class="underline m-sm-0 mb-sm-20 m-0 mb-20">Support</h2>
+		        	<ul id="supportMenuUl">
+		        	</ul>
+		        </div>
+		      </div>
+		  </div>
+    </div>
+    <!-- End of Mobile Support Menu -->
+
+    <!-- Mobile Menu End -->
+    
+    <!-- Start Of Secondary Menu -->
+    
+    <!-- End Of Secondary Menu -->
+    <!-- Start of Mobile Secondary Menu -->
+    
+    <!-- End of Mobile Secondary Menu -->
+    <div id="searchoverlay"></div>
+</div>
+<!-- ### New Primary Nav Ends ### -->
+
+</div>
+
+</div>
+
+</header>
+<main role="main" id="main-content" tabindex='-1'>
+  
+<div>
+
+
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_simplehtmltext-hero">
+ 
+<div class="jumbotron pad90bottom alwaysImg backgroundImg-centerCenter" style="margin-top:-70px; padding-top:135px; padding-bottom:70px" id="hp-hero-brick">
+   <div class="wrapper">
+      <div class="row">
+         <div class="col-md-6 wow fadeInUp">
+            <h1 class="h2 colorwayWhite">
+              Amplifying your ability to&nbsp;help others
+            </h1>
+            <div class="margin30">
+                <span class="lead1 white">Nuance AI solutions transform the way we work, connect, and interact with each other to advance the effectiveness of your organization and further your positive impact on the world. </span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div></div>
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_htmltext_855974365">
+ 
+<div class="multicolumn">
+   <div tabindex="-1" id="hp-announcement-brick" class="jumbotron colorwayLightGrey-bg py-1" style="background-image: url(/content/dam/nuance/shared-images/homepage/bg-corp-homepage-better-together-gray.jpg)">
+      <div class="wrapper">
+         <!--eyebrow and H3 title, Paragraph  -->
+         <div class="row mt-0 mb-3">
+            <div class="col-md-6 ">
+               <div class="multicolumn-image">
+                  <div >
+                     <img src="/asset/shared-images/logos/nuance/logo-corp-msft-nuance-lockup-dark-436x40.png" alt="Microsoft-Nuance-logo" class="img-on-top" style="padding-top: 36px;" loading="lazy">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 responsive">
+               <div class="multicolumn-image">
+                  <div class="test text-left">
+                     <div class="linklist  ">
+                        <h2 class="h3 annoucement colorwayDarkBlue">
+                          Build your future with outcomes-focused AI
+                        </h2>
+                        <p class="lead2 h4style colorwayBlack">Together we bring industry&#8209;leading AI and deep vertical expertise to address your biggest challenges and accelerate business results. From proven <a href="/healthcare.html">healthcare solutions </a> to secure <a href="/omni-channel-customer-engagement.html"> customer engagement solutions, </a>we’re here to help accelerate your digital transformation.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div></div>
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_htmltext_809270661">
+ 
+<div class="jumbotron colorwayWhite-bg colorwayDarkGrey text-center" id="hp-offering-brick">
+<div class="wrapper">
+<div class="row">
+    <div class="col-md-10 mx-auto">
+      <h2 class="h3 colorwayPurple">Intelligent solutions. Transformative outcomes.</h2>
+    </div>
+    </div>
+      <div class="row margin40">
+         <div class="col-md-3 ">
+               <h3 class="h6 alt">HEALTHCARE</h3>
+               <br>
+            <div class="multicolumn-image">
+               <img src="/asset/shared-images/homepage/icon/icon-homepage-stetho.png" class="img-on-top" alt="" loading="lazy">
+               <div class="linklist  ">
+                  <p class="lead2 wow fadeInUp" data-wow-offset="30" data-wow-delay="500ms" data-wow-duration="2s">Transform patient care with AI&#8209;powered solutions for physicians, radiologists, and hospitals.</p>
+                  <p class="colorwayDefault"></p>
+                  <a href="/healthcare.html" class="cta cta-bk-border margin20 wow fadeInUp" data-wow-delay="1000ms">Reimagine healthcare</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 responsive">
+               <h3 class="h6 alt">CUSTOMER ENGAGEMENT</h3>
+               <br>
+            <div class="multicolumn-image">
+               <img src="/asset/shared-images/homepage/icon/icon-homepage-chat.png" class="img-on-top" alt="" loading="lazy">
+               <div class="linklist  ">
+                  <p class="lead2 wow fadeInUp" data-wow-offset="30" data-wow-delay="500ms" data-wow-duration="2s">Deliver world class customer conversations with secure omni&#8209;channel solutions powered by AI.</p>
+                  <p class="colorwayDefault"></p>
+                  <a href="/omni-channel-customer-engagement.html" class="cta cta-bk-border margin20 wow fadeInUp" data-wow-delay="1000ms">Redefine engagement</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 responsive">
+               <h3 class="h6 alt">SECURITY</h3>
+               <br>
+            <div class="multicolumn-image">
+               <img src="/asset/shared-images/homepage/icon/icon-homepage-lock.png" class="img-on-top" alt="" loading="lazy">
+               <div class="linklist  ">
+                  <p class="lead2 wow fadeInUp" data-wow-offset="30" data-wow-delay="500ms" data-wow-duration="2s">Authenticate customers and prevent fraud across all channels with innovative biometric solutions.</p>
+                  <a href="/omni-channel-customer-engagement/authentication-and-fraud-prevention.html" class="cta cta-bk-border margin20 wow fadeInUp" data-wow-delay="1000ms">Increase security</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 responsive">
+               <h3 class="h6 alt">DRAGON PRODUCTIVITY</h3>
+               <br>
+            <div class="multicolumn-image">
+               <img src="/asset/shared-images/homepage/icon/icon-homepage-dragon.png" class="img-on-top" alt="" loading="lazy">
+               <div class="linklist  ">
+                  <p class="lead2 wow fadeInUp" data-wow-offset="30" data-wow-delay="500ms" data-wow-duration="2s">Boost productivity with speech recognition solutions that help you do what you do, even faster.</p>
+                  <p class="colorwayDefault"></p>
+                  <a href="/dragon.html" class="cta cta-bk-border margin20 wow fadeInUp" data-wow-delay="1000ms">Maximize efficiency</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div></div>
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_simplehtmltext-stats">
+ 
+<div class="jumbotron pad30bottom text-center colorwayLightGrey-bg" id="hp-stat-brick">
+   <div class="wrapper">
+   <div class="row​" id="hp-stat-brick-text">
+      <div class="col-md-10 offset-1 text-center">
+         <h2 class="h3 colorwayDarkBlue wow fadeInUp animated" data-wow-offset="20" data-wow-delay="500ms">Let’s transform business as usual</h2>
+         <div class="h5 alt colorwayBlack wow fadeInUp animated" data-wow-offset="20" data-wow-delay="700ms">From revolutionizing the doctor-patient relationship to reinventing the way brands connect with their customers, Nuance technology helps organizations all over the world push the boundaries of what’s possible.</div>
+      </div>
+   </div>
+   <div class="row margin20" id="circle-image-div">
+     <div class="col-md-4 wow fadeInUp animated" data-wow-offset="20" data-wow-delay="900ms" id="hp-stat-brick-circle-1">
+           <div class="stats">
+             <div class="text-center statsbrick colorwayMedBlue-bg circle large alwaysImg" data-backgroundcolor="colorwayMedBlue">
+                <div class="statscontent">
+                   <div class="bigfont140 colorwayWhite statsheader">
+                      10k
+                   </div>
+                   <p class="colorwayWhite statsinfo font-weight-light">healthcare organizations worldwide use Nuance</p>
+                </div>
+             </div>
+          </div>
+         </div>
+      <div class="col-md-4 responsive wow fadeInUp animated" data-wow-offset="20" data-wow-delay="1100ms" id="hp-stat-brick-circle-2">
+            <div class="stats">
+             <div class="text-center statsbrick colorwayMedBlue-bg circle large alwaysImg" data-backgroundcolor="colorwayMedBlue">
+                <div class="statscontent">
+                   <div class="bigfont140 colorwayWhite statsheader">
+                      75<sup>%</sup>
+                   </div>
+                   <p class="colorwayWhite statsinfo font-weight-light">of Fortune 100 partner with Nuance</p>
+                </div>
+             </div>
+          </div>
+         </div>
+      <div class="col-md-4 responsive wow fadeInUp animated" data-wow-offset="20" data-wow-delay="1300ms" id="hp-stat-brick-circle-3">
+          <div class="stats">
+           <div class="text-center statsbrick colorwayMedBlue-bg circle large alwaysImg" data-backgroundcolor="colorwayMedBlue">
+              <div class="statscontent">
+                 <div class="bigfont140 colorwayWhite statsheader">
+                    80<sup>%</sup>
+                 </div>
+                 <p class="colorwayWhite statsinfo font-weight-light">&nbsp;&nbsp;of US radiologists use Nuance</p>
+              </div>
+           </div>
+        </div>
+      </div>
+
+   </div>
+   <div class="row margin20 text-center" id="stat-for-smallview-div">
+         <div class="stat-for-smallview">
+            <div class="bigfont110 colorwayMedBlue">10k</div>
+            <p class="lead2">healthcare organizations worldwide use Nuance</p>
+         </div>
+
+         <div class="stat-for-smallview responsive">
+            <div class="bigfont110 colorwayMedBlue">75%</div>
+            <p class="lead2">of Fortune 100 partner with Nuance</p>
+         </div>
+
+         <div class="stat-for-smallview responsive">
+            <div class="bigfont110 colorwayMedBlue">80%</div>
+            <p class="lead2">of US radiologists use Nuance</p>
+         </div>
+
+   </div>
+   <div class="row mx-auto margin20" id="ticker-data-source">
+      <p class="sysrequirements">Sourced by Nuance September 2022</p>
+   </div>
+
+   </div>
+</div>
+</div></div>
+
+
+    
+    
+    <div class="container-multicolumn">
+
+
+
+<div id="brick-customer-logos" class="jumbotron colorwayLightGrey-bg backgroundImgMark  backgroundImg-centerCenter">
+	<div class="wrapper">
+	  	
+	</div>
+	<!-- Start the slide -->
+	<div id="homepage-mainpar_container_multicolum_715444328_7772" class="slide">
+		<div class="wrapper owl-carousel multicolumnCarousel" data-interval="5000" data-showDots="false" data-ride="carousel" data-keyboard="true" data-columns="6" fade_arrows="false">
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-oracle-cerner-gray.png" alt="Oracle Cerner logo" title="Oracle Cerner" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-cleveland-clinic-gray.png" alt="Cleveland Clinic logo" title="Cleveland Clinic" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-epic-gray.png" alt="Epic logo" title="Epic" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-humana-gray.png" alt="Humana logo" title="Humana" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-johns-hopkins-gray.png" alt="Johns Hopkins logo" title="Johns Hopkins" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/mass-general-logo-gray-vert.png" alt="Mass General Brigham logo" title="Mass General Brigham" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-rush-university-medicine-gray.png" alt="Rush University Medicine logo" title="Rush University Medicine" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logos-yale-newhaven-health-gray.png" alt="Yale New Haven Health logo" title="Yale New Haven Health" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/leon-medical-logo-gray.png" alt="Leon Medical Center logo" title="Leon Medical Center" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-temple-health-gray.png" alt="Temple Health logo" title="Temple Health" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-athena-health-gray.png" alt="Athena Health logo" title="Athena Health" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-eastern-bank-gray.png" alt="Eastern Bank Logo" title="Eastern Bank" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-hsbc-gray.png" alt="HSBC logo" title="HSBC" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-natwest-gray.png" alt="NatWest logo" title="NatWest" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-swedbank-gray.png" alt="Swedbank logo" title="Swedbank" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-virginia-credit-union-gray.png" alt="Virginia Credit Union logo" title="VCU" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-deutsche-telekom-gray.png" alt="Deutsche Telekom logo" title="Deutsche Telekom" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-telus-gray.png" alt="Telus logo" title="Telus" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-verizon-gray.png" alt="Verizon-logo" title="verizon" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-telefonica-gray.png" alt="Telefonica logo" title="Telefonica" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/logos/non-nuance/logo-jetstar-gray.png" alt="Jetstar logo" title="Jetstar" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/homepage/logos/logo-corp-homepage-ato-gray.png" alt="Australian-government-taxation-office-logo" title="Australian Government, Taxation Office" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+				
+				<div class="item">
+					<div>
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test=""> -->
+		
+		
+		
+			<img src="/asset/shared-images/homepage/logos/logo-corp-homepage-ip-australia-gray.png" alt="Australian Government, IP Australia logo" title="Australian Government, IP Australia" class=" img-on-bottom"/>
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+				</div>
+			
+		</div>
+	</div>
+</div> <!-- end of carousel container -->
+
+
+</div>
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_htmltext_716644478">
+ 
+<div id="hp-home-aboutus" class="jumbotron colorwayDarkGrey-bg  alwaysImg backgroundImg-centerCenter">
+   <div class="wrapper">
+      <div class="row">
+         <div class="offset-0 col-md-12 text-center">
+            <h2 class="h3 colorwayWhite wow fadeInUp animated" data-wow-offset="20" data-wow-delay="500ms" data-wow-duration="300ms">AI is in our DNA</h2>
+            <p class="alt margin20 colorwayWhite wow fadeInUp animated lead1" data-wow-offset="20" data-wow-delay="800ms">Nuance created the voice recognition space more than 20 years ago and has been building deep domain expertise across healthcare, financial services, telecommunications, retail, and government ever since. Our AI&#8209;powered solutions continuously evolve to foster success in your work, advance the effectiveness of your organization, and further your positive impact on the world.</p><br>
+            <a href="/company-overview/what-we-do.html" class="cta cta-w-border margin20 wow fadeInUp animated" data-wow-offset="20" data-wow-delay="800ms">Get to know us</a>
+         </div>
+      </div>
+   </div>
+</div>
+</div></div>
+
+
+    
+    
+    <div class="customlayout">
+
+
+<a name="hp-division-icons" class="stickyNav-anchor" aria-hidden="true"></a>
+
+
+
+<div id="hp-division-icons" tabindex="-1" class=" jumbotron text-center multitilesgutter enlarge-off"> 
+	
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="About us"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorWayNone bluetitle">
+                <span class="titleBlockLink">
+                    <a href="/company-overview/what-we-do.html">About us</a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="multiple-11_292899" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="multiple-11_918675">
+  people-icon
+ </desc>
+ <title>multiple-11</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M21.427,27.439	C20.464,25.41,18.395,24,16,24H8c-3.314,0-6,2.686-6,6v8l4,2l1,14h11 M12,6c3.314,0,6,2.686,6,6s-2.686,6-6,6s-6-2.686-6-6	S8.686,6,12,6z M42.573,27.439C43.536,25.41,45.605,24,48,24h8c3.314,0,6,2.686,6,6v8l-4,2l-1,14H46 M52,6c3.314,0,6,2.686,6,6	s-2.686,6-6,6s-6-2.686-6-6S48.686,6,52,6z M38,62H26l-1-16l-5-1V32c0-4.418,3.582-8,8-8h8c4.418,0,8,3.582,8,8v13l-5,1L38,62z	 M32,2c4.418,0,8,3.582,8,8s-3.582,8-8,8s-8-3.582-8-8S27.582,2,32,2z" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="Trust center"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorwayDarkGrey bluetitle">
+                <span class="titleBlockLink">
+                    <a href="/about-us/trust-center.html">Trust center</a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="handshake_568328" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="handshake_573584">
+  handshake-icon
+ </desc>
+ <title>handshake</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M48.044,38.171l3.809,3.808	c1.533,1.534,1.533,4.02,0,5.554l0,0c-1.534,1.534-4.021,1.534-5.555,0l-3.807-3.806 M36.974,49.244l1.787,1.788	c1.523,1.523,1.523,3.992,0,5.515l0,0C38.03,57.28,37.036,57.691,36,57.689 M7,29v-6l-4-4L17,5l3,3h5 M11.618,41.397l1.03-1.03	c1.534-1.534,4.021-1.534,5.555,0l0,0c1.534,1.534,1.534,4.021,0,5.555l-1.03,1.03c-1.534,1.534-4.021,1.534-5.555,0l0,0	C10.084,45.418,10.084,42.931,11.618,41.397z M23.816,51.342l0.526-0.526c1.523-1.523,3.992-1.523,5.515,0l0,0	c1.523,1.523,1.523,3.992,0,5.515l-0.526,0.526c-1.523,1.523-3.992,1.523-5.515,0l0,0C22.293,55.335,22.293,52.865,23.816,51.342z	 M12.631,40.383l-0.58,0.58c-1.48,1.483-3.882,1.485-5.366,0.005c-0.046-0.046-0.091-0.093-0.134-0.141l0,0	c-1.343-1.485-1.303-3.758,0.092-5.195l0.58-0.593c1.455-1.489,3.838-1.53,5.343-0.091l0,0c1.518,1.449,1.575,3.854,0.126,5.373	C12.672,40.342,12.652,40.362,12.631,40.383z M17.934,46.194l0.291-0.291c1.523-1.523,3.992-1.523,5.515,0l0,0	c1.523,1.523,1.523,3.992,0,5.515l-0.291,0.291c-1.523,1.523-3.992,1.523-5.515,0l0,0C16.411,50.186,16.411,47.717,17.934,46.194z	 M45.537,46.776c1.523,1.523,1.523,3.992,0.001,5.515c0,0,0,0-0.001,0.001l0,0c-1.523,1.523-3.992,1.523-5.515,0L38.73,51	 M50.776,40.9c1.485,1.483,3.891,1.481,5.374-0.004c0.043-0.043,0.085-0.087,0.126-0.132l0,0c1.343-1.485,1.303-3.758-0.092-5.195	L43.476,22.51 M57,29v-6l4-4L47,5l-3,3h-6.553c-3.201,0-6.271,1.271-8.534,3.535l-9.206,9.571c-1.314,1.342-1.291,3.494,0.05,4.808	c1.159,1.135,2.959,1.293,4.299,0.377l9.8-6.318c3.254,3.69,8.883,4.043,12.573,0.789c0.326-0.287,0.63-0.598,0.91-0.929" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="News"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorwayBlack bluetitle">
+                <span class="titleBlockLink">
+                    <a href="https://news.nuance.com/">News</a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="news_860708" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="news_487342">
+  news-icon
+ </desc>
+ <title>news</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M24,34h28 M24,13h28v13H24	V13z M52,50H24 M52,42H24 M11,36H4v18c0.01,3.31,2.69,5.99,6,6 M16,4v50c-0.01,3.31-2.69,5.99-6,6h44c3.31-0.01,5.99-2.69,6-6V4H16z	" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="Investors"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorwayDarkGrey bluetitle">
+                <span class="titleBlockLink">
+                    <a href="https://www.microsoft.com/en-us/investor" target="_blank">Investors<span class='sr-only'>(Open a new window)</span></a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="chart-bar-32_795873" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="chart-bar-32_154554">
+  barchart-icon
+ </desc>
+ <title>chart-bar-32</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M25,6h14v52H25V6z M2,42h14	v16H2V42z M48,26h14v32H48V26z" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="Support"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorwayDarkGrey bluetitle">
+                <span class="titleBlockLink">
+                    <a href="/support.html">Support</a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="configuration_932111" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="configuration_572948">
+  configuration-icon
+ </desc>
+ <title>configuration</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M24.933,31.439l-2.324-2.725	c-6.452,3.113-14.207,0.406-17.32-6.046c-1.379-2.858-1.663-6.123-0.797-9.176l6.739,6.739l9-9l-6.739-6.739	c6.895-1.951,14.067,2.056,16.018,8.951c0.863,3.05,0.58,6.31-0.796,9.166L32,25.412 M43.474,35.2l15.114,12.889	c1.684,1.429,1.891,3.953,0.462,5.638c-0.071,0.083-0.145,0.164-0.222,0.241l-4.86,4.86c-1.562,1.562-4.094,1.563-5.657,0.001	c-0.077-0.077-0.151-0.158-0.222-0.241l-12.277-14.4 M59.508,13.492l-6.739,6.739l-9-9l6.739-6.739	c-6.895-1.951-14.067,2.056-16.018,8.951c-0.863,3.05-0.58,6.31,0.796,9.166L5.412,48.089c-1.684,1.429-1.891,3.953-0.462,5.638	c0.071,0.083,0.145,0.164,0.222,0.241l4.86,4.86c1.562,1.562,4.094,1.563,5.657,0.001c0.077-0.077,0.151-0.158,0.222-0.241	l25.48-29.874c6.452,3.113,14.207,0.406,17.32-6.046C60.09,19.81,60.374,16.545,59.508,13.492z" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	
+    	    
+        	<div class="tile col-md-2 ">
+
+
+
+
+    
+    
+    <div class="multicolumn-image">
+
+
+
+
+
+<!-- <div data-sly-unwrap="true" class="white-box-on-color-bg equalDivHeight equalHeightDivStyle"> -->  
+	<div class=" text-center   equalDivHeight equalHeightDivStyle  bottomImage">
+        
+		
+		
+		
+		
+		
+        
+		
+		<!-- 
+			added this code to add the class as buttonAlignment if author only use the button but now not needed
+			 <div class="linklist  " 
+			 data-sly-test="Careers"> -->
+		<div class="linklist ">
+			
+			<h4 class="h5 colorwayDarkGrey bluetitle">
+                <span class="titleBlockLink">
+                    <a href="/about-us/careers.html">Careers</a>
+				</span>
+			</h4>
+			
+			
+			
+			
+			
+			
+			
+		    
+		    
+			
+			
+			
+		</div>
+		
+		
+		  
+		  
+		  
+			<div class="svg-icon img-on-bottom pt-3"><svg version="1.1" id="briefcase-24_249364" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" width="64" height="64" role="img" aria-hidden="true">
+ <desc id="briefcase-24_025192">
+  briefcase-icon
+ </desc>
+ <title>briefcase-24</title><path fill="none" stroke="url(#light-blue-purple-h)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M22,12V4h20v8 M25,44H2V16	c0-2.209,1.791-4,4-4h52c2.209,0,4,1.791,4,4v28H39 M58,49v7c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4v-7 M25,39h14v10H25V39z" />
+</svg></div>
+		  
+		  
+		  
+		  		  
+	</div>
+<!-- </div> --></div>
+
+
+</div>
+    	</div>
+	
+    	<div class="row">
+    	    
+        	<div class="tile col-md-12 ">
+
+
+
+
+</div>
+    	</div>
+	
+
+</div>
+
+
+
+
+</div>
+
+
+    
+    
+    <div class="htmltext">
+<div id="homepage-mainpar_htmltext">
+ 
+<div class="jumbotron multitiles pad0 pad0bottom" id="hp-career-brick">
+  <div class="row">
+     <div class="tile col-md-4 equalHeightDivs" id="hp-career-brick-tile1">
+        <div class="tile-block zoomeffect105">
+          <div class="tile-content equalHeightDivs little-magic text-center">
+             <h3 class="h4 alt white">What can you + Nuance do together?</h3> 
+             <a href="/about-us/engage-us.html" class="cta no-hover cta-w-border margin10">Contact us</a>
+          </div>
+        </div>
+     </div>
+
+     <div class="tile col-md-4 equalHeightDivs" id="hp-career-brick-tile2">
+       <div class="tile-block zoomeffect105" >
+          <div class="tile-content equalHeightDivs calling-visionary text-center">
+             <h3 class="h4 alt colorwayWhite">Calling all innovators</h3> 
+             <a href="/about-us/careers.html" class="cta no-hover cta-w-border margin10">Search careers</a>
+          </div>
+        </div>
+     </div>
+
+     <div class="tile col-md-4 equalHeightDivs colorwayWhite" style="background-color:#444;" id="hp-career-brick-tile3">
+
+       <div class="tile-block zoomeffect105">
+          <div class="tile-content equalHeightDivs whats-next text-center">
+             <h3 class="h4 alt">Stay ahead of the curve</h3> 
+<a href="https://whatsnext.nuance.com/" class="cta cta-w-border  margin10" target="_blank">
+              Read What's Next
+
+            <span class='sr-only'>(Open a new window)</span></a>           
+          </div>
+        </div>
+     </div>
+  </div>
+</div>
+</div></div>
+
+
+</div>
+
+</main>
+<aside>
+    <div><!-- ### Footer Mobile Search Starts ### -->
+<div id="footerMobileSearch" class="jumbotron new-footer">
+    <div class="wrapper">
+      <div class="input-group pt-10">
+          <form action="/search.html" method="get" data-forcampaign='false' class="mb-20 w-100">
+          	<div class="g-0 d-flex flex-wrap">
+    	  		<div class="col-10 p-0">
+					<!--  input type="hidden" name="fromSearchbar" id="fromSearchbar" value="true"/  -->
+					<!--  input type="hidden" name="redirectPath" id="redirectPath" value=""/ -->
+					<label id="search-label" for="appendedInputButton" class="sr-only">Enter a keyword to search Nuance.com</label>
+		            <input name="q" class="input input-xxlarge form-control m-0 border-right-0" id="appendedInputButton" type="text" placeholder="Search" aria-labelledby="search-label"/>
+		            <input type="hidden" name="_charset_" value="utf-8"/>
+            	</div>
+            	<div class="input-group-prepend">
+			      <button class="btn" type="submit" aria-label="Submit"><span class="fas fa-search fa-lg"></span></button>
+			    </div>
+            </div>
+          </form>
+      </div>
+    </div>
+</div>
+  <!-- ### Footer Mobile Search Ends ### -->
+<div>
+    <div id="bc" class="jumbotron new-footer">
+        <div class="wrapper">
+            <div class="countrySelector enterKeyHandlerForClick" onclick="countrySelectClick(this); $('#countrySelectorOverlayCloseBtn').focus(); nuance_global.trapFocus('#countrySelectorOverlay');" role="button" tabindex="0" id="footerCountrySelector" aria-expanded="false" aria-controls="countrySelectorOverlay">
+               <span role="img" aria-label="USA &amp; Canada flag" class="bread_en_US" id="country_flag"></span> &nbsp;&nbsp;&nbsp;<span class="countryName">USA &amp; Canada</span>
+            </div>
+            <ul>
+                <li class="activeCell home">
+                    <a href="/" class="breadcrumblink">
+                        <span class="fas fa-home" aria-hidden="true"></span><span class="sr-only">Home</span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+
+    <div id="countrySelectorOverlay" class="jumbotron pt-0">
+        <div class="wrapper">
+            <div class="arrow-up"></div>
+			<div id="countrySelectorOverlayClose"><span id="countrySelectorOverlayCloseBtn" role="button" tabindex="0" aria-label='close' class="close-button-light enterKeyHandlerForClick" onclick="countrySelectClick(document.getElementById('footerCountrySelector'));  $('#footerCountrySelector').focus();"></span></div>
+            <h4>Choose your region.</h4>
+            <p>Selecting a region changes the language and/or content on Nuance.com</p>
+            <div class="row mt-4">
+            	<div class="col-md-3">
+                <p class="region-title">Americas</p>
+				<hr aria-hidden="true"/>
+                    <ul>
+                        <li> <a href="/index.html" class="active">USA &amp; Canada</a> </li>
+                    
+                        <li> <a href="/es-mx/index.html">América Latina (Español)</a> </li>
+                    
+                        <li> <a href="/pt-br/index.html">Brasil (Português)</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                 <p class="region-title">Europe</p>
+				 <hr aria-hidden="true"/>
+                	<div class="row">
+                    <ul class="col-md-6">
+                        <li> <a href="/nl-be/index.html">België (Nederlands)</a> </li>
+                    
+                        <li> <a href="/fr-be/index.html">Belgique (Français)</a> </li>
+                    
+                        <li> <a href="/da-dk/index.html">Danmark</a> </li>
+                    
+                        <li> <a href="/de-de/index.html">Deutschland</a> </li>
+                    
+                        <li> <a href="/es-es/index.html">España</a> </li>
+                    
+                        <li> <a href="/fr-fr/index.html">France</a> </li>
+                    
+                        <li> <a href="/en-ie/index.html">Ireland</a> </li>
+                    
+                        <li> <a href="/it-it/index.html">Italia</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li> <a href="/nl-nl/index.html">Nederland</a> </li>
+                    
+                        <li> <a href="/nb-no/index.html">Norge</a> </li>
+                    
+                        <li> <a href="/de-ch/index.html">Schweiz (Deutsch)</a> </li>
+                    
+                        <li> <a href="/fr-ch/index.html">Suisse (Français)</a> </li>
+                    
+                        <li> <a href="/fi-fi/index.html">Suomi</a> </li>
+                    
+                        <li> <a href="/sv-se/index.html">Sverige</a> </li>
+                    
+                        <li> <a href="/it-ch/index.html">Svizzera (Italiano)</a> </li>
+                    
+                        <li> <a href="/en-gb/index.html">United Kingdom</a> </li>
+                    </ul>
+                    </div>
+				</div>
+				<div class="col-md-3"> 
+                	<p class="region-title">Asia Pacific</p>
+                    <hr aria-hidden="true"/>
+                    <ul>
+                        <li> <a href="/en-au/index.html">Australia</a> </li>
+                    
+                        <li> <a href="/en-nz/index.html">New Zealand</a> </li>
+                    
+                        <li> <a href="/ja-jp/index.html">日本</a> </li>
+                    </ul>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</aside>
+<footer role="contentinfo">
+    <div><div id="footer" class="jumbotron new-footer" data-tracking-event-category="Footer Navigation">
+    <div class="wrapper">
+         <div class="row">
+			<div class="col-md-2"> 
+
+
+
+
+    
+        
+        
+        <div class="linklist parbase">
+	<div class="linklist">
+		
+			<h2 class="h6 colorwayWhite ">
+				NUANCE
+			</h2>
+		
+		
+		
+		<ul>
+			<li>
+				<a href="/company-overview.html" data-tracking-event-label="Company overview" data-bi-id="footer-navigation" data-bi-name="Company overview" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Company overview</a>
+			</li>
+		
+			<li>
+				<a href="/company-overview/what-we-do.html" data-tracking-event-label="About us" data-bi-id="footer-navigation" data-bi-name="About us" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>About us</a>
+			</li>
+		
+			<li>
+				<a href="https://www.microsoft.com/en-us/investor" target="_blank" data-tracking-event-label="Investors" data-bi-id="footer-navigation" data-bi-name="Investors" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Investors<span class='sr-only'>(Open a new window)</span></a>
+			</li>
+		
+			<li>
+				<a href="https://news.nuance.com/" target="_blank" data-tracking-event-label="News" data-bi-id="footer-navigation" data-bi-name="News" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>News<span class='sr-only'>(Open a new window)</span></a>
+			</li>
+		
+			<li>
+				<a href="/about-us/trust-center.html" data-tracking-event-label="Trust &amp; security" data-bi-id="footer-navigation" data-bi-name="Trust &amp; security" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Trust & security</a>
+			</li>
+		
+			<li>
+				<a href="/about-us/ai-research.html" data-tracking-event-label="Research" data-bi-id="footer-navigation" data-bi-name="Research" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Research</a>
+			</li>
+		
+			<li>
+				<a href="/about-us/careers.html" data-tracking-event-label="Careers" data-bi-id="footer-navigation" data-bi-name="Careers" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Careers</a>
+			</li>
+		</ul> 
+	</div>
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+</div>
+			<div class="col-md-2 mt-30 mt-sm-30 mt-md-0"> 
+
+
+
+
+    
+        
+        
+        <div class="linklist parbase">
+	<div class="linklist">
+		
+			<h2 class="h6  ">
+				BLOG + <br>COMMUNITIES
+			</h2>
+		
+		
+		
+		<ul>
+			<li>
+				<a href="https://whatsnext.nuance.com/" target="_blank" data-tracking-event-label="What’s Next blog" data-bi-id="footer-navigation" data-bi-name="What’s Next blog" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>What’s Next blog<span class='sr-only'>(Open a new window)</span></a>
+			</li>
+		
+			<li>
+				<a href="/for-developers.html" data-tracking-event-label="Developers" data-bi-id="footer-navigation" data-bi-name="Developers" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Developers</a>
+			</li>
+		
+			<li>
+				<a href="/about-us/events.html" data-tracking-event-label="Events" data-bi-id="footer-navigation" data-bi-name="Events" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Events</a>
+			</li>
+		
+			<li>
+				<a href="/about-us/for-partners.html" data-tracking-event-label="Partner with Nuance" data-bi-id="footer-navigation" data-bi-name="Partner with Nuance" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Partner with Nuance</a>
+			</li>
+		</ul> 
+	</div>
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+</div>
+			<div class="col-md-2 mt-30 mt-sm-30 mt-md-0"> 
+
+
+
+
+    
+        
+        
+        <div class="linklist parbase">
+	<div class="linklist">
+		
+			<h2 class="h6  ">
+				SUPPORT
+			</h2>
+		
+		
+		
+		<ul>
+			<li>
+				<a href="/support.html" data-tracking-event-label="Product support" data-bi-id="footer-navigation" data-bi-name="Product support" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Product support</a>
+			</li>
+		
+			<li>
+				<a href="/healthcare/support.html" data-tracking-event-label="Healthcare support" data-bi-id="footer-navigation" data-bi-name="Healthcare support" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Healthcare support</a>
+			</li>
+		
+			<li>
+				<a href="/about-us/engage-us.html" data-tracking-event-label="Contact us" data-bi-id="footer-navigation" data-bi-name="Contact us" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Contact us</a>
+			</li>
+		</ul> 
+	</div>
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+</div>
+			<div class="col-md-4 offset-md-2 mt-30 mt-sm-30 mt-md-0"> 
+
+
+
+
+    
+        
+        
+        <div class="rteeditor"> 
+
+
+<ul class="social_media">
+<li><a href="https://www.facebook.com/nuancecommunications" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Facebook" data-bi-name="Facebook" data-bi-id="social_interaction" data-bi-bhvr="120" data-bi-socchn="Facebook"><span class="sr-only">Follow Nuance on Facebook </span><span class="fab fa-facebook-square fa-2x"></span><span class='sr-only'>(Open a new window)</span></a></li>
+<li><a href="https://www.linkedin.com/company/nuance-communications" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="LinkedIn" data-bi-name="LinkedIn" data-bi-id="social_interaction" data-bi-bhvr="120" data-bi-socchn="LinkedIn"><span class="sr-only">Follow Nuance on LinkedIn</span><span class="fab fa-linkedin fa-2x"></span><span class='sr-only'>(Open a new window)</span></a></li>
+<li><a href="https://twitter.com/NuanceInc" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter" data-bi-name="Twitter" data-bi-id="social_interaction" data-bi-bhvr="120" data-bi-socchn="Twitter"><span class="sr-only">Follow Nuance on Twitter</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="footer-twitter-icon"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z">&nbsp;</path></svg><span class='sr-only'>(Open a new window)</span></a></li>
+<li><a href="https://www.youtube.com/@nuanceinc" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Youtube" data-bi-name="Youtube" data-bi-id="social_interaction" data-bi-bhvr="120" data-bi-socchn="Youtube"><span class="sr-only">Follow Nuance on YouTube</span><span class="fab fa-youtube-square fa-2x"></span><span class='sr-only'>(Open a new window)</span></a></li>
+</ul>
+
+</div>
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+ </div>
+          </div>
+         
+		 <div class="d-flex justify-content-start footer-copyright-wrap mt-4">
+			<div class="footer-copyright-text">&copy;&nbsp;2024&nbsp;Microsoft. All rights reserved.&nbsp;&nbsp;
+			     &copy;&nbsp;2024&nbsp;Nuance Communications, Inc. All rights reserved.&nbsp;&nbsp;	
+			</div>
+			<div>
+				 |&nbsp;&nbsp;<a href="/about-us/company-policies/legal-notices.html" data-tracking-event-label="Legal" data-bi-id="footer-navigation" data-bi-name="Legal" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Legal</a>
+				  |&nbsp;&nbsp;<a href="/site-map.html" data-tracking-event-label="Site Map" data-bi-id="footer-navigation" data-bi-name="Site Map" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Site Map</a>
+				  |&nbsp;&nbsp;<a href="/about-us/company-policies/privacy-policies.html" data-tracking-event-label="Privacy policies" data-bi-id="footer-navigation" data-bi-name="Privacy policies" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Privacy policies</a>
+				  |&nbsp;&nbsp;<a href="/about-us/company-policies/privacy-policies/consumer-health-data-privacy-policy.html" data-tracking-event-label="Consumer Health Data Privacy" data-bi-id="footer-navigation" data-bi-name="Consumer Health Data Privacy" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Consumer Health Data Privacy</a>
+				  |&nbsp;&nbsp;<a href="/about-us/company-policies/company-accessibility.html" data-tracking-event-label="Accessibility" data-bi-id="footer-navigation" data-bi-name="Accessibility" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Accessibility</a>
+				  |&nbsp;&nbsp;<a href="/subscription.html" data-tracking-event-label="Subscriptions" data-bi-id="footer-navigation" data-bi-name="Subscriptions" data-bi-area="footer" data-bi-compnm="Footer Navigation" data-bi-mto>Subscriptions</a>
+				  
+			</div>
+		 </div>
+	</div>
+</div></div>
+</footer>
+<div>
+</div>
+
+
+
+ <script defer src="/etc.clientlibs/nuance/clientlibs/foundation.min.js"></script>
+
+
+ <script defer src="/etc.clientlibs/nuance/clientlibs/inbound.min.js"></script>
+
+<!-- 
+<script type="text/javascript"> 
+  var cartCount = 0;  
+  function receiveCartData(p) { 
+    if (p["ns1:GetShoppingCartResponse"]["shoppingCartLineItems"] !== undefined) {  
+      var cartItems = p["ns1:GetShoppingCartResponse"]["shoppingCartLineItems"];
+      if (cartItems.length === undefined) {
+        cartCount = 1;
+      } else {
+        cartCount = cartCount = cartItems.length;
+      }
+      $('#ncom_shoppingCartCount').html("("+cartCount+")");
+      //$('#ncom_shoppingCartCount').css("margin-right", "8px");  
+    } 
+  }
+</script>
+<script async type="text/javascript" src="https://shop.nuance.com/integration/job/request/ShoppingCartService/defaults/site/?%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3CGet%20siteID%3D%22nuanceus%22%20locale%3D%22en_US%22%3E%3CbaseFields%3E%3CdisplayName/%3E%3CproductType/%3E%3C/baseFields%3E%3Cattributes%3E%3Cplatform/%3E%3C/attributes%3E%3C/Get%3E%3C%21--jsonp=receiveCartData--%3E"></script>
+-->
+
+<script>
+if (typeof myloadCallback === "undefined"){
+   	myloadCallback = function() {
+   
+       	if (document.getElementById('recaptchaTag')!=null) {
+           	var sitekey = document.getElementById('siteKeyTag').value;
+			$('#cResults').each( function(index, el) {
+				grecaptcha.render( el, {
+		            sitekey: sitekey,
+		            size: 'invisible',
+		            badge: 'bottomleft'
+		        });
+			});
+		} //if statment
+	};
+}
+</script>
+
+<script type="text/javascript">
+    if(document.getElementById('recaptchaTag')!=null){
+        var d = document,
+            h = d.getElementsByTagName('head')[0],
+            s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.defer = true;
+            s.src = 'https://www.google.com/recaptcha/api.js?onload=myloadCallback&render=explicit';
+            h.appendChild(s);
+}
+</script>
+<script>
+  $( document ).ready(function() {
+      // === display warning for old browsers === //
+       var browseralerthtml='<div class="modal fade" id="modalBrowserAlert" tabindex="-1" aria-modal="true" role="dialog"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-body"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 56 56" fill="none"><path d="M14 13V23M42 13V23M1 1H55V55H1V1ZM36 44H20V38C20 33.582 23.582 30 28 30C32.418 30 36 33.582 36 38V44Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/></svg><h4 class="mt-3">Oops&mdash;this browser is not supported.</h4><p>To view this content please upgrade to a newer version of<br>your browser, or switch to a different browser to continue.</p><p><img src="/content/dam/nuance/shared-images/logos/non-nuance/logo-edge-browser.png" alt="Edge browser icon" title="Edge browser icon" width="35" height="35"> <a href="https://www.microsoft.com/en-us/edge/download" target="_blank" style="color:#fff">Get started with Microsoft Edge</a></p></div></div></div></div>';
+       
+       console.log("Browser = " + document.documentMode);
+  
+       /* IE11 and under */
+        if (document.documentMode != undefined) {
+          console.log("old browsers");
+          $( "body" ).append(browseralerthtml);
+          $("#modalBrowserAlert").addClass("show");
+          $("#modalBrowserAlert").css("display","block");
+        } else {
+          console.log("modern browsers");
+        }
+  });
+  </script>
+  <script>
+    $( document ).ready(function() {
+      $(".custom-event-class").on("mouseenter", function (e){
+        dataTriggerClick($(this), 'PE');
+      });
+      $(document).on("click", ".navigation-wrapper a", function (e){
+        dataTriggerClick($(this), 'CL');
+      });
+  
+      $("body").on("click", ".sticky-navigation a, #footer .linklist a, #footer .footer-copyright-wrap a, #campaign-footer .footer-links a", function(e) {
+        dataTriggerClick($(this), 'CL');
+      });
+    });
+  
+      function dataTriggerClick (el, actionType){
+        if ( el.attr("data-bi-id")!="" && typeof(el.attr("data-bi-id"))!="undefined") {
+          var overrideValues = {
+            actionType: actionType,
+            behavior:2,
+            contentTags:{
+              id: el.attr("data-bi-id"),
+              name:el.attr("data-bi-name"),
+              area:el.attr("data-bi-area"),
+              compnm:el.attr("data-bi-compnm")
+            }
+          };
+          analytics.capturePageAction(null, overrideValues);
+        }
+      }
+
+  $( document ).ready(function() {
+    $("#main-content a:not('.stickyNavLink')").each(function(){
+      if($(this).attr('class')!='carousel-control-prev' && $(this).attr('class')!='carousel-control-next' && $(this).attr('class')!='read-more' && (!$(this).hasClass('playVidyardInline')) && (typeof($(this).attr('data-bs-toggle')) === 'undefined' || $(this).attr('data-bs-toggle') === false)){
+          var linkurl = $(this).attr('href');
+          var extension = '';
+          if(linkurl!="" && typeof(linkurl)!="undefined") {
+            extension = linkurl.split('.').pop();
+          }
+          var hostname = $(this).prop('hostname');
+
+          var linkType = "internal_link";
+          if(hostname != document.location.hostname) {
+            linkType = "external_link";
+          }
+
+          var dataName = $(this).clone().children().remove().end().text();
+          $(this).attr('data-bi-name', dataName);
+
+          if(extension == 'pdf') {
+
+            var pdfFolder = linkurl.split('/');
+            var Param = pdfFolder[pdfFolder.length-2];
+
+            $(this).attr('data-bi-id', "download_interaction");
+            $(this).attr('data-bi-bhvr', 41);
+            $(this).attr('data-bi-dlnm', dataName);
+            $(this).attr('data-bi-dlid', "download_interaction");
+            $(this).attr('data-bi-dltype', Param);
+          } else {
+            if ($(this).hasClass('cta')) {
+				      $(this).attr('data-bi-id', "cta_interaction");
+            } else {
+              $(this).attr('data-bi-id', linkType);
+            }
+            var comp_name = $(this).closest(".jumbotron").parent().attr("class");
+            $(this).attr('data-bi-compnm', comp_name);
+          }
+      }
+    });
+  });
+
+  (function() {
+    document.querySelectorAll('.search-form').forEach(function(el) {
+        new jsllSearch(el);
+    });
+
+    function jsllSearch(formEl) {
+        var form = formEl;
+        var input = form.querySelector('input.search-field');
+        var submitBtn = form.querySelector('.search-button');
+        var overrideValues = {
+            behavior: 61,
+            actionType: "CL",
+            contentTags: {
+                srchq: input.value.toString(),
+                name: submitBtn.getAttribute('data-bi-name'),
+                id: submitBtn.getAttribute('data-bi-id')
+            }
+        };
+
+        // send event when user triggers search button
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            overrideValues.contentTags.srchq = input.value.toString();
+            analytics.capturePageAction(null,overrideValues);
+            form.submit();
+        }
+    }
+})();
+</script>
+ </body>
+</html>

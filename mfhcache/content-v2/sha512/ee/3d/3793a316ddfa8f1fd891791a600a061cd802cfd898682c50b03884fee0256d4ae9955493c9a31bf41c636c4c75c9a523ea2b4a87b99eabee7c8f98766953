@@ -1,0 +1,3008 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en-us">
+<title>UAX #9: Unicode Bidirectional Algorithm</title>
+
+<link rel="stylesheet" type="text/css" href="http://www.unicode.org/reports/reports-v2.css">
+
+<style type="text/css">
+.control {
+  padding: 2px;
+  font-weight: bold;
+  color: blue;
+}
+.boxed-control {
+  margin: 1px;
+  border: thin solid black;
+  font-weight: bold;
+  color: blue;
+}
+.mono-control {
+  color: blue;
+  font-weight: bold;
+}
+.box {
+  padding: 3px;
+  border: thin solid black;
+}
+</style>
+
+</head>
+<body>
+
+  <table class="header">
+    <tr>
+          <td class="icon" style="width:38px; height:35px">
+          <a href="http://www.unicode.org/">
+          <img border="0" src="http://www.unicode.org/webscripts/logo60s2.gif" align="middle" 
+          alt="[Unicode]" width="34" height="33"></a>
+          </td>
+
+          <td class="icon" style="vertical-align:middle">
+          <a class="bar"> </a>
+          <a class="bar" href="https://www.unicode.org/reports/"><font size="3">Technical Reports</font></a>
+          </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="gray">&nbsp;</td>
+    </tr>
+  </table>
+<div class="body">
+  <!--
+  <h2 class="uaxtitle"><span class="changedspan">Proposed Update</span></h2>
+-->
+  <h2 class="uaxtitle">Unicode® Standard Annex #9</h2>
+  <h1>Unicode Bidirectional Algorithm</h1>
+  <table class="simple" width="90%">
+    <tr>
+      <td valign="top" width="20%">Version</td>
+      <td valign="top">Unicode 13.0.0</td>
+    </tr>
+    <tr>
+      <td valign="top">Editors</td>
+      <td valign="top">Mark Davis (<a href="mailto:markdavis@google.com">markdavis@google.com</a>),
+      Aharon Lanin (<a href="mailto:aharon@google.com">aharon@google.com</a>),
+      and Andrew Glass (<a href="mailto:andrew.glass@microsoft.com">andrew.glass@microsoft.com</a>)</td>
+    </tr>
+    <tr>
+      <td valign="top">Date</td>
+      <td valign="top">2020-02-12</td>
+    </tr>
+    <tr>
+      <td valign="top">This Version</td>
+      <td valign="top">
+	  <a href="http://www.unicode.org/reports/tr9/tr9-42.html">
+	  http://www.unicode.org/reports/tr9/tr9-42.html</a></td>
+    </tr>
+    <tr>
+      <td valign="top">Previous Version</td>
+      <td valign="top">
+	  <a href="http://www.unicode.org/reports/tr9/tr9-41.html">http://www.unicode.org/reports/tr9/tr9-41.html</a></td>
+    </tr>
+    <tr>
+      <td valign="top">Latest Version</td>
+      <td valign="top"><a href="http://www.unicode.org/reports/tr9/">
+      http://www.unicode.org/reports/tr9/</a></td>
+    </tr>
+    <tr>
+      <td valign="top">Latest Proposed Update</td>
+      <td valign="top"><a href="http://www.unicode.org/reports/tr9/proposed.html">
+      http://www.unicode.org/reports/tr9/proposed.html</a></td>
+    </tr>
+    <tr>
+      <td valign="top">Revision</td>
+      <td valign="top"><a href="#Modifications">42</a></td>
+    </tr>
+  </table>
+  <h4 class="summary">Summary</h4>
+  <p><i>This annex describes specifications for the positioning of characters in text containing characters flowing from right 
+  to left, such as Arabic or Hebrew.</i></p>
+    <h4 class="status">Status</h4>
+
+	  <!-- NOT YET APPROVED 
+	  <p><i class="changed">This is a<b><font color="#ff3333"> draft </font></b>document which 
+      may be updated, replaced, or superseded by other documents at any time. 
+      Publication does not imply endorsement by the Unicode Consortium. This is 
+      not a stable document; it is inappropriate to cite this document as other 
+      than a work in progress.</i></p>
+	     END NOT YET APPROVED -->
+	  <!-- APPROVED --> 
+      <p><i>This document has been reviewed by Unicode members and other 
+	  interested parties, and has been approved for publication by the Unicode 
+	  Consortium. This is a stable document and may be used as reference 
+	  material or cited as a normative reference by other specifications.</i></p>
+      <!--  END APPROVED -->
+
+			<blockquote>
+    			<p><i><b>A Unicode Standard Annex (UAX)</b> forms an integral part of the 
+	Unicode Standard, but is published online as a separate document. The 
+	Unicode Standard may require conformance to normative content in a Unicode 
+	Standard Annex, if so specified in the Conformance chapter of that version 
+	of the Unicode Standard. The version number of a UAX document corresponds to 
+	the version of the Unicode Standard of which it forms a part.</i></p>
+  </blockquote>
+  <p><i>Please submit corrigenda and other comments with the online reporting 
+  form [<a href="http://www.unicode.org/reporting.html">Feedback</a>]. 
+  Related information that is useful in understanding this annex is found in Unicode Standard Annex #41, 
+  “<a href="http://www.unicode.org/reports/tr41/tr41-26.html">Common References for Unicode Standard Annexes</a>.” 
+  For the latest version of the Unicode Standard, see [<a href="http://www.unicode.org/versions/latest/">Unicode</a>]. 
+  For a list of current Unicode Technical Reports, see [<a href="http://www.unicode.org/reports/">Reports</a>]. 
+  For more information about versions of the Unicode Standard, see [<a href="http://www.unicode.org/versions/">Versions</a>]. 
+  For any errata which may apply to this annex, see [<a href="http://www.unicode.org/errata/">Errata</a>].</i></p>
+  
+  <h4 class="contents"><i>Contents</i></h4>
+  <ul class="toc">
+    <li>1&nbsp; <a href="#Introduction">Introduction</a></li>
+    <li>2&nbsp; <a href="#Directional_Formatting_Characters">Directional Formatting Characters</a>
+		<ul class="toc">
+		  <li>2.1&nbsp; <a href="#Explicit_Directional_Embeddings">Explicit Directional Embeddings</a>
+		  </li>
+		  <li>2.2&nbsp; <a href="#Explicit_Directional_Overrides">Explicit Directional Overrides</a>
+		  </li>
+		  <li>2.3&nbsp; <a href="#Terminating_Explicit_Directional_Embeddings_and_Overrides">Terminating Explicit Directional
+			Embeddings and Overrides</a> </li>
+
+		  <li>2.4&nbsp; <a href="#Explicit_Directional_Isolates">Explicit Directional Isolates</a>
+		  </li>
+		  <li>2.5&nbsp; <a href="#Terminating_Explicit_Directional_Isolates">Terminating Explicit Directional Isolates</a>
+		  </li>
+
+		  <li>2.6&nbsp; <a href="#Implicit_Directional_Marks">Implicit Directional Marks</a></li>
+		  <li>2.7&nbsp; <a href="#Markup_And_Formatting">Markup and Formatting Characters</a></li>
+		</ul>
+    </li>
+    <li>3&nbsp; <a href="#Basic_Display_Algorithm">Basic Display Algorithm</a>
+		<ul class="toc">
+			<li>3.1&nbsp; <a href="#Definitions">Definitions</a>
+				<ul class="toc">
+        <li>3.1.1&nbsp; <a href="#Basics">Basics</a>:
+          <a href="#BD1">BD1</a>, <a href="#BD2">BD2</a>, <a href="#BD3">BD3</a>, <a href="#BD4">BD4</a>, 
+	  			<a href="#BD5">BD5</a>, <a href="#BD6">BD6</a>, <a href="#BD7">BD7</a>
+        </li>
+        <li>3.1.2&nbsp; <a href="#Matching_Explicit_Directional_Formatting_Characters">Matching Explicit Directional Formatting Characters</a>:
+          <a href="#BD8">BD8</a>, <a href="#BD9">BD9</a>,
+	  			<a href="#BD10">BD10</a>, <a href="#BD11">BD11</a>,
+		  		<a href="#BD12">BD12</a>, <a href="#BD13">BD13</a>
+        </li>
+        <li>3.1.3&nbsp; <a href="#Paired_Brackets">Paired Brackets</a>:
+					<a href="#BD14">BD14</a>, <a href="#BD15">BD15</a>, <a href="#BD16">BD16</a>
+        </li>
+        <li>3.1.4&nbsp; <a href="#Additional_Abbreviations">Additional Abbreviations</a></li>
+				</ul>
+			</li>
+			<li>3.2&nbsp; <a href="#Bidirectional_Character_Types">Bidirectional Character Types</a></li>
+			<li>3.3&nbsp; <a href="#Resolving_Embedding_Levels">Resolving Embedding Levels</a>
+				<ul class="toc">
+					<li>3.3.1&nbsp; <a href="#The_Paragraph_Level">The Paragraph Level</a>:
+						<a href="#P1">P1</a>, <a href="#P2">P2</a>, <a href="#P3">P3</a>
+					</li>
+					<li>3.3.2&nbsp; <a href="#Explicit_Levels_and_Directions">Explicit Levels and Directions</a>:
+						<a href="#X1">X1</a>, <a href="#X2">X2</a>, <a href="#X3">X3</a>, <a href="#X4">X4</a>,
+						<a href="#X5">X5</a>, <a href="#X5a">X5a</a>, <a href="#X5b">X5b</a>, <a href="#X5c">X5c</a>,
+						<a href="#X6">X6</a>, <a href="#X6a">X6a</a>,
+						<a href="#X7">X7</a>, <a href="#X8">X8</a>
+					</li>
+					<li>3.3.3&nbsp; <a href="#Preparations_for_Implicit_Processing">Preparations for Implicit Processing</a>:
+						<a href="#X9">X9</a>, <a href="#X10">X10</a>
+					</li>
+					<li>3.3.4&nbsp; <a href="#Resolving_Weak_Types">Resolving Weak Types</a>:
+						<a href="#W1">W1</a>, <a href="#W2">W2</a>, <a href="#W3">W3</a>, <a href="#W4">W4</a>,
+						<a href="#W5">W5</a>, <a href="#W6">W6</a>, <a href="#W7">W7</a>
+					</li>
+					<li>3.3.5&nbsp; <a href="#Resolving_Neutral_Types">Resolving Neutral and Isolate Formatting Types</a>:
+						<a href="#N0">N0</a>, <a href="#N1">N1</a>, <a href="#N2">N2</a>
+					</li>
+					<li>3.3.6&nbsp; <a href="#Resolving_Implicit_Levels">Resolving Implicit Levels</a>:
+						<a href="#I1">I1</a>, <a href="#I2">I2</a>
+					</li>
+				</ul>
+			</li>
+			<li>3.4&nbsp; <a href="#Reordering_Resolved_Levels">Reordering Resolved Levels</a>:
+				<a href="#L1">L1</a>, <a href="#L2">L2</a>, <a href="#L3">L3</a>, <a href="#L4">L4</a>
+			</li>
+			<li>3.5&nbsp; <a href="#Shaping">Shaping</a> </li>
+		</ul>
+    </li>
+    <li>4&nbsp; <a href="#Bidirectional_Conformance">Bidirectional Conformance</a>
+		<ul class="toc">
+			<li>4.1&nbsp; <a href="#Boundary_Neutrals">Boundary Neutrals</a> </li>
+			<li>4.2&nbsp; <a href="#Explicit_Formatting_Characters">Explicit Formatting Characters</a> </li>
+			<li>4.3&nbsp; <a href="#Higher-Level_Protocols">Higher-Level Protocols</a>: <a href="#HL1">HL1</a>,
+				<a href="#HL2">HL2</a>, <a href="#HL3">HL3</a>, <a href="#HL4">HL4</a>, <a href="#HL5">HL5</a>,
+				<a href="#HL6">HL6</a>
+			</li>
+			<li>4.4 <a href="#Bidi_Conformance_Testing">Bidirectional Conformance Testing</a></li>
+		</ul>
+    </li>
+    <li>5&nbsp; <a href="#Implementation_Notes">Implementation Notes</a>
+		<ul class="toc">
+		  <li>5.1&nbsp; <a href="#Reference_Code">Reference Code</a></li>
+		  <li>5.2&nbsp; <a href="#Retaining_Explicit_Formatting_Characters">Retaining BNs and
+        Explicit Formatting Characters</a></li>
+		</ul>
+    </li>
+    <li>6&nbsp; <a href="#Usage">Usage</a>
+		<ul class="toc">
+		  <li>6.1&nbsp; <a href="#Joiners">Joiners</a></li>
+		  <li>6.2&nbsp; <a href="#Vertical_Text">Vertical Text</a></li>
+		  <li>6.3&nbsp; <a href="#Formatting">Formatting</a></li>
+		  <li>6.4&nbsp; <a href="#Separators">Separating Punctuation Marks</a></li>
+		  <li>6.5&nbsp; <a href="#Conversion_to_Plain_Text">Conversion to Plain Text</a></li>
+		</ul>
+    </li>
+    <li>7&nbsp; <a href="#Mirroring">Mirroring</a></li>
+    <li><a href="#Migration">Migration Issues</a>
+		<ul class="toc">
+		  <li><a href="#section_reorg">Section Reorganization</a></li>
+		</ul>
+	</li>
+    <li><a href="#Acknowledgements">Acknowledgments</a></li>
+    <li><a href="#References">References</a></li>
+    <li><a href="#Modifications">Modifications</a></li>
+  </ul>
+  <hr>
+  <h2>1 <a name="Introduction" href="#Introduction">Introduction</a><a name="3.1_Bidirectional_Behavior"></a></h2>
+  <p>The Unicode Standard prescribes a <em>memory</em> representation order 
+	known as logical order. When text is presented in horizontal lines, most 
+	scripts display characters from left to right. However, there are several 
+	scripts (such as Arabic or Hebrew) where the natural ordering of horizontal 
+	text in display is from right to left. If all of the text has 
+	a uniform horizontal 
+  direction, then the ordering of the display text is unambiguous.</p>
+	<p>However, because these right-to-left scripts 
+	use digits that are written from left to right, the text is actually <i>bidirectional</i>: 
+	a mixture of right-to-left <i>and </i>left-to-right text. In addition to 
+	digits, embedded words from English and other scripts are also written from 
+	left to right, also producing bidirectional text. Without a clear 
+	specification, ambiguities can 
+  arise in determining the ordering of the displayed characters when the 
+	horizontal direction of the text is not uniform.</p>
+  <p>This annex describes the algorithm used to determine the directionality for bidirectional 
+  Unicode text. The algorithm extends the implicit model currently employed by a number of existing 
+  implementations and adds explicit formatting characters for special circumstances.
+  In most cases, there is no need to include additional information with the text to obtain correct display
+  ordering.</p>
+  <p>However, in the case of bidirectional text, there are circumstances where 
+	an implicit bidirectional ordering is not sufficient to produce 
+	comprehensible text. To deal with these cases, a minimal set of directional 
+	formatting characters is defined to control the ordering of characters when 
+	rendered. This allows exact control of the display ordering for legible 
+	interchange and 
+  ensures that plain text used for simple items like filenames or labels can always be correctly 
+  ordered for display.</p>
+  <p>The directional formatting characters are used <i>only</i> to influence the display ordering of 
+  text. In all other respects they should be ignored—they have no effect on the comparison of text or on word breaks, parsing, or numeric analysis.</p>
+  <p>Each character has an implicit <i>bidirectional type</i>.
+  The bidirectional types left-to-right and right-to-left are called <i>strong types</i>, and characters
+  of those types are called strong directional characters. The bidirectional types associated with numbers
+  are called <i>weak types</i>, and characters of those types are called weak directional characters.
+  With the exception of the directional formatting characters, the remaining bidirectional types and characters are called neutral.
+  The algorithm uses the implicit bidirectional types of the characters in a text to arrive at a
+  reasonable display ordering for text.</p>
+  <p>When working with bidirectional text, the characters are still interpreted in logical 
+  order—only the display is affected. The display ordering of bidirectional text depends on the 
+  directional properties of the characters in the text. Note that there 
+	are important security issues connected with bidirectional text: for more information, see [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UTR36">UTR36</a>].</p>
+
+  <h2>2 <a name="Directional_Formatting_Characters" href="#Directional_Formatting_Characters">Directional Formatting Characters</a><a name="Directional_Formatting_Codes" ></a></h2>
+  <p>Three types of explicit directional formatting characters are used to modify the standard implicit Unicode 
+	Bidirectional Algorithm (UBA). In addition, there are implicit directional formatting characters, the <i>right-to-left</i> and <i>
+  left-to-right</i> marks. The effects of all of these formatting characters are limited to the current paragraph;
+  thus, they are terminated by a <i>paragraph separator</i>.</p>
+	<p>These formatting characters all have the property <i>Bidi_Control</i>, 
+	and are divided into three groups:</p>
+
+  <div align="center">
+  <table class="simple">
+    <tbody>
+      <tr>
+        <td>Implicit Directional Formatting Characters</td>
+        <td>LRM, RLM, ALM</td>
+      </tr>
+      <tr>
+        <td>Explicit Directional Embedding and Override Formatting Characters</td>
+        <td>LRE, RLE, LRO, RLO, PDF</td>
+      </tr>
+      <tr>
+        <td>Explicit Directional Isolate Formatting Characters</td>
+        <td>LRI, RLI, FSI, PDI</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+	<p>Although the term <em>embedding</em> is used for some explicit formatting characters, the text within the scope 
+  of the embedding formatting characters is not independent of the surrounding text. Characters within an embedding can affect 
+  the ordering of characters outside, and vice versa.
+  This is not the case with the isolate formatting characters, however.
+  Characters within an isolate cannot affect the ordering of characters outside it, or vice versa.
+  The effect that an isolate as a whole has on the ordering of the surrounding characters
+  is the same as that of a neutral character,
+  whereas an embedding or override roughly has the effect of a strong character.</p>
+  <p>Directional isolate characters were introduced in Unicode 6.3 after it became apparent that
+  directional embeddings usually have too strong an effect on their surroundings and are thus unnecessarily difficult to use.
+  The new characters were introduced instead of changing the behavior of the existing ones because doing so might have
+  had an undesirable effect on those existing documents that do rely on the old behavior.
+  Nevertheless, the use of the directional isolates instead of embeddings is encouraged in new documents &ndash;
+  once target platforms are known to support them.  </p>
+  <p>On web pages, the <i>explicit</i> directional formatting characters (of all types &ndash; embedding, override, and isolate)
+  should be replaced by other mechanisms suitable for HTML and CSS. For information on the correspondence between
+  explicit directional formatting characters and equivalent HTML5 markup and CSS properties, see
+  <i>Section 2.7, <a href="#Markup_And_Formatting">Markup and Formatting Characters</a></i>.</p>
+
+  <h3>2.1 <a name="Explicit_Directional_Embeddings" href="#Explicit_Directional_Embeddings">Explicit Directional Embeddings</a><a name="Explicit_Directional_Embedding"></a></h3>
+  <p>The following characters signal that a piece of text is to be treated as embedded. For example, an 
+  English quotation in the middle of an Arabic sentence could be marked as being embedded 
+  left-to-right text. If there were a Hebrew phrase in the middle of the English quotation, 
+  that phrase could be marked as being embedded right-to-left text.
+  Embeddings can be nested one inside another, and in isolates and overrides.
+
+
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+      </tr>
+    <tr>
+      <td><b>LRE</b></td>
+      <td>U+202A</td>
+      <td>LEFT-TO-RIGHT EMBEDDING</td>
+      <td>Treat the following text as embedded left-to-right.</td>
+      </tr>
+    <tr>
+      <td><b>RLE</b></td>
+      <td>U+202B</td>
+      <td>RIGHT-TO-LEFT EMBEDDING</td>
+      <td>Treat the following text as embedded right-to-left.</td>
+    </tr>
+    </table>
+
+  <p>The 
+  effect of right-left line direction, for example, can be accomplished by embedding the text 
+  with RLE...PDF. (PDF will be described in <em>Section 2.3, <a href="#Terminating_Explicit_Directional_Embeddings_and_Overrides">Terminating Explicit Directional Embeddings and Overrides</a></em>.)</p>
+  <h3>2.2 <a name="Explicit_Directional_Overrides" href="#Explicit_Directional_Overrides">Explicit Directional Overrides</a></h3>
+  <p>The following characters allow the bidirectional character types to be overridden when required for 
+  special cases, such as for part numbers.
+  They are to be avoided wherever possible, because of 
+  security concerns. For more information, see [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UTR36">UTR36</a>].
+  Directional overrides can be nested one inside another, and in embeddings and isolates.
+</p>
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+    	</tr>
+		<tr>
+      <td><b>LRO</b></td>
+      <td>U+202D</td>
+      <td>LEFT-TO-RIGHT OVERRIDE</td>
+      <td>Force following characters to be treated as strong left-to-right characters.</td>
+    	</tr>
+    <tr>
+      <td><b>RLO</b></td>
+      <td>U+202E</td>
+      <td>RIGHT-TO-LEFT OVERRIDE</td>
+      <td>Force following characters to be treated as 
+		strong right-to-left characters.</td>
+    </tr>
+    </table>
+  <p>The precise meaning of these characters will be made clear in the discussion of the algorithm. The 
+  right-to-left override, for example, can be used to force a part number made of mixed English, 
+  digits and Hebrew letters to be written from right to left.</p>
+  <h3>2.3 <a name="Terminating_Explicit_Directional_Embeddings_and_Overrides" href="#Terminating_Explicit_Directional_Embeddings_and_Overrides">Terminating Explicit Directional
+      Embeddings and Overrides</a><a name="Terminating_Explicit_Directional_Code" href="#Terminating_Explicit_Directional_Code"></a></h3>
+  <p>The following character terminates the scope of the last
+  LRE, RLE, LRO, or RLO whose scope has not yet been terminated.</p>
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><b>PDF</b></td>
+      <td>U+202C</td>
+      <td>POP DIRECTIONAL FORMATTING</td>
+      <td>End the scope of the last LRE, RLE, RLO, or LRO.</td>
+    </tr>
+  </table>
+  <p>The precise meaning of this character will be made clear in the discussion 
+	of the algorithm.</p>
+
+  <h3>2.4 <a name="Explicit_Directional_Isolates" href="#Explicit_Directional_Isolates">Explicit Directional Isolates</a></h3>
+  <p>The following characters signal that a piece of text is to be treated as
+  directionally isolated from its surroundings.
+  They are very similar to the explicit embedding formatting characters.
+  However, while an embedding roughly has
+  the effect of a strong character on the ordering of the surrounding text,
+  an isolate has the effect of a neutral like U+FFFC OBJECT REPLACEMENT CHARACTER,
+  and is assigned the corresponding display position in the surrounding text.
+  Furthermore, the text inside the isolate has no effect on the ordering of the text outside it,
+  and vice versa.</p>
+  <p>In addition to allowing the embedding of strongly directional text without unduly affecting
+  the bidirectional order of its surroundings,
+  one of the isolate formatting characters also offers an extra feature:
+  embedding text while inferring its direction heuristically from its constituent characters.</p>
+  <p>Isolates can be nested one inside another, and in embeddings and overrides.</p>
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><b>LRI</b></td>
+      <td>U+2066</td>
+      <td>LEFT&#x2011;TO&#x2011;RIGHT&nbsp;ISOLATE</td>
+      <td>Treat the following text as isolated and left-to-right.</td>
+    </tr>
+    <tr>
+      <td><b>RLI</b></td>
+      <td>U+2067</td>
+      <td>RIGHT&#x2011;TO&#x2011;LEFT&nbsp;ISOLATE</td>
+      <td>Treat the following text as isolated and right-to-left.</td>
+    </tr>
+    <tr>
+      <td><b>FSI</b></td>
+      <td>U+2068</td>
+      <td>FIRST&nbsp;STRONG&nbsp;ISOLATE</td>
+      <td>Treat the following text as isolated and in the direction
+      of its first strong directional character that is not inside a nested isolate.</td>
+    </tr>
+    </table>
+  <p>The precise meaning of these characters will be made clear in the discussion of the algorithm.</p>
+
+  <h3>2.5 <a name="Terminating_Explicit_Directional_Isolates" href="#Terminating_Explicit_Directional_Isolates">Terminating Explicit Directional Isolates</a></h3>
+  <p>The following character terminates the scope of the last LRI, RLI, or FSI
+  whose scope has not yet been terminated,
+  as well as the scopes of any subsequent LREs, RLEs, LROs, or RLOs whose scopes have not yet been terminated.</p>
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><b>PDI</b></td>
+      <td>U+2069</td>
+      <td>POP&nbsp;DIRECTIONAL&nbsp;ISOLATE</td>
+      <td>End the scope of the last LRI, RLI, or FSI.</td>
+    </tr>
+  </table>
+  <p>The precise meaning of this character will be made clear in the discussion of the algorithm.</p>
+
+  <h3>2.6 <a name="Implicit_Directional_Marks" href="#Implicit_Directional_Marks">Implicit Directional Marks</a></h3>
+  <p>These characters are very light-weight formatting. They act exactly like right-to-left or 
+  left-to-right characters, except that they do not display or have any other semantic effect. Their 
+  use is more convenient than using explicit embeddings or overrides because their scope is 
+  much more local.</p>
+  <table class="subtle-nb">
+    <tr>
+      <th>Abbr.</th>
+      <th>Code&nbsp;Point</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+	<tr>
+      <td><b>LRM</b></td>
+      <td>U+200E</td>
+      <td>LEFT-TO-RIGHT MARK</td>
+      <td>Left-to-right zero-width character</td>
+    </tr>
+    <tr>
+      <td><b>RLM</b></td>
+      <td>U+200F</td>
+      <td>RIGHT-TO-LEFT MARK</td>
+      <td>Right-to-left zero-width non-Arabic character</td>
+    </tr>
+    <tr>
+      <td><b>ALM</b></td>
+      <td>U+061C</td>
+      <td>ARABIC LETTER MARK</td>
+      <td>Right-to-left zero-width Arabic character</td>
+    </tr>
+    </table>
+  <p>There is no special mention of the implicit directional marks in the following algorithm. That 
+  is because their effect on bidirectional ordering is exactly the same as a corresponding strong 
+  directional character; the only difference is that they do not appear in the display.</p>
+
+  <h3>2.7 <a name="Markup_And_Formatting" href="#Markup_And_Formatting">Markup and Formatting Characters</a></h3>
+  <p>The explicit formatting characters  introduce state into the plain text, which must be maintained when editing or displaying the text. Processes that are modifying the text without being aware of this state may inadvertently affect the rendering of large portions of the text, for example by removing a PDF.</p>
+  <p>The Unicode Bidirectional Algorithm is designed so that the use of 
+    explicit formatting characters can be equivalently represented by out-of-line information, such as stylesheet 
+    information or markup. Conflicts can arise if markup and explicitly formatting characters are both used in the same paragraph.
+    Where available,  markup should be used instead of the explicit formatting characters: for more information, see [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UnicodeXML">UnicodeXML</a>].
+    However, any alternative representation is only to be defined by reference to the behavior 
+    of the corresponding explicit formatting characters in this algorithm, to ensure conformance with the Unicode Standard.</p>
+  <p>HTML5 [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#HTML5">HTML5</a>] and CSS3 [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#CSS3Writing">CSS3Writing</a>]
+    provide support for bidi markup as follows:</p>
+  <div align="center">
+    <table class="subtle">
+        <tr>
+          <th>Unicode</th>
+          <th>Equivalent Markup</th>
+          <th>Equivalent CSS</th>
+          <th>Comment</th>
+        </tr>
+        <tr>
+          <td>RLI ... PDI</td>
+          <td>dir = "rtl"</td>
+          <td>direction:rtl; <span style="white-space: nowrap;">unicode-bidi:isolate</span></td>
+          <td>dir attribute on any element</td>
+        </tr>
+        <tr>
+          <td>LRI ... PDI</td>
+          <td>dir = "ltr"</td>
+          <td>direction:ltr; <span style="white-space: nowrap;">unicode-bidi:isolate</span></td>
+          <td>dir attribute on any element</td>
+        </tr>
+        <tr>
+          <td>FSI ... PDI</td>
+          <td>&lt;bdi&gt;, dir = "auto"</td>
+          <td><span style="white-space: nowrap;">unicode-bidi:plaintext</span></td>
+          <td>dir attribute on any element</td>
+        </tr>
+        <tr>
+          <td>RLE ... PDF</td>
+          <td>&nbsp;</td>
+          <td>direction:rtl; <span style="white-space: nowrap;">unicode-bidi:embed</span></td>
+          <td>markup not available in HTML</td>
+        </tr>
+        <tr>
+          <td>LRE ... PDF</td>
+          <td>&nbsp;</td>
+          <td>direction:ltr; <span style="white-space: nowrap;">unicode-bidi:embed</span></td>
+          <td>markup not available in HTML</td>
+        </tr>
+        <tr>
+          <td>RLO ... PDF</td>
+          <td>&nbsp;</td>
+          <td>direction:rtl; <span style="white-space: nowrap;">unicode-bidi:bidi-override</span></td>
+          <td>markup not available in HTML</td>
+        </tr>
+        <tr>
+          <td>LRO ... PDF</td>
+          <td>&nbsp;</td>
+          <td>direction:ltr; <span style="white-space: nowrap;">unicode-bidi:bidi-override</span></td>
+          <td>markup not available in HTML</td>
+        </tr>
+        <tr>
+          <td>FSI RLO . . . PDF PDI</td>
+          <td>&lt;bdo dir = "rtl"&gt;</td>
+          <td>direction:rtl; <span style="white-space: nowrap;">unicode-bidi:isolate-override</span></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>FSI LRO . . . PDF PDI</td>
+          <td>&lt;bdo dir = "ltr"&gt;</td>
+          <td>direction:ltr; <span style="white-space: nowrap;">unicode-bidi:isolate-override</span></td>
+          <td>&nbsp;</td>
+        </tr>
+    </table>
+  </div>
+
+  <p>Unlike HTML4.0, HTML5 does not provide exact equivalents for LRE, RLE, LRO, and RLO, although
+  the dir attribute and the BDO element as outlined above should in most cases work as well or better than those formatting characters.
+  When absolutely necessary, CSS can be used to get exact equivalents for LRE, RLE, LRO, and RLO, as well as for LRI, RLI, and FSI.</p>
+
+  <p>Whenever plain text is produced from a document containing markup, the equivalent formatting characters should be introduced, so that the correct ordering is not lost. For example, whenever cut and paste results in plain text this transformation should occur.<br>
+</p>
+  <h2>3 <a name="Basic_Display_Algorithm" href="#Basic_Display_Algorithm">Basic Display Algorithm</a></h2>
+  <p>The Unicode Bidirectional Algorithm 
+	(UBA) takes a stream of text as input and proceeds in
+	four main phases:</p>
+	<ul>
+		<li><b>Separation into paragraphs. </b>The 
+		rest of the algorithm is applied separately to the text within each 
+		paragraph.</li>
+		<li><b>Initialization. </b>A list of 
+		bidirectional character types is initialized, with one entry for each 
+		character in the original text. The value of each entry is the 
+		Bidi_Class property value of the respective character.
+		A list of embedding levels, with one level per character, is then initialized.
+		Note that the original characters are referenced in <i>Section 3.3.5, 
+		<a href="#Resolving_Neutral_Types">Resolving Neutral and Isolate Formatting Types</a></i>.
+		</li>
+		<li><b>Resolution of the embedding levels. </b>
+		A series of rules is applied to the lists of embedding levels and 
+		bidirectional character types. Each rule 
+		operates on the current values of those lists, and can modify those values.
+        
+		The original characters and their Bidi_Paired_Bracket and Bidi_Paired_Bracket_Type 
+        property values are referenced in the application of certain rules.
+        The result of this phase is a modified list of embedding levels;
+        the list of bidirectional character types is no longer needed.</li>
+		<li><b>Reordering. </b>  The text within each 
+		paragraph is reordered for display: first, the text in the paragraph is 
+		broken into lines, then the resolved embedding levels are used to reorder the 
+		text of each line for display.  </li>
+	</ul>
+	<p>The algorithm reorders text only within a paragraph; characters in one paragraph have no effect 
+	  on characters in a different paragraph. Paragraphs are divided by the Paragraph Separator or 
+	  appropriate Newline Function (for guidelines on the handling of CR, LF, and CRLF, see <i>
+      Section 4.4, Directionality</i>, and <i>Section 5.8, Newline Guidelines</i> of [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>]). 
+	  Paragraphs may also be determined by higher-level protocols: for example, the text in two 
+    different cells of a table will be in different paragraphs.</p>
+  <p>Combining characters always attach to the preceding base character in the memory 
+  representation. Even after reordering for display and performing character shaping, the glyph 
+  representing a combining character will attach to the glyph representing its base character in 
+  memory. Depending on the line orientation and the placement direction of base letterform glyphs, 
+  it may, for example, attach to the glyph on the left, or on the right, or above.</p>
+  <p>This annex uses the numbering conventions for normative 
+	definitions and rules in <i>Table 1</i>.</p>
+  <div align="center">
+       <p class="caption">Table 1. <a name="Table_Normative_Defs_Rules" href="#Table_Normative_Defs_Rules">Normative Definitions and Rules</a></p>
+   <table class="subtle">
+      <tr>
+        <th>Numbering</th>
+        <th>Section</th>
+      </tr>
+      <tr>
+        <td>BDn</td>
+        <td>Definitions</td>
+      </tr>
+      <tr>
+        <td>Pn</td>
+        <td>Paragraph levels</td>
+      </tr>
+      <tr>
+        <td>Xn</td>
+        <td>Explicit levels and directions</td>
+      </tr>
+      <tr>
+        <td>Wn</td>
+        <td>Weak types</td>
+      </tr>
+      <tr>
+        <td>Nn</td>
+        <td>Neutral types</td>
+      </tr>
+      <tr>
+        <td>In</td>
+        <td>Implicit levels</td>
+      </tr>
+      <tr>
+        <td>Ln</td>
+        <td>Resolved levels</td>
+      </tr>
+    </table>
+  </div>
+
+  <h3>3.1 <a name="Definitions" href="#Definitions">Definitions</a></h3>
+
+  <h3>3.1.1 <a name="Basics" href="#Basics">Basics</a></h3>
+
+  <p><i><b><a name="BD1" href="#BD1">BD1</a>.</b></i> The <i>bidirectional character types</i> are values assigned to each 
+  Unicode character, including unassigned characters. 
+	The formal property name in the  
+  <i>Unicode Character Database</i> [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>] 
+	is Bidi_Class.</p>
+
+  <p><i><b><a name="BD2" href="#BD2">BD2</a>.</b></i> <i>Embedding levels</i> are numbers that indicate how deeply the text is 
+  nested, and the default direction of text on that level. The minimum embedding level of text is zero, and the maximum explicit depth is  
+125, a value referred to as <i>max_depth</i> in the rest of this document.</p>
+
+    <p>As rules <a href="#X1">X1</a> through <a href="#X8">X8</a> will specify,
+    embedding levels are set by
+    explicit formatting characters (embedding, isolate, and override);
+    higher numbers mean the text is more deeply nested. The reason for having a limitation is 
+    to provide a precise stack limit for implementations to guarantee the same results. A
+    maximum explicit level of 125
+    is far more than sufficient for ordering, even with mechanically generated formatting; 
+    the display becomes rather muddied with more than a small number of embeddings.</p>
+
+    <p>For implementation stability, this specification now guarantees that the
+      value of 125 for max_depth will not be increased (or decreased) in future versions.
+      Thus, it is safe for implementations to treat the max_depth value as a constant. The max_depth
+      value has been 125 since UBA Version 6.3.0.</p>
+
+  <p><i><b><a name="BD3" href="#BD3">BD3</a>.</b></i> The default direction of the current embedding level 
+	(for the character in question) is called the <i>embedding direction</i>. It is <b>L</b> if the embedding level is even, 
+  and <b>R</b> if the embedding level is odd.</p>
+
+    <p>For example, in a particular piece of text, level 0 is plain English text. Level 1 is plain 
+    Arabic text, possibly embedded within English level 0 text. Level 2 is English text, possibly 
+    embedded within Arabic level 1 text, and so on. Unless their direction is overridden, English 
+    text and numbers will always be an even level; Arabic text (excluding numbers) will always be an 
+    odd level. The exact meaning of the embedding level will become clear when the reordering 
+    algorithm is discussed, but the following provides an example of how the algorithm works.</p>
+
+  <p><i><b><a name="BD4" href="#BD4">BD4</a>.</b></i> The <i>paragraph embedding level</i> is the embedding level that 
+  determines the default bidirectional orientation of the text in that paragraph.</p>
+  <p><i><b><a name="BD5" href="#BD5">BD5</a>.</b></i> The direction of the paragraph embedding level is called the <i>
+  paragraph direction</i>.</p>
+  <ul>
+    <li>In some contexts the paragraph direction is also known as the <i>base direction</i>.</li>
+  </ul>
+  <p><i><b><a name="BD6" href="#BD6">BD6</a>.</b></i> The <i>directional override status</i> determines whether the 
+	bidirectional type of characters is to be reset. The directional override status 
+	is set by using explicit directional formatting characters. This status 
+  has three states, as shown in <i>Table 2</i>.</p>
+  <div align="center">
+      <p class="caption">Table 2. <a name="Table_Directional_Override_Status" href="#Table_Directional_Override_Status">Directional Override Status</a></p>
+    <table class="subtle">
+      <tr>
+        <th>Status</th>
+        <th>Interpretation</th>
+      </tr>
+      <tr>
+        <td><b>Neutral</b></td>
+        <td>No override is currently active</td>
+      </tr>
+      <tr>
+        <td><b>Right-to-left</b></td>
+        <td>Characters are to be reset to <b>R</b></td>
+      </tr>
+      <tr>
+        <td><b>Left-to-right</b></td>
+        <td>Characters are to be reset to <b>L</b></td>
+      </tr>
+    </table>
+  </div>
+  <p><i><b><a name="BD7" href="#BD7">BD7</a>.</b></i> A <i>level run</i> is a maximal substring of characters that have the 
+  same embedding level. It is maximal in that no character immediately before or after the substring 
+  has the same level (a level run is also known as a <i>directional run)</i>.</p>
+
+  <p>As specified below, level runs are important at two different stages of the Bidirectional Algorithm.
+  The first stage occurs after rules <a href="#X1">X1</a> through <a href="#X9">X9</a> have assigned an explicit embedding level
+  to each character on the basis of the paragraph direction and the explicit directional formatting characters.
+  At this stage, in rule <a href="#X10">X10</a>, level runs are used to build up the units to which subsequent rules are applied.
+  Those rules further adjust each character’s embedding level on the basis of its implicit bidirectional type and those
+  of other characters in the unit &ndash; but not outside it.
+  The level runs resulting from these resolved embedding levels are then used in the actual reordering of the text by rule <a href="#L2">L2</a>.
+  The following example illustrates level runs at this later stage of the algorithm.<p>
+
+  <h4>Example</h4>
+	<p>In this and the following examples, case is used to indicate different 
+	implicit character types for those unfamiliar with right-to-left letters. 
+	Uppercase letters stand for right-to-left characters (such as Arabic or 
+	Hebrew), and lowercase letters stand for left-to-right characters (such as 
+	English or Russian).</p>
+<pre>
+<b>Memory:</b>            car is THE CAR in arabic
+
+<b>Character types:</b>   LLL-LL-RRR-RRR-LL-LLLLLL
+
+<b>Paragraph level:</b>   0
+
+<b>Resolved levels:</b>   000000011111110000000000
+</pre>
+
+  <p>Notice that the neutral character (space) between THE and CAR gets the level of the surrounding 
+  characters. The level of the neutral characters could be changed by 
+	inserting appropriate directional marks around neutral characters, or using explicit directional formatting characters.</p>
+
+  <h3>3.1.2 <a name="Matching_Explicit_Directional_Formatting_Characters" href="#Matching_Explicit_Directional_Formatting_Characters">Matching Explicit Directional Formatting Characters</a></h3>
+
+  <p><i><b><a name="BD8" href="#BD8">BD8</a>.</b></i> An <i>isolate initiator</i> is a character of type LRI, RLI, or FSI.</p>
+
+  <p>As rules <a href="#X5a">X5a</a> through <a href="#X5c">X5c</a> will specify,
+  an isolate initiator raises the embedding level for the characters following it
+  when the rules enforcing the depth limit allow it.</p>
+
+  <p><i><b><a name="BD9" href="#BD9">BD9</a>.</b></i> The <i>matching PDI</i> for a given isolate initiator
+  is the one determined by the following algorithm:</p>
+  <ul>
+    <li>Initialize a counter to one.</li>
+    <li>Scan the text following the isolate initiator to the end of the paragraph
+    while incrementing the counter at every isolate initiator,
+    and decrementing it at every PDI.</li>
+    <li>Stop at the first PDI, if any, for which the counter is decremented to zero.</li>
+    <li>If such a PDI was found, it is the matching PDI for the given isolate initiator.
+    Otherwise, there is no matching PDI for it.</li>
+  </ul>
+
+  <p>Note that all formatting characters except for isolate initiators and PDIs are ignored when finding the matching PDI.</p>
+  <p>Note that this algorithm assigns a matching PDI (or lack of one) to an isolate initiator
+  whether the isolate initiator raises the embedding level or is prevented from doing so by the depth limit rules.</p>
+  <p>As rule <a href="#X6a">X6a</a> will specify,
+  a matching PDI returns the embedding level to the value it had before the isolate initiator that the PDI matches.
+  The PDI itself is assigned the new embedding level.
+  If it does not match any isolate initiator, or if the isolate initiator did not raise the embedding level,
+  it leaves the embedding level unchanged.
+  Thus, an isolate initiator and its matching PDI are always assigned the same explicit embedding level, which is the one outside the isolate.
+  In the later stages of the Bidirectional Algorithm, an isolate initiator and its matching PDI function as invisible neutral characters,
+  and their embedding level then helps ensure that
+  the isolate has the effect of a neutral character on the display order of the text outside it,
+  and is assigned the corresponding display position in the surrounding text.</p>
+
+  <p><i><b><a name="BD10" href="#BD10">BD10</a>.</b></i> An <i>embedding initiator</i> is a character of type LRE, RLE, LRO, or RLO.</p>
+
+  <p>Note that an embedding initiator initiates either a directional embedding or a directional override;
+  its name omits overrides only for conciseness.</p>
+  <p>As rules <a href="#X2">X2</a> through <a href="#X5">X5</a> will specify,
+  an embedding initiator raises the embedding level for the characters following it
+  when the rules enforcing the depth limit allow it.</p>
+
+  <p><i><b><a name="BD11" href="#BD11">BD11</a>.</b></i> The <i>matching PDF</i> for a given embedding initiator
+  is the one determined by the following algorithm:</p>
+  <ul>
+    <li>Initialize a counter to one.</li>
+    <li>Scan the text following the embedding initiator:
+      <ul>
+        <li>At an isolate initiator, skip past the matching PDI,
+        or if there is no matching PDI, to the end of the paragraph.</li>
+        <li>At the end of a paragraph, or at a PDI that matches an isolate initiator
+          whose text location is before the embedding initiator's location,
+          stop: the embedding initiator has no matching PDF.</li>
+        <li>At an embedding initiator, increment the counter.</li>
+        <li>At a PDF, decrement the counter. If its new value is zero, stop: this is the matching PDF.</li>
+      </ul>
+  </ul>
+
+  <p>Note that this algorithm assigns a matching PDF (or lack of one)
+  to an embedding initiator whether it raises the embedding level or is prevented from doing so by the depth limit rules.</p>
+  <p>Although the algorithm above serves to give a precise meaning to the term &ldquo;matching PDF&rdquo;,
+  note that the overall Bidirectional Algorithm never actually calls for its use to find the PDF matching an embedding initiator.
+  Instead, rules <a href="#X1">X1</a> through <a href="#X7">X7</a> specify a mechanism
+  that determines what embedding initiator scope, if any, is terminated by a PDF, i.e. which valid embedding initiator a PDF matches.</p>
+  <p>As rule <a href="#X7">X7</a> will specify,
+  a matching PDF returns the embedding level to the value it had before the embedding initiator that the PDF matches.
+  If it does not match any embedding initiator, or if the embedding initiator did not raise the embedding level,
+  a PDF leaves the embedding level unchanged.</p>
+  <p>As rule <a href="#X9">X9</a> will specify,
+  once explicit directional formatting characters have been used to assign embedding levels to the characters in a paragraph,
+  embedding initiators and PDFs are removed (or virtually removed) from the paragraph.
+  Thus, the embedding levels assigned to the embedding initiators and PDFs themselves are irrelevant.
+  In this, embedding initiators and PDFs differ from isolate initiators and PDIs,
+  which continue to play a part in determining the paragraph’s display order as mentioned above.
+
+  <p><i><b><a name="BD12" href="#BD12">BD12</a>.</b></i> The <i>directional isolate status</i> is a Boolean value set by using isolate formatting characters:
+  it is true when the current embedding level was started by an isolate initiator.</p>
+
+  <p><i><b><a name="BD13" href="#BD13">BD13</a>.</b></i> An <i>isolating run sequence</i> is a maximal sequence of level runs such that
+  for all level runs except the last one in the sequence,
+  the last character of the run is an isolate initiator whose matching PDI is the first character of the next level run in the sequence.
+  It is maximal in the sense that if the first character of the first level run in the sequence is a PDI, it must not match any isolate initiator,
+  and if the last character of the last level run in the sequence is an isolate initiator, it must not have a matching PDI.</p>
+  <p>The set of isolating run sequences in a paragraph can be computed by the following algorithm:</p>
+    <ul>
+      <li>Start with an empty set of isolating run sequences.</li>
+      <li>For each level run in the paragraph whose first character is not a PDI, or is a PDI that does not match any isolate initiator:
+        <ul>
+          <li>Create a new level run sequence, and initialize it to contain just that level run.</li>
+          <li>While the level run currently last in the sequence ends with an isolate initiator that has a matching PDI, append the level run containing the matching PDI to the sequence.
+          (Note that this matching PDI must be the first character of its level run.)</li>
+          <li>Add the resulting sequence of level runs to the set of isolating run sequences.</li>
+        </ul>
+      </li>
+    </ul>
+
+  <p>Note that:</p>
+  <ul>
+    <li>Each level run in a paragraph belongs to exactly one isolating run sequence.</li>
+    <li>In the absence of isolate initiators, each isolating run sequence in a paragraph consists of exactly one level run,
+    and each level run constitutes a separate isolating run sequence.</li>
+    <li>For any two adjacent level runs in an isolating run sequence,
+    since one ends with an isolate initiator whose matching PDI starts the other,
+    the two must have the same embedding level.
+    Thus, all the level runs in an isolating run sequence have the same embedding level.</li>
+    <li>When an isolate initiator raises the embedding level,
+    both the isolate initiator and its matching PDI, if any, get the original embedding level, not the raised one.
+    Thus, if the matching PDI does not immediately follow the isolate initiator in the paragraph,
+    the isolate initiator is the last character in its level run, but the matching PDI, if any,
+    is the first character of its level run and immediately follows the isolate initiator in the same isolating run sequence.
+    On the other hand, the level run following the isolate initiator in the paragraph starts a new isolating run sequence,
+    and the level run preceding the matching PDI (if any) in the paragraph ends its isolating run sequence.</li>
+  </ul>
+  <p>In the following examples, assume that:</p>
+  <ul>
+    <li>The paragraph embedding level is 0.</li>
+    <li>No character sequence <i>text<sub>i</sub></i> contains explicit formatting characters or paragraph separators.</li>
+    <li>The dots are used only to improve the example's visual clarity; they are not part of the text.</li>
+    <li>The characters in the paragraph text are assigned embedding levels as loosely described above such that they form the set of level runs given in each example.</li>
+  </ul>
+
+  <h4>Example 1</h4>
+  <p>Paragraph text: <i>text<sub>1</sub></i>·<span class="control">RLE</span>·<i>text<sub>2</sub></i>·<span class="control">PDF</span>·<span class="control">RLE</span>·<i>text<sub>3</sub></i>·<span class="control">PDF</span>·<i>text<sub>4</sub></i></p>
+  <p>Level runs:</p>
+  <ul>
+    <li><span class="box"><i>text<sub>1</sub></i></span> &ndash; level 0</li>
+    <li><span class="box"><i>text<sub>2</sub></i>·<i>text<sub>3</sub></i></span> &ndash; level 1</li>
+    <li><span class="box"><i>text<sub>4</sub></i></span> &ndash; level 0</li>
+  </ul>
+  <p>Resulting isolating run sequences:</p>
+  <ul>
+    <li><span class="box"><i>text<sub>1</sub></i></span> &ndash; level 0</li>
+    <li><span class="box"><i>text<sub>2</sub></i>·<i>text<sub>3</sub></i></span> &ndash; level 1</li>
+    <li><span class="box"><i>text<sub>4</sub></i></span> &ndash; level 0</li>
+  </ul>
+
+  <h4>Example 2</h4>
+  <p>Paragraph text: <i>text<sub>1</sub></i>·<span class="control">RLI</span>·<i>text<sub>2</sub></i>·<span class="control">PDI</span>·<span class="control">RLI</span>·<i>text<sub>3</sub></i>·<span class="control">PDI</span>·<i>text<sub>4</sub></i></p>
+  <p>Level runs:</p>
+  <ul>
+    <li><span class="box"><i>text<sub>1</sub></i>·<span class="control">RLI</span></span> &ndash; level 0</li>
+    <li><span class="box"><i>text<sub>2</sub></i></span> &ndash; level 1</li>
+    <li><span class="box"><span class="control">PDI</span>·<span class="control">RLI</span></span> &ndash; level 0</li>
+    <li><span class="box"><i>text<sub>3</sub></i></span> &ndash; level 1</li>
+    <li><span class="box"><span class="control">PDI</span>·<i>text<sub>4</sub></i></span> &ndash; level 0</li>
+  </ul>
+  <p>Resulting isolating run sequences:</p>
+  <ul>
+    <li>
+      <span class="box"><i>text<sub>1</sub></i>·<span class="control">RLI</span></span>
+      <span class="box"><span class="control">PDI</span>·<span class="control">RLI</span></span>
+      <span class="box"><span class="control">PDI</span>·<i>text<sub>4</sub></i></span> &ndash; level 0
+    </li>
+    <li>
+      <span class="box"><i>text<sub>2</sub></i></span> &ndash; level 1
+    </li>
+    <li>
+      <span class="box"><i>text<sub>3</sub></i></span> &ndash; level 1
+    </li>
+  </ul>
+
+  <h4>Example 3</h4>
+  <p>Paragraph text: <i>text<sub>1</sub></i>·<span class="control">RLI</span>·<i>text<sub>2</sub></i>·<span class="control">LRI</span>·<i>text<sub>3</sub></i>·<span class="control">RLE</span>·<i>text<sub>4</sub></i>·<span class="control">PDF</span>·<i>text<sub>5</sub></i>·<span class="control">PDI</span>·<i>text<sub>6</sub></i>·<span class="control">PDI</span>·<i>text<sub>7</sub></i></p>
+  <p>Level runs:</p>
+  <ul>
+    <li><span class="box"><i>text<sub>1</sub></i>·<span class="control">RLI</span></span> &ndash; level 0</li>
+    <li><span class="box"><i>text<sub>2</sub></i>·<span class="control">LRI</span></span> &ndash; level 1</li>
+    <li><span class="box"><i>text<sub>3</sub></i></span> &ndash; level 2</li>
+    <li><span class="box"><i>text<sub>4</sub></i></span> &ndash; level 3</li>
+    <li><span class="box"><i>text<sub>5</sub></i></span> &ndash; level 2</li>
+    <li><span class="box"><span class="control">PDI</span>·<i>text<sub>6</sub></i></span> &ndash; level 1</li>
+    <li><span class="box"><span class="control">PDI</span>·<i>text<sub>7</sub></i></span> &ndash; level 0</li>
+  </ul>
+  <p>Resulting isolating run sequences:</p>
+  <ul>
+    <li>
+      <span class="box"><i>text<sub>1</sub></i>·<span class="control">RLI</span></span>
+      <span class="box"><span class="control">PDI</span>·<i>text<sub>7</sub></i></span> &ndash; level 0
+    </li>
+    <li>
+      <span class="box"><i>text<sub>2</sub></i>·<span class="control">LRI</span></span>
+      <span class="box"><span class="control">PDI</span>·<i>text<sub>6</sub></i></span> &ndash; level 1
+    </li>
+    <li>
+      <span class="box"><i>text<sub>3</sub></i></span> &ndash; level 2
+    </li>
+    <li>
+      <span class="box"><i>text<sub>4</sub></i></span> &ndash; level 3
+    </li>
+    <li>
+      <span class="box"><i>text<sub>5</sub></i></span> &ndash; level 2
+    </li>
+  </ul>
+
+  <p>As rule <a href="#X10">X10</a> will specify, an isolating run sequence is the unit
+  to which the rules following it are applied,
+  and the last character of one level run in the sequence is considered to be
+  immediately followed by the first character of the next level run in the sequence
+  during this phase of the algorithm.
+  Since those rules are based on the characters' implicit bidirectional types,
+  an isolate really does have the same effect on the ordering of the text surrounding it
+  as a neutral character &ndash;
+  or, to be more precise, a pair of neutral characters, the isolate initiator and the PDI,
+  which behave in those rules just like neutral characters.</p>
+
+  <h3>3.1.3 <a name="Paired_Brackets" href="#Paired_Brackets">Paired Brackets</a></h3>
+
+  <p>The following definitions utilize the normative properties 
+  Bidi_Paired_Bracket and Bidi_Paired_Bracket_Type defined in the <code>BidiBrackets.txt</code> file 
+  [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Data9">Data9</a>] of the <i>Unicode Character Database</i> 
+  [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>].</p>
+
+  <p><i><b><a name="BD14" href="#BD14">BD14</a>.</b></i> An <i>opening paired bracket</i> is a character whose 
+  Bidi_Paired_Bracket_Type property value is Open and whose current bidirectional character type is ON.</p>
+  <p><i><b><a name="BD15" href="#BD15">BD15</a>.</b></i> A <i>closing paired bracket</i> is a character whose Bidi_Paired_Bracket_Type
+  property value is Close and whose current bidirectional character type is ON.</p>
+  <p><i><b><a name="BD16" href="#BD16">BD16</a>.</b></i> A <i>bracket pair</i> is a pair of characters consisting of an opening 
+  paired bracket and a closing paired bracket such that the Bidi_Paired_Bracket property 
+  value of the former or its canonical equivalent equals the latter or its canonical equivalent
+  and which are algorithmically identified at specific text positions 
+  within an isolating run sequence.  The following algorithm identifies all of the bracket pairs 
+  in a given isolating run sequence:</p>
+  <ul>
+    <li>Create a fixed-size stack for exactly 63 elements each consisting of a bracket character and a text 
+    position. Initialize it to empty.</li>
+    <li>Create a list for elements each consisting of two text positions, one for an opening 
+    paired bracket and the other for a corresponding closing paired bracket. Initialize it to empty.</li>
+    <li>Inspect each character in the isolating run sequence in logical order.
+        
+      <ul>
+            <li>If an opening paired bracket is found and there is room in the stack, push its Bidi_Paired_Bracket property 
+            value and its text position onto the stack.</li>
+            <li>If an opening paired bracket is found and there is no room in the stack, stop processing BD16 for the remainder of the isolating run sequence.</li>
+            <li>If a closing paired bracket is found, do the following:
+                
+              <ol>
+                  <li>Declare a variable that holds a reference to the current stack element and initialize 
+                  it with the top element of the stack.</li>
+                  <li>Compare the closing paired bracket being inspected or its canonical equivalent
+				  to the bracket in the current stack element.</li>
+                  <li>If the values match, meaning the two characters form a bracket pair, then
+                        
+                      <ul>
+                          <li>Append the text position in the current stack element together with the 
+                          text position of the closing paired bracket to the list.</li>
+                          <li>Pop the stack through the current stack element inclusively.</li>
+                      </ul>
+                  </li>
+                  <li>Else, if the current stack element is not at the bottom of the stack, advance it to 
+                  the next element deeper in the stack and go back to step 2.</li>
+                  <li>Else, continue with inspecting the next character without popping the stack.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+	<li>Sort the list of pairs of text positions in ascending order based on the text position of the opening paired bracket.</li>
+  </ul>
+  <p>Note that bracket pairs can only occur in an isolating run sequence
+  because they are processed in rule <a href="#N0">N0</a> after explicit level resolution. See
+  <i>Section 3.3.2, <a href="#Explicit_Levels_and_Directions">Explicit Levels and Directions</a></i>.</p>
+  <h4>Examples of bracket pairs</h4>
+  <pre>
+	<b>Text</b>			<b>Pairings</b>
+	<i>1 2 3 4 5 6 7 8</i>
+	a ) b ( c		None
+	a ( b ] c		None
+	a ( b ) c		2-4
+	a ( b [ c ) d ]		2-6
+	a ( b ] c ) d		2-6
+	a ( b ) c ) d		2-4
+	a ( b ( c ) d		4-6
+	a ( b ( c ) d )		2-8, 4-6
+	a ( b { c } d )		2-8, 4-6
+  </pre>
+
+  <h3>3.1.4 <a name="Additional_Abbreviations" href="#Additional_Abbreviations">Additional Abbreviations</a></h3>
+
+	<p><i>Table&nbsp;3</i> lists additional abbreviations used in the examples and internal character types used 
+  in the algorithm.</p>
+  <div align="center">
+      <p class="caption">Table 3. <a name="Table_Abbrevs_for_Examples_Internal_Types" href="#Table_Abbrevs_for_Examples_Internal_Types">Abbreviations for Examples and Internal Types</a></p>
+    <table class="subtle">
+      <tr>
+        <th><b>Symbol</b></th>
+        <th><b>Description</b></th>
+      </tr>
+      <tr>
+        <td><a name="NI" href="#NI">NI</a><a name="N"></a></td>
+        <td>Neutral or Isolate formatting character
+          (<a href="#B">B</a>, <a href="#S">S</a>, <a href="#WS">WS</a>, <a href="#ON">ON</a>,
+          <a href="#FSI">FSI</a>, <a href="#LRI">LRI</a>, <a href="#RLI">RLI</a>, <a href="#PDI">PDI</a>).</td>
+      </tr>
+      <tr>
+        <td><a name="e" href="#e">e</a></td>
+        <td>The text ordering type (<a href="#L">L</a> or 
+        <a href="#R">R</a>) that matches the <b>embedding</b> level direction 
+        (even or odd).</td>
+      </tr>
+      <tr>
+        <td><a name="o" href="#o">o</a></td>
+        <td>The text ordering type (<a href="#L">L</a> or 
+        <a href="#R">R</a>) that matches the direction <b>opposite</b> the embedding
+        level direction (even or odd).<br>
+        Note that o is the opposite of e.
+        </td>
+      </tr>
+      <tr>
+        <td><a name="sos" href="#sos">sos</a><a name="sor"></a></td>
+        <td>The text ordering type (<a href="#L">L</a> or <a href="#R">R</a>)
+        assigned to the virtual position
+        before an isolating run sequence.</td>
+      </tr>
+      <tr>
+        <td><a name="eos" href="#eos">eos</a><a name="eor"></a></td>
+        <td>The text ordering type (<a href="#L">L</a> or <a href="#R">R</a>)
+        assigned to the virtual position
+        after an isolating run sequence.</td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+  <h3>3.2 <a name="Bidirectional_Character_Types" href="#Bidirectional_Character_Types">Bidirectional Character Types</a></h3>
+  <p>The normative bidirectional character types for each character are specified in the
+  <a href="http://www.unicode.org/Public/UNIDATA/">Unicode Character Database</a> [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>] 
+  and are summarized in <i><a href="#Table_Bidirectional_Character_Types">Table&nbsp;4</a></i>. This is a summary only: there are exceptions to the general 
+  scope. For example, certain characters such as U+0CBF KANNADA VOWEL SIGN I are given Type L 
+  (instead of NSM) to preserve canonical equivalence.</p>
+  <ul>
+    <li>The term European digits is used to refer to decimal forms common in Europe and elsewhere, 
+    and Arabic-Indic digits to refer to the native Arabic forms. (See <i>Section 9.2, Arabic</i> of 
+    [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>], for more details on naming digits.)</li>
+    <li>Unassigned characters are given strong types in the algorithm. This is an explicit exception 
+    to the general Unicode conformance requirements with respect to unassigned characters. As 
+    characters become assigned in the future, these bidirectional types may change. For 
+    assignments to character types, see DerivedBidiClass.txt
+    [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Props">DerivedBIDI</a>] 
+    in the [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>].</li>
+    <li>Private-use characters can be assigned different values by a conformant implementation.</li>
+    <li>For the purpose of the Bidirectional Algorithm, inline objects (such as graphics) are 
+    treated as if they are an U+FFFC OBJECT REPLACEMENT CHARACTER.</li>
+
+    <li>As of Unicode 4.0, the Bidirectional Character Types of a few Indic characters were altered 
+    so that the Bidirectional Algorithm preserves <a name="canonical_equivalence" href="#canonical_equivalence">canonical 
+    equivalence</a>. That is, two canonically equivalent strings will result in equivalent ordering 
+    after applying the algorithm. This invariant will be maintained in the future.<p>
+	<b>Note:</b>
+	The Bidirectional Algorithm does <i>not</i> preserve compatibility equivalence.</li>
+  </ul>
+  <div align="center">
+         <p class="caption">Table 4. <a name="Table_Bidirectional_Character_Types" href="#Table_Bidirectional_Character_Types">Bidirectional Character Types</a></p>
+        <table class="subtle">
+          <tr>
+            <th>Category</th>
+            <th>Type</th>
+            <th width="25%">Description</th>
+            <th>General Scope</th>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Strong</b></td>
+            <td valign="TOP"><b><a name="L" href="#L">L</a></b></td>
+            <td valign="TOP">Left-to-Right</td>
+            <td valign="TOP">LRM, most alphabetic, syllabic, Han ideographs, 
+			non-European or non-Arabic digits, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="R" href="#R">R</a></b></td>
+            <td valign="TOP">Right-to-Left</td>
+            <td valign="TOP">RLM, Hebrew alphabet, and related punctuation</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="AL" href="#AL">AL</a></b></td>
+            <td valign="TOP">Right-to-Left Arabic</td>
+            <td valign="TOP">ALM, Arabic, Thaana, and Syriac alphabets, most punctuation specific to 
+            those scripts, ...</td>
+          </tr>
+          <tr>
+            <td rowspan="7"><b>Weak</b></td>
+            <td valign="TOP"><b><a name="EN" href="#EN">EN</a></b></td>
+            <td valign="TOP">European Number</td>
+            <td valign="TOP">European digits, Eastern Arabic-Indic digits, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="ES" href="#ES">ES</a></b></td>
+            <td valign="TOP">European Number Separator</td>
+            <td valign="TOP">PLUS SIGN, MINUS SIGN</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="ET" href="#ET">ET</a></b></td>
+            <td valign="TOP">European Number Terminator</td>
+            <td valign="TOP">DEGREE SIGN, currency symbols, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="AN" href="#AN">AN</a></b></td>
+            <td valign="TOP">Arabic Number</td>
+            <td valign="TOP">Arabic-Indic digits, Arabic decimal and thousands separators, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="CS" href="#CS">CS</a></b></td>
+            <td valign="TOP">Common Number Separator</td>
+            <td valign="TOP">COLON, COMMA, FULL STOP, NO-BREAK SPACE, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="NSM" href="#NSM">NSM</a></b></td>
+            <td valign="TOP">Nonspacing Mark</td>
+            <td valign="TOP">Characters 
+            with the General_Category values: Mn (Nonspacing_Mark) and Me (Enclosing_Mark)</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="BN" href="#BN">BN</a></b></td>
+            <td valign="TOP">Boundary Neutral</td>
+            <td valign="TOP">Default ignorables, non-characters, and control characters, other than 
+			those explicitly given other types.</td>
+          </tr>
+          <tr>
+            <td rowspan="4"><b>Neutral</b></td>
+            <td valign="TOP"><b><a name="B" href="#B">B</a></b></td>
+            <td valign="TOP">Paragraph Separator</td>
+            <td valign="TOP">PARAGRAPH SEPARATOR, 
+			appropriate Newline Functions, higher-level protocol paragraph 
+			determination</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="S" href="#S">S</a></b></td>
+            <td valign="TOP">Segment Separator</td>
+            <td valign="TOP"><i>Tab</i></td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="WS" href="#WS">WS</a></b></td>
+            <td valign="TOP">Whitespace</td>
+            <td valign="TOP">SPACE, FIGURE SPACE, LINE SEPARATOR, FORM FEED, 
+			General Punctuation spaces, ...</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="ON" href="#ON">ON</a></b></td>
+            <td valign="TOP">Other Neutrals</td>
+            <td valign="TOP">All other characters, including OBJECT REPLACEMENT CHARACTER</td>
+          </tr>
+          <tr>
+            <td rowspan="9"><b>Explicit Formatting</b></td>
+            <td valign="TOP"><b><a name="LRE" href="#LRE">LRE</a></b></td>
+            <td valign="TOP">Left-to-Right Embedding</td>
+            <td valign="TOP">LRE</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="LRO" href="#LRO">LRO</a></b></td>
+            <td valign="TOP">Left-to-Right Override</td>
+            <td valign="TOP">LRO</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="RLE" href="#RLE">RLE</a></b></td>
+            <td valign="TOP">Right-to-Left Embedding</td>
+            <td valign="TOP">RLE</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="RLO" href="#RLO">RLO</a></b></td>
+            <td valign="TOP">Right-to-Left Override</td>
+            <td valign="TOP">RLO</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="PDF" href="#PDF">PDF</a></b></td>
+            <td valign="TOP">Pop Directional Format</td>
+            <td valign="TOP">PDF</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="LRI" href="#LRI">LRI</a></b></td>
+            <td valign="TOP">Left-to-Right Isolate</td>
+            <td valign="TOP">LRI</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="RLI" href="#RLI">RLI</a></b></td>
+            <td valign="TOP">Right-to-Left Isolate</td>
+            <td valign="TOP">RLI</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="FSI" href="#FSI">FSI</a></b></td>
+            <td valign="TOP">First Strong Isolate</td>
+            <td valign="TOP">FSI</td>
+          </tr>
+          <tr>
+            <td valign="TOP"><b><a name="PDI" href="#PDI">PDI</a></b></td>
+            <td valign="TOP">Pop Directional Isolate</td>
+            <td valign="TOP">PDI</td>
+          </tr>
+        </table>
+  </div>
+  <p>&nbsp;</p>
+
+	<h3>3.3 <a name="Resolving_Embedding_Levels" href="#Resolving_Embedding_Levels">Resolving Embedding Levels</a></h3>
+  <p>The body of the Bidirectional Algorithm uses bidirectional character types,
+  explicit formatting characters, and bracket pairs to produce a 
+  list of resolved levels. This resolution process consists of the following steps:</p>
+  <ul>
+    <li>Applying rule <a href="#P1">P1</a> to split the text into paragraphs, and for each of these:
+    <ul>
+      <li>Applying rules <a href="#P2">P2</a> and <a href="#P3">P3</a>
+      to determine the paragraph level.</li>
+      <li>Applying rule <a href="#X1">X1</a> (which employs rules <a href="#X2">X2</a>&ndash;<a href="#X8">X8</a>)
+      to determine explicit embedding levels and directions.</li>
+      <li>Applying rule <a href="#X9">X9</a> to remove many control characters from further consideration.</li>
+      <li>Applying rule <a href="#X10">X10</a> to split the paragraph into isolating run sequences
+      and for each of these:
+      <ul>
+        <li>Applying rules <a href="#W1">W1</a>&ndash;<a href="#W7">W7</a>
+        to resolve weak types.</li>
+        <li>Applying rules <a href="#N0">N0</a>&ndash;<a href="#N2">N2</a>
+        to resolve neutral types.</li>
+        <li>Applying rules <a href="#I1">I1</a>&ndash;<a href="#I2">I2</a>
+        to resolve implicit embedding levels.</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
+  </ul>
+
+  <h3>3.3.1 <a name="The_Paragraph_Level" href="#The_Paragraph_Level">The Paragraph Level</a></h3>
+
+  <p><i><b><a name="P1" href="#P1">P1</a>.</b> Split the text into separate paragraphs. A paragraph separator (type B) is kept 
+  with the previous paragraph. Within each paragraph, apply all the other rules of this algorithm.</i></p>
+
+  <p><i><b><a name="P2" href="#P2">P2</a>.</b> In each paragraph, find the first character of type L, AL, or R
+  while skipping over any characters
+  between an isolate initiator and its matching PDI or,
+  if it has no matching PDI, the end of the paragraph.</i></p>
+  <p>Note that:</p>
+  <ul>
+    <li>Because paragraph separators delimit text in this algorithm,
+    the character found by this rule will generally be the first 
+    strong character after a paragraph separator or at the very beginning of the text.</li>
+    <li>The characters between an isolate initiator and its matching PDI are ignored by this rule
+    because a directional isolate is supposed to have the same effect on the ordering of the surrounding text as a neutral character,
+    and the rule ignores neutral characters.</li>
+    <li>The characters between an isolate initiator and its matching PDI are ignored by this rule
+    even if the depth limit (as defined in rules <a href="#X5a">X5a</a> through <a href="#X5c">X5c</a> below)
+    prevents the isolate initiator from raising the embedding level.
+    This is meant to make the rule easier to implement.</li>
+    <li>Embedding initiators (but not the characters within the embedding)
+    are ignored in this rule.
+    </li>
+  </ul>
+
+  <p><i><b><a name="P3" href="#P3">P3</a>.</b> If a character is found in <a href="#P2">P2</a> and it is of type AL or R, then set the 
+  paragraph embedding level to one; otherwise, set it to zero.</i></p>
+  <p>Whenever a higher-level protocol specifies the paragraph level, rules <a href="#P2">P2</a><a href="#P3"></a> and <a href="#P3">P3</a> may be overridden: see <a href="#HL1">HL1</a>.</p>
+
+  <h3>3.3.2 <a name="Explicit_Levels_and_Directions" href="#Explicit_Levels_and_Directions">Explicit Levels and Directions</a></h3>
+  <p>All explicit embedding levels are determined from explicit directional formatting characters (embedding, override, and isolate),
+  by applying the explicit level rule <a href="#X1">X1</a>.
+  This performs a logical pass over the
+  paragraph, applying rules <a href="#X2">X2</a>&ndash;<a href="#X8">X8</a> to each characters in turn.
+  The following variables are used during this pass:</p>
+
+  <ul>
+    <li>A <i>directional status stack</i> of max_depth+2 entries where each entry consists of:
+<ul>
+        <li>An embedding level, which is at least zero and at most max_depth.</li>
+        <li>A directional override status.</li>
+        <li>A directional isolate status.</li>
+      </ul>
+      In addition to supporting the usual destructive &ldquo;pop&rdquo; operation,
+      the stack also allows read access to its last (i.e. top) entry without popping it.
+      For efficiency, that last entry can be kept in a separate variable instead of on the directional status stack,
+      but it is easier to explain the algorithm without that optimization.
+      At the start of the pass, the directional status stack is initialized to an entry reflecting the paragraph embedding level,
+      with the directional override status neutral and the directional isolate status false;
+      this entry is not popped off until the end of the paragraph.
+      During the pass, the directional status stack always contains entries for all the directional embeddings, overrides,
+      and isolates within which the current position lies
+      &ndash; except those that would overflow the depth limit &ndash;
+      in addition to the paragraph level entry at the start of the stack.
+      The last entry reflects the innermost valid scope within which the pass's current position lies.
+      Implementers may find it useful to include more information in each stack entry.
+      For example, in an isolate entry, the location of the isolate initiator could be used to create
+      a mapping from the location of each valid isolate initiator to the location of the matching PDI, or vice versa.
+      However, such optimizations are beyond the scope of this specification.
+    </li>
+    <li>A counter called the <i>overflow isolate count</i>.<br>
+    This reflects the number of isolate initiators
+    that were encountered in the pass so far without encountering their matching PDIs,
+    but were invalidated by the depth limit and thus are not reflected in the directional status stack.
+    They are nested one within the other and the stack's last scope.
+    This count is used to determine whether a newly encountered PDI matches and terminates the scope of an overflow isolate initiator, thus decrementing the count,
+    as opposed to possibly matching and terminating the scope of a valid isolate initiator, which should result in popping its entry off the directional status stack.
+    It is also used to determine whether a newly encountered PDF falls within the scope of an overflow isolate initiator
+    and can thus be completely ignored
+    (regardless of whether it matches an embedding initiator within the same overflow isolate or nothing at all).</li>
+    <li>A counter called the <i>overflow embedding count</i>.<br>
+    This reflects the number of embedding initiators
+    that were encountered in the pass so far without encountering their matching PDF, or encountering the PDI of an isolate within which they are nested,
+    but were invalidated by the depth limit, and thus are not reflected in the directional status stack.
+    They are nested one within the other and the stack's last scope.
+    This count is used to determine whether a newly encountered PDF matches and terminates the scope of an overflow embedding initiator, thus decrementing the count,
+    as opposed to possibly matching and terminating the scope of a valid embedding initiator, which should result in popping its entry off the directional status stack.
+    However, this count does <i>not</i> include embedding initiators encountered within the scope of an overflow isolate
+    (i.e. encountered when the overflow isolate count above is greater than zero).
+    The scopes of those overflow embedding initiators fall within the scope of an overflow isolate and are terminated when the overflow isolate count turns zero.
+    Thus, they do not need to be counted.
+    In fact, if they were counted in the overflow embedding count,
+    there would be no way to properly update that count when a PDI matching an overflow isolate initiator is encountered:
+    without a stack of the overflow scopes, there would be no way to know how many (if any) overflow embedding initiators fall within the scope of that overflow isolate.</li>
+    <li>A counter called the <i>valid isolate count</i>.<br>
+    This reflects the number of isolate initiators
+    that were encountered in the pass so far without encountering their matching PDIs,
+    and have been judged valid by the depth limit, i.e. all the entries on the stack with a true directional isolate status.
+    It ignores all embeddings and overrides,
+    and is used to determine without having to look through the directional status stack
+    whether a PDI encountered by the pass when the overflow isolate count is zero matches some valid isolate initiator or nothing at all.
+    A PDI encountered when this counter is above zero terminates the scope of the isolate initiator it matches,
+    as well as the embeddings and overrides nested within it &ndash; which appear above it on the stack, or are reflected in the overflow embedding count.</li>
+  </ul>
+  <p>Note that there is no need for a valid embedding count in order to tell
+  whether a PDF encountered by the pass matches a valid embedding initiator or nothing at all.
+  That can be decided by checking the directional isolate status of the last entry on the directional status stack and the number of entries on the stack.
+  If the last entry has a true directional isolate status, it is for a directional isolate within whose scope the PDF lies.
+  Since the PDF cannot match an embedding initiator outside that isolate,
+  and there are no embedding entries within the isolate, it matches nothing at all. 
+  And if the last entry has a false directional isolate status, but is also the 
+  only entry on the stack, it belongs to paragraph level, and thus once again 
+  the PDF matches nothing at all. </p>
+  <p>As each character is processed,
+  these variables’ values are modified and the character’s explicit embedding level is set
+  as defined by rules <a href="#X2">X2</a> through <a href="#X8">X8</a>
+  on the basis of the character’s bidirectional type and the variables’ current values.</p>
+
+  <p><i><b><a name="X1" href="#X1">X1</a>.</b> At the beginning of a paragraph, perform the following steps:</i></p>
+  <ul>
+    <li><i>Set the stack to empty.</i></li>
+    <li><i>Push onto the stack an entry consisting of the paragraph embedding level, a <b>neutral</b> directional override status, and a <b>false</b> directional isolate status.</i></li>
+    <li><i>Set the overflow isolate count to zero.</i></li>
+    <li><i>Set the overflow embedding count to zero.</i></li>
+    <li><i>Set the valid isolate count to zero.</i></li>
+    <li><i>Process each character iteratively, applying rules <a href="#X2">X2</a> through 
+	<a href="#X8">X8</a>.
+    Only embedding levels from 0 through max_depth are valid in this phase.</i>
+    (Note that in the resolution of levels in rules <a href="#I1">I1</a> and <a href="#I2">I2</a>,
+    the maximum embedding level of max_depth+1 can be reached.)</li>
+  </ul>
+
+  <h4>Explicit Embeddings</h4>
+
+  <p><i><b><a name="X2" href="#X2">X2</a>.</b> With each RLE, perform the following steps:</i></p>
+  <ul>
+    <li><i>Compute the least <b>odd</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid,
+    and the overflow isolate count and overflow embedding count are both zero,
+    then this RLE is valid.
+    Push an entry consisting of the new embedding level, <b>neutral</b> directional override status, and <b>false</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow RLE.
+    If the overflow isolate count is zero, increment the overflow embedding count by one. Leave all other variables unchanged.</i></li>
+  </ul>
+
+  <p>For example, assuming the overflow counts are both zero,
+  level 0 → 1; levels 1, 2 → 3; levels 3, 4 → 5; and so on.
+  At max_depth or if either overflow count is non-zero, the level remains the same (overflow RLE).</p>
+
+  <p><i><b><a name="X3" href="#X3">X3</a>.</b> With each LRE, perform the following steps:</i></p>
+  <ul>
+    <li><i>Compute the least <b>even</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid,
+    and the overflow isolate count and overflow embedding count are both zero,
+    then this LRE is valid.
+    Push an entry consisting of the new embedding level, <b>neutral</b> directional override status, and <b>false</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow LRE.
+    If the overflow isolate count is zero, increment the overflow embedding count by one. Leave all other variables unchanged.</i></li>
+  </ul>
+
+  <p>For example, assuming the overflow counts are both zero,
+  levels 0, 1 → 2; levels 2, 3 → 4; levels 4, 5 → 6; and so on.
+  At max_depth or max_depth-1 (which, being even, would have to go to max_depth+1) or if either overflow count is non-zero, the level remains the same (overflow LRE).</p>
+
+  <h4>Explicit Overrides</h4>
+
+  <p>An explicit directional override sets the embedding level in the same way the explicit 
+  embedding formatting characters do, but also changes the bidirectional character type of affected characters to the 
+  override direction.</p>
+
+  <p><i><b><a name="X4" href="#X4">X4</a>.</b> With each RLO, perform the following steps:</i></p>
+  <ul>
+    <li><i>Compute the least <b>odd</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid,
+    and the overflow isolate count and overflow embedding count are both zero,
+    then this RLO is valid.
+    Push an entry consisting of the new embedding level, <b>right-to-left</b> directional override status, and <b>false</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow RLO.
+    If the overflow isolate count is zero, increment the overflow embedding count by one. Leave all other variables unchanged.</i></li>
+  </ul>
+
+  <p><i><b><a name="X5" href="#X5">X5</a>.</b> With each LRO, perform the following steps:</i></p>
+  <ul>
+    <li><i>Compute the least <b>even</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid,
+    and the overflow isolate count and overflow embedding count are both zero,
+    then this LRO is valid.
+    Push an entry consisting of the new embedding level, <b>left-to-right</b> directional override status, and <b>false</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow LRO.
+    If the overflow isolate count is zero, increment the overflow embedding count by one. Leave all other variables unchanged.</i></li>
+  </ul>
+
+  <h4>Isolates</h4>
+
+  <p><i><b><a name="X5a" href="#X5a">X5a</a>.</b>
+  With each RLI, perform the following steps:</i></p>
+  <ul>
+    <li><i>Set the RLI’s embedding level to the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If the directional override status of the last entry on the directional status stack is not neutral,
+    reset the current character type from RLI to L if the override status is left-to-right,
+    and to R if the override status is right-to-left.</i></li>
+    <li><i>Compute the least <b>odd</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid
+    and the overflow isolate count and the overflow embedding count are both zero,
+    then this RLI is valid.
+    Increment the valid isolate count by one, and push an entry consisting of the new embedding level, <b>neutral</b> directional override status, and <b>true</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow RLI.
+    Increment the overflow isolate count by one, and leave all other variables unchanged.</i></li>
+  </ul>
+
+  <p><i><b><a name="X5b" href="#X5b">X5b</a>.</b>
+  With each LRI, perform the following steps:</i></p>
+  <ul>
+    <li><i>Set the LRI’s embedding level to the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If the directional override status of the last entry on the directional status stack is not neutral,
+    reset the current character type from LRI to L if the override status is left-to-right,
+    and to R if the override status is right-to-left.</i></li>
+    <li><i>Compute the least <b>even</b> embedding level greater than the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>If this new level would be valid
+    and the overflow isolate count and the overflow embedding count are both zero,
+    then this LRI is valid.
+    Increment the valid isolate count by one, and push an entry consisting of the new embedding level, <b>neutral</b> directional override status, and <b>true</b> directional isolate status onto the directional status stack.</i></li>
+    <li><i>Otherwise, this is an overflow LRI.
+    Increment the overflow isolate count by one, and leave all other variables unchanged.</i></li>
+  </ul>
+
+  <p><i><b><a name="X5c" href="#X5c">X5c</a>.</b>
+  With each FSI, apply rules <a href="#P2">P2</a> and <a href="#P3">P3</a>
+  to the sequence of characters between the FSI and its matching PDI,
+  or if there is no matching PDI, the end of the paragraph,
+  as if this sequence of characters were a paragraph.
+  If these rules decide on paragraph embedding level 1,
+  treat the FSI as an RLI in rule <a href="#X5a">X5a</a>.
+  Otherwise, treat it as an LRI in rule <a href="#X5b">X5b</a>.</i></p>
+
+  <p>Note that the new embedding level is not set
+  to the paragraph embedding level determined by P2 and P3.
+  It goes up by one or two levels, as it would for an LRI or RLI.</p>
+
+  <h4>Non-formatting characters</h4>
+
+  <p><i><b><a name="X6" href="#X6">X6</a>.</b> For all types besides B, BN, RLE, LRE, RLO, LRO, PDF,
+  RLI, LRI, FSI, and PDI:</i></p>
+  <ul>
+    <li><i>Set the current character’s embedding level to the embedding level of the last entry on the directional status stack.</i></li>
+    <li><i>Whenever the directional override status of the last entry on the directional status stack is not neutral, reset the current 
+    character type according to the directional override status of the last entry on the directional status stack.</i></li>
+  </ul>
+
+  <p>In other words, if the directional override status of the last entry on the directional status stack is neutral,
+  then characters retain their normal types:
+  Arabic characters stay AL, Latin characters stay L, spaces stay WS, and so on. If the directional
+  override status is right-to-left, then characters become R. If the directional override status is left-to-right, then
+  characters become L.</p>
+  <p>Note that the current embedding level is not changed by this rule.</p>
+
+  <h4>Terminating Isolates</h4>
+  <p>A PDI terminates the scope of the isolate initiator it matches.
+  It also terminates the scopes of all embedding initiators
+  within the scope of the matched isolate initiator for which a matching PDF has not been encountered.
+  If it does not match any isolate initiator, it is ignored.</p>
+  <p><i><b><a name="X6a" href="#X6a">X6a</a>.</b> With each PDI, perform the following steps:</i></p>
+  <ul>
+    <li><i>If the overflow isolate count is greater than zero, this PDI matches an overflow isolate initiator.
+    Decrement the overflow isolate count by one.</i></li>
+    <li><i>Otherwise, if the valid isolate count is zero, this PDI does not match any isolate initiator, valid or overflow.
+    Do nothing.</i></li>
+    <li><i>Otherwise, this PDI matches a valid isolate initiator. Perform the following steps:</i>
+      <ul>
+        <li><i>Reset the overflow embedding count to zero.</i>
+        (This terminates the scope of those overflow embedding initiators
+        within the scope of the matched isolate initiator
+        whose scopes have not been terminated by a matching PDF, and which thus lack a matching PDF.)</li>
+        <li><i>While the directional isolate status of the last entry on the stack is false,
+        pop the last entry from the directional status stack.</i>
+        (This terminates the scope of those valid embedding initiators
+        within the scope of the matched isolate initiator
+        whose scopes have not been terminated by a matching PDF, and which thus lack a matching PDF.
+        Given that the valid isolate count is non-zero,
+        the directional status stack before this step is executed
+        must contain an entry with directional isolate status true,
+        and thus after this step is executed the last entry on the stack will indeed have a true directional isolate status,
+        i.e. represent the scope of the matched isolate initiator.
+        This cannot be the stack's first entry, which always belongs to the paragraph level and has a false directional status,
+        so there is at least one more entry below it on the stack.)</li>
+        <li><i>Pop the last entry from the directional status stack
+        and decrement the valid isolate count by one.</i>
+        (This terminates the scope of the matched isolate initiator.
+        Since the preceding step left the stack with at least two entries, this pop does not leave the stack empty.)</li>
+      </ul>
+    </li>
+    <li><i>In all cases, look up
+    the last entry on the directional status stack left after the steps above and:</i>
+      <ul>
+        <li><i>Set the PDI’s level to the entry's embedding level.</i></li>
+        <li><i>If the entry's directional override status is not neutral,
+        reset the current character type from PDI to L if the override status is left-to-right,
+        and to R if the override status is right-to-left.</i></li>
+      </ul>
+    </li>
+  </ul>
+  <p>Note that the level assigned to an isolate initiator
+  is always the same as that assigned to the matching PDI.</p>
+
+  <h4>Terminating Embeddings and Overrides</h4>
+  <p>A PDF terminates the scope of the embedding initiator it matches.
+  If it does not match any embedding initiator, it is ignored.</p>
+
+  <p><i><b><a name="X7" href="#X7">X7</a>.</b> With each PDF,
+  perform the following steps:</i></p>
+
+  <ul>
+    <li><i>If the overflow isolate count is greater than zero, do nothing.</i>
+    (This PDF is within the scope of an overflow isolate initiator.
+    It either matches and terminates the scope of an overflow embedding initiator within that overflow isolate,
+    or does not match any embedding initiator.)</li>
+    <li><i>Otherwise, if the overflow embedding count is greater than zero, decrement it by one.</i>
+    (This PDF matches and terminates the scope of an overflow embedding initiator
+    that is not within the scope of an overflow isolate initiator.)</li>
+    <li><i>Otherwise, if the directional isolate status of the last entry on the directional status stack is false,
+    and the directional status stack contains at least two entries,
+    pop the last entry from the directional status stack.</i>
+    (This PDF matches and terminates the scope of a valid embedding initiator.
+    Since the stack has at least two entries, this pop does not leave the stack empty.)</li>
+    <li><i>Otherwise, do nothing.</i>
+    (This PDF does not match any embedding initiator.)</li>
+  </ul>
+
+  <h4>End of Paragraph</h4>
+
+  <p><i><b><a name="X8" href="#X8">X8</a>.</b> All explicit directional embeddings, overrides
+  and isolates are completely 
+  terminated at the end of each paragraph.</i></p>
+  <ul>
+    <li>Explicit paragraph separators (bidirectional character type B) indicate the end of a paragraph. As such, they
+      are <b>not</b> included in any embedding, override or isolate. They are simply assigned
+      the paragraph embedding level.</li>
+  </ul>
+
+  <h3>3.3.3 <a name="Preparations_for_Implicit_Processing" href="#Preparations_for_Implicit_Processing">Preparations for Implicit Processing</a></h3>
+  <p>The explicit embedding levels that have been assigned to the characters by the preceding rules
+  will soon be further adjusted on the basis of the characters' implicit bidirectional types.
+  The adjustment made for a given character will then depend on the characters around it.
+  However, this dependency is limited by logically dividing the paragraph into sub-units,
+  and doing the subsequent implicit processing on each unit independently.</p>
+
+  <p><i><b><a name="X9" href="#X9">X9</a>.</b> Remove all RLE, LRE, RLO, LRO, PDF, and BN characters.</i></p>
+  <ul>
+    <li><p>Note that an implementation does not have to actually remove the characters; it just has to 
+    behave as though the characters were not present for the remainder of the algorithm. Conformance does 
+    not require any particular placement of these characters as long as all other characters are ordered 
+    correctly.</p>
+    <p>See Section 5, <i><a href="#Implementation_Notes">Implementation Notes</a></i>, for information on 
+    implementing the algorithm without removing the formatting characters.</p></li>
+    <li>The <i>zero width joiner</i> and <i>non-joiner</i> affect the shaping of the adjacent characters—those 
+    that are adjacent in the original backing-store order, even though those characters may end up 
+    being rearranged to be non-adjacent by the Bidirectional Algorithm. For more information, see 
+	Section 6.1,
+    <i><a href="#Joiners">Joiners</a></i>.</li>
+
+    <li>Note that FSI, LRI, RLI, and PDI characters are <b>not</b> removed.
+    As indicated by the rules below, they are used, in part, to determine the paragraph’s isolating run sequences,
+    within which they are then treated as neutral characters.
+    Nevertheless, they are of course zero-width characters and, like LRM and RLM, should not be visible in the final output.</li>
+
+  </ul>
+
+  <p><i><b><a name="X10" href="#X10">X10</a>.</b> Perform the following steps:</i></p>
+  <ul>
+    <li><i>Compute the set of isolating run sequences as specified by <a href="#BD13">BD13</a>,
+    based on the bidirectional types of the characters
+    and the embedding levels assigned by the rules above
+    (<a href="#X1">X1</a>&ndash;<a href="#X9">X9</a>).</i></li>
+    <li><i>Determine the <i>start-of-sequence</i> (<b>sos</b>)
+    and end-of-sequence (<b>eos</b>) types,
+    either L or R, for each isolating run sequence.
+    These depend on the higher of the two levels on either side of the sequence boundary:</i>
+    <ul>
+      <li><i>For sos, compare the level of the first character in the sequence
+      with the level of the character preceding it in the paragraph (not counting characters removed by <a href="#X9">X9</a>),
+      and if there is none, with the paragraph embedding level.</i></li>
+      <li><i>For eos, compare the level of the last character in the sequence
+      with the level of the character following it in the paragraph (not counting characters removed by <a href="#X9">X9</a>),
+      and if there is none or the last character of the sequence is an isolate initiator (lacking a matching PDI),
+      with the paragraph embedding level.</i></li>
+      <li><i>If the higher level is odd, the sos or eos is R; otherwise, it is L.</i></li>
+      <li>Note that these computations must use the embedding levels assigned by the rules above,
+      before any changes are made to them in the steps below.</li>
+    </ul>
+    </li>
+    <li><i>Apply rules <a href="#W1">W1</a>&ndash;<a href="#W7">W7</a>,
+    <a href="#N0">N0</a>&ndash;<a href="#N2">N2</a>,
+    and <a href="#I1">I1</a>&ndash;<a href="#I2">I2</a>,
+    in the order in which they appear below,
+    to each of the isolating run sequences,
+    applying one rule to all the characters in the sequence in the order in which they occur in the sequence
+    before applying another rule to any part of the sequence.
+    The order that one isolating run sequence is treated relative to another does not matter.
+    When applying a rule to an isolating run sequence,
+    the last character of each level run in the isolating run sequence
+    is treated as if it were immediately followed by the first character in the next level run in the sequence, if any.</i></li>
+  </ul>
+
+  <p>Here are some examples, each of which is assumed to be a paragraph
+  with base level 0 where no character sequence <i>text<sub>i</sub></i> contains explicit directional formatting characters or paragraph separators.
+  The dots in the examples are intended to separate elements for visual clarity; they are not part of the text.</p>
+  <p>Example 1: <i>text<sub>1</sub></i>·<span class="control">RLE</span>·<i>text<sub>2</sub></i>·<span class="control">LRE</span>·<i>text<sub>3</sub></i>·<span class="control">PDF</span>·<i>text<sub>4</sub></i>·<span class="control">PDF</span>·<span class="control">RLE</span>·<i>text<sub>5</sub></i>·<span class="control">PDF</span>·<i>text<sub>6</sub></i></p>
+  <table class="subtle">
+    <tr><th>Isolating Run Sequence</th><th>Embedding Level</th><th>sos</th><th>eos</th></tr>
+    <tr><td><i>text<sub>1</sub></i></td><td>0</td><td>L</td><td>R</td></tr>
+    <tr><td><i>text<sub>2</sub></i></td><td>1</td><td>R</td><td>L</td></tr>
+    <tr><td><i>text<sub>3</sub></i></td><td>2</td><td>L</td><td>L</td></tr>
+    <tr><td><i>text<sub>4</sub></i>·<i>text<sub>5</sub></i></td><td>1</td><td>L</td><td>R</td></tr>
+    <tr><td><i>text<sub>6</sub></i></td><td>0</td><td>R</td><td>L</td></tr>
+  </table>
+  <p>Example 2: <i>text<sub>1</sub></i>·<span class="control">RLI</span>·<i>text<sub>2</sub></i>·<span class="control">LRI</span>·<i>text<sub>3</sub></i>·<span class="control">PDI</span>·<i>text<sub>4</sub></i>·<span class="control">PDI</span>·<span class="control">RLI</span>·<i>text<sub>5</sub></i>·<span class="control">PDI</span>·<i>text<sub>6</sub></i></p>
+  <table class="subtle">
+    <tr><th>Isolating Run Sequence</th><th>Embedding Level</th><th>sos</th><th>eos</th></tr>
+    <tr><td><i>text<sub>1</sub></i>·<span class="control">RLI</span>·<span class="control">PDI</span>·<span class="control">RLI</span>·<span class="control">PDI</span>·<i>text<sub>6</sub></i></td><td>0</td><td>L</td><td>L</td></tr>
+    <tr><td><i>text<sub>2</sub></i>·<span class="control">LRI</span>·<span class="control">PDI</span>·<i>text<sub>4</sub></i></td><td>1</td><td>R</td><td>R</td></tr>
+    <tr><td><i>text<sub>3</sub></i></td><td>2</td><td>L</td><td>L</td></tr>
+    <tr><td><i>text<sub>5</sub></i></td><td>1</td><td>R</td><td>R</td></tr>
+  </table>
+  <p>Example 3: <i>text<sub>1</sub></i>·<span class="control">RLE</span>·<i>text<sub>2</sub></i>·<span class="control">LRI</span>·<i>text<sub>3</sub></i>·<span class="control">RLE</span>·<i>text<sub>4</sub></i>·<span class="control">PDI</span>·<i>text<sub>5</sub></i>·<span class="control">PDF</span>·<i>text<sub>6</sub></i></p>
+  <table class="subtle">
+    <tr><th>Isolating Run Sequence</th><th>Embedding Level</th><th>sos</th><th>eos</th></tr>
+    <tr><td><i>text<sub>1</sub></i></td><td>0</td><td>L</td><td>R</td></tr>
+    <tr><td><i>text<sub>2</sub></i>·<span class="control">LRI</span>·<span class="control">PDI</span>·<i>text<sub>5</sub></i></td><td>1</td><td>R</td><td>R</td></tr>
+    <tr><td><i>text<sub>3</sub></i></td><td>2</td><td>L</td><td>R</td></tr>
+    <tr><td><i>text<sub>4</sub></i></td><td>3</td><td>R</td><td>R</td></tr>
+    <tr><td><i>text<sub>6</sub></i></td><td>0</td><td>R</td><td>L</td></tr>
+  </table>
+  <p>&nbsp;</p>
+
+  <h3>3.3.4 <a name="Resolving_Weak_Types" href="#Resolving_Weak_Types">Resolving Weak Types</a></h3>
+  <p>Weak types are now resolved one isolating run sequence at a time.
+  At isolating run sequence boundaries where the type of 
+  the character on the other side of the boundary is required, the type assigned to
+  <i>sos</i> or <i>eos</i> is used.</p>
+  <p>First, each nonspacing mark is resolved based on the character it follows.</p>
+
+  <p><i><b><a name="W1" href="#W1">W1</a>.</b> Examine each nonspacing mark (NSM) in the isolating run sequence, and change the 
+  type of the NSM to Other Neutral if the previous character is an isolate initiator or PDI, and to
+  the type of the previous character otherwise.
+  If the NSM is at the start of the 
+  isolating run sequence, it will get the type of <strong>sos</strong>.</i>
+  (Note that in an isolating run sequence, an isolate initiator followed by an NSM or any type other than PDI must be an overflow isolate initiator.)</p>
+	<p>Assume in this example that <i>sos</i> is R:</p>
+  <blockquote>
+<pre>
+AL  NSM NSM → AL  AL  AL
+
+<i>sos</i> NSM     → <i>sos</i> R
+
+LRI NSM     → LRI ON
+
+PDI NSM     → PDI ON
+</pre>
+  </blockquote>
+
+  <p>The text is next parsed for numbers. This pass will change the directional 
+	types European Number Separator, European Number Terminator, and Common 
+	Number Separator to be European Number text, Arabic Number text, or Other 
+	Neutral text. The text to be scanned may have already had its type altered 
+	by directional overrides. If so, then it will not parse as numeric.</p>
+
+  <p><i><b><a name="W2" href="#W2">W2</a>.</b> Search backward from each instance of a European number until the 
+  first strong type (R, L, AL, or <b>sos</b>) is found. If an AL is found, change the type of 
+  the European number to Arabic number.</i></p>
+  <blockquote>
+    <pre>
+AL EN     → AL AN
+
+AL NI EN  → AL NI AN
+
+<i>sos</i> NI EN → <i>sos</i> NI EN
+
+L NI EN   → L NI EN
+
+R NI EN   → R NI EN
+    </pre>
+  </blockquote>
+  <p><i><b><a name="W3" href="#W3">W3</a>.</b> Change all ALs to R.</i></p>
+  <p><i><b><a name="W4" href="#W4">W4</a>.</b> A single European separator between two European numbers changes to a 
+  European number. A single common separator between two numbers of the same type changes to that 
+  type.</i></p>
+  <blockquote>
+    <pre>EN ES EN → EN EN EN
+
+EN CS EN → EN EN EN
+
+AN CS AN → AN AN AN</pre>
+  </blockquote>
+  <p><i><b><a name="W5" href="#W5">W5</a>.</b> A sequence of European terminators adjacent to European numbers changes 
+  to all European numbers.</i></p>
+  <blockquote>
+    <pre>ET ET EN → EN EN EN
+
+EN ET ET → EN EN EN
+
+AN ET EN → AN EN EN</pre>
+  </blockquote>
+  <p><i><b><a name="W6" href="#W6">W6</a>.</b> Otherwise, separators and terminators change to Other Neutral.</i></p>
+  <blockquote>
+    <pre>AN ET    → AN ON
+
+L  ES EN → L  ON EN
+
+EN CS AN → EN ON AN
+
+ET AN    → ON AN</pre>
+  </blockquote>
+
+  <p><i><b><a name="W7" href="#W7">W7</a>.</b> Search backward from each instance of a European number until the 
+  first strong type (R, L, or <b>sos</b>) is found. If an L is found,&nbsp;then change the type of 
+  the European number to L.</i></p>
+  <blockquote>
+    <pre><tt>L  NI EN → L  NI  L</tt>
+
+<tt>R  NI EN → R  NI  EN</tt></pre>
+  </blockquote>
+
+  <h3>3.3.5
+  <a name="Resolving_Neutral_Types" href="#Resolving_Neutral_Types">Resolving Neutral and Isolate Formatting Types</a></h3>
+
+  <p>In the next phase, neutral and isolate formatting (i.e. <a href="#NI">NI</a>) characters are resolved
+  one isolating run sequence at a time.
+  Its results are that all 
+  <a href="#NI">NIs</a> become either <b>R</b> or <b>L</b>.
+  Generally, <a href="#NI">NIs</a> take on the direction of the 
+  surrounding text. In case of a conflict, they take on the embedding direction.
+  At isolating run sequence boundaries where the type 
+  of the character on the other side of the boundary is required, the type assigned
+  to <i>sos</i> or <i>eos</i>
+  is used.
+
+  <p>Bracket pairs within an isolating run sequence are processed as units so that both the opening 
+  and the closing paired bracket in a pair resolve to the same direction. 
+  Note that this rule is applied based on the current bidirectional character type of each paired bracket
+  and not the original type, as this could have changed under <a href="#X6">X6</a>. The current bidirectional character type
+  may also have changed under a previous iteration of the <i>for</i> loop in <a href="#N0">N0</a> in the case of nested bracket pairs.</p>
+  
+  <p><i><b><a name="N0" href="#N0">N0</a>.</b> Process bracket pairs in an isolating run sequence sequentially in the logical 
+  order of the text positions of the opening paired brackets using the logic given below.
+  Within this scope, bidirectional types EN and AN are treated as R.</i></p>
+  
+  <ul>
+  <li><i>Identify the bracket pairs in the current isolating run sequence according to <a href="#BD16">BD16</a>.</i></li>
+  <li><i>For each bracket-pair element in the list of pairs of text positions</i>
+    <ol style="list-style-type: lower-alpha">
+    <li><i>Inspect the bidirectional types of the characters enclosed
+    within the bracket pair.</i></li>
+    <li><i>If any strong type (either L or R) matching
+    the embedding direction is found, set the type for both brackets in the pair to match
+    the embedding direction.</i>
+    <blockquote>
+    <pre>
+o <b>[</b> e <b>]</b> o → o <b>e</b> e <b>e</b> o
+
+o <b>[</b> o e <b>]</b> → o <b>e</b> o e <b>e</b>
+
+o <b>[</b> NI e <b>]</b> → o <b>e</b> NI e <b>e</b>
+    </pre>
+    </blockquote>
+    </li>
+    <li><i>Otherwise, if there is a strong type it must be opposite the embedding direction. Therefore, test for an established context with a preceding strong type by checking backwards before the opening paired bracket until the first strong type (L, R, or sos) is found.</i>
+	<ol style="list-style-type: decimal">
+		<li><i>If the preceding strong type is also opposite the embedding direction, context is established, so set the type for both brackets in the pair to that direction.</i>
+		<blockquote>
+		<pre>
+o <b>[</b> o <b>]</b> e → o <b>o</b> o <b>o</b> e
+
+o <b>[</b> o NI <b>]</b> o → o <b>o</b> o NI <b>o</b> o
+		</pre>
+		</blockquote>
+		</li>
+		<li><i>Otherwise set the type for both brackets in the pair to the embedding direction.</i>
+		<blockquote>
+		<pre>
+e <b>[</b> o <b>]</b> o → e <b>e</b> o <b>e</b> o
+
+e <b>[</b> o <b>]</b> e → e <b>e</b> o <b>e</b> e
+		</pre>
+		</blockquote>
+		</li>
+	</ol>
+	</li>
+    <li><i>Otherwise, there are no strong types within the bracket pair. Therefore, do not set the type for that bracket pair.</i>
+   <blockquote>
+    <pre>
+e <b>(</b> NI <b>)</b> o → e <b>(</b> NI <b>)</b> o
+    </pre>
+    </blockquote>	
+    Note that if the enclosed text contains no strong types the bracket pairs will both resolve
+    to the same level when resolved individually using rules <a href ="#N1">N1</a> and <a href ="#N2">N2</a>.
+ 	</li>
+	</ol>
+  </li>
+  <li>
+	<i>Any number of characters that had original bidirectional character type NSM prior
+	to the application of <a href="#W1">W1</a> that immediately follow a paired bracket
+	which changed to L or R under <a href="#N0">N0</a> should change
+	to match the type of their preceding bracket.</i>
+  </li>
+  </ul>
+
+  <p><b>Example 1</b>. Bracket pairs are resolved sequentially in logical order of the opening paired brackets.</p>
+  <p>(RTL paragraph direction)</p>
+  <table class="simple">
+  <tr>
+    <td>Storage</td>
+    <td><code>AB</code></td>
+    <td><code>(</code></td>
+    <td><code>CD</code></td>
+    <td><code>[</code></td>
+    <td><code>&amp;</code></td>
+    <td><code>ef</code></td>
+    <td><code>]</code></td>
+    <td><code>!</code></td>
+    <td><code>)</code></td>
+    <td><code>gh</code></td>
+  </tr>
+  <tr>
+    <td>Bidi_Class</td>
+    <td><code>R</code></td>
+    <td><code>ON</code></td>
+    <td><code>R</code></td>
+    <td><code>ON</code></td>
+    <td><code>ON</code></td>
+    <td><code>L</code></td>
+    <td><code>ON</code></td>
+    <td><code>ON</code></td>
+    <td><code>ON</code></td>
+    <td><code>L</code></td>
+  </tr>
+  <tr>
+    <td>N0 applied (first pair)</td>
+    <td><code></code></td>
+    <td><code>N0b: ON→R</code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0b: ON→R</code></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>N0 applied (second pair)</td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0c2: ON→R</code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0c2: ON→R</code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td colspan=10><code>gh(![ef&amp;]DC)BA</code></td>
+  </tr>
+</table>
+
+  <p><b>Example 2</b>. Bracket pairs enclosing mixed strong types take the paragraph direction.</p>
+  <p>(RTL paragraph direction)</p>
+  <table class="simple">
+  <tr>
+    <td>Storage</td>
+    <td><code>smith</code></td>
+    <td><code> </code></td>
+    <td><code>(</code></td>
+    <td><code>fabrikam</code></td>
+    <td><code> </code></td>
+    <td><code>ARABIC</code></td>
+    <td><code>)</code></td>
+    <td><code> </code></td>
+    <td><code>HEBREW</code></td>
+  </tr>
+  <tr>
+    <td>Bidi_Class</td>
+    <td><code>L</code></td>
+    <td><code>WS</code></td>
+    <td><code>ON</code></td>
+    <td><code>L</code></td>
+    <td><code>WS</code></td>
+    <td><code>R</code></td>
+    <td><code>ON</code></td>
+    <td><code>WS</code></td>
+    <td><code>R</code></td>
+  </tr>
+  <tr>
+    <td>N0 applied</td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0b: ON→R</code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0b: ON→R</code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td colspan=9><code>WERBEH (CIBARA fabrikam) smith</code></td>
+  </tr>
+</table>
+<p>Note that in the above example, the resolution of the bracket pairs is
+stable if the order of smith and HEBREW, or fabrikam and ARABIC, is reversed.</p>
+
+<p><b>Example 3</b>. Bracket pairs enclosing strong types opposite the
+embedding direction with additional strong-type context take the direction
+opposite the embedding direction.</p>
+<p>(RTL paragraph direction)</p>
+  <table class="simple">
+  <tr>
+    <td>Storage</td>
+    <td><code>ARABIC</code></td>
+    <td><code> </code></td>
+    <td><code>book</code></td>
+    <td><code>(</code></td>
+    <td><code>s</code></td>
+    <td><code>)</code></td>
+</tr>
+  <tr>
+    <td>Bidi_Class</td>
+    <td><code>R</code></td>
+    <td><code>WS</code></td>
+    <td><code>L</code></td>
+    <td><code>ON</code></td>
+    <td><code>L</code></td>
+    <td><code>ON</code></td>
+  </tr>
+  <tr>
+    <td>N0 applied</td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code></code></td>
+    <td><code>N0c1: ON→L</code></td>
+    <td><code></code></td>
+    <td><code>N0c1: ON→L</code></td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td colspan=6><code>book(s) CIBARA</code></td>
+  </tr>
+  </table>
+
+  <p><i><b><a name="N1" href="#N1">N1</a>.</b> A sequence of <a href="#NI">NIs</a> takes the direction of the surrounding strong 
+  text if the text on both sides has the same direction.
+  European and Arabic numbers act as if they were R in terms of their influence on 
+  <a href="#NI">NIs</a>.
+  The start-of-sequence (<strong>sos</strong>) 
+  and end-of-sequence (<strong>eos</strong>) types
+  are used at isolating run sequence boundaries.</i></p>
+  <blockquote>
+    <pre>
+ L  NI   L  →   L  L   L
+
+ R  NI   R  →   R  R   R
+
+ R  NI  AN  →   R  R  AN
+
+ R  NI  EN  →   R  R  EN
+
+AN  NI   R  →  AN  R   R
+
+AN  NI  AN  →  AN  R  AN
+
+AN  NI  EN  →  AN  R  EN
+
+EN  NI   R  →  EN  R   R
+
+EN  NI  AN  →  EN  R  AN
+
+EN  NI  EN  →  EN  R  EN</pre>
+  </blockquote>
+  <p><i><b><a name="N2" href="#N2">N2</a>.</b> Any remaining <a href="#NI">NIs</a> take the embedding direction.</i></p>
+  <blockquote>
+    <pre>NI → e</pre>
+  </blockquote>
+  <p>The embedding direction for the given <a href="#NI">NI</a> 
+	character is derived from its embedding level: L if the character is set to 
+	an even level, and R if the level is odd. (See <a href="#BD3">BD3</a>.)
+	</p>
+	<p>Assume in the following example that <i>eos</i> is L and <i>sos</i> is R. Then an application of 
+    <a href="#N1">N1</a> and <a href="#N2">N2</a> yields the following:</p>
+  <blockquote>
+    <pre>L   NI <i>eos</i> → L   L <i>eos</i>
+
+R   NI <i>eos</i> → R   e <i>eos</i>
+
+<i>sos</i> NI L   → <i>sos</i> e L
+
+<i>sos</i> NI R   → <i>sos</i> R R</pre>
+  </blockquote>
+  <p><i>Examples.</i> A list of numbers separated by neutrals and embedded in a directional run will 
+  come out in the run’s order.</p>
+  <pre><b>Storage:</b>	he said &quot;THE VALUES ARE 123, 456, 789, OK&quot;.
+
+<b>Display:</b>	he said &quot;KO ,789 ,456 ,123 ERA SEULAV EHT&quot;.</pre>
+  <p>In this case, both the comma and the space between the numbers take on the direction of the 
+  surrounding text (uppercase = right-to-left), ignoring the numbers. The commas are not considered 
+  part of the number because they are not surrounded on both sides
+	by digits (see
+  Section 3.3.4, <i>Resolving Weak Types</i>). However, if 
+  there is a preceding left-to-right sequence, then European numbers will adopt that direction:</p>
+  <pre><b>Storage:</b>	IT IS A bmw 500, OK.
+
+<b>Display:</b>	.KO ,bmw 500 A SI TI</pre>
+  <h3>3.3.6 <a name="Resolving_Implicit_Levels" href="#Resolving_Implicit_Levels">Resolving Implicit Levels</a></h3>
+  <p>In the final phase, the embedding level of text may be increased, based on the resolved 
+  character type. Right-to-left text will always end up with an odd level, and left-to-right and 
+  numeric text will always end up with an even level. In addition, numeric text will always end up 
+  with a higher level than the paragraph level. (Note that it is possible for text to end up at 
+  level max_depth+1 as a result of this process.) This results in the following rules:</p>
+
+  <p><i><b><a name="I1" href="#I1">I1</a>.</b> For all characters with an even (left-to-right) embedding 
+  level, those of type R go up one level and those of type AN or EN go up two levels.</i></p>
+
+  <p><i><b><a name="I2" href="#I2">I2</a>.</b> For all characters with an odd (right-to-left) 
+  embedding level, those of type L, EN or AN go up one level.</i></p>
+
+  <p><i>Table&nbsp;5</i> summarizes the results of the implicit algorithm.</p>
+  <div align="center">
+      <p class="caption">Table 5. <a name="Table_Resolving_Implicit_Levels" href="#Table_Resolving_Implicit_Levels">Resolving Implicit Levels</a></p>
+    <table class="subtle">
+      <tr>
+        <th rowspan="2">Type</th>
+        <th colspan="2">Embedding Level</th>
+      </tr>
+      <tr>
+        <th>Even</th>
+        <th>Odd</th>
+      </tr>
+      <tr>
+        <td><b>L</b></td>
+        <td>EL</td>
+        <td>EL+1</td>
+      </tr>
+      <tr>
+        <td><b>R</b></td>
+        <td>EL+1</td>
+        <td>EL</td>
+      </tr>
+      <tr>
+        <td><b>AN</b></td>
+        <td>EL+2</td>
+        <td>EL+1</td>
+      </tr>
+      <tr>
+        <td><b>EN</b></td>
+        <td>EL+2</td>
+        <td>EL+1</td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+
+  <h3>3.4 <a name="Reordering_Resolved_Levels" href="#Reordering_Resolved_Levels">Reordering Resolved Levels</a></h3>
+  <p>The following rules describe the logical process of finding the correct display order.
+
+	As opposed to resolution phases, 
+  these rules act on a per-line basis<i> and are applied <b>after</b> any line wrapping is 
+  applied to the paragraph.</i></p>
+  <p>Logically there are the following steps: </p>
+  <ul>
+    <li>The levels of the text are determined according to the previous rules.</li>
+    <li>The characters are shaped into glyphs according to their context <i>(taking the embedding 
+    levels into account for mirroring).</i></li>
+    <li>The accumulated widths of those glyphs <i>(in logical order)</i> are used to determine line 
+    breaks.</li>
+    <li>For each line, rules <a href="#L1">L1</a>–<a href="#L4">L4</a> are used to reorder the characters on that line.</li>
+    <li>The glyphs corresponding to the characters on the line are displayed in that order.</li>
+  </ul>
+
+  <p><i><b><a name="L1" href="#L1">L1</a>.</b> On each line, reset the embedding level of the following characters to 
+  the paragraph embedding level:</i></p>
+  <ol>
+    <li><i>Segment separators,</i></li>
+    <li><i>Paragraph separators,</i></li>
+    <li><i>Any sequence of whitespace characters and/or isolate formatting characters (FSI, LRI, RLI, and PDI)
+    preceding a segment separator or paragraph separator, and</i></li>
+    <li><i>Any sequence of whitespace characters and/or isolate formatting characters (FSI, LRI, RLI, and PDI)
+    at the end of the line.</i></li>
+  </ol>
+  <ul>
+    <li>The types of characters used here are the <i>original</i> types, not those modified by the 
+    previous phase.</li>
+    <li>Because a <i>paragraph separator</i> breaks lines, there will be at most one per line, at the end of 
+    that line.</li>
+  </ul>
+  <p>In combination with the following rule, this means that trailing whitespace will appear at the 
+  visual end of the line (in the paragraph direction). Tabulation will always have a consistent 
+  direction within a paragraph.</p>
+
+  <p><i><b><a name="L2" href="#L2">L2</a>.</b> From the highest level found in the text to the lowest odd level on 
+  each line, including intermediate levels not actually present in the text, reverse 
+  any contiguous sequence of characters that are at that level or higher.</i></p>
+  <p>This rule reverses a progressively larger series of substrings.</p>
+	<p>The following examples illustrate the reordering, showing the 
+	successive steps in application of Rule <a href="#L2">L2</a>.
+        The original text is shown in the &quot;Storage&quot; row in the 
+	example tables.
+        The invisible, zero-width formatting characters LRI, RLI, and PDI
+        are represented with the symbols <b class="control">&gt;</b>, 
+	<b class="control">&lt;</b>, and <b class="control">=</b>, respectively.
+        The application of the rules from <i>Section 3.3, <a href="#Resolving_Embedding_Levels">Resolving Embedding Levels</a></i> 
+	and of the Rule
+      <a href="#L1">L1</a> results in the resolved levels listed in the &quot;Resolved 
+	Levels&quot; row.
+        (Since these examples only make use of the isolate formatting characters, Rule <a href="#X9">X9</a> does not remove any characters.
+        Note that Example 3 would not work if it used embeddings instead because the two right-to-left phrases would have merged into a single right-to-left run,
+        together with the neutral punctuation in between.)
+        Each successive row thereafter shows one pass of reversal from Rule <a href="#L2">L2</a>, such as 
+	&quot;Reverse levels 1-2&quot;. At each iteration, the underlining shows the text that has been reversed.<br>
+	<br>
+	The paragraph embedding level for the first, second, and third examples is 0 (left-to-right direction), 
+	and for the fourth example is 1 (right-to-left direction).</p>
+  <p><b>Example 1</b>. (embedding level = 0)</p>
+	<table class="subtle-nb">
+		<tr>
+			<th style="vertical-align: middle">Storage</th>
+			<td style="vertical-align: middle"><code>car means CAR.</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Resolved levels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<td style="vertical-align: middle"><code>00000000001110</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse level 1</th>
+			<td style="vertical-align: middle"><code>car means <u>RAC</u>.</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Display</th>
+			<td style="vertical-align: middle">car means RAC.</td>
+		</tr>
+	</table>
+
+  <p><b>Example 2</b>. (embedding level = 0)</p>
+	<table class="subtle-nb">
+		<tr>
+			<th style="vertical-align: middle">Storage</th>
+			<td style="vertical-align: middle"><code>&lt;car MEANS CAR.=</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Resolved levels</th>
+			<td style="vertical-align: middle"><code>0222111111111110</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse level 2</th>
+			<td style="vertical-align: middle"><code>&lt;<u>rac</u> MEANS CAR.=</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse levels 1-2</th>
+			<td style="vertical-align: middle"><code>&lt;<u>.RAC SNAEM car</u>=</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Display</th>
+			<td style="vertical-align: middle">.RAC SNAEM car</td>
+		</tr>
+	</table>
+
+  <p><b>Example 3</b>. (embedding level = 0)</p>
+	<table class="subtle-nb">
+		<tr>
+			<th style="vertical-align: middle">Storage</th>
+			<td style="vertical-align: middle"><code>he said “&lt;car MEANS CAR=.” “&lt;IT DOES=,” she agreed.</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Resolved levels</th>
+			<td style="vertical-align: middle"><code>000000000022211111111110000001111111000000000000000</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse level 2</th>
+			<td style="vertical-align: middle"><code>he said “&lt;<u>rac</u> MEANS CAR=.” “&lt;IT DOES=,” she agreed.</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse levels 1-2</th>
+			<td style="vertical-align: middle"><code>he said “&lt;<u>RAC SNAEM car</u>=.” “&lt;<u>SEOD TI</u>=,” she agreed.</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Display</th>
+			<td style="vertical-align: middle">he said “RAC SNAEM car.” “SEOD TI,” she agreed.</td>
+		</tr>
+	</table>
+
+  <p><b>Example 4</b>. (embedding level = 1)</p>
+	<table class="subtle-nb">
+		<tr>
+			<th style="vertical-align: middle">Storage</th>
+			<td style="vertical-align: middle"><code>DID YOU SAY ’&gt;he said “&lt;car MEANS CAR=”=‘?</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Resolved levels</th>
+			<td style="vertical-align: middle"><code>111111111111112222222222444333333333322111</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse level 4</th>
+			<td style="vertical-align: middle"><code>DID YOU SAY ’&gt;he said “&lt;<u>rac</u> MEANS CAR=”=‘?</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse levels 3-4</th>
+			<td style="vertical-align: middle"><code>DID YOU SAY ’&gt;he said “&lt;<u>RAC SNAEM car</u>=”=‘?</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse levels 2-4</th>
+			<td style="vertical-align: middle"><code>DID YOU SAY ’&gt;<u>”=rac MEANS CAR&lt;“ dias eh</u>=‘?</code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Reverse levels 1-4</th>
+			<td style="vertical-align: middle"><code><u>?‘=he said “&lt;RAC SNAEM car=”&gt;’ YAS UOY DID</u></code></td>
+		</tr>
+		<tr>
+			<th style="vertical-align: middle">Display</th>
+			<td style="vertical-align: middle">?‘he said “RAC SNAEM car”’ YAS UOY DID</td>
+		</tr>
+	</table>
+	<br>
+  <p><i><b><a name="L3" href="#L3">L3</a>.</b> Combining marks applied to a right-to-left base character will at this 
+  point precede their base character. If the rendering engine expects them to follow the base 
+  characters in the final display process, then the ordering of the marks and the base character 
+  must be reversed.</i></p>
+  <p>Many font designers provide default metrics for combining marks that support rendering by 
+  simple overhang. Because of the reordering for right-to-left characters, it is common practice to 
+  make the glyphs for most combining characters overhang to the left (thus assuming the characters 
+  will be applied to left-to-right base characters) and make the glyphs for combining characters in 
+  right-to-left scripts overhang to the right (thus assuming that the characters will be applied to 
+  right-to-left base characters). With such fonts, the display ordering of the marks and base glyphs 
+  may need to be adjusted when combining marks are applied to &#x201C;unmatching&#x201D; base characters. See <i>
+  Section 5.13, Rendering Nonspacing Marks</i> of [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>], for more 
+  information.</p>
+  <p><i><b><a name="L4" href="#L4">L4</a>.</b> A character is 
+  depicted by a mirrored glyph if and only if (a)
+	the resolved directionality of that character is R,
+	and (b) the Bidi_Mirrored 
+  property value of that character is Yes.</i></p>
+	<ul>
+		<li><i>The Bidi_Mirrored property 
+  		is defined by Section&nbsp;4.7, Bidi Mirrored of [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>]; 
+		the property values are specified in [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>].</i></li>
+		<li><i>This rule can be overridden in certain 
+		cases; see
+      <a href="#HL6">HL6</a>.</i></li>
+	</ul>
+  <p>For example, U+0028 LEFT PARENTHESIS—which is interpreted in the Unicode 
+	Standard as an opening parenthesis—appears as “<b>(</b>” when its resolved 
+	level is even, and as the mirrored glyph “<b>)</b>” 
+  when its resolved level is odd. Note that for 
+	backward compatibility the characters U+FD3E ( ﴾ ) ORNATE LEFT PARENTHESIS 
+	and U+FD3F ( ﴿ ) ORNATE RIGHT PARENTHESIS are not mirrored.</p>
+  <h3>3.5 <a name="Shaping" href="#Shaping">Shaping</a></h3>
+  <p>Cursively connected scripts, such as Arabic or 
+	Syriac, require the selection of positional character shapes that depend on 
+	adjacent characters (see <i>Section 9.2, Arabic</i> of [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>]).
+	Shaping is logically applied <i>after</i> Rule <a href="#I2">I2</a> of the Bidirectional Algorithm 
+	and is limited to characters within the same level run.
+        (Note that there is no practical difference between limiting shaping to a level run
+        and an isolating run sequence because the isolate initiator and PDI characters are defined to have joining type U, i.e. non-joining.
+        Thus, the characters before and after a directional isolate will not join across the isolate,
+        even if the isolate is empty or overflows the depth limit.)
+        Consider the following example string 
+  of Arabic characters, which is represented in memory as characters 1, 2, 3, and 4, and where the first two characters 
+  are overridden to be LTR. To show both paragraph directions, the next two are embedded, but with 
+  the normal RTL direction.</p>
+    <div align="center">
+      <table class="simple">
+        <tr>
+          <td style="text-align: center"><b>1</b></td>
+          <td style="text-align: center"><b>2</b></td>
+          <td style="text-align: center"><b><i>3</i></b></td>
+          <td style="text-align: center"><b><i>4</i></b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><font size="6">ج</font><br>
+          <tt>062C<br>
+          JEEM</tt></td>
+          <td style="text-align: center"><font size="6">ع</font><br>
+          <tt>0639<br>
+          AIN</tt></td>
+          <td style="text-align: center"><font size="6">ل</font><br>
+          <tt>0644<br>
+          LAM</tt></td>
+          <td style="text-align: center"><font size="6">م</font><br>
+          <tt>0645<br>
+          MEEM</tt></td>
+        </tr>
+        <tr>
+          <td>
+          <p align="center"><b>L</b></td>
+          <td>
+          <p align="center"><b>L</b></td>
+          <td>
+          <p align="center"><b>R</b></td>
+          <td>
+          <p align="center"><b>R</b></td>
+        </tr>
+      </table>
+    </div>
+  <p>One can use explicit directional formatting characters to achieve this effect in plain text or use markup in HTML, as in the 
+  examples below. (The <b>bold</b> text would be for the right-to-left paragraph direction.)</p>
+  <ul>
+    <li>LRM/<b>RLM</b> LRO&nbsp;<i>JEEM&nbsp;AIN</i>&nbsp;PDF RLO&nbsp;<i>LAM&nbsp;MEEM</i>&nbsp;PDF</li>
+    <li>&lt;p dir=&quot;ltr&quot;/&quot;<b>rtl</b>&quot;&gt;LRO&nbsp;<i>JEEM&nbsp;AIN</i>&nbsp;PDF RLO&nbsp;<i>LAM&nbsp;MEEM</i>&nbsp;PDF&lt;/p&gt;</li>
+    <li>&lt;p dir=&quot;ltr&quot;/&quot;<b>rtl</b>&quot;&gt;&lt;bdo&nbsp;dir=&quot;ltr&quot;&gt;<i>JEEM&nbsp;AIN</i>&lt;/bdo&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;bdo&nbsp;dir=&quot;rtl&quot;&gt;<i>LAM&nbsp;MEEM</i>&lt;/bdo&gt;&lt;/p&gt;</li>
+  </ul>
+  <p>The resulting shapes will be the following, according to the paragraph direction:</p>
+  <div align="center">
+    <table class="subtle">
+      <tr>
+        <th width="50%" style="text-align: center">Left-Right Paragraph</th>
+        <th width="50%" style="text-align: center">Right-Left Paragraph</th>
+      </tr>
+      <tr>
+        <td width="50%">
+        <table class="simple">
+          <tr>
+            <td style="text-align: center"><b>1</b></td>
+            <td style="text-align: center"><b>2</b></td>
+            <td style="text-align: center"><i><b>4</b></i></td>
+            <td style="text-align: center"><i><b>3</b></i></td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+            <font size="6">ﺞ</font><tt><br>JEEM-F</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﻋ</font><tt><br>AIN-I</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﻢ</font><tt><br>MEEM-F</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﻟ</font><tt><br>LAM-I</tt></td>
+          </tr>
+        </table>
+        </td>
+        <td width="50%">
+        <table class="simple">
+          <tr>
+            <td style="text-align: center">
+            <i><b>4</b></i></td>
+            <td style="text-align: center">
+            <i><b>3</b></i></td>
+            <td style="text-align: center">
+            <b>1</b></td>
+            <td style="text-align: center">
+            <b>2</b></td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+            <font size="6">ﻢ</font><tt><br>MEEM-F</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﻟ</font><tt><br>LAM-I</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﺞ</font><tt><br>JEEM-F</tt></td>
+            <td style="text-align: center">
+            <font size="6">ﻋ</font><tt><br>AIN-I</tt></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+  <h3>3.5.1 <a name="Shaping_and_line_breaking" href="#Shaping_and_line_breaking">
+	Shaping and Line Breaking</a></h3>
+	<p>The process of breaking a paragraph into one or 
+	more lines that fit within particular bounds is outside the scope of the 
+	Bidirectional Algorithm. Where character shaping is involved, the width 
+	calculations must be based on the shaped glyphs. </p>
+	<p>Note that the <i>soft-hyphen</i> (SHY) works in 
+	cursively connected scripts as it does in other scripts. That is, it 
+	indicates a point where the line could be broken in the middle of a word. If 
+	the rendering system breaks at that point, the display—including shaping—should be what is appropriate for the given language. For more information 
+	on this and other line breaking issues, see Unicode Standard Annex #14, “Line Breaking Properties” [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UAX14">UAX14</a>].</p>
+	<h2>4 <a name="Bidirectional_Conformance" href="#Bidirectional_Conformance">Bidirectional Conformance</a><a name="Conformance" href="#Conformance"></a></h2>
+    <p>The Bidirectional Algorithm specifies part of the intrinsic semantics of right-to-left 
+    characters and is thus required for conformance to the Unicode Standard where any such 
+    characters are displayed.</p>
+  <p>A process that claims conformance to this specification shall satisfy the following 
+  clauses:</p>
+
+    <p><i><b><a name="C1" href="#C1">UAX9-C1</a>.</b>
+		In the absence of a permissible higher-level protocol, a 
+      process that renders text shall display all visible representations of characters (excluding 
+      formatting characters) in the order described by Section 3,  
+      <a href="#Basic_Display_Algorithm">Basic Display Algorithm</a>, of this annex. In particular, this includes definitions
+      <a href="#BD1">BD1</a>–<a href="#BD16">BD16</a> and steps</i> <i> <a href="#P1">P1</a>–<a href="#P3">P3</a>,
+      <a href="#X1">X1</a>–<a href="#X10">X10</a>, <a href="#W1">W1</a>–<a href="#W7">W7</a>,
+      <a href="#N0">N0</a>–<a href="#N2">N2</a>, <a href="#I1">I1</a>–<a href="#I2">I2</a>, and
+      <a href="#L1">L1</a>–<a href="#L4">L4</a>.</i></p>
+
+    <p>As is the case for all other Unicode algorithms, this is a <i>logical</i> description—particular implementations can have more efficient mechanisms as long as they produce the same 
+    results. See C18 in <i>Chapter 3, Conformance</i> of [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Unicode">Unicode</a>], and the notes following.</p>
+
+		<p><i><b><a name="C2" href="#C2">UAX9-C2</a>.</b>
+		The only permissible higher-level protocols are those 
+      listed in Section 4.3,  
+		<a href="#Higher-Level_Protocols">Higher-Level Protocols</a>. They are <a href="#HL1">HL1</a>, <a href="#HL2">HL2</a>,
+      <a href="#HL3">HL3</a>, <a href="#HL4">HL4</a>, <a href="#HL5">HL5</a>, and <a href="#HL6">HL6</a>.</i></p>
+
+  <blockquote>
+	<p><span class="note">Note:</span> Use of higher-level protocols is discouraged, 
+	because it introduces interchange problems and can lead to security 
+	problems. For more information, see Unicode Technical Report #36, “Unicode Security 
+	Considerations” [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UTR36">UTR36</a>].</p>
+  </blockquote>
+  <h3>4.1 <a name="Boundary_Neutrals" href="#Boundary_Neutrals">Boundary Neutrals</a></h3>
+  <p>The goal in marking a formatting or control character as BN is that it have no effect on the rest 
+  of the algorithm. (ZWJ and ZWNJ are exceptions; see <a href="#X9">X9</a>). Because 
+	conformance does not require the 
+  precise ordering of formatting characters with respect to others, 
+  implementations can handle them in different ways as long as they preserve the ordering 
+  of the other characters.</p>
+  <h3>4.2 <a name="Explicit_Formatting_Characters" href="#Explicit_Formatting_Characters">Explicit Formatting Characters</a><a name="Explicit_Formatting_Codes" href="#Explicit_Formatting_Codes"></a></h3>
+  <p>As with any Unicode characters, systems do not have to support any particular explicit 
+  directional formatting character (although it is not generally useful to include a terminating character 
+  without including the initiator). Generally, conforming systems will fall into four classes: </p>
+  <ul>
+    <li><i>No bidirectional formatting.</i> This implies that the system does not visually interpret 
+    characters from right-to-left scripts. </li>
+    <li><i>Implicit bidirectionality.</i> The implicit Bidirectional Algorithm and the directional 
+    marks ALM, RLM and LRM are supported. </li>
+
+    <li><i>Non-isolate bidirectionality.</i> The implicit Bidirectional Algorithm, the implicit directional 
+    marks, and the explicit non-isolate directional formatting characters are supported:
+    ALM, RLM, LRM, LRE, RLE, LRO, RLO, 
+    PDF.</li>
+
+    <li><i>Full bidirectionality.</i> The implicit Bidirectional Algorithm, the implicit directional 
+    marks, and all the explicit directional formatting characters are supported:
+    ALM, RLM, LRM, LRE, RLE, LRO, RLO, 
+    PDF, FSI, LRI, RLI, PDI.</li>
+  </ul>
+  <h3>4.3 <a name="Higher-Level_Protocols" href="#Higher-Level_Protocols">Higher-Level Protocols</a></h3>
+  <p>The following clauses are the only permissible ways for systems to apply higher-level protocols 
+  to the ordering of bidirectional text. Some of the clauses apply to <i>segments</i> of structured 
+  text. This refers to the situation where text is interpreted as being structured, whether with 
+  explicit markup such as XML or HTML, or internally structured such as in a word processor or 
+  spreadsheet. In such a case, a segment is span of text that is distinguished in some way by the 
+  structure.</p>
+      <p><i><b><a name="HL1" href="#HL1">HL1</a>.</b>
+      Override <a href="#P3">P3</a>, and set the paragraph embedding level explicitly.
+        This does <b>not</b> apply when deciding how to treat FSI in rule <a href="#X5c">X5c</a>.</i>
+        <ul>
+        <li>A higher-level protocol may set any paragraph level. This can be done on the basis of the context, such as on a table cell, paragraph, document, or system level. (<a href="#P2">P2</a> may be skipped if <a href="#P3">P3</a> is overridden). Note that this does not allow a higher-level protocol to override the limit specified in <a href="#BD2">BD2</a>.</li>
+        <li>A higher-level protocol may apply rules equivalent to <a href="#P2">P2</a> and <a href="#P3">P3</a> but default to level 1 (RTL) rather than 0 (LTR) to match overall RTL context.</li>
+        <li>A higher-level protocol may use an entirely different algorithm that heuristically auto-detects the paragraph embedding level based on the paragraph text and its context. For example, it could base it on whether there are more RTL characters in the text than LTR. As another example, when the paragraph contains no strong characters, its direction could be determined by the levels of the paragraphs before and after.</li>
+      </ul>
+      <p><i><b><a name="HL2" href="#HL2">HL2</a>.</b> Override <a href="#W2">W2</a>, and set EN or AN explicitly.</i>
+      <ul>
+        <li>A higher-level protocol may reset characters of type EN to AN, or vice versa, and ignore 
+          <a href="#W2">W2</a>. For example, style sheet or markup information can be used within a span of text to 
+        override the setting of EN text to be always be AN, or vice versa.</li>
+      </ul>
+      <p><i><b><a name="HL3" href="#HL3">HL3</a>.</b> Emulate explicit directional formatting characters.</i>
+      <ul>
+        <li>A higher-level protocol can impose a directional embedding, isolate or override on a segment of 
+        structured text. The behavior must always be defined by reference to what would happen if 
+        the equivalent explicit directional formatting characters as defined in the algorithm were inserted into the text. For 
+        example, a style sheet or markup can modify the embedding level on a span of text.</li>
+      </ul>
+      <p><i><b><a name="HL4" href="#HL4">HL4</a>.</b> Apply the Bidirectional Algorithm to segments</i>.
+      <ul>
+        <li>The Bidirectional Algorithm can be applied independently to one or more segments of structured 
+        text. For example, when displaying a document consisting of textual data and visible markup 
+        in an editor, a higher-level process can handle syntactic elements in the markup separately 
+        from the textual data.</li>
+      </ul>
+      <p><i><b><a name="HL5" href="#HL5">HL5</a>.</b> Provide artificial context.</i>
+      <ul>
+        <li>Text can be processed by the Bidirectional Algorithm as if it were preceded by a character of a 
+        given type and/or followed by a character of a given type. This allows a piece of text that 
+        is extracted from a longer sequence of text to behave as it did in the larger context.</li>
+      </ul>
+      <p><i><b><a name="HL6" href="#HL6">HL6</a>.</b> Additional mirroring</i>.
+      <ul>
+        <li>Certain characters that do not
+ have the Bidi_Mirrored property can also be depicted by 
+		a mirrored glyph in specialized contexts. Such contexts include, but are 
+		not limited to, historic scripts and associated punctuation, private-use 
+		characters, and characters in mathematical expressions. (See Section 7, <i><a href="#Mirroring">Mirroring</a></i>.) 
+		These characters are those that fit at least one of the following 
+		conditions:<ol>
+			<li>Characters with a resolved directionality of R</li>
+			<li>Characters with a resolved 
+			directionality of L and whose bidirectional type is R or AL</li>
+		</ol>
+        </li>
+      </ul>
+
+  <p>Clauses <a href="#HL1">HL1</a> and <a href="#HL3">HL3</a> are specialized applications of the more general clauses <a href="#HL4">HL4</a> and <a href="#HL5">HL5</a>. They are provided here explicitly because they directly correspond to common operations. </p>
+  <p>As an example of the application of <a href="#HL4">HL4</a>, suppose an XML document contains the following 
+  fragment. (Note: This is a simplified example for illustration: element names, attribute names, 
+  and attribute values could all be involved.)</p>
+  <blockquote>
+	<p><code>ARABICenglishARABIC&lt;e1 type=&#39;ab&#39;&gt;ARABICenglish&lt;e2 type=&#39;cd&#39;&gt;english</code></p>
+	</blockquote>
+  <p>This can be analyzed as being five different segments:</p>
+  <ol type="a">
+    <li><code>ARABICenglishARABIC</code></li>
+    <li><code>&lt;e1 type=&#39;ab&#39;&gt;</code></li>
+    <li><code>ARABICenglish</code></li>
+    <li><code>&lt;e2 type=&#39;cd&#39;&gt;</code></li>
+    <li><code>english</code></li>
+  </ol>
+  <p>To make the XML file readable as source text, the display in an editor 
+	could order these elements all in a uniform direction (for example, all left-to-right) and apply the 
+	Bidirectional Algorithm to each 
+  field separately. It could also choose to order the element names, attribute names, and attribute 
+  values uniformly in the same direction (for example, all left-to-right). For final display, the markup 
+  could be ignored, allowing all of the text (segments a, c, and e) to be reordered together.</p>
+	<h3>4.4 <a name="Bidi_Conformance_Testing" href="#Bidi_Conformance_Testing">Bidirectional Conformance 
+	Testing</a></h3>
+    <p>The <i>Unicode Character Database</i> [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>] 
+    includes two files that provide conformance tests for implementations of 
+    the Bidirectional Algorithm [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Tests9">Tests9</a>]. 
+    One of the test files, <code>BidiTest.txt</code>, comprises exhaustive test sequences 
+    of bidirectional types up to a given length, currently 4. The other test file, <code>BidiCharacterTest.txt</code>, 
+    contains test sequences of explicit code points, including, for example, bracket pairs. 
+    The format of each test file is described in the header of that file.</p>
+
+  <h2>5 <a name="Implementation_Notes" href="#Implementation_Notes">Implementation Notes</a></h2>
+
+  <h3>5.1 <a name="Reference_Code" href="#Reference_Code">Reference Code</a></h3>
+  <p>Reference implementations of the Bidirectional Algorithm written in C and in Java are available. 
+  The source code can be downloaded from [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Code9">Code9</a>]. 
+  Implementers are encouraged to use these resources to test their implementations.</p> 
+  <p>The reference code is designed to follow the steps of the algorithm without applying 
+  any optimizations. An example of an effective optimization is to first test for right-to-left characters and 
+  invoke the Bidirectional Algorithm only if they are present. Another example of optimization is in matching bracket pairs. 
+  The bidirectional bracket pairs (the characters with Bidi_Paired_Bracket_Type property values Open and Close) 
+  constitute a subset of the characters with bidirectional type ON. Conversely, the characters with a bidirectional type 
+  distinct from ON have the Bidi_Paired_Bracket_Type property value None. Therefore, lookup of Bidi_Paired_Bracket_Type 
+  property values for the identification of bracket pairs can be optimized by restricting the processing to characters 
+  whose bidirectional type is ON.</p>
+  <p>An online demo is also available at [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#Demo9">Demo9</a>], 
+  which shows the results of the Bidirectional Algorithm, as well as the embedding levels and 
+  the rules invoked for each character. Implementers are cautioned when using that online demo that it implements
+the rules for UBA as of Version 6.2, and has not been updated for the major changes to UBA in Version 6.3 and
+subsequent versions. The online demo also does not handle supplemental characters gracefully.</p>
+
+  <h3>5.2 <a name="Retaining_Explicit_Formatting_Characters" href="#Retaining_Explicit_Formatting_Characters">Retaining 
+    BNs and Explicit Formatting Characters</a><a name="Retaining_Format_Codes"></a></h3>
+  <p>Some implementations may wish to retain the explicit directional embedding and override formatting characters 
+    and BNs when running the algorithm. 
+    In fact, retention of these formatting characters and BNs is important to
+      users who need to display a graphic representation of hidden characters, and who thus need to obtain
+      their visual positions for display.</p>
+    <p>The following describes 
+  how this may be done by implementations that do retain these characters
+  through the steps of the algorithm. Note that this description is an informative 
+  implementation guideline; it should provide the same results as the explicit algorithm above, but 
+  in case of any deviation the explicit algorithm is the normative statement for conformance.</p>
+  <ul>
+    <li>In rules <a href="#X2">X2</a> through <a href="#X5">X5</a>,
+      insert an initial step setting the explicit embedding or override character's 
+      embedding level to the embedding level of the last entry on the directional status stack. This
+      applies to RLE, LRE, RLO, and LRO.</li>
+    <li>In rule <a href="#X6">X6</a>, remove the exclusion of
+      BN characters. In other words, apply the rule to all types except
+      B, RLE, LRE, RLO, LRO, PDF, RLI, LRI, FSI, and PDI.</li>
+    <li>In rule <a href="#X7">X7</a>, add a final step setting
+    the embedding level of the PDF to the embedding level of the last entry on the
+    directional status stack, in all cases.</li> 
+    <li>In rule <a href="#X9">X9</a>, do not remove any characters, but turn
+    all RLE, LRE, RLO, LRO, and PDF characters into BN.</li>
+    <li>In rule <a href="#X10">X10</a>, 
+    when determining the sos and eos for an isolating run sequence,
+    skip over any BNs when looking for the character preceding the isolating run sequence's first character and following its last character.</li>
+    <li>In rule <a href="#W1">W1</a>, search backward from each NSM to the first character in the isolating run sequence whose 
+    bidirectional type is not BN, and set the NSM to ON if it is an isolate initiator or PDI, and to its type otherwise.
+    If the NSM is the first non-BN character, change the NSM to the type of <i>sos</i>.</li>
+    <li>In rule <a href="#W4">W4</a>, scan past BN types that are adjacent to ES or CS.</li>
+    <li>In rule <a href="#W5">W5</a>, change all appropriate sequences of ET and BN, not just ET.</li>
+    <li>In rule <a href="#W6">W6</a>, change all BN types adjacent to ET, ES, or CS to ON as well.</li>
+    <li>In rule <a href="#W7">W7</a>, scan past BN.</li>
+    <li>In rules <a href="#N0">N0</a>&ndash;<a href="#N2">N2</a>, treat BNs that adjoin 
+    neutrals the same as those neutrals.</li>
+    <li>In rules <a href="#I1">I1</a> and <a href="#I2">I2</a>, ignore BN.</li>
+    <li>In rule <a href="#L1">L1</a>, include the embedding and override formatting characters and BNs
+    together with whitespace characters and isolate formatting characters in the sequences 
+    whose level gets reset before a separator or line break. Resolve any LRE, RLE, LRO, RLO, PDF, or BN to the level of the preceding character if there is one, 
+	and otherwise to the base level.</li>
+  </ul>
+
+  <h2>6 <a name="Usage" href="#Usage">Usage</a></h2>
+
+  <h3>6.1 <a name="Joiners" href="#Joiners">Joiners</a></h3>
+  <p>As described under <a href="#X9">X9</a>, the <i>zero width joiner</i> and
+	<i>non-joiner</i> affect the 
+  shaping of the adjacent characters—those that are adjacent in the original backing-store 
+  order—even though those characters may end up being rearranged to be non-adjacent by the 
+	Bidirectional Algorithm. To determine the joining behavior of a particular 
+	character after applying the Bidirectional Algorithm, there are two main 
+	strategies:</p>
+  <ul>
+    <li>When shaping, an implementation can refer back to the original backing store to see if there 
+    were adjacent ZWNJ or ZWJ characters.</li>
+    <li>Alternatively, the implementation can replace ZWJ and ZWNJ by an out-of-band character 
+    property associated with those adjacent characters, so that the information does not interfere 
+    with the Bidirectional Algorithm and the information is preserved across rearrangement of those 
+    characters. Once the Bidirectional Algorithm has been applied, that out-of-band information can then be 
+    used for proper shaping.</li>
+  </ul>
+
+  <h3>6.2 <a name="Vertical_Text" href="#Vertical_Text">Vertical Text</a><a name="bk3" href="#bk3"></a></h3>
+  <p>In the case of vertical line orientation, the Bidirectional Algorithm is still used to 
+  determine the levels of the text. However, these levels are not used to reorder the text, because 
+  the characters are usually ordered uniformly from top to bottom. Instead, the levels are used to 
+  determine the rotation of the text. Sometimes vertical lines follow a vertical baseline in which 
+  each character is oriented as normal (with no rotation), with characters ordered from top to 
+  bottom whether they are Hebrew, numbers, or Latin. When setting text using the Arabic script in 
+  vertical lines, it is more common to employ a horizontal baseline that is rotated by 90° 
+  counterclockwise so that the characters are ordered from top to bottom. Latin text and numbers may 
+  be rotated 90° clockwise so that the characters are also ordered from top to bottom.</p>
+  <p>The Bidirectional Algorithm is used when some characters are ordered from bottom 
+  to top. For example, this happens with a mixture of Arabic and Latin glyphs when all the glyphs 
+  are rotated uniformly 90° clockwise. The Unicode Standard does not specify 
+	whether text is presented horizontally or vertically, or whether text is 
+	rotated. That is left up to higher-level protocols.</p>
+
+  <h3>6.3 <a name="Formatting" href="#Formatting">Formatting</a></h3>
+  <p>Because of the implicit character types and the heuristics for resolving neutral and numeric 
+  directional behavior, the implicit bidirectional ordering will generally produce the correct 
+  display without any further work. However, problematic cases may occur when a right-to-left 
+  paragraph begins with left-to-right characters, or there are nested segments of 
+  different-direction text, or there are weak characters on directional boundaries. In these cases, 
+  embeddings or directional marks may be required to get the right display. Part numbers may also 
+  require directional overrides.</p>
+  <p>The most common problematic case is that of neutrals on the boundary of an embedded language. 
+  This can be addressed by setting the level of the embedded text correctly. For example, with all 
+  the text at level 0 the following occurs:</p>
+
+<pre>
+<b>Memory: </b> he said &quot;I NEED WATER!&quot;, and expired.
+
+<b>Display:</b> he said &quot;RETAW DEEN I!&quot;, and expired.
+</pre>
+
+  <p>If the exclamation mark is to be part of the Arabic quotation, then the user can select the 
+  text <i>I NEED WATER!</i> and explicitly mark it as embedded Arabic, which produces the following 
+  result:</p>
+
+<pre>
+<b>Memory:</b>  he said &quot;<span class="boxed-control">RLI</span>I NEED WATER!<span class="boxed-control">PDI</span>&quot;, and expired.
+
+<b>Display:</b> he said &quot;!RETAW DEEN I&quot;, and expired.
+</pre>
+
+  <p>However, an often simpler and better method of doing this is
+  to place a right directional mark (RLM) after the exclamation mark.
+  Because the exclamation mark is now not on a directional boundary, this produces the correct result.
+  This is the best approach when manually editing text or programmatically generating text meant to be edited,
+  or dealing with an application that simply does not support explicit formatting characters.</p>
+<pre>
+<b>Memory:</b>  he said &quot;I NEED WATER!<span class="boxed-control">RLM</span>&quot;, and expired.
+
+<b>Display:</b> he said &quot;!RETAW DEEN I&quot;, and expired.
+</pre>
+
+  <p>This latter approach is preferred because it does not make use of the explicit formatting characters, 
+  which can easily get out of sync if not fully supported by editors and other string manipulation. 
+  Nevertheless, the explicit formatting characters are
+  absolutely necessary in cases
+  where text of one direction
+  contains text of the opposite direction which itself contains text of the original direction.
+  Such cases are not as rare as one might think, because Latin-script brand names, technical terms, and abbreviations are often written in their
+  original Latin characters when used in non-Latin-script text, including right-to-left text, as in the following:</p>
+
+<pre>
+<b>Memory:</b>  it is called &quot;<span class="boxed-control">RLI</span>AN INTRODUCTION TO java<span class="boxed-control">PDI</span>&quot; - $19.95 in hardcover.
+
+<b>Display:</b> it is called &quot;java OT NOITCUDORTNI NA&quot; - $19.95 in hardcover.
+</pre>
+
+  <p>Thus, when text is programmatically generated by inserting data into a template,
+  and is not intended for later manual editing,
+  and a particular insert happens to be of the opposite direction to the template's text,
+  it is easiest to wrap the insert in explicit formatting characters (or their markup equivalent) declaring its direction,
+  without analyzing whether it is really necessary to do so,
+  or if the job could be done just with stateless directional marks.</p>
+
+  <p>Furthermore, in this common scenario, it is highly recommended to use directional isolate formatting characters
+  as opposed to directional embedding formatting characters (once targeted display platforms are known to support isolates).
+  This is because embeddings affect the surrounding text similarly to a strong character,
+  whereas directional isolates have the effect of a neutral.
+  The embeddings' stronger effect is often difficult to anticipate and is rarely useful.
+  To demonstrate, here is the example above with embeddings instead of isolates:</p>
+
+<pre>
+<b>Memory:</b>  it is called &quot;<span class="boxed-control">RLE</span>AN INTRODUCTION TO java<span class="boxed-control">PDF</span>&quot; - $19.95 in hardcover.
+
+<b>Display:</b> it is called &quot;$19.95 - &quot;java OT NOITCUDORTNI NA in hardcover.
+</pre>
+
+  <p>This, of course, is not the intended display, and is due to the number “sticking”
+  to the preceding RTL embedding (along with all the neutral characters in between),
+  just as it would “stick” to a preceding RTL character.</p>
+
+  <p>Directional isolates also offer a solution to the very common case where the direction of the text
+  to be programmatically inserted is not known. Instead of analyzing the characters of the text to be inserted in order
+  to decide whether to use an LRE or RLE (or LRI or RLI - or nothing at all), the software can take the easy way out
+  and <i>always</i> wrap each unknown-direction insert in an FSI and PDI.
+  Thus, an FSI instead of an RLI in the example above would produce the same display.
+  FSI's first-strong heuristic is not infallible, but it will work most of the time even on mixed-script text.</p>
+
+  <p>Although wrapping inserts in isolates is a useful technique,
+  it is best not to wrap text that is known to contain no opposite-direction characters that are not already wrapped in an isolate.
+  Unnecessary layers of wrapping not only add bulk and complexity;
+  they can also wind up exceeding the depth limit and rendering ineffective the innermost isolates,
+  which can make the text display incorrectly.
+  One very common case of an insert that does not need wrapping is one known to be localized to the context locale,
+  e.g. a translated message with all its inserted values either themselves localized, or wrapped in an isolate.  </p>
+<h3>6.4 <a name="Separators" href="#Separators">Separating Punctuation Marks</a></h3>
+	<p>A common problem case is where the text really represents a 
+	sequence of items with separating punctuation marks, 
+	often programmatically concatenated. These separators are often strings of neutral characters. For example, a web page might have the following at the 
+	bottom:</p>
+	<p align="center"><u>advertising programs</u> - <u>business solutions</u> - <u>privacy policy</u> 
+	- <u>help</u> - <u>about</u></p>
+	<p>This might be built up on the server by concatenating a variable number of strings with &quot; - &quot; as a 
+	separator, for example. If all of the text is translated into Arabic or Hebrew and the overall 
+	page direction is set to be RTL, then the right result occurs, such as the following:</p>
+	<p align="center"><u>TUOBA</u> - <u>PLEH</u> - <u>YCILOP YCAVIRP</u> - <u>SNOITULOS SSENISUB</u> 
+	- <u>SMARGORP GNISITREVDA</u></p>
+	<p>However, suppose that in the translation, there remain some LTR characters. This is not 
+	uncommon for company names, product names, technical terms, and so on. If one of the separators is bounded on 
+	both sides by LTR characters, then the result will be badly jumbled. For example, suppose that 
+	&quot;programs&quot; in the first term and &quot;business&quot; in the second were left in English. Then the result 
+	would be</p>
+	<p align="center"><u>TUOBA</u> - <u>PLEH</u> - <u>YCILOP YCAVIRP</u> - <u>SNOITULOS <b>programs</b></u><b> 
+	- </b><u><b>business</b> GNISITREVDA</u></p>
+	<p>The result is a jumble, with 
+	the apparent first term being &quot;advertising business&quot; and the second being &quot;programs solutions&quot;. 
+	The simplest solution for this problem is to include an RLM character in each separator string. That will 
+	cause each separator to adopt a right-to-left direction, and produce the correct output:</p>
+	<p align="center"><u>TUOBA</u> - <u>PLEH</u> - <u>YCILOP YCAVIRP</u> - <u>SNOITULOS <b>business</b></u><b> 
+	- </b><u><b>programs </b>GNISITREVDA</u></p>
+	<p>The explicit formatting characters
+        (LRE, RLE, and PDF or LRI, RLI, FSI, and PDI) can be used to achieve the 
+	same effect; web pages would use spans with the attributes <i>dir=&quot;ltr&quot;</i> or <i>dir=&quot;rtl&quot;</i>. 
+	Each separate field would be embedded, excluding the separators. In general, LRM and RLM are 
+	preferred to the explicit formatting characters because their effects are more local in scope, and are more 
+	robust than the dir attributes when text is copied. (Ideally programs would convert <i>dir</i> 
+	attributes to the corresponding explicit formatting characters when converting to plain text, but that is not 
+	generally supported.)</p>
+
+  <h3>6.5 <a name="Conversion_to_Plain_Text" href="#Conversion_to_Plain_Text">Conversion to Plain Text</a></h3>
+  <p>For consistent appearance, when bidirectional text subject to a higher-level
+  protocol is to be converted to Unicode plain text, formatting 
+  characters should be inserted to ensure that the display order resulting from
+  the application of the Unicode Bidirectional Algorithm matches that specified by the
+  higher-level protocol. The same principle should be followed whenever  text using a
+  higher-level protocol is converted to marked-up text that is unaware of the higher-level
+  protocol. For example, if a higher-level protocol sets the paragraph direction to 1
+  (R) based on the number of L versus R/AL characters, when converted to plain text the
+  paragraph would be embedded in a bracketing pair of RLE..PDF formatting 
+  characters. If the same text were converted  to HTML4.0 the attribute dir =
+  "rtl" would be added to the paragraph element.</p>
+  <h2>7 <a name="Mirroring" href="#Mirroring">Mirroring</a></h2>
+  <p>The mirrored property is important to ensure that the correct characters are used for the 
+  desired semantic. This is of particular importance where the name of a character does not indicate 
+  the intended semantic, such as with U+0028 “(” LEFT PARENTHESIS. While the name 
+  indicates that it is a left parenthesis, the character really expresses an <i>open parenthesis</i>—the <i>leading</i> character in a parenthetical phrase, not the trailing one.</p>
+  <p>Some of the characters that do not have the Bidi_Mirrored property 
+	may be rendered with mirrored glyphs, according to a higher level 
+	protocol that adds 
+  mirroring: see Section 4.3,
+  <i><a href="#Higher-Level_Protocols">Higher-Level Protocols</a></i>, especially
+	<a href="#HL6">HL6</a>. Except in such cases, mirroring must be done 
+	according to rule <a href="#L4">L4</a>, to ensure that the correct character
+        is used to express the intended semantic, 
+	and to avoid interoperability and security problems.</p>
+  <p>Implementing rule <a href="#L4">L4</a> calls for mirrored glyphs. These glyphs may not be exact
+  <i>graphical</i> mirror images. For example, clearly an italic parenthesis is not 
+  an exact mirror image of another— “<i>(</i>” is not the mirror image of “<i>)</i>”. 
+  Instead, mirror glyphs are those acceptable as mirrors within the normal parameters of the font in 
+  which they are represented.</p>
+  <p>In implementation, sometimes pairs of characters are acceptable mirrors for one 
+  another—for example, U+0028 “(” LEFT PARENTHESIS and U+0029 
+	“)” 
+  RIGHT PARENTHESIS or U+22E0 “⋠” DOES NOT PRECEDE OR EQUAL and
+  U+22E1 “⋡” DOES NOT SUCCEED OR EQUAL. Other characters such as 
+  U+2231 “∱” CLOCKWISE INTEGRAL do not have corresponding characters that can be 
+  used for acceptable mirrors. The informative BidiMirroring.txt data file <a href="http://www.unicode.org/reports/tr41/tr41-26.html#Data9">[Data9]</a>, 
+  lists the paired characters with acceptable mirror glyphs. 
+	The formal property name for this data in the  
+	<i>
+	Unicode Character Database</i> [<a href="http://www.unicode.org/reports/tr41/tr41-26.html#UCD">UCD</a>] 
+	is  
+	Bidi_Mirroring_Glyph. A comment in the file indicates where 
+  the pairs are “best fit”: they should be acceptable in rendering, although ideally the mirrored 
+  glyphs may have somewhat different shapes.</p>
+  <h2><a name="Migration" href="#Migration">Migration Issues</a><a name="Migrating_from_2.0_to_3.0" href="#Migrating_from_2.0_to_3.0"></a></h2>
+<p>There are two major enhancements in the Unicode 6.3 version of the UBA:</p>
+  <ul>
+    <li>Directional isolates</li>
+    <li>Bracket Pairs</li>
+  </ul>
+  <p>Implementations of the new directional isolates should see very few compatibility issues; the UBA has been carefully modified to minimize differences for older text written without them. There are a few edge cases near the limit of the number of levels where there are some differences, but those are not likely to be encountered in practice.</p>
+  <p>With bracket pairs, there may be more changes. The problem is that without knowing (or having good UI access to)  the directional marks or embeddings, people have constructed text with the correct visual appearance but incorrect underlying structure (eg …[…[…, appearing as …[…]…). The new algorithm catches cases like these, because such malformed sequences of brackets are not matched.</p>
+  <p>However, there are some cases where older implementations without rule <a href="#N0">N0</a>  produced the desired appearance, and newer implementations will not. The user feedback on implementations was sufficiently positive that the decision was made to add <a href="#N0">N0</a>.</p>
+  <p>There are also incompatibilities from  some implementation's failing to updating correctly to previous versions of Unicode, notably in the mishandling solidus such that &quot;T 1/2&quot; (T is an  Arabic character) appears incorrectly as &quot;2/1 T&quot;.  </p>
+  <p>To mitigate compatibility problems, it is strongly recommended that implementations take the following steps:</p>
+  <ul>
+    <li>Add appropriate directional formatting characters on both  any parentheses that are resolved with rule <a href="#N0">N0</a> so that they appear properly on older systems. This can be done with directional marks
+    (RLM or LRM) on both sides of each parenthesis. For forward compatibility, text authored on older systems should use semantically correct brackets (with directional formatting characters as necessary) to ensure correct display on systems with implementations after Unicode 6.3. </li>
+    <li>Add the appropriate explicit embedding around any sequence of numbers + solidus + numbers.</li>
+  </ul>
+  <h3><a name="section_reorg" href="#section_reorg">Section Reorganization</a></h3>
+<p>In Unicode 6.3, there was significant reorganization of the text. The following table shows the new and old section numbers.</p>
+<div align="center">
+  <table class="subtle">
+    <tr>
+      <th>Unicode 6.3</th>
+      <th>Unicode 6.2</th>
+    </tr>
+    <tr>
+      <td>2.4 <a href="#Explicit_Directional_Isolates">Explicit Directional Isolates</a></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>2.5 <a href="#Terminating_Explicit_Directional_Isolates">Terminating Explicit Directional Isolates</a></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>2.6 <a href="#Implicit_Directional_Marks">Implicit Directional Marks</a></td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>3.3.3 <a href="#Preparations_for_Implicit_Processing">Preparations for Implicit Processing</a></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>3.3.4 <a href="#Resolving_Weak_Types">Resolving Weak Types
+      </a><br>      
+      …3.3.6 <a href="#Resolving_Implicit_Levels">Resolving Implicit Levels</a></td>
+      <td>3.3.3<br>…3.3.5</td>
+    </tr>
+    <tr>
+      <td>6.1 <a href="#Joiners">Joiners</a></td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>6.2 <a href="#Vertical_Text">Vertical Text</a></td>
+      <td>5.4</td>
+    </tr>
+    <tr>
+      <td>6.3 <a href="#Formatting">Formatting</a></td>
+      <td>5.5</td>
+    </tr>
+    <tr>
+      <td>6.4 <a href="#Separators">Separating Punctuation Marks</a></td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>6.5 <a href="#Conversion_to_Plain_Text">Conversion to Plain Text</a></td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td><a href="#Migration">Migration Issues</a></td>
+      <td>5.7</td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+
+<h2 class="nonumber"><a name="Acknowledgements" href="#Acknowledgements">Acknowledgments</a></h2>
+	<p>Mark Davis created the initial version of this annex and maintains the text.
+  Aharon Lanin and Andrew Glass made substantial additions to Revision 29 (Unicode 6.3.0).</p>
+	<p>Thanks to the following people for their contributions to the Bidirectional 
+	Algorithm or for their feedback on earlier versions of this annex:
+	Ahmed Talaat (أحمد طلعت),
+	Alaa Ghoneim (علاء غنيم), 
+	Asmus Freytag, Avery Bishop, Ayman Aldahleh (أيمن الدحلة), Behdad Esfahbod (بهداد اسفهبد), Doug Felt,
+	Dwayne Robinson,
+	Eric Mader, Ernest Cline, Gidi Shalom-Bendor (גידי שלום-בן דור), Gilead Almosnino (גלעד אלמוסנינו), Isai Scheinberg,
+	Israel Gidali (ישראל גידלי), Joe Becker, John McConnell, Jonathan Kew, Jonathan Rosenne (יונתן רוזן), 
+	Kamal Mansour (كمال منصور), Kenneth Whistler,
+	Khaled Sherif (خالد شريف), Laurențiu Iancu,
+	Maha Hassan (مها حسن), Markus Scherer, Martin Dürst, Mati Allouche (מתתיהו אלוש), Michel Suignard, Mike Ksar (ميشيل قصار),
+	Murray Sargent, Paul Nelson, Pedro Navarro, Peter Constable, Rick McGowan,
+	Robert Steen,
+	Roozbeh Pournader (روزبه پورنادر), 
+	Solra Bizna, Steve Atkin, and Thomas Milo (تُومَاسْ مِيلُو).</p>
+
+  <h2 class="nonumber"><a name="References" href="#References">References</a></h2>
+	<p>For references for this annex, see Unicode Standard Annex #41, “<a href="http://www.unicode.org/reports/tr41/tr41-26.html">Common 
+	References for Unicode Standard Annexes</a>.”</p>
+<h2 class="nonumber"><a name="Modifications" href="#Modifications">Modifications</a></h2>
+  
+  <p>The following summarizes modifications from the previous version of this 
+	annex.</p>
+
+  <h3>Revision 42</h3>
+    <ul>
+        <li><b>Reissued</b> for Unicode 13.0.0.</li>
+    </ul>
+<!--
+  <p>Revision 40 being a proposed update, only changes between versions 39 and 41 are noted here.</p>
+-->
+  <p>Previous revisions can be accessed with the “Previous Version” link in the header.</p>
+
+  <hr>
+  <p class="copyright">© 2020 Unicode, Inc. All Rights Reserved. The 
+  Unicode Consortium makes no expressed or implied warranty of any kind, and assumes no liability 
+  for errors or omissions. No liability is assumed for incidental and consequential damages in 
+  connection with or arising out of the use of the information or programs contained or accompanying 
+  this technical report. The Unicode <a href="http://www.unicode.org/copyright.html">Terms of Use</a> 
+  apply.</p>
+  <p class="copyright">Unicode and the Unicode logo are trademarks of Unicode, Inc., and are 
+  registered in some jurisdictions.</p>
+  </div> <!-- BODY -->
+</body>
+</html>

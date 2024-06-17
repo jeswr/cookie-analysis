@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta name="google-site-verification" content="HtY1HLGjIKTyCvudwQK-6R_CIlNZOeJk8RaaLxuLPqo" / -->
+    <title>IHMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link href="https://www.ihmc.us/wp-content/themes/ihmc/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://www.ihmc.us/wp-content/themes/ihmc/style.css" type="text/css" rel="stylesheet" media="screen, projection" />
+    <link href="/wp-content/themes/ihmc/css/style.css?v=3.6.1" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://www.ihmc.us/wp-content/themes/ihmc/js/bootstrap.min.js"></script>
+    <script src="https://www.ihmc.us/wp-content/themes/ihmc/js/menu.js"></script>
+    <script src="https://www.ihmc.us/wp-content/themes/ihmc/js/scripts.js"></script>
+    <script src="https://www.ihmc.us/wp-content/themes/ihmc/js/bootstrap-tabcollapse.js"></script>
+    <script src="https://www.ihmc.us/wp-content/themes/ihmc/js/cse.js"></script>
+     <!--flexslider-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="https://www.ihmc.us/wp-content/themes/ihmc/js/flexslider/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="https://www.ihmc.us/wp-content/themes/ihmc/css/flexslider/flexslider.css" rel="stylesheet" media="screen" />
+	<!--end flexslider-->
+    <link rel="dns-prefetch" href="//cdn.hu-manity.co" />
+		<!-- Cookie Compliance -->
+		<script type="text/javascript">var huOptions = {"appID":"wwwihmcus-c741d76","currentLanguage":"en","blocking":true,"globalCookie":false,"customProviders":[],"customPatterns":[]};</script>
+		<script type="text/javascript" src="//cdn.hu-manity.co/hu-banner.min.js"></script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="dlm-version" content="4.9.14">
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.6 (Yoast SEO v22.8) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="The Institute for Human &amp; Machine Cognition (IHMC) pioneers technologies aimed at leveraging and extending human capabilities." />
+	<link rel="canonical" href="https://www.ihmc.us/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="IHMC" />
+	<meta property="og:description" content="Research that makes a difference...that makes a difference" />
+	<meta property="og:url" content="https://www.ihmc.us/" />
+	<meta property="og:site_name" content="IHMC | Institute for Human &amp; Machine Cognition" />
+	<meta property="article:publisher" content="http://facebook.com/theihmc" />
+	<meta property="article:modified_time" content="2021-04-29T14:18:55+00:00" />
+	<meta property="og:image" content="https://www.ihmc.us/wp-content/uploads/2016/03/fihmc-pms-transparent-100.png" />
+	<meta property="og:image:width" content="330" />
+	<meta property="og:image:height" content="100" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Home" />
+	<meta name="twitter:description" content="The Institute for Human &amp; Machine Cognition (IHMC) pioneers technologies aimed at leveraging and extending human capabilities. Explore our research" />
+	<meta name="twitter:site" content="@theihmc" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.ihmc.us/","url":"https://www.ihmc.us/","name":"IHMC","isPartOf":{"@id":"https://www.ihmc.us/#website"},"about":{"@id":"https://www.ihmc.us/#organization"},"datePublished":"2015-06-04T20:26:01+00:00","dateModified":"2021-04-29T14:18:55+00:00","description":"The Institute for Human & Machine Cognition (IHMC) pioneers technologies aimed at leveraging and extending human capabilities.","breadcrumb":{"@id":"https://www.ihmc.us/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.ihmc.us/"]}]},{"@type":"BreadcrumbList","@id":"https://www.ihmc.us/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.ihmc.us/#website","url":"https://www.ihmc.us/","name":"IHMC | Institute for Human &amp; Machine Cognition","description":"","publisher":{"@id":"https://www.ihmc.us/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.ihmc.us/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.ihmc.us/#organization","name":"IHMC","url":"https://www.ihmc.us/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.ihmc.us/#/schema/logo/image/","url":"https://www.ihmc.us/wp-content/uploads/2016/03/ihmcRunningman-800.png","contentUrl":"https://www.ihmc.us/wp-content/uploads/2016/03/ihmcRunningman-800.png","width":800,"height":800,"caption":"IHMC"},"image":{"@id":"https://www.ihmc.us/#/schema/logo/image/"},"sameAs":["http://facebook.com/theihmc","https://x.com/theihmc","http://youtube.com/theihmc"]}]}</script>
+	<meta name="google-site-verification" content="skI391YiGb8fD3n0bxhjbsUliJEp0V1iXNArg5Nu1cg" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ihmc.us\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.4"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.ihmc.us/wp-content/plugins/gutenberg/build/block-library/style.css?ver=18.5.0' type='text/css' media='all' />
+<style id='powerpress-player-block-style-inline-css' type='text/css'>
+
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-button.is-style-outline .wp-block-button__link){background: transparent none;border-color: currentColor;border-width: 2px;border-style: solid;color: currentColor;padding-top: 0.667em;padding-right: 1.33em;padding-bottom: 0.667em;padding-left: 1.33em;}
+:root :where(.wp-block-site-logo.is-style-rounded){border-radius: 9999px;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+.ls_excerpt p {margin-bottom:20px !important}
+
+.afrl-hmt-menu-item 
+{
+	padding-left:20px !important;
+	padding-right:20px !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .afrl-hmt-menu-item  {
+    display:block;
+  }
+	
+	.dividers {
+		display:none;
+	}
+}
+</style>
+<link rel='stylesheet' id='wooslider-flexslider-css' href='https://www.ihmc.us/wp-content/plugins/wooslider/assets/css/flexslider.css?ver=2.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wooslider-common-css' href='https://www.ihmc.us/wp-content/plugins/wooslider/assets/css/style.css?ver=2.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css' href='https://www.ihmc.us/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='ivory-search-styles-css' href='https://www.ihmc.us/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='upw_theme_standard-css' href='https://www.ihmc.us/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=6.5.4' type='text/css' media='all' />
+<script type="text/javascript" id="jquery-core-js-extra">
+/* <![CDATA[ */
+var theme_data = {"themeLogo":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.ihmc.us/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.ihmc.us/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="ssbs-nonce-js-after">
+/* <![CDATA[ */
+var sss_nonce_frontend = "b427598651"
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://www.ihmc.us/wp-json/" /><link rel="alternate" type="application/json" href="https://www.ihmc.us/wp-json/wp/v2/pages/22" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ihmc.us/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://www.ihmc.us/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ihmc.us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ihmc.us%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ihmc.us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ihmc.us%2F&#038;format=xml" />
+<style type="text/css">.directmail_sf { display: block; } .directmail_sf table, .directmail_sf table td { border: none !important; } .directmail_sf td input[type=text], .directmail_sf td input[type=email] { width: 100%; box-sizing: border-box; }</style><script type="text/javascript">
+(function(){
+	var target = document;
+	var attacher = target.addEventListener;
+	var eventName = "load";
+	
+	if ( !attacher ) {
+		target = window;
+		attacher = target.attachEvent;
+		eventName = "onload";
+	}
+	
+	if ( attacher ) {
+		attacher.call( target, eventName, function() {
+			var input = document.createElement("input");
+
+			if ( !( "placeholder" in input ) && document.querySelectorAll ) {
+				var needLabels = document.querySelectorAll(".directmail_sf input[data-label]");
+
+				for ( var i = 0; i < needLabels.length; i++ ) {
+					var item = needLabels.item(i);
+					var label = document.createElement("label");
+
+					label.setAttribute( "for", item.getAttribute("id") );
+					label.innerText = item.getAttribute("data-label");
+					item.parentNode.insertBefore( label, item );
+					item.parentNode.insertBefore( document.createElement("br"), item );
+				}
+			}
+		}, false );
+	}
+})();
+</script>	<link rel="icon" href="https://www.ihmc.us/wp-content/uploads/2016/03/cropped-ihmcRunningman-800-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.ihmc.us/wp-content/uploads/2016/03/cropped-ihmcRunningman-800-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.ihmc.us/wp-content/uploads/2016/03/cropped-ihmcRunningman-800-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.ihmc.us/wp-content/uploads/2016/03/cropped-ihmcRunningman-800-270x270.png" />
+			<!-- Easy Columns 2.1.1 by Pat Friedl http://www.patrickfriedl.com -->
+			<link rel="stylesheet" href="http://www.ihmc.us/wp-content/plugins/easy-columns/css/easy-columns.css" type="text/css" media="screen, projection" />
+			<style type="text/css" media="screen">.is-menu path.search-icon-path { fill: #888888;}body .popup-search-close:after, body .search-close:after { border-color: #888888;}body .popup-search-close:before, body .search-close:before { border-color: #888888;}</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9S9MDNL80L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9S9MDNL80L');
+</script>
+<!-- End analytics -->
+
+<!-- favicon images -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+<!-- end favicon images -->
+  </head>
+ 
+  <body class="home page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-22 cookies-not-set ihmc">
+
+  <div id="main-container">
+    <div id="header" class="dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.ihmc.us"><img class="visible-xs header-logo" src="/wp-content/themes/ihmc/images/ihmc-logo-sm.png" /><img class="hidden-xs header-logo" src="/wp-content/themes/ihmc/images/ihmc-logo.png" /></a>
+        <button type="button" class="search-button">
+          <i class="fa fa-search"></i>
+          <div class="header-search-form" style="display:none;"><form role="search" method="get" id="searchform" class="searchform" action="https://www.ihmc.us/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			<input type="hidden" name="id" value="87138" /></form></div>
+        </button>
+        <div id="cd-nav">
+          <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+          <nav id="cd-main-nav">
+            <ul id="menu-main-menu" class="menu"><li class="dropdown menu-item-85814"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-item-820"><a href="https://www.ihmc.us/research/agile-computing/">Agile Computing</a></li>
+	<li class="menu-item-819"><a href="https://www.ihmc.us/research/human-machine-teamwork/">Human-Machine Teamwork</a></li>
+	<li class="menu-item-822"><a href="https://www.ihmc.us/research/computational-and-philosophical-foundations/">Computational &#038; Philosophical Foundations</a></li>
+	<li class="menu-item-821"><a href="https://www.ihmc.us/research/cybersecurity/">Cybersecurity</a></li>
+	<li class="menu-item-818"><a href="https://www.ihmc.us/research/healthspan-resilience-performance/">Healthspan, Resilience &amp; Performance</a></li>
+	<li class="menu-item-823"><a href="https://www.ihmc.us/research/human-machine-communication-language-processing/">Human-Machine Communication &#038; Language Processing</a></li>
+	<li class="menu-item-817"><a href="https://www.ihmc.us/research/intentions-beliefs-trust/">Intentions, Beliefs &#038; Trust</a></li>
+	<li class="menu-item-816"><a href="https://www.ihmc.us/research/knowledge-discovery-data-science-learning-from-big-data/">Knowledge Discovery, Data Science, Learning from Big Data</a></li>
+	<li class="menu-item-815"><a href="https://www.ihmc.us/research/modeling-sharing-simulation/">Knowledge Modeling, Work Analysis &#038; Simulation, and Expertise Studies</a></li>
+	<li class="menu-item-814"><a href="https://www.ihmc.us/research/multi-sensory-multi-modal-neural-interfaces/">Augmentics</a></li>
+	<li class="menu-item-824"><a href="https://www.ihmc.us/research/biologically-inspired-robots/">Robotics, Exoskeletons, &amp; Human Robotic Interdependence</a></li>
+	<li class="menu-item-813"><a href="https://www.ihmc.us/research/visualization-and-graphical-tools/">Visualization &#038; Human-Centered Displays</a></li>
+</ul>
+</li>
+<li class="menu-item-87034"><a href="https://www.ihmc.us/study-participation/">Study Participation</a></li>
+<li class="menu-item-20"><a href="https://www.ihmc.us/cmaptools/">CmapTools</a></li>
+<li class="menu-item-19"><a href="https://www.ihmc.us/people/">People</a></li>
+<li class="dropdown menu-item-1699"><a href="https://www.ihmc.us/about-us/" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-item-853"><a href="https://www.ihmc.us/about/aboutihmc/">The IHMC Story</a></li>
+	<li class="menu-item-851"><a href="https://www.ihmc.us/about/science-advisory-council/">Science Advisory Council</a></li>
+	<li class="menu-item-84424"><a href="https://www.ihmc.us/about/board-of-directors/">Board of Directors</a></li>
+	<li class="menu-item-850"><a href="https://www.ihmc.us/about/opportunities/">Opportunities</a></li>
+	<li class="menu-item-849"><a href="https://www.ihmc.us/about/contact/">Contact</a></li>
+	<li class="menu-item-21661"><a href="https://www.ihmc.us/?page_id=21391">IHMC Internal</a></li>
+</ul>
+</li>
+<li class="dropdown menu-item-803"><a href="https://www.ihmc.us/life/" class="dropdown-toggle" data-toggle="dropdown">Outreach <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-item-802"><a href="https://www.ihmc.us/life/evening_lectures/">Evening Lectures</a></li>
+	<li class="menu-item-800"><a href="https://www.ihmc.us/life/science_saturdays/">Science Saturdays</a></li>
+	<li class="menu-item-28934"><a href="https://www.ihmc.us/life/robotics-camp/">Robotics Camp</a></li>
+	<li class="menu-item-86489"><a href="https://www.ihmc.us/teacher-resources/">Teacher and Parent Resources</a></li>
+	<li class="menu-item-17"><a href="https://www.ihmc.us/news/">News</a></li>
+	<li class="menu-item-798"><a href="https://www.ihmc.us/life/newsletter/">Newsletters</a></li>
+	<li class="menu-item-25275"><a href="https://www.ihmc.us/stemtalks/">STEM-Talk</a></li>
+	<li class="menu-item-88109"><a href="https://www.ihmc.us/art-innovation/">Art of Innovation &#8211; &#8220;Mentor&#8221;</a></li>
+</ul>
+</li>
+</ul>          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+<div class="arrow bounce shadow"></div>
+<div id="research">
+
+	<div class="container">
+		<div class="row">
+			<div id="search"></div>
+			<div class="col-sm-12">
+			
+				
+				 	<p class="opening" style="font-size: 1.1em;">The Institute for Human &amp; Machine Cognition (IHMC) pioneers technologies aimed at leveraging and extending human capabilities.<br />
+Explore our research areas to see what we’re doing.</p>
+
+			   	
+			   	<h5>Featured Research</h5>
+
+				<div id="featured-research-container">
+				   					   					   	
+<div class="col-sm-12 col-md-4">
+	
+	<a class="research-area-link" href="https://www.ihmc.us/research/agile-computing/">
+	<div class="research-area" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('https://www.ihmc.us/wp-content/uploads/2015/07/AgileComputing2-600x800.jpg'); background-size: cover;">
+		<div class="overlay">
+			<p class="hidden-sm visible-md hidden-lg">
+				IHMC’s has pioneered the notion of Agile Computing – an approach to creating distributed networked systems that are adaptive, resilient, and opportunistic. Research in this area has ranged from intelligent network transport protocols to novel distributed coordination algorithms. Much of this research has been in support of austere networking environments such as disaster recovery...			</p>
+			<p class="hidden-sm hidden-md visible-lg">
+				IHMC’s has pioneered the notion of Agile Computing – an approach to creating distributed networked systems that are adaptive, resilient, and opportunistic. Research in this area has ranged from intelligent network transport protocols to novel distributed coordination algorithms. Much of this research has been in support of austere networking environments such as disaster recovery and tactical military networks. Exploiting research in intelligent systems and software agents contribute significantly to enhance performance of the overall system. At IHMC, this research is led by Niranjan Suri.
+Research in software agents and mobile agents were the foundation...			</p>
+		</div>
+		<h4 class="pgtitle">Agile & Distributed Computing</h4>
+		<i class="fa fa-angle-right research-arrow"></i>
+	</div>
+	</a>
+
+</div>				   	
+				   					   	
+<div class="col-sm-12 col-md-4">
+	
+	<a class="research-area-link" href="https://www.ihmc.us/research/modeling-sharing-simulation/">
+	<div class="research-area" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('https://www.ihmc.us/wp-content/uploads/2015/07/knowledge-modeling-600x732.jpg'); background-size: cover;">
+		<div class="overlay">
+			<p class="hidden-sm visible-md hidden-lg">
+				IHMC researchers develop conceptual and computational models of expert knowledge and reasoning, and of complex cognitive work, as a core element to the paradigm of human-centered computing. IHMC research in this area is conducted by Associate Director and Senior Research Scientist Alberto J. Cañas and Senior Research Scientists William J. Clancey and ...			</p>
+			<p class="hidden-sm hidden-md visible-lg">
+				IHMC researchers develop conceptual and computational models of expert knowledge and reasoning, and of complex cognitive work, as a core element to the paradigm of human-centered computing. IHMC research in this area is conducted by Associate Director and Senior Research Scientist Alberto J. Cañas and Senior Research Scientists William J. Clancey and Robert R. Hoffman.
+IHMC’s work on knowledge modeling involves representing a person’s understanding of a domain of knowledge in a form that others can easily comprehend. Such models are useful for learning, knowledge preservation, and organization of information. IHMC researchers have...			</p>
+		</div>
+		<h4 class="pgtitle">Knowledge Modeling, Work Analysis & Simulation, and Expertise Studies</h4>
+		<i class="fa fa-angle-right research-arrow"></i>
+	</div>
+	</a>
+
+</div>				   	
+				   					   	
+<div class="col-sm-12 col-md-4">
+	
+	<a class="research-area-link" href="https://www.ihmc.us/research/human-machine-communication-language-processing/">
+	<div class="research-area" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('https://www.ihmc.us/wp-content/uploads/2015/06/IHMC-LangProc-foreignlangs-800x800-600x800.png'); background-size: cover;">
+		<div class="overlay">
+			<p class="hidden-sm visible-md hidden-lg">
+				IHMC researchers are working on natural language computer interfaces and digital companions for conversational understanding, with the aim of developing computerized assistants that accommodate a range of abilities, desires, and needs of users through adaptable natural language processing.  Managing a variety of both spoken and written natural language phenomena and adaptation to conversational conventions...			</p>
+			<p class="hidden-sm hidden-md visible-lg">
+				IHMC researchers are working on natural language computer interfaces and digital companions for conversational understanding, with the aim of developing computerized assistants that accommodate a range of abilities, desires, and needs of users through adaptable natural language processing.  Managing a variety of both spoken and written natural language phenomena and adaptation to conversational conventions are central foci of research led by James Allen, Bonnie Dorr, and the late Yorick Wilks, and a team of internationally recognized scientists: Archna Bhatia, Adam Dalton, Greg Dubbin, Lucian Galescu, Kristy...			</p>
+		</div>
+		<h4 class="pgtitle">Human-Machine Communication & Language Processing</h4>
+		<i class="fa fa-angle-right research-arrow"></i>
+	</div>
+	</a>
+
+</div>				   	
+				   					   	<div class="clear"></div>
+			   	</div>
+
+			   	<h2><a href="research">See All Research Areas <i class="fa fa-angle-right"></i></a></h2>
+			
+			</div>
+
+		</div>
+	</div> <!-- .container -->
+
+</div>
+<div id="learn-more" style="text-align: center; background: #f5f5f5; padding: 36px 0px;">
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+                <img src="/wp-content/uploads/2019/12/learn-more.png">
+                <h4 style="font-weight: bold; color: #4e4e4e;">UWF-IHMC Joint Ph.D. program in Intelligent Systems and Robotics</h4>
+                <div class="learn-more-button" style="margin-top: 36px;"><a href="https://uwf.edu/intelligent-systems-and-robotics/" target="_blank" style="background: #7299c6; color: #fff; padding: 10px 35px; border-radius: 4px;">Learn More</a></div>
+				<!-- br><a href="https://www.ihmc.us/2022building/">IHMC Architectural, Engineering and Construction Administration Services Request For Qualifications</a -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="life">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<h3>Outreach</h3>
+
+				<div>
+
+				  <!-- Nav tabs -->
+				  <div role="navigation">
+					  <ul id="lifeTabs" class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#lectures" aria-controls="lectures" role="tab" data-toggle="tab">Talks</a></li>
+					    <!-- <li role="presentation"><a href="#podcasts" aria-controls="podcasts" role="tab" data-toggle="tab">Podcasts</a></li> -->
+					    <li role="presentation"><a href="#scienceSaturdays" aria-controls="scienceSaturdays" role="tab" data-toggle="tab">Science Saturdays</a></li>
+					    <!-- <li role="presentation"><a href="#roboticsCamp" aria-controls="roboticsCamp" role="tab" data-toggle="tab">Robotics Camp</a></li> -->
+					    <!-- <li role="presentation"><a href="#featureContent" aria-controls="featureContent" role="tab" data-toggle="tab">IHMC Expansion</a></li> -->
+						<li role="presentation"><a href="#news" aria-controls="featureContent" role="tab" data-toggle="tab">News</a></li>
+						<li role="presentation"><a href="#newsletters" aria-controls="featureContent" role="tab" data-toggle="tab">Newsletters</a></li>
+
+					    <!-- li role="presentation"><a href="#donation" aria-controls="donation" role="tab" data-toggle="tab">Donate</a></li -->
+					  </ul>
+				  </div>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+
+				  	<!--                  -->
+				  	<!--   LECTURES TAB   -->
+				  	<!--                  -->
+
+				    <div role="tabpanel" class="tab-pane active" id="lectures">
+
+				    					    	
+
+
+						<div class="ls_home_heading">
+							<h4>Upcoming <strong class="blue upcase">Evening Lectures</strong></h4>
+						</div>
+						<div class="row ls_home_wrapper">
+
+							<!-- PENSACOLA -->
+							No events scheduled at this time.							
+
+							<!-- OCALA -->									
+								<div class="ls_wrapper col-sm-12 col-md-6  has_thumb">
+		<div class="ls_thumb" style="background-image: url(https://www.ihmc.us/wp-content/uploads/2024/05/Gaudier-headshot-440x600.jpg)"></div>
+		<div class="ls_lecture">
+			<div class="ls_info">
+
+				<!-- DON'T PRINT BASIC INFO ON SINGLE VIEW -->
+									<p class="ls_loc_date">
+													<span class="ls_loc"><i class="fa fa-map-marker"></i> Ocala</span>
+							<span class="ls_sep">//</span>
+																		<span class="ls_date"><i class="fa fa-calendar"></i> June 27, 2024</span>
+					</p>
+					<h2 class="ls_speaker">Jose Gaudier</h2>
+					<p class="ls_title">Olympic Science and Glory</p>
+								
+
+				<!-- UPCOMING/ARCHIVE DISPLAY ONLY -->
+				
+					<a href="https://www.ihmc.us/lectures/20240627/" class="btn btn-md btn-primary ls_btn">More Info <i class="fa fa-angle-right"></i></a>
+
+				<!-- SINGLE DISPLAY ONLY -->
+				
+			</div>
+		</div>
+
+					<div class="ls_home_link">
+				<a href="/life/evening_lectures/ocala-lecture-series/">All Ocala Lectures <i class="fa fa-angle-right"></i></a>
+			</div>
+			</div>
+
+							</div>
+
+						<div class=row"><hr style="border-top: 1px solid #ddd;"></div>
+
+						<div class="row">
+
+														<h4>Recent Episodes of <a href="http://www.ihmc.us/stemtalks/">STEM-Talk</a></h4>
+							<section class="st_archived left_content col-lg-12">
+																	<div class="st_post">
+										<a href="https://www.ihmc.us/stemtalk/episode-168/" class="st_post_link">
+											<figure class="st_loop_image st_image_hover st_image"><img width="767" height="431" src="https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-767x431.jpg" class="attachment-stemtalk_loop size-stemtalk_loop wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-767x431.jpg 767w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-300x169.jpg 300w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-1024x576.jpg 1024w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-150x84.jpg 150w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-325x183.jpg 325w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano-750x422.jpg 750w, https://www.ihmc.us/wp-content/uploads/2024/05/E168-AFasano.jpg 1280w" sizes="(max-width: 767px) 100vw, 767px" /></figure>
+											<div class="st_loop_info">
+												<p style="font-size:16px ;">Episode 168: Alessio Fasano discusses celiac disease and gluten-related disorders</p>
+												<h6 class="st_meta">
+													<i class="fa fa-fw fa-user"></i> <span class="st_author"></span> // 
+													<i class="fa fa-fw fa-calendar"></i> <span class="st_date">May 22, 2024</span>
+												</h6>
+											</div>
+										</a>
+									</div>
+																	<div class="st_post">
+										<a href="https://www.ihmc.us/stemtalk/episode-167/" class="st_post_link">
+											<figure class="st_loop_image st_image_hover st_image"><img width="767" height="431" src="https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-767x431.jpg" class="attachment-stemtalk_loop size-stemtalk_loop wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-767x431.jpg 767w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-300x169.jpg 300w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-1024x576.jpg 1024w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-150x84.jpg 150w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-325x183.jpg 325w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz-750x422.jpg 750w, https://www.ihmc.us/wp-content/uploads/2024/05/E167b-nnorwitz.jpg 1280w" sizes="(max-width: 767px) 100vw, 767px" /></figure>
+											<div class="st_loop_info">
+												<p style="font-size:16px ;">Episode 167: Nicholas Norwitz discusses a ketogenic diet as metabolic medicine</p>
+												<h6 class="st_meta">
+													<i class="fa fa-fw fa-user"></i> <span class="st_author"></span> // 
+													<i class="fa fa-fw fa-calendar"></i> <span class="st_date">Apr 30, 2024</span>
+												</h6>
+											</div>
+										</a>
+									</div>
+															</section>
+						</div>
+
+				    </div> <!-- end #lectures -->
+				    
+				    <!--                  -->
+				  	<!--   NEWSLETTERS TAB   -->
+				  	<!--                  -->
+
+				    <div role="tabpanel" class="tab-pane" id="newsletters">
+				    
+				    
+				    				    	
+						<div class="row next-event">
+							<div class="col-sm-12 col-md-12">
+							<h4>View Our Latest Newsletters</h4>
+								<div class="row">
+																			<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2024/05/Newsletter-v19.2_2024.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2024/05/v19.2-2024-Newsletter-619x792-1.jpg" width="90%" /></a>
+											</div>
+																				<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2024/01/Newsletter-v19.1_2024.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2024/01/v19.1-2024-Newsletter-619x792-1.jpg" width="90%" /></a>
+											</div>
+																				<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2023/05/Newsletter-v18.1_2023.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2023/05/v18.1-2023-Newsletter-619x792-1.jpg" width="90%" /></a>
+											</div>
+																				<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2022/11/Newsletter-v17.2-2022.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2022/11/v17.2-2022-Newsletter-619x792-1.jpg" width="90%" /></a>
+											</div>
+																				<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2022/04/2022-Newsletter-v17i1.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2022/04/v17.1-2022-Newsletter-619x792-1.jpg" width="90%" /></a>
+											</div>
+																				<div class="col-xs-3 col-sm-2 col-md-2">
+												<a href="https://www.ihmc.us/wp-content/uploads/2021/06/NewsLetter-v16.1.pdf"><img style="border:1px solid #dedede" src="https://www.ihmc.us/wp-content/uploads/2021/06/NewsLetter-v16.1-300.jpg" width="90%" /></a>
+											</div>
+																	<div style="margin-top:20px; margin-bottom:-20px" class="col-xs-12 col-sm-8 col-md-8">
+									<a href="http://www.ihmc.us/life/newsletter/" class="btn btn-md btn-primary">View Archived Newsletters<i class="fa fa-angle-right"></i></a>
+								</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+
+				    <!--                  -->
+				  	<!--   PODCASTS TAB   -->
+				  	<!--                  -->
+
+				    <!-- <div role="tabpanel" class="tab-pane" id="podcasts">...</div> -->
+
+				    <!--                          -->
+				  	<!--   SCIENCE SATURDAY TAB   -->
+				  	<!--                          -->
+
+				    <div role="tabpanel" class="tab-pane" id="scienceSaturdays">
+
+				    					    	
+						<div class="row next-event">
+							<div class="col-sm-12 col-md-6">
+																		<h4>Last Gallery from Pensacola</h4>
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-4">
+												<img src="https://www.ihmc.us/wp-content/uploads/2024/05/20240503_SciSat_Design_14-640x640.jpg" width="100%" />
+											</div>
+											<div class="col-xs-12 col-sm-8 col-md-8">
+												<h2>April 27, 2024</h2>
+												<h4>Teresa Dos Santos </h4>
+												<p>The Science of Design</p>
+												<a href="https://www.ihmc.us/science-saturdays/the-science-of-design/" class="btn btn-md btn-primary">View Gallery <i class="fa fa-angle-right"></i></a>
+											</div>
+										</div>
+																</div>
+							<div class="col-sm-12 col-md-6">
+																		<h4>Last Gallery from Ocala</h4>
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-4">
+												<img src="https://www.ihmc.us/wp-content/uploads/2024/04/ocala-march-640x640.jpg" width="100%" />
+											</div>
+											<div class="col-xs-12 col-sm-8 col-md-8">
+												<h2>March 9, 2024</h2>
+												<h4>Dr. Peter Polack</h4>
+												<p>Vision and Optical Illusions</p>
+												<a href="https://www.ihmc.us/science-saturdays/vision-and-optical-illusions-march-2024/" class="btn btn-md btn-primary">View Gallery <i class="fa fa-angle-right"></i></a>
+											</div>
+										</div>
+																</div>
+						</div>
+
+				    </div> <!-- end #sciencsSaturdays -->
+
+				    <!--                       -->
+				  	<!--   ROBOTICS CAMP TAB   -->
+				  	<!--                       -->
+
+				    <!-- <div role="tabpanel" class="tab-pane" id="roboticsCamp">...</div> -->
+
+				    <!--                          -->
+				  	<!--   FEATURED CONTENT TAB   -->
+				  	<!--                          -->
+
+				    <!-- <div role="tabpanel" class="tab-pane" id="featureContent">...</div> -->
+				    
+				    <!--                          -->
+				  	<!--   NEWS TAB   -->
+				  	<!--                          -->
+
+				     <div role="tabpanel" class="tab-pane" id="news">
+
+				     
+				     
+						<div class="row next-event">
+							<div id="pensacolaLecture" class="col-sm-12 col-md-12">
+								<h4>Latest News</h4>
+								<div id="latestNews" class="details-section">
+									
+								<div class="col-xs-6 col-md-6"> <ul> 											<li><a href="https://www.ihmc.us/news20240611/">New biomedical research complex opens IHMC&#8217;s next chapter</a></li>											<li><a href="https://www.ihmc.us/news20240530/">Triumph Gulf Coast funding will help bolster research capabilities at Pensacola campus</a></li>											<li><a href="https://www.ihmc.us/news20240523/">IHMC Robert Griffin represents the America on IEEE Technical Committee</a></li>											<li><a href="https://www.ihmc.us/news20240522/">STEM-Talk: Alessio Fasano on the roots of, treatments for celiac disease</a></li>											<li><a href="https://www.ihmc.us/news20240521/">IHMC hosts the IGNITE event for the NATO Innovation Continuum</a></li> </ul> </div><div class="col-xs-6 col-md-6"> <ul> 											<li><a href="https://www.ihmc.us/news20240516/">IHMC researcher using cognitive science, novel language understanding methods to harness AI’s power</a></li>											<li><a href="https://www.ihmc.us/news20240502/">STEM-Talk: Nick Norwitz on a keotogenic diet as metabolic medicine</a></li>											<li><a href="https://www.ihmc.us/news20240425-2/">Robotics Open House inspired students to imagine themselves in STEM fields</a></li>											<li><a href="https://www.ihmc.us/news20240425/">Intelligent cognitive assistant leveraging NLP to support those with dementia</a></li>											<li><a href="https://www.ihmc.us/news20240412/">STEM-Talk: Dr. Vyvyane Loh on atherosclerotic heart disease</a></li> </ul> </div></div>
+									
+							</div>
+				     	</div> 
+				     </div>
+
+				    <!--                  -->
+				  	<!--   DONATION TAB   -->
+				  	<!--                  -->
+
+				    <div role="tabpanel" class="tab-pane" id="donation">
+				    
+				    
+				    <!--start donation-->
+				    
+				    <div class="col-sm-12 col-md-6">
+				    <h4>Participate</h4>
+				    <p>The IHMC Society welcomes your tax- deductible contribution to benefit the research and outreach programs of the Florida Institute for Human &amp; Machine Cognition (IHMC). </p>
+				    <p>The Board of Directors of the Florida Institute for Human &amp; Machine Cognition appreciate your generosity and look forward to your further participation in the activities of the IHMC Public Lecture Series. </p>
+				    
+				    
+              
+              <p>For more information on how to directly link yourself or your company to the work of IHMC, Please call 850-202-4400.</p>
+				    </div>
+				    <div class="col-sm-12 col-md-6">
+				    <h4>Donation Levels</h4>
+				    <ul>
+                <li><strong>Benefactors' Circle:</strong> $1,000 or more <span style="font-size:.8em"><em>(Special invitations to dinner with Speakers, autographed books, reserved seating and private receptions)</em></span>
+                   </li>
+                <li><strong>Speakers' Circle:</strong> $500-$999 <span style="font-size:.8em"><em>(Reserved seating and private receptions)</em></span>
+                   </li>
+                <li><strong>Friend:</strong> $100-$499 </li>
+              </ul>
+
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                 <div align="center">
+                   <p class="style3">Paypal<br>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="L85AM3P6CN5WY">
+		    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> </p>
+                </div>
+              </form>
+              </div>
+        
+        <!--end_donation-->
+				    
+				    
+				    </div>
+				  </div>
+
+				</div>
+			
+			</div>
+		</div>
+	</div> <!-- .container -->
+
+</div>
+
+<div id="newsletter">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<h3>IHMC Newsletter</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-sm-4 col-md-6">
+															   								   	
+	<a class="newsletter-thumb" href="https://www.ihmc.us/wp-content/uploads/2024/05/Newsletter-v19.2_2024.pdf" target="_blank">
+		<img src="https://www.ihmc.us/wp-content/uploads/2024/05/v19.2-2024-Newsletter-619x792-1.jpg" />
+	</a>
+							   								   	
+							   								</div>
+							<div class="col-sm-8 col-md-6">
+								<p>The IHMC Newsletter is generally published two to four times a year. It contains general information about what is going on at IHMC, including research projects, new employees, and outreach programs.</p>
+								<a href="https://www.ihmc.us/wp-content/uploads/2024/05/Newsletter-v19.2_2024.pdf" class="btn btn-primary btn-lg" role="button" target="_blank">View Current Issue</a>
+								<a class="light-link block" href="http://www.ihmc.us/life/newsletter/">View Archived Newsletters <i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="newsletterSignup" class="home">
+							<h4 style="text-align: center;">Subscribe to IHMC Newsletters</h4>
+							<!-- BEGIN DIRECT MAIL SUBSCRIBE FORM -->
+							<script src="https://www.dm-mailinglist.com/subscribe_forms/subscribe_embed.js" charset="UTF-8"></script>
+
+							<form method="post" action="https://www.dm-mailinglist.com/subscribe" data-directmail-use-ajax="1" data-form-id="7079278d" class="directmail-subscribe-form" accept-charset="UTF-8">
+								<div class="form-group">
+									<input type="hidden" name="email">
+									<input type="hidden" name="form_id" value="7079278d">
+									<input type="text" id="directmail-7079278d-first_name" name="first_name" value="" placeholder="First Name" class="form-control">
+								</div>
+								<div class="form-group">
+									<input type="text" id="directmail-7079278d-last_name" name="last_name" value="" placeholder="Last Name" class="form-control">
+								</div>
+								<div class="form-group">
+									<input type="email" id="directmail-7079278d-subscriber_email" name="subscriber_email" value="" placeholder="Email Address" class="form-control directmail-required-field" required="required">
+								</div>
+								<input type="submit" class="btn btn-default">
+							</form>
+							<!-- END DIRECT MAIL SUBSCRIBE FORM -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- .container -->
+
+</div>
+<div id="donate">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<h3>Donate to IHMC</h3>
+
+				<table width="100%">
+<tbody>
+<tr>
+<td style="vertical-align: top;">IHMC is a 501(c)3 not-for-profit organization. We appreciate your generosity and look forward to your participation in future IHMC activities.</p>
+<table width="100%">
+<tbody>
+<tr bgcolor="#eeeeee">
+<td colspan="3">Click the area you would like to donate to</td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td style="text-align: left;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QD6J96GV6PYYQ">Pensacola Evening Lecture</a></td>
+<td style="text-align: left;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=ZBBZLUY9XH5N6">Ocala Evening Lecture</a></td>
+<td style="text-align: left;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9DW26JWJK2AHE">Science Saturday</a></td>
+</tr>
+<tr style="height: 4px;">
+<td colspan="3"></td>
+</tr>
+<tr bgcolor="#eeeeee">
+<td style="text-align: left;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=L85AM3P6CN5WY">General Donation</a></td>
+<td style="text-align: left;"><a href="https://paypal.com/us/fundraiser/charity/185527">PayPal Giving Fund Donation to IHMC</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+			
+			</div>
+		</div>
+	</div> <!-- .container -->
+
+</div>
+
+</div> <!-- #content -->
+	   	<div id="footer">
+	   		<div class="container">
+	   			<div class="row">
+		   							    <div class="col-xs-12 footer-info">
+						<p><a href="/privacypolicy/">Privacy Policy</a></p>
+						<p>&copy; 2024 IHMC</p>
+				    </div>
+					<script>(function(){var s=document.createElement('script');e = !document.body ? document.querySelector('head'):document.body;s.src='https://acsbapp.com/apps/app/dist/js/app.js';s.defer=true;s.onload=function(){acsbJS.init({
+            statementLink     : '',
+            feedbackLink      : '',
+            footerHtml        : '',
+            hideMobile        : false,
+            hideTrigger       : false,
+            language          : 'en',
+            position          : 'left',
+            leadColor         : '#146FF8',
+            triggerColor      : '#146FF8',
+            triggerRadius     : '50%',
+            triggerPositionX  : 'left',
+            triggerPositionY  : 'bottom',
+            triggerIcon       : 'people',
+            triggerSize       : 'medium',
+            triggerOffsetX    : 20,
+            triggerOffsetY    : 20,
+            mobile            : {
+                triggerSize       : 'small',
+                triggerPositionX  : 'left',
+                triggerPositionY  : 'center',
+                triggerOffsetX    : 0,
+                triggerOffsetY    : 0,
+                triggerRadius     : '50%'
+            }
+        });
+    };
+    e.appendChild(s);}());</script><script type="text/javascript" id="dlm-xhr-js-extra">
+/* <![CDATA[ */
+var dlmXHRtranslations = {"error":"An error occurred while trying to download the file. Please try again.","not_found":"Download does not exist.","no_file_path":"No file path defined.","no_file_paths":"No file paths defined.","filetype":"Download is not allowed for this file type.","file_access_denied":"Access denied to this file.","access_denied":"Access denied. You do not have permission to download this file.","security_error":"Something is wrong with the file path.","file_not_found":"File not found."};
+/* ]]> */
+</script>
+<script type="text/javascript" id="dlm-xhr-js-before">
+/* <![CDATA[ */
+const dlmXHR = {"xhr_links":{"class":["download-link","download-button"]},"prevent_duplicates":true,"ajaxUrl":"https:\/\/www.ihmc.us\/wp-admin\/admin-ajax.php"}; dlmXHRinstance = {}; const dlmXHRGlobalLinks = "https://www.ihmc.us/download/"; const dlmNonXHRGlobalLinks = []; dlmXHRgif = "https://www.ihmc.us/wp-includes/images/spinner.gif"; const dlmXHRProgress = "1"
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.ihmc.us/wp-content/plugins/download-monitor/assets/js/dlm-xhr.min.js?ver=4.9.14" id="dlm-xhr-js"></script>
+<script type="text/javascript" id="ivory-search-scripts-js-extra">
+/* <![CDATA[ */
+var IvorySearchVars = {"is_analytics_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.ihmc.us/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.5.6" id="ivory-search-scripts-js"></script>
+				</div>
+	   		</div> <!-- .container -->
+	   	</div> <!-- #footer -->
+
+	</div> <!-- #main-container -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </body>
+</html>

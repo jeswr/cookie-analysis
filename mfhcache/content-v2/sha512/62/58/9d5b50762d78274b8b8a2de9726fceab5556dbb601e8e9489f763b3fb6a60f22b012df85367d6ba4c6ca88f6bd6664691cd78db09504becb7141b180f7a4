@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Automating the publication of Technical Reports</title>
+  <link rel="stylesheet" href="/StyleSheets/base"/>
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/2003/03/site-css/css/1.css" />
+<link rel="start" href="/2000/01/sw/" title="Semantic Web Advanced Development" />
+<style>
+  .obsolete {opacity: .5 }
+</style>
+</head>
+
+<body>
+<p><a href="/" title="W3C"><img height="48" width="72" alt="W3C" src="https://www.w3.org/Icons/w3c_home" /></a> | <a
+href="/2000/01/sw/">Semantic Web Activity: Advanced Development</a></p>
+
+<h1>Automating the publication of Technical Reports</h1>
+
+<div style="border: solid black 1px; padding: 0.5em; background: #FFB;">
+  <p><strong>This document is obsolete.</strong> Check <a href="https://www.w3.org/TR/">/TR</a> or the <a href="https://www.w3.org/api/">W3C API</a> for data related to specifications.</p>
+</div>
+
+<div class="obsolete">
+<h2>Abstract</h2>
+<p>This document presents the "<abbr title="Technical Reports">TR</abbr> Automation" project; this project, based on the use of <a href="/2001/sw/">Semantic Web</a> tools and technologies, has allowed to streamline the publication paper trail of W3C Technical Reports, to maintain an <a href="tr.rdf" rel="deliverable">RDF-formalized index of these specifications</a> and to create a number of tools using these newly available data.</p>
+
+<h2>Introduction</h2>
+<p>The most visible part of W3C work, its main deliverables are its
+<a href="/TR/">Technical Reports</a> published by <a href="/Consortium/Activities">W3C Working
+Groups</a>. These Technical Reports are published following a well-defined process, defined by the <a
+href="/Consortium/Process/tr.html#Reports">Process Document</a> and
+detailed in the <a href="../../../2003/05/27-pubrules">publication rules</a> (also known as "pubrules") and in the <a href="https://www.w3.org/Guide/transitions">Recommendation Track transition document</a>.</p>
+
+<h2>Current Status and Deliverables</h2>
+<p>While there are still plenty of opportunities to automate the process behind the publication of W3C Technical Reports, the core of this project has been realized. This is translated in the following deliverables:</p>
+<ul>
+<li>an <a rel="deliverable" href="tr.rdf">formalized and authoritative list of W3C Technical Reports in RDF</a> ; it's updated as soon as a new Technical Report is officially published, and can be reliably used as a reference for them</li>
+<li>new views of the Technical Reports list: while the <a href="/TR/">classical TR page</a> (sorted by status then by date) is now generated from the RDF list of Technical Reports, one can now see the same list sorted <a rel="deliverable" href="/TR/tr-editor">by editor</a>, <a rel="deliverable" href="/TR/tr-date">by date</a>, <a rel="deliverable" href="/TR/TR-title">by title</a>, or <a rel="deliverable" href="/TR/tr-activity">by activity/group</a>.</li>
+<li>a tool to check automatically most of the publication rules, the <a href="/2005/07/pubrules" rel="deliverable">pubrules checker</a></li>
+<li>an XSLT style sheet to <a href="/2001/10/trdoc2rdf" rel="deliverable">extract metadata about Technical Reports in RDF</a> (supported by a <a href="/2001/11/trdoc-data-ts">small test suite</a>), that could possibly be re-used with <a href="https://www.w3.org/TR/grddl/">GRDDL</a></li>
+<li>two statistics tools on the records of publication of Technical Reports: one <a href="tr-stats-ui">to calculate the number and type of TR published in a given period</a>, another <a href="tr-count">to count the current repartition of TR by status</a></li>
+<li>bibliographic tools, the <a href="tr-biblio-ui" rel="deliverable">bibliographies formatter</a> that properly formats the bibliographic entries of a set of given Technical Reports, and the <a href="/2004/07/references-checker-ui" rel="deliverable">TR references checker</a> that checks whether TR linked from a document are the ones at the latest known version.</li>
+</ul>
+
+<h2>Maintenance of the TR page</h2>
+<p>Previously done by hand, the process of updating the list of Technical Reports (referred as <q>the TR page</q>) is now entirely automated; this means that the system is able to extract all the necessary information from a given Technical Report and to process it as described by the W3C Process to produce an updated version of the TR page.</p>
+<p>This works as follows:</p>
+<ol>
+<li>an <a href="/2001/10/trdoc2rdf">XSLT style sheet</a> is used to extract all the needed metadata from a Technical Report in RDF</li>
+<li>these metadata are processed through a set of <a href="tr-process">rules (in N3)</a> that matches the W3C process</li>
+<li>they are eventually added to the list of Technical Reports in RDF, which is then turned into XHTML using <a href="rdf2tr">another XSLT style sheet</a></li>
+</ol>
+<p>But going a bit more in the details reveals some interesting points.</p>
+<h3>Extracting RDF metadata from Technical Reports</h3>
+<p>To be published a W3C Technical Report, a document has to comply with a set of rules, often referred as <q title="Publication Rules">pubrules</q>. While these rules have been developed to enforce requirements from the Process Document and a certain visual consistency between Technical Reports, it happens that these rules are formal enough that:</p>
+<ul>
+<li>most of them can be checked automatically - which has permitted to build the <a href="/2005/07/pubrules">pubrules checker</a></li>
+<li>they allow to extract programatically enough specific metadata from the documents to identify their properties needed to update the TR page - while it's understandable that pubrules requires that the documents have the metadata needed to update the TR page (if only so that the Webmaster could do it manually), it's less obvious that the fact that these can be extracted programatically can be easily applied to other scenari</li>
+</ul>
+<p>Since W3C Technical Reports are published normatively as valid HTML or XHTML, and since RDF has an XML serialization, XSLT works pretty well to do the actual work of checking the rules and extracting the metadata - noting that valid HTML can be transformed  in XHTML on the fly using for instance <a href="http://cgi.w3.org/cgi-bin/tidy">tidy</a>.</p>
+<p>Also, a fair number of the pubrules consist in checking that some properties of the document are properly and consistently reflected in text and formatting; that means there is a common base between extracting the metadata and checking the compliance to the pubrules.</p>
+<p>Thus, there are 3 XSLT style sheets at work:</p>
+<ol>
+<li>an <a href="/2001/10/trdoc-data">XHTML parser</a> defining a set of named templates to extract specific information from a Technical Report document; this parser is backed by a small <a href="/2001/11/trdoc-data-ts/" class="deliverable">test suite</a></li>
+<li>an <a href="/2001/10/trdoc2rdf">RDF/XML formatter</a> that takes this information and puts it in proper RDF, using a set of well-defined RDF Schemas (esp. a <a href="https://www.w3.org/2001/02pd/rec54#">schema describing the W3C publication track</a>)</li>
+</ol>
+
+<p>For instance, <a href="https://www.w3.org/2000/06/webdata/xslt?xmlfile=http%3A%2F%2Fcgi.w3.org%2Fcgi-bin%2Ftidy-if%3FdocAddr%3Dhttp%3A%2F%2Fwww.w3.org%2FTR%2F2004%2FREC-xml-20040204%2F&amp;xslfile=http%3A%2F%2Fwww.w3.org%2F2001%2F10%2Ftrdoc2rdf">applying the RDF/XML Formatter</a> on <a href="/TR/REC-xml">XML 1.0</a> (a pubrules compliant document)
+outputs:</p>
+<pre>
+&lt;rdf:RDF xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/" 
+            xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#" 
+            xmlns:org="http://www.w3.org/2001/04/roadmap/org#" 
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+            xmlns:rec="http://www.w3.org/2001/02pd/rec54#" 
+            xmlns="http://www.w3.org/2001/02pd/rec54#"  
+            xmlns:mat="http://www.w3.org/2002/05/matrix/vocab#">
+ &lt;REC rdf:about="http://www.w3.org/TR/2004/REC-xml-20040204">
+  &lt;dc:date>2004-02-04&lt;/dc:date>
+  &lt;dc:title>Extensible Markup Language (XML) 1.0 (Third Edition)&lt;/dc:title>
+  &lt;cites>
+    &lt;ActivityStatement rdf:about="http://www.w3.org/XML/Activity"/>
+  &lt;/cites>
+  &lt;doc:versionOf rdf:resource="http://www.w3.org/TR/REC-xml"/>
+  &lt;org:deliveredBy rdf:parseType="Resource">
+    &lt;contact:homePage rdf:resource="http://www.w3.org/XML/Group/Core"/>
+  &lt;/org:deliveredBy>
+  &lt;doc:obsoletes rdf:resource="http://www.w3.org/TR/2003/PER-xml-20031030"/>
+  &lt;previousEdition rdf:resource="http://www.w3.org/TR/2004/REC-xml-20040204"/>
+  &lt;mat:hasErrata rdf:resource="http://www.w3.org/XML/xml-V10-3e-errata"/>
+  &lt;mat:hasTranslations rdf:resource="http://www.w3.org/2003/03/Translations/byTechnology?technology=REC-xml"/>
+  &lt;editor rdf:parseType="Resource">
+    &lt;contact:fullName>Tim Bray&lt;/contact:fullName>
+    &lt;contact:mailbox rdf:resource="mailto:tbray@textuality.com"/>
+  &lt;/editor>
+  &lt;editor rdf:parseType="Resource">
+    &lt;contact:fullName>Jean Paoli&lt;/contact:fullName>
+    &lt;contact:mailbox rdf:resource="mailto:jeanpa@microsoft.com"/>
+  &lt;/editor>
+  &lt;editor rdf:parseType="Resource">
+    &lt;contact:fullName>C. M. Sperberg-McQueen&lt;/contact:fullName>
+    &lt;contact:mailbox rdf:resource="mailto:cmsmcq@w3.org"/>
+  &lt;/editor>
+  &lt;editor rdf:parseType="Resource">
+    &lt;contact:fullName>Eve Maler&lt;/contact:fullName>
+    &lt;contact:mailbox rdf:resource="mailto:elm@east.sun.com"/>
+  &lt;/editor>
+  &lt;editor rdf:parseType="Resource">
+    &lt;contact:fullName>Fran&ccedil;ois Yergeau&lt;/contact:fullName>
+    &lt;contact:mailbox rdf:resource="mailto:francois@yergeau.com"/>
+  &lt;/editor>
+  &lt;mat:hasImplReport rdf:resource="http://www.w3.org/XML/2003/09/xml10-3e-implementation.html"/>
+ &lt;/REC>
+ &lt;FirstEdition rdf:about="http://www.w3.org/TR/2004/REC-xml-20040204"/>
+&lt;/rdf:RDF>
+</pre>
+
+<p>Open questions</p>
+<ul>
+<li>how much the XSLT should do hard-coded inferences? Should it distinguish facts (<q>this is a Rec</q>) from guesses (<q>this is a Last Call</q>)?</li>
+<li>validating the data to see if they are coherent would be good; are the OWL constraints enough for this?</li>
+<li>should we define a profile to make TRs GRDDL-izable? or simply use the XSLT as <code>transformation</code> reference (but see issue about inferencing)?</li>
+</ul>
+
+
+<h3>Using a paper trail mechanism to keep the data up to date</h3>
+<p>The
+current publication process use the RDF data at its core as follows:</p>
+<ol>
+<li>at a given date <var>D</var>, the TR list is frozen in its RDF form</li>
+<li>once a document is pubrules compliant, its metadata are extracted
+from it</li>
+<li>the new metadata is added to a list of documents published since
+<var>D</var></li>
+<li>the new TR page is generated from merging the frozen state to the
+new list (other views are generated at the same time)</li>
+</ol>
+
+<p><map name="tr-pub" id="tr-pub">
+<area shape="rect" coords="81,45,219,104" alt="xslt to extract rdf metadata from a tr document" href="https://www.w3.org/2001/10/trdoc2rdf.xsl" />
+<area shape="rect" coords="203,160,322,304" alt="log of tr publications since date d" href="new-tr.rdf" />
+<area shape="rect" coords="378,239,481,385" alt="frozen list of trs on 19 may 2003" href="tr-20030519.rdf" />
+<area shape="rect" coords="546,358,662,504" alt="rules to process the merged data in tr automation" href="tr-process.n3" />
+<area shape="rect" coords="739,239,841,385" alt="list of trs in rdf" href="tr.rdf" />
+</map>
+<img src="tr-pub-process.png" class="illustration" alt="Illustration of the publication process" usemap="#tr-pub"/></p>
+
+<p>This process is a good example of a <a href="/DesignIssues/PaperTrail">paper trail machine</a>.</p>
+
+<p>Note: The freezing of the TR page happens regularly (every 6
+months); at some point, it could be approved by the AC Forum  as part of the process(at least at the first time).</p>
+
+
+<h3>XSLT-spiders</h3>
+<p>@@@</p>
+
+<h2>Benefits of using Semantic Web technologies</h2>
+<p>@@@</p>
+
+<h2>History</h2>
+
+<p>The publication process (through its many variations) had been enforced mostly by human-only interactions since the start of W3C, but with growing pain as the number of Working Groups and Technical Reports raised over time.</p>
+
+<p>The main bottleneck that had started to appear was around the work done by the W3C Webmaster, who, in this process, is in charge of:</p>
+<ul>
+<li>asserting that a document that a Working Group has prepared for publication does indeed follow the publication rules, and dealing with the editors of the document if it is not,</li>
+<li>publishing the document in its final location under <code>http://www.w3.org/TR/</code>,</li>
+<li>updating the <a href="/TR/">authoritative list of Technical Reports</a></li>
+</ul>
+
+<p>While these tasks may not seem overwhelming, the detailed analysis that some of the "pubrules" require and the ever growing size of the Technical Reports list made the exercise error-prone, particularly when in peak times, the number of (rather big) documents published was reaching 15 per day.</p>
+
+<p>The automation needs <a
+href="http://lists.w3.org/Archives/Member/w3c-semweb-ad/2001Oct/0021.html">were divided</a> [member only] in 3 separate steps:</p>
+<ol>
+<li>Automating the checking of compliance to pubrules</li>
+<li>Extracting meta-data from pubrules compliant documents</li>
+<li>Building the TR page and new views of it from these metadata</li>
+</ol>
+
+
+<h3>Automating the checking of documents</h3>
+
+<p>The idea that this should be automated gets back at least to September 1997 (see <a href="http://lists.w3.org/Archives/Team/w3t-sys/1997SepOct/0052.html">Dan Connolly email</a> on this topic, and the follow-up <a href="https://www.w3.org/Team/9709/25-tr.html">meeting series</a> - Team-only), and tools that helped the Webmaster assess the readiness of a document grew in parallel with the matching rules. For instance, the now indepedent <a href="http://validator.w3.org/checklink">W3C Linkchecker</a> comes from a tool initially developed by one of the W3C Webmasters to help finding broken links in the to be published documents.</p>
+
+<p>The culmination of these tools came with the <a href="/2005/07/pubrules">pubrules checker</a>, an <a href="/2001/07/pubrules-checker">XSLT-based</a> tool that allows to see at a glance what rules are not met by the document being checked.</p>
+
+
+
+<h3>Automating the update of the TR page</h3>
+<h4>Getting initial data</h4>
+<p>With the pubrules checker, it became possible to check semi-automatically 
+if a document may be published and to extract the data that had to be
+added to the technical reports list.</p>
+<p>To automate the publication process, the first step was to formalize these data
+ - in RDF since the extracted metadata are in RDF. Dan Connolly had <a href="http://lists.w3.org/Archives/Team/w3t-comm/2000Mar/0201.html">started to work on this step in March 2000</a> (Team-only), developing  <a
+href="/2000/04/mem-news/groktr">a fairly simple</a>
+style sheet allowing to extract <a href="/2000/04/mem-news/tr.rdf">RDF
+data about all the latest versions</a> information given in the TR
+list at that time.</p>
+<p>As always, the evil was in the details and some side-cases had to be taken into account in this process. Some rare cases were handled
+<a href="/2000/04/mem-news/trsupp.n3" title="Data manually extracted from the TR page">on the side</a>.</p>
+<p>But this only got information about the latest versions, and to make a reasonably useful system, the dated versions URIs were needed to.</p>
+<p>This meant getting the data from the filesystem, which was back then the only official encoding of latest/this versions relationships. This proved to be quite challenging, for various
+reasons, but mainly because the filesystem usage (usually symbolic
+links) had changed over the time and finding consistency was not necessarily
+easy. First we had to <a href="/2000/04/mem-news/groktrleg.py"
+class="deliverable" title="A script to extract data about TRs from the filesystem">extract</a> the <a href="/2000/04/mem-news/trleg.rdf"
+class="deliverable" title="Metadata extracted from the filesystem">core
+data from the filesystem</a> and then <a
+href="/2000/04/mem-news/trbroken.rdf">specify the data that were incorrectly deduced from it</a>.</p>
+
+
+
+<h4>Updating the data</h4>
+
+
+<p>@@@@ </p>
+
+<p>Once all those data collected, it just needed to be aggregated and
+sorted out, which was done using <a href="/2000/10/swap/">cwm</a> and a
+<a href="/2000/04/mem-news/tr-merge.n3" class="deliverable">filter</a> as
+specified in a <a href="/2000/04/mem-news/Makefile"
+class="deliverable">Makefile</a>. The result was the first version a <a
+href="tr.rdf" class="deliverable">RDF formalized list of
+W3C digital library</a>.</p>
+<p>This allows to <a href="https://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fwww.w3.org%2F2002%2F01%2Ftr-automation%2Frdf2tr.xsl&amp;xmlfile=http%3A%2F%2Fwww.w3.org%2F2002%2F01%2Ftr-automation%2Ftrbase.html&amp;transform=Submit&amp;recent-since=20020130">build the TR page from this list</a> using <a
+href="rdf2tr.xsl" class="deliverable">a style sheet to create a HTML human
+readable version of the RDF data</a>. Other views of the page can be
+generated pretty easily with the <a href="viewBy.xsl" class="deliverable">appropriate style sheet</a>:</p>
+<ul>
+  <li><a href="/TR/tr-date" class="deliverable">by date</a></li>
+  <li><a href="/TR/tr-title" class="deliverable">by title</a></li>
+  <li><a href="/TR/tr-editor" class="deliverable">by author</a></li>
+</ul>
+<p>With a little more work and interaction with other RDF data, a <a href="/TR/tr-activity" class="deliverable">list of TR by W3C Activities</a> has also been produced.</p>
+
+<h2>Ideas for improvements and related projects</h2>
+<ul>
+<li>get the pubrules checker to output EARL</li>
+<li>validates the data obtained from trdoc2rdf before processing</li>
+</ul>
+<p>See also the <a href="TR-papertail">ideas of what else could be automated</a> in the TR publication process.</p>
+
+<h2>Related works</h2>
+<ul>
+  <li><a href="../../../2003/05/tr-history/">History data for TR doc</a>
+    (with a <a href="../../../2003/05/tr-history/rec-history.svg">SVG view of
+    the data</a>)</li>
+  <li><a href="../../../2003/05/tr-refs/">Cross-references between W3C
+    Recommendations</a></li>
+  <li><a href="../../../2003/03/Translations/">Translations in W3C</a>
+    managed using among other things the data provided by this project</li>
+  <li><a href="../../../QA/TheMatrix">The QA Matrix</a> is now <a
+    href="../../../QA/2002/06/TheMatrix-manual">built upon these data</a>,
+    using <a href="../../../QA/2002/10/matrix-base">more RDF data</a></li>
+</ul>
+
+<h2>Other references</h2>
+<ul>
+  <li><a href="https://www.w3.org/TR/grddl/">Gleaning Resource Descriptions from Dialects of Languages (GRDDL)</a>, W3C Coordination Group Note</li>
+  <li>Dan Connolly, <a
+    href="http://lists.w3.org/Archives/Member/w3c-semweb-ad/2001Apr/0007.html">W3C
+    process papertrail: WBS, groups, AC statement, ...</a> [member-only]</li>
+  <li>Dan Connolly, <a
+href="http://lists.w3.org/Archives/Public/www-rdf-interest/2000Mar/0103.html">extracting metadata from real-world data</a></li>
+</ul>
+<hr />
+</div>
+<address>
+  <a href="/People/Dom/">Dominique Haza&euml;l-Massieux</a> &lt;<a
+  href="mailto:dom@w3.org">dom@w3.org</a>&gt;<br />
+  Last Modified: $Date: 2023/07/20 09:20:30 $
+</address>
+</body>
+</html>

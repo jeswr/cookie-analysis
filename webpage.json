@@ -1,0 +1,68 @@
+[
+  {
+    "subject": "https://schema.org/address#infobox",
+    "predicate": "http://www.w3.org/1999/xhtml/vocab#role",
+    "object": "http://www.w3.org/1999/xhtml/vocab#checkbox",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Physical address of the item.\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"address\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/domainIncludes",
+    "object": "https://schema.org/Organization",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/domainIncludes",
+    "object": "https://schema.org/GeoShape",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate"Doe: "https://schema.org/domainIncludes",
+    "object": "https://schema.org/GeoCoordinates",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/domainIncludes",
+    "object": "https://schema.org/Place",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/domainIncludes",
+    "object": "https://schema.org/Person",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/rangeIncludes",
+    "object": "https://schema.org/Text",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "https://schema.org/rangeIncludes",
+    "object": "https://schema.org/PostalAddress",
+    "graph": ""
+  },
+  {
+    "subject": "https://schema.org/address",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  }
+]

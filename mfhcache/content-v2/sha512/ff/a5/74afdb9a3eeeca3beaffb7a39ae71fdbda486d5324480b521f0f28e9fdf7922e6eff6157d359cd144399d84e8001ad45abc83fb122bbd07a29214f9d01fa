@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?><!--*- nxml -*-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Cool URIs for the Semantic Web</title>
+<meta name="description" content="Cool URIs for the Semantic Web" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+pre { background: #fff6bb; padding: 1em 2em; margin: 0 }
+dl.box { background: #eedddd; margin: 1em 0 1.6em; padding: 1em 1.5em; }
+dl.box dd { margin: 0.8em 0 0; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/W3C-IG-NOTE" />
+</head>
+<body>
+
+<div class="head">
+<a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72" /></a><h1 style="clear:both" id="title">Cool URIs for the Semantic Web</h1>
+
+<h2 id="W3C-doctype">W3C Interest Group Note 03 December 2008</h2>
+<dl>
+  <dt>This version:</dt>
+    <dd>
+	<a href="https://www.w3.org/TR/2008/NOTE-cooluris-20081203/">
+	http://www.w3.org/TR/2008/NOTE-cooluris-20081203/</a></dd>
+  <dt>Latest version:</dt>
+    <dd><a href="https://www.w3.org/TR/cooluris/">http://www.w3.org/TR/cooluris/</a></dd>
+  <dt>Previous version:</dt>
+	<dd>
+	<a href="https://www.w3.org/TR/2008/NOTE-cooluris-20080331/">http://www.w3.org/TR/2008/NOTE-cooluris-20080331/</a></dd>
+
+   <dt>Editors:</dt>
+    <dd><a href="http://www.dfki.uni-kl.de/~sauermann/">Leo Sauermann</a>
+      (<a href="http://www.dfki.de">DFKI GmbH</a>)</dd>
+    <dd><a href="http://richard.cyganiak.de/">Richard Cyganiak</a> (<a href="http://www.deri.ie/">DERI, NUI Galway</a> and <a href="http://www.fu-berlin.de/en/">Freie
+      Universit&auml;t Berlin</a>)</dd>
+
+    <dt>Contributors:</dt>
+	<dd><a href="http://dannyayers.com/">Danny Ayers</a> (<a href="http://talis.com">Talis Information Ltd.</a>)</dd>
+	<dd><a href="http://www.xam.de/">Max V&ouml;lkel</a> (<a href="http://www.fzi.de/">FZI Karlsruhe</a>)</dd>
+
+</dl>
+<p>Please refer to the <a href="https://www.w3.org/2001/sw/sweo/public/2008/Errata-in-CoolURIs.html"><strong>errata</strong></a> for this document, which may include some corrections.</p>
+<hr />
+
+<p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2008 <a href="https://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+
+</div>
+<hr/>
+<h2 id="abstract">Abstract</h2>
+
+<p><span class="notetoeditor">The <em>Resource Description Framework</em> RDF
+allows users to describe both Web documents and concepts 
+from the real world—people, organisations, topics, things&mdash;in a computer-processable way.
+Publishing such descriptions on the Web creates the <em>Semantic Web</em>. URIs (Uniform Resource Identifiers) are very
+important, providing both the core of the framework itself and the link between RDF and the Web. This document presents
+guidelines for their effective use. It discusses two strategies, called <em>303
+URIs</em> and <em>hash URIs</em>. It gives pointers to several Web sites that
+use these solutions, and briefly discusses why several other proposals have
+problems. </span></p>
+
+<h2 id="status">Status of this document</h2>
+
+<p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the <a href="https://www.w3.org/TR/">W3C technical reports index</a>  at http://www.w3.org/TR/.</em></p>
+
+<p><span class="notetoeditor">This is a W3C 
+Interest Group Note giving a tutorial explaining decisions of the TAG for 
+newcomers to Semantic Web technologies. It was initially based on the
+<a href="http://www.dfki.uni-kl.de/dfkidok/publications/TM/07/01/tm-07-01.pdf">DFKI
+Technical Memo TM-07-01, <em>Cool URIs for the Semantic Web</em></a> and was 
+subsequently published as a W3C Working draft in 
+<a href="https://www.w3.org/TR/2007/WD-cooluris-20071217/">December 2007</a>, and 
+again in <a href="https://www.w3.org/TR/2008/WD-cooluris-20080321/">March 2008</a>
+by the <a href="https://www.w3.org/2001/sw/sweo/">Semantic Web
+Education and Outreach (SWEO) Interest Group</a> of the W3C, part of the <a href="/2001/sw/">W3C Semantic Web Activity</a>.
+The drafts were publicly reviewed, especially by the <a href="https://www.w3.org/2001/tag/">Technical Architecture Group 
+(TAG)</a> and the <a href="https://www.w3.org/2006/07/SWD/">Semantic Web 
+Deployment Group (SWD)</a>. 
+The only change from the previous version of this document is the addition of a link to an 
+<a href="/2001/sw/sweo/public/2008/Errata-in-CoolURIs.html">errata page</a>.
+</span></p>
+
+<p>The charter of the <a href="https://www.w3.org/2001/sw/sweo/">Semantic Web
+Education and Outreach (SWEO) Interest Group</a> expired at the end of March, 2008. Nevertheless, this document 
+may be taken up by some other groups in the future for further development.
+Feedbacks on this documents is therefore encouraged. Please send comments about this document to <a
+href="mailto:public-sweo-ig@w3.org">public-sweo-ig@w3.org</a> (with <a
+href="http://lists.w3.org/Archives/Public/public-sweo-ig/">public
+archive</a>). A complete <a href="#changelog">list of changes</a> is available.</p>
+
+<p>Publication as an Interest Group Note does not imply endorsement by the W3C 
+Membership. This is a draft document and may be updated, replaced or obsoleted 
+by other documents at any time. It is inappropriate to cite this document as 
+other than work in progress.</p>
+
+<p> This document was produced by a group operating under the <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</a>. 
+The group does not expect this document to become a W3C Recommendation. W3C 
+maintains a
+<a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/39572/status">public 
+list of any patent disclosures</a> made in connection with the deliverables of 
+the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</a> must disclose the information in accordance with <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</a>. </p>
+<p>The disclosure obligations of the Participants of this group are described in the <a href="https://www.w3.org/2006/07/sweoig-charter.html#pd">charter</a>. </p>
+
+<h2 id="scope">Scope</h2>
+<p>This document is a practical guide for implementers of the RDF
+specification. The title is inspired by Tim Berners-Lee&#39;s article &quot;Cool 
+URIs don&#39;t change&quot; [<a href="#ref-Cool">Cool</a>].&nbsp; It explains two approaches for RDF data hosted on <a
+href="#ref-RFC2616">HTTP</a> servers. Intended audiences are Web and ontology
+developers who have to decide how to model their RDF URIs for use with HTTP.
+Applications using non-HTTP URIs are not covered. This document is an
+informative guide covering selected aspects of previously published, detailed
+technical specifications. The 303 URIs are based on the <a
+href="http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html">httpRange-14
+resolution</a> [<cite><a href="#ref-httpRange">httpRange</a></cite>] by the <span class="notetoeditor"> <a href="https://www.w3.org/2001/tag/">Technical Architecture Group 
+(TAG)</a></span>. We assume that you are familiar with the <a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">basics of the RDF
+data model</a> [<cite><a href="#ref-RDFPrimer">RDFPrimer</a></cite>]. We also
+assume some familiarity with the <a
+href="http://www.ietf.org/rfc/rfc2616.txt">HTTP protocol</a> [<cite><a
+href="#ref-RFC2616">RFC2616</a></cite>]. <a href="https://en.wikipedia.org/wiki/HTTP">Wikipedia's article</a> [<cite><a
+href="#ref-WP-HTTP">WP-HTTP</a></cite>] serves as a good primer. </p>
+
+<h2 id="toc">Table of Contents</h2>
+<ul class="toc">
+  <li><a href="#intro">1. Introduction</a></li>
+  <li><a href="#oldweb">2. URIs for Web Documents</a> 
+    <ul class="toc">
+      <li><a href="#conneg">2.1. HTTP and Content Negotiation</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#semweb">3. URIs for Real-World Objects</a> 
+    <ul class="toc">
+      <li><a href="#distinguishing">3.1 Distinguishing between 
+Representations and Descriptions</a></li>
+    </ul>
+  </li>
+  <li><a href="#solutions">4. Two Good Solutions</a> 
+    <ul class="toc">
+      <li><a href="#hashuri">4.1. Hash URIs</a></li>
+
+      <li><a href="#r303gendocument">4.2. 303 URIs forwarding to One Generic Document</a></li>
+      <li><a href="#r303uri">4.3. 303 URIs forwarding to Different Documents</a></li>
+      <li><a href="#choosing">4.4. Choosing Between 303 and Hash</a></li>
+      <li><a href="#cooluris">4.5. Cool URIs</a></li>
+      <li><a href="#linking">4.6. Linking</a></li>
+      <li><a href="#implementation">4.7. Implementing Content Negotiation</a></li>
+    </ul>
+
+  </li>
+  <li><a href="#examples">5. Examples from the Web</a></li>
+  <li><a href="#otherideas">6. Other Resource Naming Proposals</a> 
+    <ul class="toc">
+      <li><a href="#schemes">6.1. New URI Schemes</a></li>
+      <li><a href="#blanknodes">6.2. Reference By Description</a></li>
+    </ul>
+
+  </li>
+  <li><a href="#conclusion">7. Conclusion</a></li>
+  <li><a href="#acknowledgements">8. Acknowledgements</a></li>
+  <li><a href="#references">9. References</a></li>
+  <li><a href="#changelog">10. Change log</a></li>
+</ul>
+
+<h2 id="intro">1. Introduction</h2>
+
+<p>The Semantic Web is envisioned as a decentralised world-wide information
+space for sharing machine-readable data with a minimum of integration costs.
+Its two core challenges are the distributed modelling of the world with a
+shared data model, and the infrastructure where data and schemas can be
+published, found and used. Users benefit from getting information <i>&quot;raw and now&quot;</i> [<a href="#ref-Give">Give</a>] and in portable 
+data formats [<a href="#ref-DP">DP</a>]. Providers often publish data embedded in a fixed user interface, in HTML. 
+A basic question is thus how to publish
+information about resources in a way that allows interested users and
+software applications to find and interpret them.</p>
+
+<p>On the Semantic Web, all information has to be expressed as
+<em>statements</em> about <em>resources</em>, like <em>the members of the 
+company Example.com are Alice and Bob</em> or <em>Bob&#39;s telephone number is &quot;+1 
+555 262&quot;</em> or <em>this Web page was created by Alice</em>. Resources
+are identified by <em>Uniform Resource Identifiers</em> (<a
+href="http://www.ietf.org/rfc/rfc3986.txt">URIs</a>) [<cite><a
+href="#ref-RFC3986">RFC3986</a></cite>]. This modelling approach is at the
+heart of <em>Resource Description Framework</em> (<a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF</a>) [<cite><a
+href="#ref-RDFPrimer">RDFPrimer</a></cite>]. A nice introduction is given 
+in the N3 primer [<a href="#ref-N3Primer">N3Primer</a>].</p>
+
+<p>Using RDF, the statements can be published on the Web site of the company.
+Others can read the data and publish their own information, linking to
+existing resources. This forms a distributed model of the world. It 
+allows the user to pick any application to view and work with the same data, for example 
+to see Alice&#39;s published address in your address book. </p>
+
+<p>At the same time, Web documents have always been addressed with <em
+style="font-style: normal">URIs (in common parlance often referred as Uniform
+Resource Locators, URLs)</em>. This is
+useful because it means we can easily make RDF statements about Web pages,
+but also dangerous because we can easily mix up Web pages and the things, or
+resources, described on the page.</p>
+
+<p>So the question is, what URIs should we use in RDF? As an example, to
+identify the frontpage of the Web site of Example Inc., we may use
+<tt>http://www.example.com/</tt>. But what URI identifies the company as an
+organisation, not a Web site? Do we have to serve any content&mdash;HTML pages,
+RDF files&mdash;at those URIs? In this document we will answer these questions
+according to relevant specifications. We explain how to use URIs for things
+that are not Web pages, such as people, products, places, ideas and concepts
+such as ontology classes. We give detailed examples as to how the Semantic Web can
+(and should) be realised as a part of the Web.</p>
+
+<h2 id="oldweb">2. URIs for Web Documents</h2>
+
+<p>Let us begin with an example. Assume that Example Inc., a fictional
+company producing "<strong>Ex</strong>treme Guitar <strong>Ampl</strong>ifi<strong>e</strong>rs", has a Web
+site at <tt>http://www.example.com/</tt>. Part of the site is a white-pages
+service listing the names and contact details of the employees. Alice and Bob
+both work at Example Inc. The structure of the Web site might thus be:</p>
+<dl>
+  <dt><tt>http://www.example.com/</tt></dt>
+
+    <dd>the homepage of Example Inc.</dd>
+  <dt><tt>http://www.example.com/people/alice</tt></dt>
+    <dd>the homepage of Alice</dd>
+  <dt><tt>http://www.example.com/people/bob</tt></dt>
+    <dd>the homepage of Bob</dd>
+</dl>
+
+<p>Like everything on the traditional Web, each of the pages mentioned above
+are <em>Web documents</em>. Every Web document has its own URI. Note that a
+Web document is not the same as a file: a single Web document can be
+available in many different formats and languages, and a single file, for
+example a PHP script, may be responsible for generating a large number of Web
+documents with different URIs. A Web document is defined as something that
+has a URI and can return <em>representations</em> (responses in a format such
+as HTML or JPEG or RDF) of the identified resource in response to HTTP
+requests. In technical literature, such as <cite><a href="https://www.w3.org/TR/2004/REC-webarch-20041215/">Architecture of the
+World Wide Web, Volume One</a></cite> [<cite><a
+href="#ref-AWWW">AWWW</a></cite>], the term <em>Information Resource</em> is
+used instead of <em>Web document</em>.</p>
+
+<p>On the traditional Web, URIs were used <em>primarily</em> for Web
+documents&mdash;to link to them, and to access them in a browser. The notion of resource <em>identity</em> was not so
+important on the traditional Web, a URL simply identified whatever we see
+when we type it into a browser.</p>
+
+<h3 id="conneg">2.1. HTTP and Content Negotiation</h3>
+
+<p>Web clients and servers use the <a
+href="http://www.ietf.org/rfc/rfc2616.txt">HTTP protocol</a> [<cite><a
+href="#ref-RFC2616">RFC2616</a></cite>] to request representations of Web
+documents and send back the responses. HTTP has a powerful mechanism for
+offering different formats and language versions of the same Web document
+known as <em>content negotiation</em>.</p>
+
+<p>When a user agent (such as a browser) makes an HTTP request, it sends along 
+some HTTP headers to indicate what data formats and language it prefers. The 
+server then selects the best match from its
+file system or generates the desired content on demand, and sends it back
+to the client. For example, a browser could send this HTTP request to
+indicate that it wants an HTML or XHTML representation of
+<tt>http://www.example.com/people/alice</tt> in English or German:</p>
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb">GET /people/alice HTTP/1.1
+Host: www.example.com
+Accept: text/html, application/xhtml+xml
+Accept-Language: en, de</pre>
+
+<p>The server could answer:</p>
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb">HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Language: en
+Content-Location: http://www.example.com/people.en.html</pre>
+
+<p>followed by the content of the HTML document in English. </p>
+<p>Here we see
+<a href="https://www.w3.org/2001/tag/doc/alternatives-discovery-20061101.html">Content
+negotiation</a> [<cite><a href="#ref-TAG-Alt">TAG-Alt</a></cite>] in action. The 
+server interprets the <tt>Accept-Language</tt> headers in the request and decides to 
+return the English representation of the resource in question. Note that 
+the URI of this representation is passed back in the <tt>Content-Location</tt> 
+header, this is not required but a recommended good practice (see [<a href="#ref-CHIPS">CHIPS</a>],
+<a href="https://www.w3.org/TR/chips/#gl7">7.2</a>). Clients see that this URI is 
+connected to the specific representation (in this case English) and 
+search engines can refer to the different representations by using the different URIs. This implies that it 
+is possible to have multiple representations of the same resource.</p>
+<p>Content negotation is often implemented with a twist: Instead of a direct answer, the server
+<em>redirects</em> to another URL where the appropriate representation is found:</p>
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb">HTTP/1.1 302 Found
+Location: http://www.example.com/people/alice.en.html</pre>
+
+<p>The redirect is indicated by a special <em>Status Code</em>, here <tt>302
+Found</tt>. The client would now send another HTTP request to the new URL. By
+having separate URLs for different representations, this approach allows Web authors
+to link directly to a specific representation. 
+</p>
+
+<p>RDF/XML, the standard serialisation format of RDF, has its own content
+type, <tt>application/rdf+xml</tt>. Content negotiation thus allows
+publishers to serve HTML representations of a Web document to traditional Web
+browsers and RDF representations to Semantic Web-enabled user agents. This also
+allows servers to provide alternative RDF serialisation formats like <a href="https://www.w3.org/DesignIssues/Notation3">Notation3</a> [<cite><a
+href="#ref-N3">N3</a></cite>] or <a
+href="http://www.mulberrytech.com/Extreme/Proceedings/html/2004/Stickler01/EML2004Stickler01.html">TriX</a>
+
+[<cite><a href="#ref-TriX">TriX</a></cite>].</p>
+
+<h2 id="semweb">3. URIs for Real-World Objects</h2>
+
+<p>On the Semantic Web, URIs identify not just Web documents, but also
+real-world objects like people and cars, and even abstract ideas and
+non-existing things like a mythical unicorn. We call these <em>real-world
+objects</em> or <i>things</i>. </p>
+
+<p>Given such a URI, how can we find out what it identifies? We need
+some way to answer this question, because otherwise it will be hard to
+achieve interoperability between independent information systems. We could
+imagine a service where we can look up a description of the identified
+resource, similar to today's search engines. But such a single point of
+failure is against the Web's decentralised nature.</p>
+
+<p>Instead, we should use the Web itself&mdash;an extremely robust and scalable
+information publishing system&mdash;as a lookup service for resource
+descriptions. Whenever a URI is mentioned, we can look it up to retrieve a
+description containing relevant information and links to related data. This
+is so important that we make it our number one requirement for <i>cool</i> URIs:</p>
+<dl class="box">
+  <dt>1. Be on the Web.</dt>
+    <dd>Given only a URI, machines and people should be able to retrieve a
+      description about the resource identified by the URI from the Web. Such
+      a look-up mechanism is important to establish shared understanding of
+      what a URI identifies. Machines should get RDF data and humans should
+      get a readable representation, such as HTML. The standard Web transfer
+      protocol, HTTP, should be used.</dd>
+</dl>
+
+<p>Let's assume Example Inc. wants to publish contact data of their employees
+on the Semantic Web so their business partners can import it into their
+address books. For example, the published data would contain these statements
+about Alice, written here in <a href="https://www.w3.org/DesignIssues/Notation3">N3 syntax</a> [<cite><a
+href="#ref-N3">N3</a></cite>]:</p>
+
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb"><strong>&lt;URI-of-alice&gt;</strong> a <strong>foaf:Person</strong>;
+    foaf:name <strong>"Alice"</strong>;
+    foaf:mbox <strong>&lt;mailto:alice@example.com&gt;</strong>;
+    foaf:homepage <strong>&lt;http://www.example.com/people/alice&gt;</strong> .</pre>
+
+<p>What URI should we use instead of the placeholder
+<tt>&lt;URI-of-alice&gt;</tt>? Certainly not
+
+<tt>http://www.example.com/people/alice</tt>, because that would confuse a
+person with a Web document, leading to misunderstandings: Is the homepage of
+Alice also named “Alice”? Can a homepage itself have an e-mail address? And does 
+it make sense for a home-page to have itself as its home-page? So we need another URI. (For in-depth treatments of
+this issue, see <a href="https://www.w3.org/DesignIssues/HTTP-URI2.html">What 
+HTTP URIs Identify?</a> [<cite><a href="#ref-HTTP-URI2">HTTP-URI2</a></cite>] and 
+<a href="https://www.w3.org/2002/11/dbooth-names/dbooth-names_clean.htm">Four 
+Uses of a URL: Name, Concept, Web Location and Document Instance</a> [<cite><a href="#ref-Booth">Booth</a></cite>]).</p>
+
+<p>Therefore our second requirement:</p>
+<dl class="box">
+
+  <dt>2. Be unambiguous.</dt>
+    <dd>There should be no confusion between identifiers for Web documents and
+      identifiers for other resources. URIs are meant to identify only one of them, so one URI can't stand for both a Web document and
+      a real-world object. </dd>
+</dl>
+
+<p>We note that our requirements seem to conflict with each other. If we
+can't use URIs of documents to identify real-world object, then how can we
+retrieve a representation about real-world objects based on their URI? The
+challenge is to find a solution that allows us to find the describing
+documents if we have just the resource's URI, using standard Web
+technologies.</p>
+
+<p>The following picture shows the desired relationships between a resource
+and its representing documents:</p>
+
+<p style="text-align: center"><img src="img20081203/uris.png"
+alt="A resource and its describing documents" /></p>
+
+<h3 id="distinguishing">3.1 Distinguishing between 
+Representations and Descriptions</h3>
+
+<p>It is important to understand that using URIs, it is possible to identify 
+both a thing (which may exist outside of the Web) and a 
+Web document <i>describing</i> 
+the thing.
+For example the person Alice is described on her homepage. Bob may not like the look of the <i>homepage</i>, but fancy 
+the person Alice. So two URIs are needed, one for Alice, one for the homepage or 
+a RDF document describing Alice. The question is where to draw the line between 
+the case where either is possible and the case where <i>only</i> descriptions 
+are available.</p>
+<p>According to W3C guidelines ([<a href="#ref-AWWW">AWWW</a>], section 2.2.), we have a 
+Web document (there called <i>information
+resource</i>) if <em>all its essential characteristics can be conveyed in a
+message</em>. Examples are a Web page, an image or a product catalog. </p>
+<p>In HTTP, because a <tt>200 </tt>response code should be sent when a Web document has 
+been accessed, but a different setup is needed when publishing URIs that are meant 
+to identify entities which are <i>not</i> Web documents.</p>
+<p>In the next section, solutions are described that allow you to mint URIs for things and also allow clients to get a description of the thing using standard 
+Web technologies.</p>
+
+<h2 id="solutions">4. Two Solutions</h2>
+
+<p>There are two solutions that meet our requirements for identifying
+real-world objects: <em>303 URIs</em> and <em>hash URIs</em>. Which one to
+use depends on the situation, both have advantages and disadvantages.</p>
+
+<p>The solutions described in the following apply to deployment scenarios in
+which the RDF data and the HTML data is served separately, such as a
+standalone RDF/XML document along with an HTML document. The metadata can
+also be embedded in HTML, using technologies such as RDFa [<a
+href="#ref-RDFaPrimer">RDFa Primer</a>], microformats and other documents to
+which the GRDDL [<a href="#ref-GRDDL">GRDDL</a>] mechanisms can be applied. In those cases the RDF
+data is extracted from the returned HTML document.</p>
+
+<p></p>
+
+<h3 id="hashuri">4.1. Hash URIs</h3>
+
+<p>The first solution is to use &ldquo;hash URIs&rdquo; for non-document resources.
+URIs can contain a <em>fragment</em>, a special part that is separated from
+the rest of the URI by a hash symbol (&ldquo;#&rdquo;).</p>
+
+<p>When a client wants to retrieve a hash URI, then the HTTP protocol
+requires the fragment part to be stripped off before requesting the URI from
+the server. This means a URI that includes a hash cannot be retrieved
+directly, and therefore does not necessarily identify a Web document. But we can use them
+to identify other, non-document resources, without creating ambiguity.</p>
+
+<p>If Example Inc. adopts this solution, then they could use these URIs to
+represent the company, Alice, and Bob:</p>
+<dl>
+  <dt><tt>http://www.example.com/about#exampleinc</tt></dt>
+    <dd>Example Inc., the company</dd>
+  <dt><tt>http://www.example.com/about#bob</tt></dt>
+    <dd>Bob, the person</dd>
+
+  <dt><tt>http://www.example.com/about#alice</tt></dt>
+    <dd>Alice, the person</dd>
+</dl>
+
+<p>Clients will always strip off the fragment part before requesting any of
+these URIs, resulting in a request to this URI:</p>
+<dl>
+  <dt><tt>http://www.example.com/about</tt></dt>
+    <dd>RDF document describing Example Inc., Bob, and Alice</dd>
+
+</dl>
+
+<p>At this URI, Example Inc. could serve an RDF document that contains
+descriptions of all three resources, using the original hash URIs to identify
+the resources.</p>
+
+<p>The following picture shows the hash URI approach without content
+negotiation:</p>
+
+<p style="text-align: center"><img src="img20081203/hash.png"
+alt="The hash URI solution without content negotiation" /></p>
+
+<p>Alternatively, content negotiation (see <a href="#conneg">Section
+2.1.</a>) could be employed to redirect from the <tt>about</tt> URI to
+either a HTML or an RDF representation. The decision which to return is based on 
+client preferences and server configuration, as explained below in
+<a href="#implementation">Section 4.7</a>. The <tt>Content-Location</tt> header should be 
+set to indicate if the hash URI
+refers to a part of the HTML document or RDF document. </p>
+
+<p>The following picture shows the hash URI approach with content
+negotiation:</p>
+
+<p style="text-align: center"><img src="img20081203/hash_conneg.png"
+alt="The hash URI solution with content negotiation" /></p>
+
+<h3 id="r303gendocument">4.2. 303 URIs forwarding to 
+One Generic Document</h3>
+
+<p>The second solution is to use a special HTTP status code, <tt>303 See
+Other</tt>, to give an indication that the requested resource is not a
+regular Web document. Web architecture tells you that for a 
+thing
+resource (URI) it is inappropriate to return a 200 because there is, in fact, no
+suitable representation for those resources. However, it is useful to provide
+information about those resources. The W3C's Technical Architecture Group
+proposes in its <a
+href="http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html">httpRange-14
+resolution</a> [<cite><a href="#ref-httpRange">httpRange</a></cite>] document
+a solution that is to direct you to a document which has information <i>about</i> the thing you asked about. By doing this we avoid ambiguity between the original, 
+real-world object and the resource that represents it.</p>
+
+<p>Since 303 is a redirect status code, the server can give the location
+of a document that represents the resource. If, on the other hand, a request
+is answered with one of the usual status codes in the 2XX range, like <tt>200
+OK</tt>, then the client knows that the URI identifies a Web document. </p>
+
+<p>If Example Inc. adopts this solution, they could use these URIs to
+represent the company, Alice and Bob:</p>
+<dl>
+  <dt><tt>http://www.example.com/id/exampleinc</tt></dt>
+    <dd>Example Inc., the company</dd>
+  <dt><tt>http://www.example.com/id/bob</tt></dt>
+
+    <dd>Bob, the person</dd>
+  <dt><tt>http://www.example.com/id/alice</tt></dt>
+    <dd>Alice, the person</dd>
+</dl>
+
+	<p>The Web server would be configured to answer requests to all these URIs
+with a 303 status code and a <tt>Location</tt> HTTP header that provides the
+URL of a document that represents the resource.<i> </i>For example, to redirect 
+	from <tt>http://www.example.com/id/alice</tt> to <tt>
+http://www.example.com/doc/alice</tt>. </p>
+	<p>Content-negotiation is then used when 
+retrieving a representation from the document URI using a HTTP request. 
+The server decides (see <a href="#implementation">Section 4.7</a>) to return either 
+HTML or RDF (or more alternative forms) and sets the <tt>Content-Location</tt> header to 
+the URI where the specific representation can be retrieved.</p>
+<p>This setup should be used when the RDF and HTML (and possibly more 
+alternative representations) convey the <i>same information in different forms</i>. 
+When the information in the variations differs considerably, the 303 approach as 
+described <a href="#r303uri">below</a> should be used.</p>
+<p>See the following 
+illustration for the solution providing the generic document URI.</p>
+<p style="text-align:center;">
+<img alt="solution for a generic document URI" src="img20081203/303conneg.png"/> </p>
+<p>In this setup, the server forwards from the identification URI to the generic document URI. 
+This has the advantage that clients can bookmark and further work with the 
+generic document. A user having a RDF-capable client could bookmark the 
+document, and mail it to another user (or device) which then dereferences it and 
+gets the HTML <i>or</i> the RDF view. Also, the server can add representations 
+in new languages in the future. Just because the client started with the URI of 
+a thing, it doesn&#39;t mean that the document involved is not a first class 
+document on the WWW. The background of generic document resources is described in [<a href="#ref-GenRes">GenRes</a>].</p>
+
+<h3 id="r303uri">4.3. 303 URIs forwarding to Different 
+Documents</h3>
+
+<p>When the RDF and HTML representations of the resource differ substantially, 
+the previous setup should not be used. They are not two versions of the same 
+document, but different documents altogether. Again, the Web server would be configured to answer requests with a 303 status code and a <tt>Location</tt> HTTP header that provides the
+URL of a document that represents the resource.</p>
+
+<p></p>
+
+<p>The following picture shows the redirects for the 303 URI
+solution without the generic document URI:</p>
+
+<p style="text-align: center"><img src="img20081203/303.png"
+alt="The 303 URI solution" /></p>
+
+<p>The server could employ content negotiation (see <a href="#conneg">Section
+2.1.</a>) to send either the URL of an HTML description or RDF. HTTP requests
+for HTML content would be redirected to the HTML URLs we gave in <a
+href="#oldweb">Section 2</a>. Requests for RDF data would be redirected to
+RDF documents, such as:</p>
+<dl>
+  <dt><tt>http://www.example.com/data/exampleinc</tt></dt>
+
+    <dd>RDF document describing Example Inc., the company</dd>
+  <dt><tt>http://www.example.com/data/bob</tt></dt>
+    <dd>RDF document describing Bob, the person</dd>
+  <dt><tt>http://www.example.com/data/alice</tt></dt>
+    <dd>RDF document describing Alice, the person</dd>
+</dl>
+
+<p>Each of the RDF documents would contain statements about the appropriate
+resource, using the original URI, e.g.
+<tt>http://www.example.com/id/alice</tt>, to identify the described
+resource.</p>
+
+<h3 id="choosing">4.4. Choosing between 303 and
+Hash</h3>
+
+<p>Which approach is better? It depends. The hash URIs have the advantage of
+reducing the number of necessary HTTP round-trips, which in turn reduces
+access latency. A family of URIs can share the same non-hash part. The
+descriptions of <tt>http://www.example.com/about#exampleinc</tt>,
+<tt>http://www.example.com/about#alice</tt>, and
+<tt>http://www.example.com/about#bob</tt> are retrieved with a single
+request to <tt>http://www.example.com/about</tt>. However this approach has a
+downside. A client interested only in <tt>#product123</tt> will inadvertently
+load the data for all other resources as well, because they are in the same
+file. 303 URIs, on the other hand, are very flexible because the redirection
+target can be configured separately for each resource. There could be one
+describing document for each resource, or one large document for all of them,
+or any combination in between. It is also possible to change the policy later
+on. </p>
+<p>When using 303 URIs for an ontology, like FOAF, network delay can 
+reduce a client&#39;s performance considerable. The large number of redirects may cause higher latency. A client looking up a set of terms 
+through 303 may use many requests, even though the first request has already loaded everything there is to know.</p>
+
+<p>When hosting large-scale datasets with the 303 solution, clients may be 
+tempted to download all data using many requests. We advise to additionally 
+provide SPARQL endpoints or comparable services to answer complex queries on the 
+server directly, rather than to let the client download a large set of data via 
+HTTP.</p>
+<p>Note also, that both <em>303 and Hash can be
+combined</em>, allowing a large dataset to be separated&nbsp; into multiple parts and have
+an identifier for a non-document resource. An example for a combination of
+303 and Hash is:</p>
+<dl>
+  <dt><tt>http://www.example.com/bob#this</tt></dt>
+    <dd>Bob, the person with a combined URI.</dd>
+</dl>
+
+<p>Any fragment identifier is valid, <tt>this</tt> in the above URI is a
+suggestion you may want to copy for your implementations.</p>
+
+<dl class="box">
+  <dt>Conclusion.</dt>
+    <dd>Hash URIs should be preferred for rather small and stable sets of
+      resources that evolve together. The ideal case are RDF Schema
+      vocabularies and OWL ontologies, where the terms are often used
+      together, and the number of terms is unlikely to grow out of control in the
+      future.<p>Hash URIs without content negotiation can be implemented by simply
+      uploading static RDF files to a Web server, without any special server
+      configuration. This makes them popular for quick-and-dirty RDF
+      publication.</p>
+	<p>URIs of the <tt>bob#this</tt> form can be used for large sets of data that are, or may grow, beyond the point where it is practical to serve all related resources in a single document. 303 URIs may also be used for such data sets, making neater-looking URIs, but with an impact on run-time performance and server load.</p>
+	<p>If in doubt, follow your nose.</p>
+    </dd>
+
+</dl>
+
+<h3 id="cooluris">4.5. Cool URIs</h3>
+
+<p>The best resource identifiers don't just provide descriptions for people
+and machines, but are designed with simplicity, stability and manageability
+in mind, as explained by Tim Berners-Lee in <cite><a href="https://www.w3.org/Provider/Style/URI">Cool URIs don't change</a></cite>
+and by the W3C Team in <cite><a href="https://www.w3.org/TR/2003/NOTE-chips-20030128/">Common HTTP
+Implementation Problems</a></cite> (sections 1 and 3):</p>
+<dl>
+  <dt>Simplicity.</dt>
+
+    <dd>Short, mnemonic URIs will not break as easily when sent in emails and
+      are in general easier to remember, e.g. when debugging your Semantic
+      Web server.</dd>
+  <dt>Stability.</dt>
+    <dd>Once you set up a URI to identify a certain resource, it should
+      remain this way as long as possible. Think about the next ten years.
+      Maybe twenty. Keep implementation-specific bits and pieces such as
+      <tt>.php</tt> and <tt>.asp</tt> out of your URIs, you may want to
+      change technologies later.</dd>
+  <dt>Manageability.</dt>
+
+    <dd>Issue your URIs in a way that you can manage. One good practice is to
+      include the current year in the URI path, so that you can change the
+      URI-schema each year without breaking older URIs. Keeping all 303 URIs
+      on a dedicated subdomain, e.g. <tt>http://id.example.com/alice</tt>,
+      eases later migration of the URI-handling subsystem.</dd>
+</dl>
+
+<h3 id="linking">4.6. Linking</h3>
+
+<p>All the URIs related to a single real-world object&mdash;resource identifier,
+RDF document URL, HTML document URL&mdash;should also be explicitly linked with
+each other to help information consumers understand their relation. For
+example, in the 303 URI solution for Example Inc., there are three URIs
+related to Alice:</p>
+<dl>
+  <dt><tt>http://www.example.com/id/alice</tt></dt>
+    <dd>Identifier for Alice, the person</dd>
+
+  <dt><tt>http://www.example.com/people/alice</tt></dt>
+    <dd>Alice's homepage</dd>
+  <dt><tt>http://www.example.com/data/alice</tt></dt>
+    <dd>RDF document with description of Alice</dd>
+</dl>
+
+<p>Two of them are Web document URLs. The RDF document located at
+<tt>http://www.example.com/data/alice</tt> might contain these statements
+(expressed in N3):</p>
+
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb"><strong>&lt;http://www.example.com/id/alice&gt;</strong>
+    foaf:page <strong>&lt;http://www.example.com/people/alice&gt;</strong>;
+    rdfs:isDefinedBy <strong>&lt;http://www.example.com/data/alice&gt;</strong>;
+
+    a <strong>foaf:Person</strong>;
+    foaf:name <strong>"Alice"</strong>;
+    foaf:mbox <strong>&lt;mailto:alice@example.com&gt;</strong>;
+    ...</pre>
+
+<p>The document makes statements about Alice, the person, using the resource
+identifier. The first two properties relate the resource identifier to the
+two document URIs. The <tt>foaf:page</tt> statement links it to the HTML
+document. This allows RDF-aware clients to find a human-readable 
+resource, and at the same time, by linking the page to its topic, defines
+useful metadata about that HTML document. The <tt>rdfs:isDefinedBy</tt>
+
+statement links the person to the document containing its RDF description and
+allows RDF browsers to distinguish this main resource from other auxiliary
+resources that just happen to be mentioned in the document. We use
+<tt>rdfs:isDefinedBy</tt> instead of its weaker superproperty
+<tt>rdfs:seeAlso</tt> because the content at <tt>/data/alice</tt> is
+authoritative. The remaining statements are the actual white pages data.</p>
+
+<p>The HTML document at <tt>http://www.example.com/people/alice</tt> should
+contain in its header a <tt>&lt;link&gt;</tt> element that points to the
+corresponding RDF document:</p>
+
+<pre style="margin: 0; padding-left: 2em; padding-right: 2em; padding-top: 1em; padding-bottom: 1em; background: #fff6bb">&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Alice's Homepage&lt;/title&gt;
+    &lt;link rel="alternate" type="application/rdf+xml"
+          title="RDF Representation"
+          href="<strong>http://www.example.com/data/alice</strong>" /&gt;
+  &lt;/head&gt; ...</pre>
+
+<p>This allows RDF-aware Web clients to discover the RDF information. The
+approach is <a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/#section-rdf-in-HTML">recommended
+in the RDF/XML specification</a> ([<cite><a
+href="#ref-RDFXML">RDFXML</a></cite>], section 9). If the RDF data is
+<i>about</i> the Web page, rather than an expression of the information in it, then we recommend using
+<tt>rel="meta"</tt> instead of <tt>rel="alternate"</tt>.</p>
+<p>The client also can deduce similar link information 
+directly from the HTTP headers: that a thing is described by a Web document 
+which can be found at the end of a 303 redirect; that the <tt>Content-Location</tt> 
+resource is a content-specific version of the generic document, and more. 
+Ontologies for these relations are not discussed here.</p>
+
+<p>The following illustration shows how the RDF and HTML documents should
+relate the three URIs to each other:</p>
+
+<p style="text-align: center"><img src="img20081203/links.png"
+alt="The RDF and HTML documents should relate the URIs to each other" /></p>
+
+<h3 id="implementation">4.7. Implementing Content 
+Negotiation</h3>
+
+<p>The W3C's Semantic Web Best Practices and Deployment Working Group has
+published a document that describes how to implement the solutions presented
+here on the Apache Web server. The <cite><a href="https://www.w3.org/TR/swbp-vocab-pub/">Best Practice
+Recipes for Publishing RDF Vocabularies</a></cite> [<cite><a
+href="#ref-Recipes">Recipes</a></cite>] mostly discuss the publication of
+<em>RDF vocabularies</em>, but the ideas can also be applied to other kinds
+of small RDF datasets that are published from static files.</p>
+<p>However, especially when it comes to content negotiation, the Recipes document 
+doesn&#39;t cover some important details. Content negotiation is a bit more 
+difficult in practice because of mixed-mode clients that can deal with both HTML 
+and RDF, such as Firefox with the <a href="http://dig.csail.mit.edu/2007/tab/">
+Tabulator extension</a>.</p>
+<p>These browsers announce their ability to consume both RDF and HTML through <tt>
+Accept</tt> headers that use <tt>q</tt> (quality) values:</p>
+<pre>Accept: application/rdf+xml;q=0.7, text/html </pre>
+<p>This browser accepts RDF with a <tt>q</tt> value of 0.7 and HTML with a <tt>q</tt> value of 1.0 (the default). This means the browser has a slight preference for 
+HTML over RDF. </p>
+<p>Now, a client preference for HTML doesn&#39;t necessarily mean that every server 
+should send HTML. The server has to look at the client&#39;s preferences, and then 
+it must make a decision based on the quality of the different variants it could 
+offer. For example: </p>
+<ul>
+	<li>If the HTML variant is a simple low-quality rendering of the RDF, like a 
+property-value table or a list of triples, then the server should send the RDF, 
+unless the client has a very strong preference for HTML. </li>
+	<li>If HTML and RDF variant contain the same information, and both are of high 
+quality, then the server should treat both variants with equal preference, and 
+leave the choice to the client&#39;s preferences. </li>
+	<li>If the RDF variant is only a part of the information offered in the HTML, or 
+is scraped from the HTML, then the server should probably send the HTML, unless 
+the client has a strong preference for RDF. </li>
+</ul>
+<p>There are algorithms for choosing the best match by comparing client preferences 
+with the quality of the server&#39;s available variants. For example, the Apache 
+server can be configured with server-side <tt>qs</tt> values that specify their 
+relative quality.</p>
+<p>A <tt>qs</tt> value of 1.0 for <tt>application/rdf+xml</tt> and 0.5 for <tt>
+text/html</tt>, would mean that the HTML variant has only approximately half the quality of the 
+RDF and might be appropriate in the first case from the list above. If the HTML 
+is a news article and the RDF contains just minimal information such as title, 
+date and author, then 1.0 for the HTML and 0.1 for the RDF would be appropriate.
+</p>
+<p>To determine the best variant for a particular client, Apache multiplies the 
+client&#39;s <tt>q</tt> value for HTML with the configured <tt>qs</tt> value for 
+HTML; and the same for RDF. The variant with the higher number wins. Apache&#39;s 
+documentation has a
+<a href="http://httpd.apache.org/docs/2.0/content-negotiation.html#methods">section</a> with a detailed description of its content 
+negotiation algorithm [<a href="#ref-ApCN">ApCN</a>]. HTTP&#39;s <tt>Accept</tt> header is described in detail in 
+<a href="http://www.rfc.net/rfc2616.html#s14.1">section 14.1</a> of the HTTP 
+specification [<a href="#ref-HTTP-SPEC">HTTP-SPEC</a>]. </p>
+<p>Content negotiation, with all its details, is fairly complex, but it is a 
+powerful way of choosing the best variant for mixed-mode clients that can deal 
+with HTML and RDF. </p>
+
+<h2 id="examples">5. Examples from the Web</h2>
+
+<p>Not all projects that work with Semantic Web technologies make their data
+available on the Web. But a growing number of projects follow the practices
+described here. This section gives a few examples.</p>
+
+<p><strong>ECS Southampton.</strong> The <a
+href="http://www.ecs.soton.ac.uk/">School of Electronics and Computer
+Science</a> at University of Southampton has a Semantic Web site that employs
+the 303 solution and is a great example of Semantic Web engineering. It is
+documented in the <cite><a href="http://id.ecs.soton.ac.uk/docs/">ECS URI
+System Specification</a></cite> [<cite><a href="#ref-ECS">ECS</a></cite>].
+Separate subdomains are used for HTML documents, RDF documents, and resource
+identifiers. Take these examples:</p>
+<dl>
+
+  <dt><tt>http://id.ecs.soton.ac.uk/person/1650</tt></dt>
+    <dd>URI for Wendy Hall, the person</dd>
+  <dt><tt>http://www.ecs.soton.ac.uk/people/wh</tt></dt>
+    <dd>HTML page about Wendy Hall</dd>
+  <dt><tt>http://rdf.ecs.soton.ac.uk/person/1650</tt></dt>
+    <dd>RDF about Wendy Hall</dd>
+
+</dl>
+
+<p>Entering the first URI into a normal Web browser redirects to an HTML page
+about Wendy Hall. It presents a Web view of all available data on her. The
+page also links to her URI and to her RDF document.</p>
+
+<p><strong><a href="http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/">D2R
+Server</a></strong> is an open-source application that can be used to publish
+data from relational databases on the Semantic Web in accordance with these
+guidelines. It employs the 303 solution and content negotiation. For example,
+the <cite><a href="http://www4.wiwiss.fu-berlin.de/dblp/">D2R Server
+publishing the DBLP Bibliography Database</a></cite> publishes several thousand bibliographical records and information about their authors. Example URIs,
+again connected via 303 redirects:</p>
+<dl>
+  <dt><tt>http://www4.wiwiss.fu-berlin.de/dblp/resource/person/315759</tt></dt>
+    <dd>URI for Chris Bizer, the person</dd>
+
+  <dt><tt>http://www4.wiwiss.fu-berlin.de/dblp/page/person/315759</tt></dt>
+    <dd>HTML page about Chris Bizer</dd>
+</dl>
+
+<p>The RDF document for Chris Bizer is a SPARQL query result from the
+server's SPARQL endpoint:</p>
+<pre>http://www4.wiwiss.fu-berlin.de/dblp/sparql?query=
+DESCRIBE+\%3Chttp\%3A\%2F\%2Fwww4.wiwiss.fu-berlin.de
+\%2Fdblp\%2Fresource\%2Fperson\%2F315759\%3E</pre>
+
+<p>The SPARQL query encoded in this URI is:</p>
+<pre>DESCRIBE &lt;http://www4.wiwiss.fu-berlin.de/dblp/resource/person/315759&gt;</pre>
+
+<p>This shows how a SPARQL endpoint can be used as a convenient method of
+serving resource descriptions.</p>
+
+<p><strong><a href="http://semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic
+MediaWiki</a></strong> is an open-source Semantic wiki engine. Authors can
+use special wiki syntax to put semantic attributes and relationships into
+wiki articles. For each article, the software generates a 303 URI that
+identifies the article's topic, and serves RDF descriptions generated from
+the attributes and relationships. Semantic MediaWiki drives the
+<a href="http://ontoworld.org/wiki/Main_Page">OntoWorld wiki</a>. It has an article about the
+city of Karlsruhe:</p>
+<dl>
+  <dt><tt>http://ontoworld.org/wiki/Karlsruhe</tt></dt>
+    <dd>the article, an HTML document</dd>
+
+  <dt><tt>http://ontoworld.org/wiki/_Karlsruhe</tt></dt>
+    <dd>the city of Karlsruhe</dd>
+  <dt><tt>http://ontoworld.org/wiki/Special:ExportRDF/Karlsruhe</tt></dt>
+    <dd>RDF description of Karlsruhe</dd>
+</dl>
+
+<p>The URI of the RDF description is less than ideal, because it exposes the
+implementation (php) and refers redundantly to RDF in the path and in the
+query. A much cooler URI would be for example
+<tt>http://ontoworld.org/data/Karlsruhe</tt>, 
+as it allows content negotiation
+to be used to serve the data in RDF, RIF (Rule Interchange Format), or whatever else we think of next.</p>
+
+<h2 id="otherideas">6. Other Resource Naming
+Proposals</h2>
+
+<p>Many other approaches have been suggested over the years. While most of
+them are appropriate in special circumstances, we feel that they do not fit
+the criteria from <a href="#semweb">Section 3</a>, which are to <em>be on the
+Web</em> and <em>don't be ambiguous</em>. Therefore they are not adequate as
+general solutions for building a standards-based, non-fragmented,
+decentralized Semantic Web. We will discuss two of these approaches in some
+detail.</p>
+
+<h3 id="schemes">6.1. New URI Schemes</h3>
+
+<p>HTTP URIs already identify Web resources and Web documents, not other
+kinds of resources. Shouldn't we create a new URI scheme to identify other
+resources? Then we could easily distinguish them from Web documents just by
+looking at the first characters of the URI. For example, the <em>info</em>
+scheme can be used to identify books based on a LCCN number:
+<tt>info:lccn/2002022641</tt>.</p>
+
+<p>Here are examples of such new URI schemes. A longer list is provided by
+Thompson and Orchard in <cite><a href="https://www.w3.org/2001/tag/doc/URNsAndRegistries-50-2006-08-17.html">URNs,
+Namespaces and Registries</a></cite> [<cite><a
+href="#ref-TAG-URNs">TAG-URNs</a></cite>]. </p>
+<ul>
+  <li><strong><a
+    href="http://magnet-uri.sourceforge.net/">Magnet</a></strong> is an open
+    URI scheme enabling seamless integration between Web sites and
+    locally-running utilities, such as file-management tools. It is based on
+    hash-values, a URI looks like this:<br/>
+
+    <tt>magnet:?xt=urn:sha1:YNCKHTQCWBTRNJIV4WNAE52SJUQCZO5C</tt>.</li>
+  <li>The <strong><a
+    href="http://www.ietf.org/rfc/rfc4452.txt"><tt>info:</tt> URI
+    scheme</a></strong> is proposed to identify information assets that have
+    identifiers in existing public namespaces. Examples are URIs for LCCN
+    numbers (<code>info:lccn/2002022641</code>) and the Dewey decimal system
+    (<tt>info:ddc/22/eng//004.678</tt>).</li>
+  <li>The idea of <strong><a href="http://www.taguri.org/">Tag
+    URIs</a></strong> is to generate collision-free URIs by using a domain
+    name and the date when the URI was allocated. Even if the domain changes
+    ownership at a later date, the URI remains unambiguous. Example:
+    <code>tag:hawke.org,2001-06-05:Taiko</code>.</li>
+
+  <li><strong><a
+    href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xri">XRI</a></strong>
+    defines a scheme and resolution protocol for abstract identifiers. The
+    idea is to use URIs that contain wildcards, to adapt to changes of
+    organizations, servers, etc.<br />
+    Examples are <code>@Jones.and.Company/(+phone.number)</code> or
+    <code>xri://northgate.library.example.com/(urn:isbn:0-395-36341-1)</code>.</li>
+</ul>
+
+<p>To be truly useful, a new scheme must be accompanied by a protocol defining 
+how to access more information about the identified resource. For example, the
+
+<tt>ftp://</tt> URI scheme identifies resources (files on an FTP server), and
+also comes with a protocol for accessing them (the FTP protocol). </p>
+
+<p>Some of the new URI schemes provide no such protocol at all. Others
+provide a Web Service that allows retrieval of descriptions using the HTTP
+protocol. The identifier is passed to the service, which looks up the
+information in a central database or in a federated way. The problem here is
+that a failure in this service renders the system unusable.</p>
+
+<p>Another drawback can be a dependence on a standardization body. To
+register new parts in the <tt>info:</tt> space, a standardization body has to
+be contacted. This, or paying a license fee before creating a new URI, slows
+down adoption. In such cases a standardization body is desirable to ensure that
+all URIs are unique (e.g. with ISBNs). But this can be achieved using HTTP
+URIs inside an HTTP namespace owned and managed by the standardization
+organization. </p>
+<p>Independent of standardization body and retrievability, pending patents and 
+legal issues can influence the adoption of a new URI scheme.&nbsp; When using 
+patented technology, implementers should verify that a Royalty-Free license is 
+available.</p>
+
+<p>The problems with new URI schemes are discussed at length in <cite><a href="https://www.w3.org/2001/tag/doc/URNsAndRegistries-50.html">URNs,
+Namespaces and Registries</a></cite>.</p>
+
+<h3 id="blanknodes">6.2. Reference by
+Description</h3>
+
+<p><i>&quot;Reference by Description&quot;</i> radically solves the URI problem by doing away with URIs
+altogether: Instead of <em>naming</em> resources with a URI, <em>anonymous
+nodes</em> are used, and are <em>described</em> with information that allows
+us to find the right one. A person, for example, could be described by name, date of birth, and social security number. These pieces of information
+should be sufficient to uniquely identify a person.</p>
+
+<p>A popular practice is the use of a person's email address as a uniquely
+identifying piece of information. The <tt>foaf:mbox</tt> property is used in
+
+<a href="http://xmlns.com/foaf/spec/20070524.html">Friend of a Friend</a>
+(<cite><a href="#ref-FOAF">FOAF</a></cite>) profiles for this purpose. In
+OWL, this kind of property is known as an <em>Inverse Functional
+Property</em> (IFP). When an agent encounters two resources with the same
+email address, it can infer that both refer to the same person and can treat
+them as one.</p>
+
+<p>But how to <em>be on the Web</em> with this approach? How to enable agents
+to download more data about resources we mention? There is a best practice to
+achieve this goal: Provide not only the IFP of the resource (e.g. the
+person's email address), but also an <tt>rdfs:seeAlso</tt> property that
+points to a Web address of an RDF document with further information about it.
+We see that HTTP URIs are still used to identify the location where more 
+information can be
+downloaded.</p>
+
+<p>Furthermore, we now need several pieces of information to refer to a
+resource, the IFP value and the RDF document location. The simple act of
+linking by using a URI has become a process involving several moving parts,
+and this increases the risk of broken links and makes implementation more
+cumbersome.</p>
+
+<p>Regarding FOAF's practice of avoiding URIs for people, we agree with <a
+href="http://dig.csail.mit.edu/breadcrumbs/node/71">Tim Berners-Lee's
+advice</a>: &ldquo;Go ahead and give yourself a URI. You deserve it!&rdquo; </p>
+
+<h2 id="conclusion">7. Conclusion</h2>
+
+<p>Resource names on the Semantic Web should fulfill two requirements: First,
+a description of the identified resource should be retrievable with standard
+Web technologies. Second, a naming scheme should not confuse things and the 
+documents representing them.</p>
+
+<p>We have described two approaches that fulfill these requirements, both
+based on the HTTP URI scheme and protocol. One is to use the 303 HTTP status
+code to redirect from the resource identifier to the describing document. One
+is to use &ldquo;hash URIs&rdquo; to identify resources, exploiting the fact that
+hash URIs are retrieved by dropping the part after the hash and retrieving
+the other part.</p>
+
+<p>The requirement to distinguish between resources and their descriptions
+increases the need for coordination between multiple URIs. Some useful
+techniques are: embedding links to RDF data in HTML documents, using RDF
+statements to describe the relationship between the URIs, and using content
+negotiation to redirect to an appropriate description of a resource.</p>
+
+<h2 id="acknowledgements">8.
+Acknowledgements</h2>
+
+<p>Many thanks to Tim Berners-Lee who invested much time and helped us understanding the
+<a href="https://www.w3.org/2001/tag/">TAG</a> solution by answering <a
+href="http://chatlogs.planetrdf.com/swig/2006-10-29#T17-42-28">chat
+requests</a> and contributing many emails with clarifications and detailled 
+reviews of this document. Special thanks go to Stuart Williams, Norman Walsh and 
+all the other members from TAG,
+who reviewed
+this document and provided essential feedback in
+<a href="http://lists.w3.org/Archives/Public/www-tag/2007Jun/0075.html">June 
+2007</a> and
+
+<a href="http://lists.w3.org/Archives/Public/www-tag/2007Sep/0090.html">
+September 2007</a> about many formulations that were (accidentially) contrary to the TAG's view. Also special 
+thanks to the <a href="https://www.w3.org/2006/07/SWD/">Semantic Web Deployment 
+Group</a>&#39;s members Michael Hausenblas, Vit 
+Novacek, and Ed Summers&#39; reviews and their review summary sent in
+<a href="https://www.w3.org/2006/07/SWD/wiki/ReviewCoolURIs">October 2007</a>. We wish to
+thank everyone else who has reviewed drafts of this document, especially Chris Bizer, Gunnar AAstrand Grimnes, 
+Harry Halpin, Xiaoshu Wang, Henry S. Thompson, Jonathan Rees, and Christoph P&auml;per. Susie Stephens reviewed the document, managed SWEO, and helped us to stay on 
+track. Ivan Herman did much to verify that the W3C requirements are met and 
+submitted the note.</p>
+
+<p>This work was supported by the German Federal Ministry of Education,
+Science, Research and Technology (BMBF), (Grants 01 IW C01, Project EPOS:
+Evolving Personal to Organizational Memories; and 01 AK 702B, Project
+InterVal: Internet and Value Chains) and by the European Union IST fund
+(Grant FP6-027705, Project Nepomuk).</p>
+
+<h2 id="references">9. References</h2>
+
+<dl>
+  <dt><a id="ref-AWWW" name="ref-AWWW">[AWWW]</a></dt>
+    <dd><cite><a href="https://www.w3.org/TR/2004/REC-webarch-20041215/">Architecture of
+      the World Wide Web, Volume One</a></cite>, Ian Jacobs, Norman Walsh,
+      Editors. World Wide Web Consortium, 15 December 2004. This edition is
+      http://www.w3.org/TR/2004/REC-webarch-20041215/. The <a href="https://www.w3.org/TR/webarch/">latest edition</a> is available at
+      <a href="https://www.w3.org/TR/webarch/">http://www.w3.org/TR/webarch/</a>.</dd>
+	<dt>[<a name="ref-ApCN">ApCN</a>]</dt>
+	<dd><a href="http://httpd.apache.org/docs/2.0/content-negotiation.html">
+	Apache HTTP Server Version 2.0 Documentation, Chapter Content Negotiation</a>. 
+	This document is available at
+	<a href="http://httpd.apache.org/docs/2.0/content-negotiation.html">
+	http://httpd.apache.org/docs/2.0/content-negotiation.html</a>.</dd>
+  <dt><a id="ref-Booth" name="ref-Booth">[Booth]</a></dt>
+    <dd><cite><a href="https://www.w3.org/2002/11/dbooth-names/dbooth-names_clean.htm">Four
+      Uses of a URL: Name, Concept, Web Location and Document
+      Instance</a></cite>, David Booth. 28 January 2003. This document is
+      available at
+      http://www.w3.org/2002/11/dbooth-names/dbooth-names_clean.htm.</dd>
+
+  <dt><a id="ref-CHIPS" name="ref-CHIPS">[CHIPS]</a></dt>
+    <dd><cite><a href="https://www.w3.org/TR/2003/NOTE-chips-20030128/">Common
+      HTTP Implementation Problems</a></cite>, Olivier Th&eacute;reaux, Editor.
+      World Wide Web Consortium, 28 January 2003. This edition is
+      http://www.w3.org/TR/2003/NOTE-chips-20030128/. The <a href="https://www.w3.org/TR/2003/NOTE-chips-20030128/">latest
+      edition</a> is available at http://www.w3.org/TR/chips/.</dd>
+  <dt><a id="ref-Cool" name="ref-Cool">[Cool]</a></dt>
+    <dd><cite><a href="https://www.w3.org/Provider/Style/URI">Cool URIs don't
+      change</a></cite>, Tim Berners-Lee, 1998. This document is available at
+      <a href="https://www.w3.org/Provider/Style/URI">http://www.w3.org/Provider/Style/URI</a>.</dd>
+	<dt>[<a name="ref-DP">DP</a>]</dt>
+	<dd>The DataPortability Project. <a href="http://dataportability.org/">
+	http://dataportability.org/</a> </dd>
+
+  <dt><a id="ref-ECS" name="ref-ECS">[ECS]</a></dt>
+    <dd><cite><a href="http://id.ecs.soton.ac.uk/docs/">ECS URI System
+      Specification</a></cite>, Colin Williams, Nick Gibbins. ECS
+      Southampton, 2006. This document is available at
+      <a href="http://id.ecs.soton.ac.uk/docs/">http://id.ecs.soton.ac.uk/docs/</a>.</dd>
+  <dt><a id="ref-FOAF" name="ref-FOAF">[FOAF]</a></dt>
+    <dd><cite><a href="http://xmlns.com/foaf/spec/20070524.html">FOAF
+      Vocabulary Specification 0.9</a></cite>, Dan Brickley, Libby Miller. 24
+      May 2007. This edition is http://xmlns.com/foaf/spec/20070524.html. The
+      <a href="http://xmlns.com/foaf/spec/">latest edition</a> is available
+      at <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a>.</dd>
+	<dt>[<a name="ref-Give">Give</a>]</dt>
+	<dd><i>
+	<a href="http://blog.okfn.org/2007/11/07/give-us-the-data-raw-and-give-it-to-us-now/">
+	Give Us the Data Raw, and Give it to Us Now</a></i>. Rufus Pollock. 7th 
+		November 2007. </dd>
+	<dt>[<a name="ref-GenRes">GenRes</a>]</dt>
+	<dd><i><a href="https://www.w3.org/DesignIssues/Generic.html">Generic 
+	Resources</a></i>, Tim Berners-Lee. This document is available at
+	<a href="https://www.w3.org/DesignIssues/Generic.html">
+	http://www.w3.org/DesignIssues/Generic.html</a>.</dd>
+
+	<dt>[<a name="ref-GRDDL">GRDDL</a>]</dt>
+	<dd><a href="https://www.w3.org/TR/grddl/">Gleaning Resource Descriptions 
+	from Dialects of Languages (GRDDL)</a>, Dan Connolly, Editor, W3C 
+	Recommendation 11 September 2007. This edition is http://www.w3.org/TR/2007/REC-grddl-20070911/. 
+	The latest edition is available at <a href="https://www.w3.org/TR/grddl/">
+	http://www.w3.org/TR/grddl/</a>.</dd>
+  <dt><a id="ref-HTTP-URI2" name="ref-HTTP-URI2">[HTTP-URI2]</a></dt>
+    <dd><cite><a href="https://www.w3.org/DesignIssues/HTTP-URI2.html">What
+      HTTP URIs Identify</a></cite>, Tim Berners-Lee. 9 June 2005. This
+      document is available at
+    http://www.w3.org/DesignIssues/HTTP-URI2.html.</dd>
+
+  <dt><a id="ref-httpRange" name="ref-httpRange">[httpRange]</a></dt>
+    <dd><cite><a
+      href="http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html">[httpRange-14]
+      Resolved</a></cite>, Roy Fielding. 18 June 2005. This archived <a
+      href="http://lists.w3.org/Archives/Public/www-tag/">www-tag</a> email
+      message is available at
+      <a href="http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html">http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html</a>.</dd>
+	<dt>[<a name="ref-HTTP-SPEC">HTTP-SPEC</a>]</dt>
+	<dd>
+	<a href="http://www.rfc.net/rfc2616.html#s14.1">
+	RFC2616</a>, Hypertext Transfer Protocol -- HTTP/1.1, <a href="http://www.rfc.net/rfc2616.html#s14.1">http://www.rfc.net/rfc2616.html#s14.1</a></dd>
+  <dt><a id="ref-N3" name="ref-N3">[N3]</a></dt>
+    <dd><cite><a href="https://www.w3.org/DesignIssues/Notation3">Notation
+      3</a></cite>, Tim Berners-Lee, Dan Connolly, 2008. This document is available
+      at <a href="https://www.w3.org/TeamSubmission/n3/">http://www.w3.org/TeamSubmission/n3/</a>.</dd>
+	<dt>[<a name="ref-N3Primer">N3Primer</a>]</dt>
+	<dd>Primer: Getting into RDF &amp; Semantic Web using N3. Tim Berners-Lee, 2005.
+	<a href="https://www.w3.org/2000/10/swap/Primer">
+	http://www.w3.org/2000/10/swap/Primer</a> </dd>
+
+  <dt>[<a name="ref-RDFaPrimer">RDFa Primer</a>]</dt>
+    <dd>RDFa Primer 1.0 - Embedding Structured Data in Web Pages (see <a href="https://www.w3.org/2006/07/SWD/RDFa/primer/">http://www.w3.org/2006/07/SWD/RDFa/primer/</a>.)</dd>
+  <dt><a id="ref-RDFPrimer" name="ref-RDFPrimer">[RDFPrimer]</a></dt>
+    <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF
+      Primer</a></cite>, Frank Manola, Eric Miller, Editors. World Wide Web
+      Consortium, 10 February 2004. This edition is
+      http://www.w3.org/TR/2004/REC-rdf-primer-20040210/. The <a href="https://www.w3.org/TR/rdf-primer/">latest edition</a> is available
+      at http://www.w3.org/TR/rdf-primer/.</dd>
+
+  <dt><a id="ref-RDFXML" name="ref-RDFXML">[RDFXML]</a></dt>
+    <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">RDF/XML
+      Syntax Specification (Revised)</a></cite>, Dave Beckett, Editor. World
+      Wide Web Consortium, 10 February 2004. This edition is
+      http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/. The <a href="https://www.w3.org/TR/rdf-syntax-grammar/">latest edition</a> is
+      available at http://www.w3.org/TR/rdf-syntax-grammar/.</dd>
+  <dt><a id="ref-Recipes" name="ref-Recipes">[Recipes]</a></dt>
+    <dd><cite><a href="https://www.w3.org/TR/2008/WD-swbp-vocab-pub-20080123/">Best
+      Practice Recipes for Publishing RDF Vocabularies</a></cite>, Alistair
+      Miles, Thomas Baker, Ralph Swick, Editors. World Wide Web Consortium,
+      23 January 2008. This edition is
+      http://www.w3.org/TR/2008/WD-swbp-vocab-pub-20080123/. It is a work in
+      progress. The <a href="https://www.w3.org/TR/swbp-vocab-pub/">latest
+      edition</a> is available at http://www.w3.org/TR/swbp-vocab-pub/.</dd>
+
+  <dt><a id="ref-RFC2616" name="ref-RFC2616">[RFC2616]</a></dt>
+    <dd><cite><a href="http://www.ietf.org/rfc/rfc2616.txt">RFC 2616:
+      Hypertext Transfer Protocol - HTTP/1.1</a></cite>, J. Gettys, J. Mogul,
+      H. Frystyk, L. Masinter, P. Leach, T. Berners-Lee. IETF, 1999. This
+      document is available at http://www.ietf.org/rfc/rfc2616.txt.</dd>
+  <dt><a id="ref-RFC3986" name="ref-RFC3986">[RFC3986]</a></dt>
+    <dd><cite><a href="http://www.ietf.org/rfc/rfc3986.txt">RFC 3986: Uniform
+      Resource Identifier (URI): Generic Syntax</a></cite>, T. Berners-Lee,
+      R. Fielding, L. Masinter. IETF, 2005. This document is available at
+      http://www.ietf.org/rfc/rfc3986.txt.</dd>
+  <dt><a id="ref-SMW" name="ref-SMW">[SMW]</a></dt>
+
+    <dd><cite><a
+      href="http://www.aifb.uni-karlsruhe.de/WBS/hha/papers/SemanticWikipedia.pdf">Semantic
+      Wikipedia</a></cite>, Max V&ouml;lkel, Markus Kr&ouml;tzsch, Denny Vrandecic,
+      Heiko Haller, Rudi Studer. University of Karlsruhe, 2006. This document
+      is available at
+      http://www.aifb.uni-karlsruhe.de/WBS/hha/papers/SemanticWikipedia.pdf.</dd>
+  <dt><a id="ref-TAG-Alt" name="ref-TAG-Alt">[TAG-Alt]</a></dt>
+    <dd><cite><a href="https://www.w3.org/2001/tag/doc/alternatives-discovery-20061101.html">On
+      Linking Alternative Representations To Enable Discovery And
+      Publishing</a></cite>, T.V. Raman. World Wide Web Consortium, 1
+      November 2006. This edition is
+      http://www.w3.org/2001/tag/doc/alternatives-discovery-20061101.html.
+      The <a href="https://www.w3.org/2001/tag/doc/alternatives-discovery.html">latest
+      edition</a> is available at
+      http://www.w3.org/2001/tag/doc/alternatives-discovery.html.</dd>
+  <dt><a id="ref-TAG-URNs" name="ref-TAG-URNs">[TAG-URNs]</a></dt>
+
+    <dd><cite><a href="https://www.w3.org/2001/tag/doc/URNsAndRegistries-50-2006-08-17.html">URNs,
+      Namespaces and Registries</a></cite>, Henry S. Thompson, David Orchard.
+      World Wide Web Consortium, 17 August 2006. This edition is
+      http://www.w3.org/2001/tag/doc/URNsAndRegistries-50-2006-08-17.html. It
+      is a work in progress. The <a href="https://www.w3.org/2001/tag/doc/URNsAndRegistries-50.html">latest
+      edition</a> is available at
+      http://www.w3.org/2001/tag/doc/URNsAndRegistries-50.html.</dd>
+  <dt><a id="ref-TriX" name="ref-TriX">[TriX]</a></dt>
+    <dd><cite><a
+      href="http://www.mulberrytech.com/Extreme/Proceedings/html/2004/Stickler01/EML2004Stickler01.html">RDF
+      Triples in XML</a></cite>, Jeremy J. Carroll, Patrick Stickler, 2004.
+      This document is available at
+      http://www.mulberrytech.com/Extreme/Proceedings/html/2004/Stickler01/EML2004Stickler01.html.</dd>
+  <dt><a id="ref-WP-HTTP" name="ref-WP-HTTP">[WP-HTTP]</a></dt>
+
+    <dd><cite><a href="https://en.wikipedia.org/wiki/HTTP">Hypertext Transfer
+      Protocol</a></cite>, Wikipedia contributors. Wikipedia, 8 October 2007.
+      The latest version of this document is available at
+      http://en.wikipedia.org/wiki/HTTP.</dd>
+</dl>
+
+<h2 id="changelog">10. Change log</h2>
+<dl>
+  <dt>29 November 2006</dt>
+    <dd>1.0 Initial Version.</dd>
+  <dt>9 August 2007</dt>
+
+    <dd>1.1 Revised Version. Changes based on 
+	<a href="http://lists.w3.org/Archives/Public/www-tag/2007Jun/0075.html">TAG
+      review</a>.</dd>
+	<dt>28 November 2007</dt>
+	<dd>Leo Sauermann included more feedback from reviews contributed by TAG, 
+	SWD, and Tim Berners-Lee.</dd>
+	<dt>8 December 2007</dt>
+	<dd>Danny Ayers did proofreading, minor grammar/idiomatic/editorial changes (I've tried not
+    to make any changes that substantively modify the content, though some
+    come close...). XHMTL validated with nxml-mode emacs</dd>
+
+	<dt>12 December 2007</dt>
+	<dd>Leo Sauermann included link to GRDDL as suggested by Danny Ayers, minor 
+	changes of todo notes. Document was remodelled to Working Draft status - all 
+	feedback by SWD, TAG, and Tim Berners Lee either has been addressed or is 
+	listed in this document as todos using @@-symbols and the css class "todo".</dd>
+	<dt>17 December 2007</dt>
+	<dd>Document published as Working Draft at
+	<a href="https://www.w3.org/TR/2007/WD-cooluris-20071217/">
+	http://www.w3.org/TR/2007/WD-cooluris-20071217/</a> </dd>
+	<dt>23 Februar 2008</dt>
+	<dd>All feedback received on Working Draft.</dd>
+	<dt>20 March 2008</dt>
+	<dd>All feedback incorporated, issues are listed and addressed in
+	<a href="https://gnowsis.opendfki.de/repos/gnowsis/papers/2006_11_concepturi/feedback/index.htm#feedback_v20071217">
+	this document</a>.</dd>
+	<dt>21 March 2008</dt>
+	<dd>Document published as Last Call Working Draft at
+	<a href="https://www.w3.org/TR/2008/WD-cooluris-20080321/">
+	http://www.w3.org/TR/2008/WD-cooluris-20080321/</a> </dd>
+	<dt>31 March 2008</dt>
+	<dd>Document published as Interest Group Note. Feedback to previous version 
+	and changes are
+	<a href="https://gnowsis.opendfki.de/repos/gnowsis/papers/2006_11_concepturi/feedback/index.htm#feedback_v20080321">
+	listed here</a>.</dd>
+</dl>
+<script type="application/javascript" src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+</html>

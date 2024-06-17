@@ -1,0 +1,160 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Publicly Available Standards">
+  <meta name="author" content="ISO (International Organization for Standardization)">
+  <title>Publicly Available Standards</title>
+  <!-- start favicons -->
+  <link rel="apple-touch-icon-precomposed" href="https://www.iso.org/modules/isoorg-template/img/iso/favicon/red/apple-touch-icon-152x152-precomposed.png">
+  <link rel="shortcut icon" href="https://www.iso.org/modules/isoorg-template/img/iso/favicon/red/favicon.ico">
+  <meta name="msapplication-TileColor" content="#eee">
+  <meta name="msapplication-TileImage" content="https://www.iso.org/modules/isoorg-template/img/iso/favicon/red/mstile-144x144.png">
+  <!-- end favicons -->
+
+  <!-- Wood -->
+  <link href="https://cdn.iso.org/resources/wood/2.0.6/css/wood.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://cdn.iso.org/resources/wood/2.0.6/js/wood.min.js"></script>
+
+  <style type="text/css">
+
+    @media only screen and (min-width: 767px) {
+      .header-iso {
+        border-bottom: 3px solid #f1f1f1;
+      }
+    }
+    .header-iso .header-container .navbar-header .header-title {
+      margin-left: 15px;
+      margin-bottom: -10px;
+    }
+    .topbar .topbar-content a ~ .poweredby-txt {
+      float: left;
+      margin-left: 10px;
+    }
+
+    body [lang]:not([lang='en']) {
+      display: none;
+    }
+    body.french [lang]:not([lang='fr']) {
+      display: none;
+    }
+    body.french [lang='fr'] {
+      display: block;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $( "#lang-switcher li a" ).on( "click", function() {
+        $( "body" ).toggleClass( "french");
+      });
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W8M8NCC');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8M8NCC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header header-iso container theme-red header-noimg" role="banner">
+  <!-- Topbar -->
+  <div class="rubber">
+    <div class="rubber-poweredby"></div>
+  </div>
+  <div class="topbar topbar-light">
+    <div class="topbar-content container">
+      <a class="logo isologo" href="javascript:void(0)" title="Powered by ISO"></a>
+      <div class="poweredby-txt" lang="en">International Organization for Standardization</div>
+      <div class="poweredby-txt" lang="fr">Organisation internationale de normalisation</div>
+      <ul id="lang-switcher">
+        <li lang="en"><a href="javascript:void(0)">Français</a></li>
+        <li lang="fr"><a href="javascript:void(0)">English</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-container">
+    <nav class="navbar" role="navigation">
+      <div class="navbar-header">
+        <div class="header-title clearfix">
+          <p class="title-thin title-medium" lang="en">Licence Agreement for Publicly Available Standards</p>
+          <p class="title-thin title-medium" lang="fr">Accord de licence pour les Spécifications publiquement disponibles</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="main container">
+  <div class="row">
+    <div class="col-md-7" lang="en">
+      <h3>You are about to download a document protected by copyright.</h3>
+      <p>When you download (an) ISO publication(s) from this site, you must accept the <a href="https://www.iso.org/terms-conditions-licence-agreement.html#Customer-Licence" target="_blank" title="ISO Customer Licence Agreement">ISO Customer Licence Agreement</a> (“Licence Agreement”), excluding clauses 2. Watermark, 5. Paper copies, and 6. Codes and Graphical Symbols (and their Collections).</p>
+    </div>
+    <!-- START OF FRENCH VERSION -->
+    <div class="col-md-7" lang="fr">
+      <h3>Vous vous apprêtez à télécharger un document protégé par le droit d’auteur.</h3>
+      <p>Lorsque vous téléchargez une ou plusieurs publications ISO sur cette page, vous devez accepter l’<a href="https://www.iso.org/fr/terms-conditions-licence-agreement.html#Customer-Licence" target="_blank" title="Accord de licence client de l'ISO">Accord de licence client de l'ISO</a> (« Accord de licence »), à l’exclusion des articles 2. Filigranage, 5. Copie papier, et 6. Codes et symboles graphiques (et leurs Collections).</p>
+    </div>
+    <!-- END OF FRENCH VERSION -->
+
+    <div class="col-md-4 col-md-offset-1" lang="en">
+      <div class="well">
+        <h4>Contact</h4>
+        <p>Should you have any questions about this Licence Agreement, please <a href="mailto:copyright@iso.org">contact us</a>.</p>
+      </div>
+    </div>
+    <!-- START OF FRENCH VERSION -->
+    <div class="col-md-4 col-md-offset-1" lang="fr">
+      <div class="well">
+        <h4>Contact</h4>
+        <p>Si vous avez des questions concernant le présent Accord de licence, n’hésitez pas à <a href="mailto:copyright@iso.org">nous contacter</a>.</p>
+      </div>
+    </div>
+    <!-- END OF FRENCH VERSION -->
+
+  </div>
+  <div class="row row-bottom row-light">
+    <div class="col-md-12 text-center" lang="en">
+      <form action="" method="post">
+        <button type="submit" name="ok" value="I accept" class="btn btn-primary btn-lg">I accept</button>
+      </form>
+      <small>Note: cookies must be enabled</small>
+    </div>
+    <!-- START OF FRENCH VERSION -->
+    <div class="col-md-12 text-center" lang="fr">
+      <form action="" method="post">
+        <button type="submit" name="ok" value="I accept" class="btn btn-primary btn-lg">J'accepte</button>
+      </form>
+      <small>NB: les cookies doivent être activés</small>
+    </div>
+    <!-- END OF FRENCH VERSION -->
+  </div>
+
+</div>
+
+</body>
+</html>

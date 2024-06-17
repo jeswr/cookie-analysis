@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	xml:lang="en" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns="http://xmlns.com/foaf/0.1/" 
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	xmlns:wn="http://xmlns.com/wordnet/1.6/" 
+	xmlns:air="http://www.megginson.com/exp/ns/airports#"
+	xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" >
+
+  <foaf:Person rdf:ID="me">
+    <foaf:name>Phil Archer</foaf:name>
+    <foaf:nick>PhilA</foaf:nick>
+    <homepage rdf:resource="http://philarcher.org/"/>
+    <foaf:dateOfBirth>1963-02-19</foaf:dateOfBirth>
+    <foaf:img rdf:resource="http://philarcher.org/images/philarcher.jpg"/>
+    <foaf:mbox rdf:resource="mailto:phil@philarcher.org" />
+    <contact:nearestAirport>
+      <wn:Airport air:iata="STN"/>
+    </contact:nearestAirport>
+    <foaf:knows rdf:resource="http://www.dicom.uninsubria.it/~andrea.perego/foaf/#me" />
+    <foaf:knows rdf:resource="#elena" />
+    <foaf:knows rdf:resource="#vangelis" />
+    <foaf:knows rdf:resource="#pantelis" />
+    <foaf:knows rdf:resource="#kostas" />
+    <foaf:knows rdf:resource="#stamatakis" />
+    <foaf:knows rdf:resource="#krcsmith" />
+    <foaf:knows rdf:resource="#kai" />
+    <foaf:knows rdf:resource="#matt" />
+    <foaf:knows rdf:resource="#sheena" />
+    <foaf:knows rdf:resource="#pau" />
+    <foaf:knows rdf:resource="#miquelangel" />
+    <foaf:knows rdf:resource="#dave" />
+    <foaf:knows rdf:resource="#stasinos" />
+    <foaf:knows rdf:resource="#jo" />
+
+    <foaf:currentProject rdf:resource="http://www.semic.eu/" />
+    <foaf:pastProject rdf:resource="http://www.quatro-project.org/" />
+    <foaf:pastProject rdf:resource="http://www.w3.org/2007/powder/" />
+    <foaf:pastProject rdf:resource="http://www.w3.org/2005/Incubator/wcl/" />
+
+    <foaf:workplaceHomepage rdf:resource="http://www.w3.org/eGov/"/>
+    <foaf:workplaceHomepage rdf:resource="http://i-sieve.com/"/>
+
+    <rdfs:seeAlso rdf:resource="http://twitter.com/philarcher1/" />
+    <rdfs:seeAlso rdf:resource="http://www.facebook.com/philarcher1" />
+    <rdfs:seeAlso rdf:resource="http://www.linkedin.com/in/philarcher" />
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="elena">
+    <foaf:name>Elena Ferrari</foaf:name>
+    <rdfs:seeAlso rdf:resource="http://www.dicom.uninsubria.it/dawsec/foaf/elena.rdf#me" />
+    <owl:sameAs rdf:resource="http://www.dicom.uninsubria.it/dawsec/foaf/elena.rdf#me" />
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="vangelis">
+    <foaf:name>Vangelis Karkaletsis</foaf:name>
+    <foaf:homepage rdf:resource="http://www.iit.demokritos.gr/~vangelis/" />
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="pantelis">
+    <foaf:name>Pantelis Nasikas</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/pub/4/651/b47" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kostas">
+    <foaf:name>Kostas Chandrinos</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="stamatakis">
+    <foaf:name>Kostas Stamatakis</foaf:name>
+    <foaf:homepage rdf:resource="http://bio.demokritos.gr/stamatakis/cv_final.htm" />
+  </foaf:Person>
+  <foaf:Person rdf:ID="krcsmith">
+    <foaf:name>Kevin Smith</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/pub/1/360/252" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kai">
+    <foaf:name>Kai-Dietrich Scheppe</foaf:name>
+    <foaf:homepage rdf:resource="http://www.scheppe.net/" />
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="matt">
+    <foaf:name>Matt Womer</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/in/mwomer" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="sheena">
+    <foaf:name>Sheena Bassett</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/pub/2/886/636" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="pau">
+    <foaf:name>Pau Ruiz P&#xe9;rez</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="miquelangel">
+    <foaf:name>Miquel Angel Mayer</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/pub/0/588/969" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+  <foaf:Person rdf:ID="dave">
+    <foaf:name>David Rose</foaf:name>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="stasinos">
+    <foaf:name>Stasinos Konstantopoulos</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/in/stasinos" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="jo">
+    <foaf:name>Jo Rabin</foaf:name>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount>
+        <foaf:accountProfilePage rdf:resource="http://www.linkedin.com/in/jorabin" />
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+  </foaf:Person>
+</rdf:RDF>

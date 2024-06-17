@@ -1,0 +1,659 @@
+<!DOCTYPE html><!-- Last Published: Mon Feb 12 2024 23:14:46 GMT+0000 (Coordinated Universal Time) -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Digital Bazaar</title>
+  <meta content="Digital Bazaar" property="og:title">
+  <meta content="Digital Bazaar" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="/assets/css/site.css" rel="stylesheet" type="text/css">
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/assets/images/web-clip-256.png" rel="apple-touch-icon">
+</head>
+
+<body>
+  <div id="top" class="back-to-top-container">
+    <div class="back-to-top-button-wrapper"><a href="#top" class="button-circle bg-primary-1 w-inline-block"><img
+          src="/5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725360e074cc3_icon-chevron-up.svg" alt=""></a></div>
+  </div>
+  <div class="navbar-sticky bg-white">
+    <div class="navigation-container">
+  <div class="container nav-container">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar w-nav"><a href="/" class="w-nav-brand">
+      <img src="/assets/images/digital-bazaar-text-only.svg"
+        alt="Digital Bazaar, Inc."
+        class="header-logo"></a>
+      <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+        <div class="nav-links nav-links-1">
+          <a href="/" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+<a href="/case-studies/"  class="nav-link w-nav-link">Case Studies</a>
+<a href="/about-us/"  class="nav-link w-nav-link">About Us</a>
+<a href="/contact-us/"  class="nav-link w-nav-link">Contact</a>
+
+        </div>
+      </nav>
+      <label class="nav-menu-button-wrapper" for="nav-toggle">
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </label>
+      <input type="checkbox" id="nav-toggle" hidden />
+      <div class="w-nav-overlay">
+        <nav role="navigation" class="nav-menu-wrapper w-nav-menu" style="transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;" data-nav-menu-open="">
+          <div class="nav-links nav-links-1">
+            <a href="/" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+<a href="/case-studies/"  class="nav-link w-nav-link">Case Studies</a>
+<a href="/about-us/"  class="nav-link w-nav-link">About Us</a>
+<a href="/contact-us/"  class="nav-link w-nav-link">Contact</a>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <main class="main">
+      <style>
+    .hexagon {
+      position: relative;
+      width: 300px;
+      height: 173.21px;
+      background-color: #64C7CC;
+      margin: 86.60px 0;
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+    }
+
+    .hexagon:before {
+      bottom: 100%;
+      border-bottom: 86.60px solid #64C7CC;
+    }
+
+    .hexagon:after {
+      top: 100%;
+      width: 0;
+      border-top: 86.60px solid #64C7CC;
+    }
+  </style>
+
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <h6 class="subheading text-primary-1">Innovation for all of us</h6>
+            <h1 class="hero-title">Building a Web we can trust</h1>
+            <p class="hero-description">Putting people and organizations in control of their digital lives supports the
+              restoration of the Web to its original promise and opens up new possibilities for connecting humanity</p>
+            <a href="/contact-us/" class="button w-inline-block">
+              <div>Contact Us</div>
+            </a>
+          </div>
+          <div class="hero-right">
+            <dotlottie-player class="hero-lottie"
+              src="/60733677c5e7cddb582e7bf0/608ae99a2bfcec5eb0e0e63e_hero-lottie-2.json"
+              background speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="an-ecosystem-for-trusted-data-sharing">
+      <div class="container">
+        <div class="section-title wide">
+          <h3 class="medium-heading">An Ecosystem for Trusted Data Sharing<br></h3>
+          <p class="text-large">Emerging cryptographic web technologies enable secure identity and data verification
+            between parties, providing a more streamlined and privacy preserving Web. Digital Bazaar’s technology
+            ecosystem represents over a decade of software development, inventing and vetting technologies, and
+            spearheading Web Standards at the World Wide Web Consortium.<br></p>
+        </div>
+        <div class="w-layout-grid blurb-grid">
+          <div class="centered-grid-item"><img src="60733677c5e7cddb582e7bf0/60733677c5e7cd33432e7ced_networking.svg"
+              width="256" alt="Decentralized Identity" class="icon-large">
+            <h4 class="blurb-title">Decentralized Identity<br></h4>
+            <div>Verifiable Credentials enable a Web of trust with no central authority. Decentralized identity puts
+              people and organizations at the center of their identity management and scales to the Web.<br></div>
+          </div>
+          <div class="centered-grid-item"><img
+              src="60733677c5e7cddb582e7bf0/608af61ce5705dd848b7edd8_database-security.svg" alt="Secure Data Management"
+              class="icon-large">
+            <h4 class="blurb-title">Secure Data Management<br></h4>
+            <div>Encrypted Data Vaults and fit-for-purpose distributed ledgers can be leveraged to meet the secure data
+              management requirements of many use cases across market verticals.<br></div>
+          </div>
+          <div class="centered-grid-item"><img src="60733677c5e7cddb582e7bf0/608691ad959e2740b85317ae_intersection.svg"
+              alt="Integrations" class="icon-large">
+            <h4 class="blurb-title">Integrations<br></h4>
+            <div>We help you integrate emerging decentralized identity and data management technologies with your
+              systems without having to do extensive overhauls.<br></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section logo-section" id="proudly-working-with">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="medium-heading">Proudly working with</h3>
+          <p>Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero&#x27;s 1st-century BC text De Finibus
+            Bonorum et Malorum.</p>
+        </div>
+        <div data-delay="4000" data-animation="slide" class="logo-slider w-slider" data-autoplay="true"
+          data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
+          data-nav-spacing="3" data-duration="500" data-infinite="true">
+          <div class="mask w-slider-mask">
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+            <div class="logo-slide w-slide">
+              <div class="logo-slide-box"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg" alt=""
+                  class="logo-row-image opacity-50"></div>
+            </div>
+          </div>
+          <div class="slider-arrow hide w-slider-arrow-left">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="slider-arrow slider-arrow-right hide w-slider-arrow-right">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="slide-nav hide w-slider-nav w-round"></div>
+        </div>
+        <div class="row row-justify-center hide"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725264d074df1_stack.svg"
+            alt="" class="logo-row-image opacity-50"><img
+            src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b8372574ae074df2_migaloo.svg" alt=""
+            class="logo-row-image opacity-50"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b837254d74074df4_uppercut.svg"
+            alt="" class="logo-row-image opacity-50"><img
+            src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b837253660074df3_monograma.svg" alt=""
+            class="logo-row-image opacity-50"><img
+            src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725198b074df5_Do%CC%88ppler.svg" alt=""
+            class="logo-row-image opacity-50"></div>
+      </div>
+    </div>
+    <div class="section bg-gray market-section">
+      <div class="container">
+        <div class="row-grid">
+          <div class="market-grid">
+            <div class="row-content">
+              <div class="w-layout-grid grid-rows grid-rows-compact">
+                <div class="card no-border market-card">
+                  <div class="market-card-header _1">
+                    <div><strong>Retail</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _1">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/608832bf9521c6515437344d_shopping-cart-1.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Age Verification, Digital Offers, Loyalty</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-border market-card">
+                  <div class="market-card-header _2">
+                    <div><strong>Supply Chain</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _2">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/608832f6bb5e29ac341dccf6_ship-1.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Customer Identity, Track and Trace, Secure Data Sharing</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-border market-card">
+                  <div class="market-card-header _3">
+                    <div><strong>Education</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _3">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/6088333c97335519884bb9e7_graduation-cap%20%281%29.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Learner Records, Degrees, Transcripts</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-2 no-border hide">
+                  <div class="card-body"><img src="5fbd40f48f5ec33f2e245bfa/5fbd40f4b83725bc2f074d63_face-id.svg"
+                      alt="">
+                    <div>
+                      <div class="text-space-left"><strong>Education</strong></div>
+                      <div class="text-space-left">Learner Records, Degrees, Transcripts</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-content">
+              <div class="w-layout-grid grid-rows grid-rows-compact">
+                <div class="card no-border market-card top-gap">
+                  <div class="market-card-header _4">
+                    <div><strong>Government</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _4">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/608833704d700e367014e25e_parliament-1.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Citizen Identity, Driver&#x27;s License, Green Card</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-border market-card">
+                  <div class="market-card-header _5">
+                    <div><strong>Finance</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _5">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/608833ad8725e731b38015e1_bank%20%281%29.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Know Your Customer, Money Transfer, Financial Docs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card no-border market-card">
+                  <div class="market-card-header _6">
+                    <div><strong>Healthcare</strong></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="market-icon-holder _6">
+                      <div class="market-icon-inner"><img
+                          src="60733677c5e7cddb582e7bf0/608833e0610d5c1eaf67b12e_heartbeat-1.svg" alt=""
+                          class="blue-card-icon"></div>
+                    </div>
+                    <div>
+                      <div>Patient Records, Vaccine Credentials, Provider Identity</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_9968b3ff-38ae-c5de-abff-1a136048aad9-1e2e7bef" class="row-content">
+            <div>
+              <h6 class="subheading text-primary-1">Ask us about your use case!</h6>
+              <h3 class="medium-heading">Tuned to your needs<br></h3>
+              <p>Our decentralized identity and verifiable data solutions are applicable to almost every sector of our
+                economy. Wherever identity or data needs strong authentication across organizational or departmental
+                boundaries, our technology platform is likely to be useful. The examples shown are just some of the use
+                cases and market verticals that our technology can address. Ask us about your use case.</p><a
+                href="/contact-us/" class="button w-inline-block">
+                <div>Contact Us</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="the-veres-platform">
+      <div class="container">
+        <div class="section-title margin-top">
+          <h6 class="subheading text-primary-1">Build on a solid foundation</h6>
+          <h3 class="medium-heading">The Veres Platform<br></h3>
+          <p>The Veres platform consists of decentralized identity and data management components that can be combined
+            to build highly performant distributed applications.</p>
+        </div>
+        <div class="w-layout-grid grid-thirds v2">
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres Issuer</h4>
+              <p>Veres Issuer enables organizations to issue any type of digital credential to customers, employees, or
+                other organizations. Advanced cryptography ensures tamper detection.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres Wallet</h4>
+              <p>With Veres Wallet, customers and employees can securely and privately store their digital credentials.
+                Use Veres Wallet to receive credentials from Issuers and present credentials to Verifiers.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres Verifier</h4>
+              <p>Organizations utilize the Veres Verifier to evaluate the authenticity of digital credentials. Veres
+                Verifier uses advanced cryptography to ensure that digital credentials can not be easily tampered with
+                or forged.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+              <div class="p-line-1"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres Vault</h4>
+              <p>Veres encrypted data vault is a place to securely store and share your sensitive information such as
+                 legal or supply chain documents. It also stores application data, enabling a new generation of
+                user-centric apps.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres Delta</h4>
+              <p>Veres Delta enables organizations to launch fit-for-purpose distributed ledgers. A flexible JSON-based
+                data model empowers developers to quickly tune their ledger to specific use cases without being
+                constrained by a legacy data model.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body p-card">
+              <h4 class="product-title">Veres DID</h4>
+              <p class="paragraph">Veres DID (Decentralized Identifier) is a FIPS compliant distributed ledger that can
+                be leveraged to build performant DID methods for governments and private sector consortiums. Veres DID
+                provides the technical infrastructure to match your trust and governance model.</p>
+              <div class="p-line-1"></div>
+              <div class="p-line-2"></div>
+              <div class="p-line-3"></div>
+              <div class="p-line-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-gray" id="case-studies">
+      <div class="container">
+        <div class="section-title">
+          <h6 class="subheading text-primary-1">Case Studies</h6>
+          <h3 class="medium-heading">Our Technology Implementations<br></h3>
+          <p>In 2014 Digital Bazaar initiated foundational Web Standards that support the decentralized identity
+            ecosystem. We’ve since proven the technology via multiple Proof of Concepts involving fortune 500 companies
+            and multiple national governments and are now deploying large scale production solutions into the market.
+          </p>
+        </div>
+        <div class="w-dyn-list">
+  <div role="list" class="w-dyn-items"><div role="listitem" class="case-card w-dyn-item"><a href="/case-studies/solving-privacy-preserving-age-verification-for-150-000-convenience-stores/" class="w-inline-block"><img alt=""
+          src="/60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546.jpeg"
+          sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 46vw"
+          srcset="/60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546-p-800.jpeg 800w, /60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546-p-1600.jpeg 1600w, /60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546-p-2000.jpeg 2000w, /60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546-p-2600.jpeg 2600w, /60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546-p-3200.jpeg 3200w, /60733677c5e7cdbc4a2e7bf5/6086931e0328c1beba726150_AdobeStock_409195546.jpeg 3840w"
+          class="case-thumb"></a>
+      <div class="card-body case-study-card-body">
+        <h4>Solving Privacy-preserving Age Verification for 150,000+ Convenience Stores</h4>
+        <p class="case-study-card-excerpt">With a reach of 200 Million end-customers, our solution verifies a customer’s age with a high degree of accuracy.</p>
+        <a href="/case-studies/solving-privacy-preserving-age-verification-for-150-000-convenience-stores/">Learn More</a>
+      </div>
+    </div><div role="listitem" class="case-card w-dyn-item"><a href="/case-studies/veres-one-a-globally-interoperable-distributed-ledger-for-decentralized-identifiers/" class="w-inline-block"><img alt=""
+          src="/60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920.jpg"
+          sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 46vw"
+          srcset="/60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920-p-500.jpeg 500w, /60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920-p-800.jpeg 800w, /60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920-p-1080.jpeg 1080w, /60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920-p-1600.jpeg 1600w, /60733677c5e7cdbc4a2e7bf5/60869350c7b29da3e67dddd0_globalisation-3390877_1920.jpg 1920w"
+          class="case-thumb"></a>
+      <div class="card-body case-study-card-body">
+        <h4>Veres One: A Globally Interoperable Distributed Ledger for Decentralized Identifiers</h4>
+        <p class="case-study-card-excerpt">Digital Bazaar engineered the Veres One distributed ledger for the Veres One Foundation.</p>
+        <a href="/case-studies/veres-one-a-globally-interoperable-distributed-ledger-for-decentralized-identifiers/">Learn More</a>
+      </div>
+    </div><div role="listitem" class="case-card w-dyn-item"><a href="/case-studies/digital-permanent-resident-cards-and-enterprise-credential-lifecycle-management/" class="w-inline-block"><img alt=""
+          src="/60733677c5e7cdbc4a2e7bf5/6086939d239ee922af971b4c_statue-of-liberty-828665_1920.jpg"
+          sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 46vw"
+          srcset="/60733677c5e7cdbc4a2e7bf5/6086939d239ee922af971b4c_statue-of-liberty-828665_1920-p-500.jpeg 500w, /60733677c5e7cdbc4a2e7bf5/6086939d239ee922af971b4c_statue-of-liberty-828665_1920-p-1080.jpeg 1080w, /60733677c5e7cdbc4a2e7bf5/6086939d239ee922af971b4c_statue-of-liberty-828665_1920-p-1600.jpeg 1600w, /60733677c5e7cdbc4a2e7bf5/6086939d239ee922af971b4c_statue-of-liberty-828665_1920.jpg 1920w"
+          class="case-thumb"></a>
+      <div class="card-body case-study-card-body">
+        <h4>Digital Permanent Resident Cards and Enterprise Credential Lifecycle Management</h4>
+        <p class="case-study-card-excerpt">This Proof of Concept demonstrated the ability for US Citizen and Immigration Services to issue permanent resident cards.</p>
+        <a href="/case-studies/digital-permanent-resident-cards-and-enterprise-credential-lifecycle-management/">Learn More</a>
+      </div>
+    </div><div role="listitem" class="case-card w-dyn-item"><a href="/case-studies/supply-chain-tracking-and-verification-of-intellectual-property-rights/" class="w-inline-block"><img alt=""
+          src="/60733677c5e7cdbc4a2e7bf5/608693c36be451b5bf2c10bc_dreamstime_m_98176794.jpg"
+          sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 46vw"
+          srcset="/60733677c5e7cdbc4a2e7bf5/608693c36be451b5bf2c10bc_dreamstime_m_98176794-p-1080.jpeg 1080w, /60733677c5e7cdbc4a2e7bf5/608693c36be451b5bf2c10bc_dreamstime_m_98176794.jpg 1600w"
+          class="case-thumb"></a>
+      <div class="card-body case-study-card-body">
+        <h4>Supply Chain Tracking and Verification of Intellectual Property Rights</h4>
+        <p class="case-study-card-excerpt">The Intellectual Property Rights Blockchain Proof of Concepts sought to enhance the process of registering and verifying intellectual property assertions</p>
+        <a href="/case-studies/supply-chain-tracking-and-verification-of-intellectual-property-rights/">Learn More</a>
+      </div>
+    </div></div>
+</div>
+
+      </div>
+    </div>
+    <div class="section hexa-sextion">
+      <div class="container">
+        <div class="row-grid align-top hexa-grid">
+          <div class="row-content">
+            <div class="customer-content">
+              <h6 class="subheading text-primary-1">We work with you to deploy production systems</h6>
+              <h3 class="medium-heading">Customer Engagement<br>Process<br></h3>
+              <p>Decentralized secure interoperable identity is a growing need. We have been part of the standards work
+                to support this need for over a decade. Our experience has taught us that successfully deployed
+                solutions require a multistep process that starts with a core understanding of how these systems work
+                and how they can be applied to a customer’s marketplace. At this point off-the-shelf products are
+                difficult to achieve, so each new opportunity needs a focused bespoke solution that is tailored to the
+                real problem at hand. Our decade of work in this area has taught us that successful projects follow the
+                sequence shown. We partner with you on each step.</p>
+            </div>
+          </div>
+          <div class="row-content">
+            <div class="w-layout-grid grid-rows customer-content-grid"><img
+                src="60733677c5e7cddb582e7bf0/6088284234343b146ee32eec_Customer%20Engagement--Education%20and%20Training--BoldItalicShadow.png"
+                loading="lazy" sizes="199.1875px"
+                srcset="60733677c5e7cddb582e7bf0/6088284234343b146ee32eec_Customer%20Engagement--Education%20and%20Training--BoldItalicShadow-p-500.png 500w, 60733677c5e7cddb582e7bf0/6088284234343b146ee32eec_Customer%20Engagement--Education%20and%20Training--BoldItalicShadow-p-800.png 800w, 60733677c5e7cddb582e7bf0/6088284234343b146ee32eec_Customer%20Engagement--Education%20and%20Training--BoldItalicShadow.png 866w"
+                alt="" class="hex-1"><img
+                src="60733677c5e7cddb582e7bf0/60882843d93c7a14f2636129_Customer%20Engagement--Problem%20Definition.png"
+                loading="lazy" sizes="199.1875px"
+                srcset="60733677c5e7cddb582e7bf0/60882843d93c7a14f2636129_Customer%20Engagement--Problem%20Definition-p-500.png 500w, 60733677c5e7cddb582e7bf0/60882843d93c7a14f2636129_Customer%20Engagement--Problem%20Definition-p-800.png 800w, 60733677c5e7cddb582e7bf0/60882843d93c7a14f2636129_Customer%20Engagement--Problem%20Definition.png 866w"
+                alt="" class="hex-2"><img
+                src="60733677c5e7cddb582e7bf0/60882843f5d21fb57e937761_Customer%20Engagement--Technical%20Design-BoldItalic.png"
+                loading="lazy" sizes="(max-width: 767px) 199.1875px, (max-width: 991px) 241.984375px, 21vw"
+                srcset="60733677c5e7cddb582e7bf0/60882843f5d21fb57e937761_Customer%20Engagement--Technical%20Design-BoldItalic-p-500.png 500w, 60733677c5e7cddb582e7bf0/60882843f5d21fb57e937761_Customer%20Engagement--Technical%20Design-BoldItalic-p-800.png 800w, 60733677c5e7cddb582e7bf0/60882843f5d21fb57e937761_Customer%20Engagement--Technical%20Design-BoldItalic.png 866w"
+                alt="" class="hex-3"><img
+                src="60733677c5e7cddb582e7bf0/608828447107626b89a46e84_Customer%20Engagement--Proof%20of%20Concept.png"
+                loading="lazy" alt="" class="hex-4"><img
+                src="60733677c5e7cddb582e7bf0/60882842a80b738b7f231b47_Customer%20Engagement--Pilot.png" loading="lazy"
+                sizes="199.1875px"
+                srcset="60733677c5e7cddb582e7bf0/60882842a80b738b7f231b47_Customer%20Engagement--Pilot-p-500.png 500w, 60733677c5e7cddb582e7bf0/60882842a80b738b7f231b47_Customer%20Engagement--Pilot-p-800.png 800w, 60733677c5e7cddb582e7bf0/60882842a80b738b7f231b47_Customer%20Engagement--Pilot.png 866w"
+                alt="" class="hex-5"><img
+                src="60733677c5e7cddb582e7bf0/60882843ca4dc4a4e2a7feb9_Customer%20Engagement--Production--BlodItalicWShadow.png"
+                loading="lazy" sizes="199.1875px"
+                srcset="60733677c5e7cddb582e7bf0/60882843ca4dc4a4e2a7feb9_Customer%20Engagement--Production--BlodItalicWShadow-p-500.png 500w, 60733677c5e7cddb582e7bf0/60882843ca4dc4a4e2a7feb9_Customer%20Engagement--Production--BlodItalicWShadow-p-800.png 800w, 60733677c5e7cddb582e7bf0/60882843ca4dc4a4e2a7feb9_Customer%20Engagement--Production--BlodItalicWShadow.png 866w"
+                alt="" class="hex-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-dark" id="web-standards-pioneers">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="medium-heading">Web Standards Pioneers<br></h3>
+          <p class="text-large">For over a decade Digital Bazaar has played a central role in standardizing an array of
+            technologies that enable verifiable information to be exchanged over the Web.<br></p>
+        </div>
+        <div class="benefits-card-grid">
+          <div class="benefite-card-wrapper"><img src="60733677c5e7cddb582e7bf0/608af1c99003850813fe3349_id-card.svg"
+              loading="lazy" alt="" class="benefite-card-icon">
+            <h4 class="web-heading">An Identity Layer for the Web</h4>
+            <p class="point-para">The Web has long-needed a globally interoperable way for people and organizations to
+              prove who they are in order to purchase a product, property, get access to a digital space, or open an
+              online account. Proprietary digital identity providers attempted to meet this need but they simply didn’t
+              scale. Along with dozens of other organizations, Digital Bazaar is helping standardize technologies to
+              enable a globally scalable digital identity ecosystem to finally gain widespread adoption.</p>
+          </div>
+          <div class="benefite-card-wrapper"><img src="60733677c5e7cddb582e7bf0/608af12e3671b4b44577e227_domain.svg"
+              loading="lazy" alt="" class="benefite-card-icon">
+            <h4 class="web-heading">W3C Web Standards</h4>
+            <p class="point-para">Digital Bazaar has over a decade of in-depth experience helping standardize web
+              technologies at the World Wide Web Consortium(W3C) and the Internet Engineering Task Force, including
+              foundational leadership roles in the Web Payments, Verifiable Credentials, and Decentralized Identifiers
+              work at the W3C. Our CEO, Manu Sporny, Founded and Co-Chaired the Credential Community Group at the W3C in
+              2015 and continues to be one the editors of the <a href="https://www.w3.org/TR/vc-data-model/"
+                target="_blank">Verifiable Credentials Specification</a>, as well as the <a
+                href="https://www.w3.org/TR/did-core/" target="_blank">Decentralized Identifier Specification</a>.</p>
+          </div>
+          <div class="benefite-card-wrapper"><img src="60733677c5e7cddb582e7bf0/608c2e29874fe02a0b505855_city-hall.svg"
+              loading="lazy" alt="" class="benefite-card-icon">
+            <h4 class="web-heading">Adoption by Government and Industry</h4>
+            <p class="point-para">These Web standards have significant traction in both government and the private
+              sector. The US Federal Government has invested tens of millions of dollars to help companies standardize
+              and build solutions for decentralized identity and related technologies. <a
+                href="https://www.youtube.com/watch?v=J7aCUM2RfJA&t=2096s" target="_blank">Congressional testimony</a>
+              expresses commitment to these standards. The private sector is catching on as well, with dozens of
+              solution providers emerging--organizations like <a
+                href="https://www.gleif.org/en/lei-solutions/gleifs-digital-strategy-for-the-lei/introducing-the-verifiable-lei-vlei"
+                target="_blank">GELIF adopting the Verifiable Credentials standards</a>, as well as Fortune 100
+              companies launching solutions in the space.</p>
+          </div>
+          <div class="benefite-card-wrapper"><img src="60733677c5e7cddb582e7bf0/608c2e71e86e84bec17b66ce_network.svg"
+              loading="lazy" alt="" class="benefite-card-icon">
+            <h4 class="web-heading">True Interoperability, No Vendor Lockin</h4>
+            <p class="point-para">All of the software Digital Bazaar engineers is heavily based on Web standards,
+              ensuring customer relationships are based on quality of products and services rather than vendor lock-in.
+              Web standards alone are not a guarantee against vendor lock-in. Through our work at DHS S&amp;T’s <a
+                href="https://www.dhs.gov/science-and-technology/svip" target="_blank">Silicon Valley Innovation
+                Program</a> we have demonstrated real interoperability with a dozen other solutions providers. This
+              means you can choose different vendors for different components of the ecosystem and switch vendors at a
+              later date too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+  </main>
+  <div class="footer-section">
+    <div class="wrapper">
+      <div class="w-layout-grid footer-1-grid">
+        <div id="w-node-e59d8aa2-8478-856b-7347-f2a84f911fca-4f911fc7" class="footer-logo-widget">
+          <img src="/assets/images/digital-bazaar-logotype.svg"
+            alt="Digital Bazaar, Inc."
+            class="footer-logo">
+          <div>Building a better Web, building a better world</div>
+        </div>
+        <div>
+          <h4 class="fw-titlle">Company</h4>
+          <ul role="list" class="w-list-unstyled">
+            <li class="fw-link-wrap"><a href="/about-us/" class="fw-link">About Us</a></li>
+            <li class="fw-link-wrap"><a href="/contact-us/" class="fw-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fw-titlle">Resources</h4>
+          <ul role="list" class="w-list-unstyled">
+            <li class="fw-link-wrap"><a href="/case-studies/" class="fw-link">Case Studies</a></li>
+          </ul>
+        </div>
+        <div id="w-node-e59d8aa2-8478-856b-7347-f2a84f912006-4f911fc7">
+          <ul role="list" class="footer-nav">
+  <li class="footer-nav-item"><a href="/cdn-cgi/l/email-protection#b5c6d4d9d0c6f5d1dcd2dcc1d4d9d7d4cfd4d4c79bd6dad8" class="nav-link-2 footer w-inline-block">
+      <div class="footer-contact-us-icon"></div>
+      <div><span class="__cf_email__" data-cfemail="b3c0d2dfd6c0f3d7dad4dac7d2dfd1d2c9d2d2c19dd0dcde">[email&#160;protected]</span></div>
+    </a></li>
+  <li class="footer-nav-item"><a href="/cdn-cgi/l/email-protection#4c3c3e293f3f0c28252b25382d202e2d362d2d3e622f2321" class="nav-link-2 footer w-inline-block">
+      <div class="footer-contact-us-icon"></div>
+      <div><span class="__cf_email__" data-cfemail="ff8f8d9a8c8cbf9b9698968b9e939d9e859e9e8dd19c9092">[email&#160;protected]</span></div>
+    </a></li>
+  <li class="footer-nav-item"><a href="/cdn-cgi/l/email-protection#2b585e5b5b44595f6b4f424c425f4a47494a514a4a5905484446" class="nav-link-2 footer w-inline-block">
+      <div class="footer-contact-us-icon"></div>
+      <div><span class="__cf_email__" data-cfemail="f98a8c8989968b8db99d909e908d98959b988398988bd79a9694">[email&#160;protected]</span></div>
+    </a></li>
+  <li class="footer-nav-item"><a href="tel:+1-540-274-1034" class="nav-link-2 footer w-inline-block">
+      <div class="footer-contact-us-icon"></div>
+      <div>+1-540-274-1034</div>
+    </a></li>
+  <li class="footer-nav-item"><a href="https://maps.app.goo.gl/yXWE3UKyKWUEBNnk8" class="nav-link-2 footer w-inline-block">
+      <div class="footer-contact-us-icon"></div>
+      <div>Digital Bazaar, Inc.<br>203 Roanoke St. W<br>Blacksburg, Virginia 24060 USA</div>
+    </a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="footer-bottom-wrap">
+        <div class="w-layout-grid footer-2-grid-2">
+          <div id="w-node-e59d8aa2-8478-856b-7347-f2a84f91201b-4f911fc7">
+            <div class="copy-right-text">©️ 2024 Digital Bazaar, Inc.</div>
+          </div>
+          <div id="w-node-e59d8aa2-8478-856b-7347-f2a84f91201e-4f911fc7" class="footer-links-wrap">
+            <ul role="list" class="footer-bottom-link-wrap w-list-unstyled">
+              <li class="footer-bootom-item last"><a href="/privacy-policy/" class="footer-bottom-link">Privacy
+                  Policy</a></li>
+            </ul>
+            <div class="footer-social-icon-wrapper"><a href="https://github.com/digitalbazaar" target="_blank"
+                class="social-icon-2"></a><a href="https://www.linkedin.com/company/digital-bazaar-inc-/about/"
+                target="_blank" class="social-icon-2"></a><a href="https://twitter.com/digitalbazaar" target="_blank"
+                class="social-icon-2"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8954933a6f615703","version":"2024.4.1","r":1,"token":"f2807553da554bfe80a1b1526746f5bf","b":1}' crossorigin="anonymous"></script>
+</body>
+
+</html>

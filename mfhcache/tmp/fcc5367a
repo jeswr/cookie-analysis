@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:bibo="http://purl.org/ontology/bibo/"
+  xmlns:cert="http://www.w3.org/ns/auth/cert#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:dctype="http://purl.org/dc/dcmitype/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:frapo="http://purl.org/cerif/frapo/"
+  xmlns:org="http://www.w3.org/ns/org#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prism="http://prismstandard.org/namespaces/basic/2.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rec="http://www.w3.org/2001/02pd/rec54#"
+  xmlns:rsa="http://www.w3.org/ns/auth/rsa#"
+  xmlns:scoro="http://purl.org/spar/scoro/"
+  xmlns:skos="http://www.w3.org/2008/05/skos#"
+  xmlns:swrc="http://swrc.ontoware.org/ontology#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns="https://andrea-perego.name/foaf/"
+  xml:base="https://andrea-perego.name/foaf/"
+  xml:lang="en">
+
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="#me" />
+    <foaf:primaryTopic rdf:resource="#me" />
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:ID="me">
+    <foaf:name>Andrea Perego</foaf:name>
+    <foaf:givenName>Andrea</foaf:givenName>
+    <foaf:familyName>Perego</foaf:familyName>
+    <foaf:firstName>Andrea</foaf:firstName>
+    <foaf:lastName>Perego</foaf:lastName>
+    <foaf:img rdf:resource="https://andrea-perego.name/img/andrea-perego.jpg" />
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">ad404fa85bae6df808e3e660fd866f5fe00c8fba</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">66593dbfe753c7af09893fda905240c010f3f2d7</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">8b38f26562da4fac2b9b23d74fdbd5d7e5f4c906</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">7e2a73cdeba8a2a012db75db69d5e49999b27567</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">094d8b40698a068964459180e941688ddc8c4726</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">6e5e88100e8edcd9332e23766e18c0a2d9b5f65b</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">9c53423a37bffefdcce90195b9ca6efae761dc7d</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">0d9944467aaf37b188bdb24a474e4772f7d5440b</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">d2dca0d32105be2f608cf25f2f3a0a4613fb38e4</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum rdf:datatype="http://www.w3.org/2001/XMLSchema#base64binary">6a143a28997f31ba614ff2fe221e62893a2b84b2</foaf:mbox_sha1sum>
+    <foaf:homepage rdf:resource="https://andrea-perego.name" />
+    <foaf:workplaceHomePage rdf:resource="https://europarl.europa.eu/" />
+    <foaf:publications rdf:resource="https://andrea-perego.name#publications" />
+    <foaf:publications rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/p/Perego:Andrea.html" />
+    <foaf:publications rdf:resource="http://www.sigmod.org/dblp/db/indices/a-tree/p/Perego:Andrea.html" />
+    <foaf:publications rdf:resource="http://dblp.uni-trier.de/pers/hd/p/Perego:Andrea" />
+    <foaf:account rdf:resource="https://about.me/andrea.perego" />
+    <foaf:account rdf:resource="https://www.linkedin.com/in/aperego" />
+    <foaf:account rdf:resource="https://twitter.com/AndreaPere9o" />
+    <foaf:account rdf:resource="https://github.com/andrea-perego" />
+    <foaf:account rdf:resource="https://scholar.google.com/citations?user=LsSVOBEAAAAJ" />
+    <foaf:account rdf:resource="https://www.researchgate.net/profile/Andrea_Perego" />
+    <foaf:account rdf:resource="https://ep.academia.edu/AndreaPerego" />
+    <foaf:account rdf:resource="https://en.gravatar.com/aperego" />
+    <foaf:account rdf:resource="https://dl.acm.org/profile/81310486747" />
+    <foaf:account rdf:resource="https://rd-alliance.org/users/andreaperego" />
+    <foaf:account rdf:resource="https://joinup.ec.europa.eu/people/14209" />
+    <foaf:knows rdf:resource="#albertonir" />
+    <foaf:knows rdf:resource="#annonia" />
+    <foaf:knows rdf:resource="#archerp" />
+    <foaf:knows rdf:resource="#atemezingg" />
+    <foaf:knows rdf:resource="#atkinsonr" />
+    <foaf:knows rdf:resource="#austint" />
+    <foaf:knows rdf:resource="#bailly-salinst" />
+    <foaf:knows rdf:resource="#barnaghip" />
+    <foaf:knows rdf:resource="#bertinoe" />
+    <foaf:knows rdf:resource="#boguslawskir" />
+    <foaf:knows rdf:resource="#bolls" />
+    <foaf:knows rdf:resource="#bonatof" />
+    <foaf:knows rdf:resource="#borzacchiellomt" />
+    <foaf:knows rdf:resource="#browningd" />
+    <foaf:knows rdf:resource="#carminatib" />
+    <foaf:knows rdf:resource="#cetlv" />
+    <foaf:knows rdf:resource="#charvatk" />
+    <foaf:knows rdf:resource="#christodoulakiss" />
+    <foaf:knows rdf:resource="#cochraneb" />
+    <foaf:knows rdf:resource="#coxs" />
+    <foaf:knows rdf:resource="#dalla-costas" />
+    <foaf:knows rdf:resource="#dallabenettaa" />
+    <foaf:knows rdf:resource="#dekkersm" />
+    <foaf:knows rdf:resource="#delathouwerb" />
+    <foaf:knows rdf:resource="#divotkeyd" />
+    <foaf:knows rdf:resource="#doldirinac" />
+    <foaf:knows rdf:resource="#eidenbergerh" />
+    <foaf:knows rdf:resource="#fathyy" />
+    <foaf:knows rdf:resource="#ferrarie" />
+    <foaf:knows rdf:resource="#fornej" />
+    <foaf:knows rdf:resource="#friis-christensena" />
+    <foaf:knows rdf:resource="#fugazzac" />
+    <foaf:knows rdf:resource="#garcia-castror" />
+    <foaf:knows rdf:resource="#gentiles" />
+    <foaf:knows rdf:resource="#goedertiers" />
+    <foaf:knows rdf:resource="#gonzaleza" />
+    <foaf:knows rdf:resource="#granell-canutc" />
+    <foaf:knows rdf:resource="#hallera" />
+    <foaf:knows rdf:resource="#hardym" />
+    <foaf:knows rdf:resource="#hartha" />
+    <foaf:knows rdf:resource="#janowiczk" />
+    <foaf:knows rdf:resource="#kafkas" />
+    <foaf:knows rdf:resource="#kanellopoulosi" />
+    <foaf:knows rdf:resource="#karkaletsisv" />
+    <foaf:knows rdf:resource="#kolozalis" />
+    <foaf:knows rdf:resource="#konstantopouloss" />
+    <foaf:knows rdf:resource="#kotseva" />
+    <foaf:knows rdf:resource="#koukourikosa" />
+    <foaf:knows rdf:resource="#le-phuocd" />
+    <foaf:knows rdf:resource="#lefrancoism" />
+    <foaf:knows rdf:resource="#leopoldk" />
+    <foaf:knows rdf:resource="#liebermanj" />
+    <foaf:knows rdf:resource="#lindnerw" />
+    <foaf:knows rdf:resource="#lutzm" />
+    <foaf:knows rdf:resource="#martina" />
+    <foaf:knows rdf:resource="#massimoc" />
+    <foaf:knows rdf:resource="#nasikasp" />
+    <foaf:knows rdf:resource="#nativis" />
+    <foaf:knows rdf:resource="#nicholsonn" />
+    <foaf:knows rdf:resource="#olijslagersm" />
+    <foaf:knows rdf:resource="#ostlaendern" />
+    <foaf:knows rdf:resource="#parra-arnauj" />
+    <foaf:knows rdf:resource="#pogorzelskak" />
+    <foaf:knows rdf:resource="#polydorosp" />
+    <foaf:knows rdf:resource="#raesl" />
+    <foaf:knows rdf:resource="#rebollo-monederod" />
+    <foaf:knows rdf:resource="#reznikt" />
+    <foaf:knows rdf:resource="#robertsb" />
+    <foaf:knows rdf:resource="#rosed" />
+    <foaf:knows rdf:resource="#rotundoa" />
+    <foaf:knows rdf:resource="#santid" />
+    <foaf:knows rdf:resource="#schades" />
+    <foaf:knows rdf:resource="#scherpa" />
+    <foaf:knows rdf:resource="#scudop" />
+    <foaf:knows rdf:resource="#smithk" />
+    <foaf:knows rdf:resource="#smithr" />
+    <foaf:knows rdf:resource="#smitsp" />
+    <foaf:knows rdf:resource="#stamatakisk" />
+    <foaf:knows rdf:resource="#stotta" />
+    <foaf:knows rdf:resource="#syntzanakia" />
+    <foaf:knows rdf:resource="#tandyj" />
+    <foaf:knows rdf:resource="#tartagliag" />
+    <foaf:knows rdf:resource="#taylork" />
+    <foaf:knows rdf:resource="#triaillejp" />
+    <foaf:knows rdf:resource="#troncyr" />
+    <foaf:knows rdf:resource="#tsinarakic" />
+    <foaf:knows rdf:resource="#vaccaril" />
+    <foaf:knows rdf:resource="#vakalisi" />
+    <foaf:knows rdf:resource="#van-den-brinkl" />
+    <foaf:knows rdf:resource="#van-leeuwenb" />
+    <foaf:knows rdf:resource="#vandenbroucked" />
+    <foaf:knows rdf:resource="#vannuffelenb" />
+    <foaf:knows rdf:resource="#winstanleyp" />
+    <foaf:knows rdf:resource="#zarrigp" />
+    <foaf:pastProject rdf:resource="#quatroplus"/>
+    <foaf:pastProject rdf:resource="#quatro"/>
+    <foaf:pastProject rdf:resource="#delos"/>
+    <foaf:pastProject rdf:resource="#dhx"/>
+    <foaf:pastProject rdf:resource="#euforbia"/>
+    <foaf:made rdf:resource="https://andrea-perego.name" />
+    <foaf:made rdf:resource="http://www.dicom.uninsubria.it/dawsec/" />
+    <foaf:made rdf:resource="http://dawsec.dicom.uninsubria.it/andrea/ppp/" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/dbandsec/quatro/" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/dbandsec/spadaweb/" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/fisu/" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/ftca/" />
+    <foaf:made rdf:resource="http://www.filosofia.unimi.it/itinera/" />
+    <foaf:made rdf:resource="http://dawsec.dicom.uninsubria.it/andrea/ppp/http/" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/dbandsec/quatro/sw/viq/viq.xpi" />
+    <foaf:made rdf:resource="http://homes.dico.unimi.it/dbandsec/quatro/sw/ladi/ladi.src" />
+    <foaf:made rdf:resource="https://github.com/andrea-perego/geoiri" />
+    <foaf:made rdf:resource="https://github.com/ec-jrc/datacite-to-dcat-ap" />
+    <foaf:made rdf:resource="https://github.com/SEMICeu/dcat-ap-rdf2html" />
+    <foaf:made rdf:resource="https://github.com/ec-jrc/dcat-ap-to-schema-org" />
+    <foaf:made rdf:resource="https://github.com/SEMICeu/iso-19139-to-dcat-ap" />
+    <foaf:made rdf:resource="https://github.com/SEMICeu/locn-mapping" />
+    <foaf:made rdf:resource="https://github.com/SEMICeu/epsg-to-rdf" />
+    <foaf:made rdf:resource="https://github.com/SEMICeu/csw-4-web" />
+    <foaf:made rdf:resource="https://andrea-perego.name/powder.xml" />
+    <owl:sameAs rdf:resource="https://publons.com/researcher/H-3484-2011/"/>
+    <rdfs:seeAlso rdf:resource="https://publons.com/researcher/H-3484-2011/"/>
+    <owl:sameAs rdf:resource="https://publons.com/researcher/2766798/"/>
+    <rdfs:seeAlso rdf:resource="https://publons.com/researcher/2766798/"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+    <owl:sameAs rdf:resource="https://www.scopus.com/authid/detail.url?authorId=8857127500"/>
+    <rdfs:seeAlso rdf:resource="https://www.scopus.com/authid/detail.url?authorId=8857127500"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="albertonir">
+    <foaf:name>Riccardo Albertoni</foaf:name>
+    <foaf:givenName>Riccardo</foaf:givenName>
+    <foaf:familyName>Albertoni</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="annonia">
+    <foaf:name>Alessandro Annoni</foaf:name>
+    <foaf:givenName>Alessandro</foaf:givenName>
+    <foaf:familyName>Annoni</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="archerp">
+    <foaf:name>Phil Archer</foaf:name>
+    <foaf:givenName>Phil</foaf:givenName>
+    <foaf:familyName>Archer</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="atemezingg">
+    <foaf:name>Ghislain Atemezing</foaf:name>
+    <foaf:givenName>Ghislain</foaf:givenName>
+    <foaf:familyName>Atemezing</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="atkinsonr">
+    <foaf:name>Rob Atkinson</foaf:name>
+    <foaf:givenName>Rob</foaf:givenName>
+    <foaf:familyName>Atkinson</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="austint">
+    <foaf:name>Timothy Austin</foaf:name>
+    <foaf:givenName>Timothy</foaf:givenName>
+    <foaf:familyName>Austin</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="bailly-salinst">
+    <foaf:name>Tom Bailly-Salins</foaf:name>
+    <foaf:givenName>Tom</foaf:givenName>
+    <foaf:familyName>Bailly-Salins</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="barnaghip">
+    <foaf:name>Payam Barnaghi</foaf:name>
+    <foaf:givenName>Payam</foaf:givenName>
+    <foaf:familyName>Barnaghi</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-8591-9638"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-8591-9638"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="bertinoe">
+    <foaf:name>Elisa Bertino</foaf:name>
+    <foaf:givenName>Elisa</foaf:givenName>
+    <foaf:familyName>Bertino</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="boguslawskir">
+    <foaf:name>Raymond Boguslawski</foaf:name>
+    <foaf:givenName>Raymond</foaf:givenName>
+    <foaf:familyName>Boguslawski</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="bolls">
+    <foaf:name>Susanne Boll</foaf:name>
+    <foaf:givenName>Susanne</foaf:givenName>
+    <foaf:familyName>Boll</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="bonatof">
+    <foaf:name>Fabrizio Bonato</foaf:name>
+    <foaf:givenName>Fabrizio</foaf:givenName>
+    <foaf:familyName>Bonato</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="borzacchiellomt">
+    <foaf:name>Maria Teresa Borzacchiello</foaf:name>
+    <foaf:givenName>Maria Teresa</foaf:givenName>
+    <foaf:familyName>Borzacchiello</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="browningd">
+    <foaf:name>David Browning</foaf:name>
+    <foaf:givenName>David</foaf:givenName>
+    <foaf:familyName>Browning</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="carminatib">
+    <foaf:name>Barbara Carminati</foaf:name>
+    <foaf:givenName>Barbara</foaf:givenName>
+    <foaf:familyName>Carminati</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="cetlv">
+    <foaf:name>Vlado Cetl</foaf:name>
+    <foaf:givenName>Vlado</foaf:givenName>
+    <foaf:familyName>Cetl</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-1835-5777"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-1835-5777"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="charvatk">
+    <foaf:name>Karel Charvát</foaf:name>
+    <foaf:givenName>Karel</foaf:givenName>
+    <foaf:familyName>Charvát</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-7678-8437"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-7678-8437"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="christodoulakiss">
+    <foaf:name>Stavros Christodoulakis</foaf:name>
+    <foaf:givenName>Stavros</foaf:givenName>
+    <foaf:familyName>Christodoulakis</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="cochraneb">
+    <foaf:name>Byron Cochrane</foaf:name>
+    <foaf:givenName>Byron</foaf:givenName>
+    <foaf:familyName>Cochrane</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-6388-5481"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-6388-5481"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="coxs">
+    <foaf:name>Simon Cox</foaf:name>
+    <foaf:givenName>Simon</foaf:givenName>
+    <foaf:familyName>Cox</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="dalla-costas">
+    <foaf:name>Silvia Dalla Costa</foaf:name>
+    <foaf:givenName>Silvia</foaf:givenName>
+    <foaf:familyName>Dalla Costa</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="dallabenettaa">
+    <foaf:name>Alessandro Dalla Benetta</foaf:name>
+    <foaf:givenName>Alessandro</foaf:givenName>
+    <foaf:familyName>Dalla Benetta</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="dekkersm">
+    <foaf:name>Makx Dekkers</foaf:name>
+    <foaf:givenName>Makx</foaf:givenName>
+    <foaf:familyName>Dekkers</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-0059-1966"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-0059-1966"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="delathouwerb">
+    <foaf:name>Bart De Lathouwer</foaf:name>
+    <foaf:givenName>Bart</foaf:givenName>
+    <foaf:familyName>De Lathouwer</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="divotkeyd">
+    <foaf:name>Doris Divotkey</foaf:name>
+    <foaf:givenName>Doris</foaf:givenName>
+    <foaf:familyName>Divotkey</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="doldirinac">
+    <foaf:name>Catherine Doldirina</foaf:name>
+    <foaf:givenName>Catherine</foaf:givenName>
+    <foaf:familyName>Doldirina</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="eidenbergerh">
+    <foaf:name>Horst Eidenberger</foaf:name>
+    <foaf:givenName>Horst</foaf:givenName>
+    <foaf:familyName>Eidenberger</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="fathyy">
+    <foaf:name>Yasmin Fathy</foaf:name>
+    <foaf:givenName>Yasmin</foaf:givenName>
+    <foaf:familyName>Fathy</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-7398-5283"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-7398-5283"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="ferrarie">
+    <foaf:name>Elena Ferrari</foaf:name>
+    <foaf:givenName>Elena</foaf:givenName>
+    <foaf:familyName>Ferrari</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="fornej">
+    <foaf:name>Jordi Forné</foaf:name>
+    <foaf:givenName>Jordi</foaf:givenName>
+    <foaf:familyName>Forné</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-8401-3292"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-8401-3292"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="friis-christensena">
+    <foaf:name>Anders Friis-Christensen</foaf:name>
+    <foaf:givenName>Anders</foaf:givenName>
+    <foaf:familyName>Friis-Christensen</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="fugazzac">
+    <foaf:name>Cristiano Fugazza</foaf:name>
+    <foaf:givenName>Cristiano</foaf:givenName>
+    <foaf:familyName>Fugazza</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-2679-4868"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-2679-4868"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="garcia-castror">
+    <foaf:name>Raúl García-Castro</foaf:name>
+    <foaf:givenName>Raúl</foaf:givenName>
+    <foaf:familyName>García-Castro</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="gentiles">
+    <foaf:name>Stefano Gentile</foaf:name>
+    <foaf:givenName>Stefano</foaf:givenName>
+    <foaf:familyName>Gentile</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="goedertiers">
+    <foaf:name>Stijn Goedertier</foaf:name>
+    <foaf:givenName>Stijn</foaf:givenName>
+    <foaf:familyName>Goedertier</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="gonzaleza">
+    <foaf:name>Alejandra Gonzalez Beltran</foaf:name>
+    <foaf:givenName>Alejandra</foaf:givenName>
+    <foaf:familyName>Gonzalez Beltran</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="granell-canutc">
+    <foaf:name>Carlos Granell Canut</foaf:name>
+    <foaf:givenName>Carlos</foaf:givenName>
+    <foaf:familyName>Granell Canut</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-1004-9695"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-1004-9695"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="hallera">
+    <foaf:name>Armin Haller</foaf:name>
+    <foaf:givenName>Armin</foaf:givenName>
+    <foaf:familyName>Haller</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3425-0780"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-3425-0780"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="hardym">
+    <foaf:name>Matthew Hardy</foaf:name>
+    <foaf:givenName>Matthew</foaf:givenName>
+    <foaf:familyName>Hardy</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="hartha">
+    <foaf:name>Andreas Harth</foaf:name>
+    <foaf:givenName>Andreas</foaf:givenName>
+    <foaf:familyName>Harth</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-0702-510X"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-0702-510X"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="janowiczk">
+    <foaf:name>Krzysztof Janowicz</foaf:name>
+    <foaf:givenName>Krzysztof</foaf:givenName>
+    <foaf:familyName>Janowicz</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kafkas">
+    <foaf:name>Štěpán Kafka</foaf:name>
+    <foaf:givenName>Štěpán</foaf:givenName>
+    <foaf:familyName>Kafka</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kanellopoulosi">
+    <foaf:name>Ioannis Kanellopoulos</foaf:name>
+    <foaf:givenName>Ioannis</foaf:givenName>
+    <foaf:familyName>Kanellopoulos</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="karkaletsisv">
+    <foaf:name>Vangelis Karkaletsis</foaf:name>
+    <foaf:givenName>Vangelis</foaf:givenName>
+    <foaf:familyName>Karkaletsis</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kolozalis">
+    <foaf:name>Şefki Kolozali</foaf:name>
+    <foaf:givenName>Şefki</foaf:givenName>
+    <foaf:familyName>Kolozali</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="konstantopouloss">
+    <foaf:name>Stasinos Konstantopoulos</foaf:name>
+    <foaf:givenName>Stasinos</foaf:givenName>
+    <foaf:familyName>Konstantopoulos</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="kotseva">
+    <foaf:name>Alexander Kotsev</foaf:name>
+    <foaf:givenName>Alexander</foaf:givenName>
+    <foaf:familyName>Kotsev</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-0411-741X"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-0411-741X"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="koukourikosa">
+    <foaf:name>Antonis Koukourikos</foaf:name>
+    <foaf:givenName>Antonis</foaf:givenName>
+    <foaf:familyName>Koukourikos</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="le-phuocd">
+    <foaf:name>Danh Le Phuoc</foaf:name>
+    <foaf:givenName>Danh</foaf:givenName>
+    <foaf:familyName>Le Phuoc</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-2480-9261"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-2480-9261"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="lefrancoism">
+    <foaf:name>Maxime Lefrançois</foaf:name>
+    <foaf:givenName>Maxime</foaf:givenName>
+    <foaf:familyName>Lefrançois</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="leopoldk">
+    <foaf:name>Klaus Leopold</foaf:name>
+    <foaf:givenName>Klaus</foaf:givenName>
+    <foaf:familyName>Leopold</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="liebermanj">
+    <foaf:name>Josh Lieberman</foaf:name>
+    <foaf:givenName>Josh</foaf:givenName>
+    <foaf:familyName>Lieberman</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="lindnerw">
+    <foaf:name>Wolfgang Lindner</foaf:name>
+    <foaf:givenName>Wolfgang</foaf:givenName>
+    <foaf:familyName>Lindner</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="lutzm">
+    <foaf:name>Michael Lutz</foaf:name>
+    <foaf:givenName>Michael</foaf:givenName>
+    <foaf:familyName>Lutz</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="martina">
+    <foaf:name>Alessandro Martin</foaf:name>
+    <foaf:givenName>Alessandro</foaf:givenName>
+    <foaf:familyName>Martin</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="massimoc">
+    <foaf:name> </foaf:name>
+    <foaf:givenName></foaf:givenName>
+    <foaf:familyName></foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="nasikasp">
+    <foaf:name>Pantelis Nasikas</foaf:name>
+    <foaf:givenName>Pantelis</foaf:givenName>
+    <foaf:familyName>Nasikas</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="nativis">
+    <foaf:name>Stefano Nativi</foaf:name>
+    <foaf:givenName>Stefano</foaf:givenName>
+    <foaf:familyName>Nativi</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3185-8539"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-3185-8539"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="nicholsonn">
+    <foaf:name>Nicholas Nicholson</foaf:name>
+    <foaf:givenName>Nicholas</foaf:givenName>
+    <foaf:familyName>Nicholson</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-1149-1426"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-1149-1426"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="olijslagersm">
+    <foaf:name>Marc Olijslagers</foaf:name>
+    <foaf:givenName>Marc</foaf:givenName>
+    <foaf:familyName>Olijslagers</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="ostlaendern">
+    <foaf:name>Nicole Ostländer</foaf:name>
+    <foaf:givenName>Nicole</foaf:givenName>
+    <foaf:familyName>Ostländer</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="parra-arnauj">
+    <foaf:name>Javier Parra-Arnau</foaf:name>
+    <foaf:givenName>Javier</foaf:givenName>
+    <foaf:familyName>Parra-Arnau</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-1772-1088"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-1772-1088"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="pogorzelskak">
+    <foaf:name>Katarzyna Pogorzelska</foaf:name>
+    <foaf:givenName>Katarzyna</foaf:givenName>
+    <foaf:familyName>Pogorzelska</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="polydorosp">
+    <foaf:name>Panagiotis Polydoros</foaf:name>
+    <foaf:givenName>Panagiotis</foaf:givenName>
+    <foaf:familyName>Polydoros</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="raesl">
+    <foaf:name>Lieven Raes</foaf:name>
+    <foaf:givenName>Lieven</foaf:givenName>
+    <foaf:familyName>Raes</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9284-462X"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-9284-462X"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="rebollo-monederod">
+    <foaf:name>David Rebollo-Monedero</foaf:name>
+    <foaf:givenName>David</foaf:givenName>
+    <foaf:familyName>Rebollo-Monedero</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-0783-2382"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-0783-2382"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="reznikt">
+    <foaf:name>Tomáš Řezník</foaf:name>
+    <foaf:givenName>Tomáš</foaf:givenName>
+    <foaf:familyName>Řezník</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-7331-9686"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-7331-9686"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="robertsb">
+    <foaf:name>Bill Roberts</foaf:name>
+    <foaf:givenName>Bill</foaf:givenName>
+    <foaf:familyName>Roberts</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="rosed">
+    <foaf:name>David Rose</foaf:name>
+    <foaf:givenName>David</foaf:givenName>
+    <foaf:familyName>Rose</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="rotundoa">
+    <foaf:name>Antonio Rotundo</foaf:name>
+    <foaf:givenName>Antonio</foaf:givenName>
+    <foaf:familyName>Rotundo</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="santid">
+    <foaf:name>Diego Santi</foaf:name>
+    <foaf:givenName>Diego</foaf:givenName>
+    <foaf:familyName>Santi</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="schades">
+    <foaf:name>Sven Schade</foaf:name>
+    <foaf:givenName>Sven</foaf:givenName>
+    <foaf:familyName>Schade</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5677-5209"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-5677-5209"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="scherpa">
+    <foaf:name>Ansgar Scherp</foaf:name>
+    <foaf:givenName>Ansgar</foaf:givenName>
+    <foaf:familyName>Scherp</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-2653-9245"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-2653-9245"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="scudop">
+    <foaf:name>Petra Scudo</foaf:name>
+    <foaf:givenName>Petra</foaf:givenName>
+    <foaf:familyName>Scudo</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-9757-3053"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-9757-3053"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="smithk">
+    <foaf:name>Kevin Smith</foaf:name>
+    <foaf:givenName>Kevin</foaf:givenName>
+    <foaf:familyName>Smith</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="smithr">
+    <foaf:name>Robin Smith</foaf:name>
+    <foaf:givenName>Robin</foaf:givenName>
+    <foaf:familyName>Smith</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="smitsp">
+    <foaf:name>Paul C. Smits</foaf:name>
+    <foaf:givenName>Paul C.</foaf:givenName>
+    <foaf:familyName>Smits</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="stamatakisk">
+    <foaf:name>Kostas Stamatakis</foaf:name>
+    <foaf:givenName>Kostas</foaf:givenName>
+    <foaf:familyName>Stamatakis</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="stotta">
+    <foaf:name>Andrew Stott</foaf:name>
+    <foaf:givenName>Andrew</foaf:givenName>
+    <foaf:familyName>Stott</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="syntzanakia">
+    <foaf:name>Athina Syntzanaki</foaf:name>
+    <foaf:givenName>Athina</foaf:givenName>
+    <foaf:familyName>Syntzanaki</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="tandyj">
+    <foaf:name>Jeremy Tandy</foaf:name>
+    <foaf:givenName>Jeremy</foaf:givenName>
+    <foaf:familyName>Tandy</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="tartagliag">
+    <foaf:name>Giacinto Tartaglia</foaf:name>
+    <foaf:givenName>Giacinto</foaf:givenName>
+    <foaf:familyName>Tartaglia</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="taylork">
+    <foaf:name>Kerry Taylor</foaf:name>
+    <foaf:givenName>Kerry</foaf:givenName>
+    <foaf:familyName>Taylor</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-2447-1088"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-2447-1088"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="triaillejp">
+    <foaf:name>Jean-Paul Triaille</foaf:name>
+    <foaf:givenName>Jean-Paul</foaf:givenName>
+    <foaf:familyName>Triaille</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="troncyr">
+    <foaf:name>Raphaël Troncy</foaf:name>
+    <foaf:givenName>Raphaël</foaf:givenName>
+    <foaf:familyName>Troncy</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-0457-1436"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0003-0457-1436"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="tsinarakic">
+    <foaf:name>Chrisa Tsinaraki</foaf:name>
+    <foaf:givenName>Chrisa</foaf:givenName>
+    <foaf:familyName>Tsinaraki</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-6012-0835"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-6012-0835"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="vaccaril">
+    <foaf:name>Lorenzino Vaccari</foaf:name>
+    <foaf:givenName>Lorenzino</foaf:givenName>
+    <foaf:familyName>Vaccari</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-0526-0755"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-0526-0755"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="vakalisi">
+    <foaf:name>Ioannis Vakalis</foaf:name>
+    <foaf:givenName>Ioannis</foaf:givenName>
+    <foaf:familyName>Vakalis</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="van-den-brinkl">
+    <foaf:name>Linda van den Brink</foaf:name>
+    <foaf:givenName>Linda</foaf:givenName>
+    <foaf:familyName>van den Brink</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="van-leeuwenb">
+    <foaf:name>Bart van Leeuwen</foaf:name>
+    <foaf:givenName>Bart</foaf:givenName>
+    <foaf:familyName>van Leeuwen</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="vandenbroucked">
+    <foaf:name>Danny Vandenbroucke</foaf:name>
+    <foaf:givenName>Danny</foaf:givenName>
+    <foaf:familyName>Vandenbroucke</foaf:familyName>
+    <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-6087-7048"/>
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-6087-7048"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="vannuffelenb">
+    <foaf:name> </foaf:name>
+    <foaf:givenName></foaf:givenName>
+    <foaf:familyName></foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="winstanleyp">
+    <foaf:name>Peter Winstanley</foaf:name>
+    <foaf:givenName>Peter</foaf:givenName>
+    <foaf:familyName>Winstanley</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Person rdf:ID="zarrigp">
+    <foaf:name>Gian Piero Zarri</foaf:name>
+    <foaf:givenName>Gian Piero</foaf:givenName>
+    <foaf:familyName>Zarri</foaf:familyName>
+  </foaf:Person>
+
+  <foaf:Group rdf:ID="sdwig">
+    <foaf:homepage rdf:resource="https://www.w3.org/2017/sdwig/"/>
+    <foaf:name>Spatial Data on the Web IG</foaf:name>
+    <dct:alternative>SDWIG</dct:alternative>
+    <rdfs:label xml:lang="en">Spatial Data on the Web IG</rdfs:label>
+    <dct:title xml:lang="en">Spatial Data on the Web IG</dct:title>
+    <rdfs:comment xml:lang="en">The mission of the Spatial Data on the Web Interest Group is to develop and maintain vocabularies and best practices that encourage better sharing of spatial data on the Web; and identify areas where standards should be developed jointly by both W3C and the Open Geospatial Consortium (OGC).</rdfs:comment>
+    <dct:description xml:lang="en">The mission of the Spatial Data on the Web Interest Group is to develop and maintain vocabularies and best practices that encourage better sharing of spatial data on the Web; and identify areas where standards should be developed jointly by both W3C and the Open Geospatial Consortium (OGC).</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="https://www.w3.org/"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="dxwg">
+    <foaf:homepage rdf:resource="https://www.w3.org/2017/dxwg/"/>
+    <foaf:name>Dataset Exchange WG</foaf:name>
+    <dct:alternative>DXWG</dct:alternative>
+    <rdfs:label xml:lang="en">Dataset Exchange WG</rdfs:label>
+    <dct:title xml:lang="en">Dataset Exchange WG</dct:title>
+    <rdfs:comment xml:lang="en">The Dataset Exchange Working Group aims to extend the existing DCAT standard in line with wider practice but also to recognise and support diverse approaches to data description and Dataset Exchange more generally.</rdfs:comment>
+    <dct:description xml:lang="en">The Dataset Exchange Working Group aims to extend the existing DCAT standard in line with wider practice but also to recognise and support diverse approaches to data description and Dataset Exchange more generally.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="https://www.w3.org/"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="sdw">
+    <foaf:homepage rdf:resource="https://www.w3.org/2015/spatial/"/>
+    <foaf:name>Spatial Data on the Web WG</foaf:name>
+    <dct:alternative>SDW</dct:alternative>
+    <rdfs:label xml:lang="en">Spatial Data on the Web WG</rdfs:label>
+    <dct:title xml:lang="en">Spatial Data on the Web WG</dct:title>
+    <rdfs:comment xml:lang="en">The Spatial Data on the Web Working Group is a joint initiative of W3C and OGC, aiming at bridging the geospatial and Web platforms, and facilitating the publication and use of spatial data on the Web.</rdfs:comment>
+    <dct:description xml:lang="en">The Spatial Data on the Web Working Group is a joint initiative of W3C and OGC, aiming at bridging the geospatial and Web platforms, and facilitating the publication and use of spatial data on the Web.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="https://www.w3.org/"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="geodcat-ap">
+    <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/node/139283"/>
+    <foaf:name>GeoDCAT-AP</foaf:name>
+    <dct:alternative>GeoDCAT-AP</dct:alternative>
+    <rdfs:label xml:lang="en">GeoDCAT-AP</rdfs:label>
+    <dct:title xml:lang="en">GeoDCAT-AP</dct:title>
+    <rdfs:comment xml:lang="en">The objective of the GeoDCAT-AP Working Group is to define an RDF syntax that can be used for the exchange of descriptions of spatial datasets among data portals. The RDF syntax should extend the DCAT Application Profile for data portals in Europe (DCAT-AP), to model metadata elements defined in the core profile of ISO 19115 and in the INSPIRE specifications.</rdfs:comment>
+    <dct:description xml:lang="en">The objective of the GeoDCAT-AP Working Group is to define an RDF syntax that can be used for the exchange of descriptions of spatial datasets among data portals. The RDF syntax should extend the DCAT Application Profile for data portals in Europe (DCAT-AP), to model metadata elements defined in the core profile of ISO 19115 and in the INSPIRE specifications.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/eu-programme/ISA2015"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="dcat-ap">
+    <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/asset/dcat_application_profile/"/>
+    <foaf:name>DCAT Application Profile for European Data Portals</foaf:name>
+    <dct:alternative>DCAT-AP</dct:alternative>
+    <rdfs:label xml:lang="en">DCAT Application Profile for European Data Portals</rdfs:label>
+    <dct:title xml:lang="en">DCAT Application Profile for European Data Portals</dct:title>
+    <rdfs:comment xml:lang="en">The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalogue vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of datasets among data portals.</rdfs:comment>
+    <dct:description xml:lang="en">The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalogue vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of datasets among data portals.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/eu-programme/ISA2015"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="clv">
+    <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/asset/core_location/"/>
+    <foaf:name>Core Location Vocabulary</foaf:name>
+    <dct:alternative>CLV</dct:alternative>
+    <rdfs:label xml:lang="en">Core Location Vocabulary</rdfs:label>
+    <dct:title xml:lang="en">Core Location Vocabulary</dct:title>
+    <rdfs:comment xml:lang="en">The Core Location Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of a location, represented as an address, a geographic name, or a geometry.</rdfs:comment>
+    <dct:description xml:lang="en">The Core Location Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of a location, represented as an address, a geographic name, or a geometry.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/eu-programme/ISA2015"/>
+  </foaf:Group>
+
+  <foaf:Group rdf:ID="adms">
+    <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/asset/adms/"/>
+    <foaf:name>Asset Description Metadata Schema</foaf:name>
+    <dct:alternative>ADMS</dct:alternative>
+    <rdfs:label xml:lang="en">Asset Description Metadata Schema</rdfs:label>
+    <dct:title xml:lang="en">Asset Description Metadata Schema</dct:title>
+    <rdfs:comment xml:lang="en">The Asset Description Metadata Schema (ADMS) is a vocabulary to describe interoperability assets making it possible for ICT developers to explore and search for interoperability assets.</rdfs:comment>
+    <dct:description xml:lang="en">The Asset Description Metadata Schema (ADMS) is a vocabulary to describe interoperability assets making it possible for ICT developers to explore and search for interoperability assets.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/eu-programme/ISA2015"/>
+  </foaf:Group>
+
+  <foaf:Project rdf:ID="quatroplus">
+    <frapo:isFundedBy rdf:resource="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=URISERV:l24190b"/>
+    <foaf:homepage rdf:resource="http://www.quatro-project.org/"/>
+    <foaf:name>Content Labels for User Empowerment</foaf:name>
+    <dct:alternative>QUATRO Plus</dct:alternative>
+    <rdfs:label xml:lang="en">Content Labels for User Empowerment</rdfs:label>
+    <dct:title xml:lang="en">Content Labels for User Empowerment</dct:title>
+    <rdfs:comment xml:lang="en">This project starts from the results of the QUATRO project in order to build a more extended platform for Web quality assurance, based on the specifications released by the POWDER WG, and including social networking and collaborative rating of Web resources and content/quality labels released by third-parties.</rdfs:comment>
+    <dct:description xml:lang="en">This project starts from the results of the QUATRO project in order to build a more extended platform for Web quality assurance, based on the specifications released by the POWDER WG, and including social networking and collaborative rating of Web resources and content/quality labels released by third-parties.</dct:description>
+  </foaf:Project>
+
+  <foaf:Group rdf:ID="powder">
+    <foaf:homepage rdf:resource="https://www.w3.org/2007/powder/"/>
+    <foaf:name>Protocol for Web Description Resources</foaf:name>
+    <dct:alternative>POWDER</dct:alternative>
+    <rdfs:label xml:lang="en">Protocol for Web Description Resources</rdfs:label>
+    <dct:title xml:lang="en">Protocol for Web Description Resources</dct:title>
+    <rdfs:comment xml:lang="en">The POWDER Working Group aims at developing a mechanism through which structured metadata (“Description Resources”) can be authenticated and applied to groups of Web resources.</rdfs:comment>
+    <dct:description xml:lang="en">The POWDER Working Group aims at developing a mechanism through which structured metadata (“Description Resources”) can be authenticated and applied to groups of Web resources.</dct:description>
+    <foaf:member rdf:resource="#me"/>
+    <org:memberOf rdf:resource="https://www.w3.org/"/>
+  </foaf:Group>
+
+  <foaf:Project rdf:ID="quatro">
+    <frapo:isFundedBy rdf:resource="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=URISERV:l24190"/>
+    <foaf:homepage rdf:resource="http://www.quatro-project.org/"/>
+    <foaf:name>Quality Assurance and Content Description</foaf:name>
+    <dct:alternative>QUATRO</dct:alternative>
+    <rdfs:label xml:lang="en">Quality Assurance and Content Description</rdfs:label>
+    <dct:title xml:lang="en">Quality Assurance and Content Description</dct:title>
+    <rdfs:comment xml:lang="en">The project aims at providing a common platform for quality labels making it possible for the many existing labelling schemes to be brought together through a single, coherent approach without affecting an individual scheme's assessment criteria or independence. The platform will support i) easy, flexible routes for content providers to add quality labels to their sites that are both ‘visible’ to humans and machines, ii) automatic validation of quality labels against a label operator's database, and iii) real-time probabilistic label verification. As well, the proposed platform will have direct applicability to content descriptions, classification and so-called “discovery metadata.”</rdfs:comment>
+    <dct:description xml:lang="en">The project aims at providing a common platform for quality labels making it possible for the many existing labelling schemes to be brought together through a single, coherent approach without affecting an individual scheme's assessment criteria or independence. The platform will support i) easy, flexible routes for content providers to add quality labels to their sites that are both ‘visible’ to humans and machines, ii) automatic validation of quality labels against a label operator's database, and iii) real-time probabilistic label verification. As well, the proposed platform will have direct applicability to content descriptions, classification and so-called “discovery metadata.”</dct:description>
+  </foaf:Project>
+
+  <foaf:Project rdf:ID="delos">
+    <owl:sameAs rdf:resource="http://cordis.europa.eu/project/rcn/71130"/>
+    <frapo:isFundedBy rdf:resource="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=uriserv:i23012"/>
+    <foaf:homepage rdf:resource="http://www.delos.info/"/>
+    <foaf:name>Network of Excellence on Digital Libraries</foaf:name>
+    <dct:alternative>DELOS</dct:alternative>
+    <rdfs:label xml:lang="en">Network of Excellence on Digital Libraries</rdfs:label>
+    <dct:title xml:lang="en">Network of Excellence on Digital Libraries</dct:title>
+    <rdfs:comment xml:lang="en">The DELOS network intends to conduct a joint program of activities aimed at integrating and coordinating the ongoing research activities of the major European teams working in digital library (DL) related areas with the goal of developing the next generation DL technologies. The objective is to a) define unifying and comprehensive theories and frameworks over the life-cycle of DL information, and b) build interoperable multimodal/multilingual services and integrated content management ranging from the personal to the global for the special and the general population. The Network aims at developing generic DL technology to be incorporated into industrial-strength DL Management Systems, offering advanced functionality through reliable and extensible services.</rdfs:comment>
+    <dct:description xml:lang="en">The DELOS network intends to conduct a joint program of activities aimed at integrating and coordinating the ongoing research activities of the major European teams working in digital library (DL) related areas with the goal of developing the next generation DL technologies. The objective is to a) define unifying and comprehensive theories and frameworks over the life-cycle of DL information, and b) build interoperable multimodal/multilingual services and integrated content management ranging from the personal to the global for the special and the general population. The Network aims at developing generic DL technology to be incorporated into industrial-strength DL Management Systems, offering advanced functionality through reliable and extensible services.</dct:description>
+  </foaf:Project>
+
+  <foaf:Project rdf:ID="dhx">
+    <owl:sameAs rdf:resource="http://cordis.europa.eu/project/rcn/62733"/>
+    <frapo:isFundedBy rdf:resource="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=uriserv:i23012"/>
+    <foaf:homepage rdf:resource="http://www.eurasian-dhx.org/"/>
+    <foaf:name>Digital Ecological and Artistic Heritage Exchange</foaf:name>
+    <dct:alternative>DHX</dct:alternative>
+    <rdfs:label xml:lang="en">Digital Ecological and Artistic Heritage Exchange</rdfs:label>
+    <dct:title xml:lang="en">Digital Ecological and Artistic Heritage Exchange</dct:title>
+    <rdfs:comment xml:lang="en">The project aims to establish a networked virtual reality infrastructure and content development environment for museums and cyber theatres, for mutual exchange of digital cultural and natural heritage. European and Asian partners are participating for transcontinental shared immersive experience in a global scale using high-bandwidth trans Euro-Asian networks.</rdfs:comment>
+    <dct:description xml:lang="en">The project aims to establish a networked virtual reality infrastructure and content development environment for museums and cyber theatres, for mutual exchange of digital cultural and natural heritage. European and Asian partners are participating for transcontinental shared immersive experience in a global scale using high-bandwidth trans Euro-Asian networks.</dct:description>
+  </foaf:Project>
+
+  <foaf:Project rdf:ID="euforbia">
+    <frapo:isFundedBy rdf:resource="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=URISERV:l24190"/>
+    <foaf:homepage rdf:resource="http://semioweb.msh-paris.fr/euforbia/"/>
+    <foaf:name>Experiments about the Filtering of Internet Documents according to an Unbiased and Semantic-rich Approach</foaf:name>
+    <dct:alternative>EUFORBIA</dct:alternative>
+    <rdfs:label xml:lang="en">Experiments about the Filtering of Internet Documents according to an Unbiased and Semantic-rich Approach</rdfs:label>
+    <dct:title xml:lang="en">Experiments about the Filtering of Internet Documents according to an Unbiased and Semantic-rich Approach</dct:title>
+    <rdfs:comment xml:lang="en">This project aims to demonstrate the possibility of using an unbiased and semantic-rich approach for executing an accurate (rating and) filtering of Internet documents. The principal objective of this project is to contribute to the production and use of new generations of Internet filtering systems, more powerful and flexible than the existing ones, and easier to adapt to cultural, political or religious differences. </rdfs:comment>
+    <dct:description xml:lang="en">This project aims to demonstrate the possibility of using an unbiased and semantic-rich approach for executing an accurate (rating and) filtering of Internet documents. The principal objective of this project is to contribute to the production and use of new generations of Internet filtering systems, more powerful and flexible than the existing ones, and easier to adapt to cultural, political or religious differences. </dct:description>
+  </foaf:Project>
+
+  <rdf:Description rdf:ID="ap:w3c:ABCGPW:2024:1">
+    <bibo:uri rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>W3C Candidate Recommendation</dc:type>
+    <owl:sameAs rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
+    <dct:publisher rdf:resource="https://www.w3.org/"/>
+    <dct:title xml:lang="en">Data Catalog Vocabulary (DCAT) - Version 3</dct:title>
+    <bibo:editor rdf:resource="#albertonir"/>
+    <bibo:editor rdf:resource="#browningd"/>
+    <bibo:editor rdf:resource="#coxs"/>
+    <bibo:editor rdf:resource="#gonzaleza"/>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#winstanleyp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2024-1</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. This document defines the schema and provides examples for its use. DCAT enables a publisher to describe datasets and data services in a catalog using a standard model and vocabulary that facilitates the consumption and aggregation of metadata from multiple catalogs. This can increase the discoverability of datasets and data services. It also makes it possible to have a decentralized approach to publishing data catalogs and makes federated search for datasets across catalogs in multiple sites possible using the same query mechanism and structure. Aggregated DCAT metadata can serve as a manifest file as part of the digital preservation process.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:ABCGPW:2023:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1162/dint_a_00241"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1162/dint_a_00241"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1162/dint_a_00241</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1162/dint_a_00241</bibo:doi>
+    <dct:title xml:lang="en">The W3C Data Catalog Vocabulary, Version 2: Rationale, Design Principles, and Uptake</dct:title>
+    <dct:creator rdf:resource="#albertonir"/>
+    <dct:creator rdf:resource="#browningd"/>
+    <dct:creator rdf:resource="#coxs"/>
+    <dct:creator rdf:resource="#gonzaleza"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#winstanleyp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2023-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#dint">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Data Intelligence</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. Since its first release in 2014 as a W3C Recommendation, DCAT has seen a wide adoption across communities and domains, particularly in conjunction with implementing the FAIR data principles (for findable, accessible, interoperable and reusable data). These implementation experiences, besides demonstrating the fitness of DCAT to meet its intended purpose, helped identify existing issues and gaps. Moreover, over the last few years, additional requirements emerged in data catalogs, given the increasing practice of documenting not only datasets but also data services and APIs. This paper illustrates the new version of DCAT, explaining the rationale behind its main revisions and extensions, based on the collected use cases and requirements, and outlines the issues yet to be addressed in future versions of DCAT.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:ABCGPW:2023:2">
+    <bibo:uri rdf:resource="https://doi.org/10.48550/arXiv.2303.08883"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.48550/arXiv.2303.08883"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.48550/arXiv.2303.08883</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.48550/arXiv.2303.08883</bibo:doi>
+    <dct:title xml:lang="en">The W3C Data Catalog Vocabulary, Version 2: Rationale, Design Principles, and Uptake</dct:title>
+    <dct:creator rdf:resource="#albertonir"/>
+    <dct:creator rdf:resource="#browningd"/>
+    <dct:creator rdf:resource="#coxs"/>
+    <dct:creator rdf:resource="#gonzaleza"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#winstanleyp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2023-3</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#arxiv">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>arXiv</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. Since its first release in 2014 as a W3C Recommendation, DCAT has seen a wide adoption across communities and domains, particularly in conjunction with implementing the FAIR data principles (for findable, accessible, interoperable and reusable data). These implementation experiences, besides demonstrating the fitness of DCAT to meet its intended purpose, helped identify existing issues and gaps. Moreover, over the last few years, additional requirements emerged in data catalogs, given the increasing practice of documenting not only datasets but also data services and APIs. This paper illustrates the new version of DCAT, explaining the rationale behind its main revisions and extensions, based on the collected use cases and requirements, and outlines the issues yet to be addressed in future versions of DCAT.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:RRSDPCK:2022:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1016/j.cageo.2022.105194"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1016/j.cageo.2022.105194"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.cageo.2022.105194</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.cageo.2022.105194</bibo:doi>
+    <dct:title xml:lang="en">Improving the documentation and findability of data services and repositories: A review of (meta)data management approaches</dct:title>
+    <dct:creator rdf:resource="#reznikt"/>
+    <dct:creator rdf:resource="#raesl"/>
+    <dct:creator rdf:resource="#stotta"/>
+    <dct:creator rdf:resource="#delathouwerb"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#charvatk"/>
+    <dct:creator rdf:resource="#kafkas"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2022-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#cageo">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Computers &amp; Geosciences</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">169</bibo:volume>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">This scientific review paper aims at challenging a common point of view on metadata as a necessary evil and something mandatory to the data creating and dataset publishing process. Metadata are instead presented as a crucial element to ensure the findability of data services and repositories. This paper describes a way through four levels of metadata management and publication, from default unstructured data, through schema-based metadata with literal values and/or URIs, towards linked open (meta)data providing explicit linkage between reliable data resources. Such research was conducted within the European Union's project PoliVisu. Special attention is given to the following: (1) guidance on publication aimed at the broad audience of search engine users and (2) the publication of geo (meta)data not only via standard technologies, such as the OGC Catalogue Service for Web and open data portals, but also through leading search engines (that are Schema.org-based).</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:isa:PV:2020:1">
+    <bibo:uri rdf:resource="https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>SEMIC Recommendation</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:title xml:lang="en">GeoDCAT-AP - Version 2. A geospatial extension for the DCAT application profile for data portals in Europe</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#vannuffelenb"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">GeoDCAT-AP is an extension of the “DCAT Application Profile for European Data Portals” (DCAT-AP) for describing geospatial datasets, dataset series, and services. It provides an RDF syntax binding for the union of metadata elements defined in the core profile of ISO 19115:2003 and those defined in the framework of the INSPIRE Directive. Its basic use case is to make spatial datasets, data series, and services searchable on general data portals, thereby making geospatial information better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:NP:2020:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1016/j.yjbinx.2020.100074"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1016/j.yjbinx.2020.100074"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.yjbinx.2020.100074</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.yjbinx.2020.100074</bibo:doi>
+    <dct:title xml:lang="en">Interoperability of population-based patient registries</dct:title>
+    <dct:creator rdf:resource="#nicholsonn"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#jbix">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Journal of Biomedical Informatics: X</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-7</bibo:volume>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Enabling full interoperability within and between population-based patient- registry domains would open up access to a rich and unique source of health data for secondary data usage. Previous attempts to tackle patient-registry interoperability have met with varying degrees of success, but a unifying solution remains elusive. The purpose of this paper is to show by practical example how a solution is attainable via the implementation of an existing framework based of the concept of federated, semantic metadata registries. One important feature motivating the use of this framework is that it can be implemented gradually and independently within each patient-registry domain. By employing linked open data principles, the framework extends the ISO/IEC 11179 standard to provide both syntactic and semantic interoperability of data elements with the means of specifying automated extraction scripts for retrieval of data from different registry content models. The examples provided address the domain of European population-based cancer registries to demonstrate the feasibility of the approach. One of the examples shows how quick gains are derivable by allowing retrieval of aggregated core data sets. The other examples show how aggregated full sets of data and record-level data might also be retrieved from each local registry. An infrastructure of patient-registry domains adhering to the principles of the framework would provide the semantic contexts and inter-linkage of data necessary for automated search and retrieval of registry data. It would thereby also lay the foundation for making registry data serviceable to artificial intelligence (AI) applications.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc-rep:VOBBPS:2020:1">
+    <bibo:uri rdf:resource="https://doi.org/10.2760/806776"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Report"/>
+    <dc:type>JRC Technical Report</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.2760/806776"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2760/806776</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2760/806776</bibo:doi>
+    <dct:title xml:lang="en">Architectures and Standards for Spatial Data Infrastructures and Digital Government</dct:title>
+    <dct:creator rdf:resource="#vandenbroucked"/>
+    <dct:creator rdf:resource="#olijslagersm"/>
+    <dct:creator rdf:resource="#boguslawskir"/>
+    <dct:creator rdf:resource="#borzacchiellomt"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#smithr"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">This document provides an overview of the architecture(s) and standards for Spatial Data Infrastructures (SDI) and Digital Government. The document describes the different viewpoints according to the Reference Model for Open and Distributed Processing (RM-ODP) which is often used in both the SDI and e-Government worlds: the enterprise viewpoint, the engineering viewpoint, the information viewpoint, the computational viewpoint and the technological viewpoint. The document not only describes these viewpoints with regard to SDI and e-Government implementations, but also how the architecture(s) and standards of SDI and e-Government relate. It indicates which standards and tools can be used and provides examples of implementations in different areas, such as process modelling, metadata, data and services. In addition, the annex provides an overview of the most commonly used standards and technologies for SDI and e-Government.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc-rep:NKSPVDP:2020:1">
+    <bibo:uri rdf:resource="https://doi.org/10.2760/553243"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Report"/>
+    <dc:type>JRC Technical Report</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.2760/553243"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2760/553243</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2760/553243</bibo:doi>
+    <dct:title xml:lang="en">IoT 2.0 and the INTERNET of TRANSFORMATION (Web of Things and Digital Twins)</dct:title>
+    <dct:creator rdf:resource="#nativis"/>
+    <dct:creator rdf:resource="#kotseva"/>
+    <dct:creator rdf:resource="#scudop"/>
+    <dct:creator rdf:resource="#pogorzelskak"/>
+    <dct:creator rdf:resource="#vakalisi"/>
+    <dct:creator rdf:resource="#dallabenettaa"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">This JRC report aims to investigate the maturity level of Internet of Things (IoT) on-going development and reflect upon its contribution to the Digital Transformation of our Society. Besides, the document tries to identify possible challenges and opportunities by analysing some global data sources. In doing that, we also assessed the advantages and limitations of using multiple different data sources. The analyses results can be used as a good starting point for a further and more systematic socio-economic analysis. This document is a result of a more general work of JRC.B6 that developed a methodological approach for the identification of emerging technological trends to be applied universally in different technological domains.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:NP:2020:2">
+    <bibo:uri rdf:resource="https://doi.org/10.31219/osf.io/u23vc"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.31219/osf.io/u23vc"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.31219/osf.io/u23vc</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.31219/osf.io/u23vc</bibo:doi>
+    <dct:title xml:lang="en">Interoperability of population-based patient registries</dct:title>
+    <dct:creator rdf:resource="#nicholsonn"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-3</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#osf">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>OSF Preprints</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Enabling full interoperability within and between population-based patient-registry domains would open up access to a rich and unique source of health data for secondary data usage. Previous attempts to tackle patient-registry interoperability have met with varying degrees of success, but a unifying solution remains elusive. The purpose of this paper is to show by practical example how a solution is attainable via the implementation of an existing framework based of the concept of federated, semantic metadata registries. One important feature motivating the use of this framework is that it can be implemented gradually and independently within each patient-registry domain. By employing linked open data principles, the framework extends the ISO/IEC 11179 standard to provide both syntactic and semantic interoperability of data elements with the means of specifying automated extraction scripts for retrieval of data from different registry content models. The examples provided address the domain of European population-based cancer registries to demonstrate the feasibility of the approach. One of the examples shows how quick gains are derivable by allowing retrieval of aggregated core data sets. The other examples show how aggregated full sets of data and record-level data might also be retrieved from each local registry. An infrastructure of patient-registry domains adhering to the principles of the framework would provide the semantic contexts and inter-linkage of data necessary for automated search and retrieval of registry data. It would thereby also lay the foundation for making registry data serviceable to artificial intelligence (AI) applications.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:w3c:ABCGPW:2020:1">
+    <bibo:uri rdf:resource="https://www.w3.org/TR/vocab-dcat-2/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2001/02pd/rec54#REC"/>
+    <owl:sameAs rdf:resource="https://www.w3.org/TR/vocab-dcat-2/"/>
+    <dct:publisher rdf:resource="https://www.w3.org/"/>
+    <dct:title xml:lang="en">Data Catalog Vocabulary (DCAT) - Version 2</dct:title>
+    <bibo:editor rdf:resource="#albertonir"/>
+    <bibo:editor rdf:resource="#browningd"/>
+    <bibo:editor rdf:resource="#coxs"/>
+    <bibo:editor rdf:resource="#gonzaleza"/>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#winstanleyp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2020-2</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. This document defines the schema and provides examples for its use. DCAT enables a publisher to describe datasets and data services in a catalog using a standard model and vocabulary that facilitates the consumption and aggregation of metadata from multiple catalogs. This can increase the discoverability of datasets and data services. It also makes it possible to have a decentralized approach to publishing data catalogs and makes federated search for datasets across catalogs in multiple sites possible using the same query mechanism and structure. Aggregated DCAT metadata can serve as a manifest file as part of the digital preservation process.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc:P:2019:1">
+    <bibo:uri rdf:resource="https://ec-jrc.github.io/dcat-ap-jrc/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>Technical Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <dct:title xml:lang="en">DCAT-AP-JRC: An extension to DCAT-AP for multidisciplinary research data</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2019-7</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">This document describes the profile of DCAT-AP developed by the European Commission's Joint Research Centre (JRC), and used in the JRC Data Catalogue for the documentation of multidisciplinary research data.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:VBTAACFGHHJKVLLPLRTT:2018:1">
+    <bibo:uri rdf:resource="http://www.semantic-web-journal.net/content/best-practices-publishing-retrieving-and-using-spatial-data-web-0"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.3233/SW-180305"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.3233/SW-180305</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.3233/SW-180305</bibo:doi>
+    <dct:title xml:lang="en">Best Practices for Publishing, Retrieving, and Using Spatial Data on the Web</dct:title>
+    <dct:creator rdf:resource="#van-den-brinkl"/>
+    <dct:creator rdf:resource="#barnaghip"/>
+    <dct:creator rdf:resource="#tandyj"/>
+    <dct:creator rdf:resource="#atemezingg"/>
+    <dct:creator rdf:resource="#atkinsonr"/>
+    <dct:creator rdf:resource="#cochraneb"/>
+    <dct:creator rdf:resource="#fathyy"/>
+    <dct:creator rdf:resource="#garcia-castror"/>
+    <dct:creator rdf:resource="#hallera"/>
+    <dct:creator rdf:resource="#hartha"/>
+    <dct:creator rdf:resource="#janowiczk"/>
+    <dct:creator rdf:resource="#kolozalis"/>
+    <dct:creator rdf:resource="#van-leeuwenb"/>
+    <dct:creator rdf:resource="#lefrancoism"/>
+    <dct:creator rdf:resource="#liebermanj"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#le-phuocd"/>
+    <dct:creator rdf:resource="#robertsb"/>
+    <dct:creator rdf:resource="#taylork"/>
+    <dct:creator rdf:resource="#troncyr"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2018-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#swj">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Semantic Web Journal</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Data owners are creating an ever richer set of information resources online, and these are being used for more and more applications. Spatial data on the Web is becoming ubiquitous and voluminous with the rapid growth of location-based services, spatial technologies, dynamic location-based data and services published by different organizations. However, the heterogeneity and the peculiarities of spatial data, such as the use of different coordinate reference systems, make it difficult for data users, Web applications, and services to discover, interpret and use the information in the large and distributed system that is the Web. To make spatial data more effectively available, this paper summarizes the work of the joint W3C/OGC Working Group on Spatial Data on the Web that identifies 14 best practices for publishing spatial data on the Web. The paper extends that work by presenting the identified challenges and rationale for selection of the recommended best practices, framed by the set of principles that guided the selection. It describes best practices that are employed to enable publishing, discovery and retrieving (querying) spatial data on the Web, and identifies some areas where a best practice has not yet emerged.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:FPTV:2017:1">
+    <bibo:uri rdf:resource="https://andrea-perego.name/#ap:confpaper:FPTV:2017:1"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1145/3151759.3151810"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1145/3151759.3151810</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1145/3151759.3151810</bibo:doi>
+    <dct:title xml:lang="en">The JRC Multidisciplinary Research Data Infrastructure</dct:title>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#tsinarakic"/>
+    <dct:creator rdf:resource="#vaccaril"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2017-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#iiwas">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>International Conference on Information Integration and Web-based Applications &amp; Services</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">This paper presents the approach adopted by the European Commission's Joint Research Centre (JRC) in order to facilitate open access to its research data crated as support for EU policies, which is also in line with the general Open Data trend. The paper presents various initiatives and incentives that are put in place at the JRC in order to progressively implement a multi-disciplinary research data infrastructure for the fulfilment of the corporate data policy goals. These include, among others, the JRC metadata schema that is developed with the aim to harmonise the way data are described, as well as the architecture of a data infrastructure designed to support the multidisciplinary nature of the JRC activities.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:CPFL:2017:1">
+    <bibo:uri rdf:resource="https://www.unece.org/fileadmin/DAM/stats/documents/ece/ces/ge.58/2017/mtg3/2017-UNECE-topic-i-EC-GeoDCAT-ap-paper.pdf"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <dct:title xml:lang="en">GeoDCAT-AP: Representing geographic metadata by using the “DCAT application profile for data portals in Europe”</dct:title>
+    <dct:creator rdf:resource="#cetlv"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#lutzm"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2017-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#unece-ws">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>Joint UNECE/UNGGIM Europe Workshop on Integrating Geospatial and Statistical Standards</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">GeoDCAT-AP is a metadata profile aiming to provide an RDF-based representation of geospatial metadata compliant with the DCAT application profile for European data portals (DCATAP), specifically designed to enable the sharing of geospatial metadata, in particular those available via the INSPIRE infrastructure. In this paper, we provide an overview of GeoDCAT-AP, and we outline the lessons learnt, in particular with respect to the issues concerning the cross-domain integration of the geospatial platform with other data infrastructures. This paper outlines a set of cross-domain requirements for the documentation of scientific data, identified during the development of the corporate data catalogue of the European Commission's Joint Research Centre (JRC).</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:PFL:2016:1">
+    <bibo:uri rdf:resource="https://www.w3.org/2016/11/sdsvoc/SDSVoc16_paper_25"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <dct:title xml:lang="en">GeoDCAT-AP: Use cases and open issues</dct:title>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#lutzm"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2016-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#sdsvoc">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>Smart Descriptions &amp; Smarter Vocabularies</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">This paper illustrates some issues and use cases identified during the design and implementation of GeoDCAT-AP, a metadata profile aiming to provide a representation of geospatial metadata compliant with the DCAT application profile for European data portals (DCAT-AP). In particular, the paper focuses on those issues that may have a possible relevance also outside the geospatial domain, covering topics concerning metadata profile-based negotiation, publishing metadata on the Web, representing API-based data access in metadata, and approaches to modelling data quality.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:PFVT:2016:1">
+    <bibo:uri rdf:resource="https://www.w3.org/2016/11/sdsvoc/SDSVoc16_paper_27"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <dct:title xml:lang="en">Using DCAT-AP for research data</dct:title>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#vaccaril"/>
+    <dct:creator rdf:resource="#tsinarakic"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2016-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#sdsvoc">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>Smart Descriptions &amp; Smarter Vocabularies</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">This paper outlines a set of cross-domain requirements for the documentation of scientific data, identified during the development of the corporate data catalogue of the European Commission's Joint Research Centre (JRC). In particular, we illustrate how we have extended the DCAT application profile for European data portals (DCAT-AP) to accomodate requirements for scientific datasets, and we discuss a number of issues still to be addressed.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc:P:2016:1">
+    <bibo:uri rdf:resource="https://ec-jrc.github.io/dcat-ap-to-schema-org/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>Technical Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <dct:title xml:lang="en">DCAT-AP to Schema.org Mapping</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2016-1</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">This document describes the background and methodology for the design of the Schema.org profile of DCAT-AP (DCAT-AP-SDO), as well as the defined mappings.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:isa:PGR:2015:1">
+    <bibo:uri rdf:resource="https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>EU ISA Programme Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:title xml:lang="en">GeoDCAT-AP: A geospatial extension for the DCAT application profile for data portals in Europe</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#goedertiers"/>
+    <bibo:editor rdf:resource="#rotundoa"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">GeoDCAT-AP is an extension of the “DCAT Application Profile for European Data Portals” (DCAT-AP) for describing geospatial datasets, dataset series, and services. It provides an RDF syntax binding for the union of metadata elements defined in the core profile of ISO 19115:2003 and those defined in the framework of the INSPIRE Directive. Its basic use case is to make spatial datasets, data series, and services searchable on general data portals, thereby making geospatial information better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:OBHPFD:2015:1">
+    <bibo:uri rdf:resource="https://doi.org/10.2902/1725-0463.2015.10.art2"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.2902/1725-0463.2015.10.art2"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2902/1725-0463.2015.10.art2</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2902/1725-0463.2015.10.art2</bibo:doi>
+    <dct:title xml:lang="en">Describing models in context – A step towards enhanced transparency of scientific processes underpinning policy making</dct:title>
+    <dct:creator rdf:resource="#ostlaendern"/>
+    <dct:creator rdf:resource="#bailly-salinst"/>
+    <dct:creator rdf:resource="#hardym"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#dalla-costas"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-10</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ijsdir">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>International Journal of Spatial Data Infrastructures Research</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</bibo:volume>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">54</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The transparency and reproducibility of scientific evidence underpinning policy is crucial to build and retain trust. This paper describes an application that takes a significant step towards enhanced transparency of scientific models used for policy making: The Modelling Inventory Database and Access Services (MIDAS) developed by the Joint Research Centre (JRC) describes models in use by the JRC in their scientific context by linking them to other models, to related data, to supported policies and to domain experts. To effectively share the resulting knowledge across different domains and with policy makers within the institution MIDAS represents the resulting complex network of relations and entities through visual aids based on visual analytics and data narratives. This paper describes not just the application in order to contribute to emerging dialogue on best practice for model documentation, it describes the process and main challenges we met with, and the approach taken to overcome them.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:bookchap:SGP:2015:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1201/b18321-16"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InCollection"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1201/b18321-16"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1201/b18321-16</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1201/b18321-16</bibo:doi>
+    <dct:title xml:lang="en">Coupling Public Sector Information and Public-Funded Research Data in Europe: A Vision of an Open Data Ecosystem</dct:title>
+    <dct:creator rdf:resource="#schades"/>
+    <dct:creator rdf:resource="#granell-canutc"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-4</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ictpa">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Collection"/>
+        <dct:title>Information and Communication Technologies in Public Administration: Innovations from Developed Countries</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">195</bibo:volume>
+        <swrc:chapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</swrc:chapter>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">275</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">298</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Scientific domains and the public sector increasingly open their data repositories. In June 2013, the G8 boosted the topic in a charter, and in April 2014, the Open Government Partnership welcomed its 64th partner to make governments more open and accountable. The U.S. and Australian governments, together with the European Commission, complement this initiative of the public sector with the Research Data Alliance, to ease research data sharing and exchange. Although many objectives are shared, we see different interpretations and developments all over the globe. This chapter highlights the central activities in the European context and anticipates possible developments. It explores the concept of a cross-domain open data ecosystem by (a) explaining the current situation, (b) exploring innovative approaches and recent trends on information and communication technologies, and (c) outlining potential pathways to couple public sector information and public-funded research data. The chapter concludes by summarizing practical implications and outlining directions for future research.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:isa:PL:2015:1">
+    <bibo:uri rdf:resource="https://www.w3.org/ns/locn"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>EU ISA Programme Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#lutzm"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-3</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">The ISA Programme Location Core Vocabulary provides a minimum set of classes and properties for describing any place in terms of its name, address or geometry. The vocabulary is specifically designed to aid the publication of data that is interoperable with EU INSPIRE Directive. It is closely integrated with the Business and Person Core Vocabularies of the EU ISA Programme, now available in W3C space as, respectively, the Registered Organization vocabulary and ISA Person Core Vocabulary.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc:PA:2015:1">
+    <bibo:uri rdf:resource="https://ec-jrc.github.io/datacite-to-dcat-ap/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>Technical Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <dct:title xml:lang="en">DataCite to DCAT-AP Mapping</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#austint"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-1</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">This document describes the background and methodology for the design of the DataCite profile of DCAT-AP (CiteDCAT-AP), as well as the defined mappings.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jrc-rep:DFOPAKMVTBTG:2015:1">
+    <bibo:uri rdf:resource="https://doi.org/10.2788/607378"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Report"/>
+    <dc:type>Data Policy</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.2788/607378"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2788/607378</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.2788/607378</bibo:doi>
+    <dct:title xml:lang="en">JRC Data Policy</dct:title>
+    <dct:creator rdf:resource="#doldirinac"/>
+    <dct:creator rdf:resource="#friis-christensena"/>
+    <dct:creator rdf:resource="#ostlaendern"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#annonia"/>
+    <dct:creator rdf:resource="#kanellopoulosi"/>
+    <dct:creator rdf:resource="#massimoc"/>
+    <dct:creator rdf:resource="#vaccaril"/>
+    <dct:creator rdf:resource="#tartagliag"/>
+    <dct:creator rdf:resource="#bonatof"/>
+    <dct:creator rdf:resource="#triaillejp"/>
+    <dct:creator rdf:resource="#gentiles"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-1</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">The work on the JRC Data Policy followed the task identified in the JRC Management Plan 2014 to develop a dedicated data policy to complement the JRC Policy on Open Access to Scientific Publications and Supporting Guidance, and to promote open access to research data in the context of Horizon 2020. Important policy commitments and the relevant regulatory basis within the European Union and the European Commission include: the Commission Decision on the reuse of Commission documents, Commission communication on better access to scientific information, Commission communication on a reinforced European research area partnership for excellence and growth, Commission recommendation on access to and preservation of scientific information, and the EU implementation of the G8 Open Data Charter.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:PFPFR:2014:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/TKDE.2012.248"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/TKDE.2012.248"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/TKDE.2012.248</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/TKDE.2012.248</bibo:doi>
+    <dct:title xml:lang="en">Privacy-Preserving Enhanced Collaborative Tagging</dct:title>
+    <dct:creator rdf:resource="#parra-arnauj"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#fornej"/>
+    <dct:creator rdf:resource="#rebollo-monederod"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2014-1</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ieeetkde">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>IEEE Transactions on Knowledge &amp; Data Engineering</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">180</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">193</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Collaborative tagging is one of the most popular services available online, and it allows end user to loosely classify either online or offline resources based on their feedback, expressed in the form of free-text labels (i.e., tags). Although tags are not per se sensitive information, the wide use of collaborative tagging services increases the risk of cross referencing, thereby seriously compromising user privacy. In this paper, we make a first contribution in this direction by showing how a specific privacy-enhancing technology, namely tag suppression, can be used to protect end-user privacy. Moreover, we analyze how our approach can affect the effectiveness of a policy-based collaborative tagging system which supports enhanced Web access functionalities, like content filtering and discovery, based on preferences specified by end users.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:isa:DPL:2012:1">
+    <bibo:uri rdf:resource="https://www.w3.org/ns/radion"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>EU ISA Programme Specification</dc:type>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:title xml:lang="en">Repository Asset Distribution (RADion)</dct:title>
+    <bibo:editor rdf:resource="#dekkersm"/>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#lutzm"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2012-10</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">RADion, and the higher level vocabularies that build upon it, are intended as a model that facilitates federation and co-operation. It is not the primary intention that repository owners redesign or convert their current systems and data to conform to RADion, but rather that it acts as a common layer among repositories that want to exchange data.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:CFP:2012:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1016/j.datak.2012.06.002"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1016/j.datak.2012.06.002"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.datak.2012.06.002</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1016/j.datak.2012.06.002</bibo:doi>
+    <dct:title xml:lang="en">A Multi-layer Framework for Personalized Social Tag-based Applications</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2012-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#dke">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Data &amp; Knowledge Engineering</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">79-80</bibo:volume>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">86</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Recent years have seen an increasing diffusion of online communities giving their members the ability of specifying and sharing metadata concerning online resources. Such practice, also known as social or collaborative tagging, has the purpose of collecting and sharing opinions about Web resources and simplifying their retrieval. In this paper, we go one step further and show how tags can have more enhanced applications to be exploited for customizing Web content fruition. More precisely, we propose a multi-layer framework where data collected by social tagging communities are complemented with additional services. Such services provide users the ability of expressing their dis/agreement with existing tags, denoting the members they trust based on their characteristics and relationships, or specifying policies on which “quality” assessment of resources should be returned. Besides providing the formal specification of the proposed framework, we illustrate two case studies we have implemented and the experiments we have carried out in order to verify the feasibility of our approach.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:PFVLSKS:2012:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/MIS.2012.22"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/MIS.2012.22"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/MIS.2012.22</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/MIS.2012.22</bibo:doi>
+    <dct:title xml:lang="en">Harmonization and Interoperability of EU Environmental Information and Services</dct:title>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#fugazzac"/>
+    <dct:creator rdf:resource="#vaccaril"/>
+    <dct:creator rdf:resource="#lutzm"/>
+    <dct:creator rdf:resource="#smitsp"/>
+    <dct:creator rdf:resource="#kanellopoulosi"/>
+    <dct:creator rdf:resource="#schades"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2012-5</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ieee-is">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>IEEE Intelligent Systems</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">39</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The cultural, historic, and natural diversity in the European Union creates a fertile ground for both policies and innovation that aim at removing obstacles to the integration and interoperability of data on Europe’s natural environment. In fact, the sharing of resources across multiple information communities raises the need of new technologies that support resource discovery and (re-)use. The aim of this paper is to provide a better understanding of the issues related to semantic interoperability in the context of environmental data management in the European Union, and of measures and activities that are addressing these problems. It does so by providing the policy context, and by highlighting activities and best practices of selected EU-funded research projects and activities, especially in relation to Linked Open Data principles.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:w3c:PKA:2010:1">
+    <bibo:uri rdf:resource="http://www.w3.org/2007/05/powder-s"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <dc:type>Namespace Document</dc:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2007/05/powder-s"/>
+    <dct:publisher rdf:resource="https://www.w3.org/"/>
+    <dct:title xml:lang="en">Protocol for Web Description Resources (POWDER): POWDER-S Vocabulary (WDRS)</dct:title>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#konstantopouloss"/>
+    <bibo:editor rdf:resource="#archerp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2010-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">The purpose of the Protocol for Web Description Resources (POWDER) is to provide a means for individuals or organizations to describe a group of resources through the publication of machine-readable metadata, as motivated by the POWDER Use Cases. This document details the creation and lifecycle of Description Resources (DRs), which encapsulate such metadata. These are typically represented in a highly constrained XML dialect that is relatively human-readable. The meaning of such DRs are underpinned by formal semantics, accessible by performing a GRDDL Transform. This document describes the RDF vocabulary to support Semantic POWDER, or POWDER-S encoding, of Description Resources.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:BFP:2010:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/s11280-009-0073-5"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/s11280-009-0073-5"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/s11280-009-0073-5</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/s11280-009-0073-5</bibo:doi>
+    <dct:title xml:lang="en">A General Framework for Web Content Filtering</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2010-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#www">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>World Wide Web</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">249</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Web content filtering is a means to make end-users aware of the ‘quality’ of Web resources by evaluating their contents and/or characteristics against users' preferences. Although they can be used for a variety of purposes, Web content filtering tools are mainly deployed as a service for parental control purposes, and for regulating the access to Web content by users connected to the networks of enterprises, libraries, schools, etc. Current Web filtering tools are based on well established techniques, such as data mining and firewall blocking, and they typically cater to the filtering requirements of very specific end-user categories. Therefore, what is lacking is a unified filtering framework able to support all the possible application domains, and making it possible to enforce interoperability among the different filtering approaches and the systems based on them. In this paper, a multi-strategy approach is described, which integrates the available techniques and focuses on the use of metadata for rating and filtering Web information. Such an approach consists of a filtering meta-model, referred to as MFM (Multi-strategy Filtering Model), which provides a general representation of the Web content filtering domain, independently from its possible applications, and of two prototype implementations, partially carried out in the framework of the EU projects EUFORBIA and QUATRO, and designed for different application domains: user protection and Web quality assurance, respectively.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:PCF:2009:1">
+    <bibo:uri rdf:resource="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5365640"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.4108/ICST.COLLABORATECOM2009.8368"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4108/ICST.COLLABORATECOM2009.8368</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4108/ICST.COLLABORATECOM2009.8368</bibo:doi>
+    <dct:title xml:lang="en">The Quality Social Network: A Collaborative Environment for Personalizing Web Access</dct:title>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2009-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#collaboratesn">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>International Workshop on Collaborative Social Networks</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">In this paper, we present a collaborative social networking environment, referred to as Quality Social Network (QSN), which enhances the social tagging paradigm by using it as a basis to evaluate the quality of Web resources, on the basis of the user preferences specified by each QSN member. Such features give end users the ability of being aware of the “quality” of the resources they are accessing, based on the opinions of the members of their community, and of being informed whether such resources can be safely used, according to the requirements specified by end users themselves. Besides illustrating the main characteristics of the QSN and its architecture, we describe its prototype implementation, carried out in the framework of the QUATRO Plus EU project, and its application to a use case scenario, involving groups of teenagers from three different European countries, acting as Youth Panels of the Safer Internet EU Programme.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:CFP:2009:1">
+    <bibo:uri rdf:resource="http://dl.acm.org/authorize?257464"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1145/1609956.1609962"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1145/1609956.1609962</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1145/1609956.1609962</bibo:doi>
+    <dct:title xml:lang="en">Enforcing Access Control in Web-based Social Networks</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2009-10</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#acmtissec">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>ACM Transactions on Information &amp; System Security</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">In this paper, we propose an access control mechanism for Web-based Social Networks, which adopts a rule-based approach for specifying access policies on the resources owned by network participants, and where authorized users are denoted in terms of the type, depth, and trust level of the relationships existing between nodes in the network. Differently from traditional access control systems, our mechanism makes use of a semi-decentralized architecture, where access control enforcement is carried out client-side. Access to a resource is granted when the requestor is able to demonstrate of being authorized to do that, by providing a proof. In the paper, besides illustrating the main notions on which our access control model relies, we present all the protocols underlying our system and a performance study of the implemented prototype.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:w3c:ASP:2009:1">
+    <bibo:uri rdf:resource="https://www.w3.org/TR/2009/REC-powder-dr-20090901/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2001/02pd/rec54#REC"/>
+    <owl:sameAs rdf:resource="https://www.w3.org/TR/2009/REC-powder-dr-20090901/"/>
+    <dct:publisher rdf:resource="https://www.w3.org/"/>
+    <dct:title xml:lang="en">Protocol for Web Description Resources (POWDER): Description Resources</dct:title>
+    <bibo:editor rdf:resource="#archerp"/>
+    <bibo:editor rdf:resource="#smithk"/>
+    <bibo:editor rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2009-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">The purpose of the Protocol for Web Description Resources (POWDER) is to provide a means for individuals or organizations to describe a group of resources through the publication of machine-readable metadata, as motivated by the POWDER Use Cases. This document details the creation and lifecycle of Description Resources (DRs), which encapsulate such metadata. These are typically represented in a highly constrained XML dialect that is relatively human-readable. The meaning of such DRs are underpinned by formal semantics, accessible by performing a GRDDL Transform.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:w3c:APS:2009:1">
+    <bibo:uri rdf:resource="https://www.w3.org/TR/2009/REC-powder-grouping-20090901/"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2001/02pd/rec54#REC"/>
+    <owl:sameAs rdf:resource="https://www.w3.org/TR/2009/REC-powder-grouping-20090901/"/>
+    <dct:publisher rdf:resource="https://www.w3.org/"/>
+    <dct:title xml:lang="en">Protocol for Web Description Resources (POWDER): Grouping of Resources</dct:title>
+    <bibo:editor rdf:resource="#archerp"/>
+    <bibo:editor rdf:resource="#me"/>
+    <bibo:editor rdf:resource="#smithk"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2009-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:abstract xml:lang="en">The Protocol for Web Description Resources (POWDER) facilitates the publication of descriptions of multiple resources such as all those available from a Web site. This document describes how sets of IRIs can be defined such that descriptions or other data can be applied to the resources obtained by dereferencing IRIs that are elements of the set. IRI sets are defined as XML elements with relatively loose operational semantics. This is underpinned by the formal semantics of POWDER which include a semantic extension, defined separately. A GRDDL transform is associated with the POWDER namespace that maps the operational to the formal semantics.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:AFKKKP:2009:1">
+    <bibo:uri rdf:resource="http://ceur-ws.org/Vol-447/paper1.pdf"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <dct:title xml:lang="en">QUATRO Plus: Quality You Can Trust?</dct:title>
+    <dct:creator rdf:resource="#archerp"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#karkaletsisv"/>
+    <dct:creator rdf:resource="#konstantopouloss"/>
+    <dct:creator rdf:resource="#koukourikosa"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2009-6</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#spot">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>Workshop on Trust and Privacy on the Social and Semantic Web </dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The QUATRO Plus project, a follow on from the original QUATRO Project, aims to balance the wisdom of the crowds with the knowledge of the experts. It uses a mixture of authenticated data sources and the opinions of end users expressed through social networking software to build a dataset that is authoritative and trustworthy. The dataset describes online resources using RDF with the upcoming W3C Recommendation, POWDER, as the underlying transport and storage mechanism. Data can be added to or queried through a variety of tools provided by the project, some of which are described in detail in this paper.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:CFP:2008:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/978-3-642-03354-4_11"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/978-3-642-03354-4_11"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/978-3-642-03354-4_11</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/978-3-642-03354-4_11</bibo:doi>
+    <dct:title xml:lang="en">Combining Social Networks and Semantic Web Technologies for Personalizing Web Access</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2008-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#collaboratecom">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>International Conference on Collaborative Computing</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">126</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">144</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The original purpose of Web metadata was to protect end-users from possible harmful content and to simplify search and retrieval. However they can also be exploited in more enhanced applications, such as Web access personalization on the basis of end-users' preferences. In order to achieve this, it is however necessary to address several issues. One of the most relevant  is how to assess the trustworthiness of Web metadata. In this paper, we discuss how such issue can be addressed through the use of collaborative  and Semantic Web technologies. The system we propose is based on a Web-based Social Network, where members are able not only to specify  labels, but also to rate existing labels. Both labels and ratings are then used to assess the trustworthiness of resources' descriptions and to enforce Web access personalization.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:CFP:2008:1">
+    <bibo:uri rdf:resource="http://www.igi-global.com/Bookstore/Article.aspx?TitleId=2491"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.4018/jisp.2008100102"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/jisp.2008100102</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/jisp.2008100102</bibo:doi>
+    <dct:title xml:lang="en">A Decentralized Security Framework for Web-based Social Networks</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2008-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ijisp">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>International Journal of Information Security and Privacy</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The wide diffusion and usage of social networking Web sites in the last years have made publicly available a huge amount of possible sensitive information, which can be used by third-parties with purposes different from the ones of the owners of such information. Currently, this issue has been addressed by enforcing into Web-based Social Networks (WBSNs) very simple protection mechanisms, or by using anonymization techniques, thanks to which it is possible to hide the identity of WBSN members while performing analysis on social network data. However, we believe that further solutions are needed, to allow WBSN members themselves to decide who can access their personal information and resources. To cope with this issue, in this article we illustrate a decentralized security framework for WBSNs, which provide both access control and privacy protection mechanisms. In our system, WBSN members can denote who is authorized to access the resources they publish and the relationships they participate in, in terms of the type, depth, and trust level of the relationships existing between members of a WBSN. Cryptographic techniques are then used to provide a controlled sharing of resources while preserving relationship privacy.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:bookchap:CFP:2008:1">
+    <bibo:uri rdf:resource="http://www.igi-global.com/Bookstore/Chapter.aspx?TitleId=14073"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InCollection"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.4018/978-1-60566-026-4.ch535"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-60566-026-4.ch535</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-60566-026-4.ch535</bibo:doi>
+    <dct:title xml:lang="en">Security and Privacy in Social Networks</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2008-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#eist2">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Collection"/>
+        <dct:title>Encyclopedia of Information Science and Technology, 2nd Edition</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VII</bibo:volume>
+        <swrc:chapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">535</swrc:chapter>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3369</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3376</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Web-based social networks (WBSNs) are online communities that allow users to publish resources (e.g., personal data, annotations, blogs) and to establish relationships, possibly of a different type (“friend,” “colleague,” etc.) for purposes that may concern business, entertainment, religion, dating, and so forth. In the last few years, the usage and diffusion of WBSNs has been increasing, with about 300 Web sites collecting the information of more than 400 million registered users. As a result, the “net model” is today used more and more to communicate, share information, make decisions, and ‘do business’ by companies and organizations. Regardless of the purpose of a WBSN, one of the main reasons for participating in social networking is to share and exchange information with other users. Recently, thanks to the adoption of Semantic Web technologies such as FOAF and other RDF-based vocabularies, accessing and disseminating information over multiple WBSNs has been made simpler. If this has been quite a relevant improvement towards an easier sharing of information, it makes more urgent that content owners have control over information access. In fact, making available possibly sensitive and private data and resources implies that they can be used by third parties for purposes different from the intended ones. As a matter of fact, users’ personal data and resources are regularly exploited not only by companies for marketing purposes, but also by governments and institutions for tracking persons’ behaviors and opinions, and in the worst case, by online predators. It is then a challenging issue to devise security mechanisms for social networks, able to protect private information and regulate access to shared resources. In this article, besides providing an overview of the characteristics of the WBSN environment and its protection requirements, we illustrate the current approaches and future trends to social network security, with particular attention paid to the emerging technologies related to the so-called Web 2.0.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:EBCDLMPST:2007:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/978-3-540-77088-6_9"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/978-3-540-77088-6_9"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/978-3-540-77088-6_9</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/978-3-540-77088-6_9</bibo:doi>
+    <dct:title xml:lang="en">Integrated Authoring, Annotation, Retrieval, Adaptation, Personalization, and Delivery for Multimedia</dct:title>
+    <dct:creator rdf:resource="#eidenbergerh"/>
+    <dct:creator rdf:resource="#bolls"/>
+    <dct:creator rdf:resource="#christodoulakiss"/>
+    <dct:creator rdf:resource="#divotkeyd"/>
+    <dct:creator rdf:resource="#leopoldk"/>
+    <dct:creator rdf:resource="#martina"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#scherpa"/>
+    <dct:creator rdf:resource="#tsinarakic"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2007-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#delos">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>DELOS Conference</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">87</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">103</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">In this paper we present CoCoMA, an integrated platform, developed in the framework of the DELOS II European Network of Excellence on Digital Libraries, aiming at the unification of the most important aspects of multimedia management and multimedia presentation. The paramount goal of CoCoMA is to maximize the added value from task and data integration by the identification and exploitation of connection points and inherent workflow similarities. The paper provides a brief description of the involved research fields, suggests an architecture for integrated multimedia consumption and presentation, and discusses the most prominent connection points. Problems and solutions are discussed jointly, and illustrated by the components of the application prototype developed for the DELOS project.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:bookchap:BFPZ:2007:1">
+    <bibo:uri rdf:resource="http://www.igi-global.com/Bookstore/Chapter.aspx?TitleId=16831"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InCollection"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.4018/978-1-59140-993-9.ch006"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-59140-993-9.ch006</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-59140-993-9.ch006</bibo:doi>
+    <dct:title xml:lang="en">Advanced Techniques for Web Content Filtering</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#zarrigp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2007-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#eita">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Collection"/>
+        <dct:title>Encyclopedia of Internet Technologies and Applications</dct:title>
+        <swrc:chapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</swrc:chapter>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">44</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">In this chapter, besides discussing the current strategies for Web content filtering, outlining their advantages and drawbacks, we present an approach, formerly developed in the framework of the EU project EUFORBIA, which, besides addressing the main drawbacks of the existing systems, can be applied for purposes comprising both users’ protection and quality assurance. The main features of such an approach are the support for multiple metadata vocabularies for the rating and filtering of Web resources, and the possibility of specifying policies which allow the system to decide whether a resource is appropriate or not for a given user based on his/her preferences and characteristics.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:CFP:2007:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/ICDEW.2007.4400987"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/ICDEW.2007.4400987"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/ICDEW.2007.4400987</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/ICDEW.2007.4400987</bibo:doi>
+    <dct:title xml:lang="en">Private Relationships in Social Networks</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2007-4</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#icde-ws">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>ICDE Workshops</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">163</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">171</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Current social networks implement very simple protection mechanisms, according to which a user can state whether his/her personal data, relationships, and resources should be either public or accessible only by him/herself (or, at most, by users with whom he/she has a direct relationship). This is not enough, in that there is the need of more flexible mechanisms, making a user able to decide which network participants are authorized to access his/her resources and personal information. With this aim, in a previous paper we have proposed an access control model where authorized users are denoted based on the relationships they participate in. Nonetheless, we believe that this is just a first step towards a more comprehensive privacy framework for social networks. Indeed, besides users' resources and personal data, also users' relationships may convey sensitive information. For this reason, in this paper we focus on relationship protection, by proposing a strategy exploiting cryptographic techniques to enforce a selective dissemination of information concerning relationships across a social network.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:TPPSMC:2006:1">
+    <bibo:uri rdf:resource="http://www.dirf.org/jdim/abstractv4i4.htm#v4n4a1"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <dct:title xml:lang="en">Semantic, Constraint &amp; Preference Based Multimedia Presentation Authoring</dct:title>
+    <dct:creator rdf:resource="#tsinarakic"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#polydorosp"/>
+    <dct:creator rdf:resource="#syntzanakia"/>
+    <dct:creator rdf:resource="#martina"/>
+    <dct:creator rdf:resource="#christodoulakiss"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2006-12</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#jdim">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>Journal of Digital Information Management</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">207</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">213</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">We present in this paper an integrated system that allows the management and annotation of multimedia objects stored in MPEG-7/21 repositories, and the specification and semi-automatic generation of multimedia presentations based on the content relationships that exist between the multimedia objects. This system is the outcome of the collaboration between the Technical University of Crete (TUC-MUSIC) and the University of Milan (UNIMI) in the CoCoMA project of the DELOS II European Network of Excellence on Digital Libraries. The resulting system is one of the main components of the CoCoMA infrastructure that aims to provide content- and context-aware rich interactive multimedia presentations by controlling data fusion and metadata reuse. The integrated system utilizes the SyMPA management and presentation authoring system developed by UNIMI and the DS-MIRF framework developed by TUC-MUSIC.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:CFP:2006:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/11915072_80"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/11915072_80"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/11915072_80</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/11915072_80</bibo:doi>
+    <dct:title xml:lang="en">Rule-based Access Control for Social Networks</dct:title>
+    <dct:creator rdf:resource="#carminatib"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2006-10</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#otm-ws">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>OTM Workshops</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1734</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1744</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Web-based social networks (WBSNs) are online communities where participants can establish relationships and share resources across the Web with other users. In recent years, several WBSNs have been adopting Semantic Web technologies, such as FOAF, for representing users' data and relationships, making it possible to enforce information interchange across multiple WBSNs. Despite its advantages in terms of information diffusion, this raised the need of giving content owners more control on the distribution of their resources, which may be accessed by a community far wider than they expected. In this paper, we present an access control model for WBSNs, where policies are expressed as constraints on the type, depth, and trust level of existing relationships. Relevant features of our model are the use of certificates for granting relationships' authenticity, and the client-side enforcement of access control according to a rule-based approach, where a subject requesting to access an object must demonstrate that it has the rights of doing that.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:KPASNR:2006:1">
+    <bibo:uri rdf:resource="http://ceur-ws.org/Vol-190/paper09.pdf"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <dct:title xml:lang="en">Quality Labeling of Web Content: The QUATRO Approach</dct:title>
+    <dct:creator rdf:resource="#karkaletsisv"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#archerp"/>
+    <dct:creator rdf:resource="#stamatakisk"/>
+    <dct:creator rdf:resource="#nasikasp"/>
+    <dct:creator rdf:resource="#rosed"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2006-5</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#www-ws">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>WWW Workshops</dct:title>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">QUATRO is an on-going EC-funded project which aims to provide a common vocabulary and machine readable schema for quality labeling of Web content, as well as ways to automatically show the contents of the label(s) found in a Web resource, and functionalities for checking the validity of these labels. The paper presents the QUATRO processes for label validation and user notification, and outlines the architecture of QUATRO system.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:bookchap:BFP:2005:1">
+    <bibo:uri rdf:resource="http://www.igi-global.com/Bookstore/Chapter.aspx?TitleId=31085"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InCollection"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.4018/978-1-59140-588-7.ch006"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-59140-588-7.ch006</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.4018/978-1-59140-588-7.ch006</bibo:doi>
+    <dct:title xml:lang="en">Web Content Filtering</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2005-10</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#wis">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Collection"/>
+        <dct:title>Web and Information Security</dct:title>
+        <swrc:chapter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</swrc:chapter>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">133</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">The need to filter online information in order to protect users from possible harmful content can be considered as one of the most compelling social issues derived from the transformation of the Web into a public information space. Despite that Web rating and filtering systems have been developed and made publicly available quite early, no effective approach has been established so far, due to the inadequacy of the proposed solutions. Web filtering is then a challenging research area, needing the definition and enforcement of new strategies, considering both the current limitations and the future developments of Web technologies—in particular, the upcoming Semantic Web. In this chapter, we provide an overview of how Web filtering issues have been addressed by the available systems, bringing in relief both their advantages and shortcomings, and outlining future trends. As an example of how a more accurate and flexible filtering can be enforced, we devote the second part of this chapter to describing a multi-strategy approach, of which the main characteristics are the integration of both list- and metadata-based techniques and the adoption of sophisticated metadata schemes (e.g., conceptual hierarchies and ontologies) for describing both users' characteristics and Web pages content.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:BFPZ:2005:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/DEXA.2005.21"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/DEXA.2005.21"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/DEXA.2005.21</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/DEXA.2005.21</bibo:doi>
+    <dct:title xml:lang="en">A Multi-Strategy Approach to Rating and Filtering Online Resources</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#zarrigp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2005-8</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#dexa-ws">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>DEXA Workshops</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">519</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">This paper illustrates some of the Semantic Web techniques used in the framework of the EU project EUFORBIA, which deals with the rating and filtering of ‘questionable’ Web sites concerned with racism, violence, pornography, etc. The rationale for using a high-level semantic approach in this domain is linked with the assumption that an in-depth description of the ‘semantic content’ of Web sites should allow the implementation of filtering strategies more flexible, accurate and (neatly) sophisticated than the current ones. From a technical point of view, the final result of the project consists of two integrated prototypes that communicate through a common ontology.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:BFPS:2005:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/ICME.2005.1521489"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/ICME.2005.1521489"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/ICME.2005.1521489</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/ICME.2005.1521489</bibo:doi>
+    <dct:title xml:lang="en">A Constraint-based Approach for the Authoring of Multi-topic Multimedia Presentations</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#santid"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2005-7</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#icme">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>IEEE International Conference on Multimedia &amp; Expo</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">578</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">581</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Synchronized multimedia applications play an important role in a Digital Library environment, since they allow one to efficiently disseminate knowledge among differently skilled users through an approach which is more direct than the classic ‘static’ documents. In this paper, we propose a new authoring approach based on an innovative presentation structure and a new class of contentbased constraints. Thanks to a flexible heuristic process, such features allow the author to easily combine several multimedia objects into a multi-topic presentation, whose different contents can be freely chosen by end users according to their preferences or skills.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:BFPZ:2005:2">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/11504894_104"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/11504894_104"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/11504894_104</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/11504894_104</bibo:doi>
+    <dct:title xml:lang="en">An Integrated Approach to Rating and Filtering Web Content</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:creator rdf:resource="#zarrigp"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2005-6</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#iea-aie">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>International Conference on Industrial and Engineering Applications of Artificial Intelligence and Expert Systems</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">749</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">751</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">In this poster, we will illustrate an integrated approach to Web filtering, whose main features are flexible filtering policies taking into account both users' characteristics and resource content, the specification of an ontology for the filtering domain, and the support for the main filtering strategies currently available. Our approach has been implemented in two prototypes, which address the needs of both home and institutional users, and which enforce filtering strategies more sophisticated and flexible than the ones currently available.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:procs:LP:2004:1">
+    <bibo:uri rdf:resource="https://andrea-perego.name/#ap:procs:LP:2004:1"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+    <dct:title xml:lang="en"></dct:title>
+    <dct:creator rdf:resource="#lindnerw"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2004-3</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:jpaper:BFP:2003:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/s10207-003-0024-6"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/s10207-003-0024-6"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/s10207-003-0024-6</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/s10207-003-0024-6</bibo:doi>
+    <dct:title xml:lang="en">Content-based Filtering of Web documents: The MaΧ System and the EUFORBIA Project</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2003-11</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ijis">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Journal"/>
+        <dct:title>International Journal of Information Security</dct:title>
+        <bibo:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bibo:volume>
+        <bibo:issue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bibo:issue>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Internet filtering has particular requirements which traditional access control approaches cannot satisfy. In this paper, we present a multi-strategy filtering model tailored specifically to both digital library and Web environments whose key features are the support for credential and content-based filtering and its full integration with standard Internet rating systems. Moreover, we describe the prototype system implementing our model and developed in the framework of the European project EUFORBIA.</dct:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:BFP:2002:1">
+    <bibo:uri rdf:resource="https://doi.org/10.1007/3-540-45747-X_50"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1007/3-540-45747-X_50"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/3-540-45747-X_50</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1007/3-540-45747-X_50</bibo:doi>
+    <dct:title xml:lang="en">An Access Control System for Digital Libraries and the Web: The MaΧ Prototype Demonstration</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2002-9</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#ecdl">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>European Conference on Digital Libraries</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">656</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">657</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+  </rdf:Description>
+  <rdf:Description rdf:ID="ap:confpaper:BFP:2002:2">
+    <bibo:uri rdf:resource="https://doi.org/10.1109/CMPSAC.2002.1045127"/>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#InProceedings"/>
+    <owl:sameAs rdf:resource="https://doi.org/10.1109/CMPSAC.2002.1045127"/>
+    <prism:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/CMPSAC.2002.1045127</prism:doi>
+    <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">10.1109/CMPSAC.2002.1045127</bibo:doi>
+    <dct:title xml:lang="en">MaΧ: An Access Control System for Digital Libraries and the Web</dct:title>
+    <dct:creator rdf:resource="#bertinoe"/>
+    <dct:creator rdf:resource="#ferrarie"/>
+    <dct:creator rdf:resource="#me"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2002-8</dct:issued>
+    <dctype:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dct:isPartOf>
+      <rdf:Description rdf:about="#compsac">
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <dct:title>International Computer Software and Applications Conference</dct:title>
+        <bibo:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#string">945</bibo:pageStart>
+        <bibo:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">950</bibo:pageEnd>
+      </rdf:Description>
+    </dct:isPartOf>
+    <dct:abstract xml:lang="en">Digital Libraries (DLs) introduce several challenging requirements with respect to the formulation, specification and enforcement of adequate access control policies. Unlike conventional database environments, a DL typically is characterised by a dynamic subject population, often making accesses from remote locations, and by an extraordinarily large amount of information, stored in a variety of formats. Additionally, protecting a DL does not only means protecting documents that reside at the DL site, but also protecting accesses that the DL subscribers made to external Web documents. In this paper we present MaΧ, a comprehensive system for enforcing access control, specifically tailored to both DL and Web environments. Key features of MaΧ are the support for credential and content-based access control to DL and Web documents, and its full integration with standard Internet rating systems.</dct:abstract>
+  </rdf:Description>
+
+  <rsa:RSAPublicKey>
+    <cert:identity rdf:resource="#me" />
+    <rsa:modulus>
+      <cert:Integer>
+        <cert:hex>c0769c3cf3b5e6479b9f40c55e33c24c0d13e64c2fa1effb465b6f20308f1d7e57f88bc85e8feef45bdb42a4743b5f303ebf411a36cc770ef3d6e5cb1ff41453f2b1c545dbed53a3661a623126a306303cc61427326a93082be5d0c800aea0ec75c754db2a6ba4ded08403b7eff8c0dd3b192cd21ee6759722e382fbb32bc2a9e192590bb0f00829d692b8887d094ab45660296c1eb7b0db2452a32c77830f5a30793f9efed3f6793fe260741b3120b4fba971a671dcfb6432699be644e3c8d71a6a02a8a0b1c7c3d7a7b032513a3fd785e042b5d6fb5b7445fa8f38e9d5dee971c51e92edca56e1b107e7ebada65e8fc34670a743c74eadedae5ca950e40b73</cert:hex>
+      </cert:Integer>
+    </rsa:modulus>
+    <rsa:public_exponent>
+      <cert:Integer>
+        <cert:decimal>65537</cert:decimal>
+      </cert:Integer>
+    </rsa:public_exponent>
+  </rsa:RSAPublicKey>  
+
+</rdf:RDF>

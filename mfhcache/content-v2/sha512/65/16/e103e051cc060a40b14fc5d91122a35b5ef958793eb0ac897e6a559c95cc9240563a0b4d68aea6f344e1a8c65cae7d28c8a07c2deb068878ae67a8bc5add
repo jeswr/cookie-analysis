@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://liris.cnrs.fr/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://liris.cnrs.fr/" />
+<link rel="shortlink" href="https://liris.cnrs.fr/" />
+<meta property="og:site_name" content="Laboratoire d&#039;InfoRmatique en Image et Systèmes d&#039;information" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://liris.cnrs.fr/" />
+<meta property="og:title" content="Laboratoire d&#039;InfoRmatique en Image et Systèmes d&#039;information" />
+<meta property="og:description" content="UMR 5205 CNRS / INSA Lyon / Université Claude Bernard Lyon 1 / Université Lumière Lyon 2 / École Centrale de Lyon" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://liris.cnrs.fr/" />
+<meta name="twitter:title" content="Laboratoire d&#039;InfoRmatique en Image et Systèmes d&#039;information" />
+<meta name="twitter:description" content="UMR 5205 CNRS / INSA Lyon / Université Claude Bernard Lyon 1 / Université Lumière Lyon 2 / École Centrale de Lyon" />
+  <title>Laboratoire d'InfoRmatique en Image et Systèmes d'information | UMR 5205 CNRS / INSA Lyon / Université Claude Bernard Lyon 1 / Université Lumière Lyon 2 / École Centrale de Lyon</title>
+  <style>
+@import url("https://liris.cnrs.fr/modules/system/system.base.css?senvgz");
+</style>
+<style>
+@import url("https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?senvgz");
+</style>
+<style>
+@import url("https://liris.cnrs.fr/sites/all/modules/date/date_api/date.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?senvgz");
+@import url("https://liris.cnrs.fr/modules/field/theme/field.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/footer_sitemap/footer_sitemap.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/local_translate/local_translate.css?senvgz");
+@import url("https://liris.cnrs.fr/modules/node/node.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/views/css/views.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/mypatchs/mypatchs.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/ckeditor/css/ckeditor.css?senvgz");
+</style>
+<style>
+@import url("https://liris.cnrs.fr/sites/all/modules/ctools/css/ctools.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/lightbox2/css/lightbox.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/panels/css/panels.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/panels/plugins/layouts/flexible/flexible.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/default/files/ctools/css/a4fb797798ef6e54658a409762451908.css?senvgz");
+@import url("https://liris.cnrs.fr/modules/locale/locale.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/modules/addtoany/addtoany.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/libraries/superfish/css/superfish.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/all/libraries/superfish/css/superfish-smallscreen.css?senvgz");
+</style>
+<link type="text/css" rel="stylesheet" href="/sites/default/themes/bootstrap_liris/bootstrap/css/bootstrap.css" media="all" />
+<style>
+@import url("https://liris.cnrs.fr/sites/all/themes/bootstrap/css/3.4.0/overrides.min.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/css/slick.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/css/style.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/css/font-awesome.min.css?senvgz");
+@import url("https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/css/liris-patch.css?senvgz");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/jquery/2.1/jquery.min.js?v=2.1.4"></script>
+<script src="https://liris.cnrs.fr/misc/jquery.once.js?v=1.2"></script>
+<script src="https://liris.cnrs.fr/misc/drupal.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/replace/jquery.form/4/jquery.form.min.js?v=4.2.1"></script>
+<script src="https://liris.cnrs.fr/misc/ajax.js?v=7.64"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script src="/sites/default/themes/bootstrap_liris/bootstrap/js/bootstrap.js"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_ui_filter/jquery_ui_filter.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/admin_menu/admin_devel/admin_devel.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/local_translate/local_translate.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/mypatchs/mypatchs.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/mypatchs/keep-focus.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/default/files/languages/fr_BK5lmI_kG4IroZ1_7wcG1xcEM3McOeclKCEIO5yHKwo.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/lightbox2/js/lightbox.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/jquery_ui_filter/accordion/jquery_ui_filter_accordion.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/views/js/base.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/themes/bootstrap/js/misc/_progress.js?v=7.64"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/matomo/matomo.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/views/js/ajax_view.js?senvgz"></script>
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://piwik.liris.cnrs.fr/" : "http://piwik.liris.cnrs.fr/");_paq.push(["setSiteId", "1"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();</script>
+<script>window.a2a_config=window.a2a_config||{};window.da2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='https://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);da2a.script_load=function(){};},script_onready:function(){da2a.script_ready=true;if(da2a.html_done)da2a.init();},init:function(){for(var i=0,el,target,targets=da2a.targets,length=targets.length;i<length;i++){el=document.getElementById('da2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el){a2a.init('page',{target:el});el.id='';}da2a.done=true;}da2a.targets=[];}};(function ($){Drupal.behaviors.addToAny = {attach: function (context, settings) {if (context !== document && window.da2a) {if(da2a.script_ready)a2a.init_all();da2a.script_load();}}}})(jQuery);a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.callbacks.push({ready:da2a.script_onready});a2a_config.overlays=a2a_config.overlays||[];a2a_config.templates=a2a_config.templates||{};a2a_config.icon_color = "transparent,#0166ff";</script>
+<script src="https://liris.cnrs.fr/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/libraries/superfish/sfsmallscreen.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/libraries/superfish/supposition.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/libraries/superfish/superfish.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/libraries/superfish/supersubs.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/modules/superfish/superfish.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/js/slick.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/js/liris.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/default/themes/bootstrap_liris/js/custom.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/themes/bootstrap/js/modules/views/js/ajax_view.js?senvgz"></script>
+<script src="https://liris.cnrs.fr/sites/all/themes/bootstrap/js/misc/ajax.js?senvgz"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootstrap_liris","theme_token":"R2Wi6WkovMOGWi4my6sWMJgMQn8kI027ocG4p1vGs2A","jquery_version":"2.1","js":{"0":1,"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/2.1\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"\/sites\/default\/themes\/bootstrap_liris\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/jquery_ui_filter\/jquery_ui_filter.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/local_translate\/local_translate.js":1,"sites\/all\/modules\/mypatchs\/mypatchs.js":1,"sites\/all\/modules\/mypatchs\/keep-focus.js":1,"public:\/\/languages\/fr_BK5lmI_kG4IroZ1_7wcG1xcEM3McOeclKCEIO5yHKwo.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/jquery_ui_filter\/accordion\/jquery_ui_filter_accordion.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"sites\/all\/themes\/bootstrap\/js\/misc\/_progress.js":1,"sites\/all\/modules\/matomo\/matomo.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"1":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/default\/themes\/bootstrap_liris\/js\/slick.js":1,"sites\/default\/themes\/bootstrap_liris\/js\/liris.js":1,"sites\/default\/themes\/bootstrap_liris\/js\/custom.js":1,"sites\/all\/themes\/bootstrap\/js\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/bootstrap\/js\/misc\/ajax.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/footer_sitemap\/footer_sitemap.css":1,"sites\/all\/modules\/local_translate\/local_translate.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/mypatchs\/mypatchs.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/a4fb797798ef6e54658a409762451908.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/addtoany\/addtoany.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"\/sites\/default\/themes\/bootstrap_liris\/bootstrap\/css\/bootstrap.css":1,"sites\/all\/themes\/bootstrap\/css\/3.4.0\/overrides.min.css":1,"sites\/default\/themes\/bootstrap_liris\/css\/slick.css":1,"sites\/default\/themes\/bootstrap_liris\/css\/style.css":1,"sites\/default\/themes\/bootstrap_liris\/css\/font-awesome.min.css":1,"sites\/default\/themes\/bootstrap_liris\/css\/liris-patch.css":1}},"jQueryUiFilter":{"disabled":0,"accordionHeaderTag":"h3","accordionOptions":{"active":"false","animated":"slide","autoHeight":"true","clearStyle":"false","collapsible":"true","event":"click","scrollTo":0,"history":"false"}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Safari\/537.36"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:8881c1a88aaa847f7900a8fcdd14d374":{"view_name":"tous_les_evenements_liris","view_display_id":"block_1","view_args":"","view_path":"home","view_base_path":"evenement\/tous-les-evenements-du-liris","view_dom_id":"8881c1a88aaa847f7900a8fcdd14d374","pager_element":0},"views_dom_id:d0da1ffbb75b608fc806a81e36433b51":{"view_name":"actualites_du_liris_2","view_display_id":"block_1","view_args":"","view_path":"home","view_base_path":"actualite\/toutes-les-actualites-du-liris","view_dom_id":"d0da1ffbb75b608fc806a81e36433b51","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true,"\/search\/node":true},"better_exposed_filters":{"views":{"tous_les_evenements_liris":{"displays":{"block_1":{"filters":[]}}},"actualites_du_liris_2":{"displays":{"block_1":{"filters":[]}}}}},"matomo":{"trackMailto":1},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show","height":"show"},"speed":0,"autoArrows":false},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","expandText":"D\u00e9plier","collapseText":"Replier","title":"Menu principal"},"supposition":true,"supersubs":true}}},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="html front not-logged-in no-sidebars page-home i18n-fr">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Aller au contenu principal</a>
+  </div>
+    
+<header role="banner" id="siteHeader">
+    <div id="siteHeaderSlider">
+        <div id="siteHeaderSliderSlide">
+            <div class="siteHeaderSliderSlideItem" style="background-image:url('/sites/default/themes/bootstrap_liris/images/slider/slide-01.jpg');"></div>
+            <div class="siteHeaderSliderSlideItem" style="background-image:url('/sites/default/themes/bootstrap_liris/images/slider/slide-02.jpg');"></div>
+            <div class="siteHeaderSliderSlideItem" style="background-image:url('/sites/default/themes/bootstrap_liris/images/slider/slide-03.jpg');"></div>
+        </div>
+    </div>
+  <div class="container">
+    <div class="navbar-header">
+              <a class="logo navbar-btn pull-left" href="/" title="Accueil">
+          <img src="https://liris.cnrs.fr/sites/default/files/logo_liris_160_0.png" alt="Accueil" class="img-responsive"/>
+        </a>
+      
+      <div class="utilities">
+            <div class="region region-header">
+    <section id="block-locale-language" class="block block-locale clearfix">
+
+      
+  <ul class="language-switcher-locale-url"><li class="en first"><a href="/en" class="language-link" xml:lang="en"><img class="language-icon img-responsive" typeof="foaf:Image" src="https://liris.cnrs.fr/sites/all/modules/languageicons/flags/en.png" width="18" height="12" alt="English" title="English" /></a></li>
+<li class="fr last active"><a href="/" class="language-link active" xml:lang="fr"><img class="language-icon img-responsive" typeof="foaf:Image" src="https://liris.cnrs.fr/sites/all/modules/languageicons/flags/fr.png" width="18" height="12" alt="Français" title="Français" /></a></li>
+</ul>
+</section>
+<section id="block-system-user-menu" class="block block-system block-menu clearfix">
+
+      
+  <ul class="menu nav"><li class="first last leaf" id="um-connect"><a href="/user" title="Se connecter">Se connecter</a></li>
+</ul>
+</section>
+<section id="block-block-16" class="block block-block clearfix">
+
+      
+  <p><a data-target="#searchformModal" data-toggle="modal" href="#" id="searchBoxToggle" title="Rechercher"><span><i aria-hidden="true" class="fa fa-search">‌‌&#xfeff;﻿</i></span></a></p>
+
+</section>
+<section id="block-block-17" class="block block-block clearfix">
+
+      
+  <ul>
+	<li><a href="https://twitter.com/lirislyon" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+</ul>
+</section>
+  </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site_desc">
+          <div class="container">
+                            <a class="site_name" href="/" title="Accueil"><span>L</span>aboratoire d'<span>I</span>nfo<span>R</span>matique en <span>I</span>mage et <span>S</span>yst&egrave;mes d'information</a>
+                                        <div class="site_slogan">UMR 5205 CNRS / INSA Lyon / Université Claude Bernard Lyon 1 / Université Lumière Lyon 2 / École Centrale de Lyon</div>
+                  </div>
+  </div>
+
+</header>
+
+<div id="access">
+        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>-->
+      	  
+      <!--<div class="navbar-collapse collapse" id="navbar-collapse">-->
+      <div class="container">
+        <nav role="navigation">
+          
+                        <div class="region region-navigation">
+    <section id="block-superfish-1" class="block block-superfish clearfix">
+
+      
+  <ul  id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-7 sf-parent-items-6 sf-single-items-1"><li id="menu-634-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/" title="" class="menu_icon menu-634 sf-depth-1 active"><span><span>Accueil</span></span></a></li><li id="menu-1280-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/evenement/tous-les-evenements-du-liris" title="" class="sf-depth-1 menuparent"><span><span>Actualités</span></span></a><ul><li id="menu-1284-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/evenement/tous-les-evenements-du-liris" title="" class="sf-depth-2"><span><span>Tous les événements</span></span></a></li><li id="menu-1285-1" class="last even sf-item-2 sf-depth-2 sf-no-children"><a href="/actualite/toutes-les-actualites-du-liris" title="" class="sf-depth-2"><span><span>Toutes les actualités</span></span></a></li></ul></li><li id="menu-921-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="/liris" class="sf-depth-1 menuparent"><span><span>Présentation</span></span></a><ul><li id="menu-955-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/liris" title="" class="sf-depth-2"><span><span>Le LIRIS</span></span></a></li><li id="menu-960-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/presentation/organigramme-liris" class="sf-depth-2"><span><span>Organigramme du LIRIS</span></span></a></li><li id="menu-970-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/presentation/personnels" title="" class="sf-depth-2"><span><span>Personnels</span></span></a></li><li id="menu-1339-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/presentation/effectifs-du-liris" class="sf-depth-2"><span><span>Effectifs du LIRIS</span></span></a></li><li id="menu-890-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/presentation/rapport-dactivite" title="Les rapports d&#039;activité du laboratoire" class="sf-depth-2"><span><span>Rapport d'activité</span></span></a></li><li id="menu-962-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/presentation/contacts-liris" class="sf-depth-2"><span><span>Contacts LIRIS</span></span></a></li><li id="menu-963-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="/presentation/venir-liris" class="sf-depth-2"><span><span>Venir au LIRIS</span></span></a></li></ul></li><li id="menu-1287-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-7 sf-parent-children-1 sf-single-children-6 menuparent"><a href="/la-recherche/organisation" title="" class="sf-depth-1 menuparent"><span><span>Recherche</span></span></a><ul><li id="menu-1997-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/recherche/liste-des-poles" class="sf-depth-2"><span><span>Pôles du LIRIS</span></span></a></li><li id="menu-1998-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/recherche/liste-des-equipes" class="sf-depth-2"><span><span>Équipes du LIRIS</span></span></a></li><li id="menu-2098-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/recherche/plateformes" class="sf-depth-2"><span><span>Plateformes</span></span></a></li><li id="menu-2095-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/recherche/logiciels-liris" class="sf-depth-2"><span><span>Logiciels (dans HAL)</span></span></a></li><li id="menu-2069-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="https://datasets.liris.cnrs.fr/" target="_blank" class="sf-depth-2"><span><span>Jeux de données</span></span></a></li><li id="menu-1590-1" class="middle even sf-item-6 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/recherche/theses/theses-soutenues" class="sf-depth-2 menuparent"><span><span>Thèses du LIRIS</span></span></a><ul><li id="menu-1992-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/recherche/theses/theses-soutenues" class="sf-depth-3"><span><span>Thèses soutenues</span></span></a></li><li id="menu-1993-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="/recherche/theses/theses-en-cours" class="sf-depth-3"><span><span>Thèses en cours</span></span></a></li></ul></li><li id="menu-1323-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="/recherche/hdr-liris" class="sf-depth-2"><span><span>HDR du LIRIS</span></span></a></li></ul></li><li id="menu-1354-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/publications/publications-liris" class="sf-depth-1 menuparent"><span><span>Publications</span></span></a><ul><li id="menu-1355-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/publications/publications-liris" title="" class="sf-depth-2"><span><span>Toutes les publications (HAL)</span></span></a></li><li id="menu-2102-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="https://liris.cnrs.fr/maps/map-publis.php" class="sf-depth-2"><span><span>Collaborations internationales</span></span></a></li><li id="menu-1358-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/publications/fascicules-theses-et-hdr" class="sf-depth-2"><span><span>Fascicule des thèses et HDR</span></span></a></li><li id="menu-1870-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/publications/faits-marquants" class="sf-depth-2"><span><span>Faits marquants</span></span></a></li></ul></li><li id="menu-639-1" class="middle even sf-item-6 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/implication-liris-dans-formations" class="sf-depth-1 menuparent"><span><span>Formation</span></span></a><ul><li id="menu-1351-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/implication-liris-dans-formations" class="sf-depth-2"><span><span>Implication du LIRIS dans les formations</span></span></a></li><li id="menu-1341-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="http://mediation.liris.cnrs.fr" title="" class="sf-depth-2"><span><span>Médiation scientifique</span></span></a></li><li id="menu-1344-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="http://edinfomaths.universite-lyon.fr/" title="" class="sf-depth-2"><span><span> École doctorale</span></span></a></li><li id="menu-2023-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="https://projet.liris.cnrs.fr/edp/cafes-developpeur-liris/" class="sf-depth-2"><span><span>Cafés développeur</span></span></a></li></ul></li><li id="menu-640-1" class="last odd sf-item-7 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><span class="sf-depth-1 menuparent nolink" tabindex="0"><span><span>Emplois</span></span></span><ul><li id="menu-2087-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/emplois/offres-de-stage" class="sf-depth-2"><span><span>Offres de stage</span></span></a></li><li id="menu-2088-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/emplois/anciennes-offres-de-stage" class="sf-depth-2"><span><span>Anciennes offres de stage</span></span></a></li><li id="menu-2085-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/emplois/offres-emploi" class="sf-depth-2"><span><span>Offres d'emploi</span></span></a></li><li id="menu-2086-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/emplois/anciennes-offres-emploi" class="sf-depth-2"><span><span>Anciennes offres d'emploi</span></span></a></li></ul></li></ul>
+</section>
+  </div>
+                  </nav>
+      </div>
+    	  
+</div>
+
+<div id="main" class="main-container container">
+
+  <div class="row">
+
+    
+    <section class="col-sm-12">
+                  <a id="main-content"></a>
+                                              <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="panel-flexible panels-flexible-panel_accueil clearfix" >
+<div class="panel-flexible-inside panels-flexible-panel_accueil-inside">
+<div class="panels-flexible-row panels-flexible-row-panel_accueil-1 panels-flexible-row-first clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-panel_accueil-1-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-panel_accueil-top panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-panel_accueil-top-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-panel_accueil-main-row clearfix">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-panel_accueil-main-row-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-panel_accueil-left panels-flexible-region-first ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-panel_accueil-left-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-views pane-actualites-du-liris-2"  >
+  
+        <h2 class="pane-title">
+      Actualités du LIRIS    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-actualites-du-liris-2 view-id-actualites_du_liris_2 view-display-id-block_1 view-dom-id-d0da1ffbb75b608fc806a81e36433b51">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list index-news-list">    <ul class="clearfix">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">
+<div class="views-field views-field-title-field"><b><u><a class="liris-black-link" href="/actualite/prix-memoire-master-conseil-national-numerique-pour-lea-mosesso-lequipe-sical">Prix du mémoire de master du Conseil National du Numérique pour Léa Mosesso de l’équipe Sical</a></u></b><br /></div><div><div style="float: right;" class="views-field views-field-field-ac-image"><a href="https://liris.cnrs.fr/sites/default/files/1715955367266.jpg" rel="lightbox"><div class="field-content fixed-width-view-150"><img typeof="foaf:Image" class="img-responsive" src="https://liris.cnrs.fr/sites/default/files/1715955367266.jpg" width="2048" height="1365" alt="" /></div></a></div><p>Marina Ferrari, secrétaire d’État chargée du numérique, a remis le prix du mémoire du Conseil national du numérique à Léa Mosesso le 17 mai dernier. Léa est actuellement designer de recherche dans l’équipe Sical au sein du projet Limites Numériques. Elle a réalisé son stage et rédigé son mémoire de master “Vivre avec un smartphone obsolète” au sein de l’équipe Sical en 2022.</p></div><a href='/actualite/prix-memoire-master-conseil-national-numerique-pour-lea-mosesso-lequipe-sical'>Lire la suite…</a><span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_3">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span></span></li>
+          <li class="views-row views-row-2 views-row-even clearfix">
+<div class="views-field views-field-title-field"><b><u><a class="liris-black-link" href="/actualite/prix-meilleur-papier-conference-eurographics-2024-sein-lequipe-origami">Prix du meilleur papier à la conférence Eurographics 2024 au sein de l&#039;équipe Origami</a></u></b><br /></div><div><div style="float: right;" class="views-field views-field-field-ac-image"><a href="https://liris.cnrs.fr/sites/default/files/bestpaper.jpg" rel="lightbox"><div class="field-content fixed-width-view-150"><img typeof="foaf:Image" class="img-responsive" src="https://liris.cnrs.fr/sites/default/files/bestpaper.jpg" width="4012" height="2538" alt="" /></div></a></div><p>Lors de la conférence Eurographics 2024, conférence majeure en informatique graphique, qui a eu lieu à Limassol (Chypres) du 22 au 26 avril, le prix Günter Enderle du meilleur article a été décerné au travail mené par Baptiste Genest (Université Claude Bernard Lyon 1, LIRIS UMR 5205), Nicolas Courty (Université de Bretagne Sud, IRISA UMR 6074) et David Coeurjolly (CNRS, LIRIS UMR 5205). Le titre de cette étude est “Non-Euclidean Sliced Optimal Transport Sampling” et elle vise à étendre des stratégies d&#039;échantillonnage de points sur des variétés non euclidiennes via du transport optimal par coupe. 
+</p></div><a href='/actualite/prix-meilleur-papier-conference-eurographics-2024-sein-lequipe-origami'>Lire la suite…</a><span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_4">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span></span></li>
+          <li class="views-row views-row-3 views-row-odd clearfix">
+<div class="views-field views-field-title-field"><b><u><a class="liris-black-link" href="/actualite/nomination-prof.-di-huang-comme-jeune-chercheur-scientifique-exceptionnel-chine-france">Nomination de Prof. Di Huang comme jeune chercheur scientifique exceptionnel Chine-France 2024</a></u></b><br /></div><div><div style="float: right;" class="views-field views-field-field-ac-image"><a href="https://liris.cnrs.fr/sites/default/files/di_huang_photo.jpeg" rel="lightbox"><div class="field-content fixed-width-view-150"><img typeof="foaf:Image" class="img-responsive" src="https://liris.cnrs.fr/sites/default/files/di_huang_photo.jpeg" width="256" height="256" alt="" /></div></a></div><p>Fier de notre ancien doctorant, le professeur Di Huang de l&#039;Université de Beihang, qui a été nommé jeune chercheur scientifique exceptionnel Chine-France dans le cadre du « Programme d&#039;échange de jeunes chercheurs scientifiques exceptionnels Chine-France ».</p></div><a href='/actualite/nomination-prof.-di-huang-comme-jeune-chercheur-scientifique-exceptionnel-chine-france'>Lire la suite…</a><span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_5">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span></span></li>
+          <li class="views-row views-row-4 views-row-even clearfix">
+<div class="views-field views-field-title-field"><b><u><a class="liris-black-link" href="/actualite/dialogue-objectif-ressource-liris">Dialogue Objectif Ressource du LIRIS</a></u></b><br /></div><div><div style="float: right;" class="views-field views-field-field-ac-image"><a href="https://liris.cnrs.fr/sites/default/files/logo_liris_320.png" rel="lightbox"><div class="field-content fixed-width-view-150"><img typeof="foaf:Image" class="img-responsive" src="https://liris.cnrs.fr/sites/default/files/logo_liris_320.png" width="320" height="144" alt="" /></div></a></div><p>Le DOR est un moment important dans la vie de l&#039;unité puisqu&#039;il permet de mettre en cohérence les objectifs du LIRIS avec les ressources mises à disposition des tutelles : CNRS, INSA Lyon, Université Claude Bernard Lyon 1, Ecole Centrale de Lyon, Université Lyon 2
+</p></div><a href='/actualite/dialogue-objectif-ressource-liris'>Lire la suite…</a><span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_6">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span></span></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last clearfix">
+<div class="views-field views-field-title-field"><b><u><a class="liris-black-link" href="/actualite/prix-meilleur-poster-conference-visigrapp">Prix du meilleur poster à la conférence VISIGRAPP</a></u></b><br /></div><div><div style="float: right;" class="views-field views-field-field-ac-image"><a href="https://liris.cnrs.fr/sites/default/files/best_poster.png" rel="lightbox"><div class="field-content fixed-width-view-150"><img typeof="foaf:Image" class="img-responsive" src="https://liris.cnrs.fr/sites/default/files/best_poster.png" width="646" height="921" alt="" /></div></a></div><p>Mohammed-Bashir Mahdi obtient le prix du meilleur poster à la conférence VISIGRAPP 2024 pour le papier &quot;Pure Physics-Based Hand Interaction in VR&quot; .
+
+</p></div><a href='/actualite/prix-meilleur-poster-conference-visigrapp'>Lire la suite…</a><span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_7">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span></span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-panel_accueil-center panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-panel_accueil-center-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-block-3"  >
+  
+        <h2 class="pane-title">
+      Publications à l'honneur    </h2>
+    
+  
+  <div class="pane-content">
+    <ul class="hal_liste"><li class="hal_element">&nbsp;<span class="hal_auteurs"><span class="hal_auteur"><span class="hal_prenom">Paul</span> <span class="hal_nom">Juillard</span></span>, <a target="_blank" href="https://liris.cnrs.fr/page-membre/angela-bonifati" class="hal_auteur_membre"><span class="hal_prenom">Angela</span> <span class="hal_nom">Bonifati</span></a> & <a target="_blank" href="https://liris.cnrs.fr/page-membre/andrea-mauri" class="hal_auteur_membre"><span class="hal_prenom">Andrea</span> <span class="hal_nom">Mauri</span></a></span> (<span class="hal_date">2024</span>). «&nbsp;<span class="hal_titre" title="Conférence, audience internationale, avec comité de lecture">Interactive Graph Repairs for Neighborhood Constraints</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Conférence, audience internationale, avec comité de lecture">International Conference on Extending Database Technology</span>, <span class="hal_date">28 mars 2024</span>, <span class="hal_place">Paestum</span> (<span class="hal_place">Italie</span>), <span title="Pages">pp.</span>&nbsp;<span class="hal_page">175-187</span></span>. <span title="« Digital object identifier » (identifiant d'objet numérique)">doi</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='http://dx.doi.org/10.48786/edbt.2024.16'>10.48786/edbt.2024.16</a></span>. <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-04335195'>hal-04335195</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-04335195/file/paper-52%20%281%29.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-04335195&via=lirislyon&text=Juillard%2C+Bonifati+%26+Mauri+%C2%AB+Interactive+Graph+Repairs+for+Neighborhood+Constraints+%C2%BB+International+Conference+on+Extending+Database+Technology%2C+28+mars+2024%2C+Paestum+%28Italie%29+pp.+175-187+%28%5B%E2%80%A6%5D+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+<li class="hal_element">&nbsp;<span class="hal_auteurs"><span class="hal_auteur"><span class="hal_prenom">Erwan</span> <span class="hal_nom">Escudie</span></span>, <a target="_blank" href="https://liris.cnrs.fr/page-membre/laetitia-matignon" class="hal_auteur_membre"><span class="hal_prenom">Laëtitia</span> <span class="hal_nom">Matignon</span></a> & <span class="hal_auteur"><span class="hal_prenom">Jacques</span> <span class="hal_nom">Saraydaryan</span></span></span> (<span class="hal_date">2024</span>). «&nbsp;<span class="hal_titre" title="Conférence, audience internationale, avec comité de lecture">Attention Graph for Multi-Robot Social Navigation with Deep Reinforcement Learning</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Conférence, audience internationale, avec comité de lecture">AAMAS 2024 - International Conference on Autonomous Agents and Multi-Agent Systems</span>, <span class="hal_date">10 mai 2024</span>, <span class="hal_place">Auckland</span> (<span class="hal_place">Nouvelle-Zélande</span>).</span> <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-04427749'>hal-04427749</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-04427749/file/2401.17914.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-04427749&via=lirislyon&text=Escudie%2C+Matignon+%26+Saraydaryan+%C2%AB+Attention+Graph+for+Multi-Robot+Social+Navigation+with+Deep+Reinforcement+Learning+%C2%BB+AAMAS+2024+-+International+Conference+on+Autonomous+Agents+and+Multi-A%5B%E2%80%A6%5D+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+<li class="hal_element">&nbsp;<span class="hal_auteurs"><a target="_blank" href="https://liris.cnrs.fr/page-membre/elise-lavoue" class="hal_auteur_membre"><span class="hal_prenom">Elise</span> <span class="hal_nom">Lavoué</span></a>, <a target="_blank" href="https://liris.cnrs.fr/page-membre/sophie-villenave" class="hal_auteur_membre"><span class="hal_prenom">Sophie</span> <span class="hal_nom">Villenave</span></a>, <a target="_blank" href="https://liris.cnrs.fr/page-membre/audrey-serna" class="hal_auteur_membre"><span class="hal_prenom">Audrey</span> <span class="hal_nom">Serna</span></a>, <span class="hal_auteur"><span class="hal_prenom">Clementine</span> <span class="hal_nom">Helfenstein-Didier</span></span>, <span class="hal_auteur"><span class="hal_prenom">Patrick</span> <span class="hal_nom">Baert</span></span> & <a target="_blank" href="https://liris.cnrs.fr/page-membre/guillaume-lavoue" class="hal_auteur_membre"><span class="hal_prenom">Guillaume</span> <span class="hal_nom">Lavoué</span></a></span> (<span class="hal_date">2023</span>). «&nbsp;<span class="hal_titre" title="Revue, audience internationale, avec comité de lecture">Influence of Scenarios and Player Traits on Flow in Virtual Reality</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Revue, audience internationale, avec comité de lecture">IEEE Transactions on Visualization and Computer Graphics</span></span>. <span title="« Digital object identifier » (identifiant d'objet numérique)">doi</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='http://dx.doi.org/10.1109/TVCG.2023.3332261'>10.1109/TVCG.2023.3332261</a></span>. <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-04281030'>hal-04281030</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-04281030/file/Personality_traits_and_flow_TVCG_Lavoue%20et%20al-HAL.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-04281030&via=lirislyon&text=Lavou%C3%A9%2C+Villenave+%5B%E2%80%A6%5D+%C2%AB+Influence+of+Scenarios+and+Player+Traits+on+Flow+in+Virtual+Reality+%C2%BB+IEEE+Transactions+on+Visualization+and+Computer+Graphics+%282023%29+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+<li class="hal_element">&nbsp;<span class="hal_auteurs"><a target="_blank" href="https://liris.cnrs.fr/page-membre/florian-baud" class="hal_auteur_membre"><span class="hal_prenom">Florian</span> <span class="hal_nom">Baud</span></a> & <a target="_blank" href="https://liris.cnrs.fr/page-membre/alexandre-aussem" class="hal_auteur_membre"><span class="hal_prenom">Alex</span> <span class="hal_nom">Aussem</span></a></span> (<span class="hal_date">2023</span>). «&nbsp;<span class="hal_titre" title="Conférence, audience internationale, avec comité de lecture">Answering Student Queries with a Supervised Memory Conversational Agent</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Conférence, audience internationale, avec comité de lecture">The International FLAIRS Conference Proceedings (FLAIRS-36)</span>, <span class="hal_date">17 mai 2023</span>, <span class="hal_place">Clearwater Beach</span> (<span class="hal_place">États-Unis</span>).</span> <span title="« Digital object identifier » (identifiant d'objet numérique)">doi</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='http://dx.doi.org/10.32473/flairs.36.133195'>10.32473/flairs.36.133195</a></span>. <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-04249196'>hal-04249196</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-04249196/file/Chatbot_FLAIRS.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-04249196&via=lirislyon&text=Baud+%26+Aussem+%C2%AB+Answering+Student+Queries+with+a+Supervised+Memory+Conversational+Agent+%C2%BB+The+International+FLAIRS+Conference+Proceedings+%28FLAIRS-36%29%2C+17+mai+2023%2C+Clearwater+Beach+%28%C3%89tats-U%5B%E2%80%A6%5D+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+<li class="hal_element">&nbsp;<span class="hal_auteurs"><span class="hal_auteur"><span class="hal_prenom">Baptiste</span> <span class="hal_nom">Genest</span></span>, <span class="hal_auteur"><span class="hal_prenom">Nicolas</span> <span class="hal_nom">Courty</span></span> & <a target="_blank" href="https://liris.cnrs.fr/page-membre/david-coeurjolly" class="hal_auteur_membre"><span class="hal_prenom">David</span> <span class="hal_nom">Coeurjolly</span></a></span> (<span class="hal_date">2024</span>). «&nbsp;<span class="hal_titre" title="Revue, audience internationale, avec comité de lecture">Non-Euclidean Sliced Optimal Transport Sampling</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Revue, audience internationale, avec comité de lecture">Computer Graphics Forum</span></span>. <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-04481548'>hal-04481548</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-04481548/file/main-hal.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-04481548&via=lirislyon&text=Genest%2C+Courty+%26+Coeurjolly+%C2%AB+Non-Euclidean+Sliced+Optimal+Transport+Sampling+%C2%BB+Computer+Graphics+Forum+%282024%29+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+<li class="hal_element">&nbsp;<span class="hal_auteurs"><a target="_blank" href="https://liris.cnrs.fr/page-membre/quentin-gallouedec" class="hal_auteur_membre"><span class="hal_prenom">Quentin</span> <span class="hal_nom">Gallouédec</span></a> & <a target="_blank" href="https://liris.cnrs.fr/page-membre/emmanuel-dellandrea" class="hal_auteur_membre"><span class="hal_prenom">Emmanuel</span> <span class="hal_nom">Dellandréa</span></a></span> (<span class="hal_date">2023</span>). «&nbsp;<span class="hal_titre" title="Conférence, audience internationale, avec comité de lecture">Cell-Free Latent Go-Explore</span>&nbsp;». <span class="hal_conf"><span class="hal_titre_conf" title="Conférence, audience internationale, avec comité de lecture">International Conference on Machine Learning (ICML)</span>, <span class="hal_date">29 juillet 2023</span>, <span class="hal_place">Honolulu (Hawai)</span> (<span class="hal_place">États-Unis</span>).</span> <span title="Archive de prépublications électroniques">ArXiv</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='http://arxiv.org/abs/2208.14928'>2208.14928</a></span>. <span title="Hyper Articles en Ligne (archives ouvertes HAL)">HAL</span>&nbsp;: <span class="hal_ref"><a target='_blank' href='https://hal.science/hal-03769875'>hal-03769875</a></span>. <span class="hal_pdf"><a target='_blank' href='https://hal.science/hal-03769875/file/gallouedec23a.pdf' title="Lien vers le texte de l'article (PDF)"><span class='hal-pdf'></span></a></span>  <a alt="Partager" title="Partager sur twitter" target="_blank" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fhal.science%2Fhal-03769875&via=lirislyon&text=Gallou%C3%A9dec+%26+Dellandr%C3%A9a+%C2%AB+Cell-Free+Latent+Go-Explore+%C2%BB+International+Conference+on+Machine+Learning+%28ICML%29%2C+29+juillet+2023%2C+Honolulu+%28Hawai%29+%28%C3%89tats-Unis%29.+%282023%29+%40INS2I_CNRS+%40insadelyon+%40UnivLyon1+%40univ_lyon2+%40CentraleLyon" rel="nofollow noopener"><span class="hal-twitter"></span></a></li>
+</ul><!-- temps écoulé dans index.php : 0.0025568008422852 seconde(s) -->
+<!-- généré à : 2024-06-17 12:15:57 -->
+<!-- données issues du cache HTML -->
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views pane-tous-les-evenements-liris"  >
+  
+        <h2 class="pane-title">
+      Agenda    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-tous-les-evenements-liris view-id-tous_les_evenements_liris view-display-id-block_1 view-dom-id-8881c1a88aaa847f7900a8fcdd14d374">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="field-content"><u><b><a class="liris-black-link" href="/evenement/assemblee-generale-liris-0">Assemblée générale du LIRIS</a></b></u></div><div><font style="font-size:85%;color:#555;">&nbsp;&nbsp;Le 27/06/2024 de 09:00 à 12:00. Lieu : Amphi Gaston Berger, INSA Lyon<br/></font></div><div class="field-content">L&#039;AG aura lieu le jeudi 27 juin de 9h à 12h dans l&#039;amphithéâtre Gaston Berger (INSA Lyon). Elle sera suivi d&#039;un buffet déjeuner.
+</div><span><a href="/evenement/assemblee-generale-liris-0">Lire la suite…</a>
+</span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_1">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(window.da2a)da2a.script_load();
+//--><!]]>
+</script></span><hr class="ev-liris-separator"> 
+  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    <div class="field-content"><u><b><a class="liris-black-link" href="/evenement/visual-data-analysis-scientific-applications-integrating-generic-concepts-practical-needs">Visual Data Analysis in Scientific Applications: Integrating Generic Concepts with Practical Needs through Domain Collaboration</a></b></u></div><div><font style="font-size:85%;color:#555;">&nbsp;&nbsp;Le 18/06/2024 de 14:00 à 15:00. Lieu : Amphithéatre Gaston Berger<br/></font></div><div class="field-content">Effectively analyzing increasingly large and complex data from simulations and experiments is a crucial step in the scientific process. Visualization, which keeps the scientist in the analysis loop, can play a significant role in this process particularly when the goal is ‘understanding’ or ‘knowledge generation’. Practically this requires creating environments for scientific reasoning through interactive data exploration guided by automatic analysis. Successful solutions are typically devised in close collaboration with domain experts, where both partners often go beyond their original expectations. This synergy results in methods that are not only innovative but also relevant and effective in addressing real-world scientific problems. In this talk, I will discuss a few use cases from our recent research.</div><span><a href="/evenement/visual-data-analysis-scientific-applications-integrating-generic-concepts-practical-needs">Lire la suite…</a>
+</span><span class="field-content"><span class="a2a_kit a2a_kit_size_32 a2a_target addtoany_list" id="da2a_2">
+      Partager <a class="a2a_button_twitter" alt="Partager" title="Partager sur twitter"></a> 
+      
+      
+    </span>
+    </span><hr class="ev-liris-separator"> 
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-panel_accueil-2 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-panel_accueil-2-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-panel_accueil-bottom panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-panel_accueil-bottom-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+
+
+
+		<div class="modal fade" id="searchformModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+
+        <form class="search-form clearfix" action="/search/node" method="post" id="search-form" accept-charset="UTF-8"><div><div class="form-wrapper form-group" id="edit-basic"><div class="input-group"><input placeholder="Rechercher" class="form-control form-text" type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" /><span class="input-group-btn"><button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></span></div><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Rechercher">Rechercher</button>
+</div><input type="hidden" name="form_build_id" value="form-4qVB2RUDyIx0Z_6DKNaOajP2gyR5aC3XgA4fy-nJz3I" />
+<input type="hidden" name="form_id" value="search_form" />
+</div></form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+  <footer class="footer clearfix ">
+      <div class="container">
+          <div class="region region-footer">
+    <section id="block-footer-sitemap-footer-sitemap" class="block block-footer-sitemap clearfix">
+
+      
+  <div id="footer-sitemap" class="clearfix">
+  <div class="fs-block-content"><div class="menu-menu-liris"></div>
+<div class="main-menu"><ul class="footer_links_main-menu total-items-7 parent-items-0 single-items-0"><li class="menu-634 depth-1 fs-no-children  first  active"><a href="/" title="" class="fs-root-link active">Accueil</a></li>
+<li class="menu-1280 depth-1 total-children-2 parent-children-2 single-children-0"><a href="/evenement/tous-les-evenements-du-liris" title="" class="fs-root-link">Actualités</a><ul class="footer_links_main-menu total-items-2 parent-items-0 single-items-0"><li class="menu-1284 depth-1 total-children-0 parent-children-0 single-children-0  first"><a href="/evenement/tous-les-evenements-du-liris" title="">Tous les événements</a></li>
+<li class="menu-1285 depth-1 total-children-0 parent-children-0 single-children-0  last"><a href="/actualite/toutes-les-actualites-du-liris" title="">Toutes les actualités</a></li>
+</ul></li>
+<li class="menu-921 depth-1 total-children-7 parent-children-1 single-children-6"><a href="/liris" class="fs-root-link"><span><span>Présentation</span></span></a><ul class="footer_links_main-menu total-items-7 parent-items-0 single-items-0"><li class="menu-955 depth-1 fs-no-children  first"><a href="/liris" title="" class="sf-depth-2"><span><span>Le LIRIS</span></span></a></li>
+<li class="menu-960 depth-1 fs-no-children"><a href="/presentation/organigramme-liris" class="sf-depth-2"><span><span>Organigramme du LIRIS</span></span></a></li>
+<li class="menu-970 depth-1 total-children-0 parent-children-0 single-children-0"><a href="/presentation/personnels" title="">Personnels</a></li>
+<li class="menu-1339 depth-1 fs-no-children"><a href="/presentation/effectifs-du-liris" class="sf-depth-2"><span><span>Effectifs du LIRIS</span></span></a></li>
+<li class="menu-890 depth-1 fs-no-children"><a href="/presentation/rapport-dactivite" title="Les rapports d&#039;activité du laboratoire" class="sf-depth-2"><span><span>Rapport d'activité</span></span></a></li>
+<li class="menu-962 depth-1 fs-no-children"><a href="/presentation/contacts-liris" class="sf-depth-2"><span><span>Contacts LIRIS</span></span></a></li>
+<li class="menu-963 depth-1 fs-no-children  last"><a href="/presentation/venir-liris" class="sf-depth-2"><span><span>Venir au LIRIS</span></span></a></li>
+</ul></li>
+<li class="menu-1287 depth-1 total-children-7 parent-children-3 single-children-4"><a href="/la-recherche/organisation" title="" class="fs-root-link">Recherche</a><ul class="footer_links_main-menu total-items-7 parent-items-0 single-items-0"><li class="menu-1997 depth-1 fs-no-children  first"><a href="/recherche/liste-des-poles">Pôles du LIRIS</a></li>
+<li class="menu-1998 depth-1 fs-no-children"><a href="/recherche/liste-des-equipes">Équipes du LIRIS</a></li>
+<li class="menu-2098 depth-1 total-children-0 parent-children-0 single-children-0"><a href="/recherche/plateformes" class="sf-depth-2"><span><span>Plateformes</span></span></a></li>
+<li class="menu-2095 depth-1 fs-no-children"><a href="/recherche/logiciels-liris" class="sf-depth-2"><span><span>Logiciels (dans HAL)</span></span></a></li>
+<li class="menu-2069 depth-1 fs-no-children"><a href="https://datasets.liris.cnrs.fr/" target="_blank">Jeux de données</a></li>
+<li class="menu-1590 depth-1 total-children-2 parent-children-0 single-children-2"><a href="/recherche/theses/theses-soutenues">Thèses du LIRIS</a><ul class="footer_links_main-menu total-items-2 parent-items-0 single-items-0"><li class="menu-1992 depth-1 fs-no-children  first"><a href="/recherche/theses/theses-soutenues">Thèses soutenues</a></li>
+<li class="menu-1993 depth-1 fs-no-children  last"><a href="/recherche/theses/theses-en-cours">Thèses en cours</a></li>
+</ul></li>
+<li class="menu-1323 depth-1 total-children-0 parent-children-0 single-children-0  last"><a href="/recherche/hdr-liris" class="sf-depth-2"><span><span>HDR du LIRIS</span></span></a></li>
+</ul></li>
+<li class="menu-1354 depth-1 total-children-4 parent-children-0 single-children-4"><a href="/publications/publications-liris" class="fs-root-link"><span><span>Publications</span></span></a><ul class="footer_links_main-menu total-items-4 parent-items-0 single-items-0"><li class="menu-1355 depth-1 fs-no-children  first"><a href="/publications/publications-liris" title="" class="sf-depth-2"><span><span>Toutes les publications (HAL)</span></span></a></li>
+<li class="menu-2102 depth-1 fs-no-children"><a href="https://liris.cnrs.fr/maps/map-publis.php">Collaborations internationales</a></li>
+<li class="menu-1358 depth-1 fs-no-children"><a href="/publications/fascicules-theses-et-hdr" class="sf-depth-2"><span><span>Fascicule des thèses et HDR</span></span></a></li>
+<li class="menu-1870 depth-1 fs-no-children  last"><a href="/publications/faits-marquants" class="sf-depth-2"><span><span>Faits marquants</span></span></a></li>
+</ul></li>
+<li class="menu-639 depth-1 total-children-4 parent-children-0 single-children-4"><a href="/implication-liris-dans-formations" class="fs-root-link"><span><span>Formation</span></span></a><ul class="footer_links_main-menu total-items-4 parent-items-0 single-items-0"><li class="menu-1351 depth-1 fs-no-children  first"><a href="/implication-liris-dans-formations" class="sf-depth-2"><span><span>Implication du LIRIS dans les formations</span></span></a></li>
+<li class="menu-1341 depth-1 fs-no-children"><a href="http://mediation.liris.cnrs.fr" title="">Médiation scientifique</a></li>
+<li class="menu-1344 depth-1 fs-no-children"><a href="http://edinfomaths.universite-lyon.fr/" title=""> École doctorale</a></li>
+<li class="menu-2023 depth-1 fs-no-children  last"><a href="https://projet.liris.cnrs.fr/edp/cafes-developpeur-liris/">Cafés développeur</a></li>
+</ul></li>
+<li class="menu-640 depth-1 total-children-4 parent-children-0 single-children-4  last"><span class="fs-root-link nolink" tabindex="0">Emplois</span><ul class="footer_links_main-menu total-items-4 parent-items-0 single-items-0"><li class="menu-2087 depth-1 fs-no-children  first"><a href="/emplois/offres-de-stage">Offres de stage</a></li>
+<li class="menu-2088 depth-1 fs-no-children"><a href="/emplois/anciennes-offres-de-stage">Anciennes offres de stage</a></li>
+<li class="menu-2085 depth-1 fs-no-children"><a href="/emplois/offres-emploi">Offres d&#039;emploi</a></li>
+<li class="menu-2086 depth-1 fs-no-children  last"><a href="/emplois/anciennes-offres-emploi">Anciennes offres d&#039;emploi</a></li>
+</ul></li>
+</ul></div>
+</div>
+</div>
+
+</section>
+<section id="block-block-18" class="block block-block clearfix">
+
+      
+  <p><a href="/mentions-legales">Mentions légales</a></p>
+
+</section>
+<section id="block-block-2" class="block block-block clearfix">
+
+      
+  <div><a class="liristheme-logo-tutelle" href="http://www.cnrs.fr"> </a><a class="liristheme-logo-tutelle" href="https://www.cnrs.fr"><img alt="" src="https://liris.cnrs.fr/sites/default/files/logo/CNRS_2019_RVB171x171bis.png" style="width: 80px; height: 80px;" /></a></div>
+<div><a class="liristheme-logo-tutelle" href="https://www.insa-lyon.fr"><img alt="INSA de Lyon" src="/sites/default/files/logo/logo_insa.png" style="height: 45px;" title="INSA de Lyon" /></a></div>
+<div><a class="liristheme-logo-tutelle" href="https://www.univ-lyon1.fr"><img alt="Université Claude Bernard Lyon 1" src="/sites/default/files/logo/logo_ucbl.png" style="height: 80px;" title="Université Claude Bernard Lyon 1" /></a></div>
+<div><a class="liristheme-logo-tutelle" href="https://www.univ-lyon2.fr"><img alt="" src="https://liris.cnrs.fr/sites/default/files/logo/univlyon2_272x142.png" style="width: 153px; height: 80px;" /></a></div>
+<div><a class="liristheme-logo-tutelle-last" href="https://www.ec-lyon.fr"><img alt="Ecole Centrale de Lyon" src="/sites/default/files/logo/logo_centrale.png" style="height: 80px;" title="Ecole Centrale de Lyon" /></a></div>
+
+</section>
+  </div>
+      </div>
+
+  </footer>
+  <script>da2a.targets=[
+{title:"Assembl\u00e9e g\u00e9n\u00e9rale du LIRIS",url:"https:\/\/liris.cnrs.fr\/evenement\/assemblee-generale-liris-0"},
+{title:"Visual Data Analysis in Scientific Applications: Integrating Generic Concepts with Practical Needs through Domain Collaboration",url:"https:\/\/liris.cnrs.fr\/evenement\/visual-data-analysis-scientific-applications-integrating-generic-concepts-practical-needs"},
+{title:"Prix du m\u00e9moire de master du Conseil National du Num\u00e9rique pour L\u00e9a Mosesso de l\u2019\u00e9quipe Sical",url:"https:\/\/liris.cnrs.fr\/actualite\/prix-memoire-master-conseil-national-numerique-pour-lea-mosesso-lequipe-sical"},
+{title:"Prix du meilleur papier \u00e0 la conf\u00e9rence Eurographics 2024 au sein de l\u0027\u00e9quipe Origami",url:"https:\/\/liris.cnrs.fr\/actualite\/prix-meilleur-papier-conference-eurographics-2024-sein-lequipe-origami"},
+{title:"Nomination de Prof. Di Huang comme jeune chercheur scientifique exceptionnel Chine-France 2024",url:"https:\/\/liris.cnrs.fr\/actualite\/nomination-prof.-di-huang-comme-jeune-chercheur-scientifique-exceptionnel-chine-france"},
+{title:"Dialogue Objectif Ressource du LIRIS",url:"https:\/\/liris.cnrs.fr\/actualite\/dialogue-objectif-ressource-liris"},
+{title:"Prix du meilleur poster \u00e0 la conf\u00e9rence VISIGRAPP",url:"https:\/\/liris.cnrs.fr\/actualite\/prix-meilleur-poster-conference-visigrapp"}];
+da2a.html_done=true;if(da2a.script_ready&&!da2a.done)da2a.init();da2a.script_load();</script>
+<script src="https://liris.cnrs.fr/sites/all/themes/bootstrap/js/bootstrap.js?senvgz"></script>
+</body>
+</html>

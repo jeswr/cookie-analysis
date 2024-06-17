@@ -1,0 +1,1177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+       "http://www.w3.org/TR/html4/loose.dtd"> 
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="Unicode Standard">
+<title>Unicode 15.1.0</title>
+<link rel="stylesheet" type="text/css" href="https://www.unicode.org/webscripts/standard_styles.css">
+<style type="text/css"> 
+
+:root {
+  /* The following variable is used to control display of a 
+     (pre-release) "Status" paragraph at the top of the page. 
+     The element is displayed during alpha and beta periods,
+     but hidden for the release. 
+  
+     Prior to release, set to: 
+        --status_display: block;
+     For the release, set to:
+        --status_display: none;
+  */
+  --status_display: none; 
+}
+.status {
+  background-color: #FFB6C1;
+  border: 1px solid black;
+  padding: 2px;
+  display: var(--status_display);
+}
+</style>
+</head>
+
+<body>
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- BEGIN HEADER BAR -->
+    <tr>
+      <td colspan="2">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          
+          <td class="icon" style="width:38px; height:35px">
+          <a href="https://www.unicode.org/">
+          <img border="0" src="https://www.unicode.org/webscripts/logo60s2.gif" align="middle" 
+          alt="[Unicode]" width="34" height="33"></a>
+          </td>
+
+          <td class="icon" style="vertical-align:middle">
+          <a class="bar"> </a>
+          <a class="bar" href="https://www.unicode.org/versions/Unicode15.1.0/"><font size="3">Unicode 15.1.0</font></a>
+          </td>
+
+          <td class="bar">
+          <a href="https://www.unicode.org/main.html" class="bar">Tech Site</a> 
+          | <a href="https://www.unicode.org/sitemap/" class="bar">Site Map</a> |
+          <a href="https://www.unicode.org/search" class="bar">Search </a>
+          </td>
+
+        </tr>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="gray">&nbsp;</td>
+    </tr>
+<!-- END HEADER BAR -->
+
+    <tr>
+      <td valign="top" width="25%" class="navCol">
+      <table class="navColTable" border="0" width="100%" cellspacing="4" 
+      cellpadding="0">
+        <tr>
+          <td class="navColTitle" colspan="2" height="26">
+          <a name="Core_Specification_nb">15.0.0 Core Specification for 15.1</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+            All Chapters and Appendices Together:</td>
+        </tr>
+        <!-- Prepublication notice -->
+        <!--
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+                    Available September 2024</td>
+        </tr>
+      -->
+        <!-- Published pdf for release -->
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf">
+              Full Text pdf for Viewing</a> (14 MB)
+          </td>
+        </tr>
+        <!--
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+          Print-on-Demand (POD) for purchase: <a href="https://www.lulu.com/en/us/shop/unicode-consortium/the-unicode-standard-version-140-volume-1/paperback/product-qkgep6.html">Volume 1</a> and <a href="https://www.lulu.com/en/us/shop/unicode-consortium/the-unicode-standard-version-140-volume-2/paperback/product-5682zw.html">Volume 2</a></td>
+        </tr>
+        -->
+        <tr>
+          <td class="navColTitle" colspan="2" height="26">15.0.0 Front Matter for 15.1</td> 
+        </tr>
+        <!-- Prepublication notice -->
+        <!--
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+                    Available September 2024</td>
+        </tr>
+      -->
+        <!-- Published pdf for release -->
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/Title.pdf">
+              Title and Copyright
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/UnicodeBookTOC.pdf">
+              Contents
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/bookmarks.html">
+              Unicode 15.0 Web Bookmarks
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/Preface.pdf">
+              Preface
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColTitle" colspan="2" height="26"><a name="Chapters_nb">15.0.0 Chapters for 15.1</a></td>
+        </tr>
+        <!-- Prepublication notice -->
+        <!--
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+                    Available September 2024</td>
+        </tr>
+        -->
+        <!-- Published pdf for release -->
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">1</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch01.pdf">
+              Introduction
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">2</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch02.pdf">
+              General Structure
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">3</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf">
+              Conformance
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">4</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch04.pdf">
+              Character Properties
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">5</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch05.pdf">
+              Implementation Guidelines
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">6</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch06.pdf">
+              Writing Systems and Punctuation
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">7</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch07.pdf">
+              Europe-I
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">8</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch08.pdf">
+              Europe-II
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">9</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf">
+              Middle East-I
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">10</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch10.pdf">
+              Middle East-II
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">11</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch11.pdf">
+              Cuneiform and Hieroglyphs
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">12</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch12.pdf">
+              South and Central Asia-I
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">13</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch13.pdf">
+              South and Central Asia-II
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">14</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch14.pdf">
+              South and Central Asia-III
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">15</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch15.pdf">
+              South and Central Asia-IV
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">16</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch16.pdf">
+              Southeast Asia-I
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">17</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch17.pdf">
+              Southeast Asia-II
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">18</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch18.pdf">
+              East Asia
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">19</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch19.pdf">
+              Africa
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">20</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch20.pdf">
+              Americas
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">21</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch21.pdf">
+              Notational Systems
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">22</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch22.pdf">
+              Symbols
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">23</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf">
+              Special Areas and Format Characters
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">24</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/ch24.pdf">
+              About the Code Charts
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColTitle" colspan="2" height="26">
+          <a name="Appendices_nb">15.0.0 Appendices and Back Matter for 15.1</a></td>
+        </tr>
+        <!-- Prepublication notice -->
+        <!--
+        <tr>
+          <td class="navColCell" valign="top" height="17"></td>
+          <td class="navColCell" valign="top" height="17">
+                    Available September 2024</td>
+        </tr>
+        -->
+        <!-- Published pdf for release -->
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">A</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appA.pdf">
+              Notational Conventions
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">B</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appB.pdf">
+              Unicode Publications and Resources
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">C</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appC.pdf">
+              Relationship to ISO/IEC 10646
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">D</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appD.pdf">
+              Version History of the Standard
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">E</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appE.pdf">
+              Han Unification History
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">F</td>
+          <td class="navColCell" valign="top" height="17">     
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/appF.pdf">
+              Documentation of CJK Strokes
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17">&nbsp;</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/UnicodeBookIX.pdf">
+              Index
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17">&nbsp;</td>
+          <td class="navColCell" valign="top" height="17">
+            <a href="https://www.unicode.org/versions/Unicode15.0.0/Colophon.pdf">
+              Colophon
+            </a>
+          </td>
+        </tr>
+	      <tr>
+          <td class="navColTitle" colspan="2" height="26">
+          <a name="Code_Charts_nb">Code Charts</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+		<a href="https://www.unicode.org/charts/">Latest Code Charts</a>
+    <a href="https://www.unicode.org/charts/fr/">(Tableaux des caractères)</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+	  <a href="https://www.unicode.org/charts/PDF/Unicode-15.1/">
+          Delta Code Charts</a> (additions to 15.1.0 highlighted)</td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+          <a href="https://www.unicode.org/Public/15.1.0/charts/">Archival Code Charts</a>
+          (15.1.0) <!--(<a href="https://www.unicode.org/Public/15.1.0/charts/fr/">French</a>)--></td>
+        </tr>
+	      <tr>
+          <td class="navColTitle" colspan="2" height="26">
+          <a name="Han_Radical_Stroke_Index_nb">Han Radical-Stroke Indices</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+			<a href="https://www.unicode.org/charts/unihanrsindex.html">Interactive Han Radical-Stroke Index</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+      <a href="https://www.unicode.org/versions/IICoreRSIndex.pdf">IICore Radical-Stroke Index</a> (3.8 MB)</td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+      <a href="https://www.unicode.org/versions/UnihanCore2020RSIndex.pdf">Unihan Core 2020 Radical-Stroke Index</a> (8.2 MB)</td>
+        </tr>
+        <tr>
+          <td class="navColCell" valign="top" height="17" align="right">•</td>
+          <td class="navColCell" valign="top" height="17">
+          <a href="https://www.unicode.org/Public/15.1.0/charts/RSIndex.pdf">Full Han Radical-Stroke Index</a> (44 MB)</td>
+        </tr>
+         <tr>
+          <td class="navColTitle" colspan="2" height="26">
+          <a id="Unicode_Standard_Annexes_nb">15.1.0 Unicode Standard Annexes</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr9/tr9-48.html">UAX #9, 
+            The Unicode Bidirectional Algorithm</a></td> 
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr11/tr11-41.html">UAX #11,  
+          East Asian Width</a></td> 
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr14/tr14-51.html">UAX #14, 
+          Unicode Line Breaking Algorithm</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr15/tr15-54.html">UAX #15, 
+          Unicode Normalization Forms</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr24/tr24-36.html">UAX #24, 
+          Unicode Script Property</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr29/tr29-43.html">UAX #29, 
+          Unicode Text Segmentation</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr31/tr31-39.html">UAX #31, 
+          Unicode Identifiers and Syntax</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr34/tr34-30.html">UAX #34, 
+          Unicode Named Character Sequences</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr38/tr38-35.html">UAX #38, 
+			     Unicode Han Database (Unihan)</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr41/tr41-32.html">UAX #41, 
+          Common References for Unicode Standard Annexes</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr42/tr42-34.html">UAX #42,
+            Unicode Character Database in XML</a></td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr44/tr44-32.html">UAX #44,
+            Unicode Character Database</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr45/tr45-29.html">UAX #45,
+            U-Source Ideographs</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/tr50/tr50-29.html">UAX #50,
+            Unicode Vertical Text Layout</a></td>
+        </tr>
+        <tr>
+          <td class="navColTitle" colspan="2" height="26"><a name="UCD_nb">15.1.0 UCD</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          15.1.0 (<a href="https://www.unicode.org/Public/15.1.0/">files</a>) (<a href="https://www.unicode.org/reports/tr44/tr44-32.html">about</a>) </td>
+        </tr>
+		    <tr>
+          <td class="navColCell" colspan="2" height="17">
+          15.1.0 <a href="https://www.unicode.org/Public/zipped/15.1.0/">Zipped files</a> (for bulk download)</td>
+        </tr>
+        <tr>
+          <td class="navColTitle" colspan="2" height="26">Related Links</td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17"><a href="https://www.unicode.org/acknowledgements/">Unicode Acknowledgements</a></td>
+        </tr><tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/versions/enumeratedversions.html">Archive of Unicode Versions</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/versions/index.html">About Versions</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/errata/">Updates and Errata</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/glossary/">Glossary of Unicode Terms</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+            <a href="https://www.unicode.org/references/">References for the Unicode Standard</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/charts/charindex.html">Unicode Character Name Index</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/reports/">Technical Reports</a></td>
+        </tr>
+        <tr>
+          <td class="navColCell" colspan="2" height="17">
+          <a href="https://www.unicode.org/emoji/techindex.html">Unicode Emoji</a></td>
+        </tr>
+      </table>
+      </td>
+      <!-- BEGIN CONTENTS -->
+      <td>
+      <table>
+        <tr>
+          <td valign="top" class="contents">
+          <blockquote>
+            <h1>Unicode® 15.1.0</h1>
+            <h3 align="center" style="margin-top:1em">2023 September 12 (<a href="http://blog.unicode.org/2023/09/announcing-unicode-standard-version-151.html">Announcement</a>)</h3>
+            
+<blockquote class="status"><strong>STATUS:</strong> This is a preliminary draft page for an upcoming release. Some details may be missing or incorrect, and some links may be wrong or broken. During the alpha review period, errors are expected and feedback is not necessary. During the beta review period, feedback on errors will be helpful and appreciated.</blockquote>
+
+            <p>This page summarizes the important changes for the Unicode Standard, Version 15.1.0. 
+              This version supersedes all previous versions of the Unicode Standard.</p>
+            <!--
+            <div align="center">
+              <table class="simple" width="80%">
+                <tr>
+                  <td>The Unicode Character Database, Code Charts, and Annexes for Version 15.1
+                   will be released on 
+                   September 12, 2023. The <a href="https://www.unicode.org/glossary/#core_specification">core specification</a> (the PDF chapters) of Version 16.0 is still pending publication due to the extensive editorial work required for the new content additions. Until final publication, the links to individual chapters of the core specification will not be activated. An announcement will be made when the core specification for Version 16.0 is available. In the meantime, implementers can continue to reference the relevant sections of the 
+                   <a href="https://www.unicode.org/versions/Unicode15.1.0/">most recent version of the core specification</a>.</td>
+                </tr>
+              </table>
+            </div>
+            -->
+            <blockquote>
+              A. <a href="#Summary">Summary</a><br>
+              B. <a href="#Technical_Overview">Technical Overview</a><br>
+              C. <a href="#Stability_Policy">Stability Policy Update</a><br>
+              D. <a href="#Character_Additions">Textual Changes and Character Additions</a><br>
+              E. <a href="#Conformance_Changes">Conformance Changes</a><br>
+              F. <a href="#Database_Changes">Changes in the Unicode Character Database</a><br>
+              G. <a href="#UAX_Changes">Changes in the Unicode Standard Annexes</a><br>
+              H. <a href="#UTS_Changes">Changes in Synchronized Unicode Technical Standards</a><br>
+              M. <a href="#Migration">Implications for Migration</a>
+            </blockquote>
+            
+            <h2><a name="Summary">A. Summary</a></h2>
+            <p>Unicode 15.1 adds 627 characters, 
+              for a total of 149,813 characters. 
+            </p>
+            <p>There are several significant themes for this release of the Unicode Standard.</p>
+
+            <ul>
+              <li>The repertoire addition consists almost entirely of urgently needed CJK ideographs,
+              synchronized with planned additions to the Chinese national standard, GB 18030. The
+              remaining additions to the repertoire extend the set of ideographic description
+              characters, to better enable description of unusual CJK ideographs.</li>
+              <li>Major updates were made to UAX #9, Unicode Bidirectional Algorithm, UAX #31,
+              Unicode Identifiers and Syntax, and UTS #39, Unicode Security Mechanisms, to
+              coordinate with the publication of an important new Unicode Technical Standard: UTS #55,
+              Unicode Source Code Handling.</li>
+              <li>Segmentation rule changes, most notably:
+              <ul style="list-style-type: lower-alpha;"> 
+                <li>Support was added to line breaking (UAX #14, Unicode Line Breaking Algorithm) for orthographic syllables in a number of South and Southeast Asian writing systems.</li> 
+                <li>Grapheme cluster breaking (UAX #29, Unicode Text Segmentation) has adopted the <i>aksara</i> cluster behavior for six scripts. That cluster breaking behavior had previously been widely available via CLDR and ICU.</li>
+                <li>These changes involved significant character property updates.</li>
+              </ul>
+              </li>
+            </ul>
+
+            <h3>Synchronization</h3>
+            <p>Several other important Unicode specifications have been updated for Version 15.1. 
+              The following four Unicode Technical Standards are versioned in
+                synchrony with the Unicode Standard, because their data files cover the same repertoire.
+                All have been updated to Version 15.1:</p>
+            <div align="center">
+                <table class="subtle">
+                  <tr>
+                    <th>Specification</th>
+                    <th>Scope</th>
+                    <th>Data Files</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr10/tr10-49.html">UTS #10, Unicode Collation Algorithm</a></td>
+                    <td>Sorting Unicode text</td>
+                    <td><a href="https://www.unicode.org/Public/UCA/15.1.0/">UCA data</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr39/tr39-28.html">UTS #39, Unicode Security Mechanisms</a></td>
+                    <td>Reducing Unicode spoofing</td>
+                    <td><a href="https://www.unicode.org/Public/security/15.1.0/">Security data</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr46/tr46-31.html">UTS #46, Unicode IDNA Compatibility Processing</a></td>
+                    <td>Compatible processing of non-ASCII URLs</td>
+                    <td><a href="https://www.unicode.org/Public/idna/15.1.0/">IDNA data</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr51/tr51-25.html">UTS #51, Unicode Emoji</a></td>
+                    <td>Emoji and their behavior</td>
+                    <td><a href="https://www.unicode.org/Public/emoji/15.1/">Emoji data</a></td>
+                  </tr>
+                </table>
+            </div>
+
+<p>Some of the changes in Version 15.1 and associated Unicode Technical Standards 
+  may require modifications 
+  to implementations. For more information, see the migration and modification sections of 
+  UTS #10, UTS #39, UTS #46, and UTS #51.</p>
+
+<p>See Sections D through H below for additional details regarding the changes in this version of
+  the Unicode Standard, its associated annexes, and the other synchronized Unicode specifications.</p>
+            
+<h2><a name="Technical_Overview">B. Technical Overview</a></h2>
+
+            <p>Version 15.1 of the Unicode Standard consists of:</p>
+            <ul>
+              <li>The core specification (unchanged from Version 15.0)</li>
+              <li>The code charts (delta and archival) for this version</li>
+              <li>The Unicode Standard Annexes</li>
+              <li>The Unicode Character Database (UCD)</li>
+            </ul>
+
+            <p>The core specification gives the general principles, 
+              requirements for conformance, and guidelines for implementers. The 
+              code charts show representative glyphs for all the Unicode 
+              characters. The Unicode Standard Annexes supply detailed normative 
+              information about particular aspects of the standard. The Unicode 
+              Character Database supplies normative and informative data for 
+              implementers to allow them to implement the Unicode Standard.</p>
+
+<h3><a name="Core_Specification">Core Specification</a></h3>
+
+            <p>The core specification is available as
+              a <a href="https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf">single pdf for viewing</a>. 
+              (14 MB)
+              Links are also available
+              in the navigation bar on the left of this page to access
+              <a href="#Chapters_nb">individual chapters</a> and <a href="#Appendices_nb">appendices</a>
+               of the core specification.</p>
+
+<h3><a name="Code_Charts">Code Charts</a></h3>
+            
+            <p>Several sets of code charts are available. They serve different 
+              purposes:</p>
+            <ul>
+              <li>The <a href="https://www.unicode.org/charts/">latest set of code charts</a> for 
+                the Unicode Standard is available online. Those charts are always the most current 
+                code charts available, and may be updated at any time. The charts are organized by 
+                scripts and blocks for easy reference. 
+                An online <a href="https://www.unicode.org/charts/charindex.html">index by character name</a> 
+                is also provided. <!-- The <a href="https://www.unicode.org/charts/fr/">Tableaux des caractères</a> 
+                provides a French translation of these latest code charts. --></li>
+            </ul>    
+            
+            <p>For Unicode 15.1.0 in particular two additional sets of code chart pages are provided:</p>
+            <ul>
+              <li>A <a href="https://www.unicode.org/charts/PDF/Unicode-15.1/">set of delta code charts</a> showing the
+                new blocks and any blocks in which characters were added for Unicode 15.1.0. The new characters are visually highlighted in the charts.</li>
+              <li>A <a href="https://www.unicode.org/Public/15.1.0/charts/">set of archival code charts</a> that represents
+                the entire set of characters, names and representative glyphs at the time of publication of Unicode 15.1.0.
+                <!-- A <a href="https://www.unicode.org/Public/15.1.0/charts/fr/">French translation</a> of the archival code charts is also available for this version. --></li>
+            </ul>    
+            <p>The delta and archival code charts are a stable part of this release of the Unicode Standard. They will never be updated.</p>
+
+<h3><a name="Annexes">Unicode Standard Annexes</a></h3>
+
+            <p>Links to the individual 
+              <a href="#Unicode_Standard_Annexes_nb">Unicode Standard Annexes</a> are available in
+              the navigation bar on the left of this page. The list of significant changes
+              in the content of the Unicode Standard Annexes for Version 15.1 can be found
+              in <a href="#UAX_Changes">Section G</a> below.</p>
+
+<h3><a name="UCD">Unicode Character Database</a></h3>
+
+            <p><a href="https://www.unicode.org/Public/15.1.0/">Data files</a>
+             for Version 15.1 of
+              the Unicode Character Database are available. The ReadMe.txt in that directory provides a roadmap
+              to the functions of the various subdirectories.
+              <a href="https://www.unicode.org/Public/zipped/15.1.0/">Zipped versions</a> of the UCD
+              for bulk download are available, as well.</p>
+
+<h3><a name="Version_Specification">Version References</a></h3>
+
+            <p>Version 15.1.0 of the Unicode Standard 
+              should be referenced as:</p>
+            <blockquote>
+              <p>The Unicode Consortium. <em>The Unicode Standard, Version 15.1.0</em>, (South San Francisco, CA: The Unicode Consortium, 
+                2023. ISBN 978-1-936213-33-7)<br>
+                <a href="https://www.unicode.org/versions/Unicode15.1.0/">https://www.unicode.org/versions/Unicode15.1.0/</a></p>
+            </blockquote>
+            <p>The terms “Version 15.1” or “Unicode 15.1” are abbreviations for the full version reference, Version 15.1.0.</p>
+            <p>The citation and permalink for the latest published version of the Unicode Standard is:</p>
+            <blockquote>
+              <p>The Unicode Consortium. <em>The Unicode Standard</em>.<br>
+                <a href="https://www.unicode.org/versions/latest/">https://www.unicode.org/versions/latest/</a></p>
+            </blockquote>
+
+            <p>A complete specification of the contributory files for Unicode 
+              15.1 is found on the page <a href="https://www.unicode.org/versions/components-15.1.0.html">Components for 15.1.0</a>.
+              That page also provides the recommended reference format for Unicode Standard Annexes. For examples of how to cite particular portions of the Unicode Standard, see also the <a href="https://www.unicode.org/versions/#References">Reference Examples</a>.</p>
+              
+<h3><a name="Errata">Errata</a></h3>
+
+            <p>Errata incorporated into Unicode 15.1 are listed by date in 
+              a <a href="erratafixed.html">separate table</a>. For corrigenda and errata after the release of Unicode 15.1, see the list of current  
+              <a href="https://www.unicode.org/errata/">Updates and Errata</a>.</p>
+
+<h2><a name="Stability_Policy">C. Stability Policy Update</a></h2>
+
+          <p>The Case Folding <a href="https://www.unicode.org/policies/stability_policy.html">Stability policy</a> has been extended with an explicit statement of the
+          stability of case folding as applicable to toNFKC_Casefold(S) between versions of
+          the Unicode Standard. A clarification has been added regarding the subtle distinction
+          between toNFKC_Casefold(S) and toCasefold(toNFKC(S)).</p>
+
+<h2><a name="Character_Additions">D. Textual Changes and Character Additions</a></h2>
+
+            <p> Changes in the Unicode Standard Annexes are listed in <a href="#UAX_Changes">Section G</a>.</p>
+            
+            <h3>Character Assignment Overview</h3>
+            
+            <p>627 characters have been added.
+             <!-- Most character additions are in new blocks, but there are also character additions to a number of existing blocks.--> For details, see the <a href="https://www.unicode.org/charts/PDF/Unicode-15.1/">delta code charts</a>.</p>
+
+            <h3>New Blocks</h3>
+
+            <!-- <p>There are no new blocks defined in Version 15.1.</p> -->
+
+            <p>There is one newly-defined block in Version 15.1:</p>
+
+            <div align="center">
+            <table class="simple">
+                <tr>
+                  <th>Range</th>
+                  <th>Block Name</th>
+                </tr>
+                <tr>
+                  <td style = "text-align:right">2EBF0..2EE5F</td>
+                  <td>CJK Unified Ideographs Extension I</td>
+                </tr>
+            </table>
+            </div>
+
+            <p>The block for CJK Unified Ideographs Extension I was placed
+              near the end of Plane 2, immediately after Extension F, instead of
+              on Plane 3 after Extension H, in order to make best use of the allocation
+            space available on Plane 2.</p>
+
+            <h2><a name="Conformance_Changes">E. Conformance Changes</a></h2>
+            <p>There are no new conformance requirements for the core specification in Unicode 15.1.
+            However, the conformance clauses in several Unicode Standard Annexes
+            and Unicode Technical Standards have been reorganized and split in some
+            cases to make it easier to exactly specify conformance to tailored versions
+            of some Unicode algorithms. UAX #29 has added new conformance clauses.</p>
+
+            <h2><a name="Database_Changes">F. Changes in the Unicode Character Database</a></h2>
+            <p>The detailed listing of all changes to the contributory data files of the Unicode Character Database 
+              for Version 15.1 can be found in 
+              <a href="https://www.unicode.org/reports/tr44/tr44-32.html#Unicode_15.1.0">UAX #44, Unicode Character Database</a>. 
+              The changes listed there include character additions and property revisions to existing characters that will affect implementations.
+              Some of the important impacts on implementations migrating from earlier versions of the standard are highlighted in 
+              <a href="#Migration">Section M</a>.</p>
+
+<h2><a name="UAX_Changes">G. Changes in the Unicode Standard Annexes</a></h2>
+            <p>In Version 15.1, some of the Unicode Standard Annexes have had significant revisions. The most important of these changes are listed below. For the full details of all changes, see the Modifications section 
+              of each UAX, linked directly from the following list of UAXes.</p>
+            <div align="center">
+                <table class="subtle">
+                  <tr>
+                    <th nowrap>Unicode Standard Annex</th>
+                    <th>Changes</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr9/tr9-48.html#Modifications">UAX #9</a><br>Unicode Bidirectional Algorithm           
+                    </td>
+                    <td>There was significant clarification added for the text regarding BD16 and
+                    the interaction of control flow between W4, W5, and W6. The use of sos and the
+                    treatment of AN/EN with brackets in N0 was also clarified. The text regarding
+                    retaining BNs and explicit formatting characters was updated. A major example of
+                    the use of HL4 for URLs was added in Section 4.3.3, and a reference to the
+                    new UTS #55 was added in Section 4.3.2.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr11/tr11-41.html#Modifications">UAX 
+                        #11</a><br>East Asian Width</td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr14/tr14-51.html#Modifications">UAX 
+                        #14</a><br>Unicode Line Breaking Algorithm</td>
+                    <td>Support was added for line breaking at orthographic syllable boundaries,
+                    including the introduction of five new line breaking classes for characters.
+                    Rule LB15 was split into LB15a and LB15b, to improve the handling of French
+                    style quotation marks. A clearer characterization of allowed tailorings was
+                    added to Section 8.1. Various other clarifications and small updates to
+                    the text and examples were also made.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr15/tr15-54.html#Modifications">UAX 
+                        #15</a><br>Unicode Normalization Forms
+                    </td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr24/tr24-36.html#Modifications">UAX 
+                        #24</a><br>Unicode Script Property
+                    </td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr29/tr29-43.html#Modifications">UAX 
+                        #29</a><br>Unicode Text Segmentation</td>
+                    <td>Explicit conformance rules for each type of segmentation were added to
+                    the Conformance section. Support for orthographic syllable breaking
+                    was adding in a new rule GB9c. The definition of "crlf" was updated in the table of
+                    Regex Definitions. Multiple changes were made to the table of Word_Break
+                    Property Values. A note was added in Section 3.1.1 clarifying that each emoji sequence
+                    constitutes a single grapheme cluster.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr31/tr31-39.html#Modifications">UAX 
+                        #31</a><br>Unicode Identifiers and Syntax
+                    </td>
+                    <td>This UAX was retitled to better reflect its scope. Multiple changes
+                    were made to the section of Default Identifiers, including the removal
+                    of UAX31-R1a, Restricted Format Characters. A significant example was
+                    added to UAX31-R1b, Stable Identifiers. Section 4 was completely rewritten,
+                    separating the discussion of whitespace and of syntax. The section on
+                    limited contexts for joining controls was moved out of this annex and
+                    into UTS #39, instead. Section 7
+                    was added, with three new standard profiles: mathematical compatibility notation,
+                    emoji, and default ignorable exclusion.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr34/tr34-30.html#Modifications">UAX 
+                        #34</a><br>Unicode Named Character Sequences</td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr38/tr38-35.html#Modifications">UAX 
+                        #38</a><br>Unicode Han Database (Unihan)</td>
+                    <td>Documentation was added for CJK Unified Ideographs Extension I
+                    and for 6 new provisional properties. 7 existing provisional properties
+                    were removed. The syntax, list of sources, and/or descriptions were
+                    updated for the kIRG_GSource, kIRG_KSource, and kIRG_KPSource
+                    properties. Syntax
+                    and descriptions were also updated for several other properties,
+                    including kRSUnicode.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr41/tr41-32.html">UAX 
+                      #41</a><br>Common References for Unicode Standard Annexes</td>
+                    <td>All references were updated for Unicode 15.1.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr42/tr42-34.html#Modifications">UAX 
+                      #42</a><br>Unicode Character Database in XML</td>
+                    <td>New code point attributes, values, and patterns were added for Unicode 15.1.</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr44/tr44-32.html#Modifications">UAX 
+                      #44</a><br>
+                      Unicode Character Database </td>
+                    <td>The documentation was updated to describe the changes to the UCD for
+                      Version 15.1.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr45/tr45-29.html#Modifications">UAX #45</a><br>
+                      U-Source Ideographs</td>
+                    <td>A new Section 3 was added, documenting the ranges of U-source ideographs that were
+                    added in each version of the Unicode Standard. The N, V, W, and X status values
+                    were updated to the more descriptive FutureWS, Variant, Rejected, and NoAction,
+                    respectively. The now-obsolete UK-2015 and WS-2017 status values were removed.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.unicode.org/reports/tr50/tr50-29.html#Modifications">UAX #50</a><br>
+                      Unicode Vertical Text Layout</td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                </table>
+              
+            </div>
+            
+            <h2><a name="UTS_Changes">H. Changes in Synchronized Unicode Technical Standards</a></h2>
+            
+            <p>There are also significant revisions in the Unicode Technical Standards whose
+              versions are synchronized with the Unicode Standard. The most important of these changes are listed below. 
+              For the full details of all changes, see the Modifications section 
+              of each UTS, linked directly from the following list of UTSes.</p>
+            
+            <div align="center">
+                <table class="subtle">
+                  <tr>
+                    <th nowrap>Unicode Technical Standard</th>
+                    <th>Changes</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr10/tr10-49.html#Modifications">UTS #10</a><br>Unicode Collation Algorithm</td>
+                    <td><font color="#767676">No significant changes in this version.</font></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr39/tr39-28.html#Modifications">UTS #39</a><br>Unicode Security Mechanisms</td>
+                    <td>The definition and discussion of the contexts for joining controls was
+                    moved from UAX #31 into this UTS. The definition of confusability was updated
+                    to take default ignorable code points into account. A new confusability
+                    relation suitable for identifiers containing bidirectional text was added.</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr46/tr46-31.html#Modifications">UTS #46</a><br>Unicode IDNA Compatibility Processing</td>
+                    <td>Transitional processing of Deviation characters has been deprecated. All
+                    major implementations now use nontransitional processing. Step 7 in Section 6 was
+                    changed to no longer check for NFD validity; this changed three characters
+                    from disallowed_STD3_valid to valid. 
+                    In nontransitional processing, U+1E9E capital sharp s (ẞ) now maps to U+00DF small sharp s (ß).</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unicode.org/reports/tr51/tr51-25.html#Modifications">UTS #51</a><br>Unicode Emoji</td>
+                    <td>A short discussion of the interactions of emoji with computer language
+                    syntaxes was added. Minor updates were also made to account for new emoji sequences
+                    added in Version 15.1.</td>
+                  </tr>
+                </table>
+              
+            </div>
+
+            <h2><a name="Migration">M. Implications for Migration</a></h2>
+
+            <p>There are a significant number of changes in Unicode 15.1 which may impact implementations upgrading 
+              to Version 15.1 from earlier versions of the standard. The most important of these are listed 
+              and explained here, to help focus on the issues most likely to cause unexpected trouble during upgrades.</p>
+
+      <h3>Script-related Changes</h3>
+
+      <p>Because of the limited scope of new repertoire for Version 15.1, there are
+      no migration issues of note specifically tied to various scripts, other than
+      the Han script (see below).</p>
+
+      <h3>General Character Property Issues</h3>
+
+      <ul>
+        <li>There are 5 new ideographic description characters. These extend the
+           syntax of ideographic description sequences.</li>
+        <li>Two of the new ideographic description characters function
+           as unary operators, which necessitated introduction of a new binary property: IDS_Unary_Operator.</li>
+      <li>There are two new properties, ID_Compat_Math_Start and 
+        ID_Compat_Math_Continue, for the new
+        <a href="https://www.unicode.org/reports/tr31/tr31-39.html#Mathematical_Compatibility_Notation_Profile">Mathematical Compatibility Notation Profile</a> in UAX #31.</li>
+      <li>There is a new property NFKC_Simple_Casefold which establishes 
+        another normalization form like NFKC_Casefold does. The new one 
+        uses Simple_Case_Folding mappings rather than full Case_Folding 
+        mappings. This is intended for use in systems that support 
+        case-insensitive identifiers based on simple (1:1) case folding 
+        mappings.</li>
+      <li>Five new values have been added to the Line_Break property, in support
+        of new orthographic line breaking rules for a significant number of South and Southeast Asian
+        scripts.</li>
+      </ul>
+
+      <h3>Segmentation</h3>
+
+      <p>There is a new grapheme cluster segmentation rule GB9c in UAX #29 which refers to a new enumerated property Indic_Conjunct_Break. The list of scripts affected by this rule is expected to 
+        expand in subsequent versions of
+      the Unicode Standard. (Note that this outcome differs from the preliminary solution discussed during
+      the beta review for Version 15.1.0, which used macros instead of a new property in the
+      statement of rule GB9c.)</p>
+
+      <p>There is a new line breaking rule LB28a in UAX #14, to prevent breaks inside orthographic syllables
+      of Brahmic scripts. That new rule uses the new Line_Break property values. It also includes the
+      use of a dotted circle in its regex expressions. The dotted circle is a literal character&#x2014;that is, it matches U+25CC ◌ DOTTED CIRCLE.</p>
+
+      <h3>Numeric Property Issues</h3>
+
+      <ul>
+        <li>There is one large new value in extracted/DerivedNumericValues.txt: 10000000000000000 (for U+4EAC)</li>
+        <li>U+5146 has two kPrimaryNumeric values: 1000000, 1000000000000</li>
+        <li>U+79ED has two kPrimaryNumeric values: 1000000000, 1000000000000</li>
+      </ul>
+
+
+      <h3>CJK/Unihan Changes</h3>
+
+        <ul>
+          <li>A new CJK unified ideograph block, Extension I, has been added, with
+            622 characters in the range U+2EBF0..U+2EE5D. Implementers should check
+            carefully for any hard-coded assumptions about CJK ranges. 
+            To keep the CJK block ranges as compact as possible, Extension I has
+          been added to Plane 2, instead of directly after Extension H on Plane 3.
+          Implementers should also check that their code does not assume that CJK extensions
+          all occur in alphabetic order by the extension letter.</li>
+          <li>Some kRSUnicode values now include double-apostrophe radicals, sometimes as the only values for a code point.</li>
+          <li>Seven old provisional properties have been removed.</li>
+          <li>Six new provisional properties have been added.</li>
+        </ul>
+
+      <p>See <a href="https://www.unicode.org/reports/tr38/tr38-35.html">UAX 
+                        #38</a>, Unicode Han Database (Unihan) for further details on these changes, 
+        especially Section 4.2, <i>Listing
+        by Date of Addition to the Unicode Standard</i>, and Section 4.3, <i>Listing by
+        Location within Unihan.zip</i>.
+        UAX #38 also has updated regex values for numerous
+        Unihan properties. For the double-apostrophe radicals, see:</p>
+
+        <ul>
+          <li>UAX #38: <a href="https://www.unicode.org/reports/tr38/tr38-35.html#kRSUnicode">kRSUnicode</a></li>
+          <li>UAX #38: <a href="https://www.unicode.org/reports/tr38/tr38-35.html#N101E4">Section 3.6, Radical-Stroke Counts</a></li>
+          <li>UAX #38: <a href="https://www.unicode.org/reports/tr38/tr38-35.html#SortingAlgorithm">Section 2.1.2, Sorting Algorithm Used by the Radical-Stroke Charts</a></li>
+        </ul>
+
+      <h3>UTS #46 (IDNA) Changes</h3>
+
+      <ul>
+        <li>Transitional processing (see conformance clause C1) has now been deprecated
+        in <a href="https://www.unicode.org/reports/tr46/tr46-31.html">UTS #46, Unicode IDNA Compatibility Processing</a>.</li>
+        <li>In nontransitional processing, U+1E9E capital sharp s (ẞ) now maps to U+00DF small sharp s (ß), so that domain names with either input character always match. Until Unicode 15.0, <i>capital sharp s</i> mapped to "ss", which is the same as the mapping for <i>small sharp s</i> in <i>transitional</i> processing.</li>
+        <li>U+2260 (&#x2260;), U+226E (&#x226E;), and U+226F (&#x226F;) are now unconditionally valid, rather than disallowed_STD3_valid.</li>
+        <li>There are a couple of additional, minor changes to the validity criteria. See the <a href="https://www.unicode.org/reports/tr46/tr46-31.html#Modifications">UTS #46 Modifications</a> section for details.</li>
+      </ul>
+
+      <h3>Changes to Code Charts</h3>
+
+      <ul>
+        <li>The code charts for the main CJK Unified Ideographs block (U+4E00) has
+        an updated format that uses 7 columns for source glyphs, instead of 6. The
+        KP source glyphs have been explicitly added to the code charts.</li>
+        <li>The font used for the representative glyphs of the Alchemical Symbols
+        block has been updated.</li>
+      </ul>
+
+      <h3>Collation-related Changes</h3>
+
+      <p>There has been an update to DUCET regarding the weighting of quotation
+        marks. Various single quotation marks are now weighted as secondary variants
+        of U+0027 (&#x0027;) APOSTROPHE, and various double quotation marks are now weighted
+        as secondary variants of U+0022 (&#x0022;) QUOTATION MARK. U+05F3 (&#x05F3;) HEBREW PUNCTUATION GERESH
+        is also weighted as a secondary variant of U+0027, and U+05F4 (&#x05F4;) HEBREW PUNCTUATION
+        GERSHAYIM is weighted as a secondary variant of U+0022. This change enables
+        better behavior of <i>geresh</i> and <i>gershayim</i> for searching and sorting, and brings
+        UCA more in line with the CLDR tailorings for quotation marks, <i>geresh</i>, and
+      <i>gershayim</i>.</p>
+
+      <h3>Emoji Changes</h3>
+
+      <p>There are no new emoji characters in Unicode 15.1, but 118 new RGI <a href="https://www.unicode.org/reports/tr51/tr51-25.html#Emoji_ZWJ_Sequences">emoji ZWJ
+      sequences</a> and 17 presentation sequences have been added to the overall
+      emoji repertoire. For details, see the Unicode 15.1 <a href="https://www.unicode.org/emoji/charts-15.1/">emoji charts</a> and <a href="https://www.unicode.org/emoji/charts-15.1/emoji-released.html">Emoji Recently Added, v15.1</a>.</p>
+
+              <h3>&nbsp;</h3>
+</blockquote>
+          <hr width="50%">
+             
+          <div align="center">
+            <center>
+            <table cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td><a href="https://www.unicode.org/copyright.html">
+                <img src="https://www.unicode.org/img/hb_notice.gif" border="0" 
+                alt="Access to Copyright and terms of use" width="216" 
+                height="50"></a></td>
+              </tr>
+            </table>
+            </center>
+          </div>
+          </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,5129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:iana="http://www.iana.org/assignments">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../_support/iana-registry.css" type="text/css" />
+    <script type="text/javascript" src="../_support/jquery.js"></script>
+    <script type="text/javascript" src="../_support/sort.js"></script>
+    <title>Uniform Resource Identifier (URI) Schemes</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="/">
+          <img src="https://www.iana.org/_img/2022/iana-logo-header.svg" alt="Internet Assigned Numbers Authority" />
+        </a>
+      </div>
+    </header>
+    <article>
+      <h1>Uniform Resource Identifier (URI) Schemes</h1>
+      <dl>
+        <dt>Last Updated</dt>
+        <dd>2024-05-30</dd>
+        <dt>Available Formats</dt>
+        <dd>
+          <a class="altformat" href="uri-schemes.xml"><img src="/_img/icons/text-xml.png" /><br />XML</a>
+          <a class="altformat" href="uri-schemes.xhtml"><img src="/_img/icons/text-html.png" /><br />HTML</a>
+          <a class="altformat" href="uri-schemes.txt"><img src="/_img/icons/text-plain.png" /><br />Plain text</a>
+        </dd>
+      </dl>
+      <p>
+        <b>Registry included below</b>
+      </p>
+      <ul>
+        <li>
+          <a href="#uri-schemes-1">Uniform Resource Identifier (URI) Schemes</a>
+        </li>
+      </ul>
+      <h2><a name="uri-schemes-1" id="uri-schemes-1"></a>Uniform Resource Identifier (URI) Schemes</h2>
+      <dl>
+        <dt>Expert(s)</dt>
+        <dd>
+          <pre>Graham Klyne</pre>
+        </dd>
+        <dt>Reference</dt>
+        <dd>[<a href="https://www.iana.org/go/rfc7595">RFC7595</a>][<a href="http://www.rfc-editor.org/errata_search.php?eid=4420">RFC Errata 4420</a>][<a href="https://www.iana.org/go/rfc8615">RFC8615</a>]</dd>
+        <dt>Note</dt>
+        <dd>
+          <pre>Requests for permanent registration must be preceded by mailing list review, 
+per Section 7.2 of [<a href="https://www.iana.org/go/rfc7595">RFC7595</a>].
+    </pre>
+        </dd>
+        <dt>Note</dt>
+        <dd>
+          <pre>Schemes for which the primary reference is an Internet-Draft are generally 
+considered to be provisional until the I-D is approved by the IETF for RFC 
+publication, even when the specification requests permanent registration.
+    </pre>
+        </dd>
+        <dt>Available Formats</dt>
+        <dd>
+          <a class="altformat" href="uri-schemes-1.csv"><img src="/_img/icons/text-csv.png" /><br />CSV</a>
+        </dd>
+      </dl>
+      <table class="sortable" id="table-uri-schemes-1-range">
+        <thead>
+          <tr>
+            <th>Range</th>
+            <th>Registration Procedures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Permanent</td>
+            <td>Expert Review</td>
+          </tr>
+          <tr>
+            <td>Provisional</td>
+            <td>First Come First Served</td>
+          </tr>
+          <tr>
+            <td>Historical</td>
+            <td>Expert Review</td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="table-uri-schemes-1" class="sortable">
+        <thead>
+          <tr>
+            <th>URI Scheme</th>
+            <th>Template</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Well-Known URI Support</th>
+            <th>Reference</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>aaa</td>
+            <td></td>
+            <td>Diameter Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6733">RFC6733</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>aaas</td>
+            <td></td>
+            <td>Diameter Protocol with Secure Transport</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6733">RFC6733</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>about</td>
+            <td></td>
+            <td>about</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6694">RFC6694</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>acap</td>
+            <td></td>
+            <td>application configuration access protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2244">RFC2244</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>acct</td>
+            <td></td>
+            <td>acct</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7565">RFC7565</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>acd</td>
+            <td>
+              <a href="prov/acd">prov/acd</a>
+            </td>
+            <td>acd</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Michael_Hedenus">Michael_Hedenus</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>acr</td>
+            <td>
+              <a href="prov/acr">prov/acr</a>
+            </td>
+            <td>acr</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#OMA-OMNA">OMA-OMNA</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>adiumxtra</td>
+            <td>
+              <a href="prov/adiumxtra">prov/adiumxtra</a>
+            </td>
+            <td>adiumxtra</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>adt</td>
+            <td>
+              <a href="prov/adt">prov/adt</a>
+            </td>
+            <td>adt</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#SAP_SE">SAP_SE</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>afp</td>
+            <td>
+              <a href="prov/afp">prov/afp</a>
+            </td>
+            <td>afp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>afs</td>
+            <td></td>
+            <td>Andrew File System global file names</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc1738">RFC1738</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>aim</td>
+            <td>
+              <a href="prov/aim">prov/aim</a>
+            </td>
+            <td>aim</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>amss</td>
+            <td>
+              <a href="prov/amss">prov/amss</a>
+            </td>
+            <td>amss</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#RadioDNS_Project">RadioDNS_Project</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>android</td>
+            <td>
+              <a href="prov/android">prov/android</a>
+            </td>
+            <td>android</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Adam_Barth">Adam_Barth</a>][<a href="https://developer.android.com/guide/topics/manifest/manifest-intro">https://developer.android.com/guide/topics/manifest/manifest-intro</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>appdata</td>
+            <td>
+              <a href="prov/appdata">prov/appdata</a>
+            </td>
+            <td>appdata</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>apt</td>
+            <td>
+              <a href="prov/apt">prov/apt</a>
+            </td>
+            <td>apt</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ar</td>
+            <td>
+              <a href="prov/ar">prov/ar</a>
+            </td>
+            <td>ar</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Arweave_Team">Arweave_Team</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ark</td>
+            <td>
+              <a href="prov/ark">prov/ark</a>
+            </td>
+            <td>ark</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#ARK_agency">ARK_agency</a>][<a href="https://n2t.net/ark:/21206/10015">https://n2t.net/ark:/21206/10015</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>at</td>
+            <td>
+              <a href="prov/at">prov/at</a>
+            </td>
+            <td>at 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/at-expert-notes">reviewer notes</a>])</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Bluesky_PBLLC">Bluesky_PBLLC</a>][<a href="#Paul_Frazee">Paul_Frazee</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>attachment</td>
+            <td>
+              <a href="prov/attachment">prov/attachment</a>
+            </td>
+            <td>attachment</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>aw</td>
+            <td>
+              <a href="prov/aw">prov/aw</a>
+            </td>
+            <td>aw</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>barion</td>
+            <td>
+              <a href="prov/barion">prov/barion</a>
+            </td>
+            <td>barion</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#B&#xED;r&#xF3;_Tam&#xE1;s">Bíró_Tamás</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bb</td>
+            <td>
+              <a href="historic/bb">historic/bb</a>
+            </td>
+            <td>bb</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>beshare</td>
+            <td>
+              <a href="prov/beshare">prov/beshare</a>
+            </td>
+            <td>beshare</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bitcoin</td>
+            <td>
+              <a href="prov/bitcoin">prov/bitcoin</a>
+            </td>
+            <td>bitcoin</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bitcoincash</td>
+            <td>
+              <a href="prov/bitcoincash">prov/bitcoincash</a>
+            </td>
+            <td>bitcoincash</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Corentin_Mercier">Corentin_Mercier</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>blob</td>
+            <td>
+              <a href="prov/blob">prov/blob</a>
+            </td>
+            <td>blob</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#W3C_WebApps_Working_Group">W3C_WebApps_Working_Group</a>][<a href="#Chris_Rebert">Chris_Rebert</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bolo</td>
+            <td>
+              <a href="prov/bolo">prov/bolo</a>
+            </td>
+            <td>bolo</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>brid</td>
+            <td>
+              <a href="prov/brid">prov/brid</a>
+            </td>
+            <td>brid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#J&#xFC;rgen_Grupp">Jürgen_Grupp</a>][<a href="#Michael_Ranft">Michael_Ranft</a>][<a href="#Sophie_Schenkel">Sophie_Schenkel</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>browserext</td>
+            <td>
+              <a href="prov/browserext">prov/browserext</a>
+            </td>
+            <td>browserext</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Mike_Pietraszak">Mike_Pietraszak</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cabal</td>
+            <td>
+              <a href="prov/cabal">prov/cabal</a>
+            </td>
+            <td>cabal</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Cabal_Club">Cabal_Club</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>calculator</td>
+            <td>
+              <a href="prov/calculator">prov/calculator</a>
+            </td>
+            <td>calculator</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>callto</td>
+            <td>
+              <a href="prov/callto">prov/callto</a>
+            </td>
+            <td>callto</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cap</td>
+            <td></td>
+            <td>Calendar Access Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4324">RFC4324</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cast</td>
+            <td>
+              <a href="prov/cast">prov/cast</a>
+            </td>
+            <td>cast</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Adam_Barth">Adam_Barth</a>][<a href="https://developers.google.com/cast/docs/registration">https://developers.google.com/cast/docs/registration</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>casts</td>
+            <td>
+              <a href="prov/casts">prov/casts</a>
+            </td>
+            <td>casts</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Adam_Barth">Adam_Barth</a>][<a href="https://developers.google.com/cast/docs/registration">https://developers.google.com/cast/docs/registration</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>chrome</td>
+            <td>
+              <a href="prov/chrome">prov/chrome</a>
+            </td>
+            <td>chrome</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>chrome-extension</td>
+            <td>
+              <a href="prov/chrome-extension">prov/chrome-extension</a>
+            </td>
+            <td>chrome-extension</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cid</td>
+            <td></td>
+            <td>content identifier</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2392">RFC2392</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coap</td>
+            <td></td>
+            <td>coap</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc7252">RFC7252</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc7252">RFC7252</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coap+tcp</td>
+            <td></td>
+            <td>coap+tcp 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/coap-expert-notes">reviewer notes</a>])</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coap+ws</td>
+            <td></td>
+            <td>coap+ws 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/coap-expert-notes">reviewer notes</a>])</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coaps</td>
+            <td></td>
+            <td>coaps</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc7252">RFC7252</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc7252">RFC7252</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coaps+tcp</td>
+            <td></td>
+            <td>coaps+tcp 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/coap-expert-notes">reviewer notes</a>])</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>coaps+ws</td>
+            <td></td>
+            <td>coaps+ws 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/coap-expert-notes">reviewer notes</a>])</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc8323">RFC8323</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>com-eventbrite-attendee</td>
+            <td>
+              <a href="prov/com-eventbrite-attendee">prov/com-eventbrite-attendee</a>
+            </td>
+            <td>com-eventbrite-attendee</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Bob_Van_Zant">Bob_Van_Zant</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>content</td>
+            <td>
+              <a href="prov/content">prov/content</a>
+            </td>
+            <td>content</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>content-type</td>
+            <td>
+              <a href="prov/content-type">prov/content-type</a>
+            </td>
+            <td>content-type</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Donald_Eastlake">Donald_Eastlake</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>crid</td>
+            <td></td>
+            <td>TV-Anytime Content Reference Identifier</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4078">RFC4078</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cstr</td>
+            <td>
+              <a href="prov/cstr">prov/cstr</a>
+            </td>
+            <td>cstr</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Wang_Shu">Wang_Shu</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cvs</td>
+            <td>
+              <a href="prov/cvs">prov/cvs</a>
+            </td>
+            <td>cvs</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dab</td>
+            <td>
+              <a href="prov/dab">prov/dab</a>
+            </td>
+            <td>dab</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#RadioDNS_Project">RadioDNS_Project</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dat</td>
+            <td>
+              <a href="prov/dat">prov/dat</a>
+            </td>
+            <td>dat</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Paul_Frazee">Paul_Frazee</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td></td>
+            <td>data</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2397">RFC2397</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dav</td>
+            <td></td>
+            <td>dav</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4918">RFC4918</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dhttp</td>
+            <td>
+              <a href="prov/dhttp">prov/dhttp</a>
+            </td>
+            <td>dhttp 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/dhttp-expert-notes">reviewer notes</a>])</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Qi_Zhou">Qi_Zhou</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>diaspora</td>
+            <td>
+              <a href="prov/diaspora">prov/diaspora</a>
+            </td>
+            <td>diaspora</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dennis_Schubert">Dennis_Schubert</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dict</td>
+            <td></td>
+            <td>dictionary service protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2229">RFC2229</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>did</td>
+            <td>
+              <a href="prov/did">prov/did</a>
+            </td>
+            <td>did</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#W3C_Decentralized_Identifier_Working_Group">W3C_Decentralized_Identifier_Working_Group</a>][<a href="#Manu_Sporny">Manu_Sporny</a>][<a href="#Ivan_Herman">Ivan_Herman</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dis</td>
+            <td>
+              <a href="prov/dis">prov/dis</a>
+            </td>
+            <td>dis</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Christophe_Meessen">Christophe_Meessen</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dlna-playcontainer</td>
+            <td>
+              <a href="prov/dlna-playcontainer">prov/dlna-playcontainer</a>
+            </td>
+            <td>dlna-playcontainer</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#DLNA">DLNA</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dlna-playsingle</td>
+            <td>
+              <a href="prov/dlna-playsingle">prov/dlna-playsingle</a>
+            </td>
+            <td>dlna-playsingle</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#DLNA">DLNA</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dns</td>
+            <td></td>
+            <td>Domain Name System</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4501">RFC4501</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dntp</td>
+            <td>
+              <a href="prov/dntp">prov/dntp</a>
+            </td>
+            <td>dntp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Hans-Dieter_A._Hiep">Hans-Dieter_A._Hiep</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>doi</td>
+            <td>
+              <a href="prov/doi">prov/doi</a>
+            </td>
+            <td>doi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#International_DOI_Foundation">International_DOI_Foundation</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dpp</td>
+            <td>
+              <a href="prov/dpp">prov/dpp</a>
+            </td>
+            <td>dpp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Gaurav_Jain">Gaurav_Jain</a>][<a href="#Wi-Fi_Alliance">Wi-Fi_Alliance</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>drm</td>
+            <td>
+              <a href="prov/drm">prov/drm</a>
+            </td>
+            <td>drm</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#RadioDNS_Project">RadioDNS_Project</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>drop</td>
+            <td>
+              <a href="historic/drop">historic/drop</a>
+            </td>
+            <td>drop</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dtmi</td>
+            <td>
+              <a href="prov/dtmi">prov/dtmi</a>
+            </td>
+            <td>dtmi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dtn</td>
+            <td></td>
+            <td>DTNRG research and development</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc9171">RFC9171</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dvb</td>
+            <td></td>
+            <td>dvb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-mcroberts-uri-dvb">draft-mcroberts-uri-dvb</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dvx</td>
+            <td>
+              <a href="prov/dvx">prov/dvx</a>
+            </td>
+            <td>dvx</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Clemens_Bastian">Clemens_Bastian</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dweb</td>
+            <td>
+              <a href="prov/dweb">prov/dweb</a>
+            </td>
+            <td>dweb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Protocol_Labs">Protocol_Labs</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ed2k</td>
+            <td>
+              <a href="prov/ed2k">prov/ed2k</a>
+            </td>
+            <td>ed2k</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>eid</td>
+            <td>
+              <a href="prov/eid">prov/eid</a>
+            </td>
+            <td>eid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#eSIM_Group_GSM_Association">eSIM_Group_GSM_Association</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>elsi</td>
+            <td>
+              <a href="prov/elsi">prov/elsi</a>
+            </td>
+            <td>elsi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Kimmo_Lindholm">Kimmo_Lindholm</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>embedded</td>
+            <td>
+              <a href="prov/embedded">prov/embedded</a>
+            </td>
+            <td>embedded</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Peter_Hoddie">Peter_Hoddie</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ens</td>
+            <td>
+              <a href="prov/ens">prov/ens</a>
+            </td>
+            <td>ens</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Ricky_Bloomfield">Ricky_Bloomfield</a>][<a href="#Bradley_Nelson">Bradley_Nelson</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ethereum</td>
+            <td>
+              <a href="prov/ethereum">prov/ethereum</a>
+            </td>
+            <td>ethereum</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#ligi">ligi</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>example</td>
+            <td></td>
+            <td>example</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7595">RFC7595</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>facetime</td>
+            <td>
+              <a href="prov/facetime">prov/facetime</a>
+            </td>
+            <td>facetime</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fax</td>
+            <td></td>
+            <td>fax</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2806">RFC2806</a>][<a href="https://www.iana.org/go/rfc3966">RFC3966</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>feed</td>
+            <td>
+              <a href="prov/feed">prov/feed</a>
+            </td>
+            <td>feed</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>feedready</td>
+            <td>
+              <a href="prov/feedready">prov/feedready</a>
+            </td>
+            <td>feedready</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Mirko_Nosenzo">Mirko_Nosenzo</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fido</td>
+            <td>
+              <a href="prov/fido">prov/fido</a>
+            </td>
+            <td>fido</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Adam_Langley">Adam_Langley</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>file</td>
+            <td></td>
+            <td>Host-specific file names</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc8089">RFC8089</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>filesystem</td>
+            <td>
+              <a href="historic/filesystem">historic/filesystem</a>
+            </td>
+            <td>filesystem</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#W3C_WebApps_Working_Group">W3C_WebApps_Working_Group</a>][<a href="#Chris_Rebert">Chris_Rebert</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>finger</td>
+            <td>
+              <a href="prov/finger">prov/finger</a>
+            </td>
+            <td>finger</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>first-run-pen-experience</td>
+            <td>
+              <a href="prov/first-run-pen-experience">prov/first-run-pen-experience</a>
+            </td>
+            <td>first-run-pen-experience</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fish</td>
+            <td>
+              <a href="prov/fish">prov/fish</a>
+            </td>
+            <td>fish</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fm</td>
+            <td>
+              <a href="prov/fm">prov/fm</a>
+            </td>
+            <td>fm</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#RadioDNS_Project">RadioDNS_Project</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ftp</td>
+            <td></td>
+            <td>File Transfer Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc1738">RFC1738</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fuchsia-pkg</td>
+            <td>
+              <a href="prov/fuchsia-pkg">prov/fuchsia-pkg</a>
+            </td>
+            <td>fuchsia-pkg</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Adam_Barth">Adam_Barth</a>][<a href="https://fuchsia.googlesource.com/fuchsia/">https://fuchsia.googlesource.com/fuchsia/</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>geo</td>
+            <td></td>
+            <td>Geographic Locations</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5870">RFC5870</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>gg</td>
+            <td>
+              <a href="prov/gg">prov/gg</a>
+            </td>
+            <td>gg</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>git</td>
+            <td>
+              <a href="prov/git">prov/git</a>
+            </td>
+            <td>git</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>gitoid</td>
+            <td>
+              <a href="prov/gitoid">prov/gitoid</a>
+            </td>
+            <td>gitoid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Ed_Warnicke">Ed_Warnicke</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>gizmoproject</td>
+            <td>
+              <a href="prov/gizmoproject">prov/gizmoproject</a>
+            </td>
+            <td>gizmoproject</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>go</td>
+            <td></td>
+            <td>go</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3368">RFC3368</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>gopher</td>
+            <td></td>
+            <td>The Gopher Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4266">RFC4266</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>graph</td>
+            <td>
+              <a href="prov/graph">prov/graph</a>
+            </td>
+            <td>graph</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alastair_Green">Alastair_Green</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>grd</td>
+            <td>
+              <a href="historic/grd">historic/grd</a>
+            </td>
+            <td>grd</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>gtalk</td>
+            <td>
+              <a href="prov/gtalk">prov/gtalk</a>
+            </td>
+            <td>gtalk</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>h323</td>
+            <td></td>
+            <td>H.323</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3508">RFC3508</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ham</td>
+            <td></td>
+            <td>ham</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7046">RFC7046</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hcap</td>
+            <td>
+              <a href="prov/hcap">prov/hcap</a>
+            </td>
+            <td>hcap</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hcp</td>
+            <td>
+              <a href="prov/hcp">prov/hcp</a>
+            </td>
+            <td>hcp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hs20</td>
+            <td>
+              <a href="prov/hs20">prov/hs20</a>
+            </td>
+            <td>hs20</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Bruno_Tomas">Bruno_Tomas</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>http</td>
+            <td></td>
+            <td>Hypertext Transfer Protocol</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8615">RFC8615</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc9110">RFC9110, Section 4.2.1</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>https</td>
+            <td></td>
+            <td>Hypertext Transfer Protocol Secure</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8615">RFC8615</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc9110">RFC9110, Section 4.2.2</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hxxp</td>
+            <td>
+              <a href="prov/hxxp">prov/hxxp</a>
+            </td>
+            <td>hxxp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-salgado-hxxp">draft-salgado-hxxp</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hxxps</td>
+            <td>
+              <a href="prov/hxxps">prov/hxxps</a>
+            </td>
+            <td>hxxps</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-salgado-hxxp">draft-salgado-hxxp</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hydrazone</td>
+            <td>
+              <a href="prov/hydrazone">prov/hydrazone</a>
+            </td>
+            <td>hydrazone</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Matthias_Merkel">Matthias_Merkel</a>][<a href="https://tech.hydrazone.pro/uri/specification/hydrazone.txt">https://tech.hydrazone.pro/uri/specification/hydrazone.txt</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hyper</td>
+            <td>
+              <a href="prov/hyper">prov/hyper</a>
+            </td>
+            <td>hyper</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Paul_Frazee">Paul_Frazee</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iax</td>
+            <td></td>
+            <td>Inter-Asterisk eXchange Version 2</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5456">RFC5456</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>icap</td>
+            <td></td>
+            <td>Internet Content Adaptation Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3507">RFC3507</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>icon</td>
+            <td></td>
+            <td>icon</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-lafayette-icon-uri-scheme">draft-lafayette-icon-uri-scheme</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>im</td>
+            <td></td>
+            <td>Instant Messaging</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3860">RFC3860</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>imap</td>
+            <td></td>
+            <td>internet message access protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5092">RFC5092</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>info</td>
+            <td></td>
+            <td>Information Assets with Identifiers in Public Namespaces. 
+      [<a href="https://www.iana.org/go/rfc4452">RFC4452</a>] (section 3) defines an "info" registry 
+        of public namespaces, which is maintained by NISO and can be accessed 
+        from [<a href="http://info-uri.info/">http://info-uri.info/</a>].</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4452">RFC4452</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iotdisco</td>
+            <td>
+              <a href="prov/iotdisco">prov/iotdisco</a>
+            </td>
+            <td>iotdisco</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Peter_Waher">Peter_Waher</a>][<a href="https://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf">https://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ipfs</td>
+            <td>
+              <a href="prov/ipfs">prov/ipfs</a>
+            </td>
+            <td>ipfs</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Protocol_Labs">Protocol_Labs</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ipn</td>
+            <td></td>
+            <td>ipn</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc9171">RFC9171</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ipns</td>
+            <td>
+              <a href="prov/ipns">prov/ipns</a>
+            </td>
+            <td>ipns</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Protocol_Labs">Protocol_Labs</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ipp</td>
+            <td></td>
+            <td>Internet Printing Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3510">RFC3510</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ipps</td>
+            <td></td>
+            <td>Internet Printing Protocol over HTTPS</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7472">RFC7472</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>irc</td>
+            <td>
+              <a href="prov/irc">prov/irc</a>
+            </td>
+            <td>irc</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>irc6</td>
+            <td>
+              <a href="prov/irc6">prov/irc6</a>
+            </td>
+            <td>irc6</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ircs</td>
+            <td>
+              <a href="prov/ircs">prov/ircs</a>
+            </td>
+            <td>ircs</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iris</td>
+            <td></td>
+            <td>Internet Registry Information Service</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3981">RFC3981</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iris.beep</td>
+            <td></td>
+            <td>iris.beep</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3983">RFC3983</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iris.lwz</td>
+            <td></td>
+            <td>iris.lwz</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4993">RFC4993</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iris.xpc</td>
+            <td></td>
+            <td>iris.xpc</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4992">RFC4992</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>iris.xpcs</td>
+            <td></td>
+            <td>iris.xpcs</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4992">RFC4992</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>isostore</td>
+            <td>
+              <a href="prov/isostore">prov/isostore</a>
+            </td>
+            <td>isostore</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>itms</td>
+            <td>
+              <a href="prov/itms">prov/itms</a>
+            </td>
+            <td>itms</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jabber</td>
+            <td>
+              <a href="perm/jabber">perm/jabber</a>
+            </td>
+            <td>jabber</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="#Peter_Saint-Andre">Peter_Saint-Andre</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jar</td>
+            <td>
+              <a href="prov/jar">prov/jar</a>
+            </td>
+            <td>jar</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jms</td>
+            <td></td>
+            <td>Java Message Service</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6167">RFC6167</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>keyparc</td>
+            <td>
+              <a href="prov/keyparc">prov/keyparc</a>
+            </td>
+            <td>keyparc</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lastfm</td>
+            <td>
+              <a href="prov/lastfm">prov/lastfm</a>
+            </td>
+            <td>lastfm</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lbry</td>
+            <td>
+              <a href="prov/lbry">prov/lbry</a>
+            </td>
+            <td>lbry</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alex_Grintsvayg">Alex_Grintsvayg</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ldap</td>
+            <td></td>
+            <td>Lightweight Directory Access Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4516">RFC4516</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ldaps</td>
+            <td>
+              <a href="prov/ldaps">prov/ldaps</a>
+            </td>
+            <td>ldaps</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>leaptofrogans</td>
+            <td>
+              <a href=""></a>
+            </td>
+            <td>leaptofrogans</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc8589">RFC8589</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lid</td>
+            <td>
+              <a href="prov/lid">prov/lid</a>
+            </td>
+            <td>lid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#IS4">IS4</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lorawan</td>
+            <td>
+              <a href="prov/lorawan">prov/lorawan</a>
+            </td>
+            <td>lorawan</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#OMA-DMSE">OMA-DMSE</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lpa</td>
+            <td>
+              <a href="prov/lpa">prov/lpa</a>
+            </td>
+            <td>lpa</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#eSIM_Group_GSM_Association">eSIM_Group_GSM_Association</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lvlt</td>
+            <td>
+              <a href="prov/lvlt">prov/lvlt</a>
+            </td>
+            <td>lvlt</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexander_Shishenko">Alexander_Shishenko</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>machineProvisioningProgressReporter</td>
+            <td>
+              <a href="prov/machineProvisioningProgressReporter">prov/machineProvisioningProgressReporter</a>
+            </td>
+            <td>Windows Autopilot Modern Device Management status updates</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>magnet</td>
+            <td>
+              <a href="prov/magnet">prov/magnet</a>
+            </td>
+            <td>magnet</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mailserver</td>
+            <td></td>
+            <td>Access to data available from mail servers</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6196">RFC6196</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mailto</td>
+            <td></td>
+            <td>Electronic mail address</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6068">RFC6068</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>maps</td>
+            <td>
+              <a href="prov/maps">prov/maps</a>
+            </td>
+            <td>maps</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>market</td>
+            <td>
+              <a href="prov/market">prov/market</a>
+            </td>
+            <td>market</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>matrix</td>
+            <td>
+              <a href="prov/matrix">prov/matrix</a>
+            </td>
+            <td>matrix</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Hubert_Chathi">Hubert_Chathi</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>message</td>
+            <td>
+              <a href="prov/message">prov/message</a>
+            </td>
+            <td>message</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>microsoft.windows.camera</td>
+            <td>
+              <a href="prov/microsoft.windows.camera">prov/microsoft.windows.camera</a>
+            </td>
+            <td>microsoft.windows.camera</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>microsoft.windows.camera.multipicker</td>
+            <td>
+              <a href="prov/microsoft.windows.camera.multipicker">prov/microsoft.windows.camera.multipicker</a>
+            </td>
+            <td>microsoft.windows.camera.multipicker</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>microsoft.windows.camera.picker</td>
+            <td>
+              <a href="prov/microsoft.windows.camera.picker">prov/microsoft.windows.camera.picker</a>
+            </td>
+            <td>microsoft.windows.camera.picker</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mid</td>
+            <td></td>
+            <td>message identifier</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2392">RFC2392</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mms</td>
+            <td>
+              <a href="prov/mms">prov/mms</a>
+            </td>
+            <td>mms</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>modem</td>
+            <td></td>
+            <td>modem</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2806">RFC2806</a>][<a href="https://www.iana.org/go/rfc3966">RFC3966</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mongodb</td>
+            <td>
+              <a href="prov/mongodb">prov/mongodb</a>
+            </td>
+            <td>mongodb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Ignacio_Losiggio">Ignacio_Losiggio</a>][<a href="#Mongo_DB_Inc">Mongo_DB_Inc</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>moz</td>
+            <td>
+              <a href="prov/moz">prov/moz</a>
+            </td>
+            <td>moz</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Joe_Hildebrand">Joe_Hildebrand</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-access</td>
+            <td>
+              <a href="prov/ms-access">prov/ms-access</a>
+            </td>
+            <td>ms-access</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-appinstaller</td>
+            <td>
+              <a href="prov/ms-appinstaller">prov/ms-appinstaller</a>
+            </td>
+            <td>ms-appinstaller</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-browser-extension</td>
+            <td>
+              <a href="prov/ms-browser-extension">prov/ms-browser-extension</a>
+            </td>
+            <td>ms-browser-extension</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-calculator</td>
+            <td>
+              <a href="prov/ms-calculator">prov/ms-calculator</a>
+            </td>
+            <td>ms-calculator</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-drive-to</td>
+            <td>
+              <a href="prov/ms-drive-to">prov/ms-drive-to</a>
+            </td>
+            <td>ms-drive-to</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-enrollment</td>
+            <td>
+              <a href="prov/ms-enrollment">prov/ms-enrollment</a>
+            </td>
+            <td>ms-enrollment</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-excel</td>
+            <td>
+              <a href="prov/ms-excel">prov/ms-excel</a>
+            </td>
+            <td>ms-excel</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-eyecontrolspeech</td>
+            <td>
+              <a href="prov/ms-eyecontrolspeech">prov/ms-eyecontrolspeech</a>
+            </td>
+            <td>ms-eyecontrolspeech</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-gamebarservices</td>
+            <td>
+              <a href="prov/ms-gamebarservices">prov/ms-gamebarservices</a>
+            </td>
+            <td>ms-gamebarservices</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-gamingoverlay</td>
+            <td>
+              <a href="prov/ms-gamingoverlay">prov/ms-gamingoverlay</a>
+            </td>
+            <td>ms-gamingoverlay</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-getoffice</td>
+            <td>
+              <a href="prov/ms-getoffice">prov/ms-getoffice</a>
+            </td>
+            <td>ms-getoffice</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-help</td>
+            <td>
+              <a href="prov/ms-help">prov/ms-help</a>
+            </td>
+            <td>ms-help</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-infopath</td>
+            <td>
+              <a href="prov/ms-infopath">prov/ms-infopath</a>
+            </td>
+            <td>ms-infopath</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-inputapp</td>
+            <td>
+              <a href="prov/ms-inputapp">prov/ms-inputapp</a>
+            </td>
+            <td>ms-inputapp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-launchremotedesktop</td>
+            <td>
+              <a href="prov/ms-launchremotedesktop">prov/ms-launchremotedesktop</a>
+            </td>
+            <td>ms-launchremotedesktop</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-lockscreencomponent-config</td>
+            <td>
+              <a href="prov/ms-lockscreencomponent-config">prov/ms-lockscreencomponent-config</a>
+            </td>
+            <td>ms-lockscreencomponent-config</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-media-stream-id</td>
+            <td>
+              <a href="prov/ms-media-stream-id">prov/ms-media-stream-id</a>
+            </td>
+            <td>ms-media-stream-id</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-meetnow</td>
+            <td>
+              <a href="prov/ms-meetnow">prov/ms-meetnow</a>
+            </td>
+            <td>ms-meetnow</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-mixedrealitycapture</td>
+            <td>
+              <a href="prov/ms-mixedrealitycapture">prov/ms-mixedrealitycapture</a>
+            </td>
+            <td>ms-mixedrealitycapture</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-mobileplans</td>
+            <td>
+              <a href="prov/ms-mobileplans">prov/ms-mobileplans</a>
+            </td>
+            <td>ms-mobileplans</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-newsandinterests</td>
+            <td>
+              <a href="prov/ms-newsandinterests">prov/ms-newsandinterests</a>
+            </td>
+            <td>ms-newsandinterests</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-officeapp</td>
+            <td>
+              <a href="prov/ms-officeapp">prov/ms-officeapp</a>
+            </td>
+            <td>ms-officeapp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-people</td>
+            <td>
+              <a href="prov/ms-people">prov/ms-people</a>
+            </td>
+            <td>ms-people</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-project</td>
+            <td>
+              <a href="prov/ms-project">prov/ms-project</a>
+            </td>
+            <td>ms-project</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-powerpoint</td>
+            <td>
+              <a href="prov/ms-powerpoint">prov/ms-powerpoint</a>
+            </td>
+            <td>ms-powerpoint</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-publisher</td>
+            <td>
+              <a href="prov/ms-publisher">prov/ms-publisher</a>
+            </td>
+            <td>ms-publisher</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-recall</td>
+            <td>
+              <a href="prov/ms-recall">prov/ms-recall</a>
+            </td>
+            <td>ms-recall</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-remotedesktop</td>
+            <td>
+              <a href="prov/ms-remotedesktop">prov/ms-remotedesktop</a>
+            </td>
+            <td>ms-remotedesktop</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-remotedesktop-launch</td>
+            <td>
+              <a href="prov/ms-remotedesktop-launch">prov/ms-remotedesktop-launch</a>
+            </td>
+            <td>ms-remotedesktop-launch</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-restoretabcompanion</td>
+            <td>
+              <a href="prov/ms-restoretabcompanion">prov/ms-restoretabcompanion</a>
+            </td>
+            <td>ms-restoretabcompanion</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-screenclip</td>
+            <td>
+              <a href="prov/ms-screenclip">prov/ms-screenclip</a>
+            </td>
+            <td>ms-screenclip</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-screensketch</td>
+            <td>
+              <a href="prov/ms-screensketch">prov/ms-screensketch</a>
+            </td>
+            <td>ms-screensketch</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-search</td>
+            <td>
+              <a href="prov/ms-search">prov/ms-search</a>
+            </td>
+            <td>ms-search</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-search-repair</td>
+            <td>
+              <a href="prov/ms-search-repair">prov/ms-search-repair</a>
+            </td>
+            <td>ms-search-repair</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-secondary-screen-controller</td>
+            <td>
+              <a href="prov/ms-secondary-screen-controller">prov/ms-secondary-screen-controller</a>
+            </td>
+            <td>ms-secondary-screen-controller</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-secondary-screen-setup</td>
+            <td>
+              <a href="prov/ms-secondary-screen-setup">prov/ms-secondary-screen-setup</a>
+            </td>
+            <td>ms-secondary-screen-setup</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings</td>
+            <td>
+              <a href="prov/ms-settings">prov/ms-settings</a>
+            </td>
+            <td>ms-settings</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-airplanemode</td>
+            <td>
+              <a href="prov/ms-settings-airplanemode">prov/ms-settings-airplanemode</a>
+            </td>
+            <td>ms-settings-airplanemode</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-bluetooth</td>
+            <td>
+              <a href="prov/ms-settings-bluetooth">prov/ms-settings-bluetooth</a>
+            </td>
+            <td>ms-settings-bluetooth</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-camera</td>
+            <td>
+              <a href="prov/ms-settings-camera">prov/ms-settings-camera</a>
+            </td>
+            <td>ms-settings-camera</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-cellular</td>
+            <td>
+              <a href="prov/ms-settings-cellular">prov/ms-settings-cellular</a>
+            </td>
+            <td>ms-settings-cellular</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-cloudstorage</td>
+            <td>
+              <a href="prov/ms-settings-cloudstorage">prov/ms-settings-cloudstorage</a>
+            </td>
+            <td>ms-settings-cloudstorage</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-connectabledevices</td>
+            <td>
+              <a href="prov/ms-settings-connectabledevices">prov/ms-settings-connectabledevices</a>
+            </td>
+            <td>ms-settings-connectabledevices</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-displays-topology</td>
+            <td>
+              <a href="prov/ms-settings-displays-topology">prov/ms-settings-displays-topology</a>
+            </td>
+            <td>ms-settings-displays-topology</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-emailandaccounts</td>
+            <td>
+              <a href="prov/ms-settings-emailandaccounts">prov/ms-settings-emailandaccounts</a>
+            </td>
+            <td>ms-settings-emailandaccounts</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-language</td>
+            <td>
+              <a href="prov/ms-settings-language">prov/ms-settings-language</a>
+            </td>
+            <td>ms-settings-language</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-location</td>
+            <td>
+              <a href="prov/ms-settings-location">prov/ms-settings-location</a>
+            </td>
+            <td>ms-settings-location</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-lock</td>
+            <td>
+              <a href="prov/ms-settings-lock">prov/ms-settings-lock</a>
+            </td>
+            <td>ms-settings-lock</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-nfctransactions</td>
+            <td>
+              <a href="prov/ms-settings-nfctransactions">prov/ms-settings-nfctransactions</a>
+            </td>
+            <td>ms-settings-nfctransactions</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-notifications</td>
+            <td>
+              <a href="prov/ms-settings-notifications">prov/ms-settings-notifications</a>
+            </td>
+            <td>ms-settings-notifications</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-power</td>
+            <td>
+              <a href="prov/ms-settings-power">prov/ms-settings-power</a>
+            </td>
+            <td>ms-settings-power</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-privacy</td>
+            <td>
+              <a href="prov/ms-settings-privacy">prov/ms-settings-privacy</a>
+            </td>
+            <td>ms-settings-privacy</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-proximity</td>
+            <td>
+              <a href="prov/ms-settings-proximity">prov/ms-settings-proximity</a>
+            </td>
+            <td>ms-settings-proximity</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-screenrotation</td>
+            <td>
+              <a href="prov/ms-settings-screenrotation">prov/ms-settings-screenrotation</a>
+            </td>
+            <td>ms-settings-screenrotation</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-wifi</td>
+            <td>
+              <a href="prov/ms-settings-wifi">prov/ms-settings-wifi</a>
+            </td>
+            <td>ms-settings-wifi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-settings-workplace</td>
+            <td>
+              <a href="prov/ms-settings-workplace">prov/ms-settings-workplace</a>
+            </td>
+            <td>ms-settings-workplace</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-spd</td>
+            <td>
+              <a href="prov/ms-spd">prov/ms-spd</a>
+            </td>
+            <td>ms-spd</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-stickers</td>
+            <td>
+              <a href="prov/ms-stickers">prov/ms-stickers</a>
+            </td>
+            <td>ms-stickers</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-sttoverlay</td>
+            <td>
+              <a href="prov/ms-sttoverlay">prov/ms-sttoverlay</a>
+            </td>
+            <td>ms-sttoverlay</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-transit-to</td>
+            <td>
+              <a href="prov/ms-transit-to">prov/ms-transit-to</a>
+            </td>
+            <td>ms-transit-to</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-useractivityset</td>
+            <td>
+              <a href="prov/ms-useractivityset">prov/ms-useractivityset</a>
+            </td>
+            <td>ms-useractivityset</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-virtualtouchpad</td>
+            <td>
+              <a href="prov/ms-virtualtouchpad">prov/ms-virtualtouchpad</a>
+            </td>
+            <td>ms-virtualtouchpad</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-visio</td>
+            <td>
+              <a href="prov/ms-visio">prov/ms-visio</a>
+            </td>
+            <td>ms-visio</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-walk-to</td>
+            <td>
+              <a href="prov/ms-walk-to">prov/ms-walk-to</a>
+            </td>
+            <td>ms-walk-to</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-whiteboard</td>
+            <td>
+              <a href="prov/ms-whiteboard">prov/ms-whiteboard</a>
+            </td>
+            <td>ms-whiteboard</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-whiteboard-cmd</td>
+            <td>
+              <a href="prov/ms-whiteboard-cmd">prov/ms-whiteboard-cmd</a>
+            </td>
+            <td>ms-whiteboard-cmd</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ms-word</td>
+            <td>
+              <a href="prov/ms-word">prov/ms-word</a>
+            </td>
+            <td>ms-word</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>msnim</td>
+            <td>
+              <a href="prov/msnim">prov/msnim</a>
+            </td>
+            <td>msnim</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>msrp</td>
+            <td></td>
+            <td>Message Session Relay Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4975">RFC4975</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>msrps</td>
+            <td></td>
+            <td>Message Session Relay Protocol Secure</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4975">RFC4975</a>][<a href="https://www.iana.org/go/rfc8873">RFC8873</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mss</td>
+            <td>
+              <a href="prov/mss">prov/mss</a>
+            </td>
+            <td>mss</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Jarmo_Miettinen">Jarmo_Miettinen</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mt</td>
+            <td>
+              <a href="perm/mt">perm/mt</a>
+            </td>
+            <td>Matter protocol on-boarding payloads that are encoded for use in QR Codes and/or NFC Tags</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="#Connectivity_Standards_Alliance">Connectivity_Standards_Alliance</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mtqp</td>
+            <td></td>
+            <td>Message Tracking Query Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3887">RFC3887</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mumble</td>
+            <td>
+              <a href="prov/mumble">prov/mumble</a>
+            </td>
+            <td>mumble</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mupdate</td>
+            <td></td>
+            <td>Mailbox Update (MUPDATE) Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3656">RFC3656</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mvn</td>
+            <td>
+              <a href="prov/mvn">prov/mvn</a>
+            </td>
+            <td>mvn</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mvrp</td>
+            <td>
+              <a href="prov/mvrp">prov/mvrp</a>
+            </td>
+            <td>mvrp
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/mvrp-expert-notes">reviewer notes</a>])        
+      </td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Antonio_Walker">Antonio_Walker</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mvrps</td>
+            <td>
+              <a href="prov/mvrps">prov/mvrps</a>
+            </td>
+            <td>mvrps
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/mvrps-expert-notes">reviewer notes</a>])        
+      </td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Antonio_Walker">Antonio_Walker</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>news</td>
+            <td></td>
+            <td>USENET news</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5538">RFC5538</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nfs</td>
+            <td></td>
+            <td>network file system protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2224">RFC2224</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ni</td>
+            <td></td>
+            <td>ni</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6920">RFC6920</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nih</td>
+            <td></td>
+            <td>nih</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6920">RFC6920</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nntp</td>
+            <td></td>
+            <td>USENET news using NNTP access</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5538">RFC5538</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>notes</td>
+            <td>
+              <a href="prov/notes">prov/notes</a>
+            </td>
+            <td>notes</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-dconmy-notes-uri-scheme-02">draft-dconmy-notes-uri-scheme-02</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>num</td>
+            <td>
+              <a href="prov/num">prov/num</a>
+            </td>
+            <td>Namespace Utility Modules</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Elliott_Brown">Elliott_Brown</a>][<a href="https://www.numprotocol.com/specification">https://www.numprotocol.com/specification</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ocf</td>
+            <td>
+              <a href="prov/ocf">prov/ocf</a>
+            </td>
+            <td>ocf</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>oid</td>
+            <td>
+              <a href="prov/oid">prov/oid</a>
+            </td>
+            <td>oid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-larmouth-oid-iri">draft-larmouth-oid-iri</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>onenote</td>
+            <td>
+              <a href="prov/onenote">prov/onenote</a>
+            </td>
+            <td>onenote</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>onenote-cmd</td>
+            <td>
+              <a href="prov/onenote-cmd">prov/onenote-cmd</a>
+            </td>
+            <td>onenote-cmd</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>opaquelocktoken</td>
+            <td></td>
+            <td>opaquelocktokent</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4918">RFC4918</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>openid</td>
+            <td>
+              <a href="prov/openid">prov/openid</a>
+            </td>
+            <td>OpenID Connect</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#OpenID_Foundation_Artifact_Binding_Working_Group">OpenID_Foundation_Artifact_Binding_Working_Group</a>][<a href="https://openid.net/specs/openid-connect-core-1_0-31.html#SelfIssuedRequest">OpenID Connect Core 1.0, Section 7.3</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>openpgp4fpr</td>
+            <td>
+              <a href="prov/openpgp4fpr">prov/openpgp4fpr</a>
+            </td>
+            <td>openpgp4fpr</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Wiktor_Kwapisiewicz">Wiktor_Kwapisiewicz</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>otpauth</td>
+            <td>
+              <a href="prov/otpauth">prov/otpauth</a>
+            </td>
+            <td>otpauth</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Thomas_Habets">Thomas_Habets</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>p1</td>
+            <td>
+              <a href="historic/p1">historic/p1</a>
+            </td>
+            <td>p1</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pack</td>
+            <td>
+              <a href="historic/pack">historic/pack</a>
+            </td>
+            <td>pack</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-shur-pack-uri-scheme">draft-shur-pack-uri-scheme</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>palm</td>
+            <td>
+              <a href="prov/palm">prov/palm</a>
+            </td>
+            <td>palm</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>paparazzi</td>
+            <td>
+              <a href="prov/paparazzi">prov/paparazzi</a>
+            </td>
+            <td>paparazzi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>
+              <a href="historic/payment">historic/payment</a>
+            </td>
+            <td>payment</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payto</td>
+            <td>
+              <a href="prov/payto">prov/payto</a>
+            </td>
+            <td>payto</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc8905">RFC8905</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pkcs11</td>
+            <td></td>
+            <td>PKCS#11</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7512">RFC7512</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>platform</td>
+            <td>
+              <a href="prov/platform">prov/platform</a>
+            </td>
+            <td>platform</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pop</td>
+            <td></td>
+            <td>Post Office Protocol v3</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2384">RFC2384</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pres</td>
+            <td></td>
+            <td>Presence</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3859">RFC3859</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prospero</td>
+            <td></td>
+            <td>Prospero Directory Service</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4157">RFC4157</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>proxy</td>
+            <td>
+              <a href="prov/proxy">prov/proxy</a>
+            </td>
+            <td>proxy</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pwid</td>
+            <td>
+              <a href="prov/pwid">prov/pwid</a>
+            </td>
+            <td>pwid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Eld_Zierau">Eld_Zierau</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>psyc</td>
+            <td>
+              <a href="prov/psyc">prov/psyc</a>
+            </td>
+            <td>psyc</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>pttp</td>
+            <td>
+              <a href="prov/pttp">prov/pttp</a>
+            </td>
+            <td>pttp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Tony_Deng">Tony_Deng</a>][<a href="#Tuan_Hoang">Tuan_Hoang</a>][<a href="#Bob_Hinkle">Bob_Hinkle</a>][<a href="#Mark_Chen">Mark_Chen</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>qb</td>
+            <td>
+              <a href="prov/qb">prov/qb</a>
+            </td>
+            <td>qb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Jan_Pokorny">Jan_Pokorny</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>query</td>
+            <td>
+              <a href="prov/query">prov/query</a>
+            </td>
+            <td>query</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>quic-transport</td>
+            <td>
+              <a href="prov/quic-transport">prov/quic-transport</a>
+            </td>
+            <td>quic-transport</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-vvv-webtransport-quic">draft-vvv-webtransport-quic</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>redis</td>
+            <td>
+              <a href="prov/redis">prov/redis</a>
+            </td>
+            <td>redis</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Chris_Rebert">Chris_Rebert</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rediss</td>
+            <td>
+              <a href="prov/rediss">prov/rediss</a>
+            </td>
+            <td>rediss</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Chris_Rebert">Chris_Rebert</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>reload</td>
+            <td></td>
+            <td>reload</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6940">RFC6940</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>res</td>
+            <td>
+              <a href="prov/res">prov/res</a>
+            </td>
+            <td>res</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>resource</td>
+            <td>
+              <a href="prov/resource">prov/resource</a>
+            </td>
+            <td>resource</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rmi</td>
+            <td>
+              <a href="prov/rmi">prov/rmi</a>
+            </td>
+            <td>rmi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rsync</td>
+            <td></td>
+            <td>rsync</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5781">RFC5781</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rtmfp</td>
+            <td>
+              <a href="prov/rtmfp">prov/rtmfp</a>
+            </td>
+            <td>rtmfp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7425">RFC7425</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rtmp</td>
+            <td>
+              <a href="prov/rtmp">prov/rtmp</a>
+            </td>
+            <td>rtmp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rtsp</td>
+            <td></td>
+            <td>Real-Time Streaming Protocol (RTSP)</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2326">RFC2326</a>][<a href="https://www.iana.org/go/rfc7826">RFC7826</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rtsps</td>
+            <td></td>
+            <td>Real-Time Streaming Protocol (RTSP) over TLS</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2326">RFC2326</a>][<a href="https://www.iana.org/go/rfc7826">RFC7826</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rtspu</td>
+            <td></td>
+            <td>Real-Time Streaming Protocol (RTSP) over unreliable datagram transport</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2326">RFC2326</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sarif</td>
+            <td>
+              <a href="prov/sarif">prov/sarif</a>
+            </td>
+            <td>sarif</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#OASIS_Open">OASIS_Open</a>][<a href="#Michael_C_Fanning">Michael_C_Fanning</a>][<a href="#David_Keaton">David_Keaton</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>secondlife</td>
+            <td>
+              <a href="prov/secondlife">prov/secondlife</a>
+            </td>
+            <td>query</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>secret-token</td>
+            <td>
+              <a href="prov/secret-token">prov/secret-token</a>
+            </td>
+            <td>secret-token</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc8959">RFC8959</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>service</td>
+            <td></td>
+            <td>service location</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2609">RFC2609</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>session</td>
+            <td></td>
+            <td>session</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6787">RFC6787</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sftp</td>
+            <td>
+              <a href="prov/sftp">prov/sftp</a>
+            </td>
+            <td>query</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sgn</td>
+            <td>
+              <a href="prov/sgn">prov/sgn</a>
+            </td>
+            <td>sgn</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>shc</td>
+            <td>
+              <a href="prov/shc">prov/shc</a>
+            </td>
+            <td>shc</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Josh_Mandel">Josh_Mandel</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>shttp (OBSOLETE)</td>
+            <td></td>
+            <td>Secure Hypertext Transfer Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2660">RFC2660</a>][<a href="https://datatracker.ietf.org/doc/status-change-http-experiments-to-historic">status-change-http-experiments-to-historic</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sieve</td>
+            <td></td>
+            <td>ManageSieve Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5804">RFC5804</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>simpleledger</td>
+            <td>
+              <a href="prov/simpleledger">prov/simpleledger</a>
+            </td>
+            <td>simpleledger</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#James_Cramer">James_Cramer</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>simplex</td>
+            <td>
+              <a href="prov/simplex">prov/simplex</a>
+            </td>
+            <td>simplex</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Evgeny_Poberezkin">Evgeny_Poberezkin</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sip</td>
+            <td></td>
+            <td>session initiation protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3261">RFC3261</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sips</td>
+            <td></td>
+            <td>secure session initiation protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3261">RFC3261</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>skype</td>
+            <td>
+              <a href="prov/skype">prov/skype</a>
+            </td>
+            <td>skype</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Alexey_Melnikov">Alexey_Melnikov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>smb</td>
+            <td>
+              <a href="prov/smb">prov/smb</a>
+            </td>
+            <td>smb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>smp</td>
+            <td>
+              <a href="prov/smp">prov/smp</a>
+            </td>
+            <td>smp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Evgeny_Poberezkin">Evgeny_Poberezkin</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sms</td>
+            <td></td>
+            <td>Short Message Service</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5724">RFC5724</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>smtp</td>
+            <td>
+              <a href="prov/smtp">prov/smtp</a>
+            </td>
+            <td>smtp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-melnikov-smime-msa-to-mda">draft-melnikov-smime-msa-to-mda</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>snews</td>
+            <td></td>
+            <td>NNTP over SSL/TLS</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5538">RFC5538</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>snmp</td>
+            <td></td>
+            <td>Simple Network Management Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4088">RFC4088</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>soap.beep</td>
+            <td></td>
+            <td>soap.beep</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4227">RFC4227</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>soap.beeps</td>
+            <td></td>
+            <td>soap.beeps</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4227">RFC4227</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>soldat</td>
+            <td>
+              <a href="prov/soldat">prov/soldat</a>
+            </td>
+            <td>soldat</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>spiffe</td>
+            <td>
+              <a href="prov/spiffe">prov/spiffe</a>
+            </td>
+            <td>spiffe</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Evan_Gilman">Evan_Gilman</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>spotify</td>
+            <td>
+              <a href="prov/spotify">prov/spotify</a>
+            </td>
+            <td>spotify</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ssb</td>
+            <td>
+              <a href="prov/ssb">prov/ssb</a>
+            </td>
+            <td>ssb</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Fr&#xE9;d&#xE9;ric_Wang">Frédéric_Wang</a>][<a href="#Secure_Scuttlebutt_Consortium">Secure_Scuttlebutt_Consortium</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ssh</td>
+            <td>
+              <a href="prov/ssh">prov/ssh</a>
+            </td>
+            <td>ssh</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>starknet</td>
+            <td>
+              <a href="prov/starknet">prov/starknet</a>
+            </td>
+            <td>starknet</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Abraham_Makovetsky">Abraham_Makovetsky</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>steam</td>
+            <td>
+              <a href="prov/steam">prov/steam</a>
+            </td>
+            <td>steam</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>stun</td>
+            <td></td>
+            <td>stun</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7064">RFC7064</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>stuns</td>
+            <td></td>
+            <td>stuns</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7064">RFC7064</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>submit</td>
+            <td>
+              <a href="prov/submit">prov/submit</a>
+            </td>
+            <td>submit</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-melnikov-smime-msa-to-mda">draft-melnikov-smime-msa-to-mda</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>svn</td>
+            <td>
+              <a href="prov/svn">prov/svn</a>
+            </td>
+            <td>svn</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>swh</td>
+            <td>
+              <a href="prov/swh">prov/swh</a>
+            </td>
+            <td>swh</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Software_Heritage">Software_Heritage</a>][<a href="#Stefano_Zacchiroli">Stefano_Zacchiroli</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>swid</td>
+            <td>
+              <a href="prov/swid">prov/swid</a>
+            </td>
+            <td>swid 
+
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/swid-expert-notes">reviewer notes</a>])</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc9393">RFC9393, Section 5.1</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>swidpath</td>
+            <td>
+              <a href="prov/swidpath">prov/swidpath</a>
+            </td>
+            <td>swidpath 
+
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/swidpath-expert-notes">reviewer notes</a>])</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc9393">RFC9393, Section 5.2</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tag</td>
+            <td></td>
+            <td>tag</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4151">RFC4151</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>taler</td>
+            <td>
+              <a href="prov/taler">prov/taler</a>
+            </td>
+            <td>taler</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-grothoff-taler-01">draft-grothoff-taler-01</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>teamspeak</td>
+            <td>
+              <a href="prov/teamspeak">prov/teamspeak</a>
+            </td>
+            <td>teamspeak</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tel</td>
+            <td></td>
+            <td>telephone</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3966">RFC3966</a>][<a href="https://www.iana.org/go/rfc5341">RFC5341</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>teliaeid</td>
+            <td>
+              <a href="prov/teliaeid">prov/teliaeid</a>
+            </td>
+            <td>teliaeid</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Peter_Lewandowski">Peter_Lewandowski</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>telnet</td>
+            <td></td>
+            <td>Reference to interactive sessions</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4248">RFC4248</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tftp</td>
+            <td></td>
+            <td>Trivial File Transfer Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3617">RFC3617</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>things</td>
+            <td>
+              <a href="prov/things">prov/things</a>
+            </td>
+            <td>things</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>thismessage</td>
+            <td>
+              <a href="perm/thismessage">perm/thismessage</a>
+            </td>
+            <td>multipart/related relative reference resolution</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2557">RFC2557</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tip</td>
+            <td></td>
+            <td>Transaction Internet Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2371">RFC2371</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tn3270</td>
+            <td></td>
+            <td>Interactive 3270 emulation sessions</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6270">RFC6270</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tool</td>
+            <td>
+              <a href="prov/tool">prov/tool</a>
+            </td>
+            <td>tool</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Matthias_Merkel">Matthias_Merkel</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>turn</td>
+            <td></td>
+            <td>turn</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7065">RFC7065</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>turns</td>
+            <td></td>
+            <td>turns</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7065">RFC7065</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td></td>
+            <td>TV Broadcasts</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2838">RFC2838</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>udp</td>
+            <td>
+              <a href="prov/udp">prov/udp</a>
+            </td>
+            <td>udp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>unreal</td>
+            <td>
+              <a href="prov/unreal">prov/unreal</a>
+            </td>
+            <td>unreal</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>upt</td>
+            <td>
+              <a href="historic/upt">historic/upt</a>
+            </td>
+            <td>upt</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#IESG">IESG</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>urn</td>
+            <td></td>
+            <td>Uniform Resource Names</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc8141">RFC8141</a>][<a href="https://www.iana.org/assignments/urn-namespaces">IANA registry <i>urn-namespaces</i></a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ut2004</td>
+            <td>
+              <a href="prov/ut2004">prov/ut2004</a>
+            </td>
+            <td>ut2004</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>uuid-in-package</td>
+            <td>
+              <a href="prov/uuid-in-package">prov/uuid-in-package</a>
+            </td>
+            <td>uuid-in-package</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Kunihiko_Sakamoto">Kunihiko_Sakamoto</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>v-event</td>
+            <td>
+              <a href="prov/v-event">prov/v-event</a>
+            </td>
+            <td>v-event</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-menderico-v-event-uri">draft-menderico-v-event-uri</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vemmi</td>
+            <td></td>
+            <td>versatile multimedia interface</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2122">RFC2122</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ventrilo</td>
+            <td>
+              <a href="prov/ventrilo">prov/ventrilo</a>
+            </td>
+            <td>ventrilo</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ves</td>
+            <td>
+              <a href="prov/ves">prov/ves</a>
+            </td>
+            <td>ves</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Jim_Zubov">Jim_Zubov</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>videotex</td>
+            <td>
+              <a href="historic/videotex">historic/videotex</a>
+            </td>
+            <td>videotex</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/draft-mavrakis-videotex-url-spec">draft-mavrakis-videotex-url-spec</a>][<a href="https://www.iana.org/go/rfc2122">RFC2122</a>][<a href="https://www.iana.org/go/rfc3986">RFC3986</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vnc</td>
+            <td></td>
+            <td>Remote Framebuffer Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc7869">RFC7869</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>view-source</td>
+            <td>
+              <a href="prov/view-source">prov/view-source</a>
+            </td>
+            <td>view-source</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Mykyta_Yevstifeyev">Mykyta_Yevstifeyev</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vscode</td>
+            <td>
+              <a href="prov/vscode">prov/vscode</a>
+            </td>
+            <td>vscode</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vscode-insiders</td>
+            <td>
+              <a href="prov/vscode-insiders">prov/vscode-insiders</a>
+            </td>
+            <td>vscode-insiders</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vsls</td>
+            <td>
+              <a href="prov/vsls">prov/vsls</a>
+            </td>
+            <td>vsls</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#urischemeowners_at_microsoft.com">urischemeowners_at_microsoft.com</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>w3</td>
+            <td>
+              <a href="prov/w3">prov/w3</a>
+            </td>
+            <td>w3 
+      (see [<a href="https://www.iana.org/assignments/uri-schemes/expert-notes/w3-expert-notes">reviewer notes</a>])</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Qi_Zhou">Qi_Zhou</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wais</td>
+            <td></td>
+            <td>Wide Area Information Servers</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc4156">RFC4156</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>web3</td>
+            <td>
+              <a href="prov/web3">prov/web3</a>
+            </td>
+            <td>web3</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Qi_Zhou">Qi_Zhou</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wcr</td>
+            <td>
+              <a href="prov/wcr">prov/wcr</a>
+            </td>
+            <td>wcr</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Jason_Dzubak">Jason_Dzubak</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>webcal</td>
+            <td>
+              <a href="prov/webcal">prov/webcal</a>
+            </td>
+            <td>webcal</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>web+ap</td>
+            <td>
+              <a href="prov/web+ap">prov/web+ap</a>
+            </td>
+            <td>web+ap</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Soni_L.">Soni_L.</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wifi</td>
+            <td>
+              <a href="prov/wifi">prov/wifi</a>
+            </td>
+            <td>wifi</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Wi-Fi_Alliance">Wi-Fi_Alliance</a>][<a href="#Jun_Tian">Jun_Tian</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wpid</td>
+            <td>
+              <a href="prov/wpid">prov/wpid</a>
+            </td>
+            <td>wpid</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="#Eld_Zierau">Eld_Zierau</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ws</td>
+            <td></td>
+            <td>WebSocket connections</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8307">RFC8307</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc6455">RFC6455</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wss</td>
+            <td></td>
+            <td>Encrypted WebSocket connections</td>
+            <td>Permanent</td>
+            <td>[<a href="https://www.iana.org/go/rfc8307">RFC8307</a>]</td>
+            <td>[<a href="https://www.iana.org/go/rfc6455">RFC6455</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wtai</td>
+            <td>
+              <a href="prov/wtai">prov/wtai</a>
+            </td>
+            <td>wtai</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wyciwyg</td>
+            <td>
+              <a href="prov/wyciwyg">prov/wyciwyg</a>
+            </td>
+            <td>wyciwyg</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xcon</td>
+            <td></td>
+            <td>xcon</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6501">RFC6501</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xcon-userid</td>
+            <td></td>
+            <td>xcon-userid</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc6501">RFC6501</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xfire</td>
+            <td>
+              <a href="prov/xfire">prov/xfire</a>
+            </td>
+            <td>xfire</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xmlrpc.beep</td>
+            <td></td>
+            <td>xmlrpc.beep</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3529">RFC3529</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xmlrpc.beeps</td>
+            <td></td>
+            <td>xmlrpc.beeps</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc3529">RFC3529</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xmpp</td>
+            <td></td>
+            <td>Extensible Messaging and Presence Protocol</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc5122">RFC5122</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xftp</td>
+            <td>
+              <a href="prov/xftp">prov/xftp</a>
+            </td>
+            <td>xftp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Evgeny_Poberezkin">Evgeny_Poberezkin</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xrcp</td>
+            <td>
+              <a href="prov/xrcp">prov/xrcp</a>
+            </td>
+            <td>xrcp</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Evgeny_Poberezkin">Evgeny_Poberezkin</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>xri</td>
+            <td>
+              <a href="prov/xri">prov/xri</a>
+            </td>
+            <td>xri</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ymsgr</td>
+            <td>
+              <a href="prov/ymsgr">prov/ymsgr</a>
+            </td>
+            <td>ymsgr</td>
+            <td>Provisional</td>
+            <td>-</td>
+            <td>[<a href="#Dave_Thaler">Dave_Thaler</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>z39.50</td>
+            <td></td>
+            <td>Z39.50 information access</td>
+            <td>Historical</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc1738">RFC1738</a>][<a href="https://www.iana.org/go/rfc2056">RFC2056</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>z39.50r</td>
+            <td></td>
+            <td>Z39.50 Retrieval</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2056">RFC2056</a>]</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>z39.50s</td>
+            <td></td>
+            <td>Z39.50 Session</td>
+            <td>Permanent</td>
+            <td>-</td>
+            <td>[<a href="https://www.iana.org/go/rfc2056">RFC2056</a>]</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="people">Contact Information</h1>
+      <table class="sortable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Organization</th>
+            <th>Contact URI</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a name="Abraham_Makovetsky" id="Abraham_Makovetsky">[Abraham_Makovetsky]</a>
+            </td>
+            <td>Abraham Makovetsky</td>
+            <td></td>
+            <td>
+              <a href="mailto:abraham&amp;braavos.app">mailto:abraham&amp;braavos.app</a>
+            </td>
+            <td>2023-01-05</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Adam_Barth" id="Adam_Barth">[Adam_Barth]</a>
+            </td>
+            <td>Adam Barth</td>
+            <td></td>
+            <td>
+              <a href="mailto:abarth&amp;google.com">mailto:abarth&amp;google.com</a>
+            </td>
+            <td>2019-03-29</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Adam_Langley" id="Adam_Langley">[Adam_Langley]</a>
+            </td>
+            <td>Adam Langley</td>
+            <td></td>
+            <td>
+              <a href="mailto:agl&amp;google.com">mailto:agl&amp;google.com</a>
+            </td>
+            <td>2021-09-03</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Alastair_Green" id="Alastair_Green">[Alastair_Green]</a>
+            </td>
+            <td>Alastair Green</td>
+            <td></td>
+            <td>
+              <a href="mailto:alastair.green&amp;neotechnology.com.">mailto:alastair.green&amp;neotechnology.com.</a>
+            </td>
+            <td>2017-05-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Alex_Grintsvayg" id="Alex_Grintsvayg">[Alex_Grintsvayg]</a>
+            </td>
+            <td>Alex Grintsvayg</td>
+            <td></td>
+            <td>
+              <a href="mailto:grin&amp;lbry.com">mailto:grin&amp;lbry.com</a>
+            </td>
+            <td>2020-06-16</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Alexey_Melnikov" id="Alexey_Melnikov">[Alexey_Melnikov]</a>
+            </td>
+            <td>Alexey Melnikov</td>
+            <td></td>
+            <td>
+              <a href="mailto:alexey.melnikov&amp;isode.com">mailto:alexey.melnikov&amp;isode.com</a>
+            </td>
+            <td>2012-09-12</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Alexander_Shishenko" id="Alexander_Shishenko">[Alexander_Shishenko]</a>
+            </td>
+            <td>Alexander Shishenko</td>
+            <td></td>
+            <td>
+              <a href="mailto:alex&amp;librevault.com">mailto:alex&amp;librevault.com</a>
+            </td>
+            <td>2016-06-13</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Antonio_Walker" id="Antonio_Walker">[Antonio_Walker]</a>
+            </td>
+            <td>Antonio Walker</td>
+            <td></td>
+            <td>
+              <a href="mailto:any&amp;wakuu.enterprises">mailto:any&amp;wakuu.enterprises</a>
+            </td>
+            <td>2024-02-02</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="ARK_agency" id="ARK_agency">[ARK_agency]</a>
+            </td>
+            <td>ARK Maintenance Agency</td>
+            <td></td>
+            <td>
+              <a href="mailto:marioxcc.mt&amp;yandex.com">mailto:marioxcc.mt&amp;yandex.com</a>
+            </td>
+            <td>2019-08-22</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Arweave_Team" id="Arweave_Team">[Arweave_Team]</a>
+            </td>
+            <td>Arweave Team</td>
+            <td></td>
+            <td>
+              <a href="mailto:sam&amp;arweave.org">mailto:sam&amp;arweave.org</a>
+            </td>
+            <td>2021-08-23</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="B&#xED;r&#xF3;_Tam&#xE1;s" id="B&#xED;r&#xF3;_Tam&#xE1;s">[Bíró_Tamás]</a>
+            </td>
+            <td>Bíró Tamás</td>
+            <td></td>
+            <td>
+              <a href="mailto:tamas.biro&amp;sensenet.com">mailto:tamas.biro&amp;sensenet.com</a>
+            </td>
+            <td>2014-05-16</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Bluesky_PBLLC" id="Bluesky_PBLLC">[Bluesky_PBLLC]</a>
+            </td>
+            <td>Bluesky PBLLC</td>
+            <td></td>
+            <td>
+              <a href="mailto:protocol&amp;blueskyweb.xyz">mailto:protocol&amp;blueskyweb.xyz</a>
+            </td>
+            <td>2023-06-01</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Bob_Hinkle" id="Bob_Hinkle">[Bob_Hinkle]</a>
+            </td>
+            <td>Bob Hinkle</td>
+            <td></td>
+            <td>
+              <a href="mailto:bohinkle&amp;cisco.com">mailto:bohinkle&amp;cisco.com</a>
+            </td>
+            <td>2019-06-24</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Bob_Van_Zant" id="Bob_Van_Zant">[Bob_Van_Zant]</a>
+            </td>
+            <td>Bob Van Zant</td>
+            <td></td>
+            <td>
+              <a href="mailto:bob&amp;veznat.com">mailto:bob&amp;veznat.com</a>
+            </td>
+            <td>2011-11-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Bradley_Nelson" id="Bradley_Nelson">[Bradley_Nelson]</a>
+            </td>
+            <td>Bradley Nelson</td>
+            <td></td>
+            <td>
+              <a href="mailto:bradnelson&amp;google.com">mailto:bradnelson&amp;google.com</a>
+            </td>
+            <td>2020-08-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Bruno_Tomas" id="Bruno_Tomas">[Bruno_Tomas]</a>
+            </td>
+            <td>Bruno Tomas</td>
+            <td>WBA OpenRoaming Work Group</td>
+            <td>
+              <a href="mailto:bruno&amp;wballiance.com">mailto:bruno&amp;wballiance.com</a>
+            </td>
+            <td>2024-05-30</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Cabal_Club" id="Cabal_Club">[Cabal_Club]</a>
+            </td>
+            <td>Cabal Club</td>
+            <td></td>
+            <td>
+              <a href="mailto:cabal&amp;cblgh.org">mailto:cabal&amp;cblgh.org</a>
+            </td>
+            <td>2020-05-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Chris_Rebert" id="Chris_Rebert">[Chris_Rebert]</a>
+            </td>
+            <td>Chris Rebert</td>
+            <td></td>
+            <td>
+              <a href="mailto:iana.url.schemes&amp;chrisrebert.com">mailto:iana.url.schemes&amp;chrisrebert.com</a>
+            </td>
+            <td>2015-07-21</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Christophe_Meessen" id="Christophe_Meessen">[Christophe_Meessen]</a>
+            </td>
+            <td>Christophe Meessen</td>
+            <td></td>
+            <td>
+              <a href="mailto:uri-review&amp;ditp.org">mailto:uri-review&amp;ditp.org</a>
+            </td>
+            <td>2015-12-08</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Clemens_Bastian" id="Clemens_Bastian">[Clemens_Bastian]</a>
+            </td>
+            <td>Clemens Bastian</td>
+            <td></td>
+            <td>
+              <a href="mailto:clemens.bastian&amp;orgaplan.org">mailto:clemens.bastian&amp;orgaplan.org</a>
+            </td>
+            <td>2021-07-21</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Connectivity_Standards_Alliance" id="Connectivity_Standards_Alliance">[Connectivity_Standards_Alliance]</a>
+            </td>
+            <td></td>
+            <td>Connectivity Standards Alliance</td>
+            <td>
+              <a href="https://csa-iot.org/">https://csa-iot.org/</a>
+            </td>
+            <td>2023-01-20</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Corentin_Mercier" id="Corentin_Mercier">[Corentin_Mercier]</a>
+            </td>
+            <td>Corentin Mercier</td>
+            <td></td>
+            <td>
+              <a href="mailto:corentin&amp;mercier.link">mailto:corentin&amp;mercier.link</a>
+            </td>
+            <td>2018-08-13</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Dave_Thaler" id="Dave_Thaler">[Dave_Thaler]</a>
+            </td>
+            <td>Dave Thaler</td>
+            <td></td>
+            <td>
+              <a href="mailto:dthaler&amp;microsoft.com">mailto:dthaler&amp;microsoft.com</a>
+            </td>
+            <td>2022-08-09</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="David_Keaton" id="David_Keaton">[David_Keaton]</a>
+            </td>
+            <td>David Keaton</td>
+            <td></td>
+            <td>
+              <a href="mailto:dmk&amp;dmk.com">mailto:dmk&amp;dmk.com</a>
+            </td>
+            <td>2021-03-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Dennis_Schubert" id="Dennis_Schubert">[Dennis_Schubert]</a>
+            </td>
+            <td>Dennis Schubert</td>
+            <td></td>
+            <td>
+              <a href="mailto:mail&amp;dennis-schubert.de">mailto:mail&amp;dennis-schubert.de</a>
+            </td>
+            <td>2017-09-13</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="DLNA" id="DLNA">[DLNA]</a>
+            </td>
+            <td>DLNA</td>
+            <td></td>
+            <td>
+              <a href="mailto:admin&amp;dlna.org">mailto:admin&amp;dlna.org</a>
+            </td>
+            <td>2012-01-04</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Hans-Dieter_A._Hiep" id="Hans-Dieter_A._Hiep">[Hans-Dieter_A._Hiep]</a>
+            </td>
+            <td>Hans-Dieter A. Hiep</td>
+            <td></td>
+            <td>
+              <a href="mailto:hdh&amp;cwi.nl">mailto:hdh&amp;cwi.nl</a>
+            </td>
+            <td>2022-11-09</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Donald_Eastlake" id="Donald_Eastlake">[Donald_Eastlake]</a>
+            </td>
+            <td>Donald Eastlake</td>
+            <td></td>
+            <td>
+              <a href="mailto:d3e3e3&amp;gmail.com">mailto:d3e3e3&amp;gmail.com</a>
+            </td>
+            <td>2021-07-01</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Ed_Warnicke" id="Ed_Warnicke">[Ed_Warnicke]</a>
+            </td>
+            <td>Ed Warnicke</td>
+            <td></td>
+            <td>
+              <a href="mailto:eaw&amp;cisco.com">mailto:eaw&amp;cisco.com</a>
+            </td>
+            <td>2022-05-23</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Eld_Zierau" id="Eld_Zierau">[Eld_Zierau]</a>
+            </td>
+            <td>Eld Zierau</td>
+            <td></td>
+            <td>
+              <a href="mailto:elzi&amp;kb.dk">mailto:elzi&amp;kb.dk</a>
+            </td>
+            <td>2016-12-01</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Elliott_Brown" id="Elliott_Brown">[Elliott_Brown]</a>
+            </td>
+            <td>Elliott Brown</td>
+            <td></td>
+            <td>
+              <a href="mailto:elliott.brown&amp;num.uk">mailto:elliott.brown&amp;num.uk</a>
+            </td>
+            <td>2020-09-07</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="eSIM_Group_GSM_Association" id="eSIM_Group_GSM_Association">[eSIM_Group_GSM_Association]</a>
+            </td>
+            <td>eSIM Group, GSM Associationn</td>
+            <td></td>
+            <td>
+              <a href="mailto:URIregistration&amp;gsma.com">mailto:URIregistration&amp;gsma.com</a>
+            </td>
+            <td>2022-11-11</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Evan_Gilman" id="Evan_Gilman">[Evan_Gilman]</a>
+            </td>
+            <td>Evan Gilman</td>
+            <td></td>
+            <td>
+              <a href="mailto:evan&amp;scytale.io">mailto:evan&amp;scytale.io</a>
+            </td>
+            <td>2018-02-23</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Evgeny_Poberezkin" id="Evgeny_Poberezkin">[Evgeny_Poberezkin]</a>
+            </td>
+            <td>Evgeny Poberezkin</td>
+            <td></td>
+            <td>
+              <a href="mailto:ep&amp;simplex.chat">mailto:ep&amp;simplex.chat</a>
+            </td>
+            <td>2024-01-12</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Fr&#xE9;d&#xE9;ric_Wang" id="Fr&#xE9;d&#xE9;ric_Wang">[Frédéric_Wang]</a>
+            </td>
+            <td>Frédéric Wang</td>
+            <td></td>
+            <td>
+              <a href="mailto:fwang&amp;igalia.com">mailto:fwang&amp;igalia.com</a>
+            </td>
+            <td>2020-05-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Gaurav_Jain" id="Gaurav_Jain">[Gaurav_Jain]</a>
+            </td>
+            <td>Gaurav Jain</td>
+            <td></td>
+            <td>
+              <a href="mailto:gjain&amp;wi-fi.org">mailto:gjain&amp;wi-fi.org</a>
+            </td>
+            <td>2019-01-23</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Hubert_Chathi" id="Hubert_Chathi">[Hubert_Chathi]</a>
+            </td>
+            <td>Hubert Chathi</td>
+            <td></td>
+            <td>
+              <a href="mailto:hubertc&amp;matrix.org">mailto:hubertc&amp;matrix.org</a>
+            </td>
+            <td>2022-09-05</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="IESG" id="IESG">[IESG]</a>
+            </td>
+            <td></td>
+            <td>IESG</td>
+            <td>
+              <a href="mailto:iesg&amp;ietf.org">mailto:iesg&amp;ietf.org</a>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Ignacio_Losiggio" id="Ignacio_Losiggio">[Ignacio_Losiggio]</a>
+            </td>
+            <td>Ignacio Losiggio</td>
+            <td></td>
+            <td>
+              <a href="mailto:iglosiggio&amp;gmail.com">mailto:iglosiggio&amp;gmail.com</a>
+            </td>
+            <td>2017-05-09</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="International_DOI_Foundation" id="International_DOI_Foundation">[International_DOI_Foundation]</a>
+            </td>
+            <td>International DOI Foundation</td>
+            <td></td>
+            <td>
+              <a href="mailto:contact&amp;doi.org">mailto:contact&amp;doi.org</a>
+            </td>
+            <td>2020-05-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="IS4" id="IS4">[IS4]</a>
+            </td>
+            <td>IS4</td>
+            <td></td>
+            <td>
+              <a href="mailto:is4.site&amp;gmail.com">mailto:is4.site&amp;gmail.com</a>
+            </td>
+            <td>2023-08-21</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Ivan_Herman" id="Ivan_Herman">[Ivan_Herman]</a>
+            </td>
+            <td>Ivan Herman</td>
+            <td></td>
+            <td>
+              <a href="mailto:ivan&amp;w3.org">mailto:ivan&amp;w3.org</a>
+            </td>
+            <td>2020-02-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="James_Cramer" id="James_Cramer">[James_Cramer]</a>
+            </td>
+            <td>James Cramer</td>
+            <td></td>
+            <td>
+              <a href="mailto:jcramer&amp;deskviz.com">mailto:jcramer&amp;deskviz.com</a>
+            </td>
+            <td>2018-07-27</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Jan_Pokorny" id="Jan_Pokorny">[Jan_Pokorny]</a>
+            </td>
+            <td>Jan Pokorny</td>
+            <td></td>
+            <td>
+              <a href="mailto:jpokorny&amp;redhat.com">mailto:jpokorny&amp;redhat.com</a>
+            </td>
+            <td>2016-09-20</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Jarmo_Miettinen" id="Jarmo_Miettinen">[Jarmo_Miettinen]</a>
+            </td>
+            <td>Jarmo_Miettinen</td>
+            <td></td>
+            <td>
+              <a href="mailto:jarmo.miettinen&amp;methics.fi">mailto:jarmo.miettinen&amp;methics.fi</a>
+            </td>
+            <td>2019-02-12</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Jason_Dzubak" id="Jason_Dzubak">[Jason_Dzubak]</a>
+            </td>
+            <td>Jason Dzubak</td>
+            <td></td>
+            <td>
+              <a href="mailto:dzubak&amp;byu.edu">mailto:dzubak&amp;byu.edu</a>
+            </td>
+            <td>2020-12-10</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Jim_Zubov" id="Jim_Zubov">[Jim_Zubov]</a>
+            </td>
+            <td>Jim Zubov</td>
+            <td></td>
+            <td>
+              <a href="mailto:jz&amp;vesvault.com">mailto:jz&amp;vesvault.com</a>
+            </td>
+            <td>2021-12-21</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Joe_Hildebrand" id="Joe_Hildebrand">[Joe_Hildebrand]</a>
+            </td>
+            <td>Joe Hildebrand</td>
+            <td></td>
+            <td>
+              <a href="mailto:jhildebrand&amp;mozilla.com">mailto:jhildebrand&amp;mozilla.com</a>
+            </td>
+            <td>2017-01-20</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Josh_Mandel" id="Josh_Mandel">[Josh_Mandel]</a>
+            </td>
+            <td>Josh Mandel</td>
+            <td></td>
+            <td>
+              <a href="mailto:Joshua.Mandel&amp;childrens.harvard.edu">mailto:Joshua.Mandel&amp;childrens.harvard.edu</a>
+            </td>
+            <td>2021-05-11</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Jun_Tian" id="Jun_Tian">[Jun_Tian]</a>
+            </td>
+            <td>Jun Tian</td>
+            <td></td>
+            <td>
+              <a href="mailto:jtian&amp;wi-fi.org">mailto:jtian&amp;wi-fi.org</a>
+            </td>
+            <td>2020-08-26</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="J&#xFC;rgen_Grupp" id="J&#xFC;rgen_Grupp">[Jürgen_Grupp]</a>
+            </td>
+            <td>Jürgen Grupp</td>
+            <td></td>
+            <td>
+              <a href="mailto:juergen.grupp&amp;swr.de">mailto:juergen.grupp&amp;swr.de</a>
+            </td>
+            <td>2023-11-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Kimmo_Lindholm" id="Kimmo_Lindholm">[Kimmo_Lindholm]</a>
+            </td>
+            <td>Kimmo Lindholm</td>
+            <td></td>
+            <td>
+              <a href="mailto:kimmo.lindholm&amp;eke.fi">mailto:kimmo.lindholm&amp;eke.fi</a>
+            </td>
+            <td>2018-06-06</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Kunihiko_Sakamoto" id="Kunihiko_Sakamoto">[Kunihiko_Sakamoto]</a>
+            </td>
+            <td>Kunihiko Sakamoto</td>
+            <td></td>
+            <td>
+              <a href="mailto:ksakamoto&amp;google.com">mailto:ksakamoto&amp;google.com</a>
+            </td>
+            <td>2021-09-22</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="ligi" id="ligi">[ligi]</a>
+            </td>
+            <td>ligi</td>
+            <td></td>
+            <td>
+              <a href="mailto:ligi&amp;ligi.de">mailto:ligi&amp;ligi.de</a>
+            </td>
+            <td>2020-05-15</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Manu_Sporny" id="Manu_Sporny">[Manu_Sporny]</a>
+            </td>
+            <td>Manu Sporny</td>
+            <td></td>
+            <td>
+              <a href="mailto:msporny&amp;digitalbazaar.com">mailto:msporny&amp;digitalbazaar.com</a>
+            </td>
+            <td>2020-02-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Mark_Chen" id="Mark_Chen">[Mark_Chen]</a>
+            </td>
+            <td>Mark Chen</td>
+            <td></td>
+            <td>
+              <a href="mailto:marchen&amp;cisco.com">mailto:marchen&amp;cisco.com</a>
+            </td>
+            <td>2019-06-24</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Matthias_Merkel" id="Matthias_Merkel">[Matthias_Merkel]</a>
+            </td>
+            <td>Matthias Merkel</td>
+            <td></td>
+            <td>
+              <a href="mailto:moritz30&amp;moritz30.de">mailto:moritz30&amp;moritz30.de</a>
+            </td>
+            <td>2017-03-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="OpenID_Foundation_Artifact_Binding_Working_Group" id="OpenID_Foundation_Artifact_Binding_Working_Group">[OpenID_Foundation_Artifact_Binding_Working_Group]</a>
+            </td>
+            <td>OpenID Foundation Artifact Binding Working Group</td>
+            <td></td>
+            <td>
+              <a href="mailto:openid-specs-ab&amp;lists.openid.net">mailto:openid-specs-ab&amp;lists.openid.net</a>
+            </td>
+            <td>2023-08-16</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Michael_C_Fanning" id="Michael_C_Fanning">[Michael_C_Fanning]</a>
+            </td>
+            <td>Michael C. Fanning</td>
+            <td></td>
+            <td>
+              <a href="mailto:mikefan&amp;microsoft.com">mailto:mikefan&amp;microsoft.com</a>
+            </td>
+            <td>2021-03-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Michael_Hedenus" id="Michael_Hedenus">[Michael_Hedenus]</a>
+            </td>
+            <td>Michael Hedenus</td>
+            <td></td>
+            <td>
+              <a href="mailto:michael.hedenus&amp;vitesco.com">mailto:michael.hedenus&amp;vitesco.com</a>
+            </td>
+            <td>2021-09-24</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Michael_Ranft" id="Michael_Ranft">[Michael_Ranft]</a>
+            </td>
+            <td>Michael Ranft</td>
+            <td></td>
+            <td>
+              <a href="mailto:Michael.Ranft&amp;swr.de">mailto:Michael.Ranft&amp;swr.de</a>
+            </td>
+            <td>2023-11-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Mike_Pietraszak" id="Mike_Pietraszak">[Mike_Pietraszak]</a>
+            </td>
+            <td>Mike Pietraszak</td>
+            <td></td>
+            <td>
+              <a href="mailto:mikepie&amp;microsoft.com">mailto:mikepie&amp;microsoft.com</a>
+            </td>
+            <td>2016-10-17</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Mirko_Nosenzo" id="Mirko_Nosenzo">[Mirko_Nosenzo]</a>
+            </td>
+            <td>Mirko Nosenzo</td>
+            <td></td>
+            <td>
+              <a href="mailto:mirko.n&amp;incomedia.eu">mailto:mirko.n&amp;incomedia.eu</a>
+            </td>
+            <td>2013-09-20</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Mongo_DB_Inc" id="Mongo_DB_Inc">[Mongo_DB_Inc]</a>
+            </td>
+            <td></td>
+            <td>Mongo DB, Inc</td>
+            <td>
+              <a href="https://www.mongodb.com/es/contact">https://www.mongodb.com/es/contact</a>
+            </td>
+            <td>2017-05-09</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Mykyta_Yevstifeyev" id="Mykyta_Yevstifeyev">[Mykyta_Yevstifeyev]</a>
+            </td>
+            <td>Mykyta Yevstifeyev</td>
+            <td></td>
+            <td>
+              <a href="mailto:evnikita2&amp;gmail.com">mailto:evnikita2&amp;gmail.com</a>
+            </td>
+            <td>2011-05-25</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="OASIS_Open" id="OASIS_Open">[OASIS_Open]</a>
+            </td>
+            <td>OASIS Open</td>
+            <td></td>
+            <td>
+              <a href="https://www.oasis-open.org">https://www.oasis-open.org</a>
+            </td>
+            <td>2021-03-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="OMA-DMSE" id="OMA-DMSE">[OMA-DMSE]</a>
+            </td>
+            <td>OMA-DMSE – Device Management Working Group at the Open Mobile Alliance</td>
+            <td></td>
+            <td>
+              <a href="mailto:OMA-DM&amp;mail.openmobilealliance.org">mailto:OMA-DM&amp;mail.openmobilealliance.org</a>
+            </td>
+            <td>2019-04-16</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="OMA-OMNA" id="OMA-OMNA">[OMA-OMNA]</a>
+            </td>
+            <td>OMNA – Open Mobile Naming Authority of the Open Mobile Alliance</td>
+            <td></td>
+            <td>
+              <a href="mailto:OMA-OMNA&amp;mail.openmobilealliance.org">mailto:OMA-OMNA&amp;mail.openmobilealliance.org</a>
+            </td>
+            <td>2014-12-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Paul_Frazee" id="Paul_Frazee">[Paul_Frazee]</a>
+            </td>
+            <td>Paul Frazee</td>
+            <td></td>
+            <td>
+              <a href="mailto:pfrazee&amp;gmail.com">mailto:pfrazee&amp;gmail.com</a>
+            </td>
+            <td>2023-06-01</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Peter_Hoddie" id="Peter_Hoddie">[Peter_Hoddie]</a>
+            </td>
+            <td>Peter Hoddie</td>
+            <td></td>
+            <td>
+              <a href="mailto:peter&amp;moddable.com">mailto:peter&amp;moddable.com</a>
+            </td>
+            <td>2021-02-19</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Peter_Lewandowski" id="Peter_Lewandowski">[Peter_Lewandowski]</a>
+            </td>
+            <td>Peter Lewandowski</td>
+            <td></td>
+            <td>
+              <a href="mailto:peter.lewandowski&amp;cygate.se">mailto:peter.lewandowski&amp;cygate.se</a>
+            </td>
+            <td>2014-09-12</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Peter_Saint-Andre" id="Peter_Saint-Andre">[Peter_Saint-Andre]</a>
+            </td>
+            <td>Peter Saint-Andre</td>
+            <td></td>
+            <td>
+              <a href="mailto:stpeter&amp;jabber.org">mailto:stpeter&amp;jabber.org</a>
+            </td>
+            <td>2012-12-04</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Peter_Waher" id="Peter_Waher">[Peter_Waher]</a>
+            </td>
+            <td>Peter Waher</td>
+            <td></td>
+            <td>
+              <a href="mailto:peterwaher&amp;hotmail.com">mailto:peterwaher&amp;hotmail.com</a>
+            </td>
+            <td>2015-11-25</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Protocol_Labs" id="Protocol_Labs">[Protocol_Labs]</a>
+            </td>
+            <td>Protocol Labs</td>
+            <td></td>
+            <td>
+              <a href="mailto:jbenet&amp;protocol.ai">mailto:jbenet&amp;protocol.ai</a>
+            </td>
+            <td>2020-05-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Qi_Zhou" id="Qi_Zhou">[Qi_Zhou]</a>
+            </td>
+            <td>Qi Zhou</td>
+            <td></td>
+            <td>
+              <a href="mailto:qizhou&amp;web3q.io">mailto:qizhou&amp;web3q.io</a>
+            </td>
+            <td>2023-04-17</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="RadioDNS_Project" id="RadioDNS_Project">[RadioDNS_Project]</a>
+            </td>
+            <td>RadioDNS Project</td>
+            <td></td>
+            <td>
+              <a href="mailto:iana&amp;radiodns.org">mailto:iana&amp;radiodns.org</a>
+            </td>
+            <td>2019-03-18</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Ricky_Bloomfield" id="Ricky_Bloomfield">[Ricky_Bloomfield]</a>
+            </td>
+            <td>Ricky Bloomfield</td>
+            <td></td>
+            <td>
+              <a href="mailto:rickybloomfield&amp;apple.com">mailto:rickybloomfield&amp;apple.com</a>
+            </td>
+            <td>2020-08-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="SAP_SE" id="SAP_SE">[SAP_SE]</a>
+            </td>
+            <td>SAP SE</td>
+            <td></td>
+            <td>
+              <a href="mailto:ma.becker&amp;sap.com">mailto:ma.becker&amp;sap.com</a>
+            </td>
+            <td>2019-07-04</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Secure_Scuttlebutt_Consortium" id="Secure_Scuttlebutt_Consortium">[Secure_Scuttlebutt_Consortium]</a>
+            </td>
+            <td>Secure Scuttlebutt Consortium</td>
+            <td></td>
+            <td>
+              <a href="mailto:christianbundy&amp;fraction.io">mailto:christianbundy&amp;fraction.io</a>
+            </td>
+            <td>2020-05-15</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Software_Heritage" id="Software_Heritage">[Software_Heritage]</a>
+            </td>
+            <td>Software Heritage</td>
+            <td></td>
+            <td>
+              <a href="https://www.softwareheritage.org">https://www.softwareheritage.org</a>
+            </td>
+            <td>2020-04-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Soni_L." id="Soni_L.">[Soni_L.]</a>
+            </td>
+            <td>Soni L.</td>
+            <td></td>
+            <td>
+              <a href="mailto:fakedme&amp;gmail.com">mailto:fakedme&amp;gmail.com</a>
+            </td>
+            <td>2023-01-09</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Sophie_Schenkel" id="Sophie_Schenkel">[Sophie_Schenkel]</a>
+            </td>
+            <td>Sophie Schenkel</td>
+            <td></td>
+            <td>
+              <a href="mailto:Sophie.Schenkel&amp;dra.de">mailto:Sophie.Schenkel&amp;dra.de</a>
+            </td>
+            <td>2023-11-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Stefano_Zacchiroli" id="Stefano_Zacchiroli">[Stefano_Zacchiroli]</a>
+            </td>
+            <td>Stefano Zacchiroli</td>
+            <td></td>
+            <td>
+              <a href="mailto:zack&amp;upsilon.cc">mailto:zack&amp;upsilon.cc</a>
+            </td>
+            <td>2020-04-28</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Thomas_Habets" id="Thomas_Habets">[Thomas_Habets]</a>
+            </td>
+            <td>Thomas Habets</td>
+            <td></td>
+            <td>
+              <a href="mailto:thomas&amp;habets.se">mailto:thomas&amp;habets.se</a>
+            </td>
+            <td>2020-05-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Tony_Deng" id="Tony_Deng">[Tony_Deng]</a>
+            </td>
+            <td>Tony Deng</td>
+            <td></td>
+            <td>
+              <a href="mailto:tdeng&amp;cisco.com">mailto:tdeng&amp;cisco.com</a>
+            </td>
+            <td>2019-06-24</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Tuan_Hoang" id="Tuan_Hoang">[Tuan_Hoang]</a>
+            </td>
+            <td>Tuan Hoang</td>
+            <td></td>
+            <td>
+              <a href="mailto:tuhoang&amp;cisco.com">mailto:tuhoang&amp;cisco.com</a>
+            </td>
+            <td>2019-06-24</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="urischemeowners_at_microsoft.com" id="urischemeowners_at_microsoft.com">[urischemeowners_at_microsoft.com]</a>
+            </td>
+            <td>urischemeowners at microsoft.com</td>
+            <td></td>
+            <td>
+              <a href="mailto:urischemeowners&amp;microsoft.com">mailto:urischemeowners&amp;microsoft.com</a>
+            </td>
+            <td>2023-05-23</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Wang_Shu" id="Wang_Shu">[Wang_Shu]</a>
+            </td>
+            <td>Wang Shu</td>
+            <td></td>
+            <td>
+              <a href="mailto:wangshu&amp;cnic.cn">mailto:wangshu&amp;cnic.cn</a>
+            </td>
+            <td>2022-05-13</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="W3C_WebApps_Working_Group" id="W3C_WebApps_Working_Group">[W3C_WebApps_Working_Group]</a>
+            </td>
+            <td>W3C WebApps Working Group</td>
+            <td></td>
+            <td>
+              <a href="mailto:public-webapps&amp;w3.org">mailto:public-webapps&amp;w3.org</a>
+            </td>
+            <td>2015-07-17</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="W3C_Decentralized_Identifier_Working_Group" id="W3C_Decentralized_Identifier_Working_Group">[W3C_Decentralized_Identifier_Working_Group]</a>
+            </td>
+            <td>W3C Decentralized Identifier Working Group</td>
+            <td></td>
+            <td>
+              <a href="mailto:public-did-wg&amp;w3.org">mailto:public-did-wg&amp;w3.org</a>
+            </td>
+            <td>2020-02-14</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Wiktor_Kwapisiewicz" id="Wiktor_Kwapisiewicz">[Wiktor_Kwapisiewicz]</a>
+            </td>
+            <td>Wiktor Kwapisiewicz</td>
+            <td></td>
+            <td>
+              <a href="mailto:wiktor&amp;metacode.biz">mailto:wiktor&amp;metacode.biz</a>
+            </td>
+            <td>2018-05-31</td>
+          </tr>
+          <tr>
+            <td>
+              <a name="Wi-Fi_Alliance" id="Wi-Fi_Alliance">[Wi-Fi_Alliance]</a>
+            </td>
+            <td>Wi-Fi Alliance</td>
+            <td></td>
+            <td>
+              <a href="mailto:technical&amp;wi-fi.org">mailto:technical&amp;wi-fi.org</a>
+            </td>
+            <td>2020-08-26</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <footer>
+      <div>
+        <a href="https://www.iana.org/help/licensing-terms">Licensing Terms</a>
+      </div>
+    </footer>
+  </body>
+</html>

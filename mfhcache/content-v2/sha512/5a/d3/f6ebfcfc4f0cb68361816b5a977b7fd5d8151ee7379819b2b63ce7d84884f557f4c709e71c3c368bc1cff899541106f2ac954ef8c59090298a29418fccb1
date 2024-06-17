@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>
+    DCMI: Format
+  </title>
+<meta name="generator" content="Hugo 0.120.4">
+<script src="https://platform.illow.io/banner.js?siteId=8531a7c4-632e-4f70-a66e-bd4b93a4c9d6"></script>
+<link rel="preconnect" href="https://fonts.bunny.net" />
+<link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+<link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg" />
+<link rel="icon" type="image/png" href="/images/favicons/favicon.png" />
+<link rel="stylesheet" href="https://www.dublincore.org/css/build/main.min.3529c952780af11e440f23bae3d80d7baf33c7c8dbfc478bc8cf28ffe443f593.css" />
+<link rel="stylesheet" href="https://www.dublincore.org/css/modal-video.min.css" />
+<script type="text/javascript" src="https://www.dublincore.org/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://www.dublincore.org/js/datatables.min.js"></script>
+<script type="text/javascript" src="https://www.dublincore.org/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="https://www.dublincore.org/js/dcmi.js"></script>
+<script src="https://www.dublincore.org/js/modal-video.js"></script>
+<script src="https://www.dublincore.org/js/components.js"></script>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.dublincore.org/images/meta/twitter_card.jpg" />
+<meta name="twitter:title" content="Format" />
+<meta name="twitter:description" content="The file format, physical medium, or dimensions of the resource." />
+<meta name="twitter:site" content="@dublincore" />
+<meta property="og:title" content="Format" />
+<meta property="og:description" content="The file format, physical medium, or dimensions of the resource." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/format/" /><meta property="og:image" content="https://www.dublincore.org/images/meta/twitter_card.jpg" /><meta property="article:section" content="specifications" />
+<meta property="article:published_time" content="2020-01-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-20T00:00:00+00:00" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.css" />
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.js"></script>
+<script type="module" src="https://unpkg.com/@github/relative-time-element@latest/dist/bundle.js"></script>
+<script>
+      !(function (Gleap, t, i) {
+        if (!(Gleap = window.Gleap = window.Gleap || []).invoked) {
+          for (
+            window.GleapActions = [],
+              Gleap.invoked = !0,
+              Gleap.methods = [
+                "identify",
+                "clearIdentity",
+                "attachCustomData",
+                "setCustomData",
+                "removeCustomData",
+                "clearCustomData",
+                "registerCustomAction",
+                "logEvent",
+                "sendSilentCrashReport",
+                "startFeedbackFlow",
+                "setAppBuildNumber",
+                "setAppVersionCode",
+                "preFillForm",
+                "setApiUrl",
+                "setFrameUrl",
+                "isOpened",
+                "open",
+                "close",
+                "on",
+                "setLanguage",
+                "setOfflineMode",
+                "initialize",
+              ],
+              Gleap.f = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  window.GleapActions.push({ e: e, a: t });
+                };
+              },
+              t = 0;
+            t < Gleap.methods.length;
+            t++
+          )
+            Gleap[(i = Gleap.methods[t])] = Gleap.f(i);
+          (Gleap.load = function () {
+            var t = document.getElementsByTagName("head")[0],
+              i = document.createElement("script");
+            (i.type = "text/javascript"),
+              (i.async = !0),
+              (i.src = "https://js.gleap.io/latest/index.js"),
+              t.appendChild(i);
+          }),
+            Gleap.load(),
+            Gleap.initialize("2AlyJNE9IZ7wrclGKfJltsDZ326BrRal");
+        }
+      })();
+    </script>
+</head>
+<body class="font-sans antialiased overflow-hidde">
+<div class>
+<div class="relative bg-gray-50">
+<div class="relative bg-white shadow" x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<div class="px-4 pt-4 mx-auto max-w-7xl sm:px-6">
+<div class="flex items-center justify-between py-4 md:justify-start md:space-x-10">
+<div class="flex justify-start lg:w-0 lg:flex-1">
+<a href="/">
+<span class="sr-only">Dublin Core</span>
+<img class="w-auto h-7 sm:h-7" src="/images/dcmi_logo_v802.svg" alt />
+</a>
+</div>
+<div class="-my-2 -mr-2 md:hidden">
+<button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span class="sr-only">Open menu</span>
+<svg class="w-6 h-6" x-description="Heroicon name: outline/bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+</svg>
+</button>
+</div>
+<div class="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
+<div class="relative justify-start pt-2 text-gray-600">
+<div class="rounded-md shadow">
+<a href="https://www.dublincore.org/conferences/2024/" class="flex items-center justify-center w-full h-10 px-8 py-3 pr-16 text-xs font-medium text-orange-600 border border-transparent border-orange-700 rounded-md bg-gray-50 hover:bg-orange-600 hover:text-white md:py-4 md:px-10 lg:text-lg">
+DCMI-2024 Conference
+</a>
+</div>
+</div>
+</div>
+<div class="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
+<div class="relative justify-end pt-2 text-gray-600">
+<form action="/search" method="get">
+<input class="h-10 px-5 pr-16 text-sm bg-white border border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none" type="search" name="q" placeholder="Search" />
+<button type="submit" class="absolute top-0 right-0 mt-5 mr-4">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+</svg>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mx-auto max-w-7xl sm:px-6">
+<div class="flex items-center justify-between py-4 md:justify-start md:space-x-10">
+<nav class="hidden space-x-10 md:flex" x-data="Components.popoverGroup()" x-init="init()">
+<div class="relative" x-data="Components.popover({ open: false, focus: false })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<button type="button" x-state:on="Item active" x-state:off="Item inactive" class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2" :class="{ 'text-gray-900': open, 'text-gray-500': !(open) }" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span>Specifications</span>
+<svg x-state:on="Item active" x-state:off="Item inactive" class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500" :class="{ 'text-gray-600': open, 'text-gray-400': !(open) }" x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" x-description="'Solutions' flyout menu, show/hide based on flyout menu state." class="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0 2xl:left-1/2 2xl:ml-0 2xl:-translate-x-1/2" x-ref="panel" @click.away="open = false">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+<a href="/specifications/dublin-core/dcmi-terms/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+DCMI Metadata Terms
+</p>
+<p class="mt-1 text-sm text-gray-500">
+The fifteen terms of the Dublin Core™ Metadata Element Set plus
+several dozen properties, classes, datatypes, and vocabulary
+encoding schemes.
+</p>
+</a>
+<a href="/specifications/dublin-core/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+Dublin Core Specifications
+</p>
+<p class="mt-1 text-sm text-gray-500">
+Current and past specifications developed and maintained by DCMI
+</p>
+</a>
+<a href="/schemas/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+Dublin Core Schemas
+</p>
+<p class="mt-1 text-sm text-gray-500">
+DCMI term declarations represented in various machine-processable
+schema languages, defining the structure and syntax of metadata
+specifications.
+</p>
+</a>
+<a href="/specifications/lrmi/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">LRMI</p>
+<p class="mt-1 text-sm text-gray-500">
+The LRMI specification is a collection of classes, properties and
+concept schemes for markup and description of educational
+resources.
+</p>
+</a>
+<a href="/specifications/bibo/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">BIBO</p>
+<p class="mt-1 text-sm text-gray-500">
+Bibliographic Ontology (BIBO) is a Semantic Web vocabulary for
+expressing citations and bibliographic references.
+</p>
+</a>
+<a href="/specifications/dctap/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">DCTAP</p>
+<p class="mt-1 text-sm text-gray-500">
+The DC Tabular Application Profiles specification is a simple
+model for application profiles that can be developed in a
+spreadsheet program.
+</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="relative" x-data="Components.popover({ open: false, focus: false })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<button type="button" x-state:on="Item active" x-state:off="Item inactive" class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2" :class="{ 'text-gray-900': open, 'text-gray-500': !(open) }" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span>Events</span>
+<svg x-state:on="Item active" x-state:off="Item inactive" class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500" :class="{ 'text-gray-600': open, 'text-gray-400': !(open) }" x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" x-description="'More' flyout menu, show/hide based on flyout menu state." class="absolute z-10 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0" x-ref="panel" @click.away="open = false">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+<a href="/conferences/" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/lifebuoy" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+</svg>
+<div class="ml-4">
+<p class="text-base font-medium text-gray-900">
+Annual Conferences
+</p>
+<p class="mt-1 text-sm text-gray-500">
+Continuing an unbroken sequence of more than twenty years of
+DCMI Annual Conferences.
+</p>
+</div>
+</a>
+<a href="/webinars/" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/lifebuoy" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+</svg>
+<div class="ml-4">
+<p class="text-base font-medium text-gray-900">
+Webinars &amp; Tutorials
+</p>
+<p class="mt-1 text-sm text-gray-500">
+Occasional webinars and online tutorials orgainized by the DCMI.
+</p>
+</div>
+</a>
+</div>
+<div class="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+<div class="flow-root">
+<a href="/conferences/2024/" class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100">
+<svg class="flex-shrink-0 w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+</svg>
+<span class="ml-3 font-semibold text-orange-600">
+DCMI 2024 Conference
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative" x-data="Components.popover({ open: false, focus: false })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<button type="button" x-state:on="Item active" x-state:off="Item inactive" class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2" :class="{ 'text-gray-900': open, 'text-gray-500': !(open) }" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span>Community</span>
+<svg x-state:on="Item active" x-state:off="Item inactive" class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500" :class="{ 'text-gray-600': open, 'text-gray-400': !(open) }" x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" x-description="'Solutions' flyout menu, show/hide based on flyout menu state." class="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0 2xl:left-1/2 2xl:ml-0 2xl:-translate-x-1/2" x-ref="panel" @click.away="open = false">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+<a href="/themes/community/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">DCMI Community</p>
+<p class="mt-1 text-sm text-gray-500">
+DCMI is defined by its community which is responsible for the
+innovative developments and evolving good practices.
+</p>
+</a>
+<a href="/groups/education-committee/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+Education Committee
+</p>
+<p class="mt-1 text-sm text-gray-500">
+The DCMI Education Committee coordinates activities and
+publications that teach and inform users about current
+developments and technologies for metadata.
+</p>
+</a>
+<a href="/groups/lrmi/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+LRMI Working Group
+</p>
+<p class="mt-1 text-sm text-gray-500">
+The LRMI™ Working Group is charged with defining and executing
+DCMI work on the LRMI family of metadata specifications.
+</p>
+</a>
+<a href="/groups/application-profiles/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+Application Profiles Working Group
+</p>
+<p class="mt-1 text-sm text-gray-500">
+Working Group for a revised framework to support application
+profiles, a revised abstract model, and core vocabulary of
+components and constraints.
+</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<a href="/news/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+News
+</a>
+<div class="relative" x-data="Components.popover({ open: false, focus: false })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<button type="button" x-state:on="Item active" x-state:off="Item inactive" class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2" :class="{ 'text-gray-900': open, 'text-gray-500': !(open) }" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span>Resources</span>
+<svg x-state:on="Item active" x-state:off="Item inactive" class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500" :class="{ 'text-gray-600': open, 'text-gray-400': !(open) }" x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" x-description="'Solutions' flyout menu, show/hide based on flyout menu state." class="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform -translate-x-1/2 sm:px-0 2xl:left-1/2 2xl:ml-0 2xl:-translate-x-1/2" x-ref="panel" @click.away="open = false">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+<a href="https://dcpapers.dublincore.org/" target="_blank" rel="noopener noreferrer" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">DCPapers</p>
+<p class="mt-1 text-sm text-gray-500">
+The Dublin Core Papers repository is an open access resource for
+scholarly articles and technical papers.
+</p>
+</a>
+<a href="/blog/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">DCMI Blog</p>
+<p class="mt-1 text-sm text-gray-500">
+Occasional blog posts report on developments in metadata
+innovation and practice.
+</p>
+</a>
+<a href="/resources/metadata-basics/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">Metadata Basics</p>
+<p class="mt-1 text-sm text-gray-500">
+The DCMI approach to metadata aims at achieving pragmatic
+interoperability among traditional and newer technologies on the
+basis of knowledge graph design principles.
+</p>
+</a>
+<a href="/resources/userguide/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">
+Dublin Core™ User Guide
+</p>
+<p class="mt-1 text-sm text-gray-500">
+A basic guide in the use of Dublin Core and other DCMI
+vocabularies.
+</p>
+</a>
+<a href="/resources/glossary/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">Glossary</p>
+<p class="mt-1 text-sm text-gray-500">
+A guide to terminology used in the DCMI community, past and
+present, with reflections on how our language for talking about
+metadata has evolved.
+</p>
+</a>
+<a href="/resources/lrmi/" class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50">
+<p class="text-base font-medium text-gray-900">LRMI Resources</p>
+<p class="mt-1 text-sm text-gray-500">
+Archived LRMI resources including presentations, reports, and
+implementations.
+</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="relative" x-data="Components.popover({ open: false, focus: false })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
+<button type="button" x-state:on="Item active" x-state:off="Item inactive" class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2" :class="{ 'text-gray-900': open, 'text-gray-500': !(open) }" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+<span>About DCMI</span>
+<svg x-state:on="Item active" x-state:off="Item inactive" class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500" :class="{ 'text-gray-600': open, 'text-gray-400': !(open) }" x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" x-description="'Solutions' flyout menu, show/hide based on flyout menu state." class="absolute z-10 w-screen max-w-sm px-2 mt-3 -ml-4 transform -translate-x-1/2 sm:px-0 2xl:left-1/2 2xl:ml-0 2xl:-translate-x-1/2" x-ref="panel" @click.away="open = false">
+<div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/">
+<p class="text-base font-medium text-gray-900">About DCMI</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/themes/">
+<p class="text-base font-medium text-gray-900">DCMI Themes</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/history/">
+<p class="text-base font-medium text-gray-900">DCMI History</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/lrmi/">
+<p class="text-base font-medium text-gray-900">About LRMI</p>
+</a>
+<h3 class="text-base font-semibold text-gray-500">Organisation</h3>
+<div class="px-5 py-2 pt-1 space-y-6">
+<div class="grid grid-cols-2 gap-y-4 gap-x-8">
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/members/">
+<p class="text-base font-medium text-gray-900">Members</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/groups/governing-board/">
+<p class="text-base font-medium text-gray-900">Governance</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/bylaws/">
+<p class="text-base font-medium text-gray-900">By-laws</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/executive/">
+<p class="text-base font-medium text-gray-900">Directorate</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/groups/usage-board/">
+<p class="text-base font-medium text-gray-900">Usage Board</p>
+</a>
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/collaborations/">
+<p class="text-base font-medium text-gray-900">
+Collaborations
+</p>
+</a>
+</div>
+</div>
+</div>
+<div class="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+<a class="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-gray-50" href="/about/contact/">
+<p class="text-base font-medium text-gray-900">Contact</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="items-center justify-end hidden space-x-4 md:order-2 lg:flex lg:flex-1 lg:w-0">
+<a href="https://x.com/dublincore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">Twitter</span>
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+</svg>
+</a>
+<a href="https://www.youtube.com/c/DublinCore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">YouTube</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+</svg>
+</a>
+<a href="https://github.com/dcmi" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">GitHub</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+</svg>
+</a>
+<a href="https://www.dublincore.org/index.xml" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">RSS Feed</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div x-show="open" x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-description="Mobile menu, show/hide based on mobile menu state." class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden" x-ref="panel" @click.away="open = false">
+<div class="bg-white divide-y-2 rounded-lg shadow-lg divide-gray-50 ring-1 ring-black ring-opacity-5">
+<div class="px-5 pt-5 pb-6">
+<div class="flex items-center justify-between">
+<div>
+<img class="w-auto h-8" src="/images/dcmi_logo_v802.svg" alt="Dublin Core" />
+</div>
+<div class="-mr-2">
+<button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" @click="toggle">
+<span class="sr-only">Close menu</span>
+<svg class="w-6 h-6" x-description="Heroicon name: outline/x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+</svg>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-center flex-1 lg:w-0">
+<div class="items-center justify-end mt-6 md:flex md:flex-1 lg:w-0">
+<div class="relative justify-center pt-2 text-gray-600">
+<form action="/search" method="get">
+<input class="h-10 px-5 pr-16 text-sm bg-white border border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none" type="search" name="q" placeholder="Search" />
+<button type="submit" class="absolute top-0 right-0 mt-5 mr-4">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+</svg>
+</button>
+</form>
+</div>
+</div>
+</div>
+<div class="mt-6">
+<nav class="grid gap-y-8">
+<a href="/specifications/" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/squares-2x2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path>
+</svg>
+<span class="ml-3 text-base font-medium text-gray-900"></span>
+Specifications
+</span>
+</a>
+<a href="/conferences/" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/squares-2x2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+</svg>
+<span class="ml-3 text-base font-medium text-gray-900">
+Conferences
+</span>
+</a>
+<a href="/webinars/" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/shield-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+</svg>
+<span class="ml-3 text-base font-medium text-gray-900">
+Webinars
+</span>
+</a>
+<a href="/themes/community/" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/arrow-path" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12c0-1.232.046-2.453.138-3.662a4.006 4.006 0 013.7-3.7 48.678 48.678 0 017.324 0 4.006 4.006 0 013.7 3.7c.017.22.032.441.046.662M4.5 12l-3-3m3 3l3-3m12 3c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.657 48.657 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.017-.22-.032-.441-.046-.662M19.5 12l-3 3m3-3l3 3"></path>
+</svg>
+<span class="ml-3 text-base font-medium text-gray-900">
+Community
+</span>
+</a>
+<a href="/resources/" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+<svg class="flex-shrink-0 w-6 h-6 text-orange-600" x-description="Heroicon name: outline/arrow-path" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+</svg>
+<span class="ml-3 text-base font-medium text-gray-900">
+Learning Resources
+</span>
+</a>
+</nav>
+</div>
+</div>
+<div class="px-5 py-6 space-y-6">
+<div class="grid grid-cols-2 gap-y-4 gap-x-8">
+<a href="/about/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+About DCMI
+</a>
+<a href="/themes/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+Themes
+</a>
+<a href="/members/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+Members
+</a>
+<a href="/groups/governing-board/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+Governing Board
+</a>
+<a href="/groups/usage-board/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+Usage Board
+</a>
+<a href="/directorate/" class="text-base font-medium text-gray-900 hover:text-gray-700">
+Directorate
+</a>
+</div>
+<div>
+<a href="/conferences/2024/" class="flex items-center justify-center w-full px-4 py-2 text-base font-semibold text-white bg-orange-500 border border-transparent rounded-md shadow-sm hover:bg-orange-700">
+DCMI 2024 Conference
+</a>
+</div>
+<div class="flex items-center justify-center flex-1 mx-auto mt-6 space-x-4 md:order-2">
+<a href="https://x.com/dublincore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">Twitter</span>
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+</svg>
+</a>
+<a href="https://www.youtube.com/c/DublinCore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">YouTube</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+</svg>
+</a>
+<a href="https://github.com/dcmi" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">GitHub</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+</svg>
+</a>
+<a href="https://www.dublincore.org/index.xml" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">RSS Feed</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mx-auto mt-6 mb-6 max-w-7xl sm:px-6">
+<nav class="flex" aria-label="Breadcrumb">
+<ol role="list" class="flex items-center space-x-4">
+<li>
+<div>
+<a href="/" class="text-gray-400 hover:text-gray-500">
+<svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+</svg>
+<span class="sr-only">Home</span>
+</a>
+</div>
+</li>
+<li>
+<div class="flex items-center">
+<svg class="flex-shrink-0 w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+</svg>
+<a href="https://www.dublincore.org/specifications/" class="ml-4 text-sm font-medium text-gray-500 truncate hover:text-gray-700">Specifications</a>
+</div>
+</li>
+<li>
+<div class="flex items-center">
+<svg class="flex-shrink-0 w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+</svg>
+<a href="https://www.dublincore.org/specifications/dublin-core/" class="ml-4 text-sm font-medium text-gray-500 truncate hover:text-gray-700">Dublin Core™</a>
+</div>
+</li>
+<li>
+<div class="flex items-center">
+<svg class="flex-shrink-0 w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+</svg>
+<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" class="ml-4 text-sm font-medium text-gray-500 truncate hover:text-gray-700">DCMI Metadata Terms</a>
+</div>
+</li>
+<li>
+<div class="flex items-center">
+<svg class="flex-shrink-0 w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+</svg>
+<span class="ml-4 text-sm font-medium text-gray-500 truncate hover:text-gray-700">Format</span>
+</div>
+</li>
+</ol>
+</nav>
+</div>
+<div class="mx-auto mt-12 max-w-7xl sm:px-6">
+<main>
+<div class="w-full max-w-full sm:px-4">
+<div class="flex flex-wrap ">
+<div class="relative flex-grow max-w-full flex-1 px-4">
+<h1 class="page-title">Format</h1>
+<table>
+<tr>
+<td class="field-name">Vocabulary:</td>
+<td>
+<a href="/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a
+            >
+</td>
+</tr>
+<tr>
+<td class="field-name">URI</td>
+<td>http://purl.org/dc/elements/1.1/format</td>
+</tr>
+<tr>
+<td class="field-name">Label</td>
+<td>Format</td>
+</tr>
+<tr>
+<td class="field-name">Definition</td>
+<td>The file format, physical medium, or dimensions of the resource.</td>
+</tr>
+<tr>
+<td class="field-name">Comment</td>
+<td>Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [<a href="https://www.iana.org/assignments/media-types/media-types.xhtml">MIME</a>].</td>
+</tr>
+<tr>
+<td class="field-name">Type of Term</td>
+<td>
+Property
+</td>
+</tr>
+<tr>
+<td class="field-name">Note</td>
+<td>A <a href="/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format">second property</a> with the same name as this property has been declared in the <a href="http://purl.org/dc/terms/">dcterms: namespace</a>. See the Introduction to the document <a href="/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a> for an explanation.</td>
+</tr>
+</table>
+<div class="prose"></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="mt-12 bg-gray-50" aria-labelledby="footer-heading">
+<h2 id="footer-heading" class="sr-only">Footer</h2>
+<div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+<div class="xl:grid xl:grid-cols-3 xl:gap-8">
+<div class="space-y-8 xl:col-span-1">
+<img class="h-6" src="/images/dcmi_logo_v802.svg" alt="Dublin Core" />
+<p class="text-base text-gray-600">
+DCMI is an organization supporting innovation in metadata design and
+best practices across the metadata ecology.
+</p>
+<div class="flex space-x-6">
+<a href="https://x.com/dublincore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">Twitter</span>
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+</svg>
+</a>
+<a href="https://www.youtube.com/c/DublinCore" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">YouTube</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+</svg>
+</a>
+<a href="https://github.com/dcmi" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">GitHub</span>
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+</svg>
+</a>
+<a href="https://www.dublincore.org/index.xml" class="text-gray-400 hover:text-orange-500">
+<span class="sr-only">RSS Feed</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+</svg>
+</a>
+</div>
+<div class="flex">
+<a href="https://www.cloudflare.com/galileo/">
+<img class="h-12" src="/images/logos/galileo_logo.png" alt="Powered by Project Galileo" />
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 mt-12 xl:col-span-2 xl:mt-0">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h3 class="text-base font-medium text-gray-900">Specifications</h3>
+<ul role="list" class="mt-4 space-y-4">
+<li>
+<a href="/specifications/dublin-core/dcmi-terms/" class="text-base text-gray-500 hover:text-gray-900">
+DCMI Metadata Terms
+</a>
+</li>
+<li></li>
+<li>
+<a href="/specifications/dublin-core/" class="text-base text-gray-500 hover:text-gray-900">
+DCMI Specifications
+</a>
+</li>
+<li>
+<a href="/schemas/" class="text-base text-gray-500 hover:text-gray-900">
+Dublin Core Schemas
+</a>
+</li>
+<li></li>
+<li>
+<a href="/specifications/lrmi/" class="text-base text-gray-500 hover:text-gray-900">
+LRMI
+</a>
+</li>
+<li></li>
+<li>
+<a href="/specifications/bibo/" class="text-base text-gray-500 hover:text-gray-900">
+BIBO
+</a>
+</li>
+<li></li>
+</ul>
+</div>
+<div class="mt-12 md:mt-0">
+<h3 class="text-base font-medium text-gray-900">Outreach</h3>
+<ul role="list" class="mt-4 space-y-4">
+<li>
+<a href="/conferences/" class="text-base text-gray-500 hover:text-gray-900">
+Conferences
+</a>
+</li>
+<li>
+<a href="/webinars/" class="text-base text-gray-500 hover:text-gray-900">
+Webinars
+</a>
+</li>
+<li>
+<a href="/news/" class="text-base text-gray-500 hover:text-gray-900">
+News
+</a>
+</li>
+<li>
+<a href="/blog/" class="text-base text-gray-500 hover:text-gray-900">
+DCMI Blog
+</a>
+</li>
+<li>
+<a href="/resources/" class="text-base text-gray-500 hover:text-gray-900">
+Resources
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div>
+<h3 class="text-base font-medium text-gray-900">Organisation</h3>
+<ul role="list" class="mt-4 space-y-4">
+<li>
+<a href="/about/" class="text-base text-gray-500 hover:text-gray-900">
+About DCMI
+</a>
+</li>
+<li>
+<a href="/themes/" class="text-base text-gray-500 hover:text-gray-900">
+Themes
+</a>
+</li>
+<li>
+<a href="/themes/community/" class="text-base text-gray-500 hover:text-gray-900">
+DCMI Community
+</a>
+</li>
+<li>
+<a href="/members/" class="text-base text-gray-500 hover:text-gray-900">
+Members
+</a>
+</li>
+<li>
+<a href="/groups/governing-board/" class="text-base text-gray-500 hover:text-gray-900">
+Governance
+</a>
+</li>
+<li>
+<a href="/groups/usage-board/" class="text-base text-gray-500 hover:text-gray-900">
+Usage Board
+</a>
+</li>
+</ul>
+</div>
+<div class="mt-12 md:mt-0">
+<h3 class="text-base font-medium text-gray-900">Website</h3>
+<ul role="list" class="mt-4 space-y-4">
+<li>
+<a href="https://status.dublincore.org/" class="text-base text-gray-500 hover:text-gray-900">
+Service Status
+</a>
+</li>
+<li>
+<a href="/about/privacy/" class="text-base text-gray-500 hover:text-gray-900">
+Privacy
+</a>
+</li>
+<li>
+<a href="/about/copyright/" class="text-base text-gray-500 hover:text-gray-900">
+Legal
+</a>
+</li>
+<li>
+<a href="/about/contact/" class="text-base text-gray-500 hover:text-gray-900">
+Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 mt-12 border-t border-gray-200">
+<div class="text-xs text-gray-500 xl:text-center">
+<p>
+Unless indicated otherwise, DCMI documents are licensed under a
+<a class="text-blue-800 underline hover:text-blue-900 visited:text-blue-700" rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+Creative Commons Attribution 4.0 International License
+</a>
+. Please see the
+<a class="text-blue-800 underline hover:text-blue-900 visited:text-blue-700" href="/about/copyright/#documentnotice">
+DCMI Document Notice
+</a>
+for further instructions.
+</p>
+<p>
+<a class="text-blue-800 underline hover:text-blue-900 visited:text-blue-700" href="/about/copyright/#copyright">
+Copyright
+</a>
+&#169;
+1995-2024
+<abbr title="Dublin Core Metadata Initiative">
+<a href="/">DCMI</a>
+</abbr>
+. All Rights Reserved. DCMI
+<a href="/about/copyright/#liability">liability</a>
+,
+<a href="/about/copyright/#trademark">trademark/service mark</a>
+,
+<a href="/about/copyright/#documentnotice">document use rules</a>
+apply. Your interactions with this site are in accordance with our
+<a href="/about/privacy/">privacy</a>
+statements.
+</p>
+<p>
+The Dublin Core Metadata Initiative (DCMI) is a project of
+ASIS&amp;T&mdash;a U.S. 501(c)(3) nonprofit under the U.S. Internal
+Revenue Code. Contributions to DCMI through ASIS&amp;T are
+tax-deductible to the full extent of the law in the United States.
+</p>
+<p class="mt-6 text-xs">
+Deployed with
+<a class="text-blue-800" href="https://gohugo.io/">Hugo</a>
+<a class="text-blue-800" href="https://github.com/gohugoio/hugo/releases/tag/v0.120.4">
+v0.120.4
+</a>
+on
+<relative-time datetime="2024-06-17T05:26:07Z" month="short" day="numeric" year="numeric" hour="numeric" minute="numeric" time-zone-name="long" format="datetime">
+17 Jun 24 05:26 UTC
+</relative-time>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"89549310f949be57","version":"2024.4.1","token":"35523f0251414fed8ecb7412b93c1ea7"}' crossorigin="anonymous"></script>
+</body>
+</html>

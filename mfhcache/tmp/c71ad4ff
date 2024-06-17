@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for Linux/x86 (vers 1st March 2002), see www.w3.org" />
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=utf-8" />
+
+    <title>RDF Test Cases</title>
+    <meta name="rcsid"
+    content="$Id: Overview.html,v 1.12 2018/10/09 13:29:45 denis Exp $" />
+<style type="text/css">
+/*<![CDATA[*/
+
+  div.exampleInner pre {
+    margin-left: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-family: monospace;
+  }
+  div.exampleOuter {
+    border: 4px double gray;
+    margin: 0em;
+    padding: 0em;
+  }
+  div.exampleInner {
+    color: black;
+    /* mauve */
+    background-color: #efeff8;
+    border-top-style: double;
+    border-top-color: #d3d3d3;
+    border-bottom-width: 4px;
+    border-bottom-style: double;
+    border-bottom-color: #d3d3d3;
+    padding: 4px;
+    margin: 0em;
+  }
+
+div.ntripleOuter {
+   margin: 0em;
+   padding: 0em;
+}
+
+div.ntripleInner {
+   color: black;
+   /* LightGoldenrod1 */
+   background-color: #ffec8b;
+   padding: 0.5em;
+   margin: 0em;
+}
+
+div.ntripleInner p {
+   margin-left: 0em;
+   margin-top: 0em;
+   margin-bottom: 0em
+}
+
+p.footer {
+   text-align: right
+}
+
+/*]]>*/
+</style>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/W3C-REC" />
+  </head>
+
+  <body>
+    <div class="head">
+      <a href="https://www.w3.org/"><img height="48" width="72" alt="W3C" src="https://www.w3.org/Icons/w3c_home" /></a> 
+
+      <h1 id="title">RDF Test Cases</h1>
+
+      <h2 id="doctype">W3C Recommendation 10 February 2004</h2>
+<div id="rdf_1_1_notice" style="border: solid black 1px; padding: 0.5em; background: #FFB;">
+  <p style="margin-top: 0; font-weight: bold;">New Version
+        Available: "RDF 1.1 Test Cases"<span style="padding-left: 2em;"></span>
+        (Document Status Update, 25 February 2014)</p>
+
+<p style="margin-bottom: 0;">The RDF Working Group has produced
+  a W3C Recommendation for a new version of RDF which adds
+  features to this 2004 version, while remaining compatible.
+  Please see <a href="https://www.w3.org/TR/rdf11-testcases">"RDF 1.1
+  Test Cases"</a> for a new version of this document, and the
+  <a href="https://www.w3.org/TR/rdf11-new">"What's New in RDF 1.1"</a> document for the differences between this 
+  version of RDF and RDF 1.1.</p>
+</div>
+
+
+      <dl>
+        <dt>This Version:</dt>
+
+        <dd><a href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/">http://www.w3.org/TR/2004/REC-rdf-testcases-20040210/</a></dd>
+
+        <dt>Latest Version:</dt>
+
+        <dd><a href="https://www.w3.org/TR/rdf-testcases/">http://www.w3.org/TR/rdf-testcases/</a></dd>
+
+        <dt>Previous Version:</dt>
+
+        <dd><a href="https://www.w3.org/TR/2003/PR-rdf-testcases-20031215/">http://www.w3.org/TR/2003/PR-rdf-testcases-20031215/</a></dd>
+
+        <dt>Editors:</dt>
+
+        <dd>Jan Grant, (ILRT, University of Bristol)</dd>
+
+        <dd><a href="http://purl.org/net/dajobe/">Dave Beckett</a>,
+        (ILRT, University of Bristol)</dd>
+
+        <dt>Series editor:</dt>
+
+        <dd><a href="http://www-uk.hpl.hp.com/people/bwm/">Brian
+        McBride</a> (Hewlett Packard Labs)</dd>
+      </dl>
+
+
+
+
+
+
+<p>Please refer to the <a href="https://www.w3.org/2001/sw/RDFCore/errata#rdf-testcases"><strong>errata</strong></a>
+for this document, which may include some normative corrections.</p>
+
+<p>See also <a href="https://www.w3.org/2001/sw/RDFCore/translation/rdf-testcases">translations</a>.</p>
+
+<p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+      &copy; 2004 <a href="https://www.w3.org/"><acronym
+      title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup>
+      (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+      <a href="http://www.ercim.org/"><acronym
+      title="European Research Consortium for Informatics and Mathematics">
+      ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>),
+      All Rights Reserved. W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">
+      liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">
+      trademark</a>, <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document
+      use</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-software">software
+      licensing</a> rules apply.</p>
+      <hr title="Separator for header" />
+    </div>
+
+    <h2><a name="abstract" id="abstract"></a>Abstract</h2>
+
+    <p>This document describes the RDF Test Cases deliverable for the
+    <a href="https://www.w3.org/2001/sw/RDFCore/">RDF Core Working
+    Group</a> as defined in the Working Group's <a href="https://www.w3.org/2001/sw/RDFCoreWGCharter">Charter</a>.</p>
+
+<div class="status">
+
+<h2 class="nonum">
+<a id="status" name="status">Status of this Document</a>
+</h2>
+<!-- Start Status-Of-This-Document Text -->
+
+<p>This document has been reviewed by W3C Members and other interested
+parties, and it has been endorsed by the Director as a <a href="https://www.w3.org/2003/06/Process-20030618/tr.html#RecsW3C">W3C
+Recommendation</a>.  W3C's role in making the Recommendation is to
+draw attention to the specification and to promote its widespread
+deployment. This enhances the functionality and interoperability of
+the Web.</p>
+
+<p>This is one document in a <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-Introduction">set
+of six</a> (<a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">Primer</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">Concepts</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">Syntax</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">Semantics</a>,
+<a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">Vocabulary</a>,
+and <a href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/">Test
+Cases</a>) intended to jointly replace the original Resource
+Description Framework specifications, <a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">RDF Model and Syntax (1999
+Recommendation)</a> and <a href="https://www.w3.org/TR/2000/CR-rdf-schema-20000327/">RDF Schema
+(2000 Candidate Recommendation)</a>.  It has been developed by the <a href="https://www.w3.org/2001/sw/RDFCore/">RDF Core Working Group</a>
+as part of the <a href="https://www.w3.org/2001/sw/">W3C Semantic Web
+Activity</a> (<a href="https://www.w3.org/2001/sw/Activity">Activity
+Statement</a>, <a href="https://www.w3.org/2002/11/swv2/charters/RDFCoreWGCharter">Group
+Charter</a>) for publication on 10 February 2004.
+</p>
+
+<p>Changes to this document since the <a href="https://www.w3.org/TR/2003/PR-rdf-testcases-20031215/" shape="rect">Proposed Recommendation Working Draft</a> are detailed in
+the <a href="#changes" shape="rect">change log</a>.  </p>
+
+<p> The public is invited to send comments to <a
+href="mailto:www-rdf-comments@w3.org">www-rdf-comments@w3.org</a> (<a
+href="http://lists.w3.org/Archives/Public/www-rdf-comments/">archive</a>)
+and to participate in general discussion of related technology on <a
+href="mailto:www-rdf-interest@w3.org"
+shape="rect">www-rdf-interest@w3.org</a> (<a
+href="http://lists.w3.org/Archives/Public/www-rdf-interest/"
+shape="rect">archive</a>).  </p>
+
+<p>A list of <a href="https://www.w3.org/2001/sw/RDFCore/impls">
+implementations</a> is available.</p>
+
+<p>The W3C maintains a list of <a href="https://www.w3.org/2001/sw/RDFCore/ipr-statements" rel="disclosure">any patent disclosures related to this work</a>.</p>
+
+<p><em>This section describes the status of this document at the time of its 
+publication. Other documents may supersede this document. A list of current W3C 
+publications and the latest revision of this technical report can be found in 
+the <a href="https://www.w3.org/TR/">W3C technical reports index</a> at 
+http://www.w3.org/TR/.</em></p> 
+
+<!-- End Status-Of-This-Document Text -->
+
+</div>
+
+
+    <h2 class="notoc"><a id="toc" name="toc">Table of Contents</a></h2>
+
+    <div class="contents">
+      <ul class="toc">
+        <li class="tocline">
+          1. <a href="#introduction">Introduction</a> 
+
+          <ul class="toc">
+            <li class="tocline">1.1. <a
+            href="#intro_scope">Scope</a></li>
+
+            <li class="tocline">1.2. <a href="#intro_errata">RDF
+            Errata</a></li>
+          </ul>
+        </li>
+
+        <li class="tocline">
+          2. <a href="#testcases">Test Cases</a> 
+
+          <ul class="toc">
+            <li class="tocline">2.1. <a
+            href="#tc_org">Organization</a></li>
+
+            <li class="tocline">2.2. <a href="#tc_cert">Approved Test
+            Cases</a></li>
+
+            <li class="tocline">2.3. <a href="#tc_no_cert">Test Cases
+            Not Approved</a></li>
+
+            <li class="tocline">2.4. <a href="#tc_running">Running the
+            test cases</a></li>
+          </ul>
+        </li>
+
+        <li class="tocline">
+          3. <a href="#ntriples">N-Triples</a> 
+
+          <ul class="toc">
+            <li class="ntrip_grammar">3.1. <a
+            href="#ntrip_grammar">Extended Backus-Naur Form (EBNF)
+            Grammar</a></li>
+
+            <li class="ntrip_strings">3.2. <a
+            href="#ntrip_strings">Strings</a></li>
+
+            <li>3.3. <a href="#sec-uri-encoding">URI
+            References</a></li>
+
+            <li class="ntrip_example">3.4. <a
+            href="#ntrip_example">Example</a></li>
+
+            <li class="ntrip_tests">3.5. <a
+            href="#ntrip_tests">Tests</a></li>
+          </ul>
+        </li>
+
+        <li class="tocline">
+          4. <a href="#references">References</a> 
+
+          <ul class="toc">
+            <li class="tocline"><a href="#ref_normative">Normative
+            References</a></li>
+
+            <li class="tocline"><a
+            href="#ref_non_normative">Informative References</a></li>
+          </ul>
+        </li>
+
+        <li class="tocline">5. <a
+        href="#contributors">Acknowledgments</a> (Informative)</li>
+
+        <li class="tocline">A. <a href="#change_log">Change Log</a>
+        (Informative)</li>
+
+        <li class="tocline">B. <a href="#open_issues">Open Issues</a>
+        (Informative)</li>
+      </ul>
+    </div>
+    <hr />
+
+    <h1><a name="introduction" id="introduction">1.
+    Introduction</a></h1>
+
+    <p>One of the deliverables specified in <a href="https://www.w3.org/2001/sw/RDFCoreWGCharter">Charter</a> of
+    the <a href="https://www.w3.org/2001/sw/RDFCore/">RDF Core Working
+    Group</a> is: <i>a set of machine-processable <strong>test
+    cases</strong> corresponding to technical issues addressed by the
+    Working Group</i>. This document describes the test cases that fulfill that
+    deliverable but it does not contain the test cases themselves. The
+    test cases are available at <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/">http://www.w3.org/2000/10/rdf-tests/rdfcore/</a>.</p>
+
+    <p>The <a href="https://www.w3.org/RDF/Interest/">RDF Interest
+    Group</a> and other members of the RDF community have identified
+    issues/ambiguities in the [<cite><a
+    href="#bib_rdf">RDFMS</a></cite>] Specification and the [<cite><a
+    href="#bib_rdfs">RDF-SCHEMA</a></cite>] Candidate Recommendation.
+    These issues have been collected and categorized in the <a href="https://www.w3.org/2000/03/rdf-tracking/">RDF Core Working Group Issue
+    Tracking</a> document. The RDF Core Working Group uses this issue
+    list to guide its work. The issues list is a working document; it
+    is updated as new issues are identified. It is updated as the
+    Working Group makes decisions as documented in the <a href="https://www.w3.org/2000/03/rdf-tracking/#decisions">Attention
+    Developers</a> section of the document.</p>
+
+    <p>The complete specification of RDF consists of a number of
+    documents:</p>
+
+    <ul>
+      <li><a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF Primer</a> [<cite><a href="#ref-rdfprimer">RDF-PRIMER</a></cite>]</li>
+
+      <li><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">RDF Concepts and Abstract Syntax</a> [<cite><a href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>]</li>
+
+      <li><a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">RDF Semantics</a> [<cite><a href="#ref-rdf-semantics">RDF-SEMANTICS</a></cite>]</li>
+
+      <li><a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">RDF/XML Syntax</a> [<cite><a href="#ref-rdf-syntax">RDF-SYNTAX</a></cite>]</li>
+
+      <li><a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">RDF Vocabulary Description Language 1.0: RDF Schema</a> [<cite><a href="#ref-rdf-vocabulary">RDF-VOCABULARY</a></cite>]</li>
+
+      <li>RDF Test Cases (this document)</li>
+    </ul>
+
+    <h2><a name="intro_scope" id="intro_scope"></a>1.1. Scope</h2>
+
+    <p>A comprehensive and complete test suite for RDF should cover all
+    of the rules in the <a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/#section-Infoset-Grammar">Formal Grammar
+    for RDF</a>. The Working Group, however, is not chartered to
+    deliver such a test suite but rather to create test cases for the
+    issues the Working Group addresses (when applicable). Although the
+    Working Group will not create test cases for some grammar rules
+    (e.g. rule [6.1]), if such test cases are donated to the W3C the
+    Consortium may add such test cases to this set of test cases.</p>
+
+    <h2><a name="intro_errata" id="intro_errata"></a>1.2. RDF
+    Errata</h2>
+
+    <p>The <a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/errata">RDF
+    Errata</a> documents known errors in [<cite><a
+    href="#bib_rdf">RDFMS</a></cite>]. Since errata are considered
+    normative changes to a W3C Specification and Working Group
+    decisions are not normative until a specification is a W3C
+    Recommendation, none of the decisions made by the RDF Core Working
+    Group have (to date) been reflected in the errata.</p>
+
+    <h1><a id="testcases" name="testcases">2. Test Cases</a></h1>
+
+    <p>The Test Case Repository
+	[<cite><a href="#testcaserepository">REPOSITORY</a></cite>]
+	contains subdirectories, each containing test cases devoted to
+	a single issue. Each directory contains a manifest file
+	describing the tests in that directory. Where an issue originated
+	with the RDF Issue Tracking process
+	[<cite><a href="#ref_rdfissuetracking">ISSUES</a></cite>], the
+	manifest will indicate this fact.
+	</p>
+
+    <p>The Test Case Repository contains ZIP files of all <em>Approved test
+    cases</em>
+	[<cite><a href="#ref_approvedtests">APPROVED</a></cite>] as well as
+	a ZIP archive of all Approved and Not Approved test cases
+	[<cite><a href="#ref_alltests">FULLTESTS</a></cite>]
+	</p>
+
+    <p>The Manifest file
+	[<cite><a href="#ref_manifest">MANIFEST</a></cite>]
+	contains a machine-readable manifest of the test cases.
+	The format of this file is described below.
+</p>
+
+    <h2><a id="tc_names" name="tc_names"></a><a id="tc_org"
+    name="tc_org">2.1. Organization</a></h2>
+
+    <p>The manifest file 
+	[<cite><a href="#ref_manifest">MANIFEST</a></cite>]
+    contains a machine-readable description of the test cases in
+    RDF/XML. Care has been taken to ensure that this file
+    follows a simple format to assist in machine-processing the test
+    cases.</p>
+
+    <p>The file consists of a simple header
+	[<cite><a href="#ref_manifest_head">MANIFEST-HEAD</a></cite>],
+    individual descriptions of the test cases, and a closing footer
+	[<cite><a href="#ref_manifest_head">MANIFEST-TAIL</a></cite>].
+	</p>
+
+    <p>The test cases are divided into the following categories:</p>
+
+    <dl>
+      <dt>Positive Parser Tests</dt>
+
+      <dd>
+        These tests consist of one (or more) input documents in RDF/XML
+        as is revised in [<cite><a
+        href="#ref-rdf-syntax">RDF-SYNTAX</a></cite>]. The expected result
+        is defined using the <a href="#ntriples">N-Triples syntax
+        (Section 3)</a>. A parser is considered to pass the test if it
+        produces a graph <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-graph-equality">
+        equivalent to</a> the graph described by the N-triples output
+        document, according to <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#section-graph-equality">
+        the definition of graph equivalence</a> given in [<cite><a
+        href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>]. Where the
+        input document(s) are legal RDF/XML, but a warning may be
+        generated, this is indicated in the test manifest. 
+
+        <div class="exampleOuter exampleInner">
+<pre>
+&lt;test:PositiveParserTest rdf:about="http://w3.example.org/test001"&gt;
+
+   &lt;test:issue rdf:resource="http://w3.example.org/rdf-tracking/#example1" /&gt;
+   &lt;test:status&gt;APPROVED&lt;/test:status&gt;
+   &lt;test:approval rdf:resource="http://rdfcore.example.org/archives/001.html" /&gt;
+   &lt;test:description&gt;
+    This is a simple positive parser test example.
+   &lt;/test:description&gt;
+
+   &lt;test:inputDocument&gt;
+      &lt;test:RDF-XML-Document rdf:about="http://w3.example.org/test001.rdf" /&gt;
+   &lt;/test:inputDocument&gt;
+
+   &lt;test:outputDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/test001.nt" /&gt;
+   &lt;/test:outputDocument&gt;
+
+   &lt;test:warning&gt;Some parsers may produce a warning when running this test&lt;/test:warning&gt;
+
+&lt;/test:PositiveParserTest&gt;
+</pre>
+        </div>
+      </dd>
+
+      <dt>Negative Parser Tests</dt>
+
+      <dd>
+        These tests consist of one input document. The document is not
+        legal RDF/XML. A parser is considered to pass the test if it
+        correctly holds the input document to be in error. 
+
+        <div class="exampleOuter exampleInner">
+<pre>
+&lt;test:NegativeParserTest rdf:about="http://w3.example.org/error001"&gt;
+
+   &lt;test:issue rdf:resource="http://w3.example.org/rdf-tracking/#example1" /&gt;
+   &lt;test:status&gt;APPROVED&lt;/test:status&gt;
+
+   &lt;test:inputDocument&gt;
+      &lt;test:RDF-XML-Document rdf:about="http://w3.example.org/error001.rdf" /&gt;
+   &lt;/test:inputDocument&gt;
+
+&lt;/test:NegativeParserTest&gt;
+</pre>
+        </div>
+      </dd>
+
+      <dt>Positive Entailment Tests</dt>
+
+      <dd>
+        These tests are specified by one or more premise documents (in
+        RDF/XML or N-Triples) together with a single conclusion
+        document. In addition, the rules used for determining
+        entailment are specified by test:entailmentRules elements. If
+        the following is present 
+<pre>
+ &lt;test:entailmentRules rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /&gt;
+</pre>
+        then the test succeeds if the entailment holds according to the
+        rules of RDF-entailment as specified in [<cite><a
+        href="#ref-rdf-semantics">RDF-SEMANTICS</a></cite>]. If the following
+        two elements are present 
+<pre>
+&lt;test:entailmentRules rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /&gt;
+&lt;test:entailmentRules rdf:resource="http://www.w3.org/2000/01/rdf-schema#" /&gt;
+     
+</pre>
+        then the test succeeds if the entailment holds according to the
+        rules of RDFS-entailment as specified in [<cite><a
+        href="#ref-rdf-semantics">RDF-SEMANTICS</a></cite>]. 
+
+		For test cases that use simple entailment, the following marker
+		is used:
+<pre>
+&lt;test:entailmentRules rdf:resource="http://www.w3.org/2000/10/rdf-tests/rdfcore/testSchema#simpleEntailment" /&gt;
+     
+</pre>
+
+
+        <div class="exampleOuter exampleInner">
+<pre>
+&lt;test:PositiveEntailmentTest rdf:about="http://w3.example.org/rdfs-domain-and-range/conjunction-test"&gt;
+
+   &lt;test:description&gt;
+    This test demonstrates the conjunctive nature of range and domain.
+   &lt;/test:description&gt;
+
+   &lt;test:entailmentRules rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /&gt;
+   &lt;test:entailmentRules rdf:resource="http://www.w3.org/2000/01/rdf-schema#" /&gt;
+
+   &lt;test:premiseDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/rdfs-domain-and-range/test001.nt" /&gt;
+   &lt;/test:premiseDocument&gt;
+
+   &lt;test:premiseDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/rdfs-domain-and-range/test002.nt" /&gt;
+   &lt;/test:premiseDocument&gt;
+
+   &lt;test:premiseDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/rdfs-domain-and-range/test003.nt" /&gt;
+   &lt;/test:premiseDocument&gt;
+
+   &lt;test:conclusionDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/rdfs-domain-and-range/test004.nt" /&gt;
+   &lt;/test:conclusionDocument&gt;
+
+&lt;/test:PositiveEntailmentTest&gt;
+</pre>
+        </div>
+
+        <p>According to [<cite><a
+        href="#ref-rdf-semantics">RDF-SEMANTICS</a></cite>], a premise document
+        that contains a semantic error with respect to any constraints
+        imposed by the entailment rules selected will be false in any
+        interpretation
+        (and hence entail anything).</p>
+
+        <p>Support for such situations is provided by the manifest
+        format by declaring an premise or conclusion pseudo-document as
+        follows:</p>
+<pre>
+   &lt;test:conclusionDocument&gt;
+      &lt;test:False-Document/&gt;
+   &lt;/test:conclusionDocument&gt;
+</pre>
+
+        <p>By convention, such a pseudo-document is said to come out
+        false under any interpretation.</p>
+      </dd>
+
+      <dt>Negative Entailment Tests</dt>
+
+      <dd>
+        These tests are specified using a similar structure to the
+        Positive Entailment Tests, with the
+        &lt;test:NegativeEntailmentTest&gt; element used instead of the
+        &lt;test:PositiveEntailmentTest&gt;.
+
+		The test is <em>failed</em> if the conclusion can be drawn from the 
+		premises using the rules of RDF- or RDFS-entailment. The test is 
+		considered to be <em>passed</em> when it can be conclusively 
+		demonstrated that the conclusion cannot be so drawn. In practice, the 
+		test may be considered to be passed when a thorough attempt to fail 
+		the test is unable to achieve failure.
+
+        <div class="exampleOuter exampleInner">
+<pre>
+&lt;test:NegativeEntailmentTest rdf:about="http://w3.example.org/statement-entailment/test001"&gt;
+
+   &lt;test:status&gt;PENDING&lt;/test:status&gt;
+   &lt;test:approval rdf:resource="http://rdfcore.example.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html" /&gt;
+   &lt;test:description&gt;
+     RDF Core WG RESOLVED that a reified statement was a stating, not a statement.
+     The following entailment does not, therefore, hold.
+   &lt;/test:description&gt;
+
+   &lt;test:entailmentRules rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /&gt;
+   &lt;test:entailmentRules rdf:resource="http://www.w3.org/2000/01/rdf-schema#" /&gt;
+
+   &lt;test:premiseDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/statement-entailment/test001a.nt" /&gt;
+   &lt;/test:premiseDocument&gt;
+
+   &lt;test:conclusionDocument&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/statement-entailment/test001b.nt" /&gt;
+   &lt;/test:conclusionDocument&gt;
+
+&lt;/test:NegativeEntailmentTest&gt;
+</pre>
+        </div>
+      </dd>
+
+      <dt>Datatype-aware entailment tests</dt>
+
+      <dd>
+        Entailment test cases may, in addition, require datatype
+        support. Such a requirement is indicated in the manifest by the
+        presence of the following <b>test:entailmentRules</b> element,
+        followed by zero or more <b>test:datatypeSupport</b> entries. 
+<pre>
+   &lt;test:entailmentRules rdf:resource="http://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes#" /&gt;
+   &lt;test:datatypeSupport rdf:resource="http://www.w3.org/2001/XMLSchema#integer" /&gt;
+   &lt;test:datatypeSupport rdf:resource="http://dt.example.org/datatype#foo" /&gt;
+</pre>
+        For the purposes of the test suite, if a test case requires
+        <em>datatype support</em> for a set of datatypes, { <b>T</b>,
+        <b>U</b>, <b>V</b>, ... } then the following three pieces of
+        machinery are required: 
+
+        <ul>
+          <li>for any datatyped literal of the form
+          <b>"<em>aaa</em>"^^&lt;<em>T</em>&gt;</b> where <em>T</em> is
+          a supported datatype, it must be possible to determine if
+          <em>aaa</em> is a valid lexical form for that datatype;
+          and</li>
+
+          <li>for any two datatyped literals of the form
+          <b>"<em>aaa</em>"^^&lt;<em>T</em>&gt;</b> and
+          <b>"<em>bbb</em>"^^&lt;<em>U</em>&gt;</b> with <em>aaa</em>
+          and <em>bbb</em> valid lexical forms of the supported
+          datatypes <em>T</em> and <em>U</em> respectively, it must be
+          possible to determine if those two literals denote the same
+          value. (Note that determining <em>what that value is</em> is
+          not explicitly required.)</li>
+
+          <li>for any datatyped literal of the form
+          <b>"<em>aaa</em>"^^&lt;<em>T</em>&gt;</b> where <em>T</em> is
+          a supported datatype, and for some supported datatype
+          <em>U</em>, it must be possible to determine if the value
+          denoted by the literal is or is not a member of the value
+          space of <em>U</em>. (This last condition is required to
+          support the checking of range clashes.) Finally, </li>
+
+		  <li>For two supported datatypes <em>T</em> and <em>U</em>,
+			it must be possible to determine (possibly by simple fiat)
+			if <em>T</em>, considered as a class, is a subclass of
+			<em>U</em>, considered as a class.
+		  </li>
+        </ul>
+      </dd>
+
+      <dt>Miscellaneous Tests</dt>
+
+      <dd>
+        This manifest entry is used to describe test cases that do not
+        fall into one of the earlier categories. It may have several
+        associated files, indicated in &lt;test:document&gt; elements. 
+
+        <div class="exampleOuter exampleInner">
+<pre>
+&lt;test:MiscellaneousTest rdf:about="http://w3.example.org/misc001"&gt;
+
+   &lt;test:status&gt;PENDING&lt;/test:status&gt;
+   &lt;test:description&gt;
+     A serializer asked to output the graph described in the test001
+     document should raise an exception since it cannot be described using
+     RDF/XML.
+   &lt;/test:description&gt;
+
+   &lt;test:document&gt;
+      &lt;test:NT-Document rdf:about="http://w3.example.org/nonserializable/test001.nt" /&gt;
+   &lt;/test:document&gt;
+
+&lt;/test:MiscellaneousTest&gt;
+</pre>
+        </div>
+      </dd>
+    </dl>
+
+    <p>In addition, each test case description may have the following
+    common attributes:</p>
+
+    <ul>
+      <li>
+        The <b>test:issue</b> element contains a pointer to the
+        associated issue on the <a href="https://www.w3.org/2000/03/rdf-tracking/">RDF Core Working Group
+        Tracking</a> document. It may appear zero or more times. 
+<pre>
+&lt;test:issue rdf:resource="http://www.w3.org/2000/03/rdf-tracking/#rdfs-no-cycles-in-subClassOf" /&gt;
+</pre>
+      </li>
+
+      <li>
+        The <b>test:status</b> element, if present, indicates the
+        status of the test according to RDF Core Working Group process. Only test
+        descriptions containing the following should be considered to
+        be approved by Working Group. 
+<pre>
+&lt;test:status&gt;APPROVED&lt;/test:status&gt;
+</pre>
+      </li>
+
+      <li>
+        The <b>test:approval</b> element, if present, contains a
+        reference to the minutes of the RDF Core Working Group meeting where the
+        test case status was last changed. 
+<pre>
+ &lt;test:approval rdf:resource="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html" /&gt;
+</pre>
+      </li>
+
+      <li>
+        The <b>test:discussion</b> element, if present, contains a
+        pointer to other discussion surrounding this test case or the
+        associated issue. This element may appear multiple times. 
+<pre>
+ &lt;test:discussion rdf:resource="http://rdfcore.example.org/" /&gt;
+</pre>
+      </li>
+
+      <li>
+        The <b>test:description</b> element, if present, contains a
+        human-readable summary of the test case. 
+<pre>
+&lt;test:description&gt;
+    Text describing the test case goes here.
+&lt;/test:description&gt;
+</pre>
+      </li>
+
+      <li>
+        The <b>test:warning</b> element, if present, indicates that
+        while the test should pass, it may generate a warning. The
+        contents of the element provide a human-readable description of
+        the warning. 
+<pre>
+&lt;test:warning&gt; Text describing the warning goes here. &lt;/test:warning&gt;
+</pre>
+      </li>
+    </ul>
+
+    <h2><a name="tc_cert" id="tc_cert">2.2. Approved Test
+    Cases</a></h2>
+
+    <p>The test cases in the following table have been approved.</p>
+    <!-- insert into table
+                    <tr>
+                      <td colspan="8">Note: of the following six tests, only three can be
+                        expected to pass. See the test descriptions in the <a
+                        href="http://www.w3.org/2000/10/rdf-tests/rdfcore/Manifest.rdf">manifest</a>
+                        for details.</td>
+                    </tr>
+                -->
+    <!-- APPROVED TABLE BEGIN -->
+
+<table border="1" class="tcList">
+<caption>There are 22 issues containing 157 approved test cases, and 57 test cases without an associated issue.
+	Relative URLs listed in this table should be resolved against the base URI http://www.w3.org/2000/10/rdf-tests/rdfcore/</caption>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left">Test cases without an issue: 57 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 15)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/amp-in-url/test001.rdf">amp-in-url/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/amp-in-url/test001.nt">amp-in-url/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Sep/0326.html">RDFCore Telecon 2001-09-21</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test001.rdf">datatypes/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test001.nt">datatypes/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002.rdf">datatypes/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002.nt">datatypes/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-element-not-mandatory/test001.rdf">rdf-element-not-mandatory/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-element-not-mandatory/test001.nt">rdf-element-not-mandatory/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Oct/0071.html">RDFCore Telecon 2003-10-03</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-reification-required/test001.rdf">rdfms-reification-required/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-reification-required/test001.nt">rdfms-reification-required/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-uri-substructure/test001.rdf">rdfms-uri-substructure/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-uri-substructure/test001.nt">rdfms-uri-substructure/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test001.rdf">rdfms-xmllang/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test001.nt">rdfms-xmllang/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jun/0034.html">RDFCore Telecon 2002-06-07</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test002.rdf">rdfms-xmllang/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test002.nt">rdfms-xmllang/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jun/0034.html">RDFCore Telecon 2002-06-07</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test003.rdf">rdfms-xmllang/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test003.nt">rdfms-xmllang/test003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jun/0034.html">RDFCore Telecon 2002-06-07</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test004.rdf">rdfms-xmllang/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test004.nt">rdfms-xmllang/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jun/0034.html">RDFCore Telecon 2002-06-07</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test005.rdf">rdfms-xmllang/test005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test005.nt">rdfms-xmllang/test005.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jun/0034.html">RDFCore Telecon 2002-06-07</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test006.rdf">rdfms-xmllang/test006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test006.nt">rdfms-xmllang/test006.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/unrecognised-xml-attributes/test001.rdf">unrecognised-xml-attributes/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/unrecognised-xml-attributes/test001.nt">unrecognised-xml-attributes/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jan/0152.html">RDFCore Telecon 2002-01-18</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/unrecognised-xml-attributes/test002.rdf">unrecognised-xml-attributes/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/unrecognised-xml-attributes/test002.nt">unrecognised-xml-attributes/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jan/0152.html">RDFCore Telecon 2002-01-18</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xml-canon/test001.rdf">xml-canon/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xml-canon/test001.nt">xml-canon/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Aug/0138.html">RDFCore Telecon 2003-08-08</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 9)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-abouteach/error001.rdf">rdfms-abouteach/error001.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-abouteach/error002.rdf">rdfms-abouteach/error002.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error001.rdf">rdfms-rdf-id/error001.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error002.rdf">rdfms-rdf-id/error002.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error003.rdf">rdfms-rdf-id/error003.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error004.rdf">rdfms-rdf-id/error004.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error005.rdf">rdfms-rdf-id/error005.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error006.rdf">rdfms-rdf-id/error006.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-id/error007.rdf">rdfms-rdf-id/error007.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Positive Entailment tests (test cases: 16)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:integer, xsd:string) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes-intensional/test002.nt">datatypes-intensional/test002.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Sep/0093.html">RDFCore Telecon 2003-09-05</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002.nt">datatypes/test002.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002.nt">datatypes/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:string) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test011a.nt">datatypes/test011a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test011b.nt">datatypes/test011b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Sep/0003.html">RDFCore Telecon 2003-08-29</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:decimal, xsd:string) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test006.nt">datatypes/test006.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + DT(xsd:decimal, xsd:integer) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test005a.nt">datatypes/test005a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test005b.nt">datatypes/test005b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + DT(xsd:integer) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test003a.nt">datatypes/test003a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test003b.nt">datatypes/test003b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="2">RDF + DT(xsd:integer) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test003b.nt">datatypes/test003b.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test003a.nt">datatypes/test003a.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="2"></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test008a.nt">datatypes/test008a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test008b.nt">datatypes/test008b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Oct/0131.html">RDFCore Telecon 2002-10-11</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(rdf:XMLLiteral) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test010.nt">datatypes/test010.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Oct/0131.html">RDFCore Telecon 2002-10-11</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/pfps-10/test001a.nt">pfps-10/test001a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/pfps-10/test001b.nt">pfps-10/test001b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0080.html">Editorial fix for issue PFPS-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/empty.nt">rdfms-seq-representation/empty.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test002.nt">rdfms-seq-representation/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test003a.nt">rdfms-seq-representation/test003a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test003b.nt">rdfms-seq-representation/test003b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/empty.nt">rdfms-seq-representation/empty.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test004.nt">rdfms-seq-representation/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/tex-01/test001.rdf">tex-01/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/tex-01/test002.rdf">tex-01/test002.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/tex-01/test002.rdf">tex-01/test002.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/tex-01/test001.rdf">tex-01/test001.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:int) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test001.rdf">xmlsch-02/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test003.rdf">xmlsch-02/test003.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative Entailment tests (test cases: 16)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:decimal, xsd:integer) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes-intensional/test001.nt">datatypes-intensional/test001.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Sep/0093.html">RDFCore Telecon 2003-09-05</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:integer) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002.nt">datatypes/test002.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test002b.nt">datatypes/test002b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Nov/0611.html">RDFCore Telecon 2002-11-22</a></td></tr>
+  <tr><td colspan="2"></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test009a.nt">datatypes/test009a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/datatypes/test009b.nt">datatypes/test009b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Oct/0131.html">RDFCore Telecon 2002-10-11</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/horst-01/test001.rdf">horst-01/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/horst-01/test002.rdf">horst-01/test002.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/horst-01/test003.rdf">horst-01/test003.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/horst-01/test004.rdf">horst-01/test004.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2"></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007a.nt">rdfms-xmllang/test007a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007b.nt">rdfms-xmllang/test007b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2"></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007b.nt">rdfms-xmllang/test007b.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007c.nt">rdfms-xmllang/test007c.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2"></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007c.nt">rdfms-xmllang/test007c.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xmllang/test007a.nt">rdfms-xmllang/test007a.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-container-membership-superProperty/not1P.rdf">rdfs-container-membership-superProperty/not1P.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-container-membership-superProperty/not1C.rdf">rdfs-container-membership-superProperty/not1C.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test001a.nt">statement-entailment/test001a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test001b.nt">statement-entailment/test001b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html">RDFCore Telecon 2002-02-15</a></td></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test002a.nt">statement-entailment/test002a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test002b.nt">statement-entailment/test002b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html">RDFCore Telecon 2002-02-15</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test001a.nt">statement-entailment/test001a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test001b.nt">statement-entailment/test001b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html">RDFCore Telecon 2002-02-15</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test002a.nt">statement-entailment/test002a.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/statement-entailment/test002b.nt">statement-entailment/test002b.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Feb/0476.html">RDFCore Telecon 2002-02-15</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:int) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test001.rdf">xmlsch-02/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test002.rdf">xmlsch-02/test002.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:int) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test002.rdf">xmlsch-02/test002.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test001.rdf">xmlsch-02/test001.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS + DT(xsd:int) </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test002.rdf">xmlsch-02/test002.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlsch-02/test003.rdf">xmlsch-02/test003.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jul/0263.html">RDFCore Telecon 2003-07-18</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Miscellaneous tests (test cases: 1)</th></tr>
+  <tr><th colspan="7">Related documents</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-uri-substructure/error001.nt">rdfms-uri-substructure/error001.nt</a> </td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdf-charmod-literals">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdf-charmod-literals">rdf-charmod-literals</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 1)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-literals/test001.rdf">rdf-charmod-literals/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-literals/test001.nt">rdf-charmod-literals/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Apr/0056.html">RDFCore Telecon 2002-04-05</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdf-charmod-uris">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdf-charmod-uris">rdf-charmod-uris</a> has 4 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 2)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test001.rdf">rdf-charmod-uris/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test001.nt">rdf-charmod-uris/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Apr/0474.html">RDFCore Telecon 2002-04-26</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test002.rdf">rdf-charmod-uris/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test002.nt">rdf-charmod-uris/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Apr/0474.html">RDFCore Telecon 2002-04-26</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative Entailment tests (test cases: 2)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test001.rdf">rdf-charmod-uris/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test002.rdf">rdf-charmod-uris/test002.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Apr/0474.html">RDFCore Telecon 2002-04-26</a></td></tr>
+  <tr><td colspan="2">RDF </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test002.rdf">rdf-charmod-uris/test002.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-charmod-uris/test001.rdf">rdf-charmod-uris/test001.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Apr/0474.html">RDFCore Telecon 2002-04-26</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdf-containers-syntax-vs-schema">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdf-containers-syntax-vs-schema">rdf-containers-syntax-vs-schema</a> has 9 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 7)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test001.rdf">rdf-containers-syntax-vs-schema/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test001.nt">rdf-containers-syntax-vs-schema/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test002.rdf">rdf-containers-syntax-vs-schema/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test002.nt">rdf-containers-syntax-vs-schema/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test003.rdf">rdf-containers-syntax-vs-schema/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test003.nt">rdf-containers-syntax-vs-schema/test003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test004.rdf">rdf-containers-syntax-vs-schema/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test004.nt">rdf-containers-syntax-vs-schema/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test006.rdf">rdf-containers-syntax-vs-schema/test006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test006.nt">rdf-containers-syntax-vs-schema/test006.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test007.rdf">rdf-containers-syntax-vs-schema/test007.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test007.nt">rdf-containers-syntax-vs-schema/test007.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test008.rdf">rdf-containers-syntax-vs-schema/test008.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/test008.nt">rdf-containers-syntax-vs-schema/test008.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 2)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/error001.rdf">rdf-containers-syntax-vs-schema/error001.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Jul/0000.html">RDFCore Telecon 2001-06-29</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-containers-syntax-vs-schema/error002.rdf">rdf-containers-syntax-vs-schema/error002.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdf-ns-prefix-confusion">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdf-ns-prefix-confusion">rdf-ns-prefix-confusion</a> has 11 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 11)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0001.rdf">rdf-ns-prefix-confusion/test0001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0001.nt">rdf-ns-prefix-confusion/test0001.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0003.rdf">rdf-ns-prefix-confusion/test0003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0003.nt">rdf-ns-prefix-confusion/test0003.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0004.rdf">rdf-ns-prefix-confusion/test0004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0004.nt">rdf-ns-prefix-confusion/test0004.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0005.rdf">rdf-ns-prefix-confusion/test0005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0005.nt">rdf-ns-prefix-confusion/test0005.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0006.rdf">rdf-ns-prefix-confusion/test0006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0006.nt">rdf-ns-prefix-confusion/test0006.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0009.rdf">rdf-ns-prefix-confusion/test0009.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0009.nt">rdf-ns-prefix-confusion/test0009.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0010.rdf">rdf-ns-prefix-confusion/test0010.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0010.nt">rdf-ns-prefix-confusion/test0010.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0011.rdf">rdf-ns-prefix-confusion/test0011.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0011.nt">rdf-ns-prefix-confusion/test0011.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0012.rdf">rdf-ns-prefix-confusion/test0012.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0012.nt">rdf-ns-prefix-confusion/test0012.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0013.rdf">rdf-ns-prefix-confusion/test0013.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0013.nt">rdf-ns-prefix-confusion/test0013.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0014.rdf">rdf-ns-prefix-confusion/test0014.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdf-ns-prefix-confusion/test0014.nt">rdf-ns-prefix-confusion/test0014.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-difference-between-ID-and-about">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-difference-between-ID-and-about">rdfms-difference-between-ID-and-about</a> has 4 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 3)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test1.rdf">rdfms-difference-between-ID-and-about/test1.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test1.nt">rdfms-difference-between-ID-and-about/test1.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Dec/0108.html">RDFCore Telecon 2001-12-14</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test2.rdf">rdfms-difference-between-ID-and-about/test2.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test2.nt">rdfms-difference-between-ID-and-about/test2.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test3.rdf">rdfms-difference-between-ID-and-about/test3.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/test3.nt">rdfms-difference-between-ID-and-about/test3.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 1)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-difference-between-ID-and-about/error1.rdf">rdfms-difference-between-ID-and-about/error1.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Dec/0108.html">RDFCore Telecon 2001-12-14</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-duplicate-member-props">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-duplicate-member-props">rdfms-duplicate-member-props</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 1)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-duplicate-member-props/test001.rdf">rdfms-duplicate-member-props/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-duplicate-member-props/test001.nt">rdfms-duplicate-member-props/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002May/0028.html">RDFCore Telecon 2002-05-03</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-empty-property-elements">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-empty-property-elements">rdfms-empty-property-elements</a> has 20 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 17)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test001.rdf">rdfms-empty-property-elements/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test001.nt">rdfms-empty-property-elements/test001.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test002.rdf">rdfms-empty-property-elements/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test002.nt">rdfms-empty-property-elements/test002.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test003.rdf">rdfms-empty-property-elements/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test003.nt">rdfms-empty-property-elements/test003.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test004.rdf">rdfms-empty-property-elements/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test004.nt">rdfms-empty-property-elements/test004.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test005.rdf">rdfms-empty-property-elements/test005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test005.nt">rdfms-empty-property-elements/test005.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test006.rdf">rdfms-empty-property-elements/test006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test006.nt">rdfms-empty-property-elements/test006.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test007.rdf">rdfms-empty-property-elements/test007.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test007.nt">rdfms-empty-property-elements/test007.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test008.rdf">rdfms-empty-property-elements/test008.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test008.nt">rdfms-empty-property-elements/test008.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test009.rdf">rdfms-empty-property-elements/test009.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test009.nt">rdfms-empty-property-elements/test009.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test010.rdf">rdfms-empty-property-elements/test010.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test010.nt">rdfms-empty-property-elements/test010.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test011.rdf">rdfms-empty-property-elements/test011.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test011.nt">rdfms-empty-property-elements/test011.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test012.rdf">rdfms-empty-property-elements/test012.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test012.nt">rdfms-empty-property-elements/test012.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test013.rdf">rdfms-empty-property-elements/test013.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test013.nt">rdfms-empty-property-elements/test013.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test014.rdf">rdfms-empty-property-elements/test014.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test014.nt">rdfms-empty-property-elements/test014.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test015.rdf">rdfms-empty-property-elements/test015.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test015.nt">rdfms-empty-property-elements/test015.nt</a></td><td>&nbsp;</td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test016.rdf">rdfms-empty-property-elements/test016.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test016.nt">rdfms-empty-property-elements/test016.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test017.rdf">rdfms-empty-property-elements/test017.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/test017.nt">rdfms-empty-property-elements/test017.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 3)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/error001.rdf">rdfms-empty-property-elements/error001.rdf</a></td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/error002.rdf">rdfms-empty-property-elements/error002.rdf</a></td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-empty-property-elements/error003.rdf">rdfms-empty-property-elements/error003.rdf</a></td><td><a href="https://www.w3.org/2000/11/mr76/rdfc25May.html">RDFCore Telecon 2001-05-25</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-identity-anon-resources">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-identity-anon-resources">rdfms-identity-anon-resources</a> has 5 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 5)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test001.rdf">rdfms-identity-anon-resources/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test001.nt">rdfms-identity-anon-resources/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test002.rdf">rdfms-identity-anon-resources/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test002.nt">rdfms-identity-anon-resources/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test003.rdf">rdfms-identity-anon-resources/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test003.nt">rdfms-identity-anon-resources/test003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test004.rdf">rdfms-identity-anon-resources/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test004.nt">rdfms-identity-anon-resources/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test005.rdf">rdfms-identity-anon-resources/test005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-identity-anon-resources/test005.nt">rdfms-identity-anon-resources/test005.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-not-id-and-resource-attr">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-not-id-and-resource-attr">rdfms-not-id-and-resource-attr</a> has 4 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 4)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test001.rdf">rdfms-not-id-and-resource-attr/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test001.nt">rdfms-not-id-and-resource-attr/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test002.rdf">rdfms-not-id-and-resource-attr/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test002.nt">rdfms-not-id-and-resource-attr/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test004.rdf">rdfms-not-id-and-resource-attr/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test004.nt">rdfms-not-id-and-resource-attr/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test005.rdf">rdfms-not-id-and-resource-attr/test005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-not-id-and-resource-attr/test005.nt">rdfms-not-id-and-resource-attr/test005.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-para196">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-para196">rdfms-para196</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 1)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-para196/test001.rdf">rdfms-para196/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-para196/test001.nt">rdfms-para196/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Jan/0095.html">RDFCore Telecon 2002-01-11</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-rdf-names-use">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-rdf-names-use">rdfms-rdf-names-use</a> has 60 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 40)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-001.rdf">rdfms-rdf-names-use/test-001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-001.nt">rdfms-rdf-names-use/test-001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-002.rdf">rdfms-rdf-names-use/test-002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-002.nt">rdfms-rdf-names-use/test-002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-003.rdf">rdfms-rdf-names-use/test-003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-003.nt">rdfms-rdf-names-use/test-003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-004.rdf">rdfms-rdf-names-use/test-004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-004.nt">rdfms-rdf-names-use/test-004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-005.rdf">rdfms-rdf-names-use/test-005.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-005.nt">rdfms-rdf-names-use/test-005.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-006.rdf">rdfms-rdf-names-use/test-006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-006.nt">rdfms-rdf-names-use/test-006.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-007.rdf">rdfms-rdf-names-use/test-007.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-007.nt">rdfms-rdf-names-use/test-007.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-008.rdf">rdfms-rdf-names-use/test-008.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-008.nt">rdfms-rdf-names-use/test-008.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-009.rdf">rdfms-rdf-names-use/test-009.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-009.nt">rdfms-rdf-names-use/test-009.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-010.rdf">rdfms-rdf-names-use/test-010.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-010.nt">rdfms-rdf-names-use/test-010.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-011.rdf">rdfms-rdf-names-use/test-011.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-011.nt">rdfms-rdf-names-use/test-011.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-012.rdf">rdfms-rdf-names-use/test-012.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-012.nt">rdfms-rdf-names-use/test-012.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-013.rdf">rdfms-rdf-names-use/test-013.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-013.nt">rdfms-rdf-names-use/test-013.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-014.rdf">rdfms-rdf-names-use/test-014.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-014.nt">rdfms-rdf-names-use/test-014.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-015.rdf">rdfms-rdf-names-use/test-015.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-015.nt">rdfms-rdf-names-use/test-015.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-016.rdf">rdfms-rdf-names-use/test-016.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-016.nt">rdfms-rdf-names-use/test-016.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-017.rdf">rdfms-rdf-names-use/test-017.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-017.nt">rdfms-rdf-names-use/test-017.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-018.rdf">rdfms-rdf-names-use/test-018.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-018.nt">rdfms-rdf-names-use/test-018.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-019.rdf">rdfms-rdf-names-use/test-019.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-019.nt">rdfms-rdf-names-use/test-019.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-020.rdf">rdfms-rdf-names-use/test-020.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-020.nt">rdfms-rdf-names-use/test-020.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-021.rdf">rdfms-rdf-names-use/test-021.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-021.nt">rdfms-rdf-names-use/test-021.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-022.rdf">rdfms-rdf-names-use/test-022.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-022.nt">rdfms-rdf-names-use/test-022.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-023.rdf">rdfms-rdf-names-use/test-023.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-023.nt">rdfms-rdf-names-use/test-023.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-024.rdf">rdfms-rdf-names-use/test-024.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-024.nt">rdfms-rdf-names-use/test-024.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-025.rdf">rdfms-rdf-names-use/test-025.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-025.nt">rdfms-rdf-names-use/test-025.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-026.rdf">rdfms-rdf-names-use/test-026.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-026.nt">rdfms-rdf-names-use/test-026.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-027.rdf">rdfms-rdf-names-use/test-027.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-027.nt">rdfms-rdf-names-use/test-027.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-028.rdf">rdfms-rdf-names-use/test-028.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-028.nt">rdfms-rdf-names-use/test-028.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-029.rdf">rdfms-rdf-names-use/test-029.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-029.nt">rdfms-rdf-names-use/test-029.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-030.rdf">rdfms-rdf-names-use/test-030.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-030.nt">rdfms-rdf-names-use/test-030.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-031.rdf">rdfms-rdf-names-use/test-031.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-031.nt">rdfms-rdf-names-use/test-031.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-032.rdf">rdfms-rdf-names-use/test-032.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-032.nt">rdfms-rdf-names-use/test-032.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-033.rdf">rdfms-rdf-names-use/test-033.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-033.nt">rdfms-rdf-names-use/test-033.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-034.rdf">rdfms-rdf-names-use/test-034.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-034.nt">rdfms-rdf-names-use/test-034.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-035.rdf">rdfms-rdf-names-use/test-035.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-035.nt">rdfms-rdf-names-use/test-035.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-036.rdf">rdfms-rdf-names-use/test-036.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-036.nt">rdfms-rdf-names-use/test-036.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-037.rdf">rdfms-rdf-names-use/test-037.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/test-037.nt">rdfms-rdf-names-use/test-037.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-001.rdf">rdfms-rdf-names-use/warn-001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-001.nt">rdfms-rdf-names-use/warn-001.nt</a></td><td> allowed with warnings </td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-002.rdf">rdfms-rdf-names-use/warn-002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-002.nt">rdfms-rdf-names-use/warn-002.nt</a></td><td> allowed with warnings </td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-003.rdf">rdfms-rdf-names-use/warn-003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/warn-003.nt">rdfms-rdf-names-use/warn-003.nt</a></td><td> allowed with warnings </td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 20)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-001.rdf">rdfms-rdf-names-use/error-001.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-002.rdf">rdfms-rdf-names-use/error-002.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-003.rdf">rdfms-rdf-names-use/error-003.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-004.rdf">rdfms-rdf-names-use/error-004.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-005.rdf">rdfms-rdf-names-use/error-005.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-006.rdf">rdfms-rdf-names-use/error-006.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-007.rdf">rdfms-rdf-names-use/error-007.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-008.rdf">rdfms-rdf-names-use/error-008.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-009.rdf">rdfms-rdf-names-use/error-009.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-010.rdf">rdfms-rdf-names-use/error-010.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-011.rdf">rdfms-rdf-names-use/error-011.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-012.rdf">rdfms-rdf-names-use/error-012.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-013.rdf">rdfms-rdf-names-use/error-013.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-014.rdf">rdfms-rdf-names-use/error-014.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-015.rdf">rdfms-rdf-names-use/error-015.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-016.rdf">rdfms-rdf-names-use/error-016.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-017.rdf">rdfms-rdf-names-use/error-017.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-018.rdf">rdfms-rdf-names-use/error-018.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-019.rdf">rdfms-rdf-names-use/error-019.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-rdf-names-use/error-020.rdf">rdfms-rdf-names-use/error-020.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Nov/0651.html">RDFCore Telecon 2001-11-30</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-seq-representation">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-seq-representation">rdfms-seq-representation</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 1)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test001.rdf">rdfms-seq-representation/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-seq-representation/test001.nt">rdfms-seq-representation/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002May/0159.html">RDFCore Telecon 2002-05-31</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-syntax-incomplete">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-syntax-incomplete">rdfms-syntax-incomplete</a> has 10 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 4)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test001.rdf">rdfms-syntax-incomplete/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test001.nt">rdfms-syntax-incomplete/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test002.rdf">rdfms-syntax-incomplete/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test002.nt">rdfms-syntax-incomplete/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test003.rdf">rdfms-syntax-incomplete/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test003.nt">rdfms-syntax-incomplete/test003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test004.rdf">rdfms-syntax-incomplete/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/test004.nt">rdfms-syntax-incomplete/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative parser tests (test cases: 6)</th></tr>
+  <tr><th colspan="7">Input file</th><th>Approved</th></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error001.rdf">rdfms-syntax-incomplete/error001.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error002.rdf">rdfms-syntax-incomplete/error002.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error003.rdf">rdfms-syntax-incomplete/error003.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error004.rdf">rdfms-syntax-incomplete/error004.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error005.rdf">rdfms-syntax-incomplete/error005.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="7"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-syntax-incomplete/error006.rdf">rdfms-syntax-incomplete/error006.rdf</a></td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-xml-base">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-xml-base">rdfms-xml-base</a> has 12 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 12)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test001.rdf">xmlbase/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test001.nt">xmlbase/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test002.rdf">xmlbase/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test002.nt">xmlbase/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test003.rdf">xmlbase/test003.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test003.nt">xmlbase/test003.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test004.rdf">xmlbase/test004.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test004.nt">xmlbase/test004.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test006.rdf">xmlbase/test006.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test006.nt">xmlbase/test006.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test007.rdf">xmlbase/test007.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test007.nt">xmlbase/test007.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test008.rdf">xmlbase/test008.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test008.nt">xmlbase/test008.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test009.rdf">xmlbase/test009.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test009.nt">xmlbase/test009.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test010.rdf">xmlbase/test010.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test010.nt">xmlbase/test010.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test011.rdf">xmlbase/test011.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test011.nt">xmlbase/test011.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test013.rdf">xmlbase/test013.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test013.nt">xmlbase/test013.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test014.rdf">xmlbase/test014.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/xmlbase/test014.nt">xmlbase/test014.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2002Mar/0235.html">RDFCore Telecon 2002-03-15</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfms-xml-literal-namespaces">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfms-xml-literal-namespaces">rdfms-xml-literal-namespaces</a> has 2 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 2)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xml-literal-namespaces/test001.rdf">rdfms-xml-literal-namespaces/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xml-literal-namespaces/test001.nt">rdfms-xml-literal-namespaces/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xml-literal-namespaces/test002.rdf">rdfms-xml-literal-namespaces/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfms-xml-literal-namespaces/test002.nt">rdfms-xml-literal-namespaces/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfs-domain-and-range">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfs-domain-and-range">rdfs-domain-and-range</a> has 4 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive parser tests (test cases: 2)</th></tr>
+  <tr><th colspan="3">Input files</th><th colspan="3">Output file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/test001.rdf">rdfs-domain-and-range/test001.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/test001.nt">rdfs-domain-and-range/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/test002.rdf">rdfs-domain-and-range/test002.rdf</a> </td><td colspan="3"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/test002.nt">rdfs-domain-and-range/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0405.html">RDFCore Telecon 2001-10-19</a></td></tr>
+  <tr><th colspan="8" style="text-align:left">Negative Entailment tests (test cases: 2)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/premises006.rdf">rdfs-domain-and-range/premises006.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/nonconclusions006.rdf">rdfs-domain-and-range/nonconclusions006.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/premises005.rdf">rdfs-domain-and-range/premises005.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/nonconclusions005.rdf">rdfs-domain-and-range/nonconclusions005.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfs-no-cycles-in-subClassOf">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfs-no-cycles-in-subClassOf">rdfs-no-cycles-in-subClassOf</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive Entailment tests (test cases: 1)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-no-cycles-in-subClassOf/test001.rdf">rdfs-no-cycles-in-subClassOf/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-no-cycles-in-subClassOf/test001.nt">rdfs-no-cycles-in-subClassOf/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0249.html">RDFCore Telecon 2001-10-12</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfs-no-cycles-in-subPropertyOf">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfs-no-cycles-in-subPropertyOf">rdfs-no-cycles-in-subPropertyOf</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive Entailment tests (test cases: 1)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-no-cycles-in-subPropertyOf/test001.rdf">rdfs-no-cycles-in-subPropertyOf/test001.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-no-cycles-in-subPropertyOf/test001.nt">rdfs-no-cycles-in-subPropertyOf/test001.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2001Oct/0249.html">RDFCore Telecon 2001-10-12</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfs-subClassOf-a-Property">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfs-subClassOf-a-Property">rdfs-subClassOf-a-Property</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Negative Entailment tests (test cases: 1)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-subClassOf-a-Property/test001.nt">rdfs-subClassOf-a-Property/test001.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="rdfs-subPropertyOf-semantics">Issue:</a> <a href="https://www.w3.org/2000/03/rdf-tracking/#rdfs-subPropertyOf-semantics">rdfs-subPropertyOf-semantics</a> has 1 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive Entailment tests (test cases: 1)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-subPropertyOf-semantics/test001.nt">rdfs-subPropertyOf-semantics/test001.nt</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-subPropertyOf-semantics/test002.nt">rdfs-subPropertyOf-semantics/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="entailment-from-inconsistent-graph">Issue:</a> <a href="https://www.w3.org/2001/sw/RDFCore/20031010-comments/#entailment-from-inconsistent-graph">entailment-from-inconsistent-graph</a> has 2 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Positive Entailment tests (test cases: 2)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-entailment/test001.nt">rdfs-entailment/test001.nt</a></td><td colspan="2">FALSE</td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Nov/0063.html">http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Nov/0063.html</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2">FALSE</td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-entailment/test002.nt">rdfs-entailment/test002.nt</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Nov/0063.html">http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Nov/0063.html</a></td></tr>
+  <tr><th colspan="8" style="background-color:#D3D3D3; text-align:left"><a name="I5.24-IF-or-IFF-property-properties">Issue:</a> <a href="https://www.w3.org/2001/sw/WebOnt/webont-issues.html#I5.24-IF-or-IFF-property-properties">I5.24-IF-or-IFF-property-properties</a> has 2 tests</th></tr>
+  <tr><th colspan="8" style="text-align:left">Negative Entailment tests (test cases: 2)</th></tr>
+  <tr><th colspan="2">Rules</th><th colspan="2">Premise files</th><th colspan="2">Conclusion file</th><th>Warning?</th><th>Approved</th></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/premises006.rdf">rdfs-domain-and-range/premises006.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/nonconclusions006.rdf">rdfs-domain-and-range/nonconclusions006.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+  <tr><td colspan="2">RDF + RDFS </td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/premises005.rdf">rdfs-domain-and-range/premises005.rdf</a></td><td colspan="2"><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/rdfs-domain-and-range/nonconclusions005.rdf">rdfs-domain-and-range/nonconclusions005.rdf</a></td><td>&nbsp;</td><td><a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003Jan/0025.html">RDFCore Telecon 2003-01-10</a></td></tr>
+</table>
+    <!-- APPROVED TABLE END -->
+
+    <h2><a name="tc_no_cert" id="tc_no_cert">2.3. Test Cases Not
+    Approved</a></h2>
+
+    <p>The test case repository contains test cases that have not been
+    approved. Such test cases are not enumerated in this document but a
+    list of them is available at <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/allTestCases.html">
+    http://www.w3.org/2000/10/rdf-tests/rdfcore/allTestCases.html</a>.</p>
+
+    <h2><a name="tc_running" id="tc_running">2.4. Running the Test
+    Cases</a></h2>
+
+    <p>The test case manifest format was deliberately chosen to be a
+    simple, declarative description of the test cases. Parser tests can
+    be run in conjunction with simple tools such as ntc[<cite><a
+    href="#ref_ntc">NTC</a></cite>]. A parser should pass all the
+    positive parser tests, and reject all the negative parser tests.
+    Tools like Euler
+	[<cite><a href="#ref_euler">EULER</a></cite>]
+	have been used to run the entailment tests.</p>
+
+    <p>Due to the rules of entailment tests, a positive or negative
+    entailment test case with an empty conclusion document can be used
+    to illustrate semantic constraints associated with sets of
+    entailment rules.</p>
+
+    <p>The test cases have been created to illustrate the resolution of
+    particular issues on the <a href="https://www.w3.org/2000/03/rdf-tracking/">RDF Issue
+    Tracking</a> list. Consequently, test case results should always be
+    interpreted in conjunction with the resolution of the associated
+    issue and the description (if any) attached to the test case in the
+    manifest.</p>
+
+    <h1><a name="ntriples" id="ntriples">3. N-Triples</a></h1>
+
+    <p>N-Triples is a line-based, plain text format for encoding an RDF
+    graph. It was designed to be a fixed subset of N3[<cite><a
+    href="#n3">N3</a></cite>] [<cite><a
+    href="#n3_primer">N3-Primer</a></cite>] and hence N3 tools such as
+	cwm [<cite><a href="#ref_cwm">CWM</a></cite>],
+	n-triples2kif [<cite><a href="#ref_ntriples2kif">N-TRIPLES2KIF</a></cite>],
+    and Euler [<cite><a href="#ref_euler">EULER</a></cite>]
+	can be used to read and process it.
+	cwm can output this format when invoked as
+    "cwm -ntriples".</p>
+
+    <p>It is recommended, but not required, that N-Triples content is
+    stored in files with an '.nt' suffix to distinguish them from
+    N3.</p>
+
+    <p>The Internet media type / MIME type of N-Triples is text/plain
+    and the character encoding is 7-bit US-ASCII.</p>
+
+    <blockquote>
+     <p><strong>NOTE</strong>: N-Triples is an RDF syntax for
+     expressing RDF test cases and defining the correspondence
+     between RDF/XML and the RDF abstract syntax. RDF/XML
+     [<cite><a href="#ref-rdf-syntax">RDF-SYNTAX</a></cite>]
+     is the recommended syntax for applications to exchange
+     RDF information.</p>
+    </blockquote>
+
+    <h2><a name="ntrip_grammar" id="ntrip_grammar">3.1. Extended
+    Backus-Naur Form (EBNF) Grammar</a></h2>
+
+    <p>An N-Triples document is a sequence of US-ASCII characters and
+    is defined by the <a href="#ntripleDoc">ntripleDoc</a> grammar term
+    below.  Parsing it results in a sequence of <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-rdf-triple">RDF triples</a> formed
+    from the <a href="#subject">subject</a>, <a
+    href="#predicate">predicate</a> and <a href="#object">object</a>
+    productions.</p>
+
+    <p>This EBNF is <a href="https://www.w3.org/TR/REC-xml#sec-notation">the notation used
+    in XML 1.0 second edition</a></p>
+
+    <table border="0" summary="ntriple ebnf">
+      <tbody>
+        <tr align="left">
+          <td><a name="ntripleDoc" id="ntripleDoc">ntripleDoc</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#line">line</a>*</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="line" id="line">line</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#ws">ws</a>* ( <a href="#comment">comment</a> |
+          <a href="#triple">triple</a> )? <a href="#eoln">eoln</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="comment" id="comment">comment</a></td>
+
+          <td>::=</td>
+
+          <td>'#' ( <a href="#character">character</a> - ( <a
+          href="#cr">cr</a> | <a href="#lf">lf</a> ) )*</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="triple" id="triple">triple</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#subject">subject</a> <a href="#ws">ws</a>+ <a
+          href="#predicate">predicate</a> <a href="#ws">ws</a>+ <a
+          href="#object">object</a> <a href="#ws">ws</a>* '.' <a
+          href="#ws">ws</a>*</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="subject" id="subject">subject</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#uriref">uriref</a> | <a
+          href="#nodeID">nodeID</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="predicate" id="predicate">predicate</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#uriref">uriref</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="object" id="object">object</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#uriref">uriref</a> | <a
+          href="#nodeID">nodeID</a> | <a
+          href="#literal">literal</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="uriref" id="uriref">uriref</a></td>
+
+          <td>::=</td>
+
+          <td>'&lt;' <a href="#absoluteURI">absoluteURI</a> '&gt;'</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="bNode" id="bNode"></a><a name="nodeID"
+          id="nodeID">nodeID</a></td>
+
+          <td>::=</td>
+
+          <td>'_:' <a href="#name">name</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="literal" id="literal">literal</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#langString">langString</a> | <a
+          href="#datatypeString">datatypeString</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="langString" id="langString">langString</a></td>
+
+          <td>::=</td>
+
+          <td>'"' <a href="#string">string</a> '"' ( '@' <a
+          href="#language">language</a> )?</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="datatypeString"
+          id="datatypeString">datatypeString</a></td>
+
+          <td>::=</td>
+
+          <td>'"' <a href="#string">string</a> '"' '^^' <a
+          href="#uriref">uriref</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left" valign="top">
+          <td><a name="language" id="language">language</a></td>
+
+          <td>::=</td>
+
+          <td>[a-z]+ ('-' [a-z0-9]+ )*<br />
+           encoding a <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-language-identifier">language tag</a>.</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="ws" id="ws">ws</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#space">space</a> | <a href="#tab">tab</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="eoln" id="eoln">eoln</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#cr">cr</a> | <a href="#lf">lf</a> | <a
+          href="#cr">cr</a> <a href="#lf">lf</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="space" id="space">space</a></td>
+
+          <td>::=</td>
+
+          <td>#x20 /* US-ASCII space - decimal 32 */</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="cr" id="cr">cr</a></td>
+
+          <td>::=</td>
+
+          <td>#xD /* US-ASCII carriage return - decimal 13 */</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="lf" id="lf">lf</a></td>
+
+          <td>::=</td>
+
+          <td>#xA /* US-ASCII line feed - decimal 10 */</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="tab" id="tab">tab</a></td>
+
+          <td>::=</td>
+
+          <td>#x9 /* US-ASCII horizontal tab - decimal 9 */</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="string" id="string">string</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#character">character</a>* with escapes as
+          defined in section <a href="#ntrip_strings">Strings</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="name" id="name">name</a></td>
+
+          <td>::=</td>
+
+          <td>[A-Za-z][A-Za-z0-9]*</td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="absoluteURI"
+          id="absoluteURI">absoluteURI</a></td>
+
+          <td>::=</td>
+
+          <td><a href="#character">character</a>+ with escapes as
+          defined in section <a href="#sec-uri-encoding">URI
+          References</a></td>
+
+          <td>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <td><a name="character" id="character">character</a></td>
+
+          <td>::=</td>
+
+          <td>[#x20-#x7E] /* US-ASCII <a href="#space">space</a> to
+          decimal 126 */</td>
+
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>These productions encode concepts defined in the
+    <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">RDF Concepts and Abstract Syntax</a> [<cite><a href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>] working draft as follows:</p>
+
+    <table border="1" summary="N-Triples mapping to RDF Concepts">
+      <tbody>
+        <tr>
+          <th>N-Triples production</th>
+
+          <th>RDF Concept encoded</th>
+        </tr>
+
+        <tr>
+          <td><a href="#triple">triple</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-rdf-triple">triple</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#subject">subject</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-subject">subject</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#predicate">predicate</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-predicate">predicate</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#object">object</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-object">object</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#absoluteURI">absoluteURI</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-URI-reference">RDF URI reference</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#nodeID">nodeID</a></td>
+          <td>Identifier for a <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-blank-node">blank node</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#langString">langString</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-plain-literal">plain literal</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="#datatypeString">datatypeString</a></td>
+          <td><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-typed-literal">typed literal</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h2><a name="ntrip_strings" id="ntrip_strings">3.2 Strings</a></h2>
+
+    <p>N-Triples strings are sequences of US-ASCII <a
+    href="#character">character</a> productions encoding [<cite><a
+    href="#Unicode">UNICODE</a></cite>] <a href="https://www.w3.org/TR/charmod/#def-character-string">character
+    strings</a>. The characters outside the US-ASCII range and some
+    other specific characters are made available by \-escape sequences
+    as follows:</p>
+
+    <table border="1" summary="escape sequence">
+      <tbody>
+        <tr>
+          <th>Unicode character<br />
+           (with code point <em>u</em>)</th>
+
+          <th>N-Triples encoding</th>
+        </tr>
+
+        <tr>
+          <td>[#x0-#x8]</td>
+          <td>\u<em>HHHH</em><br />
+              4 required hexadecimal digits <em>HHHH</em>
+              encoding Unicode character <em>u</em>
+          </td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>#x9</td>
+          <td>\t</td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>#xA</td>
+          <td>\n</td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#xB-#xC]</td>
+          <td>\u<em>HHHH</em><br />
+             4 required hexadecimal digits <em>HHHH</em>
+             encoding Unicode character <em>u</em>
+          </td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>#xD</td>
+          <td>\r</td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#xE-#x1F]</td>
+          <td>\u<em>HHHH</em><br />
+             4 required hexadecimal digits <em>HHHH</em>
+             encoding Unicode character <em>u</em>
+          </td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#x20-#x21]</td>
+          <td>the character <em>u</em></td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>#x22</td>
+          <td>\"</td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#x23-#x5B]</td>
+          <td>the character <em>u</em></td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>#x5C</td>
+          <td>\\</td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#x5D-#x7E]</td>
+          <td>the character <em>u</em></td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#x7F-#xFFFF]</td>
+          <td>\u<em>HHHH</em><br />
+              4 required hexadecimal digits <em>HHHH</em>
+              encoding Unicode character <em>u</em>
+          </td>
+        </tr>
+		      		       		       		       
+        <tr>
+          <td>[#10000-#x10FFFF]</td>
+          <td>\U<em>HHHHHHHH</em><br />
+              8 required hexadecimal digits <em>HHHHHHHH</em>
+              encoding Unicode character <em>u</em>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <p>where <a id="H" name="H"><em>H</em></a> is a hexadecimal digit:
+    [#x30-#x39],[#x41-#x46] (0-9, uppercase A-F).</p>
+
+    <p>This escaping satisfies the [<cite><a
+    href="#Charmod">CHARMOD</a></cite>] section <a href="https://www.w3.org/TR/2003/WD-charmod-20030822/#sec-RefProcModel">Reference
+    Processing Model</a> on making the full Unicode character range U+0
+    to U+10FFFF available to applications and providing only one way to
+    escape any character.</p>
+
+    <h2><a name="sec-uri-encoding" id="sec-uri-encoding">3.3 URI
+    References</a></h2>
+
+    <p>The <a href="#absoluteURI">absoluteURI</a> production
+    encodes a Unicode string representing an
+    <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/#dfn-URI-reference">RDF URI references</a> as specified in
+    [<cite><a href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>].
+    These are encoded in N-Triples using
+    the escapes described in section <a href="#ntrip_strings">Strings</a>.</p>
+
+
+    <h2><a name="ntrip_example" id="ntrip_example">3.4.
+    Example</a></h2>
+
+    <p>The following N-Triples file:</p>
+
+    <div class="ntripleOuter ntripleInner">
+<pre>
+&lt;http://www.w3.org/2001/08/rdf-test/&gt;  &lt;http://purl.org/dc/elements/1.1/creator&gt;    "Dave Beckett" .
+&lt;http://www.w3.org/2001/08/rdf-test/&gt;  &lt;http://purl.org/dc/elements/1.1/creator&gt;    "Jan Grant" .
+&lt;http://www.w3.org/2001/08/rdf-test/&gt;  &lt;http://purl.org/dc/elements/1.1/publisher&gt;  _:a .
+_:a                                    &lt;http://purl.org/dc/elements/1.1/title&gt;      "World Wide Web Consortium" .
+_:a                                    &lt;http://purl.org/dc/elements/1.1/source&gt;     &lt;http://www.w3.org/&gt; .
+</pre>
+    </div>
+
+    <p>represents the same RDF graph as the following RDF/XML:</p>
+
+    <div class="exampleOuter exampleInner">
+<pre>
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;
+  &lt;rdf:Description rdf:about="http://www.w3.org/2001/08/rdf-test/"&gt;
+    &lt;dc:creator&gt;Jan Grant&lt;/dc:creator&gt;
+    &lt;dc:creator&gt;Dave Beckett&lt;/dc:creator&gt;
+    &lt;dc:publisher&gt;
+      &lt;rdf:Description&gt;
+        &lt;dc:title&gt;World Wide Web Consortium&lt;/dc:title&gt;
+        &lt;dc:source rdf:resource="http://www.w3.org/"/&gt;
+      &lt;/rdf:Description&gt;
+    &lt;/dc:publisher&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+</pre>
+    </div>
+    <hr />
+
+    <h2><a name="ntrip_tests" id="ntrip_tests">3.5. N-Triples
+    Tests</a></h2>
+
+    <p>The N-Triple test file at <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/ntriples/test.nt">
+    http://www.w3.org/2000/10/rdf-tests/rdfcore/ntriples/test.nt</a>
+    contains multiple tests of legal N-Triples.</p>
+
+    <h1><a name="references" id="references">4 References</a></h1>
+
+    <h2><a name="ref_normative" id="ref_normative">Normative
+    References</a></h2>
+
+    <dl>
+      <dt><a name="ref_approvedtests" id="ref_approvedtests">[APPROVED]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/approved_20031114.zip">approved_20031114.zip</a></cite>:
+		approved test cases at time of publication.
+		The <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/latest_Approved.zip">latest version</a>
+		of this archive is available at
+    	http://www.w3.org/2000/10/rdf-tests/rdfcore/latest_Approved.zip
+		.
+      </dd>
+
+      <dt><a name="ref_alltests" id="ref_alltests">[FULLTESTS]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/all_20031114.zip">all_20031114.zip</a>:
+		Test case archive (including unapproved tests).
+		The <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/latest_All.zip">latest version</a></cite>
+		of this archive is available at
+    	http://www.w3.org/2000/10/rdf-tests/rdfcore/latest_All.zip
+		.
+      </dd>
+
+      <dt><a name="ref_manifest" id="ref_manifest">[MANIFEST]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/Manifest.rdf">Manifest.rdf</a></cite>:
+		This file (available at
+    	http://www.w3.org/2000/10/rdf-tests/rdfcore/Manifest.rdf)
+		describes all the test cases within the repository.
+      </dd>
+
+      <dt><a name="ref_manifest_head" id="ref_manifest_head">[MANIFEST-HEAD]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/skeleton/manifestHead.rdf">Manifest header</a></cite>.
+		A sample prefix which can be used to introduce a manifest file.
+      </dd>
+
+      <dt><a name="ref_manifest_tail" id="ref_manifest_tail">[MANIFEST-TAIL]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/skeleton/manifestTail.rdf">Manifest footer</a></cite>.
+		A sample suffix which can be used to close a manifest file.
+      </dd>
+
+      <dt><a name="ref_cwm" id="ref_cwm">[CWM]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/swap/cwm.py">cwm</a></cite>: T. Berners-Lee et al.
+		An RDF/N3 processing tool.
+      </dd>
+
+      <dt><a name="ref_ntriples2kif" id="ref_ntriples2kif">[N-TRIPLES2KIF]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/swap/n-triples2kif.pl">n-triples2kif.pl</a></cite>
+		An RDF processing tool.
+      </dd>
+
+      <dt><a name="ref_euler" id="ref_euler">[EULER]</a></dt>
+      <dd><cite><a
+    	href="http://www.agfa.com/w3c/euler/">Euler</a></cite>: Jos deRoo.
+		An RDF inference engine.
+      </dd>
+
+      <dt><a name="ref_rdfissuetracking" id="ref_rdfissuetracking">[ISSUES]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/03/rdf-tracking/">RDF Issue Tracking</a></cite>, McBride et al.
+      </dd>
+
+      <dt><a name="testcaserepository" id="testcaserepository">[REPOSITORY]</a></dt>
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/">Repository for
+      RDFCore Test Cases</a></cite> hosted at the W3C.
+      </dd>
+
+      <dt><a name="bib_rdf" id="bib_rdf">[RDFMS]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">Resource
+      Description Framework (RDF) Model and Syntax
+      Specification</a></cite>, O. Lassila and R. Swick, Editors, World
+      Wide Web Consortium Recommendation. 22 February 1999. This
+      version is http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/.
+      The <a href="https://www.w3.org/TR/REC-rdf-syntax/">latest version
+      of RDF M&amp;S</a> is available at
+      http://www.w3.org/TR/REC-rdf-syntax/.</dd>
+
+      <dt><a name="bib_rdfs" id="bib_rdfs">[RDF-SCHEMA]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2000/CR-rdf-schema-20000327/">Resource
+      Description Framework (RDF) Schema Specification 1.0</a></cite>,
+      Dan Brickley, R.V. Guha, Editors, World Wide Web Consortium
+      Candidate Recommendation, 27 March 2000. This version is
+      http://www.w3.org/TR/2000/CR-rdf-schema-20000327/. The <a href="https://www.w3.org/TR/rdf-schema/">latest version</a> of RDF
+      Schema is http://www.w3.org/TR/rdf-schema/.</dd>
+
+      <dt><a name="Unicode" id="Unicode">[UNICODE]</a></dt>
+
+      <dd><cite>The Unicode Standard</cite>, <a
+      href="http://www.unicode.org/unicode/standard/standard.html">Version
+      3.0</a>, Addison Wesley, Reading MA, 2000, ISBN: 0-201-61633-5.
+      This document is
+      http://www.unicode.org/unicode/standard/standard.html.</dd>
+
+      <dt><a name="Charmod" id="Charmod">[CHARMOD]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/TR/2003/WD-charmod-20030822/">Character
+      Model for the World Wide Web 1.0</a></cite>, M. D&uuml;rst, F.
+      Yergeau, R. Ishida, M. Wolf, T. Texin, Editors, World
+      Wide Web Consortium Working Draft, work in progress, 22 August
+      2003. This version of the Character Model is
+      http://www.w3.org/TR/2003/WD-charmod-20030822/. The <a href="https://www.w3.org/TR/charmod/">latest version of the
+      Character Model</a> is at http://www.w3.org/TR/charmod/.</dd>
+
+
+          <dt><a id="ref-rdf-concepts"
+          name="ref-rdf-concepts"></a>[RDF-CONCEPTS]</dt>
+
+          <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">Resource
+          Description Framework (RDF): Concepts and Abstract
+          Syntax</a></cite>, Klyne G., Carroll J. (Editors), W3C Recommendation, 10 February 2004. <a href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">This
+          version</a> is
+          http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/. The <a href="https://www.w3.org/TR/rdf-concepts/">latest version</a>
+          is http://www.w3.org/TR/rdf-concepts/.</dd>
+
+
+          <dt><a id="ref-rdf-semantics"
+          name="ref-rdf-semantics"></a>[RDF-SEMANTICS]</dt>
+
+          <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">RDF
+          Semantics</a></cite>, Hayes P. (Editor), W3C Recommendation, 10 February 2004. <a href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/">This
+          version</a> is http://www.w3.org/TR/2004/REC-rdf-mt-20040210/.
+          The <a href="https://www.w3.org/TR/rdf-mt/">latest version</a>
+          is http://www.w3.org/TR/rdf-mt/.</dd>
+
+
+
+          <dt><a id="ref-rdf-syntax"
+          name="ref-rdf-syntax"></a>[RDF-SYNTAX]</dt>
+
+          <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">
+          RDF/XML Syntax Specification (Revised)</a></cite>, Beckett
+          D.  (Editor), W3C Recommendation, 10 February 2004. <a href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/">
+          This version</a> is
+          http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/.
+          The <a href="https://www.w3.org/TR/rdf-syntax-grammar/">latest
+          version</a> is
+          http://www.w3.org/TR/rdf-syntax-grammar/.</dd>
+    </dl>
+    <h2><a name="ref_non_normative" id="ref_non_normative">Informative
+    References</a></h2>
+
+    <dl>
+
+
+  <dt><a id="ref-rdfprimer" name="ref-rdfprimer">[RDF-PRIMER]</a>
+  </dt>
+
+  <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF
+  Primer</a></cite>, Manola F., Miller E., Editors, W3C Recommendation, 10 February 2004.  <a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">This
+  version</a> is
+  http://www.w3.org/TR/2004/REC-rdf-primer-20040210/. The <a href="https://www.w3.org/TR/rdf-primer/">latest version</a> is at
+  http://www.w3.org/TR/rdf-primer/.
+  </dd>
+
+
+          <dt><a id="ref-rdf-vocabulary"
+          name="ref-rdf-vocabulary"></a>[RDF-VOCABULARY]</dt>
+
+          <dd><cite><a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">RDF
+          Vocabulary Description Language 1.0: RDF Schema</a></cite>,
+          Brickley D., Guha R.V. (Editors), W3C Recommendation, 10 February 2004. <a href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/">This
+          version</a> is
+          http://www.w3.org/TR/2004/REC-rdf-schema-20040210/. The <a href="https://www.w3.org/TR/rdf-schema/">latest version</a>
+          is http://www.w3.org/TR/rdf-schema/.</dd>
+
+      <dt><a name="n3" id="n3">[N3]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/DesignIssues/Notation3">Notation
+      3</a></cite>, Tim Berners-Lee</dd>
+
+      <dt><a name="n3_primer" id="n3_primer">[N3-Primer]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/2000/10/swap/Primer.html">Primer: Getting
+      into RDF &amp; Semantic Web using N3</a></cite>, Tim
+      Berners-Lee</dd>
+
+      <dt><a name="ref_ntc" id="ref_ntc">[NTC]</a></dt>
+
+      <dd><cite><a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/utils/ntc/">NTC:
+      A simple N-Triples isomorphism test utility</a></cite>, Jan
+      Grant</dd>
+    </dl>
+
+    <h1><a name="contributors" id="contributors">5 Acknowledgments
+    (Informative)</a></h1>
+
+    <p>Many thanks to Art Barstow (ex-W3C), former main editor of this
+    document, for his sterling work on editing and managing the RDF
+    test cases, which he had been doing well before the RDF Core WG
+    started.</p>
+
+    <p>The editors would also like to thank Jos DeRoo, of AGFA, for his
+    excellent work in the implementation of an RDF reasoner capable of
+    running the entailment test cases.</p>
+
+    <p>Thanks are also due to the RDF parser implementers who took the
+    time to run, and submit corrections to, our parser tests.</p>
+
+    <p>The following Working Group members have directly contributed to
+    this document and/or contributed test cases.</p>
+
+    <ul>
+      <li>Art Barstow, ex-W3C Fellow</li>
+
+      <li>Jeremy Carroll, HP Labs Bristol</li>
+
+      <li>Dan Connolly, W3C</li>
+
+      <li>Jos DeRoo, AGFA</li>
+
+      <li>Graham Klyne, Clearswift and Nine by Nine</li>
+
+      <li>Brian McBride, HP Labs Bristol</li>
+
+      <li>Aaron Swartz, HWG</li>
+    </ul>
+
+    <p>This document is a product of extended deliberations by the RDF
+    Core Working Group, whose members have included: Art Barstow (W3C)
+    Dave Beckett (ILRT), Dan Brickley (W3C/ILRT), Dan Connolly (W3C),
+    Jeremy Carroll (Hewlett Packard), Ron Daniel (Interwoven Inc), Bill
+    dehOra (InterX), Jos De Roo (AGFA), Jan Grant (ILRT), Graham Klyne
+    (Clearswift and Nine by Nine), Frank Manola (MITRE Corporation),
+    Brian McBride (Hewlett Packard), Eric Miller (W3C), Stephen
+    Petschulat (IBM), Patrick Stickler (Nokia), Aaron Swartz (HWG),
+    Mike Dean (BBN Technologies / Verizon), R. V. Guha (Alpiri Inc),
+    Pat Hayes (IHMC), Sergey Melnik (Stanford University), Martyn
+    Horner (Profium Ltd).</p>
+
+    <p>This specification also draws upon an earlier RDF Model and
+    Syntax document edited by Ora Lassilla and Ralph Swick, and RDF
+    Schema edited by Dan Brickley and R. V. Guha. RDF and RDF Schema
+    Working group members who contributed to this earlier work are:
+    Nick Arnett (Verity), Tim Berners-Lee (W3C), Tim Bray (Textuality),
+    Dan Brickley (ILRT / University of Bristol), Walter Chang (Adobe),
+    Sailesh Chutani (Oracle), Dan Connolly (W3C), Ron Daniel
+    (DATAFUSION), Charles Frankston (Microsoft), Patrick Gannon
+    (CommerceNet), RV Guha (Epinions, previously of Netscape
+    Communications), Tom Hill (Apple Computer), Arthur van Hoff
+    (Marimba), Renato Iannella (DSTC), Sandeep Jain (Oracle), Kevin
+    Jones, (InterMind), Emiko Kezuka (Digital Vision Laboratories), Joe
+    Lapp (webMethods Inc.), Ora Lassila (Nokia Research Center), Andrew
+    Layman (Microsoft), Ralph LeVan (OCLC), John McCarthy (Lawrence
+    Berkeley National Laboratory), Chris McConnell (Microsoft), Murray
+    Maloney (Grif), Michael Mealling (Network Solutions), Norbert
+    Mikula (DataChannel), Eric Miller (OCLC), Jim Miller (W3C,
+    emeritus), Frank Olken (Lawrence Berkeley National Laboratory),
+    Jean Paoli (Microsoft), Sri Raghavan (Digital/Compaq), Lisa Rein
+    (webMethods Inc.), Paul Resnick (University of Michigan), Bill
+    Roberts (KnowledgeCite), Tsuyoshi Sakata (Digital Vision
+    Laboratories), Bob Schloss (IBM), Leon Shklar (Pencom Web Works),
+    David Singer (IBM), Wei (William) Song (SISU), Neel Sundaresan
+    (IBM), Ralph Swick (W3C), Naohiko Uramoto (IBM), Charles Wicksteed
+    (Reuters Ltd.), Misha Wolf (Reuters Ltd.), Lauren Wood
+    (SoftQuad).</p>
+
+    <h1><a name="appendices" id="appendices"></a><a name="change_log"
+    id="change_log">Appendix A: Change Log (Informative)</a></h1>
+
+    <h2><a id="changes" name="changes"></a><a name="change_log_20030905" id="change_log_20030905"></a>Changes since <a href="https://www.w3.org/TR/2003/WD-rdf-testcases-20030905/">http://www.w3.org/TR/2003/WD-rdf-testcases-20030905/</a></h2>
+
+	<p>Added explicit simple entailment marker to entailment tests.</p>
+
+    <p>Reworded the pass and failure criteria for negative entailment tests according
+	to suggested wording from Pat Hayes.</p>
+
+    <p>Added test case for RDF/XML without an enclosing rdf:RDF
+    element (rdf-element-not-mandatory/test001).</p>
+
+    <p>Removed N-Triples reference to language tags and RFC3066, use
+    the RDF concepts definition.  A language tag cannot start with a
+    digit.</p>
+    
+
+    <h2><a name="change_log_20030123"
+    id="change_log_20030123"></a>Changes since <a href="https://www.w3.org/TR/2003/WD-rdf-testcases-20030123/">http://www.w3.org/TR/2003/WD-rdf-testcases-20030123/</a></h2>
+
+	<p>Added test cases for intensional interpretation of datatypes.</p>
+
+	<p>Added test case: plain literals and xsd:string denotations overlap.</p>
+
+
+    <p>Editorial change.  The caption on the test case table now makes
+	it clear that it refers only to the resolution of relative URLs
+	<em>within the table</em>.</p>
+
+    <p>Editorial change.  Updated section <a href="#ntriples">3. N-Triples</a>
+    NOTE on the purpose of N-Triples to say it is used to map abstract RDF
+    syntax and RDF/XML.</p>
+
+
+    <p>Terminological change.  Updated section <a href="#tc_org">2.1. Organization</a>
+		To use the more acceptable term, "graph equivalence".
+    </p>
+
+    <p>Substantive change.  Updated section <a href="#tc_org">2.1. Organization</a>
+		to include fourth condition for datatype support when
+		describing datatype entailment tests.
+    </p>
+
+    <p>Editorial change.  Updated references throughout to remove URLs from prose;
+		additional changes as suggested by <a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003JanMar/0372.html">Susan Lesch</a>.
+    </p>
+
+    <p>Editorial change.  Updated section <a href="#ntrip_grammar">3.1. Extended Backus-Naur Form (EBNF) Grammar</a> to add
+    a new table showing how the N-Triples productions encode the respective
+    RDF concepts from [<cite><a href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>].
+    </p>
+
+    <p>Editorial change.  Updated section <a href="#sec-uri-encoding">3.3 URI References</a>
+    to say less about URI detail and defer to [<cite><a href="#ref-rdf-concepts">RDF-CONCEPTS</a></cite>].  Removed reference to RFC2396 (URIs).  Made after
+    <a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0158.html">comment by Duerst</a>, 2003-05-08
+    as <a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0163.html">outlined</a>.  Also addresses
+   <a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0196.html">comment by Patel-Schneider</a>, 2003-05-30.</p>
+
+    <p>Editorial change.  Updated section <a href="#ntrip_strings">3.2 Strings</a>
+    and the N-Triples escape sequence table to list the encodings
+    from Unicode character to N-Triples.  Made after
+<a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0182.html">comment by Patel-Schneider</a>, 2003-05-27
+    as <a href="http://lists.w3.org/Archives/Public/www-rdf-comments/2003AprJun/0208.html">outlined</a>.</p>
+
+    <p>Substantive change. Updated <a href="#datatypeString">datatypeString</a> to use 
+    <a href="#string">string</a> rather than <a href="#langString">langString</a>
+    after removal of language tag from all typed literals as 
+<a href="http://lists.w3.org/Archives/Public/w3c-rdfcore-wg/2003May/0138.html">approved</a> in RDF Core telcon 2003-05-09.
+    </p>
+
+
+    <h2><a name="change_log_20021112"
+    id="change_log_20021112"></a>Changes since <a href="https://www.w3.org/TR/2002/WD-rdf-testcases-20021112/">http://www.w3.org/TR/2002/WD-rdf-testcases-20021112/</a></h2>
+
+    <p>Entailment test definitions changed to actually test proper
+    entailments, not pseudo-entailments.</p>
+
+    <p>Support for datatype-aware entailment tests in the manifest.</p>
+
+    <p>Pointer to RDF-CONCEPTS for the definition of graph isomorphism
+    / equality.</p>
+
+    <p>Addition of the <em>always false</em> pseudo-document for
+    entailment tests.</p>
+
+    <p>Updated the test case list in this document.</p>
+
+    <p>Test case names changed to fragment references into individual
+    manifest documents.</p>
+
+    <h2><a name="change_log_20020429"
+    id="change_log_20020429"></a>Changes since <a href="https://www.w3.org/TR/2002/WD-rdf-testcases-20020429/">http://www.w3.org/TR/2002/WD-rdf-testcases-20020429/</a></h2>
+
+    <p>Production <a href="#language">language</a>. Changed to match
+    RFC 3066. Added [RFC 2396] to normative references.</p>
+
+    <p><a href="#ntriples">3 N-Triples</a> NOTE reworded. Point to
+    RDF/XML as exchange syntax.</p>
+
+    <p>Production <a href="#character">character</a>: should be "to
+    126"</p>
+
+    <p><a href="#ntrip_strings">3.2 Strings</a> Removed suggestion to
+    use UTF-8 for apps.</p>
+
+    <p>Added <a href="#ntrip_tests">3.5. N-Triples Tests</a> pointing
+    at the <a href="https://www.w3.org/2000/10/rdf-tests/rdfcore/ntriples/test.nt">
+    http://www.w3.org/2000/10/rdf-tests/rdfcore/ntriples/test.nt</a>
+    test file.</p>
+
+    <p>Use uppercase hexadecimal digits. Define <a
+    href="#H"><em>H</em></a> and use it for \uHHHH, \uHHHHHHHH.</p>
+
+    <p>Removed xmlString.</p>
+
+    <p>Changed the N-Triples language separator token to @ in <a
+    href="#langString">langString</a></p>
+
+    <p>Added RDF datatyping support using <a
+    href="#datatypeString">datatypeString</a> using the form
+    ^^&lt;datatypeURI&gt;</p>
+
+    <h2><a name="change_log_20021115"
+    id="change_log_20021115"></a>Changes since <a href="https://www.w3.org/TR/2001/WD-rdf-testcases-20011115/">http://www.w3.org/TR/2001/WD-rdf-testcases-20011115/</a></h2>
+
+    <p>Updated <a href="#sec-uri-encoding">3.3 URI References</a> to
+    allow Unicode characters in URIs</p>
+
+    <p>Merged <a href="#future">Future Work</a> into <a
+    href="#open_issues">Open Issues</a></p>
+
+    <p>Test case list expanded and reorganized to reflect additional
+    approved test cases</p>
+
+    <p>New <a href="#testcases">section 2</a> describing organization
+    of parser tests, the types of tests and examples of manifest format
+    that describes them.</p>
+
+    <p>Updated editors, added thanks to Art Barstow.</p>
+
+    <p>Changed literal to be <a href="#langString">langString</a> |
+    xmlString (now gone)</p>
+
+    <p>N-Triples remains an ASCII format for now - closed issue on
+    UTF-8 encoding.</p>
+
+    <p>Update references to RDF Model Theory, Syntax WDs</p>
+
+    <h2><a name="change_log_20010912"
+    id="change_log_20010912"></a>Changes since <a href="https://www.w3.org/TR/2001/WD-rdf-testcases-20010912/">http://www.w3.org/TR/2001/WD-rdf-testcases-20010912/</a></h2>
+
+    <p>Changed the <a href="#tc_cert">Approved Test Cases</a> table so
+    that it includes links to related files and the Working Group
+    decision.</p>
+
+    <p>Removed the <a href="#tc_no_cert">Test Cases Not Approved</a>
+    table and added a link to the repository's list of the not approved
+    test cases.</p>
+
+    <p>Added links to ZIP files of the repository's test cases.</p>
+
+    <p>Specify the <a href="#future">Future Work</a> and <a
+    href="#contributors">Contributors</a> sections as Informative.</p>
+
+    <p>Renamed token bNode to nodeID.</p>
+
+    <p>Added RDF Model Theory reference.</p>
+
+    <p>Added URI Encoding section, pointing at Charmod rules and
+    updated absoluteURI grammar rule to use it.</p>
+
+    <p>Removed references to Python literals, reason for
+    \-escaping.</p>
+
+    <p>Added 4, 8 required digits for \u, \U string escapes.</p>
+
+    <p>Renamed section URIs to URI References.</p>
+
+    <h1><a name="future" id="future"></a><a name="open_issues"
+    id="open_issues">Appendix B: Open Issues (Informative)</a></h1>
+
+    <ul>
+      <li>Complete the test cases</li>
+    </ul>
+
+<hr />
+
+<div class="metadata">
+  <p><a href="metadata.rdf"><img src="https://www.w3.org/RDF/icons/rdf_metadata_button.40" alt="RDF/XML Metadata" /></a></p>
+</div>
+
+
+  <script type="application/javascript" src="https://www.w3.org/scripts/TR/fixup.js"></script></body>
+</html>
+

@@ -18,6 +18,12 @@ async function ocd() {
   return record;
 }
 
+// const categories = {
+//   'Marketing':
+//   'Functional':
+//   'Analytics':
+// }
+
 async function main() {
   // const res = await cachedFetch(
   // 'https://gist.githubusercontent.com/bejaneps/ba8d8eed85b0c289a05c750b3d825f61/raw/6827168570520ded27c102730e442f35fb4b6a6d/websites.csv');

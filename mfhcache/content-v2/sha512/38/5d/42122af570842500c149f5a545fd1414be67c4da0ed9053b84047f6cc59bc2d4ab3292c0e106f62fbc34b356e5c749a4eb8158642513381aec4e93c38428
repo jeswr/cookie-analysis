@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Markus Lanthaler</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Markus Lanthaler, MLNT">
+  <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+  <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/a5054782-4ed7-4271-85e7-45e83ed09653">
+  <link rel="author" href="https://plus.google.com/111088697043969973358?rel=author">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="header-container">
+    <header class="wrapper clearfix">
+      <div id="header-stripe">&nbsp;</div>
+      <h1>Markus Lanthaler</h1>
+      <nav>
+        <ul>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="talks">Talks</a></li>
+          <li><a href="publications">Publications</a></li>
+          <li><a href="about-me">About me</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+      <article>
+        <p>Welcome to my site</p>
+        <p>I've finally decided to spend some time and set up a website for
+          myself (instead of just creating sites for other people). Some
+          content is already online and more will follow in the coming
+          weeks.</p>
+        <p>Stay tuned,<br>
+          Markus</p>
+      </article>
+    </div>
+  </div>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@id": "http://www.markus-lanthaler.com/",
+      "@type": "WebPage",
+      "creator":  {
+        "@id": "http://me.markus-lanthaler.com/",
+        "@type": "Person",
+        "name": "Markus Lanthaler",
+        "honorificPrefix": "Dr.",
+        "image": {
+          "@id": "http://www.markus-lanthaler.com/images/markus-lanthaler.jpg",
+          "@type": "ImageObject",
+          "caption": "Markus Lanthaler"
+        },
+        "url" : "http://www.markus-lanthaler.com/",
+        "nationality": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "jobTitle": "Software Engineer",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Google",
+          "url": "http://www.google.com/"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Google",
+          "url": "http://www.google.com/"
+        },
+        "sameAs": [
+          "https://twitter.com/MarkusLanthaler",
+          "https://www.google.com/+MarkusLanthaler",
+          "https://www.linkedin.com/in/markuslanthaler",
+          "http://g.co/kg/m/0105_6ys"
+        ]
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36111533-1']);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

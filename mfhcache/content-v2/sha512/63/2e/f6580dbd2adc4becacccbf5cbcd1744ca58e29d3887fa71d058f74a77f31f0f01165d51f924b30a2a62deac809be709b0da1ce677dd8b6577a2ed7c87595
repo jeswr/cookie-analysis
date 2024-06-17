@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from www.w3.org/2011/gld/wiki/Main_Page by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jan 2024 21:29:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Government Linked Data (GLD) Working Group Wiki</title>
+
+<link rel="stylesheet" href="load5f72.css?debug=false&amp;lang=en&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loadc9ae.css?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="localNotice" lang="en" dir="ltr"><p style="text-align: left; border: thin orange solid; border-radius: 1em; padding: 1em;">
+    <strong>Warning:</strong><br />
+    This wiki has been archived and is now read-only.
+</p>
+</div></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Government Linked Data (GLD) Working Group (Closed)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Government Linked Data (GLD) Working Group Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
+<span style="color:red; font-weight:bold; font-size:bigger">This working group is now closed. This wiki and associated materials are now archived</span>
+</p>
+<div class="headerbaseline">
+<p><i>Developing standards which help governments publish their data as effective and usable Linked Data, using Semantic Web technologies.</i>    (See <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/charter">Charter</a>)
+</p>
+</div>
+<p><br />
+</p>
+<table class="datatable sortable" style="width: 100%">
+<caption>Status of Deliverables
+</caption>
+<tr>
+<th> Editor's Draft </th>
+<th> w3.org/TR </th>
+<th> Timetable </th>
+<th> Target Status<br />(Early May) </th>
+<th> Tracker </th>
+<th> Contact </th>
+<th> Notes
+</th></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/bp/index.html">Best Practices</a> </td>
+<td> </td>
+<td> <a href="BP_Timetable.html" title="BP Timetable">FPWD of WG Note on 06-June-2013; Publish as WG Note on 20-June-2013 (assuming extension)</a> </td>
+<td> NOTE </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/1">tracker</a> </td>
+<td> <a href="Bernadette_Hyland.html" title="Bernadette Hyland">Bernadette Hyland</a> </td>
+<td>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/dcat/index.html">DCAT</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-dcat/">LC</a> </td>
+<td> <a href="DCAT_Timetable.html" title="DCAT Timetable">LC 12-Mar-2013 - 8-Apr-2013, CR on 23-Apr-2013</a> </td>
+<td> CR </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/2">tracker</a> </td>
+<td> <a href="https://www.w3.org/2011/gld/wiki/Fadi_Maali_source?redlink=1" class="new" title="Fadi Maali (page does not exist)">Fadi Maali</a>, <a href="https://www.w3.org/2011/gld/wiki/John_Erickson_source?redlink=1" class="new" title="John Erickson (page does not exist)">John Erickson</a> </td>
+<td> <a href="DCAT_LC_comments.html" title="DCAT LC comments">DCAT LC comments</a> <a href="DCAT_CR_transition.html" title="DCAT CR transition">DCAT CR transition</a>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/dcat-ucr/index.html">DCAT UCR</a> </td>
+<td> </td>
+<td> <a href="DCAT_UCR_Timetable.html" title="DCAT UCR Timetable">NOTE on 02-May</a> </td>
+<td> NOTE </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/2">tracker</a> </td>
+<td> <a href="https://www.w3.org/2011/gld/wiki/Fadi_Maali_source?redlink=1" class="new" title="Fadi Maali (page does not exist)">Fadi Maali</a> </td>
+<td>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/adms/index.html">ADMS</a> </td>
+<td> </td>
+<td> <a href="ADMS_Timetable.html" title="ADMS Timetable">NOTE on 18-Apr-2013</a> </td>
+<td> NOTE </td>
+<td> </td>
+<td> <a href="https://www.w3.org/2011/gld/wiki/Phil_Archer_source?redlink=1" class="new" title="Phil Archer (page does not exist)">Phil Archer</a> </td>
+<td> Further draft when DCAT goes to CR
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/data-cube/index.html">Data Cube</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-data-cube/">CR</a>  </td>
+<td> <a href="Data_Cube_Timetable.html" title="Data Cube Timetable">LC 12-Mar - 8-Apr-2013, CR on 23-Apr-2013</a> </td>
+<td> CR </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/3">tracker</a> </td>
+<td> <a href="Richard_Cyganiak.html" title="Richard Cyganiak">Richard Cyganiak</a> </td>
+<td> <a href="Data_Cube_LC_comments.html" title="Data Cube LC comments">Data Cube LC comments</a> <a href="Data_Cube_CR_transition.html" title="Data Cube CR transition">Data Cube CR transition</a> <a href="Data_Cube_comments.html" title="Data Cube comments">Data Cube comments</a> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/Data_Cube_Implementations">Implementations</a> <a href="Data_Cube_PR_transition.html" title="Data Cube PR transition">Data Cube PR transition</a>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/2013/NOTE-vocab-data-cube-use-cases-20130801/">Data Cube UCR</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/2013/NOTE-vocab-data-cube-use-cases-20130801/">Data Cube UCR Note</a> </td>
+<td> <a href="Data_Cube_UCR_Timetable.html" title="Data Cube UCR Timetable">NOTE on 01-August</a> </td>
+<td> NOTE </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/1">tracker</a> </td>
+<td> <a href="Benedikt_Kaempgen.html" title="Benedikt Kaempgen" class="mw-redirect">Benedikt Kaempgen</a> </td>
+<td>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/people/index.html">People</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-people/">FPWD</a> </td>
+<td> <a href="People_Timetable.html" title="People Timetable">None</a> </td>
+<td> None </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/4">tracker</a> </td>
+<td> <a href="Michael_Hausenblas.html" title="Michael Hausenblas">Michael Hausenblas</a> </td>
+<td> not expected to progress in this form
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/org/index.html">ORG</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-org/">CR</a> </td>
+<td> <a href="ORG_Timetable.html" title="ORG Timetable">LC 23-Oct-2012 - 8-Apr-2013, to CR on 09-May-2013</a> </td>
+<td> CR </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/5">tracker</a> </td>
+<td> <a href="Dave_Reynolds.html" title="Dave Reynolds">Dave Reynolds</a> </td>
+<td> addressing LC comments <a href="ORG_LC_comments.html" title="ORG LC comments">ORG LC comments</a> <a href="ORG_CR_transition.html" title="ORG CR transition">ORG CR transition</a> <a href="ORG_comments.html" title="ORG comments">ORG comments</a> <a href="ORG_Implementations.html" title="ORG Implementations">ORG_Implementations</a> <a href="ORG_PR_transition.html" title="ORG PR transition">ORG PR transition</a>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html">RegORG</a> </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/2013/WD-vocab-regorg-20130108/">FPWD</a> </td>
+<td> <a href="REGORG_Timetable.html" title="REGORG Timetable">NOTE on 02-May-2013</a> </td>
+<td> NOTE </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/7">tracker</a> </td>
+<td> <a href="https://www.w3.org/2011/gld/wiki/Phil_Archer_source?redlink=1" class="new" title="Phil Archer (page does not exist)">Phil Archer</a> </td>
+<td>
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/glossary/index.html">Linked Data Glossary</a> </td>
+<td>  </td>
+<td> <a href="Glossary_Timetable.html" title="Glossary Timetable">Resolved to publish as Note 2013-03-14; needs publication</a> </td>
+<td> NOTE </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/8">tracker</a> </td>
+<td> <a href="Bernadette_Hyland.html" title="Bernadette Hyland">Bernadette Hyland</a>, <a href="Ghislain_Atemezing.html" title="Ghislain Atemezing">Ghislain Atemezing</a> </td>
+<td> Needs to be published in TR space; ongoing review
+</td></tr>
+<tr>
+<td class="doc0"> <a href="Linked_Data_Cookbook.html" title="Linked Data Cookbook">cookbook</a> </td>
+<td>  </td>
+<td> <a href="Cookbook_Timetable.html" title="Cookbook Timetable">tbd</a> </td>
+<td> Open W3C Wiki</td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/9">tracker</a> </td>
+<td> <a href="Bernadette_Hyland.html" title="Bernadette Hyland">Bernadette Hyland</a> </td>
+<td> Needs reviews and updates
+</td></tr>
+<tr>
+<td class="doc0"> <a rel="nofollow" class="external text" href="http://dir.w3.org/">Community Directory</a> </td>
+<td> </td>
+<td> <a href="Community_Directory_Timetable.html" title="Community Directory Timetable">Software Update 28-Mar-2013</a> </td>
+<td> Handed to New CG </td>
+<td> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/6">tracker</a> </td>
+<td> <a href="Bernadette_Hyland.html" title="Bernadette Hyland">Bernadette Hyland</a> </td>
+<td> Integrate <a rel="nofollow" class="external autonumber" href="https://www.w3.org/2011/gld/wiki/File:W3C_Community_Directory_Workflow-proposed_20130306.pdf">[1]</a> Updated Directory Workflow Req for launch early April 2013
+</td></tr></table>
+<p>Note: the dates here are for presenting the final drafts to the Working Group.  Formal publication schedule (afterwards) is available in the Timetable page for each deliverable.
+The content in this table is gathered from the Timetable pages of each deliverable.  If you make a change here, change it there too please.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Public_Review_Documents"><span class="tocnumber">1</span> <span class="toctext">Public Review Documents</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Detailed_Links_on_Deliverables"><span class="tocnumber">2</span> <span class="toctext">Detailed Links on Deliverables</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Presentations"><span class="tocnumber">3</span> <span class="toctext">Presentations</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Participation"><span class="tocnumber">4</span> <span class="toctext">Participation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Group_Membership_and_Joining"><span class="tocnumber">4.1</span> <span class="toctext">Group Membership and Joining</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Meetings"><span class="tocnumber">5</span> <span class="toctext">Meetings</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Scribes"><span class="tocnumber">5.1</span> <span class="toctext">Scribes</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Regrets"><span class="tocnumber">5.2</span> <span class="toctext">Regrets</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Products"><span class="tocnumber">5.3</span> <span class="toctext">Products</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Teleconferences"><span class="tocnumber">5.4</span> <span class="toctext">Teleconferences</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Face-to-face"><span class="tocnumber">5.5</span> <span class="toctext">Face-to-face</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#W3C_Working_Group_Resources"><span class="tocnumber">6</span> <span class="toctext">W3C Working Group Resources</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Patent_Policy"><span class="tocnumber">7</span> <span class="toctext">Patent Policy</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Staff"><span class="tocnumber">8</span> <span class="toctext">Staff</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Public_Review_Documents">Public Review Documents</span></h2>
+<ol><li> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-dcat/">Data Catalog Vocabulary</a>  (Last Call)</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-data-cube/">Data Cube Vocabulary</a>  (Last Call)</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-org/">Organization Ontology</a> (Last Call) </li></ol>
+<p><br />
+Please send all comments to <a rel="nofollow" class="external text" href="mailto:public-gld-comments@w3.org">public-gld-comments@w3.org</a> by 8 April 2013.
+</p>
+<h2><span class="mw-headline" id="Detailed_Links_on_Deliverables">Detailed Links on Deliverables</span></h2>
+<ol><li> Task Force <b>Community Directory</b>, see <a rel="nofollow" class="external text" href="http://dir.w3.org/">Community Directory of Linked Data Providers and Projects</a>, see also wiki page <a href="Community_Directory_Discussion_Summary.html" title="Community Directory Discussion Summary">Community Directory Discussion Summary</a> and issue tracker <a rel="nofollow" class="external autonumber" href="https://code.google.com/p/dir-w3-org/issues/list">[2]</a></li>
+<li> Task Force <b>Best Practices for Publishing Linked Data</b>, see <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/bp/index.html">Best Practices for Linked Data ED</a>, see also <a rel="nofollow" class="external autonumber" href="https://www.w3.org/2011/gld/wiki/Best_Practices_Discussion_Summary">[3]</a></li>
+<li> Task Force <b>Standard Vocabularies</b>
+<ul><li> Charter 2.3.1 <a href="Data_Catalog_Vocabulary.html" title="Data Catalog Vocabulary">Data Catalog Vocabulary</a> – <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-dcat/">DCAT FPWD</a>, <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/dcat-ucr/index.html">UC&amp;R ED</a></li>
+<li> Charter 2.3.1 <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/Adms">Asset Description Metadata Schema (ADMS)</a> – <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/adms/index.html">ED</a> <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/adms/adms20121023.rdf">RDF Schema</a> <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/adms/adms20121023.html">Namespace HTML</a></li>
+<li> Charter 2.3.2 <a href="Data_Cube_Vocabulary.html" title="Data Cube Vocabulary">Data Cube Vocabulary</a> – <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-data-cube/">QB FPWD</a>, <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/data-cube-ucr/index.html">UC&amp;R ED</a></li>
+<li> Charter 2.3.3 <a href="Terms_for_describing_people.html" title="Terms for describing people">Terms for describing people</a> – <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-people/">People FPWD</a> Please note that the WG does not expect to advance this document further under its current charter but does hope to return to it in future.</li>
+<li> Charter 2.3.4 <a href="Organizational_Structures.html" title="Organizational Structures">Organizational Structures</a> – <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/org/index.html">ORG ED</a> </li>
+<li> Charter 2.3.4 <a href="Organizational_Structures.html" title="Organizational Structures">Organizational Structures</a> – <a rel="nofollow" class="external text" href="http://dvcs.w3.org/hg/gld/raw-file/default/legal/index.html">Registered Organization Vocabulary ED</a></li>
+<li> Charter 2.3.5 <a href="https://www.w3.org/2011/gld/wiki/Geography_and_Spatial_Information" title="Geography and Spatial Information">Geography and Spatial Information</a> The discussion of this topic has moved to the <a rel="nofollow" class="external text" href="https://www.w3.org/community/locadd/">Locations and Addresses Community Group</a> and will not be taken further by the GLD under its current charter.</li></ul></li>
+<li> See also the main wiki page for the <a href="Vocabulary_Discussion_Summary.html" title="Vocabulary Discussion Summary">Vocabulary Discussion Summary</a></li>
+<li> Linked Data <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/raw-file/default/glossary/index.html">Glossary</a>, Working Note</li>
+<li> Linked Data Cookbook wiki <a rel="nofollow" class="external text" href="Linked_Data_Cookbook.html">Government Linked Data Cookbook</a></li></ol>
+<p><br />
+Note: The Task Forces are using <a rel="nofollow" class="external text" href="https://dvcs.w3.org/hg/gld/">Mercurial</a> repository and <a rel="nofollow" class="external text" href="http://dev.w3.org/2009/dap/ReSpec.js/documentation.html">ReSpec</a> for formatting the deliverables.
+</p>
+<h2><span class="mw-headline" id="Presentations">Presentations</span></h2>
+<ul><li> June 2012 - SemTech 2012 San Francisco - <a rel="nofollow" class="external text" href="http://www.slideshare.net/3roundstones/progress-update-on-government-linked-data-world">Progress Report 2012 on Government Linked Data Worldwide</a> from the W3C Government Linked Data Working Group.</li></ul>
+<ul><li> 10-April 2013 - European Data Forum 2013, Dublin - <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/images/3/3e/W3C_GLD_WG_at_EU_Data_Forum_2013_-_BHyland_20130410_NOTES.pdf">Delivering on Standards for Government Linked Data</a>, a W3C Working Group Progress Report.</li></ul>
+<h2><span class="mw-headline" id="Participation">Participation</span></h2>
+<h3><span class="mw-headline" id="Group_Membership_and_Joining">Group Membership and Joining</span></h3>
+<p>We encourage new members of the group to introduce themselves by email.  
+</p><p>See:
+<a rel="nofollow" class="external text" href="https://www.w3.org/2000/09/dbwg/details?group=47663&amp;public=1">list of current participants</a>,
+(or <a rel="nofollow" class="external text" href="https://www.w3.org/2000/09/dbwg/details?group=47663">with contact info</a>),
+<a href="Special_ListUsers.html" class="new" title="Special:ListUsers (page does not exist)">wiki user pages</a>,
+<a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/users">nicknames</a>
+</p><p><b>If you want to join this group, see <a href="How_to_Join.html" title="How to Join">How to Join</a>.</b>
+</p><p>If you are officially in the group, you will automatically receive group email and your w3.org login and password will work on this wiki.
+</p><p>The email archive for <a rel="nofollow" class="external text" href="mailto:public-gld-wg@w3.org">public-gld-wg@w3.org</a> is at <a rel="nofollow" class="external free" href="http://lists.w3.org/Archives/Public/public-gld-wg/">http://lists.w3.org/Archives/Public/public-gld-wg/</a>.
+</p>
+<h2><span class="mw-headline" id="Meetings">Meetings</span></h2>
+<h3><span class="mw-headline" id="Scribes">Scribes</span></h3>
+<ul><li> Please check the <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/Scribes">Scribes</a> page</li></ul>
+<h3><span class="mw-headline" id="Regrets">Regrets</span></h3>
+<ul><li> If you will miss a meeting, put your name on <a href="Regrets.html" title="Regrets">Regrets</a></li></ul>
+<h3><span class="mw-headline" id="Products">Products</span></h3>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/track/products/">Products Tracker</a></li></ul>
+<h3><span class="mw-headline" id="Teleconferences">Teleconferences</span></h3>
+<p>(<a rel="nofollow" class="external text" href="https://www.w3.org/2000/09/dbwg/details?group=47663&amp;public=1">Official Participants</a> and invited guests only):
+</p>
+<ul><li> Time Thursdays 14:00-15:00 UTC (10:00-11:00 Boston, 7:00-8:00 San Francisco, 15:00-16:00 London, 16:00-17:00 Paris)</li></ul>
+<ul><li> Dial +1-617-761-6200 or <a rel="nofollow" class="external free" href="sip:zakim@voip.w3.org">sip:zakim@voip.w3.org</a> then conference code 45394# ("GLDWG")</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/Project/IRC/">IRC</a> channel: <a rel="nofollow" class="external text" href="irc://irc.w3.org:6665/#gld">#gld</a>.</li>
+<li> An agenda is <a rel="nofollow" class="external text" href="http://lists.w3.org/Archives/Public/public-gld-wg/latest">sent</a> 24 hours in advance; minutes follow within a day or two.</li></ul>
+<h3><span class="mw-headline" id="Face-to-face">Face-to-face</span></h3>
+<ul><li> <a href="F2F1.html" title="F2F1">F2F1</a>: 29-30 June 2011, near Washington, DC, USA (completed)</li>
+<li> <a href="F2F2.html" title="F2F2">F2F2</a>: 25-26 Jan 2012, DERI Galway Ireland &amp; Washington DC (completed)</li>
+<li> <a href="F2F3.html" title="F2F3">F2F3</a>: 11-12 April 2013, Croke Park, Dublin Ireland</li></ul>
+<p><br />
+</p>
+<table class="sortable wikitable smwtable" width="100%"><th>&#160;</th><th class="Date"><span class="smw-highlighter" data-type="1" data-state="inline" data-title="Property" title="&quot;Date&quot; is a type and predefined property provided by Semantic MediaWiki to represent date values."><span class="smwbuiltin"><a href="Property_Date.html" title="Property:Date">Date</a></span><div class="smwttcontent">"Date" is a <a href="Special_Types/Date.html" class="new" title="Special:Types/Date (page does not exist)">type</a> and predefined property provided by <a rel="nofollow" class="external text" href="https://www.semantic-mediawiki.org/wiki/Help:Special_properties">Semantic MediaWiki</a> to represent date values.</div></span></th><th class="Type"><a href="Property_Type.html" title="Property:Type">Type</a></th><th class="Subject"><a href="Property_Subject.html" title="Property:Subject">Subject</a></th><th class="Minutes"><a href="Property_Minutes.html" title="Property:Minutes">Minutes</a></th><tr data-row-number="1" class="row-odd"><td class="smwtype_wpg"><a href="Meetings_Telecon2011.07.html" title="Meetings:Telecon2011.07.07">Meetings:Telecon2011.07.07</a></td><td data-sort-value="2455749.5" class="Date smwtype_dat">7 July 2011</td><td class="Type smwtype_txt">Weekly telecon</td><td class="Subject smwtype_txt">No specific</td><td class="Minutes smwtype_uri"><a rel="nofollow" class="external free" href="https://www.w3.org/2011/gld/meeting/2011-07-07">http://www.w3.org/2011/gld/meeting/2011-07-07</a></td></tr><tr data-row-number="2" class="row-even"><td class="smwtype_wpg"><a href="Meetings_Telecon2011.07-2.html" title="Meetings:Telecon2011.07.21">Meetings:Telecon2011.07.21</a></td><td data-sort-value="2455763.5" class="Date smwtype_dat">21 July 2011</td><td class="Type smwtype_txt">Weekly telecon</td><td class="Subject smwtype_txt">No specific</td><td class="Minutes smwtype_uri"><a rel="nofollow" class="external free" href="https://www.w3.org/2011/gld/meeting/2011-07-21">http://www.w3.org/2011/gld/meeting/2011-07-21</a></td></tr><tr data-row-number="3" class="row-odd"><td class="smwtype_wpg"><a href="Meetings_Telecon2011.07-3.html" title="Meetings:Telecon2011.07.28">Meetings:Telecon2011.07.28</a></td><td data-sort-value="2455770.5" class="Date smwtype_dat">28 July 2011</td><td class="Type smwtype_txt">Weekly telecon</td><td class="Subject smwtype_txt">No specific</td><td class="Minutes smwtype_uri"><a rel="nofollow" class="external free" href="https://www.w3.org/2011/gld/meeting/2011-07-28">http://www.w3.org/2011/gld/meeting/2011-07-28</a></td></tr></table>
+<h2><span class="mw-headline" id="W3C_Working_Group_Resources">W3C Working Group Resources</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.w3.org/Guide/">Art of Consensus (guide to working at W3C)</a> (W3C member confidential)</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/2005/10/Process-20051014">World Wide Web Consortium (W3C) Process Document</a></li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/Member/Mail/Overview.html">All W3C Groups</a> (W3C member confidential)</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/2009/CommonScribe/manual">CommonScribe (scribe tool) manual</a></li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/Vocab-conformance">Basic text for conformance section of vocabularies</a></li></ul>
+<h2><span class="mw-headline" id="Patent_Policy">Patent Policy</span></h2>
+<p>This Working Group operates under the <a rel="nofollow" class="external text" href="https://www.w3.org//Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+</p><p>For more information about disclosure obligations for this group, please see the <a rel="nofollow" class="external text" href="https://www.w3.org/2004/01/pp-impl/46974/status">W3C Patent Policy Status Page</a>.
+</p><p><br />   
+</p>
+<h2><span class="mw-headline" id="Staff">Staff</span></h2>
+<p>Email the chairs and staff contacts at <a rel="nofollow" class="external text" href="mailto:team-gld-chairs@w3.org">team-gld-chairs@w3.org</a>.
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.w3.org/2011/gld/wiki/Hadley_Beeman">Hadley Beeman</a>, LinkedGov, Co-Chair</li>
+<li> <a rel="nofollow" class="external text" href="Bernadette_Hyland.html">Bernadette Hyland</a>, 3 Round Stones, Co-Chair</li>
+<li> <a rel="nofollow" class="external text" href="https://www.w3.org/People/Sandro">Sandro Hawke</a>, W3C, Staff Contact</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240131091843
+Cache expiry: 86400
+Dynamic content: false
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.038 seconds
+Real time usage: 0.062 seconds
+Preprocessor visited node count: 103/1000000
+Preprocessor generated node count: 236/1000000
+Post‐expand include size: 2258/2097152 bytes
+Template argument size: 190/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.707      1 - Template:BlueBanner
+100.00%    2.707      1 - -total
+-->
+
+<!-- Saved in parser cache with key wikidb-gld_:pcache:idhash:1-0!*!0!default!!en!*!* and timestamp 20240131091843 and revision id 4589
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://www.w3.org/2011/gld/wiki/index.php?title=Main_Page&amp;oldid=4589">https://www.w3.org/2011/gld/wiki/index.php?title=Main_Page&amp;oldid=4589</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class=" emptyPortlet" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+													</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="Main_Page.html"  title="View the content page [c]" accesskey="c">Main page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="https://www.w3.org/2011/gld/wiki/Talk:Main_Page_source?redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="Main_Page.html" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="Main_Page_source.html"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="Main_Page.html"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-Charter"><a href="https://www.w3.org/2011/gld/charter" rel="nofollow">Charter</a></li><li id="n-Tracker"><a href="https://www.w3.org/2011/gld/track" rel="nofollow">Tracker</a></li><li id="n-Email-Archive"><a href="http://lists.w3.org/Archives/Public/public-gld-wg/latest" rel="nofollow">Email Archive</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-smwbrowselink"><a href="Special_Browse/_Main-5FPage.html" rel="smw-browse">Browse properties</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 July 2014, at 17:35.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://www.w3.org/2011/gld/wiki/Government_Linked_Data_(GLD)_Working_Group_Wiki:Privacy_policy" title="Government Linked Data (GLD) Working Group Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="Government_Linked_Data_(GLD)_Working_Group_Wiki_About.html" title="Government Linked Data (GLD) Working Group Wiki:About">About Government Linked Data (GLD) Working Group Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="https://www.w3.org/2011/gld/wiki/Government_Linked_Data_(GLD)_Working_Group_Wiki:General_disclaimer" title="Government Linked Data (GLD) Working Group Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+							<a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="extensions/SemanticMediaWiki/res/images/smw_button.png" alt="Powered by Semantic MediaWiki" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		
+	</body>
+
+<!-- Mirrored from www.w3.org/2011/gld/wiki/Main_Page by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jan 2024 21:30:37 GMT -->
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>CyberLibrarian</title>
+<link href="http://www.google.com/cse/style/look/default.css" rel="stylesheet" type="text/css" />
+<script type="text/Javascript" src="search.js"></script>
+</head>
+<body>
+<div id="top"></div>
+
+<p>サイトを閉鎖しました。</p>
+
+<p>トップページに掲載していたとおり、このサイトは、図書館員のためにICTに関する知識・知恵を掲載するという趣旨で提供してきました。<br />
+私は元々ICTの知識がなかったため、業務上の必要により調べた内容などを自分用のメモとして作成しPC内に蓄積していました。そして、しばらくして、それを新人職員研修にも用いるようになり、さらにWebに掲載するようになったという経緯でこのサイトを開始しました。</p>
+
+<p>図書館業務に必要なICTに関する情報は多様かつ膨大です。必要が出てから勉強を開始していては間に合わないことも多くありました。また、ICTを初心者に分かりやすく簡潔に解説している書籍やサイトも多くありませんでした。そのため、必要になった時に取っ掛かりとして利用できる初心者に分かりやすいサイトとなることを目指して更新を重ねてきました。</p>
+
+<p>しかし、ICTの刷新や改訂の頻度は高く、その内容を正しく理解し、掲載済みの内容を再確認して更新することがままならない状況となり、重要と感じた改訂内容のみを部分的に追加、更新することも多くなっていました。このようにして、不正確かつ整合性のない内容も含まれている状況になっていました。なお、開始当時は情報源が少なかったため、自分なりの解釈に基づいて記述したことも多く、不正確な内容がもともと含まれていたことも認識していました。最近ではそのような状況がちょっとした悩みとなっていました。<br />
+それでも、調べ物をすることもそれにより得た知識をまとめることも好きですし、何よりも、人の役に立つことはとても嬉しいことです。そのため、多少の誤りがあったとしても役立つこともあるかもしれないと信じ、継続してきました。</p>
+
+<p>しかし、このたび、サイトを閉鎖し、自分用のメモに戻すことにしました。ただし、他機関等のドキュメントの和訳等については、削除により関係者にご迷惑をお掛けする可能性が高いと考え、当面、提供を継続することにします。</p>
+
+<p>不正確なまま放置し続けてきたことを深くお詫びするとともに、これまでご利用いただいたみなさまに心よりお礼申し上げます。長い間、本当にありがとうございました。</p>
+
+<p>なお、以前プロパイダに更新記録を確認したところでは、最初のアップロードは1998年でした。また、閉鎖時点のファイル数は約1万5千でした。</p>
+
+<p>2016年7月7日 <a href="mail.html">上綱秀治</a></p>
+
+<hr />
+
+<p>サイトマップ</p>
+
+<ul>
+  <li><a href="spec.html">仕様等の和訳</a></li>
+  <li><a href="ref/index.html">参考資料</a></li>
+  <li><a href="others.html">その他</a></li>
+</ul>
+
+サイト内検索<a href="http://www.ne.jp/asahi/myway/mytravel/" style="color:#000000;text-decoration:none;">:</a> <script async src="https://cse.google.com/cse.js?cx=018353128428894440976:ioakuoxqkvo"></script>
+<div class="gcse-searchbox-only"></div>
+
+<!-- // search -->
+<CustomSearchEngine id="ioakuoxqkvo" creator="018353128428894440976" language="ja" encoding="UTF-8" cx_id="018353128428894440976:ioakuoxqkvo" autocompletions="true">
+  <Title>CyberLibrarian</Title>
+  <Context>
+    <BackgroundLabels>
+      <Label name="_cse_ioakuoxqkvo" mode="FILTER"/>
+      <Label name="_cse_exclude_ioakuoxqkvo" mode="ELIMINATE"/>
+    </BackgroundLabels>
+  </Context>
+  <LookAndFeel code="4" element_layout="8" theme="7" custom_theme="true" enable_cse_thumbnail="true" font="2">
+    <Logo/>
+    <Colors url="#008000" title="#0000CC" text="#000000" visited="#0000CC" title_hover="#0000CC" title_active="#0000CC"/>
+    <Promotions title_color="#0000CC" title_visited_color="#0000CC" url_color="#008000" background_color="#FFFFFF" border_color="#336699" snippet_color="#000000" title_hover_color="#0000CC" title_active_color="#0000CC"/>
+    <SearchControls input_border_color="#D9D9D9" button_border_color="#666666" button_background_color="#CECECE" tab_border_color="#E9E9E9" tab_background_color="#E9E9E9" tab_selected_border_color="#FF9900"/>
+    <Results/>
+  </LookAndFeel>
+  <ImageSearchSettings layout="2"/>
+  <autocomplete_settings match_mode="0"/>
+  <sort_by_keys label="Relevance" key=""/>
+  <sort_by_keys label="Date" key="date"/>
+  <cse_advance_settings/>
+</CustomSearchEngine>
+<!-- search // -->
+
+</body>
+</html>

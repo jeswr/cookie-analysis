@@ -1,0 +1,19 @@
+@prefix foaf: <http://xmlns.com/foaf/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://w3id.org/people/ralbertoni/> a foaf:Person ;
+    foaf:familyName "Albertoni";
+    foaf:firstName "Riccardo";
+    foaf:homepage <http://www.ge.imati.cnr.it/index.php/178-riccardo-albertoni>,  <http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni>, <https://w3id.org/people/ralbertoni/> ;
+    owl:sameAs <https://orcid.org/0000-0001-5648-2713>, <http://dblp.l3s.de/d2r/resource/authors/Riccardo_Albertoni>;
+
+    adms:identifier [ a adms:Identifier;
+        skos:notation "https://orcid.org/0000-0001-5648-2713"^^xsd:anyURI ;
+        # the authority/agency defining the identifier scheme, used if the agency has no URI
+        adms:schemaAgency "ORCID" 
+                    ] .
+    

@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Eric Gordon Prud'hommeaux</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <!-- block: 
+	 bSpace: 
+	 bSimple: outline border
+	 bFresh: background image
+    -->
+    <style type="text/css">
+/*<![CDATA[*/
+.talksbody  { margin-left: .5em; } /* inutile */
+.hasSub { margin-left: -.1em; }
+/*]]>*/
+</style>
+    <script type="text/javascript" src="js/default.js"></script>
+    <script type="text/javascript" src="js/lib.js"></script>
+  </head>
+  <body>
+    <!-- payback for the beeping keychain (still here) -->
+    <div id="page">
+      <div id="head">
+	<div id="headMain">
+	  <h1>Eric Gordon Prud'hommeaux <strong>At the W3C</strong></h1>
+	</div>
+	<div id="navigation">
+	  <ul>
+	    <li><a href="#talks">Talks</a></li>
+	    <li><a href="#pursuits">Pursuits</a></li>
+	    <li><a href="#about">About</a></li>
+	    <li><a href="#travel">Travel</a></li>
+	    <li><a href="#todo">Todo list</a></li>
+	    <!-- li><a href="http://porklips.org/~eric/resumé">Resumé</a></li -->
+	  </ul>
+	</div>
+      </div>
+      <div id="body">
+	<!--<div id="rightColumn">If you want a column (right or left) simple put a div in the html with the class <strong>rightColumn</strong> or <strong>leftColumn</strong>.  The CSS will adapt automatically as long as the elements in the column Main are small enough.</div>-->
+	<div id="leftColumn">
+	  <div class="block bSpace bSimple bFresh">
+	    <div class="inner">
+	      <h2 class="head" id="about">About</h2>
+	      <div class="body">
+		<div class="media"> <img class="media" src="egp-little.png" alt="ericP beside rock near Nice"/>
+		<div class="text">
+		  <h3>About Me</h3>
+		  <p>I am a <em>sanitation engineer</em> employed by the <a href="/">World Wide Web Consortium</a> (W3C), working in Cambridge MA at <a href="http://mit.edu/">MIT's</a> fabulous <a href="https://en.wikipedia.org/wiki/Stata_Center">Stata Center</a>.</p>
+		</div>
+		</div>
+		<h4>W3C Working Groups</h4>
+		<p>In my time at <a>W3C</a>, I have worked at all three hosts: <a href="http://www.csail.mit.edu/">MIT's Computer
+		Science and Artificial Intelligence Laboratory (CSAIL)</a> in the USA, the <a href="http://www.ercim.org/">European Research Consortium for Informatics and
+		Mathematics (ERCIM)</a> headquartered in France and <a href="http://www.keio.ac.jp/">Keio University</a> in Japan. My major work responsibilities have included <a href="../../Library/">libwww</a> and the client applications, a <a href="../../Protocols/PEP/PEPmodel/">PEP model library</a>, <a href="../../1999/02/26-modules/">perl modules</a> for <a href="../../RDF/">RDF</a> databases, SQL databases, RDF visualizers, <a href="/2001/Annotea/User/Papers.html">annotations support</a>, <a href="/2001/10/22-HttpExt-apache/">apache</a>, <a href="/2001/10/22-HttpExt-mozilla/">mozilla</a>,<a href="/2002/Talks/0408-ws-f2f-sweb/">web services</a> and lots of systems stuff. My interests lie in machine interpretation of data have lead me down the Semantic Web road, though that path is oddly <a href="/2002/02/11-XPath-vs-RDF">ambiguous</a>.</p>
+		<h4>HCLSIG</h4>
+		<p>I am currently a team contact for the <a href="/2001/sw/hcls/">W3C Semantic Web Health Care and Life Sciences Interest Group</a> (HCLSIG) and working part time on <a href="">SPASQL</a>.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="block bSimple bEGP bSpace">
+	    <div class="inner">
+	      <h3 class="head bullet hasSub" id="talks">Recent Talks</h3>
+	      <div class="body" id="talksbody" style="margin-left: .5em; ">
+		<!-- block content -->
+		<!-- dt><a href="/2002/Talks/0722-W3COpenSource/">W3C Open Source Activity for OsCon</a>.</h3>
+		     <h3><a href="/2001/Talks/1130-dagstuhl-webrules/">Pitfalls and Practicalities of Reasoning on the Web</a>.</h3>
+		     <h3><a href="/2002/Talks/0408-ws-f2f-sweb/">semantic web overview for web services WGs</a>.</h3>
+		     <h3><a href="/2003/Talks/0408-RdfQuery-DamlPI/">RDF Query survey for DAML PI meeting</a>.</dt -->
+		<h3 class="hasSub">SPDL:</h3>
+		<!-- dd><a href="/2006/Talks/0306-ep-spdl/">SPDL basic A Simple Linkage From Web Services to the Semantic Web</a></dd -->
+		<p>SPQL with remote execution: <a href="/2006/Talks/0927-egp-tag/">SPDL presentation to the TAG</a></p>
+		<p>SPDL with Choreography: <a href="/2007/Talks/0511-egp-spdl/">SPARQL in WSDL</a></p>
+		<p>(SPDL 1st technology presentation to EC: <a href="/2006/Talks/7-July-SPDL/">W3C WS2 Web Semantic Web Services Demonstrator</a>)</p>
+		<p>(SPDL 2nd technology presentation to EC: <a href="/2007/Talks/0207-egp-ws2/">WS2 Project Review - Annotated Service Invocation</a>)</p>
+		<h3 class="hasSub">SPASQL:</h3>
+		<p>introduction at MySQL User's Conference: <a href="/2007/Talks/0424-spasql/">MySQL in the Semantic Web a SPARQL parser in mysqld</a></p>
+		<p>-intro, +<a href="/2006/Talks/0518-SPASQL/#(18)">costs</a> and <a>expressivity comparison</a>: <a href="/2006/Talks/0518-SPASQL/">Adding SPARQL Support to MySQL</a></p>
+		<p>comparing XML, Relational and RDF: <a href="/2007/Talks/0710-spasql/">SPARQL Support in MySQL</a></p>
+		<h3 class="hasSub">HCLS:</h3>
+		<p><a href="/2007/Talks/1004-sb-IntroAndHCLS/egp-hcls.ppt">Why HCLS</a></p>
+		<p><a href="/2007/Talks/1111-uhc/">Clinical Observations Interoperability Use Cases Lightening Talk</a></p>
+		<!-- dd><a href="/2007/Talks/1113-iswc-bof/">ISWC2007 &mdash; SW in HCLS BOF</a></li -->
+		<p><a href="/2007/Talks/1119-imic/">W3C Work on Semantic Web in Health Care and Life Sciences</a></p>
+		<p><a href="/2008/Talks/0305-C-SHALS/">C-SHALS</a></p>
+		<h3 class="hasSub">Misc:</h3>
+		<p><a href="/2006/Talks/0327-ep-SPARQL/">SPARQL Overview for the BioRDF Task Force</a></p>
+		<p><a href="/2006/Talks/1205-ws-policy-alts/">Web Services Policy Alternatives</a></p>
+		<p><a href="/2007/Talks/1105-eGov-egp/">Linked Data for eGov</a></p>
+		<p><a href="/2008/Talks/0305-C-SHALS/">W3C Semantic Web Tutorial</a></p>
+		<!-- block content -->
+	      </div>
+	    </div>
+	  </div>
+	  <div class="block bSpace bSimple bFresh">
+	    <div class="inner">
+	      <h2 class="head" id="todo">To-do</h2>
+	      <div class="body"> <br />
+	      <p>And here's stuff I need to get around to:</p>
+	      <ol class="miniFeed">
+		<li class="odd"><span class="todo">
+		  <!-- -->
+		</span><strong>ACLs:</strong> Express W3C ACLs as SPASQL mapping rules. Tie back to XACML.</li>
+		<li class="even"><span class="todo">
+		  <!-- -->
+		</span><strong>EARL:</strong> Record lessons learned from DAWG's use of EARL.  Geek with Sandro about EARL for RIF.</li>
+		<li class="odd"><span class="todo">
+		  <!-- -->
+		</span><strong>SPARQLfed:</strong> Query-on-query functionality for SPARQLfed parser for ISWC paper. Compare expressivities between Defult DB Mapping and D2R.</li>
+		<li class="even"><span class="todo">
+		  <!-- -->
+		</span><strong>Turtle:</strong> Integrate semantic actions into Turtle Grammar to address PFPS's comments.  Finish the eternal Turtle/N3 media types issue.</li>
+		<li class="odd"><span class="todo">
+		  <!-- -->
+		</span><strong>POWDER:</strong> finish IRI= doc.</li>
+		<li class="odd"><span class="todo">
+		  <!-- -->
+		</span>learn etags.</li>
+	      </ol>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="block9 bSpace bSimpleOFF bFreshOFF">
+	    <div class="inner">
+	      <h2 class="head" id="nerd">Nerd Score</h2>
+	      <div class="body"> <br />
+	      <a href="http://www.nerdtests.com/ft_nq.php?im"><img src="http://www.nerdtests.com/images/ft/nq.php?val=1777" alt="I am nerdier than 92% of all people. Are you nerdier? Click here to find out!" /></a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div id="main">
+	  <div id="mainInside">
+	    <h2 id="pursuits">Pursuits</h2>
+	    <p>Here's a bit of stuff I remember coming up on radar...</p>
+	    <h3><a href="/2005/01/yacker">Yacker</a></h3>
+	    <p>Given a BNF grammar, yacker writes parsers in C, C++, perl and python. I use it for tracking evolution in languages that I've implemented. Also nice to settle LL(1)/LALR(1) issues in real time.</p>
+	    <h3>SPARQL in WSDL (SPDL)</h3>
+	    <p>WSDL (and its embedded XML Schema) have annotation mechansims. Adding WSDL and XML Schema annotations that associate RDF <a href="/2001/sw/DataAccess/rq23/#rGraphTerm">GraphTerms</a> with allows a mapping between SPARQL triples and a locations in a SOAP message. See the <a href="/2005/11/SPDL/">write-up</a> and the write-up of the subsidiary <a href="/2007/01/SPAT/">SPAT</a> language.</p>
+	    <h3>MySQL+SPARQL &mdash; <em>LillyGrants project</em></h3>
+	    <p>Having played with mapping SPARQL (and Algae2) queries to SQL, I decided to move that logic into mysqld, allowing arbitrary clients of the conventional MySQL protocol (perl, dbi, ODBC, JDBC) use of it with no modification. See the <a href="/2008/04/SPARQLfed/">code</a>, <a href="/2008/07/MappingRules/">write-up</a> and <a href="/2005/05/22-SPARQL-MySQL/">some earlier notes</a>.</p>
+	    <h3>RDAL</h3>
+	    <p><a href="/2004/02/03-rdal/">RDAL - RDF Annotations Language</a> &mdash; another schema annotations, this time for <a href="http://relaxng.org/">Relax NG</a>. RDAL associates semantic actions (stored in <a href="http://relaxng.org/compact-20021121.html#d0e385">RNG Annotations</a>) with call-outs to a <a href="/2002/03/11-RDF-XSL/#RdfXS">generic API</a>; implemented as a validating XSLT with callouts to another XSLT library.</p>
+	    <h3>media type identification</h3>
+	    <p>As web protocols are are more and more stacked, the conventional two-tier media-type mechanism becomes insufficient to hint to applications that they may or may not have some utility in looking at the entity. The list of IANA <a href="ftp://ftp.isi.edu/in-notes/iana/assignments/media-types/">media types</a> is available in a general <a href="ftp://ftp.isi.edu/in-notes/iana/assignments/">IANA registry</a>.</p>
+	    <h3><a href="/2001/03/12-semantic-web-position-paper">processing pipeline control</a></h3>
+	    <p>Machine understanding implies machines are told what consitutes sufficient processing. I actually don't even remember writing this <a href="/2001/03/02-XML-pipeline">proposal</a>.</p>
+	    <h3 class="hasSub">XML protocols:</h3>
+	    <h3><a href="/2000/03/29-XML-protocol-matrix">XML Protocol Matrix</a></h3>
+	    <p>Briefly describe and contrast a set of XML protocols. RPC and messaging, mostly.</p>
+	    <h3><a href="/2001/03/02-XML-pipeline">XML Processing Pipeline Model</a></h3>
+	    <p>The modularity of XML specifications deliniates a set of functionality boundries. Different documents will require differnet modules. This document is a plea for a taxonmy of modules names, ordering and optional processing directives.</p>
+	    <h3><a href="/2002/02/21-WSDL-RDF-mapping/">RDF WSDL Mapping</a></h3>
+	    <p>provides an algorithmic transformation of WSDL document to an RDF model.</p>
+	    <h3><a href="/2001/03/19-annotated-RDF-WSDL-examples">Annotated RDF WSDL Examples</a></h3>
+	    <p>example of use of the <a href="/2002/02/21-WSDL-RDF-mapping/">RDF WSDL Mapping</a>.</p>
+	    <h3><a href="/2002/06/19-bikeShop/">web services use case: bike shop</a></h3>
+	    <p>NOT DONE - barely even started - don't look here.</p>
+	    <h3><a href="/2001/11/11-semweb-webservices">semantic web web services survey</a></h3>
+	    <p>survey of web service research from the RDF perspective.</p>
+	    <h3>Enhanced <a href="/2002/12/09-rdf-dtds/xhtml-math-svg-rdf-CC-flat.dtd">XML DTD for XHTML, MathML, XVG, and some RDF</a></h3>
+	    <p>Adds RDF support for <a href="/2002/12/09-rdf-dtds/xhtml-math-svg-rdf-CC-flat.dtd">Creative Commons</a> to a <a href="/2002/12/09-rdf-docs/xhtml-math-svg-rdf-CC-flat.xhtml">sample document</a>.</p>
+	    <h3><a href="/2001/01/31-rnodes">RNodes</a></h3>
+	    <p>Resource nodes to describe documents, analogous to i-nodes, implemented over <a href="#HTTPExtentions">http extensions</a>.</p>
+	    <h3><a href="/2002/06/09-RDF-topic-maps/">RDF Topic Maps</a></h3>
+	    <p>Topic Maps describe associations of objects (identified by URI). RDF describes relationships between objects. This document describes a few algorithmic mappings between the two.</p>
+	    <h3 class="hasSub"><a name="RDF_tools" id="RDF_tools">RDF tools</a>:</h3>
+	    <h3><a name="RDF_parsers" id="RDF_parsers">RDF Databases, parsers, ...</a></h3>
+	    <p><a href="/1999/02/26-modules/">perl libraries</a></p>
+	    <h3>Semantic schema annotation</h3>
+	    <p>The above perl RDF parser uses <a href="/2002/12/26-XMLgrammer2RDFdb/">an XML-centric grammer</a> with scripted actions associated with each production. This workes to parser many forms of XML. I hope this work leads language requirements for a general schema annotation language.</p>
+	    <h3><a href="/2002/03/11-RDF-XSL/">RDFXML to RDF database XSLT</a>.</h3>
+	    <p>This provides an alternative to the <a href="/2002/12/26-XMLgrammer2RDFdb/">an XML-centric grammer</a> approach used by the perllib parser.</p>
+	    <h3><a href="/2003/07/p3p2html/">P3P to HTML</a></h3>
+	    <p>A way to present a user with policies from a published P3P policy.</p>
+	    <h3><a href="/2002/10/14-KR-MOF-XTM-RDF/">Constrasting Knowledge Representation in MOF, Topic Maps and RDF</a>.</h3>
+	    <p>Many communities decide to use RDF or Topic Maps or UML without understanding the overlaps or constrasts in expressivity of those systems. This paper attempts to reduce FUD (fear, uncertainty and doubg) and promote some common understanding.</p>
+	    <h3 class="hasSub"><a name="RDF_DBs" id="RDF_DBs">RDF storage facilities</a>:</h3>
+	    <h3><a name="RDF_triple_store" id="RDF_triple_store">Persistent RDF Databases</a></h3>
+	    <p>While <a href="#RDF_parsers">rdf parsers</a> allow us to access to RDF stored in XML or N3 documents, <a href="/1999/07/13-persistant-RDF-DB">persistent triple stores</a> provide more convenient access.</p>
+	    <h3><a name="RDF_SQL_mapping" id="RDF_SQL_mapping">RDF &lt;-&gt; SQL interfaces</a>.</h3>
+	    <p>For many applications, using a <a href="#RDF_triple_store">triple store</a> is <a href="/2002/05/24-RDF-SQL/#Efficiency">less efficient</a> than using a database optimized for the particular data. This <a href="/2002/05/24-RDF-SQL/">RDF SQL Mapping paper</a> describes using such a database as an RDF database.</p>
+	    <h3><a href="/2003/01/21-RDF-RDB-access/">new RDF SQL mapping</a>.</h3>
+	    <p>This paper explores RDF access to an OrderTracking database and demonstrates practical queries to the database.</p>
+	    <h3><a href="/2003/02/15-RDF-hetro-DB/">Hetrogeneous RDF databases</a>.</h3>
+	    <p>We can get much more efficient use of databases if we normalize our data into conventional relations. This paper demonstrates that this normalizations need not sacrifice flexibility of expression.</p>
+	    <h3><a href="/2001/12/attributions/">Source Attributions in RDF</a>.</h3>
+	    <p>Many RDF database implementations support an attribution or context. There is no standard way to do this. This paper explores some alternatives and discusses their respective pros and cons.</p>
+	    <h3 class="hasSub">RDF query facilities:</h3>
+	    <h3><a href="/2001/11/13-RDF-Query-Rules/">RDF query protocols</a></h3>
+	    <p>Similar to the XML protocol matrix.</p>
+	    <h3>storage implications on query efficiency</h3>
+	    <p><a href="/2002/05/24-RDF-SQL/#Efficiency">RDF SQL mapping paper</a> also discusses this.</p>
+	    <h3><a href="http://www.semanticgrid.org/">semantic grid</a></h3>
+	    <p>juncture between <a>semantic web</a> and the <a>grid forum</a>.</p>
+	    <h3 class="hasSub">HTTP Protocols:</h3>
+	    <h3><a href="/Protocols/HTTP/ietf-http-ext/" name="HTTPExtentions" id="HTTPExtentions">HTTP Extensions</a></h3>
+	    <p>Implementations for <a href="/2001/10/22-HttpExt-apache/">Apache</a> and <a href="/2001/10/22-HttpExt-mozilla/">Mozilla</a>.</p>
+	    <h3><a>PEP</a></h3>
+	    <p>Protocol Extension Protocol</p>
+	    <h3 class="hasSub">Team Comments:</h3>
+	    <h3><a href="/Submission/2003/SUBM-rdf-netapi-20031002/">RDF Net API</a></h3>
+	    <p>Abstrace API for access to RDF datastores. Has concrete bindings in SOAP and HTTP GET/PUT/POST/DELETE.</p>
+	    <div class="block bSpace bSimple bFresh">
+	      <div class="inner">
+		<h2 class="head" id="travel">Recent &amp; Upcoming Travel</h2>
+		<div class="body"> <br />
+		<h3 class="h5 under">✈BOS→SFO→YVR→BOS (<a href="http://www.semantic-conference.com/">SemTech</a>)</h3>
+		<pre class="future">
+  10 Jun 0800 <span class="flight">UN173</span> BOSc→SFO  
+
+  20 Jun 0810 <span class="flight">AC563</span> SFO →YVR 
+
+  25 Jun 1100 <span class="flight">UA768</span> YVR →ORD (26 Jun)
+  26 Jun 0630 <span class="flight">UA525</span> ORD →BOS 
+		</pre>
+
+		<h3 class="h5 under">✈BOS→CDG→BOS</h3>
+		<pre class="future">
+  31 Jul   1730 <span class="flight">AF337</span> BOSe→CDGe 0645 (20 Oct)
+  10 Aug   1315 <span class="flight">AF332</span> CDGf→BOSe 1555
+		</pre>
+
+		<h3 class="h5 under">✈→→→ (<a href="http://www.dresnet.net/">DReSNet workshop on digital repositories in biological and medical research</a>)</h3>
+		<pre class="future">
+13-14 July		</pre>
+
+		<h3 class="h5 under">✈→→→ (<a href="http://jaoo.dk/aarhus-2009/">JA00</a>)</h3>
+		<pre class="future">
+4-9 Oct		</pre>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <!-- /BASIC PAGE STRUCTURE -->
+  </body>
+</html>

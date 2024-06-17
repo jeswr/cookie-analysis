@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-disabled vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>ProfileContext - Dataset Exchange Working Group</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-disabled vector-feature-client-preferences-disabled vector-feature-typography-survey-disabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )dxwg_dxwg_mwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],
+"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b33ea06f1d533d2d30742d2f","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ProfileContext","wgTitle":"ProfileContext","wgCurRevisionId":2955,"wgRevisionId":2955,"wgArticleId":76,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ProfileContext","wgRelevantArticleId":76,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],
+"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/2017/dxwg/wiki/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false};RLSTATE={"skins.vector.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","user":"ready","user.options":"loading","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.smw.style":"ready","ext.smw.tooltip.styles":"ready"};RLPAGEMODULES=["ext.smw.style","ext.smw.tooltips","smw.entityexaminer","ext.smw.table.styles","smw.factbox","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.smw.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/2017/dxwg/wiki/load.php?lang=en&amp;modules=codex-search-styles%7Cext.smw.style%7Cext.smw.tooltip.styles%7Cskins.vector.icons%2Cstyles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/2017/dxwg/wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<style>#mw-indicator-mw-helplink {display:none;}</style>
+<meta name="generator" content="MediaWiki 1.41.1">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<link rel="alternate" type="application/rdf+xml" title="ProfileContext" href="/2017/dxwg/wiki/index.php?title=Special:ExportRDF/ProfileContext&amp;xmlmime=rdf">
+<link rel="icon" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/2017/dxwg/wiki/opensearch_desc.php" title="Dataset Exchange Working Group (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.w3.org/2017/dxwg/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Dataset Exchange Working Group Atom feed" href="/2017/dxwg/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ProfileContext rootpage-ProfileContext skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/2017/dxwg/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-Meetings" class="mw-list-item"><a href="/2017/dxwg/wiki/Meetings"><span>Meetings</span></a></li><li id="n-Tracker" class="mw-list-item"><a href="https://www.w3.org/2017/dxwg/track/" rel="nofollow"><span>Tracker</span></a></li><li id="n-GitHub-Repository" class="mw-list-item"><a href="https://github.com/w3c/dxwg/" rel="nofollow"><span>GitHub Repository</span></a></li><li id="n-Participants" class="mw-list-item"><a href="https://www.w3.org/2000/09/dbwg/details?group=99375&amp;public=1" rel="nofollow"><span>Participants</span></a></li><li id="n-WG-Mail-Archive" class="mw-list-item"><a href="http://lists.w3.org/Archives/Public/public-dxwg-wg/" rel="nofollow"><span>WG Mail Archive</span></a></li><li id="n-Comment-Archive" class="mw-list-item"><a href="http://lists.w3.org/Archives/Public/public-dxwg-comments/" rel="nofollow"><span>Comment Archive</span></a></li><li id="n-Charter" class="mw-list-item"><a href="https://www.w3.org/2020/02/dx-wg-charter.html" rel="nofollow"><span>Charter</span></a></li><li id="n-Code-of-Conduct" class="mw-list-item"><a href="https://www.w3.org/Consortium/cepc/" rel="nofollow"><span>Code of Conduct</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/2017/dxwg/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-help" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out"><span>Help</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-extra_links" class="vector-menu mw-portlet mw-portlet-extra_links emptyPortlet"  >
+	<div class="vector-menu-heading">
+		extra links
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/2017/dxwg/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="https://www.w3.org/assets/logos/w3c/w3c-no-bars.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<strong class="mw-logo-wordmark">Dataset Exchange Working Group</strong>
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/2017/dxwg/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Search Dataset Exchange Working Group [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/2017/dxwg/wiki/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Search Dataset Exchange Working Group" aria-label="Search Dataset Exchange Working Group" autocapitalize="sentences" title="Search Dataset Exchange Working Group [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Personal tools" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/2017/dxwg/wiki/index.php?title=Special:UserLogin&amp;returnto=ProfileContext" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="More options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/2017/dxwg/wiki/index.php?title=Special:UserLogin&amp;returnto=ProfileContext" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"></div>
+		</div>
+		
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site" role="navigation">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<input type="checkbox" id="vector-toc-collapsed-checkbox" class="vector-menu-checkbox">
+			<nav id="mw-panel-toc" role="navigation" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark vector-sticky-pinned-container">
+				<div id="vector-toc-pinned-container" class="vector-pinned-container">
+				<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Beginning</div>
+			</a>
+		</li>
+		<li id="toc-Definitions_of_Profile,_Application_Profile,_Metadata_Application_Profile"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a class="vector-toc-link" href="#Definitions_of_Profile,_Application_Profile,_Metadata_Application_Profile">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">1</span>Definitions of Profile, Application Profile, Metadata Application Profile</div>
+		</a>
+		
+			<button aria-controls="toc-Definitions_of_Profile,_Application_Profile,_Metadata_Application_Profile-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Definitions of Profile, Application Profile, Metadata Application Profile subsection</span>
+			</button>
+		
+		<ul id="toc-Definitions_of_Profile,_Application_Profile,_Metadata_Application_Profile-sublist" class="vector-toc-list">
+			<li id="toc-Definitions_adopted_in_July_2019"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Definitions_adopted_in_July_2019">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.1</span>Definitions adopted in July 2019</div>
+			</a>
+			
+			<ul id="toc-Definitions_adopted_in_July_2019-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Draft_common_definition_for_&quot;profile&quot;"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Draft_common_definition_for_&quot;profile&quot;">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.2</span>Draft common definition for "profile"</div>
+			</a>
+			
+			<ul id="toc-Draft_common_definition_for_&quot;profile&quot;-sublist" class="vector-toc-list">
+				<li id="toc-Issues_noted"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Issues_noted">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.2.1</span>Issues noted</div>
+			</a>
+			
+			<ul id="toc-Issues_noted-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Comments/objections"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Comments/objections">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">1.2.2</span>Comments/objections</div>
+			</a>
+			
+			<ul id="toc-Comments/objections-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Discussion_of_Definitions"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a class="vector-toc-link" href="#Discussion_of_Definitions">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">2</span>Discussion of Definitions</div>
+		</a>
+		
+			<button aria-controls="toc-Discussion_of_Definitions-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Discussion of Definitions subsection</span>
+			</button>
+		
+		<ul id="toc-Discussion_of_Definitions-sublist" class="vector-toc-list">
+			<li id="toc-Ruben_Verborgh"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Ruben_Verborgh">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1</span>Ruben Verborgh</div>
+			</a>
+			
+			<ul id="toc-Ruben_Verborgh-sublist" class="vector-toc-list">
+				<li id="toc-Term:_media_type"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_media_type">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.1</span>Term: media type</div>
+			</a>
+			
+			<ul id="toc-Term:_media_type-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_profile"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_profile">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.2</span>Term: profile</div>
+			</a>
+			
+			<ul id="toc-Term:_profile-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_profile_definition"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_profile_definition">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.3</span>Term: profile definition</div>
+			</a>
+			
+			<ul id="toc-Term:_profile_definition-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Examples"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Examples">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.4</span>Examples</div>
+			</a>
+			
+			<ul id="toc-Examples-sublist" class="vector-toc-list">
+				<li id="toc-media_type"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#media_type">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.4.1</span>media type</div>
+			</a>
+			
+			<ul id="toc-media_type-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-profile"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#profile">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.4.2</span>profile</div>
+			</a>
+			
+			<ul id="toc-profile-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-profile_definition"
+			class="vector-toc-list-item vector-toc-level-4">
+			<a class="vector-toc-link" href="#profile_definition">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.4.3</span>profile definition</div>
+			</a>
+			
+			<ul id="toc-profile_definition-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Possible_implementation"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Possible_implementation">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.5</span>Possible implementation</div>
+			</a>
+			
+			<ul id="toc-Possible_implementation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Comments"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Comments">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.1.6</span>Comments</div>
+			</a>
+			
+			<ul id="toc-Comments-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-kcoyle"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#kcoyle">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2</span>kcoyle</div>
+			</a>
+			
+			<ul id="toc-kcoyle-sublist" class="vector-toc-list">
+				<li id="toc-Term:_profile_2"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_profile_2">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2.1</span>Term: profile</div>
+			</a>
+			
+			<ul id="toc-Term:_profile_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_application_profile"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_application_profile">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2.2</span>Term: application profile</div>
+			</a>
+			
+			<ul id="toc-Term:_application_profile-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_metadata_application_profile"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_metadata_application_profile">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2.3</span>Term: metadata application profile</div>
+			</a>
+			
+			<ul id="toc-Term:_metadata_application_profile-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Comments_2"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Comments_2">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.2.4</span>Comments</div>
+			</a>
+			
+			<ul id="toc-Comments_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Rob_Atkinson"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Rob_Atkinson">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3</span>Rob Atkinson</div>
+			</a>
+			
+			<ul id="toc-Rob_Atkinson-sublist" class="vector-toc-list">
+				<li id="toc-Term:_profile_3"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_profile_3">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3.1</span>Term: profile</div>
+			</a>
+			
+			<ul id="toc-Term:_profile_3-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_application_profile_2"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_application_profile_2">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3.2</span>Term: application profile</div>
+			</a>
+			
+			<ul id="toc-Term:_application_profile_2-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Term:_profile_implementation_specification"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Term:_profile_implementation_specification">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3.3</span>Term: profile implementation specification</div>
+			</a>
+			
+			<ul id="toc-Term:_profile_implementation_specification-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Comments_3"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Comments_3">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">2.3.4</span>Comments</div>
+			</a>
+			
+			<ul id="toc-Comments_3-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Definitions_background_information"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a class="vector-toc-link" href="#Definitions_background_information">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">3</span>Definitions background information</div>
+		</a>
+		
+			<button aria-controls="toc-Definitions_background_information-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Definitions background information subsection</span>
+			</button>
+		
+		<ul id="toc-Definitions_background_information-sublist" class="vector-toc-list">
+			<li id="toc-ISO/IEC_TR_10000-1"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ISO/IEC_TR_10000-1">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.1</span>ISO/IEC TR 10000-1</div>
+			</a>
+			
+			<ul id="toc-ISO/IEC_TR_10000-1-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-ISO/TC_46/SC11N800R1:_Where_to_start_on_creating_a_metadata_schema"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ISO/TC_46/SC11N800R1:_Where_to_start_on_creating_a_metadata_schema">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.2</span>ISO/TC 46/SC11N800R1: Where to start on creating a metadata schema</div>
+			</a>
+			
+			<ul id="toc-ISO/TC_46/SC11N800R1:_Where_to_start_on_creating_a_metadata_schema-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Dublin_Core"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Dublin_Core">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.3</span>Dublin Core</div>
+			</a>
+			
+			<ul id="toc-Dublin_Core-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-DCAT-AP"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#DCAT-AP">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.4</span>DCAT-AP</div>
+			</a>
+			
+			<ul id="toc-DCAT-AP-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-IMS_Global"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#IMS_Global">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.5</span>IMS Global</div>
+			</a>
+			
+			<ul id="toc-IMS_Global-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-ISO/IEC_10000-1"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ISO/IEC_10000-1">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.6</span>ISO/IEC 10000-1</div>
+			</a>
+			
+			<ul id="toc-ISO/IEC_10000-1-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-OHIOLINK_Digital_Media_Center"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#OHIOLINK_Digital_Media_Center">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.7</span>OHIOLINK Digital Media Center</div>
+			</a>
+			
+			<ul id="toc-OHIOLINK_Digital_Media_Center-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Open_Geospatial_Consortium"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Open_Geospatial_Consortium">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.8</span>Open Geospatial Consortium</div>
+			</a>
+			
+			<ul id="toc-Open_Geospatial_Consortium-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-CEN_Workshop"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#CEN_Workshop">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.9</span>CEN Workshop</div>
+			</a>
+			
+			<ul id="toc-CEN_Workshop-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-ARIADNE"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ARIADNE">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.10</span>ARIADNE</div>
+			</a>
+			
+			<ul id="toc-ARIADNE-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-ODRL"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#ODRL">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">3.11</span>ODRL</div>
+			</a>
+			
+			<ul id="toc-ODRL-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Examples_of_Application_Profiles,_Metadata_Application_Profiles"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a class="vector-toc-link" href="#Examples_of_Application_Profiles,_Metadata_Application_Profiles">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">4</span>Examples of Application Profiles, Metadata Application Profiles</div>
+		</a>
+		
+		<ul id="toc-Examples_of_Application_Profiles,_Metadata_Application_Profiles-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-DCAT_Application_Profiles"
+		class="vector-toc-list-item vector-toc-level-1">
+		<a class="vector-toc-link" href="#DCAT_Application_Profiles">
+			<div class="vector-toc-text">
+			<span class="vector-toc-numb">5</span>DCAT Application Profiles</div>
+		</a>
+		
+			<button aria-controls="toc-DCAT_Application_Profiles-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon vector-icon--x-small mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle DCAT Application Profiles subsection</span>
+			</button>
+		
+		<ul id="toc-DCAT_Application_Profiles-sublist" class="vector-toc-list">
+			<li id="toc-Analysis_of_DCAT_Application_Profiles"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Analysis_of_DCAT_Application_Profiles">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.1</span>Analysis of DCAT Application Profiles</div>
+			</a>
+			
+			<ul id="toc-Analysis_of_DCAT_Application_Profiles-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Reference_documentation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Reference_documentation">
+				<div class="vector-toc-text">
+				<span class="vector-toc-numb">5.2</span>Reference documentation</div>
+			</a>
+			
+			<ul id="toc-Reference_documentation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+				</div>
+	</nav>
+		
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<label
+						id="vector-toc-collapsed-button"
+						class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet vector-button-flush-left cdx-button--icon-only"
+						for="vector-toc-collapsed-checkbox"
+						role="button"
+						aria-controls="vector-toc"
+						tabindex="0"
+						title="Table of Contents">
+						<span class="vector-icon mw-ui-icon-wikimedia-listBullet"></span>
+						<span>Toggle the table of contents</span>
+					</label>
+					<nav role="navigation" aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">ProfileContext</span></h1>
+				</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/2017/dxwg/wiki/Talk:ProfileContext/edit?redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext"><span>Read</span></a></li><li id="ca-viewsource" class="vector-tab-noicon mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext"><span>Read</span></a></li><li id="ca-more-viewsource" class="vector-more-collapsible-item mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/edit"><span>View source</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/history"><span>View history</span></a></li><li id="ca-purge" class="is-disabled mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/purge"><span>Refresh</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/2017/dxwg/wiki/Special:WhatLinksHere/ProfileContext" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/2017/dxwg/wiki/Special:RecentChangesLinked/ProfileContext" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/2017/dxwg/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/2017/dxwg/wiki/index.php?title=ProfileContext&amp;oldid=2955" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/2017/dxwg/wiki/ProfileContext/info" title="More information about this page"><span>Page information</span></a></li><li id="t-smwbrowselink" class="mw-list-item"><a href="/2017/dxwg/wiki/Special:Browse/:ProfileContext" rel="search"><span>Browse properties</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		<div id="mw-indicator-smw-entity-examiner" class="mw-indicator"><div class="smw-entity-examiner smw-indicator-vertical-bar-loader" data-subject="ProfileContext#0##" data-dir="ltr" data-uselang="" title="Running an examiner in the background"></div></div>
+		</div>
+
+						<div id="siteSub" class="noprint">From Dataset Exchange Working Group</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><meta property="mw:PageProp/toc" />
+<h1><span id="Definitions_of_Profile.2C_Application_Profile.2C_Metadata_Application_Profile"></span><span class="mw-headline" id="Definitions_of_Profile,_Application_Profile,_Metadata_Application_Profile">Definitions of Profile, Application Profile, Metadata Application Profile</span></h1>
+<h2><span class="mw-headline" id="Definitions_adopted_in_July_2019">Definitions adopted in July 2019</span></h2>
+<p>See <a rel="nofollow" class="external text" href="https://www.w3.org/2019/07/16-dxwg-minutes#x04">resolution</a>
+</p><p><big>
+<b>" data profile: a data specification that constrains, extends, combines, or provides guidance or explanation about the usage of other data specifications. </b>
+"<b></b></big>
+</p><p><big>
+<b>" data specification: a specification, with human- and/or machine-processable representations, that defines the content and structure of data used in a given context.  </b>
+"<b></b></big>
+</p><p>Note that these definitions do not define a general notion of specifications or profiles, but apply to specifications of data content. 
+</p>
+<h2><span id="Draft_common_definition_for_.22profile.22"></span><span class="mw-headline" id="Draft_common_definition_for_&quot;profile&quot;">Draft common definition for "profile"</span></h2>
+<p><b>"A named set of constraints on one or more identified base specifications, including the identification of any implementing subclasses of datatypes, semantic interpretations, vocabularies, options and parameters of those base specifications necessary to accomplish a particular function."</b>[1]
+</p><p><a rel="nofollow" class="external autonumber" href="https://www.w3.org/2018/02/06-dxwg-minutes">[1]</a>(<a rel="nofollow" class="external free" href="https://www.w3.org/2018/02/06-dxwg-minutes">https://www.w3.org/2018/02/06-dxwg-minutes</a>)
+</p><p>--- Notes ---
+</p>
+<ul><li>Profiles constrain content, and are distinct from encoding (MIME-type) and language choice.</li>
+<li>"constraint" <a rel="nofollow" class="external autonumber" href="https://en.oxforddictionaries.com/definition/constraint">[2]</a>(<a rel="nofollow" class="external free" href="https://en.oxforddictionaries.com/definition/constraint">https://en.oxforddictionaries.com/definition/constraint</a>) includes specific notions such as owl:restriction.</li>
+<li>the "set of constraints" may be empty - thus every base specification may act as a "null profile". (This simplifies negotiation and addresses situations where organisations formalise profiles as specifications.)</li>
+<li>"options" for a specification may include choice of structure (schema) for data objects - noting that more typically profiles would constrain content choices within such schema.</li></ul>
+<p>--- Earlier discussion ---
+</p><p>For the purposes of the DXWG a "profile" uses the same form as ISO/IEC TR 10000-1:
+</p><p>"A set of one or more base standards, and, where applicable, the identification of chosen classes, conforming subsets, options and
+parameters of those base standards necessary to accomplish a particular function."
+</p><p>noting that the scope of "base standards" is relaxed to any standard that is identified by a canonical IRI, and thus can be identified by software agents. 
+Profiles may act as "base standards" for more specialised profiles. 
+</p><p>This definition is quite broad, and supports:
+</p>
+<ul><li>identification of profiles by IRI</li>
+<li>specialisation of profiles</li>
+<li>aggregation/mixing of a set of profiles (and hence polymorphism)</li>
+<li>a set of one base standards (i.e. a base standard is a simple profile of itself, meaning that only profile conformance needs to be negotiated, rather than base and profile in conjunction)</li></ul>
+<p>An "application profile" is a profile that defines the _complete set_ of constraints required for a particular application domain. 
+</p><p>Constraints may be described in multiple ways, and not necessarily within a single artefact, a profile will reference one or more descriptions of constraints. 
+</p>
+<h3><span class="mw-headline" id="Issues_noted">Issues noted</span></h3>
+<ul><li>a canonical model/vocabulary will need to be identified or provided to describe profile inheritance and relationships to constraint specification documents.</li>
+<li>determining function equivalence between two profiles involves examining the "set" of base standards, including transitive inheritance. It is yet to be determined if this will be the responsibility of client, server or support services.</li>
+<li>The Use Cases and derived Requirements for profile guidance suggest that canonical forms of constraint specification will be useful, but no single solution is likely to be suitable for all cases.</li></ul>
+<h3><span id="Comments.2Fobjections"></span><span class="mw-headline" id="Comments/objections">Comments/objections</span></h3>
+<ul><li>I think the "aggregation" bit is especially complex, so we should work to make it clear. I note that many profile definitions include making use of properties/terms from a mix of existing vocabularies. I don't consider that an "aggregation" in this sense, just a normal "borrowing" of vocabulary terms. Another complex idea is inheritance, which was brought up at the first F2F and had strong adherents both for and against. One big question is whether aggregation and/or inheritance are implemented "on the fly" or if they are stable aspects of the profile schema. <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 20:26, 26 January 2018 (UTC)</li>
+<li>The ISO document defines "base standard" as: "3.1.1 Base Standard: An approved International Standard or ITU-T Recommendation." If we adopt a definition of profile I think we should drop this requirement as our concept of profile is not limited to the ISO universe. <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 20:26, 26 January 2018 (UTC)
+<ul><li>Thanks for the clarification, Rob. I would like, however, not to insist on IRIs. There are known community standards that can be named or identified but do not have IRIs that identify them. ISO standards are an example. There are XML standards (like ONIX in the publishing community) that do not have IRIs (AFAIK). Yet, like MIME types, these could have names that are used in content negotiation. (I'm interested to hear from Ruben and Lars about their assumptions for handling community standards of this nature.) <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 04:18, 1 February 2018 (UTC)
+<ul><li>+1 <a href="/2017/dxwg/wiki/User:Aisaac" title="User:Aisaac">Antoine Isaac</a> (<a href="/2017/dxwg/wiki/User_talk:Aisaac/edit?redlink=1" class="new" title="User talk:Aisaac (page does not exist)">talk</a>) 14:40, 1 February 2018 (UTC)</li></ul></li></ul></li>
+<li>This draft does not seem to reflect a common understanding from the definitions below, but is rather a separate definition. <a href="/2017/dxwg/wiki/User:Rverborg" title="User:Rverborg">Ruben Verborgh</a> (<a href="/2017/dxwg/wiki/User_talk:Rverborg/edit?redlink=1" class="new" title="User talk:Rverborg (page does not exist)">talk</a>) 20:07, 30 January 2018 (UTC)</li>
+<li>This definition uses the word “standards” (even within the listed relaxation), but not all profiles are necessarily based on standards. <a href="/2017/dxwg/wiki/User:Rverborg" title="User:Rverborg">Ruben Verborgh</a> (<a href="/2017/dxwg/wiki/User_talk:Rverborg/edit?redlink=1" class="new" title="User talk:Rverborg (page does not exist)">talk</a>) 20:07, 30 January 2018 (UTC)</li>
+<li>The difference with a media type, which is crucial for content negotiation, is lost. <a href="/2017/dxwg/wiki/User:Rverborg" title="User:Rverborg">Ruben Verborgh</a> (<a href="/2017/dxwg/wiki/User_talk:Rverborg/edit?redlink=1" class="new" title="User talk:Rverborg (page does not exist)">talk</a>) 20:07, 30 January 2018 (UTC)</li>
+<li>The definition is so broad that too many things could be a profile. For instance, a media type also matches that definition. Even worse, a programming language like JavaScript matches the definition, because it is a set of one of more base standards, the "where applicable" part doesn't apply (so that's covered), and it accomplishes a particular function. <a href="/2017/dxwg/wiki/User:Rverborg" title="User:Rverborg">Ruben Verborgh</a> (<a href="/2017/dxwg/wiki/User_talk:Rverborg/edit?redlink=1" class="new" title="User talk:Rverborg (page does not exist)">talk</a>) 20:07, 30 January 2018 (UTC)</li>
+<li>I like this definition, but recognize Ruben's worry, that it opens the door to many things. I think it would be fair in our context (i.e. data exchange) to add that we restrict the notion of profile to data vocabularies: "A set of one or more base data vocabularies [pointing to existing definitions on the W3C site, maybe the DWBP discussion] [...] necessary to express data that is needed to perform a particular function". Btw I think it also address Ruben's worry about using the word 'standard' (I also agree here), which then would disappear from the definition. <a href="/2017/dxwg/wiki/User:Aisaac" title="User:Aisaac">Antoine Isaac</a> (<a href="/2017/dxwg/wiki/User_talk:Aisaac/edit?redlink=1" class="new" title="User talk:Aisaac (page does not exist)">talk</a>) 11:56, 31 January 2018 (UTC)</li></ul>
+<h1><span class="mw-headline" id="Discussion_of_Definitions">Discussion of Definitions</span></h1>
+<h2><span class="mw-headline" id="Ruben_Verborgh">Ruben Verborgh</span></h2>
+<h3><span class="mw-headline" id="Term:_media_type">Term: media type</span></h3>
+<p>A media type (or content type) is a set of syntactic constraints, structural constraints,
+and/or semantic interpretations that can be used to serialize information content.
+</p>
+<h3><span class="mw-headline" id="Term:_profile">Term: profile</span></h3>
+<p>A profile is a set of structural constraints and/or semantic interpretations
+that can apply to information content
+in addition to constraints and interpretations mandated by a media type.
+</p>
+<h3><span class="mw-headline" id="Term:_profile_definition">Term: profile definition</span></h3>
+<p>A profile definition is a document that describes a profile's constraints and interpretations
+in a human-readable and/or machine-processable way.
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<h4><span class="mw-headline" id="media_type">media type</span></h4>
+<ul><li>application/json</li>
+<li>text/xml</li>
+<li>text/turtle</li>
+<li>application/trig</li></ul>
+<h4><span class="mw-headline" id="profile">profile</span></h4>
+<p>The examples below are fictitious.
+</p>
+<ul><li><i>urn:example:schema-org-book</i> (= uses the Schema.org ontology for books, can apply to HTML and RDF documents)</li>
+<li><i>urn:example:main-title</i> (= has a "title" element as child of the root with a text value, can apply to XML and JSON documents)</li>
+<li><i>urn:example:dcat-xyz</i> (= conforms to the DCAT profile XYZ)</li></ul>
+<p>Note how multiple profiles can apply to the same resource. For instance, both <i>schema-org-book</i> and <i>main-title</i> could apply to a JSON-LD document.
+</p>
+<h4><span class="mw-headline" id="profile_definition">profile definition</span></h4>
+<p>The examples below are fictitious.
+</p>
+<ul><li>an HTML document describing <i>urn:example:schema-org-book</i></li>
+<li>an RDF document describing <i>urn:example:schema-org-book</i></li></ul>
+<h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
+<p>A possible concrete implementation of the above is as follows:
+</p>
+<ul><li>Profiles are identified by an IRI—specifically, an HTTP URL</li>
+<li>Dereferencing that HTTP URL leads to a profile definition document (with content negotiation)</li>
+<li>Any given representation of a resource on the Web can conform to zero or more profiles (in addition to a media type)</li></ul>
+<h3><span class="mw-headline" id="Comments">Comments</span></h3>
+<ul><li>(kcoyle) - At the moment, I'm not aware of anyone producing "atomistic" profiles, such as "main-title" or even "schema-org-book". Profiles that I know of describe an entire metadata "record" or usage. I'm not sure what the actual data would be behind these fragments, but I think it would be interesting to explore. The use case does need some explanation of the data that is being described. <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 15:58, 17 December 2017 (UTC)
+<ul><li>(Ruben) Indeed, the notion of profile here, for content negotiation purposes, is broader than the definition of an application profile (and I personally don't have a strong opinion on what the latter should be). The relevant use case for this is <a rel="nofollow" class="external text" href="https://www.w3.org/TR/dcat-ucr/#ID3">ID3</a>. The idea is to resolve the problem that media types are one-dimensional. For instance, in the JSON world, <a rel="nofollow" class="external text" href="http://stateless.co/hal_specification.html">HAL</a> has its own media type, but essentially means that it is a JSON file with a <code>_links</code> element. One the other hand, Activity Streams has a <code>application/activity+json</code> MIME type. Allowing to specify that a response conforms to multiple profiles lets a server say that something is an activity stream that also conforms to HAL. Think of it as an HTML with multiple content boxes (the main content, navigation, sidebars, footer), and we can capture all of the assumptions a client can make about the document. Of course, this also allows for the simple case where the document conforms to just one profile.
+<ul><li>(kcoyle) Ruben, to me application/hal+json is about structure, but not content. The <a rel="nofollow" class="external text" href="https://profilenegotiation.github.io/I-D-Accept--Schema/I-D-accept-schema#rfc.section.2.1">Profile Negotiation document</a> defines profile as: "The choice of the term "profile"was derived from the term "Application Profile" which the Dublin Core community defines as "schemas which consist of data elements drawn from one or more namespaces, combined together by implementors, and optimised for a particular local application". You seem to be using a different definition of profile from this. Am I correct in concluding that? Which brings up the question of the relationship between the profile negotiation document and the DCAT deliverable, if any. <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 19:30, 7 January 2018 (UTC)
+<ul><li>(LarsG) Karen, Ruben, My impression is that you roughly talk about the same thing. As I see it, a profile definition can range from very simple (<code>titleProfile</code> = "MUST have a title element") to extremely complex (mandatory and optional elements, cardinalities, etc.). One of the main points to me is that a profile definition can build on other profile definitions, e. g. <code>documentProfile</code> = <code>titleProfile</code> + mandatory author name, or <code>academicPublicationProfile</code> = <code>titleProfile</code> + <code>abstractProfile</code> where <code>abstractProfile</code> = "MUST have an abstract element". And yes Karen, you ar right that the definition we use in the I-D is different from what Ruben is suggesting, that's why we say that we probably need to re-write the I-D from scratch... Regarding <code>application/hal+json</code>, it's hard to tell from the specification if it's structure or content. The answer might be in the media type registration draft that I couldn't find on IETF. --<a href="/2017/dxwg/wiki/User:Lsvensso/edit?redlink=1" class="new" title="User:Lsvensso (page does not exist)">Lars G. Svensson</a> (<a href="/2017/dxwg/wiki/User_talk:Lsvensso/edit?redlink=1" class="new" title="User talk:Lsvensso (page does not exist)">talk</a>) 11:26, 9 January 2018 (UTC)</li></ul></li></ul></li></ul></li>
+<li>(agbeltran, Alejandra) Am I right to think that media type is simply a MIME type (<a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Media_type">https://en.wikipedia.org/wiki/Media_type</a>) as usual? Or are you trying to provide a different definition? Thanks
+<ul><li>(Ruben) Same thing indeed.</li></ul></li></ul>
+<h2><span class="mw-headline" id="kcoyle">kcoyle</span></h2>
+<h3><span class="mw-headline" id="Term:_profile_2">Term: profile</span></h3>
+<p>Any document or file that describes the structure and content of a set of data. This document may be machine actionable or not (as in a PDF) in relation to programs that are processing the document. Some examples would be:
+</p>
+<ol><li>The current DCAT-AP documents</li>
+<li>The Library of Congress MARC website with over 100 pages of documentation</li>
+<li>If the Guidelines that we develop describe machine-actionable profiles, then profiles that conform to the Guidelines would be also considered profiles by this definition</li>
+<li>(Possibly) an XML schema, a SHACL document</li></ol>
+<p>The purposes of profiles include:
+</p>
+<ol><li>To document the structure of a particular set of data for the primary users of that data</li>
+<li>To facilitate data sharing by giving new or casual users enough information so that they can successfully make their own use of the data</li></ol>
+<h3><span class="mw-headline" id="Term:_application_profile">Term: application profile</span></h3>
+<p>Application profiles (APs) are profiles designed to be used by some definable set of applications. APs should be machine actionable and probably will provide, as a minimum:
+</p>
+<ol><li>the data elements in the data set they describe</li>
+<li>if relevant, some basic rules for cardinality, validation of values</li>
+<li>human-readable labels and instructions that describe the meaning and usage of data in the data set</li></ol>
+<p>Application profiles fulfill some of the same functions as XML schemas, SHACL or ShEx validation documents. They differ from these in that the emphasis is on describing the data set's structure and semantics both for machines and for humans. 
+</p>
+<h3><span class="mw-headline" id="Term:_metadata_application_profile">Term: metadata application profile</span></h3>
+<p>Some data providers consider their data "metadata" and use that term for their application profiles. I think that this is the same as an application profile, but there is no reason to discourage this term if that's what is meaningful to some.
+</p>
+<h3><span class="mw-headline" id="Comments_2">Comments</span></h3>
+<ul><li>Karen, could you please expand a bit on why you think that the current DCAT-AP documents are profiles but not application profiles? I'd definitely say that they are "designed to be used by some definable set of applications" (e. g. the European data portals). --<a href="/2017/dxwg/wiki/User:Lsvensso/edit?redlink=1" class="new" title="User:Lsvensso (page does not exist)">Lars G. Svensson</a> (<a href="/2017/dxwg/wiki/User_talk:Lsvensso/edit?redlink=1" class="new" title="User talk:Lsvensso (page does not exist)">talk</a>) 11:26, 9 January 2018 (UTC)
+<ul><li>Lars, it's mainly that I was making the distinction that APs are machine-actionable. That may not be a distinction that folks agree on, but it seems to me that actionable profiles are signficantly different from documents describing a practice but that must be interpreted by humans and "re-coded" for use. There isn't a way to accurately test documentation, but presumably a machine-actionable profile could be directly coded (or natively coded) in SHACL or ShEx and could be subject to testing. <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 15:25, 9 January 2018 (UTC)
+<ul><li>Karen, OK, so what you call "application profile" would be what I call "schema" (as in XML Schema, JSON Schema and -- considering that RDF Shapes probably would have been named "RDF Schema" if that name hadn't been taken already -- RDF Shapes). I vaguely remember that this distinction has been discussed before (possibly without resolution) and that we also discussed the need for a standardised way to link a human-readable profile description page to a machine-processable schema. --<a href="/2017/dxwg/wiki/User:Lsvensso/edit?redlink=1" class="new" title="User:Lsvensso (page does not exist)">Lars G. Svensson</a> (<a href="/2017/dxwg/wiki/User_talk:Lsvensso/edit?redlink=1" class="new" title="User talk:Lsvensso (page does not exist)">talk</a>) 15:38, 9 January 2018 (UTC)</li></ul></li></ul></li>
+<li>here</li></ul>
+<h2><span class="mw-headline" id="Rob_Atkinson">Rob Atkinson</span></h2>
+<h3><span class="mw-headline" id="Term:_profile_3">Term: profile</span></h3>
+<p>Strictly ISO interpretation of a "conforming subset" of one or more base specifications. (This is the way OGC uses the term profile, though there is some confusion typically about "extensions" - however in reality most extensions are really type-narrowing of allowable property ranges which has more model, but is still a valid subset.  Note that also a specification may be considered a "null profile" - with an empty set of additional constraints, which means we only ever need to worry about profile conformance - and not create extra detail about specification conformance and confusion for the user about what is a profile and what is a specification. (This is important because some things currently described as specifications are actually conformant profiles of other specifications).
+</p><p>Consistent with Rubens definition a "set of structural constraints and/or semantic interpretations", a profile will consist of a set of "profile implementation specifications", which may include documents and executable fragments specifying some aspects of a profile.  
+</p>
+<h3><span class="mw-headline" id="Term:_application_profile_2">Term: application profile</span></h3>
+<p>synonomous with "profile" 
+</p>
+<h3><span class="mw-headline" id="Term:_profile_implementation_specification">Term: profile implementation specification</span></h3>
+<p>A document that specifies some aspect of implementation of a profile. This may be a human readable document describing the entire profile, or a machine readable document describing a specific aspect that can be tested with a specific platform. A profile specification will thus require references to these resources and metadata describing their nature and purpose.
+</p>
+<h3><span class="mw-headline" id="Comments_3">Comments</span></h3>
+<ul><li>You truncated the ISO definition, which says: "... of one or more base specifications  <b>used to provide specific functions</b>." Could you address whether that would change your definition? <a href="/2017/dxwg/wiki/User:Kcoyle" title="User:Kcoyle">Karen Coyle</a> (<a href="/2017/dxwg/wiki/User_talk:Kcoyle/edit?redlink=1" class="new" title="User talk:Kcoyle (page does not exist)">talk</a>) 16:36, 5 January 2018 (UTC)</li>
+<li>To me it looks as if your term "profile implementation specification" is the same thing as Ruben's "profile definition". Is that correct? If so we probably only have to agree on which term to use. --<a href="/2017/dxwg/wiki/User:Lsvensso/edit?redlink=1" class="new" title="User:Lsvensso (page does not exist)">Lars G. Svensson</a> (<a href="/2017/dxwg/wiki/User_talk:Lsvensso/edit?redlink=1" class="new" title="User talk:Lsvensso (page does not exist)">talk</a>) 11:26, 9 January 2018 (UTC)</li></ul>
+<h1><span class="mw-headline" id="Definitions_background_information">Definitions background information</span></h1>
+<h2><span id="ISO.2FIEC_TR_10000-1"></span><span class="mw-headline" id="ISO/IEC_TR_10000-1">ISO/IEC TR 10000-1</span></h2>
+<p>"3.1.4 Profile: A set of one or more base standards
+and/or ISPs,[International Standardized Profile] and, where applicable, the identification of
+chosen classes, conforming subsets, options and
+parameters of those base standards, or ISPs necessary
+to accomplish a particular function."
+</p><p>6. Concept of a Profile
+</p><p>"The concept of a profile, which fulfils the purposes
+defined in clause 5, is considered first in an abstract
+sense, with particular emphasis on the significance of
+the claim of conformance to a profile. This concept of an
+individual profile is then extended to include defining its
+relationship to other profiles, i.e. the concept of a
+taxonomy of profiles, and its place within it. Finally,
+since a profile has to have a concrete existence in order
+for it to be used effectively, these conceptual aspects
+are related to a formal documentation scheme."
+</p><p>...
+</p><p>"Profiles are related to Base Standards, to Registration
+Mechanisms, and to Conformance Tests of the IT
+systems which implement them."
+</p>
+<h2><span id="ISO.2FTC_46.2FSC11N800R1:_Where_to_start_on_creating_a_metadata_schema"></span><span class="mw-headline" id="ISO/TC_46/SC11N800R1:_Where_to_start_on_creating_a_metadata_schema">ISO/TC 46/SC11N800R1: <a rel="nofollow" class="external text" href="https://committee.iso.org/files/live/sites/tc46sc11/files/documents/N800R1%20Where%20to%20start-advice%20on%20creating%20a%20metadata%20schema.pdf">Where to start on creating a metadata schema</a></span></h2>
+<ul><li>Metadata standard. A high level document which includes principles and implementation issues</li>
+<li>Metadata schema. This document uses “schema” in same way as ISO 23081. “A schema is a logical plan showing the relationships between metadata elements, normally through establishing rules for the use and management of metadata specifically as regards the semantics, the syntax and the optionality (obligation level) of values.” Also referred to as an element set.</li>
+<li>Application profile. “ An application profile delineates the use of me tadata elements declared in an element set. While an element set establishes concepts, as expressed via metadata elements, and focuses on the semantics or meanings of those elements, an application profile goes further and adds business rules and guidelines on the use of the elements. It identifies element obligations and constraints, and provides comments and examples to assist in the understanding of the elements. Application profiles may include elements integrated from one or more element sets thus allowing a given application to meet its functional requirements.”</li>
+<li>Encoding scheme “Controlled list of all the ac ceptable values in natural language and/or as a syntax-encoded text st ring designed for machine processing.” Includes rules/formats for entering data such as dates, names of people, etc.</li></ul>
+<h2><span class="mw-headline" id="Dublin_Core">Dublin Core</span></h2>
+<p>The term profile is widely used to refer to a document that describes how standards or specifications are deployed to support the requirements of a particular application, function, community, or context. In the metadata community, the term _application profile_has been applied to describe the tailoring of standards for specific applications.
+</p><p>The Singapore Framework for Dublin Core Application Profiles is a framework for designing metadata applications for maximum interoperability and for documenting such applications for maximum reusability. The framework defines a set of descriptive components that are necessary or useful for documenting an Application Profile and describes how how these documentary standards relate to standard domain models and Semantic Web foundation standards. The framework forms a basis for reviewing Application Profiles for documentary completeness and for conformance with Web-architectural principles.
+</p><p><a rel="nofollow" class="external free" href="http://dublincore.org/documents/singapore-framework/">http://dublincore.org/documents/singapore-framework/</a>
+</p>
+<h2><span class="mw-headline" id="DCAT-AP">DCAT-AP</span></h2>
+<p>An Application Profile is a specification that re-uses terms from one or more base standards, adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used. 
+</p><p>Source: the DCAT-AP v1.1. document available from 
+<a rel="nofollow" class="external free" href="https://joinup.ec.europa.eu/catalogue/distribution/dcat-ap-version-11">https://joinup.ec.europa.eu/catalogue/distribution/dcat-ap-version-11</a>
+</p>
+<h2><span class="mw-headline" id="IMS_Global">IMS Global</span></h2>
+<p><b>Application Profile</b>	A description of the use of a single technical specification to meet the needs of a particular community.
+</p><p><br />
+2.1 What is Application Profiling?
+Within the IMS context, Application Profiling is the tailoring of specification (by amending the binding of the specification) to suit the needs for its application to a particular community.1 For the purposes of this discussion, the source schema is the original schema being profiled, whilst the derived schema is the output of the profiling activity. This process may include one or more of the following actions to generate a derived schema:
+</p><p>Selection of a core sub-set of elements and fields from the source schema (expressed perhaps as a mandated sub-set which must be supported as a minimum);
+The addition of elements and/or fields (normally termed extensions) in a prescribed manner, to the source schema, thus generating the derived schema;
+Substitution of a vocabulary with a new, or extended vocabulary to reflect terms in common usage within the target community, e.g., a bounded set of competencies or a curriculum model; A comprehensive description of the semantics and common usage of the schema and constituent terms as they are to be applied across the community.
+Thus, Application Profiling can be summarized as:
+</p><p>Localization - the specialization of one or more conceptual data schemas (source schemas) to the precise needs of a community, generating a derived schema;
+Representation - mapping the localized conceptual schema(s) to a generic binding for interchange;
+Transaction - define how the abstract interface and service model, i.e., the APIs, and implied/stated transactions are to be realized utilizing a concrete platform technology.
+Some key reasons for developing an Application Profile include:
+</p><p>To meet technical and other requirements and preferences specific to a project, community, domain, or region;
+To address ambiguity and generality in a specification or standard;
+To foster semantic interoperability, e.g., through the use of commonly understood vocabularies;
+To facilitate testing for conformance and successful interoperability.
+</p><p><a rel="nofollow" class="external free" href="https://www.imsglobal.org/ap/apv1p0/imsap_oviewv1p0.html">https://www.imsglobal.org/ap/apv1p0/imsap_oviewv1p0.html</a>
+</p>
+<h2><span id="ISO.2FIEC_10000-1"></span><span class="mw-headline" id="ISO/IEC_10000-1">ISO/IEC 10000-1</span></h2>
+<p><b><a rel="nofollow" class="external text" href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c030726_ISO_IEC_TR_10000-1_1998(E).zip">ISO/IEC 10000-1:1998 Information technology -- Framework and taxonomy of International Standardized Profiles -- Part 1: General principles and documentation framework</a></b> provides an extensive discussion of this issue, framed as a general problem in standardization. From the introduction: 
+</p><p>"Profiles, which define conforming subsets or combinations of base standards used to provide specific functions. Profiles identify the use of particular options available in the base standards, and provide a basis for the development of uniform, internationally recognized, conformance tests."
+</p><p>Here are the definitions from Clause 3:
+</p><p><i>3 Definitions</i>
+</p><p><i>For the purposes of this part of ISO/IEC TR 10000, the following definitions apply.</i>
+</p><p><i>3.1 Terms defined in this part of ISO/IEC TR 10000</i>
+</p><p><i>3.1.1 Base Standard: An approved International Standard or ITU-T Recommendation.</i>
+</p><p><i>3.1.2 International Standardized Profile: An internationally agreed-to, harmonized document which describes one or more profiles.</i>
+</p><p><i>3.1.3 IT System: A set of IT resources providing services at one or more interfaces.</i>
+</p><p><i>3.1.4 Profile: A set of one or more base standards and/or ISPs, and, where applicable, the identification of chosen classes, conforming subsets, options and parameters of those base standards, or ISPs necessary to accomplish a particular function.</i>
+<i>NOTE - ISPs may contain normative references to specifications other than International Standards; see document JTC 1 N 4047: The Normative Referencing of Specifications other than International Standards in JTC 1 International Standardized Profiles - Guidelines for ISP Submitters .</i>
+</p><p><i>3.1.5 Taxonomy: A classification scheme for referencing profiles or sets of profiles unambiguously.</i>
+</p><p><i>3.2 Terms defined in ISO/IEC TR 14252</i>
+<i>The following terms are defined in ISO/IEC TR 14252:1996, Information technology — Guide to the POSIX Open System Environment (OSE) , and are included here for convenience.</i>
+</p><p><i>3.2.1 Interoperability: The ability of two or more IT systems to exchange information and to make mutual use of the information that has been exchanged.</i>
+</p><p><i>3.2.2 Open System Environment: The comprehensive set of interfaces, services, and supporting formats, plus user aspects, for interoperability and/or portability of applications, data, or people, as specified by information technology standards and profiles.</i>
+</p><p><i>3.3 Conformance Terminology</i>
+<i>This part of ISO/IEC TR 10000 uses the following term related to conformance:</i>
+</p><p><i>3.3.1 Implementation Conformance Statement [ICS]: A statement made by the supplier of an implementation or IT system claimed to conform to one or more specifications, stating which capabilities have been implemented, specifically including the relevant optional capabilities and limits.</i>
+<i>NOTE - The ICS can take several forms (e.g. in OSI it can be a profile ICS, protocol ICS, information object ICS or profile specific ICS, as defined in ITU-T Rec. X.290 | ISO/IEC 9646-1, and in POSIX it is a POSIX Conformance Document as defined in ISO/IEC 13210:1994).</i>
+</p><p>The link above is to a free download.
+</p>
+<h2><span class="mw-headline" id="OHIOLINK_Digital_Media_Center">OHIOLINK Digital Media Center</span></h2>
+<p>(goals)
+</p>
+<ol><li>improve retrieval accuracy and resource discovery</li>
+<li>. facilitate multi-institutional interoperability and quality control</li>
+<li>. comply with the Open Archives Initiative Protocol for Metadata Harvesting</li>
+<li>enable collection migration, import &amp; export between the DMC and other systems as necessary.</li></ol>
+<p><a rel="nofollow" class="external free" href="https://silver.ohiolink.edu/dms/dmccontribution/DMC_AP.pdf">https://silver.ohiolink.edu/dms/dmccontribution/DMC_AP.pdf</a>
+</p>
+<h2><span class="mw-headline" id="Open_Geospatial_Consortium">Open Geospatial Consortium</span></h2>
+<p>OGC draws on a definition of profiles from ISO 19106 
+</p><p>The ISO definition is&#160;:
+</p><p><b>profile</b>
+Set of one or more base standards and - where applicable - the identification of chosen clauses, classes, subsets, options and parameters of those base standards that are necessary for accomplishing a particular function [ISO 19101, ISO 19106]
+</p><p>Internally there is some debate about the exact interpretation of restriction and extension - but the ISO definition implies profiles are a declaration of functional substitutability.
+</p><p>There are a range of profiles described here:
+<a rel="nofollow" class="external free" href="http://www.opengeospatial.org/docs/profile">http://www.opengeospatial.org/docs/profile</a>
+</p><p>but there are more - (RobA will explore and see if the list can be updated.)
+</p><p><br />
+<a rel="nofollow" class="external free" href="http://portal.opengeospatial.org/files/?artifact_id=16936">http://portal.opengeospatial.org/files/?artifact_id=16936</a>
+</p>
+<h2><span class="mw-headline" id="CEN_Workshop">CEN Workshop</span></h2>
+<p>In practice, application profiles are created for a wide range of purposes: to document the semantics and constraints used for a set of metadata records (“instance metadata”); to help communities of implementers harmonize metadata practice among themselves; to identify emerging semantics as possible candidates for formal standardization; as guides for semantic crosswalks and format conversions; as specifications for formal encoding structures such as Document Type Definitions (DTDs); for interpreting or presenting legacy or proprietary metadata in terms of widely-understood standards; or for documenting the rules and criteria according to which a set of metadata was created. Application profiles often represent “work in progress”, providing foci for ongoing efforts to incrementally improve and clarify a body of shared metadata semantics within a particular user community.
+</p><p><a rel="nofollow" class="external free" href="ftp://ftp.cenorm.be/PUBLIC/CWAs/e-Europe/MMI-DC/cwa14855-00-2003-Nov.pdf">ftp://ftp.cenorm.be/PUBLIC/CWAs/e-Europe/MMI-DC/cwa14855-00-2003-Nov.pdf</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="ARIADNE">ARIADNE</span></h2>
+<p>Profile definition: "We define application profiles as schemas which consist of data elements drawn from one or more namespaces, combined together by implementors, and optimised for a particular local application."
+</p><p><a rel="nofollow" class="external free" href="http://www.ariadne.ac.uk/Issue25/App-Profiles/">http://www.ariadne.ac.uk/Issue25/App-Profiles/</a>
+</p>
+<h2><span class="mw-headline" id="ODRL">ODRL</span></h2>
+<p>3. ODRL Profiles
+3.1 ODRL Profile Purpose
+</p><p>The ODRL Information Model serves as the core framework and vocabulary to express policies. The ODRL Core Vocabulary [odrl-vocab] articulates this set of vocabulary terms. An ODRL policy may be expressed using the ODRL Core Vocabulary, and this represents the minimally supported policy expression.
+</p><p>An ODRL Profile MUST be defined to provide vocabulary terms (as scoped in the ODRL Profile Mechanism section) that can be used in ODRL policies requiring additional semantics. An ODRL Profile explicitly serves community needs by specifying the vocabulary terms they require to be supported in ODRL policy expressions. These terms may be defined explicitly or may be adopted from the ODRL Common Vocabulary.
+</p><p>The ODRL Common Vocabulary [odrl-vocab] provides a generic range of common actions for Permissions, Prohibition, and Duties as well as Policy subclasses, Constraint left operands and operators, Asset relations, and Party functions.
+</p><p><a rel="nofollow" class="external free" href="https://www.w3.org/TR/odrl-model/#profilerelations">https://www.w3.org/TR/odrl-model/#profilerelations</a>, and Party functions.
+</p>
+<h1><span id="Examples_of_Application_Profiles.2C_Metadata_Application_Profiles"></span><span class="mw-headline" id="Examples_of_Application_Profiles,_Metadata_Application_Profiles">Examples of Application Profiles, Metadata Application Profiles</span></h1>
+<ul><li><a rel="nofollow" class="external text" href="https://dp.la/info/wp-content/uploads/2015/03/MAPv4.pdf">Digital Public Library of America</a></li>
+<li><a rel="nofollow" class="external text" href="https://mwdl.org/docs/MWDL_DC_Profile_Version_2.0.pdf">Mountain West Digital Library</a></li>
+<li><a rel="nofollow" class="external text" href="http://loc.gov/aba/pcc/bibco/bsr-maps.html">BIBCO Standard Record Metadata Application Profiles</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ukoln.ac.uk/repositories/digirep/index/Scholarly_Works_Application_Profile">Scholarly Works Application Profile (UKOLN)</a></li>
+<li><a rel="nofollow" class="external text" href="https://silver.ohiolink.edu/dms/dmccontribution/DMC_AP.pdf">OhioLink Digital Media Center Metadata Application Profile</a></li>
+<li><a rel="nofollow" class="external text" href="https://sites.google.com/site/digitalnewspaperspractices/technical-specifications/metadata-specfication">Digital Newspapers Metadata Application Profile</a></li>
+<li><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1hdwsethxh0esSfwlz9ofW6KHt9Ix39JQ2OJW1PUt_h4/">Gooru Learning Catalog Metadata</a></li>
+<li><a rel="nofollow" class="external text" href="https://thecblor.unt.edu/files/THECB_LOR_MetadataApplicationProfile_Final.pdf">THECB Learning Object Repository Metadata Application Profile</a></li>
+<li><a rel="nofollow" class="external text" href="ftp://ftp.cenorm.be/PUBLIC/CWAs/e-Europe/MMI-DC/cwa14855-00-2003-Nov.pdf">CEN Dublin Core Application Profile (ICS 35.100.05; 35.240.60)</a></li>
+<li><a rel="nofollow" class="external text" href="https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/">DLF AIG Metadata Application Profile Clearinghouse Project</a></li></ul>
+<h1><span class="mw-headline" id="DCAT_Application_Profiles">DCAT Application Profiles</span></h1>
+<ul><li><a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/asset/dcat_application_profile/description">DCAT-AP</a>; <a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/node/146653">DCAT-AP v1.1</a></li>
+<li><a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/node/154143/">GeoDCAT-AP</a>; <a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/node/139283">GeoDCAT-AP working drafts</a></li>
+<li><a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/node/147940/">StatDCAT-AP</a>; <a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/asset/stat_dcat_application_profile/asset_release/statdcat-ap-v100">StatDCAT-AP v1.0.0</a></li>
+<li><a rel="nofollow" class="external text" href="http://difi.github.io/dcat-ap-no/">DCAT-AP-NO</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dati.gov.it/content/profilo-nazionale-dei-metadati-dcat-ap-it-v10">DCAT-AP-IT</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.govdata.de/standardisierung">DCAT-AP.de</a></li>
+<li><a rel="nofollow" class="external text" href="https://oasis.team/storage/app/media/O1.2%20TransportDCAT-AP%20and%20Controlled%20Vocs.pdf">European TransportDCAT-AP</a></li>
+<li><a rel="nofollow" class="external text" href="https://joinup.ec.europa.eu/document/analysis-dcat-ap-extensions">Analysis of the DCAT-AP Extensions</a></li>
+<li><a rel="nofollow" class="external text" href="http://dcat.be/">DCAT-BE</a>: Belgium - Fedict, OpenKnowledgeBE</li>
+<li><a rel="nofollow" class="external text" href="http://dcat-ap.de/def/">DCAT-AP.de</a> Germany - Finanzbehörde - Geschäfts- und Koordinierungsstelle GovData</li>
+<li><a rel="nofollow" class="external text" href="https://data.gov.ie/technical-framework">Open Data Technical Framework</a> Ireland - Open Data Unit - Dept of Public Expenditure &amp; Reform</li>
+<li><a rel="nofollow" class="external text" href="https://linee-guida-cataloghi-dati-profilo-dcat-ap-it.readthedocs.io/it/latest/">DCAT-AP-IT</a>: Italy - AgID - Agenzia per l'Italia Digitale</li>
+<li><a rel="nofollow" class="external text" href="http://dcat-nl.info/nl/latest/">DCAT-AP-NL</a>: The Netherlands - Kennis- en Exploitatiecentrum Officiële Overheidspublicaties (KOOP)</li>
+<li><a rel="nofollow" class="external text" href="https://doc.difi.no/dcat-ap-no/">DCAT-AP-NO</a>: Norway - Agency for Public Management and eGovernment (Difi)</li>
+<li><a rel="nofollow" class="external text" href="http://datos.gob.es/es/documentacion/guia-de-aplicacion-de-la-norma-tecnica-de-interoperabilidad-de-reutilizacion-de">DCAT-AP-ES</a> Spain - APORTA INITIATIVE</li>
+<li><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/17-vEfZXlu9kykcmjXZo1_Z8QKkr7-Prgwd6YUKLRrjk/edit">Swedish DCAT-AP</a>  Sweden - VINNOVA</li>
+<li><a rel="nofollow" class="external text" href="https://handbook.opendata.swiss/en/library/ch-dcat-ap">Swiss DCAT-AP</a>Switzerland - Open Government Data Switzerland</li></ul>
+<h4><span class="mw-headline" id="Analysis_of_DCAT_Application_Profiles">Analysis of DCAT Application Profiles</span></h4>
+<p>See spreadsheet [<a rel="nofollow" class="external autonumber" href="https://docs.google.com/spreadsheets/d/12t6a9seTmCi47p6k8HH1Mz4k2CedhZSZ9sbUpaRrQO8/edit#gid=0">[3]</a>]
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Reference_documentation">Reference documentation</span></h2>
+<p>For background information about APs in Dublin Core, see <a rel="nofollow" class="external text" href="https://lists.w3.org/Archives/Public/public-dxwg-wg/2017Jun/0056.html">Karen's mail</a>
+</p>
+<ul><li>Heery, R. and Patel, M., 2000. Application profiles: mixing and matching metadata schemas. Ariadne, 25. doi:<a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.462.1270&amp;rep=rep1&amp;type=pdf">10.1.1.462.1270</a></li>
+<li>Mikael Nilsson. <a rel="nofollow" class="external text" href="http://dublincore.org/documents/dc-dsp/"><i>Description Set Profiles: A constraint language for Dublin Core Application Profiles</i></a>. 2008-03-31</li>
+<li>Mikael Nilsson, Thomas Baker, Pete Johnston. <a rel="nofollow" class="external text" href="http://dublincore.org/documents/singapore-framework/"><i>The Singapore Framework for Dublin Core Application Profiles</i></a>. 2008-01-14</li>
+<li>Karen Coyle, Thomas Baker. <a rel="nofollow" class="external text" href="http://dublincore.org/documents/profile-guidelines/"><i>Guidelines for Dublin Core Application Profiles</i></a>. 2009-05-18</li>
+<li>[<a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-dcat/">VOCAB-DCAT</a>], <a rel="nofollow" class="external text" href="https://www.w3.org/TR/vocab-dcat/#conformance">Section 3 <i>Conformance</i></a>. 2014-01-16</li>
+<li>DCMI Task Group on RDF Application Profiles. <a rel="nofollow" class="external text" href="http://wiki.dublincore.org/index.php/RDF_Application_Profiles/Requirements"><i>RDF Application Profiles/Requirements</i></a>. 2015-08-11</li>
+<li>Karen Coyle. <i>Application Profiles: An Overview</i>. In: Developing Metadata Application Profiles, 2017 doi:<a rel="nofollow" class="external text" href="https://doi.org/10.4018/978-1-5225-2221-8.ch001">10.4018/978-1-5225-2221-8.ch001</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20240616232555
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.020 seconds
+Real time usage: 0.046 seconds
+Preprocessor visited node count: 185/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 123/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key dxwg-dxwg_:pcache:idhash:76-0!canonical and timestamp 20240616232555 and revision id 2955. Rendering was triggered because: page-view
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://www.w3.org/2017/dxwg/wiki/index.php?title=ProfileContext&amp;oldid=2955">https://www.w3.org/2017/dxwg/wiki/index.php?title=ProfileContext&amp;oldid=2955</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 30 July 2019, at 23:41.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="/2017/dxwg/wiki/Dataset_Exchange_Working_Group:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/2017/dxwg/wiki/Dataset_Exchange_Working_Group:About">About Dataset Exchange Working Group</a></li>
+	<li id="footer-places-disclaimers"><a href="/2017/dxwg/wiki/Dataset_Exchange_Working_Group:General_disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/2017/dxwg/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/2017/dxwg/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /2017/dxwg/wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a><a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAABNCAYAAADNYApnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAACbYAAAm2AHNRPEFAAAAB3RJTUUH5QcCDx837M/YpgAAN+hJREFUeNrtnXl4VdW5/z9r7zNkOCdzyBwSwhgIg8wQRhEBpQ4V67WoVSutFu/V/m7VUsSpqFhbtNcrtVoHxKFqURHpVZQhAmESAkEIEUJCEsh4CDlJzrj3/v1xONuTkSQEatus59n6cLL23mut/b7rnb9L0EbLzc1FCCE0TUvRNO1q4HIhxDghRJIQQtDbelsnm6Zp/9Jz0nytXNO0vcAXQoj1iqKclCRJy87ObnVvM+bZs2cPXq8XIUQfVVVvkSTpFrPZPMxiscihoaEYDAYMBgO9PNfLEL1r5mterxev10tDQwN2u11xuVzfqKq6WgjxBlADEMh4Oufs3LkTr9eLLMvjgGeCgoKmxMXFSVFRUZhMpl4m62W43naedXS5XNhsNioqKhSHw7EFWKJp2m4hBFOmTPmO4Xbs2OG/6UpJkl6Ijo7un5ycTHBwcO9H6SX+C27/bpu1w+GgpKSE2traY5qmLRZCfKaqKtOmTUNs377d32+8EGJNXFxc/9TUVGRZ7iXAXsLs/e7d/I4ej4eSkhIqKiqOqaq6UAixS9M0DOcmFws8GR0d3T8lJQVZlr8Xk+4lwF61759x/TVNw2Aw0LdvX9xud//q6uongZuAaoOmaWia9pOQkJAZKSkpGAwGNE275MTue53oNoF19h7/vL6bn4am9RJ17wbQPr10hxcCma6hoWFGU1PTTyRJ+p1BVdV0SZJuiYuLE8HBwfpiXopFFUKgaRoVNiffltmpqHUSYTXRP8lCalwIBlnq0XFIQuBweyk61UjRqUYcLi8pfUIYkGIlOswEGmi9RHlRCPDfcTPSNI2QkBDi4+PFiRMnFqqq+oFB07R5JpNpSFRU1EUlksBnC+H7cKVVjby1sYRPc09zsrIJl0fFIAv6RJqZMjyW2+emM6J/xAUTsBACRdXYlFfF6s+K2Vtgo67Bg6pqBAfJ9E+ycP3UZH40M4VIqwlV1XqJsnfj6bH5x8TEUF5enulwOObJt91222+ioqIy4+LidIlzsXZFPxFKkiD/+Fn+84/7+dvWcmrOulHOEbmqatQ3ejl4vI6tedUk9wlhQLK12TO6enkVlVc/PcFvXs7n4PE6HG4FTdPQAI9X5VSNg5wDNRw/1cC4IVGEhRrRtO6/r5coezeAQNqXZRm73S7Z7Xa3QdO0saGhoUiSdElsN0kSlFY18cCfDrCnwIYstSZSIUBCcLKyiSUv5xMVZmLS0GidKbuqRv5taxlPv1VAo9OLQZZa9THIvo3m0x2nMcoSv//FCKwhxn9bRuhVh3ua5iUsFgvAOAOQ4HeUXKqFfmvjSfYePdMmswU2WRaUVzfx3PuFDEsfgyXYQFeGKAk4WdXE/6w9RoPDiyyLDj+GJGls2HmaWaP7cNPlqShar5OgVxr2zJoaDAaABIMQQpz7x0UfnCQJTtU4WL/jlD6Q8zVZEuw9auPAsTomZHZNysmSYPO+So6XNyBJnVsYl0dhfe5pfjA5EbNJ7vQ4ewmwt3W0budSIoUh0CvZ3QXt7K4oCZ+aWF7jQOoCDTc0eXn142MUHK1BVbsyLli/twpF1ZA7+UJJCA4X11NV5yI1LoSuLkkvUfYyf1v8oTOef+AXaxdvvjA+b2FXvIBCCFRVo+hUA7FBXR/jmXo3gq4xaYPDyxm7m75xIaj/xAz0r8z8/4xaRzOGuxQ2nKZpCPxB7q6sLsSEm4mJDKIrfhMBBJmauhRb0zQIMknn7EXtn5poe1Xh78/G46clQ0uiupiDUzWIjw4iOsxMaVVTpxhP0zSCTTK3XZ3BlOHRKEoXbDhZYAwrIa+koNMeWFXTyEi00CfSjKr9+xBtryp8CSVcoJS7mASmaZDaJ4RZo/vwlw0nkDqh7CmqxpC+ViYOiybcYuqal1ISzBkfzxuflXCqxnFeBtc0n6135bg4rCGGLjF3T0ukfycGuBDfQWeeE2hD/aM0jWYSrrsqSHcmYJAFt1zZl8151Zw43dihM0NVNcJCjPz8mgyiwkxdjsOpikb/ZAu3XpnK794pRO1gQ9E0DVWFicOi+MHkxAvONulK8yeLu91uPB4PQgiCgoL031VV7bXH2tqMFQW3262voclkam3CCIGi+BIdjEYjqqr+w7SWZhLuUtkrfom17NYh/GrVQWrq3brHMnAnUs4x2//70UDmjo/vFAO0NX5JCO6cl07VGRerPyvB49WQpNa7nqpB/6RQHv1JJnGR5m4F2bvaJEnC6XSybds2Nm7cyIkTJ6ipqcFkMpGcnMyAAQOYPXs2w4YN+4cllX9fpaEsy+Tl5bFkyRKampq47rrruO+++1AD3NiSJHH69Gkee+wxGhsbefjhhxk4cGCzPv8QG+5SqzFCCOLCDEwdFE5esZ2Keg8Ot4Ki+Haf0CCZoWlh3HV1P+ZOiEeWOpdy1hYxqpqGJcTAkoWD6ZcYypqNJyk61YjLraKhYZAlgk0SyZFmJgwIIzxI1p0sF9NzK8syJ0+eZNmyZXz88cfY7fY2+z7//PMsWLCAJ554AqvV2muPBXybM2fOsG3bNpxOJ8OGDWs1b0mS2Lx5M6+99hqqqnLZZZcxaNCgS64O++lIVdXmNtyl2D0FUFfvZse+KqKCZa4cEc2IYbHYGr2UVTuIspoYlh7GyAERRFqMuleyu2PzhxVCggzcOS+dqyYmsK+wjoKTdpqcXvolWpBVhUNHalFVjZyvK4iPDcFsung1gUII6urqeOCBB/jggw98qrbBQFRUFMHBwSiKwtmzZ2loaKC6ulrHmvlnZaaLMeb2nhn4u6qqDBgwgPT0dJxOJyNGjOhxTa6zdKlLuEDxeik+pgbsPVRNRY3PXZ+ZEcH87CSMBglV03T1UlG1HlXr/MnKcZFmrpoQz1UT4tE0kCRfYL2+zklxeQPHT9o5fOwMozKjL6oquXHjRtatWwdAYmIiDz74INOnTyc0NBRFUaioqGDHjh28/fbbXHXVVURGRrYiFkmSkCSplbPFb7O0JAx/Fb/fLvTf3969/ns683x//5bPbHlPoCrf1pgCfwtknEA7VpIkZFlu1s+fPuWnZ0VRUFWV0aNH88knn+D1ehk0aFCbNpx/3G3N86LacBdfDYCyikb2HqpB0yDMYmLCiFgkCbyKb6HUzjC/EOdkpWge1NO0cyytQbs7IKgBkTlFheAgmQkj+3Cqqgm3RyU3r4r0ZCvhVlOPr4vfiN+yZYtu8N91110sXrxYJyohBBkZGUyaNIkf//jHmEwmWjq3JEnCZrOxc+dOiouL8Xg8mM1mMjMzGTNmDCEhISiKomcBVVRUsHbtWhwOB1lZWcyaNYtDhw6xa9cuGhoaMBgMpKenk52dTVhYmA6Ks2/fPvLz83G5XBiNRjIyMpg4cSIWi6UZ8UqSRFNTEwUFBRw4cIDGxkZUVcVoNJKens7EiRMJDw/XGUIIgcPh4G9/+xuVlZWkpKRw/fXXU1VVxbZt26iurgYgLCyMSZMmkZGRoc+lqKiIDRs2UFBQoEv+AwcO8Oyzz6KqKlFRUdxwww1YrVby8vLYsmULmqZhs9mYNGlSszFIkkR1dTW5ubmUlZXh8XgwmUwMHDiQsWPHYrVae8Tmu+Q2nBACr1dl54Eq7I0ehIDRQ6NJigtts+K6+S6kAQINAUJCKA5w1yDc1eCpB80LkhGMkWimGDBFo0lm0FSEpp430q5pMCg9nCEZERwosHG6uol9h2uZMT7hoqjZXq+XqqoqnVD79++vM2LLEqn4+Hh9lw9cl88//5ynn36a3bt343K59P5hYWHMmTOHZcuWMWjQIBRFQZZlSktLeeSRRzh79iwLFiwgLy+PVatWUV5ert8bFBTEnDlzeOqppzCbzTz66KN88sknnDlzRu8THBzMVVddxZNPPklaWpo+rm3btrFy5Uq2b9+OzWZrNofg4GCmTp3K448/zqhRo3RGbWho4A9/+APffPMN48aNo6mpiT/+8Y8UFBTo0kUIQXp6Og888AC33HILZrOZw4cP8+CDD+LxePR37Ny5k507dwIwYMAArrjiCiIiIsjNzeVXv/oVAEuWLGHSpEnNvsNHH33Ec889x4EDB/QNECA0NJTs7GweffRRRo8efUHSLpCGLpkNJwQUltRTUHTWR0gxIYweGoPws1N779Y0NCEBAuE4iVTzBVLNJkTDEfDUger0cYwQIIeCMQI1bBRa7CzU6Bk+BkTlfAE8o0Fiwog+FJXasTd62He4hiEZ4STE9Hx6l8FgoE+fPjojvfPOO0yYMIG0tLRm6lVbm6AQgg0bNnD33Xdz+vRpAKxWK1arFZvNRn19Pe+99x5FRUW8+uqrDB48uJUG8+WXX7J+/XocDkezZzudTj766CPq6uoQQrB58+ZWY3c4HHzwwQd4PB5eeeUVwsLC8Hg8/OlPf9JVZEmSMJvNeqjD4XDw2WefYbPZeOedd0hJSWn13IKCAh588EHq6upaSYaioiIefPBBXXIFBweTkpKC3W7XJaHFYiEyMhJVVUlISOgULs/LL7/MsmXLqK+v1z2fBoMBt9tNY2Mjn332GWVlZbzxxhsMHz78giWd7jS52BJOCGh0KOzMq8LhUjAaBBNHxhJhNZ2fmIUEbhvy6feRyt5ENBQgNOWc1GpRAqA4wF2N3FCIVvERUvhlKCm3o8ZdBVJIgMLa1mJoJPYJZtSQaL76uoK6eje7D1Yzb1pKh7HC7qyZLMtMnz6d119/HZfLxYYNGygtLWXu3LnMmDGDQYMGERcXh8lk0u0XPyGfOHGCZcuWcfr0aYKCgli4cCE333wzCQkJFBYW8tJLL/H3v/+dvXv3snLlSv7nf/4Hs9nc7P02mw2z2cyNN96og5R+9dVXfPTRR3g8HrZs2QKA2Wzmmmuu0fvk5OTw0Ucf4fV6+eyzz8jJyeEHP/gBZrOZ6667jpycHKZPn86sWbNISUlBURT27dvHqlWrKCsrY8+ePbz77rs88MADrdatvr4eIQTZ2dlce+21WCwWqqqqeOONNzh+/Dhnz57lz3/+M1dccQUTJkzgiy++YNu2bdx11124XC7mz5/PE088oaux0dHR7X4bSZLIycnhySefpL6+HqPRyJVXXskNN9xAfHw8x48f5/XXX2fPnj0cOXKETZs2MXz48G5/91aB70thwx0qtFFyqgGA9GQrQzIiUDt8r099lOxHkL99zCfVNK+PySRDBz7Qc7dqXkRdLqL+AKotB2/GQ2hBSaC1rxpIQjBmWDRHi89SWeMgv/AMQ/pFMCAtrN04YHe0AkVRmD17Nrfffjsvv/wyiqKQn59Pfn4+L7zwAomJiUyYMIH58+czZcoUYmJidCfHJ598wsGDBwG47bbb+N3vfkdISIjukRs1ahS33347X375JevWreOOO+5g8uTJrcawaNEifvvb3xIaGooQgh//+McoisLatWv1Pj/96U9Zvnw5FosFIQT/8R//QVNTExs2bMDpdJKTk8P8+fNRVZXZs2fz0UcfMWTIEEJCQvRnzJ49m9jYWBYvXozb7WbLli3ce++9BAUFtRrTjBkz+Mtf/tJMAo4ePZpbb72V2tpaDh48yIkTJxg2bBhhYWEcO3ZMX3+r1Urfvn31zak9DQHA4/GwevVqXa2/5ZZbWLFihe6YmjVrFjNmzGDJkiWMGzeOhQsXXlDyQSCPSS0lXE9fArDVudh1sBpF0QgJkpk4sg9BZll3ELQJUyBkpLpdGPIXIVd/fs4Wkzuf+SwECANCdSGVv43xm3uRGr8FIeuYKi0vDYgMNzMuKwZZFjhdCrkHqnC6lB6BUwhcF4vFwhNPPMGKFSvIysrSsySampo4duwYa9asYeHChSxYsICcnBzdKbFp0yYAYmJi+MlPfoLZbMbtduP1enG73cTHx3PrrbciyzK1tbXs3bu31TgSEhK44447CA4OxuPx4Ha7CQ8P5/rrr9c9fwkJCfz0pz8lJCRE7xMREcFNN92k96mrq9O9j8HBwYwePVp/ZmNjI3a7nYaGBsaPH09MTIw+P7/tFUh7ZrOZu+++m+TkZDwej35NnjyZESNG6O/z25x+L2RLr2KgRtCSQfz0Vl5ejh+PNSEhgcWLFxMeHq5n+rjdbtLT03nllVe47777iIqK0hmuO1crL+WF7Nbn1Vs1jd35NVTZnAAM7R9Jv2TrObNLtK2iCRnJfhDDkV8h2Q8BcjdKDL5jPKGBqN2MoeDXeIb+ES0oAbT21cusgVEcOX6WYyfrOVFqJ7/wDGOHxfSoLaeqKlarlXvvvZcbbriBr7/+ms2bN/P1119z9OhRbDYbHo+H7du3s3jxYtasWUNMTAyFhYX6Lv3MM8+0UheFEPrODXDs2LFWu3NaWpqu8umZNudsH7PZTFNTE+np6aSmpjbro2kaCQkJmEwmHA4HZ8+exev16udNHD16lI0bN5KXl8epU6dwuVwIIXA6ndTW1gLgcrl0z2Jgi4mJYejQoc3GKoTAbDbTt29f3cnhty87E4drT50sLS3V7d+hQ4eSnp6uO6wCW2hoqL42PcEbPZ7aJQmBkAJPCBGUnGrkwFEbaBARZmLc8BgkiY5VSVc1cuEjSPX5HaiPXTQiNRmpdhPyiT/gHfgESKZ2PZZBZokJI2IprWzE5VLYdbCa/qlWoiPMAb4XX+6ldgG2r3/HjY+PZ/78+cybN4+GhgYKCgpYu3Yta9asobq6moKCAt566y3uuece3SN59uxZPvzww/O+w+12txqfwWDQY2WBhCTLsv57YPwtsE+gZPczhyRJfPnll/zyl7+koKCgU1K+LUbwOzpavi8QkeB8jovOMIbX69WfExMTo2sXHX3HC0WNa7c8pzsRfkkSaBqU1zj4tqyB0qomTEaZ9IQQjhTaaGzyIEmCscNiiIsO7gB4VYAAw6m3kWpzfCpkT3puNAn51F9Ro6aj9LmqA3tO0C/FwpD0cPIKbFTbnGzZW0lcXCgnTjf6XNUJIWQkhhIbYfaFLLqQ5xioSvvX3+92tlgsjB8/nnHjxpGWlsb999+PqqocPnwYVVX18x6io6P5z//8T93uaE+KtpXy1JOZHZIkUVlZyaOPPkpBQQEmk4l58+YxdepUnWltNhvPP/98s/BCZ7NF2tWC2rn/fE5AfxKzXy0+ffo0TqdTX9e2GKWnYnBdjsO1tFv85SynbU7e2ljKuu2nOVXrxOFWkM7lRFrMMgPigpg6LJqRQ6I6XkgEkqME+dQ7CNSeZTi/eqk0IJf+BTVqCprB0maBkKaBwSAxcVQfvj1pZ1dhHR/vr6XJpdDk8jFGSJCBtPgQfjQjmRumJREWauh0hYEQArvdjsPhID4+vlkYwL8DG41GMjMzMZlMOJ1OnE4nkZGRDB06lMLCQpqamsjKyuK6667D6/U2U8MCsznOZ+y3V4Dcng3SVpiisLCQQ4cOATB37lxefvllwsPDdYYsKSnhL3/5i85w7W3ybf3e3r/b+l33G3RQ5qSqKn379iUlJYWCggK++eYbCgoKGDNmjK7qBiYL+E+PupCQQOD3kFruJp3FW/SpEoKi003c/0I+K98/xrFTjTjdii+2pmk0OLycrnOxrfAshTUu5HMQde0blwKpcr3PuYHExWky0tk9SGe2A1I74ziXqSIJ9pc1srvITnW9W2c2gCanl0NF9Tz2xhGWvXoYW72702amJEn83//9HzfccAN//etfqampQZIk/fw9g8FAQ0MDGzduxOn02b4ZGRmEh4cze/ZsJEnC4XDw5JNPsnfv3mZBWY/Hw9atW3n11VdxOp1tBmw7Muy7ogYGel39BJmQkEBYWBiKouj234EDB7DZbN2SCOcLr/jp8uTJk3o2zPlsvPj4eKZNmwZATU0NK1asoLy8HKPRqEu/PXv2cNNNN/HQQw9RWlp6QbioPWLDCQF1djePv3GEnAM1SJLPhmvLUa9pGh9uO83AFAuL5qd3oFw3Itm2+hwaPWG7tSflvI1INZvwxsz+TqS12JEcbpXfv/ct276x6V7N1h/cF7/7W045UWFGHrp54Hnh2YUQNDU18f7777Nnzx4WLVrEkCFDmDFjBqmpqT7kMJeLrVu36h7JsLAw5s+fjxCCq6++mvfff59Nmzaxd+9ebrrpJhYsWEBiYiKaplFQUMCHH36Iw+EgNDSU66+//oJtno76aJpGWFgYISEhOJ1O1q9fz+TJk5k4cSJer5fc3FyeeeYZGhsbu5WZ0dF74+LiiIiIwOFwsHPnTp599llGjhzJN998w/XXX8+QIUPavE+WZW6//XY+//xzTpw4wfr166moqOCaa67BarVy6tQp3n33XYqLi9m9ezd9+/blvvvuu6BskzZtuK4wnCQJPt9bxeb91c3qy9pbQI9X5bX/O8n0UbEMTrG0TkwWMpLzJFLDYV+w+2I2IZDs+QhvPZohrA01GXYdtvHJjopzGCwdz03VNN7bXM6ccXGMGxKJqorzxuH69OmD2WzG6XSyf/9+9u/f32Zfv7v88ssvx+v1Ehsby29/+1t+/vOfc/DgQY4fP87TTz/dOnPGaKSoqKhT0qu79ptfRRsyZAjz58/njTfeoKysjEWLFhEfH4+iKJw6dYrg4GDCw8M5e/Zsp6RmS62rLfVRURRSU1OZNWsWb775JvX19SxfvhxZllEUhcjIyFYM53+OoigMHz6cxx9/nP/+7/+msrKS3bt3s3v37lZjmTJlCtdee223VMpANb/NOFxXxKTTrfL3XZW4vWond0mfU2V7fm07cTeBcNeAtx642GVCAuEsRbgqW6muPmh0jQ27KrA3eToN/2eze/j7rkqf5/I8cZmQkBBWrFjBK6+8wpVXXkliYiJGo7HZM8PCwpg4cSLPP/88Dz74oF6AqigKo0aNYvXq1dx+++34Tzzyt+DgYIYPH86zzz7L3Xff3Wl7rD376Xz3qKqK2Wxm2bJl3HbbbURFReFwODhx4gRlZWWkpaWxdOlSMjMzO+UsOZ+6GygczGYzS5Ys4brrriMkJARN0/B6vXqWSlvhh8DnXn/99bz++utceeWVREZGNvPKxsXFceedd/LSSy+RmprarThcuyplV71UkhCcbfBQXNHUac+cLzlXZd+3dbi9KrLURnqjp86XiHzRmwCvHdw1EDqo1Ud1uhVOnG7q6n7G4WI7TpdXB5DtaC2Dg4O54YYbuOqqqygtLeXo0aOcPn1aJ+DBgwczZMgQIiIimgVz/Tv0oEGDeP755zl58iQHDhygqqoKWZbp168fWVlZxMbGNnPGpKam8vTTT+N0OklKStIZPDAOl5aWxooVK3C5XO32ycjI4JlnnsHtdtOvXz9kWdZjeM899xx33XUXBw8exOVyER0dzbhx40hISCAtLY0bbriBuLg4goODUVWV0NBQHnzwQWpqaggLC8N/oExLIl2wYAGZmZnIsqwnEvvqHH0OkJdeeok9e/Zw7NgxJEkiMzNTr32bPHkyK1euBOCyyy7Tn+////Tp0xk7diwFBQXk5+fjdDoJDQ1l1KhRDBo0SC/56ak4nFizZo02ceJEEhISOq1SSgJKqxwseGwP5dUOpE6CrHoVleysaF578DKCWhClJgwYytdgLvjld8nIF6tpGpochGvEWyiRU5oxuRCCRqeX257ax64jZzDInZ/bpGHRvPGQb25dqQT212K1V4/VVsjB/1vLe9vyTPr7+iVhW7Vene3jj5f5GTAwq6Oteji/48Tv4GhZG9fe7y1tLv8zW2aY+Ncx0IES+KyW423LDms5br+E6iksGSEEp06dYvv27d2z4TQEJqNEiFnu8nlqsRFmjAap9fuEBoYwNCGfy5m8BFJOSG0a6bIkzp1DoHVJvZVbBGw727oTzPX/1llDXtO0ZuUs3e3TUtq2ZVu1Nab21Lv2fm9p83Y0z/aec77xdmbcF2r/thn47iqRaEC4xUjf+BCOlto7RZT+MMKo/uGYDBKK2mInAzRjBAgDcLEZTgODFc0Yje8EVK2ZV9VklEiPD2HHodouMXBmmpUgk/QvgSnilxiB1daB2SDthRv+0a3lGFtK0vakXFtM4peMHVW4d5VBu12eE2SUmDuuD1v2V7dinna0OJJigpicFd1OlYCKZozxeQ0Vx0V2nGioQcmopj6tcio1wCAJ5o2PY92O0zQ5lfPOTdU0Iq1G5ozt40to0c6jxwd8zM7swIFqT6Bku1hn+TU0NPDJJ59QX1/P8OHDmThxol4ZvXHjRmJiYpg2bVqblejnm3dbc2ipQnalXyBEg6ZpVFRU8OWXX5KYmMjkyZMxmUw0NDSwfv166urqGDp0qF5u1FHzJ4o7nU6uuOIKPZB/oTacfO211z6akpLSaUSoQMpMjAmisLSB4+VN7caq/C8yGiR+cW06V4zp04wgmxGNHIpctwPJUXRxQwOaihIzB2+fq9qMw2lAfFQQp2qcHCq2d0hM/oqIW2an8MNpiedNB/JnmaxZs4acnBysVit9+vTpsHLCf23bto0PPviA48eP079/fz3I29NXZWUld955Jx988AEWi4U5c+bg9Xp55JFHeOSRR/j000/JzMwkMzOzTW9c+04zhXXr1rFhwwYOHTpEenq67l1sFmZRVTZs2MD69es5evQoGRkZekFrYD+Xy8V7773H559/TmVlJWlpaTz00EMsX76cTz/9lGHDhjF48GAqKipYtGgR7733HkFBQcydO7fDbyTLMq+++iq/+MUv+PDDDwkODiY7O/uCNrj6+npKSkq6H4fTgAiLkYdvGYTTrbItv7YZCFBgP0nAtZPjWXhFSptxlu8cGSGokVOgdvPFc5xoGpohFCV6BiAjUFq9x3++wP0L+lNa6WD7NzY0H8BDC/sADAbBtZMT+MW1/TDKUsfV63yH2LVixQrKysr46quveO211/TM9LZUND++4kMPPcT+/fsZOnQos2fP1uvgelrCtUUH/piaf/f3x9S6QjOyLLN//36effZZjEYjcXFxXHPNNa3mUF5ezm9+8xu+/fZbrFYrAwcOZNKkSc1UQSEEJSUlLF26lIqKCn75y18yd+5cvQK8sbFRr+TuKNTR1savaRpVVVU65EJNTU23eKQljV9weY6qQXpCCL+/Zxhvf1nGJzsqON0ql1JiQFwwA2PNqEoHUA7C56Twxl7lS15u+haQL4J4U1DDxqBETAI6UMs0AYrKqJQQPA4PJ2pdNLoUHIG5lHHBLJieyA+nJhIWYuxU+U5Lgv7yyy/5+OOPWbhwYYe2xTvvvNMsON5R4Lir0N7ng1jXNA2TycTSpUsZMGAA8fHxzJs3r1UOZ1vPCnyeLMvMmDGD//3f/8XhcLB9+3auvvrqZu+VZZmdO3dSVFQEgN1uZ9u2bUycOLFVMDknJ4eKigqsVitz5swhODiYhx9+mMzMTFJTU5k7d267a9pW/Dnwb3fccQdmsxmXy8XNN9+sS97uhgd6DERI0SA+0sx9P+zHTTOS+La8gbIqh+54KDhWR9FJO5U1TvKO2pg8KrYDG0dDDeqLJ+EmTMeXI3paymkammzBnXwHqhzmg2pop3m8KrkHamhq8jI81cLC2SnExoZQXNGEJCAtIYSMhFBiInznHSidlDQt19jlcrFq1SqmTZtGUlJSq91elmUOHz7MK6+80u5uHBhaqK+v58yZMwghiIyMxGq1tkqODrQJ3W431dXVeDwerFYrMTExbYYgNE1j4MCBPPDAA3qdWuBzNE2jsbGRM2fOoCgKJpNJL33xO11UVSUzM5NBgwaRl5fH5s2bqaysJC4urpk3MycnpxmjbNq0ibvvvpuQkBB9bC6Xi6+++grw5Zn6AZOGDBnCAw88gCRJBAUFdbgpBcbkGhoa9DWyWCz06dOHe+65B0C3Vbt7RkErCXehtXD+nT0h2kxSTFAzoRUfYaKy2kFDk5evD9non2IlLiao/cx6oeGJvwn5TA4G2xbA0GPMBire+AUoUTM6lG6SJDhR1sDREz6VJDbSzLTRfYgKNzF5WNR3m8M5bCLtAk/Z2b9/P6tXr+bXv/51q+d4vV5eeeUVSkpK2mRcP8GXlZWxevVqNm/eTGlpKQDp6elceeWV/PjHPyY2NlYnYj+jffrpp/ztb3/TA76xsbHMmjVLT5Buyfjr1q1j5cqVBAcH8/TTTzNy5Ejcbjd5eXl8+OGH7N+/n5MnT+L1egkODmbkyJHccsstTJ8+HUmSUFWV2NhYJk6cSF5eHseOHeObb74hISEBr9eLJElUVFTo1djJycmUl5dz+PBhjh07xsiRI3UUsqKiIh2la+bMmURH+3BE//SnP/H++++TlJTEc889R0JCQodOHEVRePXVV3n77bdRFIX58+dz3333sXPnTh5//HG8Xi/33Xcf1113XbdzKVuV51yIftqSpgMxH4UQJMQGkzUwgp0Haqizu9lzqJa5UxLbD5ZrKpopBnfGMoS7Brnh0LkyHXGBzKbgjZqJu+99aJL5XPlP2890uhR25dfgcisYZB/OSbjViFdpb7fsvGRryVAmkwm3283q1auZP38+WVlZ+oeVZVl3lAghMJlMuFyuVmCwBw8e5Je//CW5ubkAeoZIaWkpX331Fdu3b+fZZ58lNTUVTdNoampixYoVrFq1iqampma204EDB1i/fr2e3R/4rsrKSvbu3UtwcDD19fXIssyRI0f4yU9+om8Ifve71+vl2LFjbNq0iaeeeoqbb75Zn//MmTN57bXXcDqdbNq0iRkzZuh/27dvHyUlJYSHh/Ozn/2MlStXUlNTw86dOxk5cqTeLzc3l/LycsxmM5MmTdJVvuLiYvbv3091dbVerNteepjX6+Wll15i+fLl2O12Lr/8cm688UaCg4Ox2Wzs2bMHRVGoqqq6oNq4bpfndKcsQRKC0UOjiYn0qSBHis5SXN5wzn3eRg4agKagWIbhGvg0imWoz3Xf3c1A09DQ8EZOwzXgt6hmH7yCvwi2rby9Q9/WUXLKl92elmRhaP/wC8Z2aU+tzM7Opn///pSWlrJq1apmGJMNDQ28+OKL1NbWMmHChGbIUf5n1NbWsnTpUnJzc4mKiuK+++5j7dq1fPDBByxevBir1cqGDRt46qmncDqdSJLERx99xAsvvEBTUxPJycncf//9vPzyyzz11FNMmDCBo0eP0tDQcF5TQ1VVUlJS6N+/P2PGjGHJkiW89dZbvPvuuyxevJjIyEhsNhsrV66krKxMZ4rRo0eTkZEBwI4dO3QHjKIofPHFF7hcLtLT07nuuuvIysoCYMuWLTqsnx/ACGDgwIFcdtllXXIe+TeEF198kSeeeAK73c7UqVN5/vnnm2FttnVfd/ngkgHBakBkmJExw6L5fPtpHE6FXQdrSYoLwWTswPWvKShhY3EOeRFz0XJk2+bvULs6J1J8aqMUgrfPtbjSf4VqTmzXbtM0DUkI6upd7P3GhqJoBJllxmZFYTZJPXZ8Vcs1HjhwILNnz+bXv/41a9euZf78+cydOxeAzz77jM8//xyr1co999zDO++80+zjSZLEli1byMnJwWAw8PDDD7No0SJdHZw5cyZxcXE88sgjrF+/njvvvJOhQ4fy9ttv43K5iI+P58UXX2TmzJn6PT/84Q/52c9+1iYmZVtzCQ8P5w9/+AMWi4XExESdwObOnYvVauWpp57i2LFj7Nu3T8dIiY6OZuzYsXrx55EjR5g8eTKnTp3SpfTMmTPp168fEydOZOvWrezatYvjx4+TlZVFaWmpntk/YcIEYmJiOl1xL4TA7Xbzhz/8gd///vc4HA49STwtLQ1FUZolg/dEYL+VhOusDdf9HR4yM8JJiffBpxWXN1BQdLZ9KadfCkroYByDn8eV8QhK6JBzEtD7ndRrdqk+2ATNiyZklPDxOAc9i3PAclRzAkJTOszsVjWNfUfOUH0O8CgzI5y0JItuo/WU1G/Zbr75ZrKzs7Hb7axatYqzZ89SXV3Niy++iMvl4gc/+AFXXHFFKzQqr9fLpk2b8Hg8pKWlMXr0aEpKSigqKqKoqIiysjLGjRtHbGwsZ86cITc3l+LiYr755hsA5s2bx/Tp01FVFa/Xi8fjITk5mbvuuqvVWWsdtQEDBhAVFcWJEyfYt28feXl5HDlyhOTkZEwmE16vl8rKSl0tMxgMXH755RgMBurr69myZQuSJLFnzx6OHj1KUFAQ2dnZSJLEzJkzCQsLo6qqir179+r9ysrKMJlMzJgxo13Q17Zou7GxkWeeeUZntqysLFauXMmAAQPOmz52IZtstyEWuvvCkCCZcVnRnK524nIr7MqvJS3JQpjFeF43vmaMxJ18F96YORhsm5BtW5AbCxDeOlBcPjkqBEghaMYIFOsIvFGX442aimb0IS/7bTbR7tygvNLBgYIzaBqEW42MGRqFQRaoassjDC4MUKalWhYbG8s999zDvn37yMnJYe3atdjtdnbt2kVCQgI///nPMZvNre51uVwcP34c8FU833jjja36KIqiI2YVFxdTU1OjH401bNgwZFluloeoKArDhg0jJiZGj7t1FC7QNI2tW7fyyiuvsGfPHs6ePatvLn7IuZYhAlVVGTFiBMnJyRQXF7Nz507q6urYvn07Ho+HrKwsLrvsMtxuN0OGDGHw4MHs3r2bjRs3smDBAjZs2IDX6yUjI4NRo0bpmSidgZL47LPPaGxs1FV3IYQefO8IvqGnJNxFgzpvPWjISLEyMM1KfmEdVbVO9h+xMW1sXCcmcg7cMygZd+JPEPE3Itw2hKca4bWD5gFhQjNGoBmjUY3RIJkBRQcK0gL+21bzejX2HLLR0ORFCBgxKJLYKLOuSvaUtt0WYXi9XmbNmsW8efN4//33WbFihU5Ed9xxByNGjMDtdreyBwIdJH44uZbeRb8EUhSFfv36Nfs9kBmahUQ8nma7fXsEJ0kSO3fu5K677qKsrIz4+HgyMzN1hqurq+PIkSOt8CP9tt+ECRMoLi4mLy+P3Nxc3S6bOHGiXqoTHh5OdnY2u3fv5uDBg+zfv5+8vDwAJk2apGPCdJZ2bTYbkiSRlJREZWUlBw8eZPny5Tz33HOtsl56SuBcUhuuWR6ZDGOHRVFc3oC90cuBo3UM6GslsU9w5whaUwEVTZh8zg9zIn6kr3O6Jr5aBq1VXV1Hc5MkwbcldgqLfWGAuOggRgyKuChr0h4KVVBQEL/4xS/Yvn277tbPyspi4cKFHd4zdOhQNm3aRGhoKE8//TRZWVnNJFZgyYnRaKS4uJjo6GjKy8vJzc3lpz/9qR4r84cYcnNz9YyN87WPP/6YsrIyoqOj+fOf/8yECRN8GPoGA9u2beNHP/pRM0eQfy5Go5EpU6bw17/+lbq6Ol577TVOnDhBUFAQl19+OZIkoSgKkiQxffp0Vq1aRWlpKStXrqSkpAQhBFOmTMFkMunHNHe2zZkzh1//+tc89thjfPHFF6xdu5asrCzuvffeDmNtPWLDXQiibHdsufiYIEYOjkQIqG/wsOeQDVX1oX9JAmTJd53PZgy011C95+w65ZwHsi0PoThHUAKDLCHLAlkSGA0SDqfCnkO1uD0qBoNgbJYvDKBdJM9tex6/UaNGceuttwI+7MhFixaRnJzc6uScwGD37NmzsVgsVFRUsHLlSk6fPk1oaCihoaEEBwdz/Phx1qxZg8fjwWAwkJycrLvXN23axOrVq3E6nXoS8K5du3jxxRc75fXzhxjAV6E+YMAALBYLVqsVk8nEvn37mjFb4DdVVZXs7GzdkbJ+/Xrsdjvp6el6aMSf8Z+ZmcnAgQPxeDxs3LgRl8tFamoq48aNa1Yz2BkbbuLEifz+97/nsssuY9myZfTv3x+Px8Mf//hHNm3a1K77vzvM1pIOWx3mcUlOQBWCkYMjKSy2U2VzUnCiHtksY2v0Ul7jJMpqJLOvheH9wog4dwJq16rS2g9yCqDyjIu8Y/UUljbQ5FJITwjBoGqUVToQAtKTLAxODzt31JyGdhHm366XVJK47bbbyM3NJTo6Ws8zbEvl9xPj+PHjWbBgAa+99hrr1q3j22+/Zfz48ZjNZhoaGti+fTsnT56kvr6e+++/n+DgYO6880527NjBmTNnWLp0KRs3biQpKQmHw0FOTo4uYTtSJ/1r6j8HoLS0lCeffJLrr78eTdPYtGkTb775ZrtEq6oqSUlJjBw5kpKSEp3Bp0+frler+/vHxsYyYcIEDhw4oDPY+PHjm0EfdJYpMjMzSUpKwu12M3LkSB577DEWL15MVVUVy5YtIy0trd1jibt6gEdbGTuGzsKk9WQLtxgZNzya1Z+WkFfSwOptlTjciu6cCDHLZPa1cPucVGaPiUWWL8yGEsIHa/f+1tP8dfMpTlQ0nTvjGwyy0M/4Hj8gjIkjojEZxUVTrzvCCfFDFbz++uvIskxYWFiz/L2WNpwf1+M3v/kNBoOBd999lyNHjnDkyJFm70xPTyctLU1n0unTp/P444/rCdR///vfmwXip06dSn5+fjMcyfbmsWDBArZu3crmzZt58803efvtt/W/jxkzhsLCwmZHULU8T2DmzJmsW7dOz9fMzs7WHTmBFfEzZ87kjTfewOl0IoRg8uTJGI3GZv06Q6vNvNKqyrx587j33ntZvnw5+fn5PP7447zwwgsdFv1eyHeX58yZ82i/fv30Uy8vSRNwoMjOqxvLOXXG7aung3NqpcCrqJTVuPgq34bZJBjeL6wZBF+X0MWEoMHp5XfvFbHq42Kq6tx6MawPMVrDo2hU2z00uFSmjYomPtLc42fCBX40RVFoampi4MCBZGdn62UugV4zfzlKIJPZ7Xbi4uIYN24ckydP1vtYLBYdmyMmJobo6Gji4uIYM2YMP/zhD3n44Yf1GjC/JB0xYgRTp04lKiqK8PBw4uLimDBhAnfffTd33303kiQxYMAAsrOzdfSrpqYmzGYzo0ePZvr06URGRhIWFqZLJT8uyahRo7jtttv4r//6L/000WnTppGamtoqgBwWFqbbq9OmTWsGCBTYoqKiEEIwcOBApkyZwo033qjniQaurd1uJyIignHjxpGdnU1QUJC+3v37929zvYcOHUpISAj9+vXDarWSlpZGREQEQgh9nfzStLvt7NmzHD9+HLFy5Upt1qxZF/zAzjZZEhw52cA9z+VTXOno8Ow1VdWwBMs8ddcQrhrfh+7EnjVNY9W6Ep7/2wnUDrxZPh0bxg+J4I/3DiM23MTF3H66kwjbUSa+3+HhDxd4vV5MJpPuxWwrxuS32/z9zWZzK9Ccll7stn73J077T58xGo3N0IoDIQbadlpJzVTNzs6/K33a+z2w4DVQ02hvrt1pfvTpzz///NLbcF5F451N5ZyocJwXoEeSBPYmhVc2nGRCZiTRVmOXmE6W4GhpE29vKkdRtQ7BjnyLrrHnaB3rd1Zyx5yUHssu6Sk1/XxxJj9T+dGb22O0wJhbe/07C0XuJ1A/2I+fidvDGOloHD2xZt05Vac9wKS2NpoL/eY9mrx8fk4XlFY72JJXi9RpWHAoLG1kz5EzTMqMbA0gex5punFvNZU2V6eywfyYlF98XcOCqQmEBMmXlKH+mVtLgrwUm/f3sbWHfdIqDncpCESgUWFzUVvv6cK5igKHW+Gdz8s4fry+a+MU8OWhM6gaHaquzW0+KK5ooqrORXpCSLel3L8rwfVuRu3P95JLOBB0yzDSoLbezZl6d9e8lQJcbrVLIQUhwOlWaXQq54U57yXA3g2gs5vvBcHkXZBa2cXDTH1GLaTFh5CeFNol76EQgsMVji7xuKaBJVgmPNRwQYct9hLgP686fDHX9ZJKOFUVJMcEkRgdxLfljXQS1BhLsIGbr0xmzMDwLql4siQQQTJ7jtV3Ot9O1TQGpoQSE27q8F3/ykTZqw737DduJuEURdEcDoe48Grv89+vAnGRZq4cG8O35Y2dYgJFhZH9wxiaZtVjZ11RD6cMjyI9Pphjp5rOy+CapmEySswZG0uIWWq3wruXKHvV4a6ukcPhQFEUTVIU5bT/0L8LyZPsTB6hHxNowbQERvUPQ1E7/mCKqpEYbebu+alYg+UuZ5v4wWcXXZ1KaJB8XomlajB7dCyzLotBUelWTuSly0v9flzfR+L+Pq7RucMxT8vTpk2barFYBqelpV2UpNyWEkfTICLUwNA0K0dLGzhtc/kYsQWjKKpGSp9gli7sz5Ss6Av6uAOSQgkJkjlYZPedYipaqrq+kMUVo2P4zY8ziA4z/cvs3P+O9tj37dI0jfz8fCorK7+Up0+fHu31emenp6dLLdFtLx4RQJ8IE5OGRhIaZOBsg5dGly+X0miQiIsyc+XYWB64qR8TMyMvuBZNEoLh6VaG9LXgcKvUN3rxeFVAEBwkMzjVwh1zkvnFNX3Pa7v1EuD3+/q+bUb+dLPdu3d7HQ7Hi+LRRx9NlyTp48mTJ2eNGjXqkqoKkuQLE1SccVF0qonKOjfhoQb6JYSQHBuEURa+aoEeOjJIEuBwq5RUOiiucOB0KyTFBJGRGEKk1QgaHaZ/9dpjva07dPf111+zbdu2fFVVrzGoqnpCVdU38/PzV/Tt21e0dSjexZR0APFRZhKjzfgrSdVzECXKOVWzp8aiamA2SgxOCWVIqsU3BrRmoGDnP5Sklyh7N4DOChQJm81Gfn6+5vF43hRCnDCcI7DXbTbbnJ07d86cOXNmq0z1i70oPjxLH/m3+ttFWAhFu1hP7iXKnlaF/1m/iRACp9PJjh07qKmp2SxJ0uuAHviu1jRtSWFh4ZqgoKD+kyZN4lLZc70E+O9JlP/K393PbNu3b+fo0aPHgCWaplVrmoa8detWpk6ditfrLRdCFFZWVk6or6+PioqKIiQk5J+OkHsdBL2q7z+a9mpra9myZQuHDx8+pmnaYlVVtwoheOqpp75zkC9dutSPezFO07QVUVFRU4cNGyYNGDAAq9Wql130tl5p0dvaMFMUBbvdTmFhIQcPHlRsNtsWIcQSj8ez22Qy8fTTT/uYMvCmpUuX+ovv+iiKcossy7dYrdZhiYmJclxcHEFBQQQHB/9TqDG9RNPbLnZTVRWn04nD4aCyspJTp04p9fX1hxRFWS1J0mqgBmDFihXfScG2HrRkyRIsFouw2+0pqqpeDVwuhBgnSVKSJEnifJkWvbt+b/s3kmyaqqrlmqbtBb6QJGl9SEjISYfDofmlWmD7/y/4QwUI9ZzIAAAAWHRFWHRjb21tZW50AEZpbGUgc291cmNlOiBodHRwczovL3d3dy5zZW1hbnRpYy1tZWRpYXdpa2kub3JnL3dpa2kvRmlsZTpTTVdfcG93ZXJlZGJ5XzI1MjAucG5nR/HgGQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wNy0wMlQxNTozMTo1NSswMjowMJD7GggAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDctMDJUMTU6MzE6NTUrMDI6MDDhpqK0AAAAPHRFWHRzb2Z0d2FyZQAvdXNyL3NoYXJlL2RvYy9pbWFnZW1hZ2ljay02LWNvbW1vbi9odG1sL2luZGV4Lmh0bWx15G87AAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAA4ODHPniohAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADI1MjDhfK24AAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE2MjUyMzI3MTXeTZeiAAAAEnRFWHRUaHVtYjo6U2l6ZQAxMzVLQkL58MQeAAAAAElFTkSuQmCC" alt="Powered by Semantic MediaWiki" class="smw-footer" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Toggle limited content width</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":84,"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.020","walltime":"0.046","ppvisitednodes":{"value":185,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":123,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240616232555","ttl":86400,"transientcontent":false}}});});</script>
+</body>
+</html>

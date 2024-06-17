@@ -1,0 +1,253 @@
+<!--<!DOCTYPE html PUBLIC "-//XML-DEV//DTD XHTML RDDL 1.0//EN" "rddl-xhtml.dtd">-->
+<html 	xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:rddl="http://www.rddl.org/"
+		xml:base="http://www.rddl.org/purposes"
+		xml:lang="en">
+<head>
+	<title>Well Known Resource Directory Description Purposes</title>
+	<link rel="stylesheet" type="text/css" href="xrd.css" />
+</head>
+
+<body>
+<h1>URIs For Commonly Defined Link Purposes</h1>
+<rddl:resource 
+	id="purpose"
+	xlink:title="Purpose"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#purpose">
+<div class="resource">
+<h2>Purposes</h2>
+<p>The <code>purpose</code> of a resource link determines what the link will be used for. 
+Frequently the <code>purpose</code> of a link can be determined from the <code>nature</code> of the referenced resource.
+For example the <code>purpose</code> of an XML Schema is typically <a href="#schema-validation">schema validation</a>, yet a schema may be comprised of
+a number of included modules and even when included modules are themselves an XML Schema, the purpose is as a <a href="#module">module</a>.</p>
+<p>This document defines a number of <code>purposes</code> for referenced resource links.</p>
+</div>
+</rddl:resource>
+<!-- note: below we define the id= as a subtype of the xlink:href= -->
+<h2>Schema related purposes</h2>
+<rddl:resource
+	id="validation"
+	xlink:title="Validation"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#validation"
+><div class="resource">
+ <h3>validation</h3>
+ <p>Validation is performed on XML or SGML documents using a <a href="natures#DTD">DTD</a>. 
+ The document type definition associates a document with a DTD to be used for validation.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="schema-validation"
+	xlink:title="Schema Validation"
+	xlink:role="http://www.rddl.org/purposes#validation"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#schema-validation"
+><div class="resource">
+ <h3>schema-validation</h3>
+ <p>Schema validation is distinct from DTD validation because schema validation is performed after
+ the parse phase whereas DTD validation may be combined with the parse phase. 
+ The term <a href="natures#PSVI">post schema-validation infoset</a> refers to the document infoset which results after a schema validation, whereas the
+ pre schema-validation infoset is the infoset which is present after the document is parsed.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="module"
+	xlink:title="Module"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#module"
+><div class="resource">
+ <h3>module</h3>
+ <p>A module may be included as part of a schema or software program.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="schema-module"
+	xlink:title="Schema Module"
+	xlink:role="http://www.rddl.org/purposes#module"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#schema-module"
+><div class="resource">
+ <h3>schema module</h3>
+ <p>A schema module is a module which is used particularly within a schema.</p>
+ </div>
+</rddl:resource>
+
+<rddl:resource
+	id="entities"
+	xlink:title="Entity Module"
+	xlink:role="http://www.rddl.org/purposes#module"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#entities"
+><div class="resource">
+ <h3>entities</h3>
+ <p>It is frequently convenient to package a set of entity definitions in an external module.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="notations"
+	xlink:title="Notation Module"
+	xlink:role="http://www.rddl.org/purposes#module"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#notations"
+><div class="resource">
+ <h3>notations</h3>
+ <p>It is frequently convenient to package a set of notation definitions in an external module.</p>
+ </div>
+</rddl:resource>
+<h2>Software related purposes</h2>
+<rddl:resource
+	id="software-module"
+	xlink:title="Software Module"
+	xlink:role="http://www.rddl.org/purposes#module"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#software-module"
+><div class="resource">
+ <h3>software module</h3>
+ <p>A software module is a module which is used particularly within a software program.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="software-package"
+	xlink:title="Software Package"
+	xlink:role="http://www.rddl.org/purposes#software-module"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#software-package"
+><div class="resource">
+ <h3>software package</h3>
+ <p>A software package is a grouping of software resources.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="software-project"
+	xlink:title="Software Package"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#software-project"
+><div class="resource">
+ <h3>software project</h3>
+ <p>A software project is a collection of resources related to a software package. 
+ 	A project is usually identified by a home page URI.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="JAR"
+	xlink:title="Java Archive"
+	xlink:role="http://www.rddl.org/purposes#software-package"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#JAR"
+><div class="resource">
+ <h3>JAR</h3>
+ <p>A java archive is a module packaged using the application/pkzip format whose 
+ purpose is to be used as a package of java classes, code and/or associated resources. </p>
+ </div>
+</rddl:resource>
+<h2>Documentation purposes</h2>
+<rddl:resource
+	id="reference"
+	xlink:title="Referenced document"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#reference"
+><div class="resource">
+ <h3>reference</h3>
+ <p>A <code>reference</code> is often an associated piece of documentation. Referenced may be subclassified into
+ <code>normative-references</code> and <code>non-normative-referenced</code> among others.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="normative-reference"
+	xlink:title="Normative reference"
+	xlink:role="http://www.rddl.org/purposes#reference"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#normative-reference"
+><div class="resource">
+ <h3>normative reference</h3>
+ <p>A normative reference is a document whose definitions are normative to the referencing document.</p>
+ </div>
+</rddl:resource>
+<rddl:resource
+	id="non-normative-reference"
+	xlink:title="Non-normative reference"
+	xlink:role="http://www.rddl.org/purposes#reference"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#non-normative-reference"
+><div class="resource">
+ <h3>non normative reference</h3>
+ <p>A non normative reference is a document whose definitions are not normative to the referencing document.</p>
+ </div>
+</rddl:resource>
+<rddl:resource 
+	id="definition"
+	xlink:title="Definition"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#definition">
+	<div class="resource">
+		<h3>definition</h3>
+		<p>One type of purpose is a <code>definition</code> of a <a href="natures#term">term</a>. 
+			A <code>resource</code> link may define a <code>term</code> in which case the nature of the referenced
+			resource is a <code>term</code> i.e. <a href="http://www.rddl.org/natures#term">http://www.rddl.org/natures#term</a> and the <code>purpose</code>
+			is a <code>definition i.e. <a href="http://www.rddl.org/purposes#definition">http://www.rddl.org/purposes#definition</a></code>.
+		</p>
+	</div>
+</rddl:resource>
+<rddl:resource 
+	id="icon"
+	xlink:title="Icon"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#icon">
+	<div class="resource">
+		<h3>icon</h3>
+		<p>An icon to be associated with a project has the purpose <code>http://www.rddl.org/purposes#icon</code>. Its <code>nature</code>
+		might be either <code>image/gif</code> or <code>image/jpeg</code>.</p>
+	</div>
+</rddl:resource>
+<rddl:resource 
+	id="alternate"
+	xlink:title="Alternate"
+	xlink:role="http://www.rddl.org/natures#term"
+	xlink:arcrole="http://www.rddl.org/purposes#definition"
+	xlink:href="#alternate">
+	<div class="resource">
+		<h3>alternate</h3>
+		<p>An alternate.</p>
+	</div>
+</rddl:resource>
+<rddl:resource
+id="canonicalization"
+xlink:type="simple"
+xlink:title="Canonicalization"
+xlink:role="http://www.rddl.org/purposes#term"
+xlink:arcrole="http://www.rddl.org/purposes#definition"
+xlink:href="#canonicalization"
+  ><div class="resource">
+<h3>canonicalization</h3>
+
+<p>A resource documenting or implementing an application specific 
+canonicalization algorithm. This feature is most usefull for 
+applications allowing different syntaxes to express the same data model 
+and provides then a way to define which syntax is "canonical" and may be 
+used for document comparison, signature or validation.</p>
+</div>
+</rddl:resource>
+
+<rddl:resource id="target"
+       xlink:type="simple"
+       xlink:arcrole="http://www.rddl.org/purposes#definition"
+       xlink:role="http://www.rddl.org/natures#term"
+       xlink:title="target namespace"
+       xlink:href="#target">
+   <div class="resource">
+      <h3>Target URI</h3>
+        <p>The purpose <code>http://www.rddl.org/purposes#target</code> is used to indicate an intended target URI of the RDDL directory.</p>
+   </div>
+</rddl:resource>
+</body>
+</html>
+

@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en" typeof="bibo:Document w3p:REC" about="" property="dcterms:language" content="en" prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RDF 1.1 Concepts and Abstract Syntax</title>
+    
+    
+    
+    <style type="text/css">
+      figure { text-align: center; }
+      table td, table th { border: 1px solid #ddd; padding: 0.2em 0.5em; }
+      ol ol { list-style-type: lower-latin; }
+    </style>
+  <style>/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* --- INLINES --- */
+em.rfc2119 { 
+    text-transform:     lowercase;
+    font-variant:       small-caps;
+    font-style:         normal;
+    color:              #900;
+}
+
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym,
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+    border: none;
+}
+
+dfn {
+    font-weight:    bold;
+}
+
+a.internalDFN {
+    color:  inherit;
+    border-bottom:  1px solid #99c;
+    text-decoration:    none;
+}
+
+a.externalDFN {
+    color:  inherit;
+    border-bottom:  1px dotted #ccc;
+    text-decoration:    none;
+}
+
+a.bibref {
+    text-decoration:    none;
+}
+
+cite .bibref {
+    font-style: normal;
+}
+
+code {
+    color:  #ff4500;
+}
+
+/* --- TOC --- */
+.toc a, .tof a {
+    text-decoration:    none;
+}
+
+a .secno, a .figno {
+    color:  #000;
+}
+
+ul.tof, ol.tof {
+    list-style: none outside none;
+}
+
+.caption {
+    margin-top: 0.5em;
+    font-style:   italic;
+}
+
+/* --- TABLE --- */
+table.simple {
+    border-spacing: 0;
+    border-collapse:    collapse;
+    border-bottom:  3px solid #005a9c;
+}
+
+.simple th {
+    background: #005a9c;
+    color:  #fff;
+    padding:    3px 5px;
+    text-align: left;
+}
+
+.simple th[scope="row"] {
+    background: inherit;
+    color:  inherit;
+    border-top: 1px solid #ddd;
+}
+
+.simple td {
+    padding:    3px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+/* --- DL --- */
+.section dd > p:first-child {
+    margin-top: 0;
+}
+
+.section dd > p:last-child {
+    margin-bottom: 0;
+}
+
+.section dd {
+    margin-bottom:  1em;
+}
+
+.section dl.attrs dd, .section dl.eldef dd {
+    margin-bottom:  0;
+}
+
+@media print {
+    .removeOnSave {
+        display: none;
+    }
+}
+</style><style>/* --- ISSUES/NOTES --- */
+div.issue-title, div.note-title {
+    padding-right:  1em;
+    min-width: 7.5em;
+    color: #b9ab2d;
+}
+div.issue-title { color: #e05252; }
+div.note-title { color: #2b2; }
+div.issue-title span, div.note-title span {
+    text-transform: uppercase;
+}
+div.note, div.issue {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.note > p:first-child, .issue > p:first-child { margin-top: 0 }
+.issue, .note {
+    padding: .5em;
+    border-left-width: .5em;
+    border-left-style: solid;
+}
+div.issue, div.note {
+    padding: 1em 1.2em 0.5em;
+    margin: 1em 0;
+    position: relative;
+    clear: both;
+}
+span.note, span.issue { padding: .1em .5em .15em; }
+
+.issue {
+    border-color: #e05252;
+    background: #fbe9e9;
+}
+.note {
+    border-color: #52e052;
+    background: #e9fbe9;
+}
+
+
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/W3C-REC" />
+<!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
+</head>
+
+<body class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
+  <p>
+    
+      <a href="https://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/Icons/w3c_home" /></a>
+    
+  </p>
+  <h1 property="dcterms:title" id="title" class="title p-name">RDF 1.1 Concepts and Abstract Syntax</h1>
+  
+  <h2 content="2014-02-24T23:00:00.000Z" datatype="xsd:dateTime" property="dcterms:issued" id="w3c-recommendation-25-february-2014"><abbr title="World Wide Web Consortium">W3C</abbr> Recommendation <time datetime="2014-02-25" class="dt-published">25 February 2014</time></h2>
+  <dl>
+    
+      <dt>This version:</dt>
+      <dd><a href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/" class="u-url">http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/</a></dd>
+      <dt>Latest published version:</dt>
+      <dd><a href="https://www.w3.org/TR/rdf11-concepts/">http://www.w3.org/TR/rdf11-concepts/</a></dd>
+    
+    
+    
+    
+    
+    
+    
+      <dt>Previous version:</dt>
+      <dd><a href="https://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/" rel="dcterms:replaces">http://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/</a></dd>
+    
+    
+      
+          <dt>Previous Recommendation:</dt>
+          <dd><a href="https://www.w3.org/TR/rdf10-concepts/" rel="dcterms:replaces">http://www.w3.org/TR/rdf10-concepts/</a></dd>
+      
+    
+    <dt>Editors:</dt>
+    <dd inlist="" rel="bibo:editor" class="p-author h-card vcard"><span typeof="foaf:Person"><a href="http://richard.cyganiak.de/" content="Richard Cyganiak" property="foaf:name" rel="foaf:homepage" class="u-url url p-name fn">Richard Cyganiak</a>, <a href="http://www.deri.ie/" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">DERI, NUI Galway</a></span>
+</dd>
+<dd inlist="" rel="bibo:editor" class="p-author h-card vcard"><span typeof="foaf:Person"><a href="http://about.me/david_wood" content="David Wood" property="foaf:name" rel="foaf:homepage" class="u-url url p-name fn">David Wood</a>, <a href="http://3roundstones.com/" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">3 Round Stones</a></span>
+</dd>
+<dd inlist="" rel="bibo:editor" class="p-author h-card vcard"><span typeof="foaf:Person"><a href="http://www.markus-lanthaler.com/" content="Markus Lanthaler" property="foaf:name" rel="foaf:homepage" class="u-url url p-name fn">Markus Lanthaler</a>, <a href="http://www.tugraz.at/" class="p-org org h-org h-card" rel="foaf:workplaceHomepage">Graz University of Technology</a></span>
+</dd>
+
+    
+    
+      
+        
+          <dt>Previous Editors:</dt>
+          
+             
+                
+                  <dd>
+                    
+                      Graham Klyne
+                    
+                  </dd>
+                
+             
+                
+                  <dd>
+                    
+                      Jeremy J. Carroll
+                    
+                  </dd>
+                
+             
+                
+                  <dd>
+                    
+                      Brian McBride
+                    
+                  </dd>
+                
+             
+          
+        
+      
+    
+  </dl>
+  
+    <p>
+      Please check the <a href="https://www.w3.org/2014/rdf1.1-errata"><strong>errata</strong></a> for any errors or issues
+      reported since publication.
+    </p>
+  
+  
+  
+    <p>
+      The English version of this specification is the only normative version. Non-normative
+      <a href="https://www.w3.org/Consortium/Translation/">translations</a> may also be available.
+    </p>
+  
+  
+    
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2004-2014
+        
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), 
+        
+        All Rights Reserved.
+        
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+        
+          <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+        
+        rules apply.
+      </p>
+    
+  
+  <hr />
+</div>
+  <section id="abstract" class="introductory" property="dcterms:abstract" datatype="" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter"><h2 aria-level="1" role="heading" id="h2_abstract">Abstract</h2>
+
+      <p>The Resource Description Framework (RDF) is a framework for
+      representing information in the Web. This document defines an abstract syntax
+      (a data model) which serves to link all RDF-based languages and
+      specifications. The abstract syntax has two key data structures:
+      RDF graphs are sets of subject-predicate-object triples,
+      where the elements may be IRIs, blank nodes, or datatyped literals. They
+      are used to express descriptions of resources. RDF datasets are used
+      to organize collections of RDF graphs, and comprise a default graph
+      and zero or more named graphs. RDF 1.1 Concepts and Abstract Syntax
+      also introduces key concepts and terminology, and discusses
+      datatyping and the handling of fragment identifiers in IRIs within
+      RDF graphs.</p>
+  </section><section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter"><h2 aria-level="1" role="heading" id="h2_sotd">Status of This Document</h2>
+  
+    
+      
+        <p>
+          <em>This section describes the status of this document at the time of its publication.
+          Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the
+          latest revision of this technical report can be found in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
+          http://www.w3.org/TR/.</em>
+        </p>
+        
+    <p>This document is part of the RDF 1.1 document suite. It is the central
+    RDF 1.1 specification and defines the core RDF concepts. A new concept in
+    RDF 1.1 is the notion of an RDF dataset to represent multiple
+    graphs. Test suites and implementation reports of a number of RDF 1.1
+    specifications that build on this document are available through the  
+    <a href="https://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/">RDF 1.1 Test Cases</a> 
+    document [<cite><a class="bibref" href="#bib-RDF11-TESTCASES">RDF11-TESTCASES</a></cite>].
+    There have been no changes to this document since its publication as
+    Proposed Recommendation.</p>
+  
+        <p>
+          This document was published by the <a href="https://www.w3.org/2011/rdf-wg/">RDF Working Group</a> as a Recommendation.
+          
+          
+            If you wish to make comments regarding this document, please send them to 
+            <a href="mailto:public-rdf-comments@w3.org">public-rdf-comments@w3.org</a> 
+            (<a href="mailto:public-rdf-comments-request@w3.org?subject=subscribe">subscribe</a>,
+            <a href="http://lists.w3.org/Archives/Public/public-rdf-comments/">archives</a>).
+          
+          
+          
+          
+            All comments are welcome.
+          
+        </p>
+        
+        
+        
+          <p>
+            This document has been reviewed by <abbr title="World Wide Web Consortium">W3C</abbr> Members, by software developers, and by other <abbr title="World Wide Web Consortium">W3C</abbr>
+            groups and interested parties, and is endorsed by the Director as a <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation.
+            It is a stable document and may be used as reference material or cited from another
+            document. <abbr title="World Wide Web Consortium">W3C</abbr>'s role in making the Recommendation is to draw attention to the
+            specification and to promote its widespread deployment. This enhances the functionality
+            and interoperability of the Web.
+          </p>
+        
+        
+        <p>
+          
+            This document was produced by a group operating under the 
+            <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/" rel="w3p:patentRules" about="" id="sotd_patent">5 February 2004 <abbr title="World Wide Web Consortium">W3C</abbr> Patent
+            Policy</a>.
+          
+          
+          
+            
+              <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a rel="disclosure" href="https://www.w3.org/2004/01/pp-impl/46168/status">public list of any patent
+              disclosures</a> 
+            
+            made in connection with the deliverables of the group; that page also includes
+            instructions for disclosing a patent. An individual who has actual knowledge of a patent
+            which the individual believes contains
+            <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
+            Claim(s)</a> must disclose the information in accordance with
+            <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+            6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+          
+          
+        </p>
+        
+      
+    
+  
+</section><section id="toc"><h2 class="introductory" aria-level="1" role="heading" id="h2_toc">Table of Contents</h2><ul class="toc" role="directory" id="respecContents"><li class="tocline"><a href="#section-Introduction" class="tocxref"><span class="secno">1. </span>Introduction</a><ul class="toc"><li class="tocline"><a href="#data-model" class="tocxref"><span class="secno">1.1 </span>Graph-based Data Model</a></li><li class="tocline"><a href="#resources-and-statements" class="tocxref"><span class="secno">1.2 </span>Resources and Statements</a></li><li class="tocline"><a href="#referents" class="tocxref"><span class="secno">1.3 </span>The Referent of an <abbr title="Internationalized Resource Identifier">IRI</abbr></a></li><li class="tocline"><a href="#vocabularies" class="tocxref"><span class="secno">1.4 </span>RDF Vocabularies and Namespace IRIs</a></li><li class="tocline"><a href="#change-over-time" class="tocxref"><span class="secno">1.5 </span>RDF and Change over Time</a></li><li class="tocline"><a href="#managing-graphs" class="tocxref"><span class="secno">1.6 </span>Working with Multiple RDF Graphs</a></li><li class="tocline"><a href="#entailment" class="tocxref"><span class="secno">1.7 </span>Equivalence, Entailment and Inconsistency</a></li><li class="tocline"><a href="#rdf-documents" class="tocxref"><span class="secno">1.8 </span>RDF Documents and Syntaxes</a></li></ul></li><li class="tocline"><a href="#conformance" class="tocxref"><span class="secno">2. </span>Conformance</a></li><li class="tocline"><a href="#section-rdf-graph" class="tocxref"><span class="secno">3. </span>RDF Graphs</a><ul class="toc"><li class="tocline"><a href="#section-triples" class="tocxref"><span class="secno">3.1 </span>Triples</a></li><li class="tocline"><a href="#section-IRIs" class="tocxref"><span class="secno">3.2 </span>IRIs</a></li><li class="tocline"><a href="#section-Graph-Literal" class="tocxref"><span class="secno">3.3 </span>Literals</a></li><li class="tocline"><a href="#section-blank-nodes" class="tocxref"><span class="secno">3.4 </span>Blank Nodes</a></li><li class="tocline"><a href="#section-skolemization" class="tocxref"><span class="secno">3.5 </span>Replacing Blank Nodes with IRIs</a></li><li class="tocline"><a href="#graph-isomorphism" class="tocxref"><span class="secno">3.6 </span>Graph Comparison</a></li></ul></li><li class="tocline"><a href="#section-dataset" class="tocxref"><span class="secno">4. </span>RDF Datasets</a><ul class="toc"><li class="tocline"><a href="#section-dataset-isomorphism" class="tocxref"><span class="secno">4.1 </span>RDF Dataset Comparison</a></li><li class="tocline"><a href="#section-dataset-conneg" class="tocxref"><span class="secno">4.2 </span>Content Negotiation of RDF Datasets</a></li></ul></li><li class="tocline"><a href="#section-Datatypes" class="tocxref"><span class="secno">5. </span>Datatypes</a><ul class="toc"><li class="tocline"><a href="#xsd-datatypes" class="tocxref"><span class="secno">5.1 </span>The XML Schema Built-in Datatypes</a></li><li class="tocline"><a href="#section-html" class="tocxref"><span class="secno">5.2 </span>The <code>rdf:HTML</code> Datatype</a></li><li class="tocline"><a href="#section-XMLLiteral" class="tocxref"><span class="secno">5.3 </span>The <code>rdf:XMLLiteral</code> Datatype</a></li><li class="tocline"><a href="#datatype-iris" class="tocxref"><span class="secno">5.4 </span>Datatype IRIs</a></li></ul></li><li class="tocline"><a href="#section-fragID" class="tocxref"><span class="secno">6. </span>Fragment Identifiers</a></li><li class="tocline"><a href="#section-generalized-rdf" class="tocxref"><span class="secno">7. </span>Generalized RDF Triples, Graphs, and Datasets</a></li><li class="tocline"><a href="#section-Acknowledgments" class="tocxref"><span class="secno">8. </span>Acknowledgments</a></li><li class="tocline"><a href="#changes" class="tocxref"><span class="secno">A. </span>Changes between RDF 1.0 and RDF 1.1</a></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a><ul class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li></ul></li></ul></section>
+
+  
+
+<section class="informative" id="section-Introduction" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    
+<!--OddPage-->
+<h2 aria-level="1" role="heading" id="h2_section-Introduction"><span class="secno">1. </span>Introduction</h2><p><em>This section is non-normative.</em></p>
+
+    <p>The <em>Resource Description Framework</em> (RDF) is a framework
+    for representing information in the Web.</p>
+
+    <p>This document defines an abstract syntax (a data model)
+    which serves to link all RDF-based languages and specifications,
+    including:</p>
+
+    <ul>
+      <li>the <a href="https://www.w3.org/TR/rdf11-mt/">formal
+        model-theoretic semantics for RDF</a> [<cite><a class="bibref" href="#bib-RDF11-MT">RDF11-MT</a></cite>];</li>
+
+      <li>serialization syntaxes for storing and exchanging RDF such as
+        <a href="https://www.w3.org/TR/turtle/">Turtle</a> [<cite><a class="bibref" href="#bib-TURTLE">TURTLE</a></cite>]
+        and <a href="https://www.w3.org/TR/json-ld/">JSON-LD</a> [<cite><a class="bibref" href="#bib-JSON-LD">JSON-LD</a></cite>];</li>
+
+      <li>the <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL
+        Query Language</a> [<cite><a class="bibref" href="#bib-SPARQL11-OVERVIEW">SPARQL11-OVERVIEW</a></cite>];</li>
+
+      <li>the <a href="https://www.w3.org/TR/rdf-schema/">RDF Schema vocabulary</a>
+	[<cite><a class="bibref" href="#bib-RDF11-SCHEMA">RDF11-SCHEMA</a></cite>].</li>
+    </ul>
+
+<section id="data-model" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_data-model"><span class="secno">1.1 </span>Graph-based Data Model</h3>
+
+    <p>The core structure of the abstract syntax is a set of
+    <a title="RDF triple" href="#dfn-rdf-triple" class="internalDFN">triples</a>, each consisting of a <a href="#dfn-subject" class="internalDFN">subject</a>,
+    a <a href="#dfn-predicate" class="internalDFN">predicate</a> and an <a href="#dfn-object" class="internalDFN">object</a>. A set of such triples is called
+    an <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>. An RDF graph can be visualized as a node and
+    directed-arc diagram, in which each triple is represented as a
+    node-arc-node link.</p>
+
+    <figure id="fig-an-rdf-graph-with-two-nodes-subject-and-object-and-a-triple-connecting-them-predicate">
+      <a href="rdf-graph.svg"><img alt="An RDF graph with two nodes (Subject and Object) and a triple connecting them (Predicate)" src="rdf-graph.svg" /></a>
+      <figcaption>Fig. <span class="figno">1</span> <span class="fig-title">An RDF graph with two nodes (Subject and Object) and a triple connecting them (Predicate)</span></figcaption>
+    </figure>
+
+    <p>There can be three kinds of <a title="node" href="#dfn-node" class="internalDFN">nodes</a> in an
+    <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>: <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>, <a title="literal" href="#dfn-literal" class="internalDFN">literals</a>,
+    and <a title="blank node" href="#dfn-blank-node" class="internalDFN">blank nodes</a>.</p>
+</section>
+
+
+<section id="resources-and-statements" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_resources-and-statements"><span class="secno">1.2 </span>Resources and Statements</h3>
+
+    <p>Any <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> or <a href="#dfn-literal" class="internalDFN">literal</a> <dfn title="denote" id="dfn-denote">denotes</dfn>
+    something in the world (the &quot;universe of discourse&quot;).
+    These things are called
+    <dfn title="resource" id="dfn-resource">resources</dfn>. Anything can be a resource,
+    including physical things, documents, abstract concepts, numbers
+    and strings; the term is synonymous with &quot;entity&quot; as it is used in
+    the RDF Semantics specification [<cite><a class="bibref" href="#bib-RDF11-MT">RDF11-MT</a></cite>].
+    The resource denoted by an <abbr title="Internationalized Resource Identifier">IRI</abbr> is called its <a href="#dfn-referent" class="internalDFN">referent</a>, and the
+    resource denoted by a literal is called its
+    <a title="literal value" href="#dfn-literal-value" class="internalDFN">literal value</a>. Literals have
+    <a title="datatype" href="#dfn-datatype" class="internalDFN">datatypes</a> that define the range of possible
+    values, such as strings, numbers, and dates. Special kind of literals,
+    <a title="language-tagged string" href="#dfn-language-tagged-string" class="internalDFN">language-tagged strings</a>, denote
+    plain-text strings in a natural language.</p>
+
+    <p>Asserting an <a href="#dfn-rdf-triple" class="internalDFN">RDF triple</a> says that <em>some relationship,
+    indicated by the <a href="#dfn-predicate" class="internalDFN">predicate</a>, holds between the
+    <a title="resource" href="#dfn-resource" class="internalDFN">resources</a> <a title="denote" href="#dfn-denote" class="internalDFN">denoted</a> by
+    the <a href="#dfn-subject" class="internalDFN">subject</a> and <a href="#dfn-object" class="internalDFN">object</a></em>. This statement corresponding
+    to an RDF triple is known as an <dfn id="dfn-rdf-statement">RDF statement</dfn>.
+    The predicate itself is an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> and denotes a <dfn id="dfn-property">property</dfn>,
+    that is, a <a href="#dfn-resource" class="internalDFN">resource</a> that can be thought of as a binary relation.
+    (Relations that involve more than two entities can only be
+    <a href="https://www.w3.org/TR/swbp-n-aryRelations/">indirectly
+    expressed in RDF</a> [<cite><a class="bibref" href="#bib-SWBP-N-ARYRELATIONS">SWBP-N-ARYRELATIONS</a></cite>].)</p>
+
+    <p>Unlike <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a> and <a title="literal" href="#dfn-literal" class="internalDFN">literals</a>,
+      <a title="blank node" href="#dfn-blank-node" class="internalDFN">blank nodes</a> do not identify specific
+      <a title="resource" href="#dfn-resource" class="internalDFN">resources</a>. <a title="RDF statement" href="#dfn-rdf-statement" class="internalDFN">Statements</a>
+      involving blank nodes say that something with the given relationships
+      exists, without explicitly naming it.</p>
+</section>
+
+
+<section id="referents" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_referents"><span class="secno">1.3 </span>The Referent of an <abbr title="Internationalized Resource Identifier">IRI</abbr></h3>
+
+    <p>The <a href="#dfn-resource" class="internalDFN">resource</a> <a title="denote" href="#dfn-denote" class="internalDFN">denoted</a> by an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a>
+      is also called its <dfn id="dfn-referent">referent</dfn>. For some IRIs with particular
+      meanings, such as those identifying XSD datatypes, the referent is
+      fixed by this specification. For all other IRIs, what exactly is
+      denoted by any given <abbr title="Internationalized Resource Identifier">IRI</abbr> is not defined by this specification. Other
+      specifications may fix <abbr title="Internationalized Resource Identifier">IRI</abbr> referents, or apply other constraints on
+      what may be the referent of any <abbr title="Internationalized Resource Identifier">IRI</abbr>.</p>
+
+    <p>Guidelines for determining the <a href="#dfn-referent" class="internalDFN">referent</a> of an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> are
+    provided in other documents, like
+    <em><a href="https://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a></em> [<cite><a class="bibref" href="#bib-WEBARCH">WEBARCH</a></cite>]
+    and <em><a href="https://www.w3.org/TR/cooluris/">Cool URIs for the Semantic Web</a></em> [<cite><a class="bibref" href="#bib-COOLURIS">COOLURIS</a></cite>].
+    A very brief, informal, and partial account follows:</p>
+
+    <ul>
+      <li>By design, IRIs have global scope. Thus, two different appearances of an <abbr title="Internationalized Resource Identifier">IRI</abbr>
+        <a href="#dfn-denote" class="internalDFN">denote</a> the same <a href="#dfn-resource" class="internalDFN">resource</a>. Violating this principle constitutes
+        an <a href="https://www.w3.org/TR/webarch/#URI-collision"><abbr title="Internationalized Resource Identifier">IRI</abbr> collision</a> [<cite><a class="bibref" href="#bib-WEBARCH">WEBARCH</a></cite>].</li>
+
+      <li>By social convention, the
+        <a href="https://www.w3.org/TR/webarch/#uri-ownership"><abbr title="Internationalized Resource Identifier">IRI</abbr> owner</a>
+        [<cite><a class="bibref" href="#bib-WEBARCH">WEBARCH</a></cite>] gets to say what the intended (or usual)
+        referent of an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> is.  Applications and users need not
+        abide by this intended denotation, but there may be a loss of
+        interoperability with other applications and users if they do
+        not do so.</li>
+
+      <li>The <abbr title="Internationalized Resource Identifier">IRI</abbr> owner can establish the intended <a href="#dfn-referent" class="internalDFN">referent</a>
+        by means of a specification or other document that explains
+        what is denoted. For example, the
+        <a href="https://www.w3.org/TR/vocab-org/">Organization Ontology document</a> [<cite><a class="bibref" href="#bib-VOCAB-ORG">VOCAB-ORG</a></cite>]
+        specifies the intended referents of various IRIs that start with
+        <code>http://www.w3.org/ns/org#</code>.</li>
+
+      <li>A good way of communicating the intended referent
+        is to set up the <abbr title="Internationalized Resource Identifier">IRI</abbr> so that it
+        <a href="https://www.w3.org/TR/webarch/#uri-dereference">dereferences</a> [<cite><a class="bibref" href="#bib-WEBARCH">WEBARCH</a></cite>]
+        to such a document.</li>
+
+      <li>Such a document can, in fact, be an <a href="#dfn-rdf-document" class="internalDFN">RDF document</a>
+        that describes the denoted resource by means of
+        <a title="RDF statement" href="#dfn-rdf-statement" class="internalDFN">RDF statements</a>.</li>
+    </ul>
+
+    <p>Perhaps the most important characteristic of <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>
+      in web architecture is that they can be
+      <a href="https://www.w3.org/TR/webarch/#uri-dereference">dereferenced</a>,
+      and hence serve as starting points for interactions with a remote server.
+      This specification is not concerned with such interactions.
+      It does not define an interaction model. It only treats IRIs as globally
+      unique identifiers in a graph data model that describes resources.
+      However, those interactions are critical to the concept of
+      <em><a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a></em> [<cite><a class="bibref" href="#bib-LINKED-DATA">LINKED-DATA</a></cite>],
+      which makes use of the RDF data model and serialization formats.</p>
+</section>
+
+<section id="vocabularies" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_vocabularies"><span class="secno">1.4 </span>RDF Vocabularies and Namespace IRIs</h3>
+
+    <p>An <dfn id="dfn-rdf-vocabulary">RDF vocabulary</dfn> is a collection of <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>
+      intended for use in <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>. For example,
+      the IRIs documented in [<cite><a class="bibref" href="#bib-RDF11-SCHEMA">RDF11-SCHEMA</a></cite>] are the RDF Schema vocabulary.
+      RDF Schema can itself be used to define and document additional
+      RDF vocabularies. Some such vocabularies are mentioned in the
+      Primer [<cite><a class="bibref" href="#bib-RDF11-PRIMER">RDF11-PRIMER</a></cite>].</p>
+
+    <p>The <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a> in an <a href="#dfn-rdf-vocabulary" class="internalDFN">RDF vocabulary</a> often begin with
+      a common substring known as a <dfn id="dfn-namespace-iri">namespace <abbr title="Internationalized Resource Identifier">IRI</abbr></dfn>.
+      Some namespace IRIs are associated by convention with a short name
+      known as a <dfn id="dfn-namespace-prefix">namespace prefix</dfn>. Some examples:
+
+    </p><table class="simple">
+      <caption>Some example namespace prefixes and IRIs</caption>
+      <tbody><tr>
+        <th>Namespace prefix</th>
+        <th>Namespace <abbr title="Internationalized Resource Identifier">IRI</abbr></th>
+        <th>RDF vocabulary</th>
+      </tr>
+      <tr>
+        <td>rdf</td>
+        <td><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#"><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></a></td>
+        <td>The RDF built-in vocabulary [<cite><a class="bibref" href="#bib-RDF11-SCHEMA">RDF11-SCHEMA</a></cite>]</td>
+      </tr>
+      <tr><td>rdfs</td>
+        <td><a href="https://www.w3.org/2000/01/rdf-schema#"><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td>
+        <td>The RDF Schema vocabulary [<cite><a class="bibref" href="#bib-RDF11-SCHEMA">RDF11-SCHEMA</a></cite>]</td>
+      </tr>
+      <tr><td>xsd</td>
+        <td><a href="https://www.w3.org/2001/XMLSchema#"><code>http://www.w3.org/2001/XMLSchema#</code></a></td>
+        <td>The <a href="#dfn-rdf-compatible-xsd-types" class="internalDFN">RDF-compatible XSD types</a></td>
+      </tr>
+    </tbody></table>
+
+    <p>In some serialization formats it is common to abbreviate <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>
+      that start with <a title="namespace IRI" href="#dfn-namespace-iri" class="internalDFN">namespace IRIs</a> by using a
+      <a href="#dfn-namespace-prefix" class="internalDFN">namespace prefix</a> in order to assist readability. For example, the <abbr title="Internationalized Resource Identifier">IRI</abbr>
+      <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</code>
+      would be abbreviated as <code>rdf:XMLLiteral</code>.
+      Note however that these abbreviations are <em>not</em> valid IRIs,
+      and must not be used in contexts where IRIs are expected.
+      Namespace IRIs and namespace prefixes are <em>not</em> a formal part of the
+      RDF data model. They are merely a syntactic convenience for
+      abbreviating IRIs.</p>
+
+    <p>The term “<dfn id="dfn-namespace">namespace</dfn>” on its own does not have a
+      well-defined meaning in the context of RDF, but is sometimes informally
+      used to mean “<a href="#dfn-namespace-iri" class="internalDFN">namespace <abbr title="Internationalized Resource Identifier">IRI</abbr></a>” or “<a href="#dfn-rdf-vocabulary" class="internalDFN">RDF vocabulary</a>”.</p>
+</section>
+
+
+<section id="change-over-time" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_change-over-time"><span class="secno">1.5 </span>RDF and Change over Time</h3>
+
+    <p>The RDF data model is <em>atemporal</em>: <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>
+      are static snapshots of information.</p>
+
+    <p>However, <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a> can express information
+      about events and about temporal aspects of other entities,
+      given appropriate <a title="RDF vocabulary" href="#dfn-rdf-vocabulary" class="internalDFN">vocabulary</a> terms.</p>
+
+    <p>Since <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a> are defined as mathematical
+      sets, adding or removing <a title="RDF triple" href="#dfn-rdf-triple" class="internalDFN">triples</a> from an
+      RDF graph yields a different RDF graph.</p>
+
+    <p>We informally use the term <dfn id="dfn-rdf-source">RDF source</dfn> to refer to a
+      persistent yet mutable source or container of
+      <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>. An RDF source is a <a href="#dfn-resource" class="internalDFN">resource</a>
+      that may be said to have a state that can change over time.
+      A snapshot of the state can be expressed as an RDF graph.
+      For example, any web document that has an RDF-bearing representation
+      may be considered an RDF source. Like all resources, RDF sources may
+      be named with <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a> and therefore described in
+      other RDF graphs.</p>
+
+    <p>Intuitively speaking, changes in the universe of discourse
+      can be reflected in the following ways:</p>
+
+    <ul>
+      <li>An <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a>, once minted, should never
+        change its intended <a href="#dfn-referent" class="internalDFN">referent</a>. (See
+        <a href="https://www.w3.org/TR/webarch/#URI-persistence"><abbr title="Uniform Resource Identifier">URI</abbr> persistence</a>
+        [<cite><a class="bibref" href="#bib-WEBARCH">WEBARCH</a></cite>].)</li>
+      <li><a title="literal" href="#dfn-literal" class="internalDFN">Literals</a>, by design, are constants and
+        never change their <a title="literal value" href="#dfn-literal-value" class="internalDFN">value</a>.</li>
+      <li>A relationship that holds between two <a title="resource" href="#dfn-resource" class="internalDFN">resources</a>
+        at one time may not hold at another time.</li>
+      <li><a title="RDF source" href="#dfn-rdf-source" class="internalDFN">RDF sources</a> may change their state over time.
+        That is, they may provide different <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>
+        at different times.</li>
+      <li>Some <a title="RDF source" href="#dfn-rdf-source" class="internalDFN">RDF sources</a> may, however, be immutable
+        snapshots of another RDF source, archiving its state at some
+        point in time.</li>
+    </ul>
+
+</section>
+
+
+<section id="managing-graphs" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_managing-graphs"><span class="secno">1.6 </span>Working with Multiple RDF Graphs</h3>
+
+    <p>As RDF graphs are sets of triples, they can be
+    combined easily, supporting the use of data from
+    multiple sources. Nevertheless, it is sometimes desirable to work
+    with multiple RDF graphs while keeping their contents separate.
+    <a title="RDF dataset" href="#dfn-rdf-dataset" class="internalDFN">RDF datasets</a> support this requirement.</p>
+
+    <p>An <a href="#dfn-rdf-dataset" class="internalDFN">RDF dataset</a> is a collection of
+    <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>. All but one of these graphs have
+    an associated <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> or blank node. They are called
+    <a title="named graph" href="#dfn-named-graph" class="internalDFN">named graphs</a>, and the <abbr title="Internationalized Resource Identifier">IRI</abbr> or blank node
+    is called the <a href="#dfn-graph-name" class="internalDFN">graph name</a>.
+    The remaining graph does not have an associated <abbr title="Internationalized Resource Identifier">IRI</abbr>, and is called
+    the <a href="#dfn-default-graph" class="internalDFN">default graph</a> of the RDF dataset.</p>
+
+    <p>There are many possible uses for <a title="RDF dataset" href="#dfn-rdf-dataset" class="internalDFN">RDF datasets</a>.
+    One such use is to hold snapshots of multiple
+    <a title="RDF source" href="#dfn-rdf-source" class="internalDFN">RDF sources</a>.</p>
+</section>
+
+
+<section id="entailment" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_entailment"><span class="secno">1.7 </span>Equivalence, Entailment and Inconsistency</h3>
+
+    <p>An <a href="#dfn-rdf-triple" class="internalDFN">RDF triple</a> encodes a <a title="RDF statement" href="#dfn-rdf-statement" class="internalDFN">statement</a>—a
+    simple <dfn id="dfn-logical-expression">logical expression</dfn>, or claim about the world.
+    An <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> is the conjunction (logical <em>AND</em>) of
+    its triples.   The precise details of this meaning of RDF triples and graphs are
+    the subject of the RDF Semantics specification [<cite><a class="bibref" href="#bib-RDF11-MT">RDF11-MT</a></cite>], which yields the
+    following relationships between <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>s:</p>
+
+    <dl>
+    <dt><dfn id="dfn-entailment">Entailment</dfn></dt>
+    <dd>An <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> <em>A</em> entails another RDF graph <em>B</em>
+    if every possible arrangement of the world
+    that makes <em>A</em> true also makes <em>B</em> true. When <em>A</em>
+    entails <em>B</em>, if the truth of <em>A</em> is presumed or demonstrated
+    then the truth of <em>B</em> is established.</dd>
+
+    <dt><dfn id="dfn-equivalence">Equivalence</dfn></dt>
+    <dd>Two <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a> <em>A</em> and <em>B</em>
+    are equivalent if they make the same claim about the world.
+    <em>A</em> is equivalent to <em>B</em> if and only if
+    <em>A</em> <a title="entailment" href="#dfn-entailment" class="internalDFN">entails</a> <em>B</em> and
+    <em>B</em> entails <em>A</em>.</dd>
+
+    <dt><dfn id="dfn-inconsistency">Inconsistency</dfn></dt>
+    <dd>An <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> is inconsistent if it contains
+    an internal contradiction. There is no possible arrangement
+    of the world that would make the expression true.</dd>
+    </dl>
+
+    <p>An <dfn id="dfn-entailment-regime">entailment regime</dfn> [<cite><a class="bibref" href="#bib-RDF11-MT">RDF11-MT</a></cite>] is a specification that
+    defines precise conditions that make these relationships hold.
+    RDF itself recognizes only some basic cases of entailment, equivalence
+    and inconsistency. Other specifications, such as
+    <a href="https://www.w3.org/TR/rdf-schema/">RDF Schema</a> [<cite><a class="bibref" href="#bib-RDF11-SCHEMA">RDF11-SCHEMA</a></cite>]
+    and <a href="https://www.w3.org/TR/owl2-overview/">OWL 2</a>
+    [<cite><a class="bibref" href="#bib-OWL2-OVERVIEW">OWL2-OVERVIEW</a></cite>], add more powerful entailment regimes,
+    as do some domain-specific <a title="RDF vocabulary" href="#dfn-rdf-vocabulary" class="internalDFN">vocabularies</a>.
+    </p>
+
+    <p>This specification does not constrain how implementations
+    use the logical relationships defined by
+    <a title="entailment regime" href="#dfn-entailment-regime" class="internalDFN">entailment regimes</a>.
+    Implementations may or may not detect
+    <a title="inconsistency" href="#dfn-inconsistency" class="internalDFN">inconsistencies</a>, and may make all,
+    some or no <a title="entailment" href="#dfn-entailment" class="internalDFN">entailed</a> information
+    available to users.</p>
+</section>
+
+
+<section id="rdf-documents" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_rdf-documents"><span class="secno">1.8 </span>RDF Documents and Syntaxes</h3>
+
+    <p>An <dfn id="dfn-rdf-document">RDF document</dfn> is a document that encodes an
+    <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> or <a href="#dfn-rdf-dataset" class="internalDFN">RDF dataset</a> in a <dfn id="dfn-concrete-rdf-syntax">concrete RDF syntax</dfn>,
+    such as Turtle [<cite><a class="bibref" href="#bib-TURTLE">TURTLE</a></cite>], RDFa [<cite><a class="bibref" href="#bib-RDFA-PRIMER">RDFA-PRIMER</a></cite>], JSON-LD [<cite><a class="bibref" href="#bib-JSON-LD">JSON-LD</a></cite>], or
+    TriG [<cite><a class="bibref" href="#bib-TRIG">TRIG</a></cite>]. RDF documents enable the exchange of RDF graphs and RDF
+    datasets between systems.</p>
+
+    <p>A <a href="#dfn-concrete-rdf-syntax" class="internalDFN">concrete RDF syntax</a> may offer
+    many different ways to encode the same <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> or
+    <a href="#dfn-rdf-dataset" class="internalDFN">RDF dataset</a>, for example through the use of
+    <a title="namespace prefix" href="#dfn-namespace-prefix" class="internalDFN">namespace prefixes</a>,
+    relative IRIs, <a title="blank node identifier" href="#dfn-blank-node-identifier" class="internalDFN">blank node identifiers</a>,
+    and different ordering of statements. While these aspects can have great
+    effect on the convenience of working with the <a href="#dfn-rdf-document" class="internalDFN">RDF document</a>,
+    they are not significant for its meaning.</p>
+</section>
+
+
+</section>
+
+
+<section id="conformance" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+<!--OddPage-->
+<h2 aria-level="1" role="heading" id="h2_conformance"><span class="secno">2. </span>Conformance</h2>
+<p>
+  As well as sections marked as non-normative, all authoring guidelines, diagrams, examples,
+  and notes in this specification are non-normative. Everything else in this specification is
+  normative.
+</p>
+<p>
+  The key words <em class="rfc2119" title="MUST">MUST</em>, <em class="rfc2119" title="MUST NOT">MUST NOT</em>, <em class="rfc2119" title="REQUIRED">REQUIRED</em>, <em class="rfc2119" title="SHOULD">SHOULD</em>, <em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em>, <em class="rfc2119" title="RECOMMENDED">RECOMMENDED</em>, <em class="rfc2119" title="MAY">MAY</em>,
+  and <em class="rfc2119" title="OPTIONAL">OPTIONAL</em> in this specification are to be interpreted as described in [<cite><a class="bibref" href="#bib-RFC2119">RFC2119</a></cite>].
+</p>
+
+    <p>This specification, <em>RDF 1.1 Concepts and Abstract Syntax</em>,
+    defines a data model and related terminology for use in
+    other specifications, such as
+    <a title="concrete RDF syntax" href="#dfn-concrete-rdf-syntax" class="internalDFN">concrete RDF syntaxes</a>,
+    API specifications, and query languages.
+    Implementations cannot directly conform to
+    <em>RDF 1.1 Concepts and Abstract Syntax</em>,
+    but can conform to such other specifications that normatively
+    reference terms defined here.</p>
+</section>
+
+
+<section id="section-rdf-graph" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    
+<!--OddPage-->
+<h2 aria-level="1" role="heading" id="h2_section-rdf-graph"><span class="secno">3. </span>RDF Graphs</h2>
+
+    <p>An <dfn id="dfn-rdf-graph">RDF graph</dfn> is a set of
+    <a title="RDF triple" href="#dfn-rdf-triple" class="internalDFN">RDF triples</a>.</p>
+
+
+<section id="section-triples" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_section-triples"><span class="secno">3.1 </span>Triples</h3>
+
+    <p>An <dfn id="dfn-rdf-triple">RDF triple</dfn> consists of three components:</p>
+
+    <ul>
+      <li>the <dfn id="dfn-subject">subject</dfn>, which is an
+      <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> or a <a href="#dfn-blank-node" class="internalDFN">blank node</a></li>
+
+      <li>the <dfn id="dfn-predicate">predicate</dfn>, which is an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a></li>
+
+      <li>the <dfn id="dfn-object">object</dfn>, which is an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a>,
+      a <a href="#dfn-literal" class="internalDFN">literal</a> or a <a href="#dfn-blank-node" class="internalDFN">blank node</a></li>
+    </ul>
+
+    <p>An RDF triple is conventionally written in the order subject,
+    predicate, object.</p>
+
+    <p>The set of <dfn title="node" id="dfn-node">nodes</dfn> of an <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>
+    is the set of subjects and objects of triples in the graph.
+    It is possible for a predicate <abbr title="Internationalized Resource Identifier">IRI</abbr> to also occur as a node in
+    the same graph.</p>
+
+    <p><a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>, <a title="literal" href="#dfn-literal" class="internalDFN">literals</a> and
+    <a title="blank node" href="#dfn-blank-node" class="internalDFN">blank nodes</a> are collectively known as
+    <dfn title="RDF term" id="dfn-rdf-term">RDF terms</dfn>.</p>
+
+    <p><a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>, <a title="literal" href="#dfn-literal" class="internalDFN">literals</a>
+    and <a title="blank node" href="#dfn-blank-node" class="internalDFN">blank nodes</a> are distinct and distinguishable.
+    For example, <code>http://example.org/</code> as a string literal
+    is neither equal to <code>http://example.org/</code> as an <abbr title="Internationalized Resource Identifier">IRI</abbr>,
+    nor to a blank node with the <a href="#dfn-blank-node-identifier" class="internalDFN">blank node identifier</a>
+    <code>http://example.org/</code>.</p>
+</section>
+
+
+<section id="section-IRIs" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_section-IRIs"><span class="secno">3.2 </span>IRIs</h3>
+
+    <p>An <dfn title="IRI" id="dfn-iri"><abbr title="Internationalized Resource Identifier">IRI</abbr></dfn>
+    (Internationalized Resource Identifier) within an RDF graph
+    is a Unicode string [<cite><a class="bibref" href="#bib-UNICODE">UNICODE</a></cite>] that conforms to the syntax
+    defined in RFC 3987 [<cite><a class="bibref" href="#bib-RFC3987">RFC3987</a></cite>].</p>
+
+    <p>IRIs in the RDF abstract syntax <em class="rfc2119" title="MUST">MUST</em> be absolute, and <em class="rfc2119" title="MAY">MAY</em>
+    contain a fragment identifier.</p>
+
+    <p><dfn id="dfn-iri-equality"><abbr title="Internationalized Resource Identifier">IRI</abbr> equality</dfn>:
+    Two IRIs are equal if and only if they are equivalent
+    under Simple String Comparison according to
+    <a href="http://tools.ietf.org/html/rfc3987#section-5.1">section 5.1</a>
+    of [<cite><a class="bibref" href="#bib-RFC3987">RFC3987</a></cite>]. Further normalization <em class="rfc2119" title="MUST NOT">MUST NOT</em> be performed when
+    comparing IRIs for equality.</p>
+
+    <div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_1"><span>Note</span></div><div id="note-iris" class="">
+    <p><strong>URIs and IRIs:</strong>
+    IRIs are a generalization of
+    <dfn title="URI" id="dfn-uri"><abbr title="Uniform Resource Identifier">URI</abbr>s</dfn>
+    [<cite><a class="bibref" href="#bib-RFC3986">RFC3986</a></cite>] that permits a wider range of Unicode characters.
+    Every absolute <abbr title="Uniform Resource Identifier">URI</abbr> and URL is an <abbr title="Internationalized Resource Identifier">IRI</abbr>, but not every <abbr title="Internationalized Resource Identifier">IRI</abbr> is an <abbr title="Uniform Resource Identifier">URI</abbr>.
+    When IRIs are used in operations that are only
+    defined for URIs, they must first be converted according to
+    the mapping defined in
+    <a href="http://tools.ietf.org/html/rfc3987#section-3.1">section 3.1</a>
+    of [<cite><a class="bibref" href="#bib-RFC3987">RFC3987</a></cite>]. A notable example is retrieval over the HTTP
+    protocol. The mapping involves UTF-8 encoding of non-ASCII
+    characters, %-encoding of octets not allowed in URIs, and
+    Punycode-encoding of domain names.</p>
+
+    <p><strong>Relative IRIs:</strong>
+    Some <a title="concrete RDF syntax" href="#dfn-concrete-rdf-syntax" class="internalDFN">concrete RDF syntaxes</a> permit
+    <dfn title="relative IRI" id="dfn-relative-iri">relative IRIs</dfn> as a convenient shorthand
+    that allows authoring of documents independently from their final
+    publishing location. Relative IRIs must be
+    <a href="http://tools.ietf.org/html/rfc3986#section-5.2">resolved
+    against</a> a <dfn id="dfn-base-iri">base <abbr title="Internationalized Resource Identifier">IRI</abbr></dfn> to make them absolute.
+    Therefore, the RDF graph serialized in such syntaxes is well-defined only
+    if a <a href="http://tools.ietf.org/html/rfc3986#section-5.1">base <abbr title="Internationalized Resource Identifier">IRI</abbr>
+    can be established</a> [<cite><a class="bibref" href="#bib-RFC3986">RFC3986</a></cite>].</p>
+
+      <p><strong><abbr title="Internationalized Resource Identifier">IRI</abbr> normalization:</strong>
+      Interoperability problems can be avoided by minting
+      only IRIs that are normalized according to
+      <a href="http://tools.ietf.org/html/rfc3987#section-5">Section 5</a>
+      of [<cite><a class="bibref" href="#bib-RFC3987">RFC3987</a></cite>]. Non-normalized forms that are best avoided
+      include:</p>
+
+      <ul>
+        <li>Uppercase characters in scheme names and domain names</li>
+        <li>Percent-encoding of characters where it is not
+          required by <abbr title="Internationalized Resource Identifier">IRI</abbr> syntax</li>
+        <li>Explicitly stated HTTP default port
+          (<code>http://example.com:80/</code>);
+          <code>http://example.com/</code> is preferable</li>
+        <li>Completely empty path in HTTP IRIs
+          (<code>http://example.com</code>);
+          <code>http://example.com/</code> is preferable</li>
+        <li>“<code>/./</code>” or “<code>/../</code>” in the path
+          component of an <abbr title="Internationalized Resource Identifier">IRI</abbr></li>
+        <li>Lowercase hexadecimal letters within percent-encoding
+          triplets (“<code>%3F</code>” is preferable over
+          “<code>%3f</code>”)</li>
+        <li>Punycode-encoding of Internationalized Domain Names
+          in IRIs</li>
+        <li>IRIs that are not in Unicode Normalization
+          Form C [<cite><a class="bibref" href="#bib-NFC">NFC</a></cite>]</li>
+      </ul>
+    </div></div>
+</section>
+
+
+<section id="section-Graph-Literal" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_section-Graph-Literal"><span class="secno">3.3 </span>Literals</h3>
+
+    <p>Literals are used for values such as strings, numbers, and dates.</p>
+
+    <p>A <dfn id="dfn-literal">literal</dfn> in an <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a> consists of two or three
+      elements:</p>
+
+    <ul>
+      <li>a <dfn id="dfn-lexical-form">lexical form</dfn>, being a Unicode [<cite><a class="bibref" href="#bib-UNICODE">UNICODE</a></cite>] string,
+        which <em class="rfc2119" title="SHOULD">SHOULD</em> be in Normal Form C [<cite><a class="bibref" href="#bib-NFC">NFC</a></cite>],</li>
+      <li>a <dfn id="dfn-datatype-iri">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></dfn>, being an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a>
+        identifying a datatype that determines how the lexical form maps
+        to a <a href="#dfn-literal-value" class="internalDFN">literal value</a>, and</li>
+      <li>if and only if the <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a> is
+        <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</code>, a
+        non-empty <dfn id="dfn-language-tag">language tag</dfn> as defined by [<cite><a class="bibref" href="#bib-BCP47">BCP47</a></cite>]. The
+        language tag <em class="rfc2119" title="MUST">MUST</em> be well-formed according to
+        <a href="http://tools.ietf.org/html/bcp47#section-2.2.9">section 2.2.9</a>
+        of [<cite><a class="bibref" href="#bib-BCP47">BCP47</a></cite>].</li>
+    </ul>
+
+    <p>A literal is a <dfn id="dfn-language-tagged-string">language-tagged string</dfn> if the third element
+      is present. Lexical representations of language tags <em class="rfc2119" title="MAY">MAY</em> be converted
+      to lower case. The value space of language tags is always in lower
+      case.</p>
+
+    <p>Please note that concrete syntaxes <em class="rfc2119" title="MAY">MAY</em> support
+      <dfn title="simple literal" id="dfn-simple-literal">simple literals</dfn> consisting of only a
+      <a href="#dfn-lexical-form" class="internalDFN">lexical form</a> without any <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a> or <a href="#dfn-language-tag" class="internalDFN">language tag</a>.
+      Simple literals are syntactic sugar for abstract syntax
+      <a title="literal" href="#dfn-literal" class="internalDFN">literals</a>
+      with the <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a>
+      <code>http://www.w3.org/2001/XMLSchema#string</code>. Similarly, most
+      concrete syntaxes represent
+      <a title="language-tagged string" href="#dfn-language-tagged-string" class="internalDFN">language-tagged strings</a> without
+      the <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a> because it always equals
+      <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</code>.</p>
+
+    <p>The <dfn id="dfn-literal-value">literal value</dfn> associated with a <a href="#dfn-literal" class="internalDFN">literal</a> is:</p>
+
+    <ol>
+      <li>If the literal is a <a href="#dfn-language-tagged-string" class="internalDFN">language-tagged string</a>,
+        then the literal value is a pair consisting of its <a href="#dfn-lexical-form" class="internalDFN">lexical form</a>
+        and its <a href="#dfn-language-tag" class="internalDFN">language tag</a>, in that order.</li>
+
+      <li>If the literal's <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a> is in the set of
+        <a href="#dfn-recognized-datatype-iris" class="internalDFN">recognized datatype IRIs</a>, let <var>d</var> be the
+        <a href="#dfn-referent" class="internalDFN">referent</a> of the datatype <abbr title="Internationalized Resource Identifier">IRI</abbr>.
+        <ol>
+          <li>If the literal's <a href="#dfn-lexical-form" class="internalDFN">lexical form</a> is in the <a href="#dfn-lexical-space" class="internalDFN">lexical space</a>
+            of <var>d</var>, then the literal value is the result of applying
+            the <a href="#dfn-lexical-to-value-mapping" class="internalDFN">lexical-to-value mapping</a> of <var>d</var> to the
+            <a href="#dfn-lexical-form" class="internalDFN">lexical form</a>.</li>
+          <li>Otherwise, the literal is ill-typed and no literal value can be
+             associated with the literal. Such a case produces a semantic
+             inconsistency but is not <em>syntactically</em> ill-formed.
+             Implementations <em class="rfc2119" title="MUST">MUST</em> accept ill-typed literals and produce RDF
+             graphs from them. Implementations <em class="rfc2119" title="MAY">MAY</em> produce warnings when
+             encountering ill-typed literals.</li>
+        </ol>
+      </li>
+      <li>If the literal's <a href="#dfn-datatype-iri" class="internalDFN">datatype <abbr title="Internationalized Resource Identifier">IRI</abbr></a> is <em>not</em> in the set of
+        <a href="#dfn-recognized-datatype-iris" class="internalDFN">recognized datatype IRIs</a>, then the literal value is
+        not defined by this specification.</li>
+    </ol>
+
+    <p><dfn id="dfn-literal-term-equality">Literal term equality</dfn>: Two literals are term-equal (the same
+      RDF literal) if and only if the two <a title="lexical form" href="#dfn-lexical-form" class="internalDFN">lexical forms</a>,
+      the two <a title="datatype IRI" href="#dfn-datatype-iri" class="internalDFN">datatype IRIs</a>, and the two
+      <a title="language tag" href="#dfn-language-tag" class="internalDFN">language tags</a> (if any) compare equal,
+      character by character. Thus, two literals can have the same value
+      without being the same RDF term. For example:</p>
+
+    <pre>      &quot;1&quot;^^xs:integer
+      &quot;01&quot;^^xs:integer
+    </pre>
+
+    <p>denote the same <a title="literal value" href="#dfn-literal-value" class="internalDFN">value</a>, but are not the
+      same literal <a title="RDF Term" href="#dfn-rdf-term" class="internalDFN">RDF terms</a> and are not
+      <a title="literal term equality" href="#dfn-literal-term-equality" class="internalDFN">term-equal</a> because their
+      <a href="#dfn-lexical-form" class="internalDFN">lexical form</a> differs.</p>
+</section>
+
+
+<section id="section-blank-nodes" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_section-blank-nodes"><span class="secno">3.4 </span>Blank Nodes</h3>
+
+    <p><dfn title="blank node" id="dfn-blank-node">Blank nodes</dfn> are disjoint from
+    <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a> and <a title="literal" href="#dfn-literal" class="internalDFN">literals</a>.  Otherwise,
+    the set of possible blank nodes is arbitrary.  RDF makes no reference to
+    any internal structure of blank nodes.</p>
+
+    <div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_2"><span>Note</span></div><p id="note-bnode-id" class="">
+    <dfn title="blank node identifier" id="dfn-blank-node-identifier">Blank node identifiers</dfn>
+    are local identifiers that are used in some
+    <a title="concrete RDF syntax" href="#dfn-concrete-rdf-syntax" class="internalDFN">concrete RDF syntaxes</a>
+    or RDF store implementations.
+    They are always locally scoped to the file or RDF store,
+    and are <em>not</em> persistent or portable identifiers
+    for blank nodes. Blank node identifiers are <em>not</em>
+    part of the RDF abstract syntax, but are entirely dependent
+    on the concrete syntax or implementation. The syntactic restrictions
+    on blank node identifiers, if any, therefore also depend on
+    the concrete RDF syntax or implementation.  Implementations that handle blank node
+    identifiers in concrete syntaxes need to be careful not to create the
+    same blank node from multiple occurrences of the same blank node identifier
+    except in situations where this is supported by the syntax.</p></div>
+</section>
+
+
+<section id="section-skolemization" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_section-skolemization"><span class="secno">3.5 </span>Replacing Blank Nodes with IRIs</h3>
+
+    <p>Blank nodes do not have identifiers in the RDF abstract syntax. The
+    <a title="blank node identifier" href="#dfn-blank-node-identifier" class="internalDFN">blank node identifiers</a> introduced
+    by some concrete syntaxes have only
+    local scope and are purely an artifact of the serialization.</p>
+
+    <p>In situations where stronger identification is needed, systems <em class="rfc2119" title="MAY">MAY</em>
+    systematically replace some or all of the blank nodes in an RDF graph
+    with <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a>.  Systems wishing to do this <em class="rfc2119" title="SHOULD">SHOULD</em>
+    mint a new, globally
+    unique <abbr title="Internationalized Resource Identifier">IRI</abbr> (a <dfn id="dfn-skolem-iri">Skolem <abbr title="Internationalized Resource Identifier">IRI</abbr></dfn>) for each blank node so replaced.</p>
+
+    <p>This transformation does not appreciably change the meaning of an
+    RDF graph, provided that the Skolem IRIs do not occur anywhere else.
+    It does however permit the possibility of other graphs
+    subsequently using the Skolem IRIs, which is not possible
+    for blank nodes.</p>
+
+    <p>Systems may wish to mint Skolem IRIs in such a way that they can
+    recognize the IRIs as having been introduced solely to replace blank
+    nodes. This allows a system to map IRIs back to blank nodes
+    if needed.</p>
+
+    <p>Systems that want Skolem IRIs to be recognizable outside of the system
+    boundaries <em class="rfc2119" title="SHOULD">SHOULD</em> use a well-known <abbr title="Internationalized Resource Identifier">IRI</abbr> [<cite><a class="bibref" href="#bib-RFC5785">RFC5785</a></cite>] with the registered
+    name <code>genid</code>. This is an <abbr title="Internationalized Resource Identifier">IRI</abbr> that uses the HTTP or HTTPS scheme,
+    or another scheme that has been specified to use well-known IRIs; and whose
+    path component starts with <code>/.well-known/genid/</code>.
+
+    </p><p>For example, the authority responsible for the domain
+    <code>example.com</code> could mint the following recognizable Skolem <abbr title="Internationalized Resource Identifier">IRI</abbr>:</p>
+
+    <pre>http://example.com/.well-known/genid/d26a2d0e98334696f4ad70a677abc1f6</pre>
+
+    <div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_3"><span>Note</span></div><p class="">RFC 5785 [<cite><a class="bibref" href="#bib-RFC5785">RFC5785</a></cite>] only specifies well-known URIs,
+    not IRIs. For the purpose of this document, a well-known <abbr title="Internationalized Resource Identifier">IRI</abbr> is any
+    <abbr title="Internationalized Resource Identifier">IRI</abbr> that results in a well-known <abbr title="Uniform Resource Identifier">URI</abbr> after <abbr title="Internationalized Resource Identifier">IRI</abbr>-to-<abbr title="Uniform Resource Identifier">URI</abbr> mapping [<cite><a class="bibref" href="#bib-RFC3987">RFC3987</a></cite>].</p></div>
+</section>
+
+
+<section id="graph-isomorphism" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    <h3 aria-level="2" role="heading" id="h3_graph-isomorphism"><span class="secno">3.6 </span>Graph Comparison</h3>
+
+    <p id="section-graph-equality">Two
+    <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a> <var>G</var> and <var>G'</var> are
+    <dfn title="graph isomorphism" id="dfn-graph-isomorphism">isomorphic</dfn> (that is, they have an identical
+    form) if there is a bijection <var>M</var> between the sets of nodes of the two
+    graphs, such that:</p>
+
+    <ol>
+      <li><var>M</var> maps blank nodes to blank nodes.</li>
+      <li><var>M(lit)=lit</var> for all <a title="literal" href="#dfn-literal" class="internalDFN">RDF literals</a> <var>lit</var> which
+      are nodes of <var>G</var>.</li>
+
+      <li><var>M(iri)=iri</var> for all <a title="IRI" href="#dfn-iri" class="internalDFN">IRIs</a> <var>iri</var>
+      which are nodes of <var>G</var>.</li>
+
+      <li>The triple <var>( s, p, o )</var> is in <var>G</var> if and
+      only if the triple <var>( M(s), p, M(o) )</var> is in
+      <var>G'</var></li>
+    </ol>
+
+    <p>See also: <a href="#dfn-iri-equality" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr> equality</a>, <a href="#dfn-literal-term-equality" class="internalDFN">literal term equality</a>.</p>
+
+    <p>With this definition, <var>M</var> shows how each blank node
+    in <var>G</var> can be replaced with
+    a new blank node to give <var>G'</var>. Graph isomorphism
+    is needed to support the RDF Test Cases [<cite><a class="bibref" href="#bib-RDF11-TESTCASES">RDF11-TESTCASES</a></cite>] specification.</p>
+</section>
+
+</section>
+
+
+<section id="section-dataset" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
+    
+<!--OddPage-->
+<h2 aria-level="1" role="heading" id="h2_section-dataset"><span class="secno">4. </span>RDF Datasets</h2>
+
+    <p>An <dfn id="dfn-rdf-dataset">RDF dataset</dfn> is a collection of
+      <a title="RDF graph" href="#dfn-rdf-graph" class="internalDFN">RDF graphs</a>, and comprises:</p>
+
+    <ul>
+      <li>Exactly one <dfn id="dfn-default-graph">default graph</dfn>, being an <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>.
+        The default graph does not have a name and <em class="rfc2119" title="MAY">MAY</em> be empty.</li>
+      <li>Zero or more <dfn title="named graph" id="dfn-named-graph">named graphs</dfn>.
+        Each named graph is a pair consisting of an <a title="IRI" href="#dfn-iri" class="internalDFN"><abbr title="Internationalized Resource Identifier">IRI</abbr></a> or a blank node
+        (the <dfn id="dfn-graph-name">graph name</dfn>), and an <a href="#dfn-rdf-graph" class="internalDFN">RDF graph</a>.
+        Graph names are unique within an RDF dataset.</li>
+    </ul>
+
+    <p><a title="blank node" href="#dfn-blank-node" class="internalDFN">Blank nodes</a> can be shared between graphs
+      in an <a title="RDF Dataset" href="#dfn-rdf-dataset" class="internalDFN">RDF dataset</a>.</p>
+
+    <div class="note"><div class="note-title" aria-level="2" role="heading" id="h_note_4"><span>Note</span></div><div id="note-datasets" class="">
+      <p>Despite the use of the word “name” in “<a href="#dfn-named-graph" class="internalDFN">named graph</a>”, the
+        <a href="#dfn-graph-name" class="internalDFN">graph name</a> is not required to <a href="#dfn-denote" class="internalDFN">denote</a> the graph. It is
+        merely syntactically paired with the graph. RDF does not place any
+        formal restrictions on what <a href="#dfn-resource" class="internalDFN">resource</a> the graph name may denote,
+        nor on the relationship between that resource and the graph.
+        A discussion of different RDF dataset semantics can be found in
+        [<cite><a class="bibref" href="#bib-RDF11-DATASETS">RDF11-DATASETS</a></cite>].</p>
+
+      <p>Some <a title="RDF Dataset" href="#dfn-rdf-dataset" class="internalDFN">RDF dataset</a> implementations do not
+        track empty <a title="named graph" href="#dfn-named-graph" class="internalDFN">named graphs</a>. Applications
+        can avoid interoperability issues by not ascribing importance to
+        the presence or absence of empty named graphs.</p>
+
+      <p>SPARQL 1.1 [<cite><a class="bibref" href="#bib-SPARQL11-OVERVIEW">SPARQL11-OVERVIEW</a></cite>] also defines the concept of an RDF
+				Dataset.  The definition
