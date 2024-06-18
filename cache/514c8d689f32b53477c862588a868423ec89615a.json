@@ -1,0 +1,1 @@
+[{"text":"```json\n[\"https://w3id.org/dpv#LegalCompliance\"]\n```","message":{"type":"ai","data":{"content":"```json\n[\"https://w3id.org/dpv#LegalCompliance\"]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":17,"promptTokens":4538,"totalTokens":4555},"finish_reason":"stop"}}}}]

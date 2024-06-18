@@ -1,0 +1,1 @@
+[{"text":"```json\n[\"https://w3id.org/dpv#EnforceAccessControl\"]\n```","message":{"type":"ai","data":{"content":"```json\n[\"https://w3id.org/dpv#EnforceAccessControl\"]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":19,"promptTokens":4537,"totalTokens":4556},"finish_reason":"stop"}}}}]

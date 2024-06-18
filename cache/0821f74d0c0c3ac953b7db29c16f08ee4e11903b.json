@@ -1,0 +1,1 @@
+[{"text":"```json\n[\"https://w3id.org/dpv#UserInterfacePersonalisation\"]\n```","message":{"type":"ai","data":{"content":"```json\n[\"https://w3id.org/dpv#UserInterfacePersonalisation\"]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":19,"promptTokens":4554,"totalTokens":4573},"finish_reason":"stop"}}}}]

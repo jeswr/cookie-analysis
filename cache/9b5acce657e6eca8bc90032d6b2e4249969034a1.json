@@ -1,0 +1,1 @@
+[{"text":"```json\n[\n  \"https://w3id.org/dpv#ServiceUsageAnalytics\"\n]\n```","message":{"type":"ai","data":{"content":"```json\n[\n  \"https://w3id.org/dpv#ServiceUsageAnalytics\"\n]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":21,"promptTokens":4528,"totalTokens":4549},"finish_reason":"stop"}}}}]

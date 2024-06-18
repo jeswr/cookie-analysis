@@ -1,0 +1,1 @@
+[{"text":"```json\n[\n    \"https://w3id.org/dpv#IdentityVerification\"\n]\n```","message":{"type":"ai","data":{"content":"```json\n[\n    \"https://w3id.org/dpv#IdentityVerification\"\n]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":20,"promptTokens":4563,"totalTokens":4583},"finish_reason":"stop"}}}}]
