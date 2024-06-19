@@ -1,0 +1,1 @@
+[{"text":"```json\n[\"#78\"]\n```","message":{"type":"ai","data":{"content":"```json\n[\"#78\"]\n```","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":8,"promptTokens":3412,"totalTokens":3420},"finish_reason":"stop"}}}}]
