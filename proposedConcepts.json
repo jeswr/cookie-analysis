@@ -1,0 +1,11 @@
+{
+  "[object Object]": [
+    "Cookie consent system cookie for saving user's cookie opt-in/out choices.",
+    "Contains a token code that is used to read out a Client ID from the AMP Client ID Service. By matching this ID with that of Google Analytics, users can be matched when switching between AMP content and non-AMP content.",
+    "Used only with old Urchin versions of Google Analytics and not with GA.js. Was used to distinguish between new sessions and visits at the end of a session.",
+    "Used to determine when the A / B or Multivariate test in which the user participates ends",
+    "This FPLC cookie is the cross-domain linker cookie hashed from the FPID cookie. It’s not HttpOnly, which means it can be read with JavaScript. It has a relatively short lifetime, just 20 hours.",
+    "Cookies used for functionality allow users to interact with a service or site to access features that are fundamental to that service. Things considered fundamental to the service include preferences like the user's choice of language, product optimizations that help maintain and improve a service, and maintaining information relating to a user's session, such as the content of a shopping cart.",
+    "Cookies used for analytics help collect data that allows services to understand how users interact with a particular service. These insights allow services both to improve content and to build better features that improve the user's experience."
+  ]
+}

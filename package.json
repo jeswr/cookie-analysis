@@ -98,6 +98,7 @@
   },
   "dependencies": {
     "@comunica/query-sparql-link-traversal": "^0.4.1",
+    "@inrupt/solid-client-authn-core": "^2.2.2",
     "@jeswr/pretty-turtle": "^1.5.0",
     "@jeswr/rdf-serialize-store": "^1.1.0",
     "@jeswr/shacl2shex": "^1.1.0",

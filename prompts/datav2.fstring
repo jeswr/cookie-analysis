@@ -1,0 +1,31 @@
+**TASK CONTEXT**
+
+In this task, you are transforming natural language descriptions of the purpose of browser cookies into structured descriptions using the Data Privacy Vocabulary (DPV) and the Open Digital Rights Language (ODRL). Follow a specific approach leveraging the concepts and classes defined in these vocabularies:
+
+**Data Privacy Vocabulary (DPV):**
+    - **Purposes Fragment**: This module includes terms for various purposes of data processing, such as Advertising, Analytics, ServiceProvision, etc. You can map the purpose of a cookie to these terms. For example, a cookie used for tracking user behavior for marketing purposes would map to `dpv:Marketing`.
+    - **Processing Activities**: In DPV, processing activities like Collect, Use, and Store are defined. You can specify these activities to describe how the cookie data is used.
+
+**ODRL (Open Digital Rights Language):**
+    - **Policy Definitions**: ODRL allows you to define policies about data usage, including permissions, prohibitions, and obligations related to the data collected by cookies. For example, you can specify that data collected by a cookie can be used for analytics purposes only with user consent.
+
+**TASK ACTION**
+
+Using the given structure, please provide a list of integers corresponding to the lines of the page that match the following description. Explain the reasoning behind the answer. Select ALL relevant rows. If the description contains concepts that do not match the listed purposes, describe such concepts in the unmatchedConcepts field as granularly as possible without tying them to a specific organization.
+
+**Inputs:**
+- Name: "{name}"
+- Category: "{category}"
+- Description: "{description}"
+
+DPV Purposes:
+---
+{purposes}
+---
+
+**Output Schema:**
+
+Output Schema:
+---
+{format_instructions}
+---

@@ -1,0 +1,42 @@
+**TASK CONTEXT**
+
+In this task, you are transforming natural language descriptions of the purpose of browser cookies into structured descriptions using the Data Privacy Vocabulary (DPV) and the Open Digital Rights Language (ODRL), you'll need to follow a specific approach leveraging the concepts and classes defined in these vocabularies.
+
+Data Privacy Vocabulary (DPV):
+    Purposes Fragment: This module includes terms for various purposes of data processing, such as Advertising, Analytics, ServiceProvision, etc. You can map the purpose of a cookie to these terms. For example, a cookie used for tracking user behavior for marketing purposes would map to dpv:Marketing​ (GitHub)​​ (GitHub)​.
+    Processing Activities: In DPV, processing activities like Collect, Use, and Store are defined. You can specify these activities to describe how the cookie data is used​ (GitHub)​​ (GitHub)​.
+
+ODRL (Open Digital Rights Language):
+    Policy Definitions: ODRL allows you to define policies about data usage, including permissions, prohibitions, and obligations related to the data collected by cookies. For example, you can specify that data collected by a cookie can be used for analytics purposes only with user consent​ (GitHub)​​ (GitHub)​.
+
+**TASK ACTION**
+
+Using the given structure, please provide a list of integers corresponding to the lines of the page that match the following description. Explain the reasoning behind the answer. Select ALL relevant rows. If the description contains concepts that do not match the listed purposes, describe such concepts in the unmatchedConcepts field as granularly as possible.
+
+Inputs:
+- Name: "{name}"
+- Category: "{category}"
+- Description: "{description}"
+
+Context:
+- DPV Purposes: {list of DPV purposes with line numbers}
+- ODRL Policies: {list of ODRL policies with line numbers}
+
+Output Schema:
+{
+    "explanation": "A precise explanation of the reasoning behind the answer. DO NOT quote the prompt in this field.",
+    "results": "An array of numbers representing the line indices of the terms that apply to the description.",
+    "unmatchedConcepts": [
+        {
+            "name": "The name of the concept that was not available e.g. \"AnalyticsData\".",
+            "definition": "The definition of the concept that was not available e.g. \"Data collected for analytics purposes to understand user behavior.\"",
+            "scopeNote": "A description of the scope for which the concept applies e.g. \"Used for web traffic analysis and user behavior tracking.\" (optional)",
+            "subsetOf": "An array of numbers representing the line indices of the terms that are a superset of this concept."
+        }
+    ]
+}
+
+Pages:
+---
+{page}
+---

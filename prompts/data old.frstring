@@ -1,0 +1,11 @@
+The goal of this task is to classify the purposes for which data stored in a 3rd party cookie shall be used.
+
+
+
+Your task is to identify 
+
+
+
+Following the given structure, please give a list of integers corresponding to the lines of the page that match the following description,
+and explain the reasoning behind the answer. Please select ALL rows that apply.
+If the description contains concepts that do not match the listed purposes then describe such concepts in as granular manner as possible in the unmatchedConcepts field. \"${description}\" \"${description}\" ${noNamePrompt}\n---\n${page}\n---\n.

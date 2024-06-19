@@ -29,7 +29,7 @@ function cost(msg: AIMessageChunk) {
 
 const engine = new QueryEngine();
 
-async function descriptionToPurposes(description: string = "Download certain Google Tools and save certain preferences, for example the number of search results per page or activation of the SafeSearch Filter. Adjusts the ads that appear in Google Search.") {
+async function descriptionToPurposes({ Description }: OCD, key: string) {
     
     const bindings = await engine.query('SELECT ?concept ?definition ?label ?note WHERE { ?concept a <https://w3id.org/dpv#Purpose>; <http://www.w3.org/2004/02/skos/core#definition> ?definition; <http://www.w3.org/2004/02/skos/core#prefLabel> ?label. OPTIONAL { ?concept <http://www.w3.org/2004/02/skos/core#scopeNode> ?note }  }', { sources: ['https://w3id.org/dpv#'] });
     const string = await stringify((await engine.resultToString(bindings, 'text/tab-separated-values')).data);
@@ -66,7 +66,7 @@ async function descriptionToPurposes(description: string = "Download certain Goo
     const noNamePrompt = "\n Make sure to use the *description* of the term, which is on the same line, in assessing its relevance and *not* the name of the term.";
       
     const response = await fallbackChain.invoke({
-        question: `Which of the terms in the below document apply to the description \"${description}\"${noNamePrompt}\n---\n${string}\n---\n.`,
+        question: `Which of the terms in the below document apply to the description \"${Description}\" with name \"${key}\"${noNamePrompt}\n---\n${string}\n---\n.`,
         format_instructions: parser.getFormatInstructions(),
     });
 
@@ -91,7 +91,7 @@ async function main() {
         const description = descriptions[key].Description;
         if (description) {
             try {
-                descriptions[key].Purposes = await descriptionToPurposes(description);
+                descriptions[key].Purposes = await descriptionToPurposes(descriptions[key], key);
                 console.log(key, description, descriptions[key].Purposes);
             } catch (e) {
                 console.warn("Failure: " + (i++));

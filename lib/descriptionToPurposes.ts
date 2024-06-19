@@ -1,4 +1,3 @@
-import { QueryEngine } from '@comunica/query-sparql';
 import { AIMessageChunk } from '@langchain/core/messages';
 import { ChatOpenAI } from '@langchain/openai';
 import 'dotenv/config';
@@ -16,6 +15,8 @@ import dereferenceToStore from 'rdf-dereference-store';
 import fs from 'fs';
 import { ocd } from './ocd';
 import { OCD } from './types/OCD';
+import {  } from "@inrupt/solid-client-authn-core/";
+import { pageFetch } from './pageFetch';
 
 const { namedNode, quad, literal, blankNode } = DataFactory;
 
@@ -28,39 +29,35 @@ function cost(msg: AIMessageChunk) {
 }
 
 
-async function pageFetch() {
-    const engine = new QueryEngine();
-
-    let i = 0;
-    const record: Record<number, string> = {};
-    const bindings = await engine.queryBindings('SELECT ?concept ?definition ?label ?note WHERE { ?concept a <https://w3id.org/dpv#Purpose>; <http://www.w3.org/2004/02/skos/core#definition> ?definition; <http://www.w3.org/2004/02/skos/core#prefLabel> ?label. OPTIONAL { ?concept <http://www.w3.org/2004/02/skos/core#scopeNote> ?note }  }', { sources: ['https://w3id.org/dpv#'] });
-    const page = (await bindings.map(elem => (record[++i] = elem.get('concept')!.value, i) + '\t' + elem.get('definition')!.value + '\t' + elem.get('label')!.value + '\t' + elem.get('note')?.value).toArray()).join('\n');
-    return { record, page };
-}
-
 const prom = pageFetch();
 
-async function descriptionToPurposes(description: string = "Download certain Google Tools and save certain preferences, for example the number of search results per page or activation of the SafeSearch Filter. Adjusts the ads that appear in Google Search.") {
+async function descriptionToPurposes({ Description, Category }: OCD, key: string) {
     console.log('descriptionToPurposes');
-    const { record, page }: { record: Record<number, string>; page: string; } = await prom;
+    const { record, page, bindingsArray } = await prom;
 
     const parser = StructuredOutputParser.fromZodSchema(
         z.object({
             // results: z.array(z.string().url().refine(url => options.includes(url), `Value must be one of ${JSON.stringify(options)}`)),
             explanation: z.string().describe("A precise explanation of the reasoning behind the answer. DO NOT quote the prompt in this field."),
             results: z.array(z.number().refine(num => Object.keys(record).includes(num.toString()), `Value must be one of ${JSON.stringify(Object.keys(record))}`)).describe("An array of numbers representing the line indices of the terms that apply to the description."),
-            unmatchedConcepts: z.array(z.string()).optional().describe("An array of concepts in the description that were not available."),
+            // unmatchedConcepts: z.array(z.string()).optional().describe("An array of concepts in the description that were not available."),
+            unmatchedConcepts: z.array(z.object({
+                name: z.string().describe(`The name of the concept that was not available e.g. \"${bindingsArray[0].get('label')}\".`),
+                definition: z.string().describe(`The definition of the concept that was not available e.g. \"${bindingsArray[0].get('definition')}\".`),
+                scopeNote: z.string().describe(`A description of the scope for whch the concept applies e.g. \"${bindingsArray.find(binding => binding.has('note'))?.get('note')}\".`).optional(),
+                subsetOf: z.array(z.number().refine(num => Object.keys(record).includes(num.toString()), `Value must be one of ${JSON.stringify(Object.keys(record))}`)).describe("An array of numbers representing the line indices of the terms that are a superset of this concept."),
+            })).describe("An array of concepts in the description that were not available - these should NOT be tied to a particular product. If the concept is a refinedment of another concept please still add it here, provide the line indices of the superset concepts. For instance if the description is \"Cookie consent system cookie for storing the level of cookie consent.\" then one of the unmatchedConcepts would be {name: \"Cookie consent system cookie\", definition: \"A cookie for storing the level of cookie consent.\", subsetOf: [37]}."),
         })
     );
 
     const chain = RunnableSequence.from([
         PromptTemplate.fromTemplate(
-          "Answer the users question as best as possible.\n{format_instructions}\n{question}"
+            fs.readFileSync(path.join(__dirname, '..', 'prompts', 'datav2.fstring'), 'utf-8').toString()
+        //   "Answer the users question as best as possible.\n{format_instructions}\n{question}"
         ),
         new ChatOpenAI({
             model: 'gpt-4o',
             cache: await LocalFileCache.create('./cache'),
-            // verbose: true,
         }),
         parser,
       ]);
@@ -76,7 +73,11 @@ async function descriptionToPurposes(description: string = "Download certain Goo
     const noNamePrompt = true ? '' : "\n Make sure to use the *description* of the term, which is on the same line, in assessing its relevance and *not* the name of the term.";
       
     const response = await fallbackChain.invoke({
-        question: `Following the given structure, please give a list of integers corresponding to the lines of the page that match the following description, and explain the reasoning behind the answer. Please select ALL rows that apply. If the description contains concepts that do not match the listed purposes then describe such concepts in as granular manner as possible in the unmatchedConcepts field.\"${description}\"${noNamePrompt}\n---\n${page}\n---\n.`,
+        name: key,
+        category: Category,
+        description: Description,
+        purposes: page,
+        // question: `Following the given structure, please give a list of integers corresponding to the lines of the page that match the following description, and explain the reasoning behind the answer. Please select ALL rows that apply. If the description contains concepts that do not match the listed purposes then describe such concepts in as granular manner as possible in the unmatchedConcepts field. \"${description}\" \"${description}\" ${noNamePrompt}\n---\n${page}\n---\n.`,
         format_instructions: parser.getFormatInstructions(),
     });
 
@@ -97,28 +98,32 @@ let i = 0;
 async function main() {
     const descriptions: Record<string, OCD & { Purposes?: string[]; response?: Awaited<ReturnType<typeof descriptionToPurposes>>['response'] }> = await ocd();
     let promises: Promise<void>[] = [];
+    const keys = [];
     
     let i = 0
     for (const key in descriptions) {
+        if (i > 40) break;
         promises.push(addResponse(descriptions, key));
+        keys.push(key);
         if (i++ % 20 === 0) {
             await Promise.all(promises);
         }
     }
-    fs.writeFileSync('./ocd.json', JSON.stringify(descriptions, null, 2));
+    await Promise.all(promises);
+    fs.writeFileSync('./ocd-2.json', JSON.stringify(descriptions, null, 2));
     // fs.writeFileSync('./purposes.json', JSON.stringify(descriptions, null, 2));
-    console.log(descriptions);
+    console.log(keys.map(key => descriptions[key]));
 }
 
 main();
 
 
-async function addResponse(descriptions: Record<string, OCD & { Purposes?: string[] | undefined; response?: { explanation: string; results: number[]; unmatchedConcepts?: string[] | undefined; } | undefined; }>, key: string) {
+async function addResponse(descriptions: Record<string, OCD & { Purposes?: string[] | undefined; response?: Awaited<ReturnType<typeof descriptionToPurposes>>['response'] | undefined; }>, key: string) {
     const description = descriptions[key].Description;
     if (description) {
         try {
             console.log('trying...');
-            const { minimal, response } = await descriptionToPurposes(description);
+            const { minimal, response } = await descriptionToPurposes(descriptions[key], key);
             descriptions[key].Purposes = minimal;
             descriptions[key].response = response;
             console.log(key, description, descriptions[key].Purposes);
