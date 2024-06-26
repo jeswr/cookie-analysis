@@ -109,7 +109,7 @@
     "dumb-csv": "^1.1.2",
     "eyereasoner": "^16.15.14",
     "make-fetch-happen": "^13.0.1",
-    "langchain": "^0.2.6",
+    "langchain": "^0.2.7",
     "md5": "^2.3.0",
     "n3": "^1.17.4",
     "node-html-parser": "^6.1.13",
