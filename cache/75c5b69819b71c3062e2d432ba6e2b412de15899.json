@@ -1,0 +1,1 @@
+[{"text":"Required","message":{"type":"ai","data":{"content":"Required","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":1,"promptTokens":40,"totalTokens":41},"finish_reason":"stop"}}}}]

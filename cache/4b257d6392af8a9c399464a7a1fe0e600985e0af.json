@@ -1,0 +1,1 @@
+[{"text":"\"Microsoft\"","message":{"type":"ai","data":{"content":"\"Microsoft\"","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":3,"promptTokens":37,"totalTokens":40},"finish_reason":"stop"}}}}]

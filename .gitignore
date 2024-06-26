@@ -105,3 +105,6 @@ dist
 
 shapes/*.shex
 lib/ldo/
+
+datasets/
+datasets.zip

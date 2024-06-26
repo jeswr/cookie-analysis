@@ -1,0 +1,1 @@
+[{"text":"General session (non-authenticated)","message":{"type":"ai","data":{"content":"General session (non-authenticated)","tool_calls":[],"invalid_tool_calls":[],"additional_kwargs":{},"response_metadata":{"tokenUsage":{"completionTokens":7,"promptTokens":42,"totalTokens":49},"finish_reason":"stop"}}}}]
