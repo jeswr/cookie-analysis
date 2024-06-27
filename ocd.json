@@ -21,6 +21,20 @@
       "unmatchedConcepts": [
         "cookie preferences"
       ]
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [
+          {
+            "cookie preferences" : "can be added under https://w3id.org/dpv/pd#Preference"
+          }
+        ],
+        "inDPV" : []
+      }
     }
   },
   "td": {
@@ -47,6 +61,25 @@
         "users' behaviour",
         "website operator"
       ]
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [
+          {
+            "statistical data" : "can be added under https://w3id.org/dpv#Data"
+          }
+        ],
+        "inDPV" : [
+          {
+            "users' behaviour" : "DPV has https://w3id.org/dpv/pd#BrowsingBehavior",
+            "website operator" : "DPV has https://w3id.org/dpv/tech#Operator"
+          }
+        ]
+      }
     }
   },
   "CookieConsent": {
@@ -71,6 +104,16 @@
         14
       ],
       "unmatchedConcepts": []
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : []
+      }
     }
   },
   "CookieConsentBulkTicket": {
@@ -93,6 +136,22 @@
         "across domains",
         "websites"
       ]
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [
+          {
+            "sharing cookie preferences" : "can be added under https://w3id.org/dpv#Purpose",
+            "across domains" : "should be included in the sharing cookie preferences purpose",
+            "websites" : "can be added to the DPV Tech extension, maybe under https://w3id.org/dpv/tech#Software"
+          }
+        ],
+        "inDPV" : []
+      }
     }
   },
   "userlang": {
@@ -116,6 +175,20 @@
         68
       ],
       "unmatchedConcepts": []
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [
+          {
+            "https://w3id.org/dpv#ServicePersonalisation" : "ServicePersonalisation is correct, maybe UserInterfacePersonalisation is more specific"
+          }
+        ],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : []
+      }
     }
   },
   "consentUUID": {
@@ -143,6 +216,21 @@
         62
       ],
       "unmatchedConcepts": []
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [
+          {
+            "https://w3id.org/dpv#Verification" : "Verification is correct, maybe IdentityVerification is more specific",
+            "https://w3id.org/dpv#Personalisation" : "It is not clear to me that this cookie contributes to personalisation"
+          }
+        ],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : []
+      }
     }
   },
   "cookieconsent_variant": {
@@ -171,6 +259,21 @@
         "cookie",
         "banner"
       ]
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : [
+          {
+            "cookie" : "DPV has https://w3id.org/dpv/tech#Cookie",
+            "banner" : "relates to https://w3id.org/dpv/tech#Cookie"
+          }
+        ]
+      }
     }
   },
   "cookieconsent_system": {
@@ -193,6 +296,16 @@
         37
       ],
       "unmatchedConcepts": []
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : []
+      }
     }
   },
   "cookieconsent_level": {
@@ -221,6 +334,22 @@
         "consent",
         "system cookie"
       ]
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : [
+          {
+            "cookie" : "DPV has https://w3id.org/dpv/tech#Cookie",
+            "consent" : "DPV has https://w3id.org/dpv#Consent",
+            "system cookie" : "relates to https://w3id.org/dpv/tech#Cookie"
+          }
+        ]
+      }
     }
   },
   "cookieconsent_seen": {
@@ -245,6 +374,16 @@
         20
       ],
       "unmatchedConcepts": []
+    },
+    "bcomment" : {
+      "purposeDescriptionMatching" : {
+        "incorrect" : [],
+        "missing" : []
+      },
+      "unmatchedConceptsAssessment" : {
+        "missingFromDPV" : [],
+        "inDPV" : []
+      }
     }
   },
   "_ga": {
