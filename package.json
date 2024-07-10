@@ -96,7 +96,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@jeswr/rdf-serialize-store": "^1.1.0",
+    "@jeswr/rdf-serialize-store": "^1.1.1",
     "@jeswr/shacl2shex": "^1.1.0",
     "@jeswr/utils": "^1.1.0",
     "@langchain/community": "^0.2.17",
