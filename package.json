@@ -102,7 +102,7 @@
     "@langchain/community": "^0.2.19",
     "@langchain/core": "^0.2.16",
     "@langchain/openai": "^0.2.2",
-    "@ldo/cli": "^0.0.1-alpha.24",
+    "@ldo/cli": "^0.0.1-alpha.26",
     "@ldo/ldo": "^0.0.1-alpha.24",
     "@types/n3": "^1.16.4",
     "dotenv": "^16.4.5",
