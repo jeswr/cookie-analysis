@@ -101,7 +101,7 @@
     "@jeswr/utils": "^1.1.0",
     "@langchain/community": "^0.2.24",
     "@langchain/core": "^0.2.21",
-    "@langchain/openai": "^0.2.5",
+    "@langchain/openai": "^0.2.6",
     "@ldo/cli": "^0.0.1-alpha.26",
     "@ldo/ldo": "^0.0.1-alpha.26",
     "@types/n3": "^1.16.4",
