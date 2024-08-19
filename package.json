@@ -100,7 +100,7 @@
     "@jeswr/shacl2shex": "^1.1.0",
     "@jeswr/utils": "^1.1.0",
     "@langchain/community": "^0.2.27",
-    "@langchain/core": "^0.2.24",
+    "@langchain/core": "^0.2.27",
     "@langchain/openai": "^0.2.6",
     "@ldo/cli": "^0.0.1-alpha.26",
     "@ldo/ldo": "^0.0.1-alpha.26",
