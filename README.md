@@ -82,6 +82,9 @@ And an example data policy (for a piece of cookie) would be:
  
 This one is compatible with the application policy above (or, actually I should say it the other way around). But if you remove any tagging, it will become incompatible.
 
+## Links to follow up on
+ - https://ahmedbouhoula.github.io/post/automated.html
+
 ## License
 ©2024–present
 [Jesse Wright](https://github.com/jeswr),
