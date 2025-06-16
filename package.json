@@ -41,7 +41,7 @@
   "homepage": "https://github.com/jeswr/cookie-analysis/README.md",
   "devDependencies": {
     "@rdfjs/types": "^2.0.1",
-    "@types/jest": "^29.5.14",
+    "@types/jest": "^30.0.0",
     "@types/make-fetch-happen": "^10.0.4",
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.33.0",
