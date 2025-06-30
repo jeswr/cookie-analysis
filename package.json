@@ -50,7 +50,7 @@
     "eslint-plugin-import": "^2.32.0",
     "jest": "^30.0.3",
     "pre-commit": "^1.2.2",
-    "semantic-release": "^24.2.5",
+    "semantic-release": "^24.2.6",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
