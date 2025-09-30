@@ -105,7 +105,7 @@
     "@ldo/cli": "^0.0.1-1.0.0-alpha.1.0",
     "@ldo/ldo": "^0.0.1-1.0.0-alpha.1.0",
     "@types/n3": "^1.26.0",
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "dumb-csv": "^1.1.2",
     "eyereasoner": "^18.20.1",
     "make-fetch-happen": "^15.0.2",
