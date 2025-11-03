@@ -107,7 +107,7 @@
     "@types/n3": "^1.26.1",
     "dotenv": "^17.2.3",
     "dumb-csv": "^1.1.2",
-    "eyereasoner": "^18.21.2",
+    "eyereasoner": "^18.22.0",
     "make-fetch-happen": "^15.0.2",
     "langchain": "^1.0.2",
     "md5": "^2.3.0",
