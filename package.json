@@ -99,7 +99,7 @@
     "@jeswr/rdf-serialize-store": "^1.1.1",
     "@jeswr/shacl2shex": "^1.5.1",
     "@jeswr/utils": "^1.1.0",
-    "@langchain/community": "^1.1.18",
+    "@langchain/community": "^1.1.19",
     "@langchain/core": "^1.1.28",
     "@langchain/openai": "^1.2.8",
     "@ldo/cli": "^0.0.1-1.0.0-alpha.1.0",
