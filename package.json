@@ -111,7 +111,7 @@
     "make-fetch-happen": "^16.0.1",
     "langchain": "^1.5.1",
     "md5": "^2.3.0",
-    "n3": "^2.0.4",
+    "n3": "^2.1.0",
     "node-html-parser": "^8.0.3",
     "rdf-dereference-store": "^1.4.0",
     "rdf-namespaces": "^1.17.0"
