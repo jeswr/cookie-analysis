@@ -51,7 +51,7 @@
     "jest": "^30.4.2",
     "pre-commit": "^2.0.0",
     "semantic-release": "^25.0.8",
-    "ts-jest": "^29.4.11",
+    "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
     "typescript": "^7.0.2"
   },
