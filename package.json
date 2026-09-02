@@ -104,7 +104,7 @@
     "@langchain/openai": "^1.5.10",
     "@ldo/cli": "^0.0.1-1.0.0-alpha.1.0",
     "@ldo/ldo": "^0.0.1-1.0.0-alpha.1.0",
-    "@types/n3": "^1.26.1",
+    "@types/n3": "^1.26.3",
     "dotenv": "^17.4.2",
     "dumb-csv": "^1.1.2",
     "eyereasoner": "^21.1.18",
