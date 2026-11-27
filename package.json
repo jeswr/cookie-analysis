@@ -108,7 +108,7 @@
     "dotenv": "^18.0.10",
     "dumb-csv": "^1.1.2",
     "eyereasoner": "^21.1.28",
-    "make-fetch-happen": "^16.0.1",
+    "make-fetch-happen": "^16.0.2",
     "langchain": "^1.6.7",
     "md5": "^2.3.0",
     "n3": "^2.13.12",
